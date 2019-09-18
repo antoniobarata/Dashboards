@@ -1,0 +1,67 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "8a04adab-0f5d-4a7e-8b1d-7edb2ff86096",
+  "Name": "Operations Dashboard",
+  "Active": true,
+  "Location": 0,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentsConfiguration": null,
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "713bbaaf-3cf9-4eba-a5a5-084f628004d9",
+      "Name": "Tickets Requested",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 8,
+      "Order": 0,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Tickets in the Selected Period\",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Delayed To Do\",\r\n                        \"metricFieldValue\": \"DelayedToDoJobsGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Delayed Work in Progress\",\r\n                        \"metricFieldValue\": \"DelayedWorkInProgressJobsGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.effort,j.NameAndExternalId as Job,ws.Name as Stage,j.Project,j.AgreedDateUtc as Enddate,j.Oid,isnull(ws.Color, wst.Color) as Color,datediff(day,getdate(),AgreedDateUtc) as Days,sum(iif(ws.name = 'To Do' and AgreedDateUtc < getdate(), 1, 0)) over() as DelayedToDoJobsGrandTotal,sum(iif(ws.name = 'Work in Progress' and AgreedDateUtc < getdate(), 1, 0)) over() as DelayedWorkInProgressJobsGrandTotal,(select min(ass.[User]) from Assignment ass, AssignmentType ast where ass.DocumentOid = j.Oid and ast.Name = 'Executor' and ass.AssignmentType = ast.Oid) as Executorfrom Deliverable j, WorkflowState ws, WorkflowStateType wst, Department depwhere ws.Oid = j.WorkflowState andwst.Oid = ws.WorkflowStateType anddep.Oid = j.Department anddep.Name in ('DevOps','Operations','Releases') andws.name in ('Work in Progress', 'Under Approval', 'To Do', 'Waiting', 'To Install')/*[DateFilter]*/ and j.AgreedDateUtc >= @FromDate and j.AgreedDateUtc <= @ToDate /*[/DateFilter]*/\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\"\r\n            ]\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/DevOps - Activity per Job/execute",
+      "Configuration": "{\n  \"height\": \"650\",\n  \"onRowClick\": \"function(e){if(e.rowType=='data') SkillsWorkflow.preview(e.key, 'job');}\",\n  \"keyExpr\": \"Oid\",\n  \"selection\": {\n    \"mode\": \"single\"\n  },\n  \"allowFiltering\": true,\n  \"searchPanel\": {\n    \"visible\": true\n  },\n  \"headerFilter\": {\n    \"visible\": true\n  },\n  \"scrolling\": {\n    \"mode\": \"virtual\"\n  },\n  \"columnMinWidth\": 50,\n  \"grouping\": {\n    \"autoExpandAll\": true\n  },\n  \"columns\": [\n    {\n      \"dataField\": \"Job\",\n      \"name\": \"Jobs\",\n      \"caption\": \"Jobs\",\n      \"width\": 670\n    },\n    {\n      \"dataField\": \"Days\",\n      \"caption\": \"Days\",\n      \"alignment\": \"right\",\n      \"format\": \"#,##0\",\n      \"width\": 70,\n      \"cellTemplate\": \"function(e, i) {var h=e.append('<div>'+i.text+'</div>');\nif(i.value<0) \n{h.children().css('text-align','center').css('min-width', '30px').css('background-color','#f5564a').css('color','#ffffff').css('border-radius','2px').css('padding','3px 7px').css('font-weight','700').css('white-space','nowrap').css('display','inline-block')\n      };\nif(i.value==0 || i.value==1)\n{h.children().css('text-align','center').css('min-width', '30px').css('background-color','#ffc720').css('color','#ffffff').css('border-radius','2px').css('padding','3px 7px').css('font-weight','700').css('white-space','nowrap').css('display','inline-block')\n      };\n    }\"\n  },\n  {\n    \"dataField\": \"effort\",\n    \"caption\": \"Effort\",\n    \"alignment\": \"right\",\n    \"format\": \"#,##0\",\n    \"width\": 70\n  },\n  {\n    \"dataField\": \"Stage\",\n    \"caption\": \"Stage\",\n    \"name\": \"Name\",\n    \"alignment\": \"left\",\n    \"format\": \"#,##0\",\n    \"width\": 80,\n    \"groupCellTemplate\": \"function(e, i) {var color=i.component.option().dataSource.find(row=>row.Stage==i.text).Color;var h=document.createElement('span');h.style.backgroundColor = color; h.classList.add('documentStageColor');e.append(h);h=document.createElement('span'); var ht=' ' + i.text + ' ('+i.summaryItems[0].value+')'; h.innerHTML = ht;e.append(h);}\",\n    \"groupIndex\": 0\n  },\n  {\n    \"dataField\": \"Enddate\",\n    \"caption\": \"End date\",\n    \"alignment\": \"right\",\n    \"dataType\": \"date\",\n    \"format\": \"d MMM\",\n    \"width\": 100\n  },\n  {\n    \"dataField\": \"Executor\",\n    \"caption\": \"Executor\",\n    \"alignment\": \"right\",\n    \"format\": \"#,##0\",\n    \"width\": 100,\n    \"cellTemplate\": \"function(e, i) {if(i.text == '') return; var h=e.append('<div style=\\\"text-align:center\\\"><img height=\\\"16\\\" width=\\\"16\\\" style=\\\"border-radius: 40px;\\\" src=\\\"'+SkillsWorkflow.getUserImages([i.text])+'\\\" /></div>');}\"\n  }\n],\n\"sortByGroupSummaryInfo\": [\n  {\n    \"summaryItem\": \"count\"\n  }\n],\n\"summary\": {\n  \"groupItems\": [\n    {\n      \"column\": \"Jobs\",\n      \"summaryType\": \"count\",\n      \"valueFormat\": \"#,##0\",\n      \"displayFormat\": \"{0}\",\n      \"alignment\": \"left\"\n    }\n  ],\n  \"totalItems\": [\n    {\n      \"column\": \"Jobs\",\n      \"summaryType\": \"count\",\n      \"valueFormat\": \"#,##0\",\n      \"displayFormat\": \"Total: {0}\",\n      \"alignment\": \"left\"\n    },\n    {\n      \"column\": \"Effort\",\n      \"summaryType\": \"sum\",\n      \"valueFormat\": \"#,##0\",\n      \"displayFormat\": \"{0}\",\n      \"alignment\": \"center\",\n      \"cellTemplate\": \"function(e, i) {var h=e.append('<div>'+i.text+'</div>');if(i.value<0) {h.css('background-color','#f5564a').css('color','#ffffff')}}\"\n    }\n  ]\n}\n}",
+      "DashboardDefinitionId": "8a04adab-0f5d-4a7e-8b1d-7edb2ff86096"
+    },
+    {
+      "Id": "e1bdd1d2-23c5-4d05-acc0-a9b68b8baa8c",
+      "Name": "Over Time view",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 2,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Closed and In Progress Tickets\",\r\n        \"WidgetType\": \"rangeSelector\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"startDate\": \"2019/05/1\",\r\n                \"endDate\": \"2019/09/30\",\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select max(datepart(ww, j.AgreedDateUtc)) as week,min(j.AgreedDateUtc) as WeekStart,sum(iif(ws.name = 'Done', 1, 0)) as Done,sum(iif(ws.name != 'Done', 1, 0)) as ToDo from Deliverable j,WorkflowState ws,WorkflowStateType wst,Department dep where   ws.Oid = j.WorkflowState and wst.Oid = ws.WorkflowStateType and dep.Oid = j.Department and dep.Name in ('DevOps','Operations') and ws.name in ('Done', 'Work in Progress', 'Under Approval', 'To Do', 'Waiting') and j.AgreedDateUtc >= @FromDate and j.AgreedDateUtc <= @ToDate group by datepart(yyyy, j.AgreedDateUtc), datepart(ww, j.AgreedDateUtc)order by WeekStart\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/DevOps - Overtime View/execute",
+      "Configuration": "{\n\"height\":250,\n  \"containerBackgroundColor\":\"#e0e0e0\",\n  \"selectedRangeColor\": \"#f5564a\",\n  \"chart\": {\n    \"commonSeriesSettings\": {\n      \"type\": \"steparea\",\n      \"argumentField\": \"WeekStart\"\n    },\n    \"series\": [\n      {\n        \"valueField\": \"Done\"\n},\n        {\n         \"valueField\": \"ToDo\"\n      }\n    ]\n  },\n  \"scale\": {\n    \"minorTickInterval\": \"week\",\n    \"tickInterval\": \"week\",\n    \"valueType\": \"datetime\"\n  },\n  \"sliderMarker\": {\n    \"format\": \"monthAndDay\",\n    \"color\": \"#da5859\"\n  },\n  \"value\": [\n    \"2019/06/24\",\n    \"2019/07/01\"\n  ]\n}",
+      "DashboardDefinitionId": "8a04adab-0f5d-4a7e-8b1d-7edb2ff86096"
+    },
+    {
+      "Id": "8b0c6b25-451c-41b9-8272-b93ed56b4f3a",
+      "Name": "Execution Pipeline",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 2,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Comparison between Under Approval, To Do's & Work In Progress Tickets\",\r\n        \"WidgetType\": \"funnel\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Under Approval\",\r\n                        \"metricFieldValue\": \"UnderApprovalGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? To Do\",\r\n                        \"metricFieldValue\": \"ToDoGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Work in Progress\",\r\n                        \"metricFieldValue\": \"WorkInProgressGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Done\",\r\n                        \"metricFieldValue\": \"DoneGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select ws.name as Stage,count(*) as Totalfrom    Deliverable j,WorkflowState ws,WorkflowStateType wst,Department depwhere   ws.Oid = j.WorkflowState andwst.Oid = ws.WorkflowStateType anddep.Oid = j.Department anddep.Name in ('DevOps','Operations') andws.name in ('Under Approval', 'To Do', 'Work in Progress', 'Done')/*[DateFilter]*/ and j.AgreedDateUtc >= @FromDate and j.AgreedDateUtc <= @ToDate /*[/DateFilter]*/group by ws.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\"\r\n            ]\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/DevOps - Execution Pipeline/execute",
+      "Configuration": "{\n  \"height\":400,\n  \"columnMinWidth\": 50,\n  \"showColumnHeaders\": false,\n  \"selection\": {\n    \"mode\": \"none\"\n                        },\n  \"tooltip\": {\n    \"enabled\": true,\n    \"format\": \"fixedPoint\"\n                    },\n  \"argumentField\": \"Stage\",\n  \"valueField\": \"Total\",\n  \"item\": {\n    \"border\": {\n      \"visible\": true\n                    }\n              },\n  \"sortData\": false,\n  \"label\": {\n    \"visible\": true,\n    \"position\": \"inside\",\n    \"backgroundColor\": \"none\",\n    \"customizeText\": \"function(e) {return '<span>'+e.valueText+'</span><br/>'+e.item.argument;}\"\n  }\n}",
+      "DashboardDefinitionId": "8a04adab-0f5d-4a7e-8b1d-7edb2ff86096"
+    }
+  ]
+}
