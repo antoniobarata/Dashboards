@@ -1,0 +1,31 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "5974e05d-bd18-4a0f-8dbb-45ad1fc5943b",
+  "Name": "Employees",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentsConfiguration": "{\n}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "9e8fc3f0-a49f-40d2-83bf-c81edc8e2227",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select e.Oid,\\r\\n       e.Name as [Name],\\r\\n       c.name as Company,\\r\\n       u.Name as [User],\\r\\n\\t   e.ExternalId,\\r\\n       e.MaxValue,\\r\\n       e.Active\\r\\nfrom   Employee e Left Outer Join [User] u On e.[User]=u.Oid ,\\r\\n\\t   Company c\\r\\nwhere  e.company = c.oid\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"entity\": \"employee\"\r\n}",
+      "DashboardDefinitionId": "5974e05d-bd18-4a0f-8dbb-45ad1fc5943b"
+    }
+  ]
+}
