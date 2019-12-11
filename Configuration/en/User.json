@@ -1,0 +1,32 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "0b27b7e7-5982-46fe-8ac4-3660bcae8979",
+  "Name": "User",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "user",
+  "DocumentsConfiguration": "{\n    \n}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "555be95a-f0af-45f2-bda8-b64225bb728e",
+      "Name": "User",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":20,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select u.Oid,\\r\\n\\t   u.[Name],\\r\\n\\t   u.AdUserName, \\r\\n\\t   c.[Name] as Company,\\r\\n\\t   d.[Name] as Department\\r\\nFrom [User] u, Company c, Department d  where u.Company = c.Oid and u.Department = d.Oid\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"entity\": \"user\",\r\n    \"paging\": {\r\n            \"pageSize\": 10\r\n    },\r\n    \"onToolbarPreparing\": \"function(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        template: 'toggleHeaderFilterButtonTemplate'\\r\\n    });\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        widget: 'dxButton',\\r\\n        options: {\\r\\n            icon: 'plus', onClick: function () {\\r\\n                SkillsWorkflow.genericNew('user', 500, 700);\\r\\n            }\\r\\n        }\\r\\n    })\\r\\n\\r\\n}\"\r\n}",
+      "DashboardDefinitionId": "0b27b7e7-5982-46fe-8ac4-3660bcae8979"
+    }
+  ]
+}
