@@ -1,0 +1,32 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "f88f3708-1059-4bcf-8084-905f2c4f5999",
+  "Name": "Roles",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "role",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "fedd883b-833f-4a28-846a-af7f8bec0400",
+      "Name": "Role",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"\",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetXPosition\": 0,\r\n        \"WidgetYPosition\": 0,\r\n        \"WidgetRows\": 24,\r\n        \"WidgetColumns\": 48,\r\n        \"WidgetHeader\": {\r\n            \"showTitle\": false,\r\n            \"showSubTitle\": true,\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": []\r\n            },\r\n            \"WidgetPeriodChooser\": {\r\n                \"visible\": false,\r\n                \"type\": \"\",\r\n                \"startDate\": null,\r\n                \"endDate\": null\r\n            }\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"select * from SecuritySystemRole where GCRecord is null\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {\r\n            \"PreviousPeriod\": {\r\n                \"Show\": false,\r\n                \"KeyFieldName\": \"\",\r\n                \"Type\": 0\r\n            },\r\n            \"RequiredFilters\": []\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"entity\": \"role\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        \"IsAdministrative\",\r\n        \"CanEditModel\"\r\n    ]\r\n}",
+      "DashboardDefinitionId": "f88f3708-1059-4bcf-8084-905f2c4f5999"
+    }
+  ]
+}
