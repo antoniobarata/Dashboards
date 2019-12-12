@@ -1,16 +1,17 @@
 {
   "DashboardDefinitionRoles": [],
-  "Id": "010e4419-cf8f-4ec9-afb2-5c1924fe2c7d",
-  "Name": "workflow",
+  "Id": "e10ea109-3f6d-49b0-9474-9740ccab25fe",
+  "Name": "Workflow test",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
+  "DocumentTypeName": "workflow",
   "DocumentsConfiguration": "{\r\n}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "3cf7d249-3e4b-4a75-88e2-5dea6c7be283",
+      "Id": "768a886d-4958-4a6a-a8be-7e4b16a28d79",
       "Name": "Workflow",
       "Active": true,
       "UseQuery": false,
@@ -25,7 +26,7 @@
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\"entity\":\"workflow\"}",
-      "DashboardDefinitionId": "010e4419-cf8f-4ec9-afb2-5c1924fe2c7d"
+      "DashboardDefinitionId": "e10ea109-3f6d-49b0-9474-9740ccab25fe"
     }
   ]
 }
