@@ -1,1 +1,48 @@
-{"DashboardDefinitionRoles":[],"Id":"68dec618-021a-4a4f-a26b-4c175431875a","Name":"Dashboard","Active":true,"Location":2,"DocumentId":"00000000-0000-0000-0000-000000000000","DocumentName":"","DocumentsConfiguration":"{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}","Templates":[],"DashboardDefinitionComponents":[{"Id":"41d8a828-2650-4d46-bc04-144e70974374","Name":"JobTypes","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":null,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\n    cdef.Oid, \\n    cdef.Name as 'Name', \\n    cdef.Location as 'Location', \\n    cdef.Active as 'Active', \\n    cdef.DocumentsConfiguration as 'Configuration',\\n    d.Name as 'Type' \\n from DashboardDefinition cdef\\n left join Document d on d.Oid = cdef.Document\\nwhere cdef.GCRecord IS NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    },\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Type\",\r\n            \"groupIndex\" : 0\r\n        },\r\n        {\r\n            \"dataField\": \"Name\"\r\n        },\r\n        {\r\n            \"dataField\": \"Configuration\"\r\n        },\r\n        {\r\n            \"dataField\": \"Location\",\r\n            \"groupIndex\": 1\r\n        },\r\n        {\r\n            \"dataField\": \"Active\"\r\n        }\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'        });        var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('dashboard', dataGrid);                }            }        });     }\"\r\n}","DashboardDefinitionId":"68dec618-021a-4a4f-a26b-4c175431875a"}]}
+{
+  "DashboardDefinitionRoles": [
+    {
+      "AccessRoleId": "04f48e2c-8f92-41d2-9b9e-010cf2f0b48a",
+      "DashboardDefinitionId": "c83dbd1c-fa91-4773-8217-c327f7bd75ea",
+      "AccessRoleName": "ContractedTimeWrite"
+    },
+    {
+      "AccessRoleId": "60efc496-5a20-43b4-9a76-006b5670b24f",
+      "DashboardDefinitionId": "c83dbd1c-fa91-4773-8217-c327f7bd75ea",
+      "AccessRoleName": "Responsable"
+    },
+    {
+      "AccessRoleId": "b4d81db0-1bf9-4a91-8c60-01e18cba44b8",
+      "DashboardDefinitionId": "c83dbd1c-fa91-4773-8217-c327f7bd75ea",
+      "AccessRoleName": "DocumentCreate"
+    }
+  ],
+  "Id": "c83dbd1c-fa91-4773-8217-c327f7bd75ea",
+  "Name": "Dashboards",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "workspace",
+  "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "af195a21-1496-44ce-918c-0e93e4d9af1c",
+      "Name": "Dashboards",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\n    cdef.Oid, \\n    cdef.Name as 'Name', \\n    cdef.Location as 'Location', \\n    cdef.Active as 'Active', \\n    cdef.DocumentsConfiguration as 'Configuration',\\n    d.Name as 'Type' \\n from DashboardDefinition cdef\\n left join Document d on d.Oid = cdef.Document\\nwhere cdef.GCRecord IS NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"stateStoring\":{\"enabled\":false},\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Type\",\"groupIndex\":0},{\"dataField\":\"Name\"},{\"dataField\":\"Configuration\"},{\"dataField\":\"Location\",\"groupIndex\":1},{\"dataField\":\"Active\"}],\"onToolbarPreparing\":\"function(e) {         e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'        });        var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('dashboard', dataGrid);                }            }        });     }\",\"entity\":\"dashboard\"}",
+      "DashboardDefinitionId": "c83dbd1c-fa91-4773-8217-c327f7bd75ea"
+    }
+  ]
+}
