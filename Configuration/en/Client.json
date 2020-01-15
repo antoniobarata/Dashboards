@@ -2,21 +2,21 @@
   "DashboardDefinitionRoles": [
     {
       "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "7668fcef-7fa1-48db-a3cc-41f4041fcbea",
+      "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
       "AccessRoleName": "Administrator"
     },
     {
       "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "7668fcef-7fa1-48db-a3cc-41f4041fcbea",
+      "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
       "AccessRoleName": "Responsible Profile"
     },
     {
       "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "7668fcef-7fa1-48db-a3cc-41f4041fcbea",
+      "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
       "AccessRoleName": "Requester Profile"
     }
   ],
-  "Id": "7668fcef-7fa1-48db-a3cc-41f4041fcbea",
+  "Id": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
   "Name": "Client",
   "Active": true,
   "Location": 2,
@@ -24,16 +24,10 @@
   "DocumentName": "",
   "DocumentTypeName": "commercialclient",
   "DocumentsConfiguration": "{}",
-  "Templates": [
-    {
-      "Id": "9c6269b1-24d4-4337-a812-84a64ea41be9",
-      "Name": "Template example.xlsx",
-      "RelativePath": "DashboardDefinitions\\7668fcef-7fa1-48db-a3cc-41f4041fcbea\\Template example.xlsx"
-    }
-  ],
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "f9b53ab3-32bb-473a-8488-f4c3a11a95c8",
+      "Id": "518e3218-8c92-4025-820c-d1229b4ca91d",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,
@@ -48,8 +42,10 @@
       },
       "AnalyticsApiUrl": null,
       "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Client.Name', 'client');}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"caption\":\"\",\"alignment\":\"center\",\"format\":{\"image\":{\"mapping\":{\"id\":\"Oid\",\"name\":\"Name\",\"hasImage\":\"ClientHasImage\"},\"size\":\"small\"}},\"entity\":\"client\"},{\"dataField\":\"Name\"},{\"dataField\":\"Code\"},{\"dataField\":\"ExternalId\"},{\"dataField\":\"AllowsTimesheet\"},{\"dataField\":\"CreatedOn\"},{\"dataField\":\"ModifiedOn\"}],\"onToolbarPreparing\":\"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: 'after',             \\r\\n        template: 'toggleHeaderFilterButtonTemplate'    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: 'after',            \\r\\n            widget: 'dxButton',             \\r\\n            options: { icon: 'plus', onClick: function() { \\r\\n                SkillsWorkflow.genericNew('client', 455, 720);            \\r\\n                }        \\r\\n            }   \\r\\n        });\\r\\n        var dataGrid = e.component;\\r\\n        e.toolbarOptions.items.unshift({\\r\\n            location: 'after',\\r\\n            widget: 'dxButton',\\r\\n            options: {\\r\\n                icon: 'fal fa-times', onClick: function () {\\r\\n                    SW.genericDelete('client', dataGrid);\\r\\n                }\\r\\n            }\\r\\n        });\\r\\n}\",\"entity\":\"client\"}",
-      "DashboardDefinitionId": "7668fcef-7fa1-48db-a3cc-41f4041fcbea"
+      "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c"
     }
   ],
-  "QueryText": null
+  "QueryText": null,
+  "UseStore": false,
+  "StoreEntity": null
 }
