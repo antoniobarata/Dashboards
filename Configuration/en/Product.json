@@ -6,13 +6,33 @@
       "AccessRoleName": "AdministrationCreate"
     },
     {
+      "AccessRoleId": "9302d41e-ba15-4bc6-8925-d535104024fe",
+      "DashboardDefinitionId": "8ac0045e-0215-4a31-bc28-ef0293b410ed",
+      "AccessRoleName": "AdministrationCreate"
+    },
+    {
       "AccessRoleId": "60efc496-5a20-43b4-9a76-006b5670b24f",
       "DashboardDefinitionId": "8ac0045e-0215-4a31-bc28-ef0293b410ed",
       "AccessRoleName": "Responsable"
+    },
+    {
+      "AccessRoleId": "60efc496-5a20-43b4-9a76-006b5670b24f",
+      "DashboardDefinitionId": "8ac0045e-0215-4a31-bc28-ef0293b410ed",
+      "AccessRoleName": "Responsable"
+    },
+    {
+      "AccessRoleId": "60efc496-5a20-43b4-9a76-006b5670b24f",
+      "DashboardDefinitionId": "8ac0045e-0215-4a31-bc28-ef0293b410ed",
+      "AccessRoleName": "Responsable"
+    },
+    {
+      "AccessRoleId": "9302d41e-ba15-4bc6-8925-d535104024fe",
+      "DashboardDefinitionId": "8ac0045e-0215-4a31-bc28-ef0293b410ed",
+      "AccessRoleName": "AdministrationCreate"
     }
   ],
   "Id": "8ac0045e-0215-4a31-bc28-ef0293b410ed",
-  "Name": "hdhdh",
+  "Name": "Products",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -22,22 +42,25 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "f3983aa9-841a-443f-95ca-87be4a01eeb3",
+      "Id": "a94224ed-152b-4828-ab56-42a652a65a4f",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"queryText\",\"value\":\"select  cc.Oid as ClientId,\\r\\n        cc.Name as ClientName,\\r\\n        cc.HasImage as ClientHasImage,\\r\\n        ccp.*\\r\\nfrom CommercialClientProduct ccp, CommercialClient cc, WorkflowState ws\\r\\nwhere cc.Oid = ccp.CommercialClient\\r\\n      and ws.Oid=cc.WorkflowState\\r\\n      AND WS.NAME != 'Canceled'\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Departments by company \",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetFrameStyle\": {},\r\n        \"WidgetXPosition\": 0,\r\n        \"WidgetYPosition\": 0,\r\n        \"WidgetRows\": 24,\r\n        \"WidgetColumns\": 48,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"ShowTitle\": false,\r\n            \"ShowSubTitle\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Integration Errors\",\r\n                        \"metricFieldValue\": \"Integration Errors\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": false,\r\n            \"showTitle\": false\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"-- select  cc.Oid as ClientId,\\r\\n--         cc.Name as ClientName,\\r\\n--         cc.HasImage as ClientHasImage,\\r\\n--         ccp.CommercialClient,\\r\\n-- \\t\\tccp.NameAndExternalId,\\r\\n--         ccp.*\\r\\n-- from CommercialClientProduct ccp, CommercialClient cc, WorkflowState ws\\r\\n-- where cc.Oid = ccp.CommercialClient\\r\\n--       and ws.Oid=cc.WorkflowState\\r\\n--       AND WS.NAME != 'Canceled'\\r\\nselect  cc.Oid as ClientId,\\r\\n        cc.Name as ClientName,\\r\\n        cc.HasImage as ClientHasImage,\\r\\n        ccp.CommercialClient,\\r\\n\\t\\tccp.NameAndExternalId,\\r\\n\\t\\tccp.Oid,\\r\\n        ccp.[Name],\\r\\n\\t\\tccp.Code,\\r\\n\\t\\tccp.Active,\\r\\n\\t\\tccp.AllowsTimesheet,\\r\\n\\t\\tccp.ExternalId\\r\\nfrom CommercialClientProduct ccp, CommercialClient cc, WorkflowState ws\\r\\nwhere cc.Oid = ccp.CommercialClient\\r\\n      and ws.Oid=cc.WorkflowState\\r\\n      AND WS.NAME != 'Canceled'\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {}\r\n    }\r\n]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'commercialclientproduct');}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        {\r\n            \"dataField\": \"ClientName\",\r\n            \"groupIndex\": 0,\r\n            \"groupCellTemplate\": \"function groupCell(e, i) {                  var h1=document.createElement('span');                  var h=document.createElement('span');                    e.append(h1);                       var data='';                    if(i.data.items != null){ data = i.data.items[                    0                ]            }                     else { data= i.data.collapsedItems[                    0                ]            }                                        SW.showImage(h1, 'client', 'small', data.ClientHasImage, data.ClientName, data.ClientId);                      e.append(h);                                              var ht= ' ' + i.text + ' ';                                          h.innerHTML = ht;        }\",\r\n            \"cellTemplate\": \"function cellTemplate(e, i) {                  var h1=document.createElement('span');                  var h=document.createElement('span');                    e.append(h1);                        debugger;                    SW.showImage(h1, 'client', 'small', i.data.ClientHasImage, i.data.ClientName, i.data.ClientId);                      e.append(h);                                              var ht= ' ' + i.text + ' ';                                          h.innerHTML = ht;    }\"\r\n        },\r\n        {\r\n            \"dataField\": \"Name\"\r\n        },\r\n        {\r\n            \"dataField\": \"Code\"\r\n        },\r\n        {\r\n            \"dataField\": \"ExternalId\"\r\n        },\r\n        {\r\n            \"dataField\": \"Active\"\r\n        },\r\n        {\r\n            \"dataField\": \"AllowsTimesheet\"\r\n        }\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'});        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('commercialclientproduct',        455,        720);    }}});}\",\r\n    \"entity\": \"commercialclientproduct\"\r\n}",
+      "Configuration": "{\r\n    \"onRowClick\": \"function(e){\\r\\n    \\r\\n        if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'commercialclientproduct');}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        {\r\n            \"dataField\": \"ClientName\",\r\n            \"groupIndex\": 0,\r\n            \"groupCellTemplate\": \"function groupCell(e, i) {                  var h1=document.createElement('span');                  var h=document.createElement('span');                    e.append(h1);                       var data='';                    if(i.data.items != null){ data = i.data.items[                    0                ]            }                     else { data= i.data.collapsedItems[                    0                ]            }                                        SW.showImage(h1, 'client', 'small', data.ClientHasImage, data.ClientName, data.ClientId);                      e.append(h);                                              var ht= ' ' + i.text + ' ';                                          h.innerHTML = ht;        }\",\r\n            \"cellTemplate\": \"function cellTemplate(e, i) {                  var h1=document.createElement('span');                  var h=document.createElement('span');                    e.append(h1);                                           SW.showImage(h1, 'client', 'small', i.data.ClientHasImage, i.data.ClientName, i.data.ClientId);                      e.append(h);                                              var ht= ' ' + i.text + ' ';                                          h.innerHTML = ht;    }\"\r\n        },\r\n        {\r\n            \"dataField\": \"Name\"\r\n        },\r\n        {\r\n            \"dataField\": \"Code\"\r\n        },\r\n        {\r\n            \"dataField\": \"ExternalId\"\r\n        },\r\n        {\r\n            \"dataField\": \"Active\"\r\n        },\r\n        {\r\n            \"dataField\": \"AllowsTimesheet\"\r\n        }\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'});        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('commercialclientproduct',        455,        720);    }}});}\",\r\n    \"entity\": \"commercialclientproduct\"\r\n}",
       "DashboardDefinitionId": "8ac0045e-0215-4a31-bc28-ef0293b410ed"
     }
-  ]
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null
 }

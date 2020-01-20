@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "66568526-7c24-47e1-acaa-f1197cc62df6",
+      "Id": "aa443f24-8b89-424b-8f83-58b5c337a7f5",
       "Name": "Expense Item Type",
       "Active": true,
       "UseQuery": true,
@@ -28,5 +28,8 @@
       "Configuration": "{\r\n    \"entity\": \"expenseitemtypes\",\r\n    \"onRowClick\": \"function(e) { if (e.rowType == 'data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'expenseitemtype', 650, 750); }\",\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        {\r\n            \"dataField\": \"Name\"\r\n        },\r\n        {\r\n            \"dataField\": \"Company\"\r\n        },\r\n        {\r\n            \"dataField\": \"Vat\"\r\n        },\r\n        {\r\n            \"dataField\": \"VatDeductiblePercentage\"\r\n        },\r\n        {\r\n            \"dataField\": \"Value\"\r\n        },\r\n        {\r\n            \"dataField\": \"Active\"\r\n        }\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {        var dataGrid = e.component;       e.toolbarOptions.items.unshift({                      location: 'after',                template: 'toggleHeaderFilterButtonTemplate'          });         e.toolbarOptions.items.unshift({                       location: 'after',                       widget: 'dxButton',                       options: { icon: 'plus', onClick: function() {                              SkillsWorkflow.genericNew('expenseitemtype',650,900);                          }                    }            });                   var dataGrid = e.component;                              e.toolbarOptions.items.unshift({                               location: 'after',                               widget: 'dxButton',                               options: { icon: 'fal fa-times', onClick: function() {                                      SW.genericDelete('expenseitemtype', dataGrid);                                  }                           }                   });}\"\r\n}",
       "DashboardDefinitionId": "686584f9-141e-444d-b9ca-f87ba25d55e1"
     }
-  ]
+  ],
+  "QueryText": null,
+  "UseStore": false,
+  "StoreEntity": null
 }

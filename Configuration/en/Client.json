@@ -6,6 +6,21 @@
       "AccessRoleName": "Administrator"
     },
     {
+      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+      "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+      "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
+      "AccessRoleName": "Responsible Profile"
+    },
+    {
+      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+      "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
+      "AccessRoleName": "Requester Profile"
+    },
+    {
       "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
       "DashboardDefinitionId": "b5edf8c8-7972-449c-8aae-a1a0f7de4a3c",
       "AccessRoleName": "Responsible Profile"
@@ -27,7 +42,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "518e3218-8c92-4025-820c-d1229b4ca91d",
+      "Id": "700f0018-6b3e-42f0-a749-281b1050a251",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,

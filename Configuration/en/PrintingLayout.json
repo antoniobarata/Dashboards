@@ -28,5 +28,8 @@
       "Configuration": "{\r\n    \"entity\": \"printinglayouts\",\r\n    \"onRowClick\": \"function(e){ if(e.rowType=='data') { SkillsWorkflow.genericPreview(e.key.Oid.toString(), 'Name', 'printinglayout',300,500)};}\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        {\r\n            \"dataField\": \"DataType\"\r\n        },\r\n        {\r\n            \"dataField\": \"IsInPlaceReport\"\r\n        }\r\n    ],\r\n    \"allowNew\": false,\r\n    \"allowBulk\": false\r\n}",
       "DashboardDefinitionId": "55e4fa1c-37e5-4064-83ad-f0579a0857da"
     }
-  ]
+  ],
+  "QueryText": null,
+  "UseStore": false,
+  "StoreEntity": null
 }
