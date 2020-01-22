@@ -1,1 +1,35 @@
-{"DashboardDefinitionRoles":[],"Id":"4047789e-1d99-4768-af22-95c8bc342d14","Name":"Transitions","Active":true,"Location":2,"DocumentId":"00000000-0000-0000-0000-000000000000","DocumentName":"","DocumentTypeName":"workflowtransition","DocumentsConfiguration":"{\r\n}","Templates":[],"DashboardDefinitionComponents":[{"Id":"425ca5ca-10c5-4b40-a829-c3070bd7006f","Name":"Transitions","Active":true,"UseQuery":true,"Query":null,"Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT wt.[Oid]\\r\\n      ,wt.[Name]\\r\\n      ,doc.[Name] as 'Document'\\r\\n      ,dty.[Name] as 'Workflow'\\r\\n      ,ws.[Name] as 'FromWorkflowState'\\r\\n      ,wt.[Order]\\r\\n      ,wt.[RequestConfirmation]\\r\\n      ,wt.[MustSendNotification]\\r\\n      ,wt.[CommentRequired]\\r\\n      ,wt.[HoursRequired]\\r\\n      ,wt.[FileUploadRequired]\\r\\n      ,wt.[FileUploadFolder]\\r\\n  FROM \\r\\n    [WorkflowStateTransition] as wt,\\r\\n    [Document] as doc,\\r\\n    [DocumentType] as dty,\\r\\n    [WorkflowState] as ws\\r\\n  where \\r\\n    wt.[Document] = doc.[Oid] AND\\r\\n    wt.[DocumentType] = dty.[Oid] AND \\r\\n    wt.FromWorkflowState =  ws.[Oid]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":null,"Configuration":"{\n    \"allowNew\": false,\n    \"allowDelete\": false,\n    \"allowBulk\": false,\n    \"selection\": {\n        \"mode\": \"single\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        },\n        {\n            \"dataField\": \"Name\"\n        },\n        {\n            \"dataField\": \"Document\",\n            \"groupIndex\": 0\n        },\n        {\n            \"dataField\": \"Workflow\"\n        },\n        {\n            \"dataField\": \"FromWorkflowState\"\n        },\n        {\n            \"dataField\": \"Order\"\n        },\n        {\n            \"dataField\": \"RequestConfirmation\"\n        },\n        {\n            \"dataField\": \"MustSendNotification\"\n        },\n        {\n            \"dataField\": \"CommentRequired\"\n        },\n        {\n            \"dataField\": \"HoursRequired\"\n        },\n        {\n            \"dataField\": \"FileUploadRequired\"\n        },\n        {\n            \"dataField\": \"FileUploadFolder\"\n        }\n    ],\n    \"entity\": \"workflowtransition\",\n    \"stateStoring\": {\n        \"enabled\": false\n    },\n    \"height\": \"100%\"\n}","DashboardDefinitionId":"4047789e-1d99-4768-af22-95c8bc342d14"}],"QueryText":null,"UseStore":false,"StoreEntity":null}
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "4047789e-1d99-4768-af22-95c8bc342d14",
+  "Name": "Transitions",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "workflowtransition",
+  "DocumentsConfiguration": "{\r\n}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "ccd43dd6-3543-46e5-a06a-d16ff1f2a411",
+      "Name": "Transitions",
+      "Active": true,
+      "UseQuery": true,
+      "Query": null,
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT wt.[Oid]\\r\\n      ,wt.[Name]\\r\\n      ,doc.[Name] as 'Document'\\r\\n      ,dty.[Name] as 'Workflow'\\r\\n      ,ws.[Name] as 'FromWorkflowState'\\r\\n      ,wt.[Order]\\r\\n      ,wt.[RequestConfirmation]\\r\\n      ,wt.[MustSendNotification]\\r\\n      ,wt.[CommentRequired]\\r\\n      ,wt.[HoursRequired]\\r\\n      ,wt.[FileUploadRequired]\\r\\n      ,wt.[FileUploadFolder]\\r\\n  FROM \\r\\n    [WorkflowStateTransition] as wt,\\r\\n    [Document] as doc,\\r\\n    [DocumentType] as dty,\\r\\n    [WorkflowState] as ws\\r\\n  where \\r\\n    wt.[Document] = doc.[Oid] AND\\r\\n    wt.[DocumentType] = dty.[Oid] AND \\r\\n    wt.FromWorkflowState =  ws.[Oid]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": null,
+      "Configuration": "{\"allowNew\":false,\"allowDelete\":false,\"allowBulk\":false,\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Document\",\"groupIndex\":0},{\"dataField\":\"Workflow\",\"groupIndex\":1},{\"dataField\":\"FromWorkflowState\"},{\"dataField\":\"Order\"},{\"dataField\":\"RequestConfirmation\"},{\"dataField\":\"MustSendNotification\"},{\"dataField\":\"CommentRequired\"},{\"dataField\":\"HoursRequired\"},{\"dataField\":\"FileUploadRequired\"},{\"dataField\":\"FileUploadFolder\"}],\"entity\":\"workflowtransition\",\"stateStoring\":{\"enabled\":\"true\"},\"height\":\"100%\",\"onRowClick\":\"function(e) { if (e.rowType == 'data') \\r\\n    SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'workflowtransition', 550, 750); \\r\\n    }\",\"onToolbarPreparing\":\"function(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        template: 'toggleHeaderFilterButtonTemplate'\\r\\n    });\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        widget: 'dxButton',\\r\\n        options: {\\r\\n            icon: 'plus', onClick: function () {\\r\\n                SkillsWorkflow.genericNew('workflowtransition', 550, 750);\\r\\n            }\\r\\n        }\\r\\n    }); var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after', widget: 'dxButton',\\r\\n        options: {\\r\\n            icon: 'fal fa-times', onClick: function () {\\r\\n                SW.genericDelete('workflowtransition', dataGrid);\\r\\n            }\\r\\n        }\\r\\n    });\\r\\n}\"}",
+      "DashboardDefinitionId": "4047789e-1d99-4768-af22-95c8bc342d14"
+    }
+  ],
+  "QueryText": null,
+  "UseStore": false,
+  "StoreEntity": null
+}
