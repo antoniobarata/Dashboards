@@ -1,6 +1,6 @@
 {
   "DashboardDefinitionRoles": [],
-  "Id": "c5f54393-13f2-4420-9e23-7480f822f671",
+  "Id": "a1b19b04-4733-42fe-850c-5dba3105f096",
   "Name": "Products",
   "Active": true,
   "Location": 1,
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "e55ff8f2-628e-4b1c-9507-b92c1468106b",
+      "Id": "e0d99ebf-c41f-4b91-a905-aa03b25d6c92",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -25,8 +25,8 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"user\",\"grid\":{\"call\":\"function getCall(entityId) {\\n   return 'users/'+entityId+'/commercial-products'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\r\\n    return {\\r\\n        Id: response.Id,\\r\\n        Name: response.Name,\\r\\n        ImageId: response.CommercialProductId,\\r\\n        Info1: response.CommercialClientName\\r\\n    }\\r\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n   return 'users/'+entityId+'/commercial-products'\\n}\",\"model\":\"function model(item, entityId){\\n    return {\\n        CommercialProductId: item.Id,\\n        UserId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall() {\\n   return 'commercialProducts'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\r\\n    debugger;\\r\\n    return {\\r\\n        Id: response.Id,\\r\\n        Name: response.Name,\\r\\n        ImageId: null,\\r\\n        ImageName: null,\\r\\n        Info1: response.CommercialClientName,\\r\\n        Info2: null,\\r\\n    }\\r\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\ndebugger;\\n   return 'users/'+entityId+'/commercial-products/'+item.Id\\n}\"},\"entityAssociation\":\"commercialclientproduct\",\"form\":{\"model\":\"function getPutModel(item, entityId) {\\n    return null\\n}\",\"call\":\"function getCall(item, entityId){\\n    return null \\n}\"}}",
-      "DashboardDefinitionId": "c5f54393-13f2-4420-9e23-7480f822f671"
+      "Configuration": "{\"entity\":\"user\",\"grid\":{\"call\":\"function getCall(entityId) {\\n   return 'users/'+entityId+'/commercial-products'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\r\\n    return {\\r\\n        Id: response.Id,\\r\\n        Name: response.Name,\\r\\n        ImageId: response.CommercialProductId,\\r\\n        Info1: response.CommercialClientName+' - '+response.ExternalId\\r\\n    }\\r\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n   return 'users/'+entityId+'/commercial-products'\\n}\",\"model\":\"function model(item, entityId){\\n    return {\\n        CommercialProductId: item.Id,\\n        UserId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall() {\\n   return 'commercialProducts'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\r\\n    return {\\r\\n        Id: response.Id,\\r\\n        Name: response.Name,\\r\\n        ImageId: null,\\r\\n        ImageName: null,\\r\\n        Info1: response.CommercialClientName+' - '+response.ExternalId,\\r\\n        Info2: null,\\r\\n    }\\r\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n   return 'users/'+entityId+'/commercial-products/'+item.Id\\n}\"},\"entityAssociation\":\"commercialclientproduct\",\"form\":{\"model\":\"function getPutModel(item, entityId) {\\n    return null\\n}\",\"call\":\"function getCall(item, entityId){\\n    return null \\n}\"}}",
+      "DashboardDefinitionId": "a1b19b04-4733-42fe-850c-5dba3105f096"
     }
   ],
   "QueryText": "",
