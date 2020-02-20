@@ -1,67 +1,74 @@
-{
-  "DashboardDefinitionRoles": [],
-  "Id": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd",
-  "Name": "Global Resources Allocation",
-  "Active": true,
-  "Location": 0,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":true}}",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "14702085-da03-4af6-9f27-3fd0d7bb6a30",
-      "Name": "Unassigned Jobs",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 9,
-      "Order": 2,
-      "Parameters": "[{\"WidgetSubTitle\":\"Assigned in Blue & Unassigned in Red\",\"WidgetType\":\"rangeSelector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"startDate\":\"2019-01-01\",\"endDate\":\"2019-12-31\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"query\",\"value\":\"globalQuery/Resources - Unassigned/execute\",\"mapping\":\"\"}},\"QueryConfiguration\":{\"RequiredFilters\":[\"departmentId\",\"currentMonth\"]}}]",
-      "DashboardComponentType": {
-        "Id": "be9c4895-90b8-4755-9054-caa7770b6a09",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "",
-      "Configuration": "{\r\n    \"margin\": {\r\n        \"top\": 0\r\n    },\r\n    \"size\": {\r\n        \"height\": 100\r\n    },\r\n    \"containerBackgroundColor\": \"#efefef\",\r\n    \"selectedRangeColor\": \"#f5564a\",\r\n    \"chart\": {\r\n        \"commonSeriesSettings\": {\r\n            \"type\": \"stepArea\",\r\n            \"argumentField\": \"JobStartDate\"\r\n        },\r\n        \"series\": [\r\n            {\r\n                \"valueField\": \"Jobs\",\r\n                \"color\": \"#1db2f5\"\r\n            },\r\n            {\r\n                \"valueField\": \"JobsUnassigned\",\r\n                \"color\":\"#ec9e96\"\r\n            }\r\n        ]\r\n    },\r\n    \"scale\": {\r\n        \"minorTickInterval\": \"day\",\r\n        \"tickInterval\": \"day\",\r\n        \"valueType\": \"datetime\",\r\n        \"marker\": {\r\n            \"visible\": false\r\n        }\r\n    },\r\n    \"sliderMarker\": {\r\n        \"format\": \"day\",\r\n        \"color\": \"#da5859\"\r\n    },\r\n    \"value\": [\r\n        \"2019/06/01\",\r\n        \"2019/06/02\"\r\n    ]\r\n}",
-      "DashboardDefinitionId": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd"
-    },
-    {
-      "Id": "336f478e-dcd7-4498-a5db-4154de9dd10b",
-      "Name": "Resource Allocation",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 12,
-      "Order": 4,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Make sure that all Unassigned Tasks are Assigned to the proper Resources\",\r\n        \"WidgetType\": \"resourcescheduler\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Forecast\",\r\n                        \"metricFieldValue\": \"TimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Actual\",\r\n                        \"metricFieldValue\": \"UtilizationPercentGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"resources\": {\r\n                \"value\": \"Resources - Users\",\r\n                \"type\": \"query\",\r\n                \"mapping\": {\r\n                    \"id\": \"UserId\",\r\n                    \"name\": \"UserName\",\r\n                    \"typology\": \"UserTypology\",\r\n                    \"hasImage\": \"HasImage\"\r\n                }\r\n            },\r\n            \"assignments\": {\r\n                \"value\": \"Resources - Jobs\",\r\n                \"type\": \"query\",\r\n                \"mapping\": {\r\n                    \"id\": \"AssignmentId\",\r\n                    \"startDateUtc\": \"JobStartDate\",\r\n                    \"endDateUtc\": \"JobEndDate\",\r\n                    \"name\": \"JobName\",\r\n                    \"eventId\": \"JobId\",\r\n                    \"resourceId\": \"UserId\",\r\n                    \"eventColor\": \"Color\",\r\n                    \"workload\": \"Workload\",\r\n                    \"clientId\": \"ClientId\",\r\n                    \"clientName\": \"ClientName\",\r\n                    \"projectName\": \"projectName\"\r\n                }\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"departmentId\",\r\n                \"startDate\",\r\n                \"endDate\",\r\n                \"resourceFunction\"\r\n            ]\r\n        }\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "be9c4895-90b8-4755-9054-caa7770b6a09",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/RoomDashboards-Jobs/execute",
-      "Configuration": "{\n    \"startDate\": \"2019-01-01 08:00\",\n    \"endDate\": \"2019-01-15 21:00\",\n    \"rowHeight\": 60,\n    \"height\": 540,\n    \"barMargin\": 10,\n    \"columns\": [\n        {\n            \"text\": \"Resources\",\n            \"field\": \"name\",\n            \"width\": 120,\n            \"region\": \"left\",\n            \"htmlEncode\": false,\n            \"renderer\": \"function renderer(_ref){ if(!_ref.record.hasImage){ return `<div style=' display: flex; align-items: center; justify-content: space-between; '> <div style='border-radius: 250px; overflow: hidden; width: 26px; height: 26px; border: none;'> <div style='color: rgb(42, 128, 185); background-color: rgb(197, 219, 243); font-size: 14px; height: 100%; line-height: 22px; display: flex; align-items: center; justify-content: center'> <span style='text-align: center;'> ${_ref.record.name[0]} </span> </div> </div> <div style='font: 11px \\\"Varela Round\\\";    color: #757575;width: calc(100% - 32px);'>Unassigned</div></div>`; }    if(_ref.record.hasImage){return `<div style='display: flex;width: 100%;align-items: center;justify-content: space-between;'> <img style='border-radius: 20px; height: 26px;' src=${SkillsWorkflow.getUserImages([_ref.record.id])}/> <div style='width: calc(100% - 32px); font: 11px \\\"Varela Round\\\";    color: #757575;'> <div style='overflow: hidden;text-overflow: ellipsis;white-space: nowrap;'>${_ref.record.name}</div> <div style='overflow: hidden;text-overflow: ellipsis;white-space: nowrap;'>${_ref.record.typology}</div> </div> </div>`;}}\"\n        }\n    ],\n    \"eventStyle\": \"border\",\n    \"eventColor\": \"yellow\",\n    \"eventRenderer\": \"function({resourceRecord, eventRecord, assignmentRecord, tplData}) { return `<div style='width: 100%; cursor: pointer; border-radius: 4px; height: 34px; background-color: ${eventRecord.eventColor}; color: white;display: flex; justify-content: space-around; align-items: center;'><img style='border-radius: 20px; height: 26px;' src='${SkillsWorkflow.getClientImages([assignmentRecord.get('clientId')])}'><div style='width: calc( 100% - 36px); display: flex; align-items: center; justify-content: space-between;'><div style='width: 75%'><div style='width: 100%; margin-top: 3px; font-size: 12px; font-weight: normal; width: 100%; overflow: hidden; text-overflow: ellipsis; min-height: 17px;'>${eventRecord.name}</div><div style='margin-top: -6px; font-size: 10px; font-weight: normal; width: 100%; overflow: hidden; text-overflow: ellipsis; font-style: italic'>${assignmentRecord.projectName}</div></div><div style='width: 20%;font-size: 12px; margin: auto; text-align: right'><div style='height: 14px;'><i class='fal fa-clock' style='color: #f44336; font-weight: 600; border-radius: 50px;font-size: 12px; background-color: white;'></i></div><div id='duration'>23d</div></div></div</div>`;}\",\n    \"features\": {\n        \"columnLines\": true,\n        \"eventResize\": true,\n        \"eventEdit\": false\n    },\n    \"listeners\": {\n        \"eventdblclick\": \"function({ scheduler, eventRecord, event}){ SkillsWorkflow.preview(eventRecord.id, 'job') }\"\n    }\n}",
-      "DashboardDefinitionId": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd"
-    },
-    {
-      "Id": "6dd30659-a984-49ea-a274-f8db88646e75",
-      "Name": "Department and Month",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 3,
-      "Order": 1,
-      "Parameters": "[{\"WidgetSubTitle\":\"Select Department and Month to Review\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"\",\"value\":\"\",\"mapping\":\"\"}},\"QueryConfiguration\":{}}]",
-      "DashboardComponentType": {
-        "Id": "be9c4895-90b8-4755-9054-caa7770b6a09",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "",
-      "Configuration": "{\n    \"height\":100,\n    \"colCount\": 1,\n    \"items\": [\n        {\n            \"name\": \"Department\",\n            \"label\": {\n                \"text\": \"Department\"\n            },\n            \"editorType\": \"dxSelectBox\",\n            \"editorOptions\": {\n                \"searchEnabled\": true,\n                \"dataSource\": {\n                    \"load\": \"function(loadOptions){ var searchValue = (loadOptions.searchValue != null ? '%'+loadOptions.searchValue+'%' : ''); return SkillsWorkflow.executeAPI('POST', 'analytics/globalQuery/MyDepartmentsLookup/execute', null, {'searchTerm': searchValue}).toPromise().then(function(res){ debugger; return res.Data; }); }\",\n                    \"byKey\": \"function(key) { console.log('byKey'); }\"\n                },\n                \"value\": \"\",\n                \"onValueChanged\": \"function(e){ if(e.value != null) { console.log('Selected: ' + e.value); SkillsWorkflow.setDashboardFilter('departmentId', e.value); } }\",\n                \"valueExpr\": \"Id\",\n                \"displayExpr\": \"Name\",\n                \"width\": 250\n            },\n            \"noDataText\": \"Please wait...\"\n        },\n        {\n            \"name\": \"Month\",\n            \"label\": {\n                \"text\": \"Month\"\n            },\n            \"editorType\": \"dxDateBox\",\n            \"editorOptions\": {\n                \"displayFormat\":\"MMMM, y\",\n                \"maxZoomLevel\": \"year\", \n                \"minZoomLevel\": \"century\",\n                \"onInitialized\": \"function(e) { e.component.value = new Date(); }\",\n                \"onValueChanged\": \"function(e){ if(e.value != null) { console.log('Selected Date: ' + e.value); SkillsWorkflow.setDashboardFilter('currentMonth', e.value); } }\",\n                \"width\": 250\n            }\n        },\n        {\n            \"name\": \"Function\",\n            \"label\": {\n                \"text\": \"Function\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"editorOptions\": {\n                \"placeholder\": \"Type resource functon...\",\n                \"onInitialized\": \"function(e) { SkillsWorkflow.setDashboardFilter('resourceFunction', ''); }\",\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter('resourceFunction', e.value); } }\",\n                \"width\": 250\n            }\n        }\n    ]\n}",
-      "DashboardDefinitionId": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd"
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd",
+    "Name": "Global Resources Allocation",
+    "Active": true,
+    "Location": 0,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":true}}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "14702085-da03-4af6-9f27-3fd0d7bb6a30",
+            "Name": "Unassigned Jobs",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 9,
+            "Order": 2,
+            "Parameters": "[{\"WidgetSubTitle\":\"Assigned in Blue \u0026 Unassigned in Red\",\"WidgetType\":\"rangeSelector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"startDate\":\"2019-01-01\",\"endDate\":\"2019-12-31\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"query\",\"value\":\"globalQuery/Resources - Unassigned/execute\",\"mapping\":\"\"}},\"QueryConfiguration\":{\"RequiredFilters\":[\"departmentId\",\"currentMonth\"]}}]",
+            "DashboardComponentType": {
+                "Id": "be9c4895-90b8-4755-9054-caa7770b6a09",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\r\n    \"margin\": {\r\n        \"top\": 0\r\n    },\r\n    \"size\": {\r\n        \"height\": 100\r\n    },\r\n    \"containerBackgroundColor\": \"#efefef\",\r\n    \"selectedRangeColor\": \"#f5564a\",\r\n    \"chart\": {\r\n        \"commonSeriesSettings\": {\r\n            \"type\": \"stepArea\",\r\n            \"argumentField\": \"JobStartDate\"\r\n        },\r\n        \"series\": [\r\n            {\r\n                \"valueField\": \"Jobs\",\r\n                \"color\": \"#1db2f5\"\r\n            },\r\n            {\r\n                \"valueField\": \"JobsUnassigned\",\r\n                \"color\":\"#ec9e96\"\r\n            }\r\n        ]\r\n    },\r\n    \"scale\": {\r\n        \"minorTickInterval\": \"day\",\r\n        \"tickInterval\": \"day\",\r\n        \"valueType\": \"datetime\",\r\n        \"marker\": {\r\n            \"visible\": false\r\n        }\r\n    },\r\n    \"sliderMarker\": {\r\n        \"format\": \"day\",\r\n        \"color\": \"#da5859\"\r\n    },\r\n    \"value\": [\r\n        \"2019/06/01\",\r\n        \"2019/06/02\"\r\n    ]\r\n}",
+            "DashboardDefinitionId": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd"
+        },
+        {
+            "Id": "336f478e-dcd7-4498-a5db-4154de9dd10b",
+            "Name": "Resource Allocation",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 4,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Make sure that all Unassigned Tasks are Assigned to the proper Resources\",\r\n        \"WidgetType\": \"resourcescheduler\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Forecast\",\r\n                        \"metricFieldValue\": \"TimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Actual\",\r\n                        \"metricFieldValue\": \"UtilizationPercentGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"resources\": {\r\n                \"value\": \"Resources - Users\",\r\n                \"type\": \"query\",\r\n                \"mapping\": {\r\n                    \"id\": \"UserId\",\r\n                    \"name\": \"UserName\",\r\n                    \"typology\": \"UserTypology\",\r\n                    \"hasImage\": \"HasImage\"\r\n                }\r\n            },\r\n            \"assignments\": {\r\n                \"value\": \"Resources - Jobs\",\r\n                \"type\": \"query\",\r\n                \"mapping\": {\r\n                    \"id\": \"AssignmentId\",\r\n                    \"startDateUtc\": \"JobStartDate\",\r\n                    \"endDateUtc\": \"JobEndDate\",\r\n                    \"name\": \"JobName\",\r\n                    \"eventId\": \"JobId\",\r\n                    \"resourceId\": \"UserId\",\r\n                    \"eventColor\": \"Color\",\r\n                    \"workload\": \"Workload\",\r\n                    \"clientId\": \"ClientId\",\r\n                    \"clientName\": \"ClientName\",\r\n                    \"projectName\": \"projectName\"\r\n                }\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"departmentId\",\r\n                \"startDate\",\r\n                \"endDate\",\r\n                \"resourceFunction\"\r\n            ]\r\n        }\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "be9c4895-90b8-4755-9054-caa7770b6a09",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/RoomDashboards-Jobs/execute",
+            "Configuration": "{\n    \"startDate\": \"2019-01-01 08:00\",\n    \"endDate\": \"2019-01-15 21:00\",\n    \"rowHeight\": 60,\n    \"height\": 540,\n    \"barMargin\": 10,\n    \"columns\": [\n        {\n            \"text\": \"Resources\",\n            \"field\": \"name\",\n            \"width\": 120,\n            \"region\": \"left\",\n            \"htmlEncode\": false,\n            \"renderer\": \"function renderer(_ref){ if(!_ref.record.hasImage){ return `\u003cdiv style=\u0027 display: flex; align-items: center; justify-content: space-between; \u0027\u003e \u003cdiv style=\u0027border-radius: 250px; overflow: hidden; width: 26px; height: 26px; border: none;\u0027\u003e \u003cdiv style=\u0027color: rgb(42, 128, 185); background-color: rgb(197, 219, 243); font-size: 14px; height: 100%; line-height: 22px; display: flex; align-items: center; justify-content: center\u0027\u003e \u003cspan style=\u0027text-align: center;\u0027\u003e ${_ref.record.name[0]} \u003c/span\u003e \u003c/div\u003e \u003c/div\u003e \u003cdiv style=\u0027font: 11px \\\"Varela Round\\\";    color: #757575;width: calc(100% - 32px);\u0027\u003eUnassigned\u003c/div\u003e\u003c/div\u003e`; }    if(_ref.record.hasImage){return `\u003cdiv style=\u0027display: flex;width: 100%;align-items: center;justify-content: space-between;\u0027\u003e \u003cimg style=\u0027border-radius: 20px; height: 26px;\u0027 src=${SkillsWorkflow.getUserImages([_ref.record.id])}/\u003e \u003cdiv style=\u0027width: calc(100% - 32px); font: 11px \\\"Varela Round\\\";    color: #757575;\u0027\u003e \u003cdiv style=\u0027overflow: hidden;text-overflow: ellipsis;white-space: nowrap;\u0027\u003e${_ref.record.name}\u003c/div\u003e \u003cdiv style=\u0027overflow: hidden;text-overflow: ellipsis;white-space: nowrap;\u0027\u003e${_ref.record.typology}\u003c/div\u003e \u003c/div\u003e \u003c/div\u003e`;}}\"\n        }\n    ],\n    \"eventStyle\": \"border\",\n    \"eventColor\": \"yellow\",\n    \"eventRenderer\": \"function({resourceRecord, eventRecord, assignmentRecord, tplData}) { return `\u003cdiv style=\u0027width: 100%; cursor: pointer; border-radius: 4px; height: 34px; background-color: ${eventRecord.eventColor}; color: white;display: flex; justify-content: space-around; align-items: center;\u0027\u003e\u003cimg style=\u0027border-radius: 20px; height: 26px;\u0027 src=\u0027${SkillsWorkflow.getClientImages([assignmentRecord.get(\u0027clientId\u0027)])}\u0027\u003e\u003cdiv style=\u0027width: calc( 100% - 36px); display: flex; align-items: center; justify-content: space-between;\u0027\u003e\u003cdiv style=\u0027width: 75%\u0027\u003e\u003cdiv style=\u0027width: 100%; margin-top: 3px; font-size: 12px; font-weight: normal; width: 100%; overflow: hidden; text-overflow: ellipsis; min-height: 17px;\u0027\u003e${eventRecord.name}\u003c/div\u003e\u003cdiv style=\u0027margin-top: -6px; font-size: 10px; font-weight: normal; width: 100%; overflow: hidden; text-overflow: ellipsis; font-style: italic\u0027\u003e${assignmentRecord.projectName}\u003c/div\u003e\u003c/div\u003e\u003cdiv style=\u0027width: 20%;font-size: 12px; margin: auto; text-align: right\u0027\u003e\u003cdiv style=\u0027height: 14px;\u0027\u003e\u003ci class=\u0027fal fa-clock\u0027 style=\u0027color: #f44336; font-weight: 600; border-radius: 50px;font-size: 12px; background-color: white;\u0027\u003e\u003c/i\u003e\u003c/div\u003e\u003cdiv id=\u0027duration\u0027\u003e23d\u003c/div\u003e\u003c/div\u003e\u003c/div\u003c/div\u003e`;}\",\n    \"features\": {\n        \"columnLines\": true,\n        \"eventResize\": true,\n        \"eventEdit\": false\n    },\n    \"listeners\": {\n        \"eventdblclick\": \"function({ scheduler, eventRecord, event}){ SkillsWorkflow.preview(eventRecord.id, \u0027job\u0027) }\"\n    }\n}",
+            "DashboardDefinitionId": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd"
+        },
+        {
+            "Id": "6dd30659-a984-49ea-a274-f8db88646e75",
+            "Name": "Department and Month",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 3,
+            "Order": 1,
+            "Parameters": "[{\"WidgetSubTitle\":\"Select Department and Month to Review\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"\",\"value\":\"\",\"mapping\":\"\"}},\"QueryConfiguration\":{}}]",
+            "DashboardComponentType": {
+                "Id": "be9c4895-90b8-4755-9054-caa7770b6a09",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\n    \"height\":100,\n    \"colCount\": 1,\n    \"items\": [\n        {\n            \"name\": \"Department\",\n            \"label\": {\n                \"text\": \"Department\"\n            },\n            \"editorType\": \"dxSelectBox\",\n            \"editorOptions\": {\n                \"searchEnabled\": true,\n                \"dataSource\": {\n                    \"load\": \"function(loadOptions){ var searchValue = (loadOptions.searchValue != null ? \u0027%\u0027+loadOptions.searchValue+\u0027%\u0027 : \u0027\u0027); return SkillsWorkflow.executeAPI(\u0027POST\u0027, \u0027analytics/globalQuery/MyDepartmentsLookup/execute\u0027, null, {\u0027searchTerm\u0027: searchValue}).toPromise().then(function(res){ debugger; return res.Data; }); }\",\n                    \"byKey\": \"function(key) { console.log(\u0027byKey\u0027); }\"\n                },\n                \"value\": \"\",\n                \"onValueChanged\": \"function(e){ if(e.value != null) { console.log(\u0027Selected: \u0027 + e.value); SkillsWorkflow.setDashboardFilter(\u0027departmentId\u0027, e.value); } }\",\n                \"valueExpr\": \"Id\",\n                \"displayExpr\": \"Name\",\n                \"width\": 250\n            },\n            \"noDataText\": \"Please wait...\"\n        },\n        {\n            \"name\": \"Month\",\n            \"label\": {\n                \"text\": \"Month\"\n            },\n            \"editorType\": \"dxDateBox\",\n            \"editorOptions\": {\n                \"displayFormat\":\"MMMM, y\",\n                \"maxZoomLevel\": \"year\", \n                \"minZoomLevel\": \"century\",\n                \"onInitialized\": \"function(e) { e.component.value = new Date(); }\",\n                \"onValueChanged\": \"function(e){ if(e.value != null) { console.log(\u0027Selected Date: \u0027 + e.value); SkillsWorkflow.setDashboardFilter(\u0027currentMonth\u0027, e.value); } }\",\n                \"width\": 250\n            }\n        },\n        {\n            \"name\": \"Function\",\n            \"label\": {\n                \"text\": \"Function\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"editorOptions\": {\n                \"placeholder\": \"Type resource functon...\",\n                \"onInitialized\": \"function(e) { SkillsWorkflow.setDashboardFilter(\u0027resourceFunction\u0027, \u0027\u0027); }\",\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027resourceFunction\u0027, e.value); } }\",\n                \"width\": 250\n            }\n        }\n    ]\n}",
+            "DashboardDefinitionId": "12a746b1-ab8c-4e75-bdcd-e5407b2308bd"
+        }
+    ],
+    "Version": 2,
+    "Default": true,
+    "Dependencies": {
+        "DashboardSdk": "1.0.0",
+        "Analytics": "1.0.0",
+        "SkillsWorkflow": "1.0.0"
     }
-  ]
 }

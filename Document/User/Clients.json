@@ -1,1 +1,37 @@
-{"DashboardDefinitionRoles":[],"Id":"089a5605-f39e-49d7-a4ed-200068792d95","Name":"Clients","Active":true,"Location":1,"DocumentId":"00000000-0000-0000-0000-000000000000","DocumentName":"","DocumentTypeName":"user","DocumentsConfiguration":"[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false},\"fields\":[]}]","Templates":[],"DashboardDefinitionComponents":[{"Id":"8396cd4c-3de5-4e72-b17d-5dd5cfc23a38","Name":"ddd","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"9px 7px 0px 8px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":37,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\"entity\":\"user\",\"grid\":{\"call\":\"function getCall(entityId) {\\n    return 'users/'+entityId+'/commercialclientusers'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.CommercialClientId,\\n        Name: response.CommercialClientName,\\n        ImageId: response.CommercialClientId,\\n        ImageName: response.CommercialClientName,\\n        Info1: response.CommercialClientName,\\n        Info2: null,\\n    }\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n    return 'commercialclientusers'\\n}\",\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        CommercialClientId: item.Id,\\n        UserId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    return 'commercialclients/lookup'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    debugger;\\n    return 'commercialclientusers/' + item.Data.Id\\n}\"},\"entityAssociation\":\"client\",\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}","DashboardDefinitionId":"089a5605-f39e-49d7-a4ed-200068792d95"}],"QueryText":"","UseStore":false,"StoreEntity":null}
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "089a5605-f39e-49d7-a4ed-200068792d95",
+    "Name": "Clients",
+    "Active": true,
+    "Location": 1,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "user",
+    "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false},\"fields\":[]}]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "8396cd4c-3de5-4e72-b17d-5dd5cfc23a38",
+            "Name": "ddd",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"9px 7px 0px 8px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":37,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"entity\":\"user\",\"grid\":{\"call\":\"function getCall(entityId) {\\n    return \u0027users/\u0027+entityId+\u0027/commercialclientusers\u0027\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.CommercialClientId,\\n        Name: response.CommercialClientName,\\n        ImageId: response.CommercialClientId,\\n        ImageName: response.CommercialClientName,\\n        Info1: response.CommercialClientName,\\n        Info2: null,\\n    }\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027commercialclientusers\u0027\\n}\",\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        CommercialClientId: item.Id,\\n        UserId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    return \u0027commercialclients/lookup\u0027\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    debugger;\\n    return \u0027commercialclientusers/\u0027 + item.Data.Id\\n}\"},\"entityAssociation\":\"client\",\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}",
+            "DashboardDefinitionId": "089a5605-f39e-49d7-a4ed-200068792d95"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 3,
+    "Default": false
+}

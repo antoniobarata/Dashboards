@@ -2,4 +2,10 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+/SkillsWorkflow.Dashboards/.vs
+/SkillsWorkflow.Dashboards/SkillsWorkflow.Dashboards/Updater/.vs/Updater
+/SkillsWorkflow.Dashboards/SkillsWorkflow.Dashboards/Updater/bin/Debug/netcoreapp3.1
+/SkillsWorkflow.Dashboards/SkillsWorkflow.Dashboards/Updater/obj
+/SkillsWorkflow.Dashboards/SkillsWorkflow.Dashboards/Updater/bin/Release/netcoreapp3.1
 /.vs
+/SkillsWorkflow.Dashboards/SkillsWorkflow.Dashboards/Updater/Properties/PublishProfiles

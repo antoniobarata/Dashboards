@@ -1,1 +1,49 @@
-{"DashboardDefinitionRoles":[{"AccessRoleId":"37bb1c74-f352-4a97-a363-b442659a92b7","DashboardDefinitionId":"36ac28a3-cb2f-4dc3-b61a-a822fde0d13f","AccessRoleName":"Administrator"},{"AccessRoleId":"2ad451b7-c555-4056-bfaf-de2d6d560395","DashboardDefinitionId":"36ac28a3-cb2f-4dc3-b61a-a822fde0d13f","AccessRoleName":"Maintenance Profile"}],"Id":"36ac28a3-cb2f-4dc3-b61a-a822fde0d13f","Name":"Markets","Active":true,"Location":1,"DocumentId":"00000000-0000-0000-0000-000000000000","DocumentName":"","DocumentTypeName":"project","DocumentsConfiguration":"[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]","Templates":[],"DashboardDefinitionComponents":[{"Id":"26cd99a0-1b24-4a3a-b7d8-4e996e599f4a","Name":"Markets","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":20,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\"entity\":\"project\",\"entityAssociation\":\"market\",\"grid\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        AssociationId: response.Id,\\n        Id: response.MarketId,\\n        Name: response.MarketName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.MarketGroupName,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return 'projects/' + entityId +'/markets'\\n}\"},\"selectbox\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.MarketGroupName,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return 'markets/lookup'\\n}\"},\"link\":{\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        MarketId: item.Id\\n    }\\n}\",\"call\":\"function getCall(item, entityId) {\\n    return 'projects/' + entityId + '/markets'\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return 'projects/' + entityId + '/markets/' + item.Id\\n}\"},\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}","DashboardDefinitionId":"36ac28a3-cb2f-4dc3-b61a-a822fde0d13f"}],"QueryText":"","UseStore":false,"StoreEntity":null}
+{
+  "DashboardDefinitionRoles": [
+    {
+      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+      "DashboardDefinitionId": "36ac28a3-cb2f-4dc3-b61a-a822fde0d13f",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
+      "DashboardDefinitionId": "36ac28a3-cb2f-4dc3-b61a-a822fde0d13f",
+      "AccessRoleName": "Maintenance Profile"
+    }
+  ],
+  "Id": "36ac28a3-cb2f-4dc3-b61a-a822fde0d13f",
+  "Name": "Markets",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "project",
+  "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]",
+  "Templates": [
+  ],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "26cd99a0-1b24-4a3a-b7d8-4e996e599f4a",
+      "Name": "Markets",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":20,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"project\",\"entityAssociation\":\"market\",\"grid\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        AssociationId: response.Id,\\n        Id: response.MarketId,\\n        Name: response.MarketName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.MarketGroupName,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return 'projects/' + entityId +'/markets'\\n}\"},\"selectbox\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.MarketGroupName,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return 'markets/lookup'\\n}\"},\"link\":{\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        MarketId: item.Id\\n    }\\n}\",\"call\":\"function getCall(item, entityId) {\\n    return 'projects/' + entityId + '/markets'\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return 'projects/' + entityId + '/markets/' + item.Id\\n}\"},\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}",
+      "DashboardDefinitionId": "36ac28a3-cb2f-4dc3-b61a-a822fde0d13f"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}

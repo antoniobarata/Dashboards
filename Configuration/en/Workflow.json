@@ -1,1 +1,37 @@
-{"DashboardDefinitionRoles":[],"Id":"25bf01b5-6d2a-4252-8fb0-2ba260c9eb94","Name":"Workflow","Active":true,"Location":2,"DocumentId":"00000000-0000-0000-0000-000000000000","DocumentName":"","DocumentTypeName":"workflow","DocumentsConfiguration":"{\r\n}","Templates":[],"DashboardDefinitionComponents":[{"Id":"a0b6aac9-1779-4a26-83f9-c687bd706445","Name":"Workflow","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select dt.Oid,\\r\\ndt.[Name],\\r\\nd.[Name] as Document,\\r\\nws.[Name] as InitialWorkflowState,\\r\\nws2.[Name] as FinalWorkflowState,\\r\\nbot.Name as BusinessObjectType\\r\\nfrom DocumentType dt \\r\\nLeft Join Document d on dt.Document = d.Oid\\r\\nLeft Join WorkflowState as ws on dt.InitialWorkflowState = ws.Oid\\r\\nLeft Join WorkflowState as ws2 on dt.FinalWorkflowState = ws2.Oid\\r\\nJoin BusinessObjectType bot on (dt.BusinessObjectType = bot.Oid)\\r\\nwhere dt.GCRecord is  null \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\"entity\":\"workflow\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",{\"dataField\":\"Document\",\"groupIndex\":0},{\"dataField\":\"InitialWorkflowState\",\"label\":{\"text\":\"Initial Workflow State\"}},{\"dataField\":\"FinalWorkflowState\",\"label\":{\"text\":\"Final Workflow State\"}},{\"dataField\":\"BusinessObjectType\",\"label\":{\"text\":\"Business Object Type\"}}],\"stateStoring\":{\"enabled\":false},\"height\":\"100%\"}","DashboardDefinitionId":"25bf01b5-6d2a-4252-8fb0-2ba260c9eb94"}],"QueryText":"","UseStore":false,"StoreEntity":null}
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "25bf01b5-6d2a-4252-8fb0-2ba260c9eb94",
+    "Name": "Workflow",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "workflow",
+    "DocumentsConfiguration": "{\r\n}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "a0b6aac9-1779-4a26-83f9-c687bd706445",
+            "Name": "Workflow",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select dt.Oid,\\r\\ndt.[Name],\\r\\nd.[Name] as Document,\\r\\nws.[Name] as InitialWorkflowState,\\r\\nws2.[Name] as FinalWorkflowState,\\r\\nbot.Name as BusinessObjectType\\r\\nfrom DocumentType dt \\r\\nLeft Join Document d on dt.Document = d.Oid\\r\\nLeft Join WorkflowState as ws on dt.InitialWorkflowState = ws.Oid\\r\\nLeft Join WorkflowState as ws2 on dt.FinalWorkflowState = ws2.Oid\\r\\nJoin BusinessObjectType bot on (dt.BusinessObjectType = bot.Oid)\\r\\nwhere dt.GCRecord is  null \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"entity\":\"workflow\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",{\"dataField\":\"Document\",\"groupIndex\":0},{\"dataField\":\"InitialWorkflowState\",\"label\":{\"text\":\"Initial Workflow State\"}},{\"dataField\":\"FinalWorkflowState\",\"label\":{\"text\":\"Final Workflow State\"}},{\"dataField\":\"BusinessObjectType\",\"label\":{\"text\":\"Business Object Type\"}}],\"stateStoring\":{\"enabled\":false},\"height\":\"100%\"}",
+            "DashboardDefinitionId": "25bf01b5-6d2a-4252-8fb0-2ba260c9eb94"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 4,
+    "Default": true
+}

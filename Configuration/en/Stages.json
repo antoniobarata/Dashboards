@@ -47,5 +47,7 @@
   ],
   "QueryText": null,
   "UseStore": false,
-  "StoreEntity": null
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
 }

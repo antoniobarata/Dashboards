@@ -1,35 +1,37 @@
-{
-  "DashboardDefinitionRoles": [],
-  "Id": "046148ae-76de-496c-902c-1ebd8c0843d3",
-  "Name": "Team",
-  "Active": true,
-  "Location": 2,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": "teams",
-  "DocumentsConfiguration": "{\r\n}",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "69c45d01-d055-4eda-baf3-0a044c912b7c",
-      "Name": "Team",
-      "Active": true,
-      "UseQuery": true,
-      "Query": null,
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\" \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  a.oid as Oid,\\r\\n        a.Name as [Name],\\r\\n        sr.Name as ReadRole,\\r\\n        s.Name as SaveRole,\\r\\n        a.Active as Active,\\r\\n        a.Protected as Protected\\r\\nfrom    AssignmentType a \\r\\nLeft Join SecuritySystemRole s on a.SaveRole = s.oid \\r\\nLeft Join SecuritySystemRole sr on a.ReadRole = sr.oid\\r\\nwhere    a.GCRecord is null\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"entity\": \"teams\",\r\n    \"allowBulk\": false,\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        \"ReadRole\",\r\n        \"SaveRole\",\r\n        \"Active\",\r\n        \"Protected\"\r\n    ]\r\n}",
-      "DashboardDefinitionId": "046148ae-76de-496c-902c-1ebd8c0843d3"
-    }
-  ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "046148ae-76de-496c-902c-1ebd8c0843d3",
+    "Name": "Team",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "teams",
+    "DocumentsConfiguration": "{\r\n}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "69c45d01-d055-4eda-baf3-0a044c912b7c",
+            "Name": "Team",
+            "Active": true,
+            "UseQuery": true,
+            "Query": null,
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\" \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  a.oid as Oid,\\r\\n        a.Name as [Name],\\r\\n        sr.Name as ReadRole,\\r\\n        s.Name as SaveRole,\\r\\n        a.Active as Active,\\r\\n        a.Protected as Protected\\r\\nfrom    AssignmentType a \\r\\nLeft Join SecuritySystemRole s on a.SaveRole = s.oid \\r\\nLeft Join SecuritySystemRole sr on a.ReadRole = sr.oid\\r\\nwhere    a.GCRecord is null\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": null,
+            "Configuration": "{\r\n    \"entity\": \"teams\",\r\n    \"allowBulk\": false,\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        \"ReadRole\",\r\n        \"SaveRole\",\r\n        \"Active\",\r\n        \"Protected\"\r\n    ]\r\n}",
+            "DashboardDefinitionId": "046148ae-76de-496c-902c-1ebd8c0843d3"
+        }
+    ],
+    "QueryText": null,
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 3,
+    "Default": true
 }

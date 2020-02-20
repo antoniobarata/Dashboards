@@ -1,1 +1,53 @@
-{"DashboardDefinitionRoles":[{"AccessRoleId":"9192b3d9-3b6b-469a-bcf4-01accd8ec5b4","DashboardDefinitionId":"eb455c7a-6253-4a9c-8588-9bffea464776","AccessRoleName":"Administrator"},{"AccessRoleId":"d3e36f3b-993f-4b56-8664-bc616956b733","DashboardDefinitionId":"eb455c7a-6253-4a9c-8588-9bffea464776","AccessRoleName":"Maintenance Profile"},{"AccessRoleId":"4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1","DashboardDefinitionId":"eb455c7a-6253-4a9c-8588-9bffea464776","AccessRoleName":"Finance Confidential Profile"}],"Id":"eb455c7a-6253-4a9c-8588-9bffea464776","Name":"Disciplines","Active":true,"Location":1,"DocumentId":"00000000-0000-0000-0000-000000000000","DocumentName":"","DocumentTypeName":"project","DocumentsConfiguration":"[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]","Templates":[],"DashboardDefinitionComponents":[{"Id":"67acac0d-8117-4b47-843c-89dad396f61e","Name":"Project Companies","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":20,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"c666ba5e-8578-4132-86a5-0f96c665000d","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\"entity\":\"project\",\"entityAssociation\":\"departmenttype\",\"grid\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        AssociationId: response.Id,\\n        Id: response.DepartmentTypeId,\\n        Name: response.DepartmentTypeName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return 'projects/' + entityId +'/department-types'\\n}\"},\"selectbox\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return 'department-types/lookup'\\n}\"},\"link\":{\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        DepartmentTypeId: item.Id\\n    }\\n}\",\"call\":\"function getCall(item, entityId) {\\n    return 'projects/' + entityId + '/department-types'\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return 'projects/' + entityId + '/department-types/' + item.Id\\n}\"},\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}","DashboardDefinitionId":"eb455c7a-6253-4a9c-8588-9bffea464776"}],"QueryText":"","UseStore":false,"StoreEntity":null}
+﻿{
+    "DashboardDefinitionRoles": [
+        {
+            "AccessRoleId": "9192b3d9-3b6b-469a-bcf4-01accd8ec5b4",
+            "DashboardDefinitionId": "eb455c7a-6253-4a9c-8588-9bffea464776",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "d3e36f3b-993f-4b56-8664-bc616956b733",
+            "DashboardDefinitionId": "eb455c7a-6253-4a9c-8588-9bffea464776",
+            "AccessRoleName": "Maintenance Profile"
+        },
+        {
+            "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+            "DashboardDefinitionId": "eb455c7a-6253-4a9c-8588-9bffea464776",
+            "AccessRoleName": "Finance Confidential Profile"
+        }
+    ],
+    "Id": "eb455c7a-6253-4a9c-8588-9bffea464776",
+    "Name": "Disciplines",
+    "Active": true,
+    "Location": 1,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "project",
+    "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "67acac0d-8117-4b47-843c-89dad396f61e",
+            "Name": "Project Companies",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":20,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"entity\":\"project\",\"entityAssociation\":\"departmenttype\",\"grid\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        AssociationId: response.Id,\\n        Id: response.DepartmentTypeId,\\n        Name: response.DepartmentTypeName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return \u0027projects/\u0027 + entityId +\u0027/department-types\u0027\\n}\"},\"selectbox\":{\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\",\"call\":\"function getCall(entityId) {\\n    return \u0027department-types/lookup\u0027\\n}\"},\"link\":{\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        DepartmentTypeId: item.Id\\n    }\\n}\",\"call\":\"function getCall(item, entityId) {\\n    return \u0027projects/\u0027 + entityId + \u0027/department-types\u0027\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027projects/\u0027 + entityId + \u0027/department-types/\u0027 + item.Id\\n}\"},\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}",
+            "DashboardDefinitionId": "eb455c7a-6253-4a9c-8588-9bffea464776"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 1,
+    "Default": true
+}

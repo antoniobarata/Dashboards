@@ -1,4 +1,4 @@
-{
+﻿{
     "DashboardDefinitionRoles": [],
     "Id": "5149748c-1c1a-4302-9e05-57ff4b971061",
     "Name": "Feed With Cards",
@@ -81,5 +81,7 @@
             "Configuration": "{\r\n    \"entity\": \"CommercialClient\"\r\n}",
             "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
         }
-    ]
+    ],
+    "Version": 1,
+    "Default": false
 }

@@ -1,1002 +1,1004 @@
-{
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Maintenance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Maintenance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Maintenance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Maintenance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Finance Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-      "AccessRoleName": "Responsible Profile"
-    }
-  ],
-  "Id": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
-  "Name": "Staffing",
-  "Active": true,
-  "Location": 0,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": null,
-  "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"patchModel\":[{\"model\":\"\",\"translation\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "626a07bd-4e2b-4a36-8784-103e77aadd01",
-      "Name": "Deliverables Staffing",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 12,
-      "Order": 4,
-      "Parameters": "[{\"WidgetSubTitle\":\"Hours and Fee per Typology Group\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n    v.Deliverable,\\n    v.[Service],\\n    v.TypologyGroup,\\n    v.[User],\\n    v.Division,\\n    v.Department,\\n    v.ContractedTime,\\n    v.ClientGroup,\\n    v.ClientName,\\n    v.FeeProposal,\\n    v.EstimateName,\\n    IIF(n.RoleId is not null, v.Rate, null) as Rate,\\n    IIF(n.RoleId is not null, v.TableRate, null) as TableRate,\\n    v.TotalDeliverable,\\n    IIF(n.RoleId is not null, v.Total, null) as Total,\\n    v.StartDate,\\n    v.EndDate,\\n    v.[Order]\\nFROM\\n(\\n    select  IIF(eit.[Order] < 10, concat('0', eit.[Order], '. ', eit.[Description]), concat(eit.[Order], '. ', eit.[Description])) as Deliverable,\\n            art.[Name] as [Service],\\n            utg.[Name] as TypologyGroup,\\n            usr.[Name] as [User],\\n            div.[Name] as Division,\\n            dep.[Name] as Department,\\n            edt.[Hours] as ContractedTime,\\n            cg.[Name] as ClientGroup,\\n            cc.[Name] as ClientName,\\n            c.[Name] as FeeProposal,\\n            est.[Name] as EstimateName,\\n            edt.UnitPriceCost as Rate,\\n            edt.[Rate] as TableRate,\\n            edt.ValueWithoutVatIncome as TotalDeliverable,\\n            edt.UnitPriceCost * edt.[Hours] as Total,\\n            cast(est.[Date] as Date) as StartDate,\\n            cast(est.[Expiration] as Date) as EndDate,\\n            eit.[Order]\\n    from    Estimate est\\n                left outer join CommercialClient cc on cc.Oid = est.Client\\n                left outer join [Contract] c on c.Oid = est.[Contract]\\n                left outer join ClientGroup cg on cg.Oid = cc.ClientGroup,\\n            EstimateItem eit, \\n            Article art,\\n            EstimateItemDetail edt\\t\\n                left outer join Department dep on dep.Oid = edt.Department\\n                left outer join Division div on div.Oid = dep.Division\\n                left outer join [User] usr on usr.Oid = edt.[User]\\n                left outer join UserTypologyGroup utg on utg.Oid = edt.UserTypologyGroup\\n    where   eit.Estimate = est.Oid and\\n            edt.EstimateItem = eit.Oid and\\n            edt.[Type] = 2 and\\n            art.Oid = eit.Article and \\n            est.[Date] between @FromDate and @ToDate and\\n            (cg.Oid = @ClientGroupOid or @ClientGroupOid = '00000000-0000-0000-0000-000000000000') and\\n            (utg.Company = @CompanyOid or @CompanyOid = '00000000-0000-0000-0000-000000000000')\\n) v\\n    left outer join Analytics.[Authorization](@CurrentUserId) n ON (n.RoleName = 'RateCardRead')\\norder by v.[Order]\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"CompanyOid\",\"ClientGroupOid\",\"startDate\",\"endDate\"]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Resources - Staffing/execute",
-      "Configuration": "{\n    \"allowSortingBySummary\": true,\n    \"allowSorting\": true,\n    \"allowFiltering\": true,\n    \"allowExpandAll\": true,\n    \"headerFilter\": {\n        \"allowSearch\": true,\n        \"showRelevantValues\": true\n    },\n    \"height\": \"500\",\n    \"showBorders\": true,\n    \"export\": {\n        \"enabled\": true,\n        \"fileName\": \"Deliverables Staffing\"\n    },\n    \"showRowGrandTotals\": true,\n    \"fieldPanel\": {\n        \"showColumnFields\": true,\n        \"showDataFields\": true,\n        \"showFilterFields\": true,\n        \"showRowFields\": true,\n        \"allowFieldDragging\": true,\n        \"visible\": true\n    },\n    \"wordWrapEnabled\": false,\n    \"dataSource\": {\n        \"fields\": [\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Typology Group\",\n                \"width\": 120,\n                \"dataField\": \"TypologyGroup\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Name\",\n                \"dataField\": \"User\",\n                \"dataType\": \"string\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"dataField\": \"Deliverable\",\n                \"dataType\": \"string\",\n                \"area\": \"column\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Hours\",\n                \"dataField\": \"ContractedTime\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Rate\",\n                \"dataField\": \"Rate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"TableRate\",\n                \"dataField\": \"TableRate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Total\",\n                \"dataField\": \"Total\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"dataField\": \"Service\",\n                \"dataType\": \"string\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client Group\",\n                \"dataField\": \"ClientGroup\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client\",\n                \"dataField\": \"ClientName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Fee\",\n                \"dataField\": \"FeeProposal\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Estimate\",\n                \"dataField\": \"EstimateName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Start Date\",\n                \"dataField\": \"StartDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"End Date\",\n                \"dataField\": \"EndDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            }\n        ],\n        \"store\": null\n    },\n    \"onCellPrepared\": \"function(e) {\n      if (e.area == 'column' && e.rowIndex == 0 && e.cell.type == 'D' && e.columnIndex % 2 == 0) \n        e.cellElement.setAttribute('background-color', '#e4e4e4');\n}\"\n}",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84"
-    },
-    {
-      "Id": "f363ebc9-1317-4009-8012-5cc6958fafd8",
-      "Name": "Period Selector",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 8,
-      "Order": 2,
-      "Parameters": "[{\"WidgetSubTitle\":\"Choose a date range based on your Estimate Start Date. The data will include the totals for the Staff Plan Estimates.\",\"WidgetType\":\"rangeselector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":50,\"WidgetHeader\":{\"WidgetPeriodChooser\":{\"startDate\":\"2019-01-01\",\"endDate\":\"2019-12-31\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\tv.[Month]\\r\\nFROM\\t(\\r\\n\\t\\tSELECT \\tSUM(v.ActualTime) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Timesheet(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid and\\r\\n                (@ClientGroupOid = '00000000-0000-0000-0000-000000000000' or v.ClientGroupId = @ClientGroupOid)\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Leave(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Holiday(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n) v\\r\\nGROUP BY v.[Month]\",\"mapping\":\"\"}},\"Filters\":{\"startDate\":\"startDate\",\"endDate\":\"endDate\"},\"QueryConfiguration\":{\"RequiredFilters\":[\"CompanyOid\"]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Range_Selector/execute",
-      "Configuration": "{\"size\":{\"height\":100},\"containerBackgroundColor\":\"#e0e0e0\",\"selectedRangeColor\":\"#f5564a\",\"chart\":{\"commonSeriesSettings\":{\"type\":\"steparea\",\"argumentField\":\"Month\"},\"series\":[{\"valueField\":\"Hours\"}]},\"scale\":{\"minorTickInterval\":\"month\",\"tickInterval\":\"month\",\"valueType\":\"datetime\"},\"sliderMarker\":{\"format\":\"monthAndDay\",\"color\":\"#da5859\"},\"value\":{\"length\":{\"years\":1}}}",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84"
-    },
-    {
-      "Id": "1a08751b-f288-4de3-b8cf-ae65f0581699",
-      "Name": "Company and Client Group",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 0,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Choose a Company or Client Group\",\r\n        \"WidgetType\": \"form\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetFrameStyle\": {},\r\n        \"WidgetXPosition\": 0,\r\n        \"WidgetYPosition\": 0,\r\n        \"WidgetRows\": 8,\r\n        \"WidgetColumns\": 16,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": []\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryempty\",\r\n                \"value\": \"SELECT 1;\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": []\r\n        }\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Per_Company_Department_User/execute",
-      "Configuration": "{\n    \"colCount\": 1,\n    \"items\": [\n        {\n            \"dataField\": \"CompanyId\",\n            \"label\": {\n                \"text\": \"Company\"\n            },\n            \"validationRules\": [\n                {\n                    \"type\": \"required\"\n                }\n            ],\n            \"editorType\": \"dxSelectBox\",\n            \"editorOptions\": {\n                \"width\": 250,\n                \"searchEnabled\": true,\n                \"dataSource\": {\n                    \"load\": \"function(loadOptions){ \n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : ''); \n                            var searchTake = (loadOptions.searchValue != null && loadOptions.searchValue != '' ? 10 : 100); \n                            return SkillsWorkflow.executeAPI('GET', 'companies/lookup',\n                    null,\n                    {})\n                }\",\n          \"byKey\": \"function(key) { return SW.executeAPI('GET','companies/'+key+'/lookup',null,{}).then( result =>  { return Promise.resolve(result);}) }\"\n            },\n            \"displayExpr\": \"Name\",\n            \"valueExpr\": \"Id\",\n            \"onValueChanged\": \"function(e){ \n                if( e.value != null && e.value != '') {\n                    SkillsWorkflow.setDashboardFilter('CompanyOid', e.value);\n            } else {\n                    SkillsWorkflow.setDashboardFilter('CompanyOid', '00000000-0000-0000-0000-000000000000');\n            }\n        }\"\n    }\n},\n{\n    \"name\": \"Client Group\",\n    \"label\": {\n        \"text\": \"Client Group\"\n    },\n    \"editorType\": \"dxSelectBox\",\n    \"editorOptions\": {\n        \"width\": 250,\n        \"searchEnabled\": true,\n        \"minSearchLength\": 0,\n        \"dataSource\": {\n            \"load\": \"function(loadOptions){ \n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : ''); \n                            var searchTake = (loadOptions.searchValue != null && loadOptions.searchValue != '' ? 10 : 100); \n                            return SkillsWorkflow.executeAPI('GET', 'clientgroups/lookup',\n            null,\n            {})\n        }\",\n          \"byKey\": \"function(key) { return SW.executeAPI('GET','clientgroups/'+key+'/lookup',null,{}).then( result =>  { return Promise.resolve(result);}) }\"\n    },\n    \"onInitialized\": \"function(e) { SkillsWorkflow.setDashboardFilter('ClientGroupOid', '00000000-0000-0000-0000-000000000000'); }\",\n    \"value\": \"\",\n    \"onValueChanged\": \"function(e){ if(e.value != null) { SW.setDashboardFilter('ClientGroupOid', e.value); } }\",\n    \"valueExpr\": \"Id\",\n    \"displayExpr\": \"Name\"\n},\n\"noDataText\": \"Please wait...\"\n}\n],\n\"height\": 72\n}",
-      "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84"
-    }
-  ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null
+﻿{
+    "DashboardDefinitionRoles": [
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Maintenance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Maintenance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Maintenance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "2ad451b7-c555-4056-bfaf-de2d6d560395",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Maintenance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bcc11000-0bfd-4128-be33-0c33ddbdb56f",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Finance Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+            "AccessRoleName": "Responsible Profile"
+        }
+    ],
+    "Id": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84",
+    "Name": "Staffing",
+    "Active": true,
+    "Location": 0,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": null,
+    "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"patchModel\":[{\"model\":\"\",\"translation\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "626a07bd-4e2b-4a36-8784-103e77aadd01",
+            "Name": "Deliverables Staffing",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 12,
+            "Order": 4,
+            "Parameters": "[{\"WidgetSubTitle\":\"Hours and Fee per Typology Group\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n    v.Deliverable,\\n    v.[Service],\\n    v.TypologyGroup,\\n    v.[User],\\n    v.Division,\\n    v.Department,\\n    v.ContractedTime,\\n    v.ClientGroup,\\n    v.ClientName,\\n    v.FeeProposal,\\n    v.EstimateName,\\n    IIF(n.RoleId is not null, v.Rate, null) as Rate,\\n    IIF(n.RoleId is not null, v.TableRate, null) as TableRate,\\n    v.TotalDeliverable,\\n    IIF(n.RoleId is not null, v.Total, null) as Total,\\n    v.StartDate,\\n    v.EndDate,\\n    v.[Order]\\nFROM\\n(\\n    select  IIF(eit.[Order] \u003c 10, concat(\u00270\u0027, eit.[Order], \u0027. \u0027, eit.[Description]), concat(eit.[Order], \u0027. \u0027, eit.[Description])) as Deliverable,\\n            art.[Name] as [Service],\\n            utg.[Name] as TypologyGroup,\\n            usr.[Name] as [User],\\n            div.[Name] as Division,\\n            dep.[Name] as Department,\\n            edt.[Hours] as ContractedTime,\\n            cg.[Name] as ClientGroup,\\n            cc.[Name] as ClientName,\\n            c.[Name] as FeeProposal,\\n            est.[Name] as EstimateName,\\n            edt.UnitPriceCost as Rate,\\n            edt.[Rate] as TableRate,\\n            edt.ValueWithoutVatIncome as TotalDeliverable,\\n            edt.UnitPriceCost * edt.[Hours] as Total,\\n            cast(est.[Date] as Date) as StartDate,\\n            cast(est.[Expiration] as Date) as EndDate,\\n            eit.[Order]\\n    from    Estimate est\\n                left outer join CommercialClient cc on cc.Oid = est.Client\\n                left outer join [Contract] c on c.Oid = est.[Contract]\\n                left outer join ClientGroup cg on cg.Oid = cc.ClientGroup,\\n            EstimateItem eit, \\n            Article art,\\n            EstimateItemDetail edt\\t\\n                left outer join Department dep on dep.Oid = edt.Department\\n                left outer join Division div on div.Oid = dep.Division\\n                left outer join [User] usr on usr.Oid = edt.[User]\\n                left outer join UserTypologyGroup utg on utg.Oid = edt.UserTypologyGroup\\n    where   eit.Estimate = est.Oid and\\n            edt.EstimateItem = eit.Oid and\\n            edt.[Type] = 2 and\\n            art.Oid = eit.Article and \\n            est.[Date] between @FromDate and @ToDate and\\n            (cg.Oid = @ClientGroupOid or @ClientGroupOid = \u002700000000-0000-0000-0000-000000000000\u0027) and\\n            (utg.Company = @CompanyOid or @CompanyOid = \u002700000000-0000-0000-0000-000000000000\u0027)\\n) v\\n    left outer join Analytics.[Authorization](@CurrentUserId) n ON (n.RoleName = \u0027RateCardRead\u0027)\\norder by v.[Order]\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"CompanyOid\",\"ClientGroupOid\",\"startDate\",\"endDate\"]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Resources - Staffing/execute",
+            "Configuration": "{\n    \"allowSortingBySummary\": true,\n    \"allowSorting\": true,\n    \"allowFiltering\": true,\n    \"allowExpandAll\": true,\n    \"headerFilter\": {\n        \"allowSearch\": true,\n        \"showRelevantValues\": true\n    },\n    \"height\": \"500\",\n    \"showBorders\": true,\n    \"export\": {\n        \"enabled\": true,\n        \"fileName\": \"Deliverables Staffing\"\n    },\n    \"showRowGrandTotals\": true,\n    \"fieldPanel\": {\n        \"showColumnFields\": true,\n        \"showDataFields\": true,\n        \"showFilterFields\": true,\n        \"showRowFields\": true,\n        \"allowFieldDragging\": true,\n        \"visible\": true\n    },\n    \"wordWrapEnabled\": false,\n    \"dataSource\": {\n        \"fields\": [\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Typology Group\",\n                \"width\": 120,\n                \"dataField\": \"TypologyGroup\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Name\",\n                \"dataField\": \"User\",\n                \"dataType\": \"string\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"dataField\": \"Deliverable\",\n                \"dataType\": \"string\",\n                \"area\": \"column\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Hours\",\n                \"dataField\": \"ContractedTime\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Rate\",\n                \"dataField\": \"Rate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"TableRate\",\n                \"dataField\": \"TableRate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Total\",\n                \"dataField\": \"Total\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"dataField\": \"Service\",\n                \"dataType\": \"string\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client Group\",\n                \"dataField\": \"ClientGroup\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client\",\n                \"dataField\": \"ClientName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Fee\",\n                \"dataField\": \"FeeProposal\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Estimate\",\n                \"dataField\": \"EstimateName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Start Date\",\n                \"dataField\": \"StartDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"End Date\",\n                \"dataField\": \"EndDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            }\n        ],\n        \"store\": null\n    },\n    \"onCellPrepared\": \"function(e) {\n      if (e.area == \u0027column\u0027 \u0026\u0026 e.rowIndex == 0 \u0026\u0026 e.cell.type == \u0027D\u0027 \u0026\u0026 e.columnIndex % 2 == 0) \n        e.cellElement.setAttribute(\u0027background-color\u0027, \u0027#e4e4e4\u0027);\n}\"\n}",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84"
+        },
+        {
+            "Id": "f363ebc9-1317-4009-8012-5cc6958fafd8",
+            "Name": "Period Selector",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 8,
+            "Order": 2,
+            "Parameters": "[{\"WidgetSubTitle\":\"Choose a date range based on your Estimate Start Date. The data will include the totals for the Staff Plan Estimates.\",\"WidgetType\":\"rangeselector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":50,\"WidgetHeader\":{\"WidgetPeriodChooser\":{\"startDate\":\"2019-01-01\",\"endDate\":\"2019-12-31\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\tv.[Month]\\r\\nFROM\\t(\\r\\n\\t\\tSELECT \\tSUM(v.ActualTime) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Timesheet(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid and\\r\\n                (@ClientGroupOid = \u002700000000-0000-0000-0000-000000000000\u0027 or v.ClientGroupId = @ClientGroupOid)\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Leave(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Holiday(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n) v\\r\\nGROUP BY v.[Month]\",\"mapping\":\"\"}},\"Filters\":{\"startDate\":\"startDate\",\"endDate\":\"endDate\"},\"QueryConfiguration\":{\"RequiredFilters\":[\"CompanyOid\"]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Range_Selector/execute",
+            "Configuration": "{\"size\":{\"height\":100},\"containerBackgroundColor\":\"#e0e0e0\",\"selectedRangeColor\":\"#f5564a\",\"chart\":{\"commonSeriesSettings\":{\"type\":\"steparea\",\"argumentField\":\"Month\"},\"series\":[{\"valueField\":\"Hours\"}]},\"scale\":{\"minorTickInterval\":\"month\",\"tickInterval\":\"month\",\"valueType\":\"datetime\"},\"sliderMarker\":{\"format\":\"monthAndDay\",\"color\":\"#da5859\"},\"value\":{\"length\":{\"years\":1}}}",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84"
+        },
+        {
+            "Id": "1a08751b-f288-4de3-b8cf-ae65f0581699",
+            "Name": "Company and Client Group",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 0,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Choose a Company or Client Group\",\r\n        \"WidgetType\": \"form\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetFrameStyle\": {},\r\n        \"WidgetXPosition\": 0,\r\n        \"WidgetYPosition\": 0,\r\n        \"WidgetRows\": 8,\r\n        \"WidgetColumns\": 16,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": []\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryempty\",\r\n                \"value\": \"SELECT 1;\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": []\r\n        }\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Per_Company_Department_User/execute",
+            "Configuration": "{\n    \"colCount\": 1,\n    \"items\": [\n        {\n            \"dataField\": \"CompanyId\",\n            \"label\": {\n                \"text\": \"Company\"\n            },\n            \"validationRules\": [\n                {\n                    \"type\": \"required\"\n                }\n            ],\n            \"editorType\": \"dxSelectBox\",\n            \"editorOptions\": {\n                \"width\": 250,\n                \"searchEnabled\": true,\n                \"dataSource\": {\n                    \"load\": \"function(loadOptions){ \n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027companies/lookup\u0027,\n                    null,\n                    {})\n                }\",\n          \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027companies/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\n            },\n            \"displayExpr\": \"Name\",\n            \"valueExpr\": \"Id\",\n            \"onValueChanged\": \"function(e){ \n                if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\n                    SkillsWorkflow.setDashboardFilter(\u0027CompanyOid\u0027, e.value);\n            } else {\n                    SkillsWorkflow.setDashboardFilter(\u0027CompanyOid\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\n            }\n        }\"\n    }\n},\n{\n    \"name\": \"Client Group\",\n    \"label\": {\n        \"text\": \"Client Group\"\n    },\n    \"editorType\": \"dxSelectBox\",\n    \"editorOptions\": {\n        \"width\": 250,\n        \"searchEnabled\": true,\n        \"minSearchLength\": 0,\n        \"dataSource\": {\n            \"load\": \"function(loadOptions){ \n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027clientgroups/lookup\u0027,\n            null,\n            {})\n        }\",\n          \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027clientgroups/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\n    },\n    \"onInitialized\": \"function(e) { SkillsWorkflow.setDashboardFilter(\u0027ClientGroupOid\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); }\",\n    \"value\": \"\",\n    \"onValueChanged\": \"function(e){ if(e.value != null) { SW.setDashboardFilter(\u0027ClientGroupOid\u0027, e.value); } }\",\n    \"valueExpr\": \"Id\",\n    \"displayExpr\": \"Name\"\n},\n\"noDataText\": \"Please wait...\"\n}\n],\n\"height\": 72\n}",
+            "DashboardDefinitionId": "54b66dcf-2eb7-4423-bcd6-4d52e91ace84"
+        }
+    ],
+    "QueryText": null,
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 11,
+    "Default": true
 }
