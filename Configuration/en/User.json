@@ -7,7 +7,7 @@
     "DocumentId": "00000000-0000-0000-0000-000000000000",
     "DocumentName": "",
     "DocumentTypeName": "user",
-    "DocumentsConfiguration": "{\n    \n}",
+    "DocumentsConfiguration": "{\n    \n} ",
     "Templates": [],
     "DashboardDefinitionComponents": [
         {
@@ -18,20 +18,20 @@
             "Query": "",
             "Size": 12,
             "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"0px 26px 10px 26px\",\"margin\":\"0px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":25,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select u.Oid,\\r\\n\\t   u.[Name],\\r\\n\\t   u.AdUserName, \\r\\n\\t   c.[Name] as Company,\\r\\n\\t   d.[Name] as Department\\r\\nFrom [User] u, Company c, Department d  where u.Company = c.Oid and u.Department = d.Oid\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"0px 26px 10px 26px\",\"margin\":\"0px\"} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":25,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select u.Oid,\\r\\n\\t   u.[Name],\\r\\n\\t   u.AdUserName, \\r\\n\\t   c.[Name] as Company,\\r\\n\\t   d.[Name] as Department\\r\\nFrom [User] u, Company c, Department d  where u.Company = c.Oid and u.Department = d.Oid\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[]} } ]",
             "DashboardComponentType": {
                 "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
                 "Name": "Generic Dashboard",
                 "ComponentTypeNumber": 42
-            },
+            } ,
             "AnalyticsApiUrl": "",
-            "Configuration": "{\"entity\":\"user\",\"onToolbarPreparing\":\"function(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: \u0027after\u0027,\\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027\\r\\n    });\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: \u0027after\u0027,\\r\\n        widget: \u0027dxButton\u0027,\\r\\n        options: {\\r\\n            icon: \u0027plus\u0027, onClick: function () {\\r\\n                SkillsWorkflow.genericNew(\u0027user\u0027, 500, 700);\\r\\n            }\\r\\n        }\\r\\n    })\\r\\n\\r\\n}\",\"columns\":[\"Name\",\"AdUserName\",\"Company\",\"Department\"],\"stateStoring\":{\"enabled\":\"true\"},\"height\":\"100%\",\"onRowClick\":\"function onRowClick(e){\\n    if (e.rowType == \u0027data\u0027) {\\n        var id = e.key.Oid ? e.key.Oid : e.key.Id;\\n        window[\\\"SW\\\"].genericPreview(id, \u0027Name\u0027, \u0027user\u0027, 600, 1000);\\n    }\\n}\"}",
+            "Configuration": "{\"entity\":\"user\",\"onToolbarPreparing\":\"function(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: \u0027after\u0027,\\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027\\r\\n    } );\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: \u0027after\u0027,\\r\\n        widget: \u0027dxButton\u0027,\\r\\n        options: {\\r\\n            icon: \u0027plus\u0027, onClick: function () {\\r\\n                SkillsWorkflow.genericNew(\u0027user\u0027, 500, 700);\\r\\n            } \\r\\n        } \\r\\n    } )\\r\\n\\r\\n} \",\"columns\":[\"Name\",\"AdUserName\",\"Company\",\"Department\"],\"stateStoring\":{\"enabled\":\"true\"} ,\"height\":\"100%\",\"onRowClick\":\"function onRowClick(e){\\n    if (e.rowType == \u0027data\u0027) {\\n        var id = e.key.Oid ? e.key.Oid : e.key.Id;\\n        window[\\\"SW\\\"].genericPreview(id, \u0027Name\u0027, \u0027user\u0027, 600, 1000);\\n    } \\n} \"} ",
             "DashboardDefinitionId": "dac2b186-6e4e-4289-8436-893c3686eeea"
-        }
+        } 
     ],
     "QueryText": null,
     "UseStore": false,
     "StoreEntity": null,
     "Version": 5,
     "Default": true
-}
+} 

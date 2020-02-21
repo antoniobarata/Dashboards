@@ -7,7 +7,7 @@
     "DocumentId": "00000000-0000-0000-0000-000000000000",
     "DocumentName": "",
     "DocumentTypeName": "role",
-    "DocumentsConfiguration": "{}",
+    "DocumentsConfiguration": "{} ",
     "Templates": [],
     "DashboardDefinitionComponents": [
         {
@@ -18,20 +18,20 @@
             "Query": "",
             "Size": 12,
             "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select Oid,\\r\\n       [Name],\\r\\n       IsAdministrative,\\r\\n       CanEditModel\\r\\n from SecuritySystemRole where GCRecord is null\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select Oid,\\r\\n       [Name],\\r\\n       IsAdministrative,\\r\\n       CanEditModel\\r\\n from SecuritySystemRole where GCRecord is null\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[]} } ]",
             "DashboardComponentType": {
                 "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
                 "Name": "Generic Dashboard",
                 "ComponentTypeNumber": 42
-            },
+            } ,
             "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"entity\": \"role\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        \"IsAdministrative\",\r\n        \"CanEditModel\"\r\n    ]\r\n}",
+            "Configuration": "{\r\n    \"entity\": \"role\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        } ,\r\n        \"Name\",\r\n        \"IsAdministrative\",\r\n        \"CanEditModel\"\r\n    ]\r\n} ",
             "DashboardDefinitionId": "f88f3708-1059-4bcf-8084-905f2c4f5999"
-        }
+        } 
     ],
     "QueryText": null,
     "UseStore": false,
     "StoreEntity": null,
     "Version": 4,
     "Default": true
-}
+} 

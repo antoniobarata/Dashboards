@@ -7,7 +7,7 @@
     "DocumentId": "00000000-0000-0000-0000-000000000000",
     "DocumentName": "",
     "DocumentTypeName": "project",
-    "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+    "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"} ,\"update\":{\"endpoint\":\"\",\"model\":{} } ,\"create\":{\"endpoint\":\"\",\"model\":{} } ,\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"} ]} ,\"remove\":{\"endpoint\":\"\"} ,\"lookup\":{\"endpoint\":\"\"} ,\"lookupById\":{\"endpoint\":\"\"} } ,\"layout\":{\"create\":{} ,\"read\":{} ,\"patch\":{} } ,\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"} ,\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false} } ",
     "Templates": [],
     "DashboardDefinitionComponents": [
         {
@@ -18,17 +18,17 @@
             "Query": "",
             "Size": 12,
             "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"test\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":33,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":null},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT 1 \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":null}]",
+            "Parameters": "[{\"WidgetSubTitle\":\"test\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":33,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":null} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT 1 \",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":null} ]",
             "DashboardComponentType": {
                 "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
                 "Name": "Generic Dashboard",
                 "ComponentTypeNumber": 42
-            },
+            } ,
             "AnalyticsApiUrl": "",
-            "Configuration": "{\n    \"items\": [\n        {\n            \"datafield\": \"test\",\n            \"template\": \"function (data, itemElement) {\n                        var iFrame = document.createElement(\u0027iframe\u0027);\n                        SW.setAttribute(iFrame,\n            null,\u0027style\u0027,\u0027;height: 800px; width: 70%;border: 1px solid #e5e5e5;border-radius: 6px;\u0027,false);\n                        itemElement.append(iFrame);\n                        iFrame.src = \u0027https:/\u0027 + \u0027/bayer-skills.mediashuttle.com/\u0027;\n        }\"\n    }\n]\n}",
+            "Configuration": "{\n    \"items\": [\n        {\n            \"datafield\": \"test\",\n            \"template\": \"function (data, itemElement) {\n                        var iFrame = document.createElement(\u0027iframe\u0027);\n                        SW.setAttribute(iFrame,\n            null,\u0027style\u0027,\u0027;height: 800px; width: 70%;border: 1px solid #e5e5e5;border-radius: 6px;\u0027,false);\n                        itemElement.append(iFrame);\n                        iFrame.src = \u0027https:/\u0027 + \u0027/bayer-skills.mediashuttle.com/\u0027;\n        } \"\n    } \n]\n} ",
             "DashboardDefinitionId": "2167fce6-0fed-4c34-b1e3-94a94401901c"
-        }
+        } 
     ],
     "Version": 2,
     "Default": true
-}
+} 

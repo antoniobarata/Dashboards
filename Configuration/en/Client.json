@@ -4,47 +4,47 @@
             "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Requester Profile"
-        },
+        } ,
         {
             "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Administrator"
-        },
+        } ,
         {
             "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Responsible Profile"
-        },
+        } ,
         {
             "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Requester Profile"
-        },
+        } ,
         {
             "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Administrator"
-        },
+        } ,
         {
             "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Responsible Profile"
-        },
+        } ,
         {
             "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Administrator"
-        },
+        } ,
         {
             "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Requester Profile"
-        },
+        } ,
         {
             "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56",
             "AccessRoleName": "Responsible Profile"
-        }
+        } 
     ],
     "Id": "42718591-eac7-40d3-bcf7-805f7c591b56",
     "Name": "Client",
@@ -53,7 +53,7 @@
     "DocumentId": "00000000-0000-0000-0000-000000000000",
     "DocumentName": "",
     "DocumentTypeName": "commercialclient",
-    "DocumentsConfiguration": "{}",
+    "DocumentsConfiguration": "{} ",
     "Templates": [],
     "DashboardDefinitionComponents": [
         {
@@ -64,20 +64,20 @@
             "Query": null,
             "Size": 12,
             "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  cc.Oid as Oid,\\r\\n        cc.Name as [Name],\\r\\n        cc.HasImage as ClientHasImage,\\r\\n\\t\\tcc.Code as Code,\\r\\n\\t\\tcc.ExternalId as ExternalId,\\r\\n\\t\\tcc.NameAndExternalId as NameAndExternalId,\\r\\n\\t\\tcc.CreatedOn as CreatedOn,\\r\\n\\t\\tcc.ModifiedOn as ModifiedOn,\\r\\n\\t\\tcc.AllowsTimesheet as AllowsTimesheet\\r\\n\\t\\t\\r\\nfrom  CommercialClient cc, WorkflowState ws\\r\\nwhere \\r\\n      ws.Oid=cc.WorkflowState\\r\\n      AND WS.NAME != \u0027Canceled\u0027\\r\\n\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+            "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]} ,\"showSubTitle\":false,\"showTitle\":false} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  cc.Oid as Oid,\\r\\n        cc.Name as [Name],\\r\\n        cc.HasImage as ClientHasImage,\\r\\n\\t\\tcc.Code as Code,\\r\\n\\t\\tcc.ExternalId as ExternalId,\\r\\n\\t\\tcc.NameAndExternalId as NameAndExternalId,\\r\\n\\t\\tcc.CreatedOn as CreatedOn,\\r\\n\\t\\tcc.ModifiedOn as ModifiedOn,\\r\\n\\t\\tcc.AllowsTimesheet as AllowsTimesheet\\r\\n\\t\\t\\r\\nfrom  CommercialClient cc, WorkflowState ws\\r\\nwhere \\r\\n      ws.Oid=cc.WorkflowState\\r\\n      AND WS.NAME != \u0027Canceled\u0027\\r\\n\\r\\n\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
             "DashboardComponentType": {
                 "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
                 "Name": "Generic Dashboard",
                 "ComponentTypeNumber": 42
-            },
+            } ,
             "AnalyticsApiUrl": null,
-            "Configuration": "{\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Client.Name\u0027, \u0027client\u0027);}\",\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        },\n        {\n            \"caption\": \"\",\n            \"alignment\": \"center\",\n            \"format\": {\n                \"image\": {\n                    \"mapping\": {\n                        \"id\": \"Oid\",\n                        \"name\": \"Name\",\n                        \"hasImage\": \"ClientHasImage\"\n                    },\n                    \"size\": \"small\"\n                }\n            },\n            \"entity\": \"client\"\n        },\n        {\n            \"dataField\": \"Name\"\n        },\n        {\n            \"dataField\": \"Code\"\n        },\n        {\n            \"dataField\": \"ExternalId\"\n        },\n        {\n            \"dataField\": \"AllowsTimesheet\"\n        },\n        {\n            \"dataField\": \"CreatedOn\"\n        },\n        {\n            \"dataField\": \"ModifiedOn\"\n        }\n    ],\n    \"onToolbarPreparing\": \"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: \u0027after\u0027,             \\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: \u0027after\u0027,            \\r\\n            widget: \u0027dxButton\u0027,             \\r\\n            options: { icon: \u0027plus\u0027, onClick: function() { \\r\\n                SkillsWorkflow.genericNew(\u0027client\u0027, 455, 720);            \\r\\n                }        \\r\\n            }   \\r\\n        });\\r\\n}\",\n    \"entity\": \"client\"\n}",
+            "Configuration": "{\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Client.Name\u0027, \u0027client\u0027);} \",\n    \"selection\": {\n        \"mode\": \"multiple\"\n    } ,\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        } ,\n        {\n            \"caption\": \"\",\n            \"alignment\": \"center\",\n            \"format\": {\n                \"image\": {\n                    \"mapping\": {\n                        \"id\": \"Oid\",\n                        \"name\": \"Name\",\n                        \"hasImage\": \"ClientHasImage\"\n                    } ,\n                    \"size\": \"small\"\n                } \n            } ,\n            \"entity\": \"client\"\n        } ,\n        {\n            \"dataField\": \"Name\"\n        } ,\n        {\n            \"dataField\": \"Code\"\n        } ,\n        {\n            \"dataField\": \"ExternalId\"\n        } ,\n        {\n            \"dataField\": \"AllowsTimesheet\"\n        } ,\n        {\n            \"dataField\": \"CreatedOn\"\n        } ,\n        {\n            \"dataField\": \"ModifiedOn\"\n        } \n    ],\n    \"onToolbarPreparing\": \"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: \u0027after\u0027,             \\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027    \\r\\n        } );        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: \u0027after\u0027,            \\r\\n            widget: \u0027dxButton\u0027,             \\r\\n            options: { icon: \u0027plus\u0027, onClick: function() { \\r\\n                SkillsWorkflow.genericNew(\u0027client\u0027, 455, 720);            \\r\\n                }         \\r\\n            }    \\r\\n        } );\\r\\n} \",\n    \"entity\": \"client\"\n} ",
             "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56"
-        }
+        } 
     ],
     "QueryText": null,
     "UseStore": false,
     "StoreEntity": null,
     "Version": 7,
     "Default": true
-}
+} 
