@@ -1,483 +1,483 @@
 ﻿{
-    "DashboardDefinitionRoles": [
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "df68defe-acf1-4661-91de-ef58aae11243",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Perfil Diretor Midia/Social/Planejamento/Bi"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "46d9e87a-5bde-497a-8897-35ce508bdd90",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Perfil Consultor/Suporte"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "fd6d4432-72bb-48f7-bc44-40f16b7e13e0",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Perfil Manuten??o"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "9c5d7946-64b4-4dae-bc89-60399d909037",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Perfil GP"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } ,
-        {
-            "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-            "AccessRoleName": "Administrator"
-        } 
-    ],
-    "Id": "dc52cd48-1abf-430c-a8cd-78cee0857498",
-    "Name": "Atividades 3",
-    "Active": true,
-    "Location": 0,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentsConfiguration": null,
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "9450771f-bdd6-42d6-88ac-0a114c936b53",
-            "Name": "Resumo das Atividades do Per?odo",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 6,
-            "Order": 1,
-            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Pendente Neg?cio, Em Execu??o, Em Distribui??o e Fechadas\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": 200,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            } ,\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Em Distribui??o\",\r\n                        \"metricFieldValue\": \"TotalBeingPrepared\"\r\n                    } ,\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Em Execu??o\",\r\n                        \"metricFieldValue\": \"TotalInProgress\"\r\n                    } ,\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Pendente Neg?cios\",\r\n                        \"metricFieldValue\": \"TotalUnderApproval\"\r\n                    } ,\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Finalizado\",\r\n                        \"metricFieldValue\": \"TotalDone\"\r\n                    } \r\n                ]\r\n            } ,\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        } ,\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"select\\tv.*,\\r\\n\\t\\t(sum(v.BeingPrepared) over()) as TotalBeingPrepared,\\r\\n\\t\\t(sum(v.UnderApproval) over()) as TotalUnderApproval,\\r\\n\\t\\t(sum(v.InProgress) over()) as TotalInProgress,\\r\\n\\t\\t(sum(v.Done) over()) as TotalDone\\r\\nfrom\\t(\\r\\n\\t\\tselect\\tdj.Department,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode in (3,15), 1, 0)) as BeingPrepared,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode = 5, 1, 0)) as UnderApproval,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode = 4, 1, 0)) as InProgress,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode = 6, 1, 0)) as Done\\r\\n\\t\\tfrom\\tAnalytics.Job(@CurrentUserId) dj\\r\\n\\t\\twhere\\tdj.[Date] between @FromDate and @ToDate and\\r\\n\\t\\t\\t\\t(dj.DivisionId = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\tgroup by dj.Department\\r\\n) v\\r\\nwhere\\tv.BeingPrepared != 0 or\\r\\n\\t\\tv.UnderApproval != 0 or\\r\\n\\t\\tv.InProgress != 0 or \\r\\n\\t\\tv.Done != 0\\r\\ngroup by v.Department,\\r\\n\\t\\tv.BeingPrepared,\\r\\n\\t\\tv.UnderApproval,\\r\\n\\t\\tv.InProgress,\\r\\n\\t\\tv.Done\",\r\n                \"mapping\": \"\"\r\n            } \r\n        } ,\r\n        \"Filters\": {} ,\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\",\r\n                \"Division\"\r\n            ]\r\n        } \r\n    } \r\n]",
-            "DashboardComponentType": {
-                "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "globalQuery/Atividades Criativas - Delayed Jobs/execute",
-            "Configuration": "{\n  \"size\": {\n    \"height\": 100\n  } ,\n  \"commonSeriesSettings\": {\n    \"ignoreEmptyPoints\": true,\n    \"type\": \"bar\",\n    \"cornerRadius\": \"2px\",\n    \"label\": {\n      \"visible\": true,\n      \"showForZeroValues\": false\n    } ,\n    \"argumentField\": \"Department\"\n  } ,\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\": \"stagger\",\n      \"font\": {\n        \"size\": 10\n      } \n    } \n  } ,\n  \"panes\": [\n    {\n      \"name\": \"bar\"\n    } \n  ],\n  \"series\": [\n    {\n      \"valueField\": \"BeingPrepared\",\n      \"name\": \"Em Distribui??o\",\n      \"barWidth\": 80,\n      \"color\": \"#97c95c\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    } ,\n    {\n      \"valueField\": \"InProgress\",\n      \"name\": \"Em Execu??o\",\n      \"barWidth\": 80,\n      \"color\": \"#446fd2\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    } ,\n    {\n      \"valueField\": \"UnderApproval\",\n      \"name\": \"Pendente Neg?cios\",\n      \"barWidth\": 80,\n      \"color\": \"#ffc720\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    } ,\n    {\n      \"valueField\": \"Done\",\n      \"name\": \"Finalizado\",\n      \"barWidth\": 80,\n      \"color\": \"#000000\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    } ,\n    {\n      \"valueField\": \"UnderApproval\",\n      \"name\": \"Pendente Neg?cios\",\n      \"barWidth\": 80,\n      \"color\": \"#ffc720\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    } ,\n    {\n      \"valueField\": \"InProgress\",\n      \"name\": \"Em Execu??o\",\n      \"barWidth\": 80,\n      \"color\": \"#97c95c\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    } ,\n    {\n      \"valueField\": \"BeingPrepared\",\n      \"name\": \"Em Distribui??o\",\n      \"barWidth\": 80,\n      \"color\": \"#ffc720\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    } ,\n    {\n      \"valueField\": \"Done\",\n      \"name\": \"Finalizado\",\n      \"barWidth\": 80,\n      \"color\": \"#446fd2\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    } \n  ],\n  \"legend\": {\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\",\n    \"columnCount\": 4,\n    \"rowCount\": 1,\n    \"position\": \"outside\"\n  } ,\n  \"resolveLabelOverlapping\": \"shift\"\n} ",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
-        } ,
-        {
-            "Id": "00e18edc-03cc-44ae-bfea-67cbb2dfd152",
-            "Name": "Atividades",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 3,
-            "Parameters": "[{\"WidgetSubTitle\":\"Carga de Trabalho do Periodo por Departamento\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tdj.Id as [Id],\\r\\n\\t\\tdj.Oid as Oid,\\r\\n        dj.Department as Department,\\r\\n\\t\\tdj.Division as Division,\\r\\n\\t\\tccl.[Name] as ClientClassification,\\r\\n\\t\\tdj.Client as Client,\\r\\n\\t\\tdj.ClientId as ClientId,\\r\\n\\t\\tcc.HasImage as cHasImage,\\r\\n\\t\\tjc.[Name] as JobClassification,\\r\\n\\t\\tdj.Project as Project,\\r\\n\\t\\tdj.[NameAndExternalId] as Job,\\r\\n\\t\\tdj.[User] as CreatedBy,\\r\\n\\t\\tdj.UserId as CreatedById,\\r\\n\\t\\tu.HasImage as uHasImage,\\r\\n\\t\\td.[Priority] as [Priority],\\r\\n\\t\\tdj.Effort as Effort,\\r\\n\\t\\tdatediff(day, getdate(), dj.[Date]) as Days,\\r\\n\\t\\tdj.ProjectClassificationName as JobClassification,\\r\\n\\t\\tdj.[State] as Stage,\\r\\n\\t\\tcast(d.EntryDate as date) as StartDate,\\r\\n\\t\\tcast(dj.[Date] as Date) as EndDate,\\r\\n\\t\\tdj.[Date] as EndTime,\\r\\n\\t\\td.ModifiedOn as LastActivity,\\r\\n\\t\\t(select\\tstring_agg(convert(nvarchar(50), usr.Name), \u0027,\u0027) from Assignment ass, AssignmentType ast, [User] usr where usr.Oid = ass.[User] and ass.DocumentOid = dj.Oid and ast.Name = \u0027Executor\u0027 and ass.AssignmentType = ast.Oid) as Executor,\\r\\n\\t\\t(select string_agg(convert(nvarchar(50), ass.[User]), \u0027,\u0027) from Assignment ass, AssignmentType ast where ass.DocumentOid = dj.Oid and ast.Name = \u0027Executor\u0027 and ass.AssignmentType = ast.Oid) as ExecutorId,\\r\\n\\t\\t(select\\tstring_agg(convert(nvarchar(50), usr.HasImage), \u0027,\u0027) from Assignment ass, AssignmentType ast, [User] usr where usr.Oid = ass.[User] and ass.DocumentOid = dj.Oid and ast.Name = \u0027Executor\u0027 and ass.AssignmentType = ast.Oid) as ExecutorImage,\\r\\n\\t\\tIsNull(ws.Color, wst.Color) as Color\\r\\nfrom\\tAnalytics.Job(@CurrentUserId) dj,\\r\\n\\t\\tDeliverable d left outer join JobClassification jc on jc.Oid = d.[Classification],\\r\\n\\t\\t[User] u,\\r\\n\\t\\tCommercialClient cc left outer join ClientClassification ccl on ccl.Oid = cc.ClientClassification,\\r\\n\\t\\tWorkflowState ws,\\r\\n\\t\\tWorkflowStateType wst\\r\\nwhere\\td.Oid = dj.Oid and\\r\\n\\t\\tdj.UserId = u.Oid and\\r\\n\\t\\tcc.Oid = dj.ClientId and \\r\\n\\t\\tdj.StateId = ws.Oid and\\r\\n\\t\\tdj.StateTypeId = wst.Oid and\\r\\n        dj.StateTypeCode in (2,3,4,5,11,13) and\\r\\n\\t\\tdj.[Date] between @FromDate and @ToDate and\\r\\n\\t\\t(dj.DivisionId = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027)\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[\"startDate\",\"endDate\",\"Division\"]} } ]",
-            "DashboardComponentType": {
-                "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    } ,\r\n    \"height\": \"500\",\r\n    \"searchPanel\": {\r\n        \"visible\": true\r\n    } ,\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.preview(e.key, \u0027job\u0027);} \",\r\n    \"columnChooser\": {\r\n        \"enabled\": false\r\n    } ,\r\n    \"export\": {\r\n        \"enabled\": true,\r\n        \"fileName\": \"Re-Work Analysis\"\r\n    } ,\r\n    \"groupPanel\": {\r\n        \"visible\": true\r\n    } ,\r\n    \"grouping\": {\r\n        \"autoExpandAll\": true\r\n    } ,\r\n    \"selection\": {\r\n        \"mode\": \"single\"\r\n    } ,\r\n    \"scrolling\": {\r\n        \"mode\": \"virtual\",\r\n        \"rowRenderingMode\": \"virtual\"\r\n    } ,\r\n    \"allowColumnReordering\": \"true\",\r\n    \"rowAlternationEnabled\": \"true\",\r\n    \"showBorders\": false,\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Job\",\r\n            \"caption\": \"Atividade\",\r\n            \"width\": 500,\r\n            \"visibleIndex\": 0\r\n        } ,\r\n        {\r\n            \"dataField\": \"EndDate\",\r\n            \"caption\": \"Conclus?o\",\r\n            \"alignment\": \"center\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"d MMM\",\r\n            \"width\": 100,\r\n            \"visibleIndex\": 1\r\n        } ,\r\n        {\r\n            \"dataField\": \"EndTime\",\r\n            \"caption\": \"Hora Conclus?o\",\r\n            \"alignment\": \"center\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"HH:mm\",\r\n            \"width\": 100,\r\n            \"visibleIndex\": 2\r\n        } ,\r\n        {\r\n            \"dataField\": \"Executor\",\r\n            \"name\": \"Executor\",\r\n            \"caption\": \"Executado por\",\r\n            \"width\": 400,\r\n            \"visibleIndex\": 3\r\n        } ,\r\n        {\r\n            \"dataField\": \"Days\",\r\n            \"caption\": \"Dias\",\r\n            \"alignment\": \"center\",\r\n            \"width\": 100,\r\n            \"format\": \"#,##0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, i.value, i.value \u003c= 0, i.value \u003e 0 \u0026\u0026 i.value \u003c= 5, i.value \u003e 5); } \",\r\n            \"visibleIndex\": 4\r\n        } ,\r\n        {\r\n            \"dataField\": \"Priority\",\r\n            \"caption\": \"Prioridade\",\r\n            \"alignment\": \"center\",\r\n            \"width\": 100,\r\n            \"cellTemplate\": \"function(e, i) {                                    var h = document.createElement(\u0027DIV\u0027);                                     e.appendChild(h);                                    h.classList.add(\u0027fal\u0027);                                    if (i.value==2) {                                        h.style[\u0027color\u0027                ] = \u0027#f7412d\u0027;                                        h.classList.add(\u0027fa-tachometer-fastest\u0027);            }                                     if (i.value==1){                                        h.style[\u0027color\u0027                ] = \u0027#3ba3f8\u0027;                                        h.classList.add(\u0027fa-tachometer-average\u0027);            }                                     if (i.value==0){                                        h.style[\u0027color\u0027                ] = \u0027#7ec880\u0027;                                        h.classList.add(\u0027fa-tachometer-slowest\u0027);            }         } \",\r\n            \"visibleIndex\": 5\r\n        } ,\r\n        {\r\n            \"dataField\": \"Effort\",\r\n            \"caption\": \"Esfor?o\",\r\n            \"alignment\": \"center\",\r\n            \"width\": 100,\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, i.value, i.value \u003e= 9, i.value \u003c 9 \u0026\u0026 i.value \u003e= 4, i.value \u003c 4); } \",\r\n            \"visibleIndex\": 6\r\n        } ,\r\n        {\r\n            \"dataField\": \"Stage\",\r\n            \"caption\": \"Etapa\",\r\n            \"name\": \"Name\",\r\n            \"alignment\": \"left\",\r\n            \"format\": \"#,##0\",\r\n            \"width\": 175,\r\n            \"groupCellTemplate\": \"function(e, i) {                                var color=i.component.option().dataSource.find(row=\u003erow.Stage==i.text).Color;                                var h=document.createElement(\u0027span\u0027);                                h.style.backgroundColor = color;                                 h.classList.add(\u0027documentStageColor\u0027);                                e.append(h);                                h=document.createElement(\u0027span\u0027);                                 var ht=\u0027 \u0027 + i.text + \u0027 (\u0027+i.summaryItems[0].value+\u0027)\u0027;                                 h.innerHTML = ht;                                e.append(h);        } \",\r\n            \"cellTemplate\": \"function(e, i) {                                var color = i.component.option().dataSource.find(row=\u003erow.Stage==i.text).Color;                                var h=document.createElement(\u0027SPAN\u0027);                                h.style.backgroundColor=color;                                 h.style.className = \u0027documentStageColor\u0027;                                e.appendChild(h);                                h=document.createElement(\u0027SPAN\u0027);                                h.innerHTML = i.text;                                e.appendChild(h);        } \",\r\n            \"visibleIndex\": 7\r\n        } ,\r\n        {\r\n            \"dataField\": \"Division\",\r\n            \"caption\": \"Divis?o\",\r\n            \"width\": 150,\r\n            \"visibleIndex\": 8\r\n        } ,\r\n        {\r\n            \"dataField\": \"Department\",\r\n            \"caption\": \"Departamento\",\r\n            \"width\": 150,\r\n            \"visibleIndex\": 9\r\n        } ,\r\n        {\r\n            \"dataField\": \"CreatedBy\",\r\n            \"caption\": \"Criado por\",\r\n            \"width\": 150,\r\n            \"visibleIndex\": 10\r\n        } ,\r\n        {\r\n            \"name\": \"Tags\",\r\n            \"caption\": \"Tags\",\r\n            \"width\": 100,\r\n            \"allowEditing\": false,\r\n            \"cellTemplate\": \"function(e, i) {                                                                                            SW.executeAPI(\u0027GET\u0027,\u0027document/\u0027 + i.data.Id + \u0027/tags\u0027,            { documentId:i.data.Id,documentType:\u0027deliverable\u0027            } ,null).then(x =\u003e {                                                if (x != null \u0026\u0026 x.length \u003e 0) {                                                                                                               var p = document.createElement(\u0027DIV\u0027);                                                                                                                e.appendChild(p);                                                                                                               SW.setAttribute(p,                    null,\u0027style\u0027,\u0027;display:flex;\u0027,false);                                                                                                               var h = document.createElement(\u0027DIV\u0027);                                                                                                                p.appendChild(h);                                                                                                               SW.setAttribute(h,                    null,\u0027class\u0027,\u0027module-tags-list-for-lists\u0027,false);                                                                                                               h.dataset[\u0027id\u0027                    ] = i.data.Oid;                                                                                                               var h0 = document.createElement(\u0027span\u0027);                                                                                                                SW.setAttribute(h0,                    null,\u0027class\u0027,\u0027 module-tags-dot\u0027,false);                                                                                                               h.appendChild(h0);                                                                                                               var h1 = document.createElement(\u0027span\u0027);                                                                                                                h0.appendChild(h1);                                                                                                               var h2 = document.createElement(\u0027span\u0027);                                                                                                                SW.setAttribute(h2,                    null,\u0027class\u0027,\u0027 module-tags-text\u0027,false);                                                                                                               SW.setAttribute(h2,                    null,\u0027style\u0027,\u0027;line-height: 16px;\u0027,false);                                                                                                               h.appendChild(h2);                                                                                                               h2.innerHTML = x[                        0                    ].Label;                                                                                                               SW.setAttribute(h,                    null,\u0027style\u0027,\u0027;background-color:\u0027 + x[                        0                    ].Color ,false);                } ;            } );        } \",\r\n            \"visibleIndex\": 11\r\n        } ,\r\n        {\r\n            \"dataField\": \"Client\",\r\n            \"caption\": \"Cliente\",\r\n            \"width\": 225,\r\n            \"groupIndex\": 0\r\n        } ,\r\n        {\r\n            \"dataField\": \"Project\",\r\n            \"caption\": \"Projeto\",\r\n            \"width\": 225,\r\n            \"groupIndex\": 1\r\n        } \r\n    ],\r\n    \"summary\": {\r\n        \"groupItems\": [\r\n            {\r\n                \"column\": \"Jobs\",\r\n                \"summaryType\": \"count\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"left\"\r\n            } \r\n        ],\r\n        \"totalItems\": [\r\n            {\r\n                \"column\": \"Jobs\",\r\n                \"summaryType\": \"count\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"Total: {0} \",\r\n                \"alignment\": \"left\"\r\n            } ,\r\n            {\r\n                \"column\": \"Effort\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"center\",\r\n                \"cellTemplate\": \"function(e, i) {var h=document.createElement(\u0027DIV\u0027); h.innerHTML = i.text;if(i.value\u003c0) {h.style.backgroundColor=\u0027#f5564a\u0027;h.style.color = \u0027#ffffff\u0027; e.appendChild(h);} } \"\r\n            } \r\n        ]\r\n    } \r\n} ",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
-        } ,
-        {
-            "Id": "bf19ac03-86ce-4c1c-ba70-ba24cdb8f735",
-            "Name": "Horizonte Temporal",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 6,
-            "Order": 2,
-            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Finalizado (azul) e Em Progresso (vermelho)\",\r\n        \"WidgetType\": \"rangeselector\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": 200,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            } ,\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        } ,\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"select\\tv.[Week],\\n\\t\\tsum(v.InProgress) as InProgress,\\n\\t\\tsum(v.Done) as Done\\nfrom\\t(\\n\\tselect\\tmax(dj.[Date] - datepart(dw, dj.[Date]) + 1) as Week,\\n\\t\\t\\tsum(iif(dj.StateTypeCode = 4, 1, 0)) as InProgress,\\n\\t\\t\\tsum(iif(dj.StateTypeCode = 6, 1, 0)) as Done\\n\\tfrom\\tAnalytics.Job(@CurrentUserId) dj\\n\\twhere\\tYear(dj.[Date]) = @year and\\n\\t\\t\\t(dj.DivisionId = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027)\\n\\tgroup by dj.[Date]\\n) v\\nwhere\\tv.InProgress != 0 or v.Done != 0\\ngroup by v.[Week]\",\r\n                \"mapping\": \"\"\r\n            } \r\n        } ,\r\n        \"Filters\": {} ,\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"year\",\r\n                \"Division\"\r\n            ]\r\n        } \r\n    } \r\n]",
-            "DashboardComponentType": {
-                "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "globalQuery/Atividades Criativas - OvertimeView/execute",
-            "Configuration": "{\n  \"size\": {\n    \"height\": 200\n  } ,\n  \"containerBackgroundColor\": \"#e0e0e0\",\n  \"selectedRangeColor\": \"#f5564a\",\n  \"chart\": {\n    \"commonSeriesSettings\": {\n      \"type\": \"steparea\",\n      \"argumentField\": \"Week\",\n      \"cornerRadius\": \"2px\"\n    } ,\n    \"series\": [\n      {\n        \"valueField\": \"Done\"\n      } ,\n      {\n        \"valueField\": \"InProgress\"\n      } \n    ]\n  } ,\n  \"scale\": {\n    \"minorTickInterval\": \"week\",\n    \"tickInterval\": \"week\",\n    \"valueType\": \"datetime\"\n  } ,\n  \"sliderMarker\": {\n    \"format\": \"monthAndDay\",\n    \"color\": \"#da5859\"\n  } ,\n  \"value\": {\n    \"length\": {\n      \"years\": 1\n    } \n  } \n} ",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
-        } ,
-        {
-            "Id": "b6f3a42a-81d0-46e1-a540-fc3c74b81929",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":30,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT 1;\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[]} } ]",
-            "DashboardComponentType": {
-                "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"colCount\": 7,\r\n    \"items\": [\r\n        {\r\n            \"dataField\": \"Year\",\r\n            \"label\": {\r\n                \"text\": \"Ano\"\r\n            } ,\r\n            \"editorType\": \"dxNumberBox\",\r\n            \"editorOptions\": {\r\n                \"showSpinButtons\": true,\r\n                \"value\": 2019,\r\n                \"width\": 65,\r\n                \"placeholder\": \"year\",\r\n                \"onContentReady\": \"function(e){ setTimeout(function() { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, 2019); SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); } , 500) } \",\r\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, e.value); }  } \"\r\n            } ,\r\n            \"noDataText\": \"Please wait...\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"DivisionId\",\r\n            \"label\": {\r\n                \"text\": \"Divis?o\"\r\n            } ,\r\n            \"editorType\": \"dxSelectBox\",\r\n            \"editorOptions\": {\r\n                \"width\": 250,\r\n                \"searchEnabled\": true,\r\n                \"dataSource\": {\r\n                    \"load\": \"function(loadOptions){ \r\n                            var searchValue = (\r\n                            loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \r\n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027divisions/lookup\u0027,\r\n                    null,\r\n                    {} ).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027Todas as Divis?es\u0027\r\n                        } );return res;\r\n                    } )\r\n                } \",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027divisions/\u0027+key+\u0027/lookup\u0027,null,{} ).then( result =\u003e  { return Promise.resolve(result);} ) } \"\r\n            } ,\r\n            \"placeholder\": \"Todas as Divis?es\",\r\n            \"displayExpr\": \"Name\",\r\n            \"valueExpr\": \"Id\",\r\n            \"onValueChanged\": \"function(e){ \r\n                                    if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, e.value);\r\n            }  else {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n            } \r\n        } \",\r\n                \"onInitialized\": \"function(e){ SW.saveComponent(e.component,\u0027DivisionId\u0027);} \"\r\n    } \r\n} \r\n]\r\n} ",
-            "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
-        } 
-    ],
-    "Version": 8,
-    "Default": false
-} 
+  "DashboardDefinitionRoles": [
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "df68defe-acf1-4661-91de-ef58aae11243",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Perfil Diretor Midia/Social/Planejamento/Bi"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "46d9e87a-5bde-497a-8897-35ce508bdd90",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Perfil Consultor/Suporte"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "fd6d4432-72bb-48f7-bc44-40f16b7e13e0",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Perfil Manuten??o"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "9c5d7946-64b4-4dae-bc89-60399d909037",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Perfil GP"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    },
+    {
+      "AccessRoleId": "c69ac80b-9c40-44d6-a34f-ac8916a2b8bc",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+      "AccessRoleName": "Administrator"
+    }
+  ],
+  "Id": "dc52cd48-1abf-430c-a8cd-78cee0857498",
+  "Name": "Atividades 3",
+  "Active": true,
+  "Location": 0,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentsConfiguration": null,
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "9450771f-bdd6-42d6-88ac-0a114c936b53",
+      "Name": "Resumo das Atividades do Per?odo",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 6,
+      "Order": 1,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Pendente Neg?cio, Em Execu??o, Em Distribui??o e Fechadas\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": 200,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Em Distribui??o\",\r\n                        \"metricFieldValue\": \"TotalBeingPrepared\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Em Execu??o\",\r\n                        \"metricFieldValue\": \"TotalInProgress\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Pendente Neg?cios\",\r\n                        \"metricFieldValue\": \"TotalUnderApproval\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Finalizado\",\r\n                        \"metricFieldValue\": \"TotalDone\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"select\\tv.*,\\r\\n\\t\\t(sum(v.BeingPrepared) over()) as TotalBeingPrepared,\\r\\n\\t\\t(sum(v.UnderApproval) over()) as TotalUnderApproval,\\r\\n\\t\\t(sum(v.InProgress) over()) as TotalInProgress,\\r\\n\\t\\t(sum(v.Done) over()) as TotalDone\\r\\nfrom\\t(\\r\\n\\t\\tselect\\tdj.Department,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode in (3,15), 1, 0)) as BeingPrepared,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode = 5, 1, 0)) as UnderApproval,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode = 4, 1, 0)) as InProgress,\\r\\n\\t\\t\\t\\tsum(iif(dj.StateTypeCode = 6, 1, 0)) as Done\\r\\n\\t\\tfrom\\tAnalytics.Job(@CurrentUserId) dj\\r\\n\\t\\twhere\\tdj.[Date] between @FromDate and @ToDate and\\r\\n\\t\\t\\t\\t(dj.DivisionId = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\tgroup by dj.Department\\r\\n) v\\r\\nwhere\\tv.BeingPrepared != 0 or\\r\\n\\t\\tv.UnderApproval != 0 or\\r\\n\\t\\tv.InProgress != 0 or \\r\\n\\t\\tv.Done != 0\\r\\ngroup by v.Department,\\r\\n\\t\\tv.BeingPrepared,\\r\\n\\t\\tv.UnderApproval,\\r\\n\\t\\tv.InProgress,\\r\\n\\t\\tv.Done\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\",\r\n                \"Division\"\r\n            ]\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Atividades Criativas - Delayed Jobs/execute",
+      "Configuration": "{\n  \"size\": {\n    \"height\": 100\n  },\n  \"commonSeriesSettings\": {\n    \"ignoreEmptyPoints\": true,\n    \"type\": \"bar\",\n    \"cornerRadius\": \"2px\",\n    \"label\": {\n      \"visible\": true,\n      \"showForZeroValues\": false\n    },\n    \"argumentField\": \"Department\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\": \"stagger\",\n      \"font\": {\n        \"size\": 10\n      }\n    }\n  },\n  \"panes\": [\n    {\n      \"name\": \"bar\"\n    }\n  ],\n  \"series\": [\n    {\n      \"valueField\": \"BeingPrepared\",\n      \"name\": \"Em Distribui??o\",\n      \"barWidth\": 80,\n      \"color\": \"#97c95c\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    },\n    {\n      \"valueField\": \"InProgress\",\n      \"name\": \"Em Execu??o\",\n      \"barWidth\": 80,\n      \"color\": \"#446fd2\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    },\n    {\n      \"valueField\": \"UnderApproval\",\n      \"name\": \"Pendente Neg?cios\",\n      \"barWidth\": 80,\n      \"color\": \"#ffc720\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    },\n    {\n      \"valueField\": \"Done\",\n      \"name\": \"Finalizado\",\n      \"barWidth\": 80,\n      \"color\": \"#000000\",\n      \"pane\": \"bar\",\n      \"type\": \"bar\"\n    },\n    {\n      \"valueField\": \"UnderApproval\",\n      \"name\": \"Pendente Neg?cios\",\n      \"barWidth\": 80,\n      \"color\": \"#ffc720\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    },\n    {\n      \"valueField\": \"InProgress\",\n      \"name\": \"Em Execu??o\",\n      \"barWidth\": 80,\n      \"color\": \"#97c95c\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    },\n    {\n      \"valueField\": \"BeingPrepared\",\n      \"name\": \"Em Distribui??o\",\n      \"barWidth\": 80,\n      \"color\": \"#ffc720\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    },\n    {\n      \"valueField\": \"Done\",\n      \"name\": \"Finalizado\",\n      \"barWidth\": 80,\n      \"color\": \"#446fd2\",\n      \"pane\": \"stacked\",\n      \"type\": \"stackedbar\",\n      \"showInLegend\": false,\n      \"visible\": false\n    }\n  ],\n  \"legend\": {\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\",\n    \"columnCount\": 4,\n    \"rowCount\": 1,\n    \"position\": \"outside\"\n  },\n  \"resolveLabelOverlapping\": \"shift\"\n}",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
+    },
+    {
+      "Id": "00e18edc-03cc-44ae-bfea-67cbb2dfd152",
+      "Name": "Atividades",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 3,
+      "Parameters": "[{\"WidgetSubTitle\":\"Carga de Trabalho do Periodo por Departamento\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tdj.Id as [Id],\\r\\n\\t\\tdj.Oid as Oid,\\r\\n        dj.Department as Department,\\r\\n\\t\\tdj.Division as Division,\\r\\n\\t\\tccl.[Name] as ClientClassification,\\r\\n\\t\\tdj.Client as Client,\\r\\n\\t\\tdj.ClientId as ClientId,\\r\\n\\t\\tcc.HasImage as cHasImage,\\r\\n\\t\\tjc.[Name] as JobClassification,\\r\\n\\t\\tdj.Project as Project,\\r\\n\\t\\tdj.[NameAndExternalId] as Job,\\r\\n\\t\\tdj.[User] as CreatedBy,\\r\\n\\t\\tdj.UserId as CreatedById,\\r\\n\\t\\tu.HasImage as uHasImage,\\r\\n\\t\\td.[Priority] as [Priority],\\r\\n\\t\\tdj.Effort as Effort,\\r\\n\\t\\tdatediff(day, getdate(), dj.[Date]) as Days,\\r\\n\\t\\tdj.ProjectClassificationName as JobClassification,\\r\\n\\t\\tdj.[State] as Stage,\\r\\n\\t\\tcast(d.EntryDate as date) as StartDate,\\r\\n\\t\\tcast(dj.[Date] as Date) as EndDate,\\r\\n\\t\\tdj.[Date] as EndTime,\\r\\n\\t\\td.ModifiedOn as LastActivity,\\r\\n\\t\\t(select\\tstring_agg(convert(nvarchar(50), usr.Name), \u0027,\u0027) from Assignment ass, AssignmentType ast, [User] usr where usr.Oid = ass.[User] and ass.DocumentOid = dj.Oid and ast.Name = \u0027Executor\u0027 and ass.AssignmentType = ast.Oid) as Executor,\\r\\n\\t\\t(select string_agg(convert(nvarchar(50), ass.[User]), \u0027,\u0027) from Assignment ass, AssignmentType ast where ass.DocumentOid = dj.Oid and ast.Name = \u0027Executor\u0027 and ass.AssignmentType = ast.Oid) as ExecutorId,\\r\\n\\t\\t(select\\tstring_agg(convert(nvarchar(50), usr.HasImage), \u0027,\u0027) from Assignment ass, AssignmentType ast, [User] usr where usr.Oid = ass.[User] and ass.DocumentOid = dj.Oid and ast.Name = \u0027Executor\u0027 and ass.AssignmentType = ast.Oid) as ExecutorImage,\\r\\n\\t\\tIsNull(ws.Color, wst.Color) as Color\\r\\nfrom\\tAnalytics.Job(@CurrentUserId) dj,\\r\\n\\t\\tDeliverable d left outer join JobClassification jc on jc.Oid = d.[Classification],\\r\\n\\t\\t[User] u,\\r\\n\\t\\tCommercialClient cc left outer join ClientClassification ccl on ccl.Oid = cc.ClientClassification,\\r\\n\\t\\tWorkflowState ws,\\r\\n\\t\\tWorkflowStateType wst\\r\\nwhere\\td.Oid = dj.Oid and\\r\\n\\t\\tdj.UserId = u.Oid and\\r\\n\\t\\tcc.Oid = dj.ClientId and \\r\\n\\t\\tdj.StateId = ws.Oid and\\r\\n\\t\\tdj.StateTypeId = wst.Oid and\\r\\n        dj.StateTypeCode in (2,3,4,5,11,13) and\\r\\n\\t\\tdj.[Date] between @FromDate and @ToDate and\\r\\n\\t\\t(dj.DivisionId = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027)\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[\"startDate\",\"endDate\",\"Division\"]}}]",
+      "DashboardComponentType": {
+        "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    },\r\n    \"height\": \"500\",\r\n    \"searchPanel\": {\r\n        \"visible\": true\r\n    },\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.preview(e.key, \u0027job\u0027);}\",\r\n    \"columnChooser\": {\r\n        \"enabled\": false\r\n    },\r\n    \"export\": {\r\n        \"enabled\": true,\r\n        \"fileName\": \"Re-Work Analysis\"\r\n    },\r\n    \"groupPanel\": {\r\n        \"visible\": true\r\n    },\r\n    \"grouping\": {\r\n        \"autoExpandAll\": true\r\n    },\r\n    \"selection\": {\r\n        \"mode\": \"single\"\r\n    },\r\n    \"scrolling\": {\r\n        \"mode\": \"virtual\",\r\n        \"rowRenderingMode\": \"virtual\"\r\n    },\r\n    \"allowColumnReordering\": \"true\",\r\n    \"rowAlternationEnabled\": \"true\",\r\n    \"showBorders\": false,\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Job\",\r\n            \"caption\": \"Atividade\",\r\n            \"width\": 500,\r\n            \"visibleIndex\": 0\r\n        },\r\n        {\r\n            \"dataField\": \"EndDate\",\r\n            \"caption\": \"Conclus?o\",\r\n            \"alignment\": \"center\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"d MMM\",\r\n            \"width\": 100,\r\n            \"visibleIndex\": 1\r\n        },\r\n        {\r\n            \"dataField\": \"EndTime\",\r\n            \"caption\": \"Hora Conclus?o\",\r\n            \"alignment\": \"center\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"HH:mm\",\r\n            \"width\": 100,\r\n            \"visibleIndex\": 2\r\n        },\r\n        {\r\n            \"dataField\": \"Executor\",\r\n            \"name\": \"Executor\",\r\n            \"caption\": \"Executado por\",\r\n            \"width\": 400,\r\n            \"visibleIndex\": 3\r\n        },\r\n        {\r\n            \"dataField\": \"Days\",\r\n            \"caption\": \"Dias\",\r\n            \"alignment\": \"center\",\r\n            \"width\": 100,\r\n            \"format\": \"#,##0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, i.value, i.value \u003c= 0, i.value \u003e 0 \u0026\u0026 i.value \u003c= 5, i.value \u003e 5); }\",\r\n            \"visibleIndex\": 4\r\n        },\r\n        {\r\n            \"dataField\": \"Priority\",\r\n            \"caption\": \"Prioridade\",\r\n            \"alignment\": \"center\",\r\n            \"width\": 100,\r\n            \"cellTemplate\": \"function(e, i) {                                    var h = document.createElement(\u0027DIV\u0027);                                     e.appendChild(h);                                    h.classList.add(\u0027fal\u0027);                                    if (i.value==2) {                                        h.style[\u0027color\u0027                ] = \u0027#f7412d\u0027;                                        h.classList.add(\u0027fa-tachometer-fastest\u0027);            }                                    if (i.value==1){                                        h.style[\u0027color\u0027                ] = \u0027#3ba3f8\u0027;                                        h.classList.add(\u0027fa-tachometer-average\u0027);            }                                    if (i.value==0){                                        h.style[\u0027color\u0027                ] = \u0027#7ec880\u0027;                                        h.classList.add(\u0027fa-tachometer-slowest\u0027);            }        }\",\r\n            \"visibleIndex\": 5\r\n        },\r\n        {\r\n            \"dataField\": \"Effort\",\r\n            \"caption\": \"Esfor?o\",\r\n            \"alignment\": \"center\",\r\n            \"width\": 100,\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, i.value, i.value \u003e= 9, i.value \u003c 9 \u0026\u0026 i.value \u003e= 4, i.value \u003c 4); }\",\r\n            \"visibleIndex\": 6\r\n        },\r\n        {\r\n            \"dataField\": \"Stage\",\r\n            \"caption\": \"Etapa\",\r\n            \"name\": \"Name\",\r\n            \"alignment\": \"left\",\r\n            \"format\": \"#,##0\",\r\n            \"width\": 175,\r\n            \"groupCellTemplate\": \"function(e, i) {                                var color=i.component.option().dataSource.find(row=\u003erow.Stage==i.text).Color;                                var h=document.createElement(\u0027span\u0027);                                h.style.backgroundColor = color;                                 h.classList.add(\u0027documentStageColor\u0027);                                e.append(h);                                h=document.createElement(\u0027span\u0027);                                 var ht=\u0027 \u0027 + i.text + \u0027 (\u0027+i.summaryItems[0].value+\u0027)\u0027;                                 h.innerHTML = ht;                                e.append(h);        }\",\r\n            \"cellTemplate\": \"function(e, i) {                                var color = i.component.option().dataSource.find(row=\u003erow.Stage==i.text).Color;                                var h=document.createElement(\u0027SPAN\u0027);                                h.style.backgroundColor=color;                                 h.style.className = \u0027documentStageColor\u0027;                                e.appendChild(h);                                h=document.createElement(\u0027SPAN\u0027);                                h.innerHTML = i.text;                                e.appendChild(h);        }\",\r\n            \"visibleIndex\": 7\r\n        },\r\n        {\r\n            \"dataField\": \"Division\",\r\n            \"caption\": \"Divis?o\",\r\n            \"width\": 150,\r\n            \"visibleIndex\": 8\r\n        },\r\n        {\r\n            \"dataField\": \"Department\",\r\n            \"caption\": \"Departamento\",\r\n            \"width\": 150,\r\n            \"visibleIndex\": 9\r\n        },\r\n        {\r\n            \"dataField\": \"CreatedBy\",\r\n            \"caption\": \"Criado por\",\r\n            \"width\": 150,\r\n            \"visibleIndex\": 10\r\n        },\r\n        {\r\n            \"name\": \"Tags\",\r\n            \"caption\": \"Tags\",\r\n            \"width\": 100,\r\n            \"allowEditing\": false,\r\n            \"cellTemplate\": \"function(e, i) {                                                                                            SW.executeAPI(\u0027GET\u0027,\u0027document/\u0027 + i.data.Id + \u0027/tags\u0027,            { documentId:i.data.Id,documentType:\u0027deliverable\u0027            },null).then(x =\u003e {                                                if (x != null \u0026\u0026 x.length \u003e 0) {                                                                                                               var p = document.createElement(\u0027DIV\u0027);                                                                                                                e.appendChild(p);                                                                                                               SW.setAttribute(p,                    null,\u0027style\u0027,\u0027;display:flex;\u0027,false);                                                                                                               var h = document.createElement(\u0027DIV\u0027);                                                                                                                p.appendChild(h);                                                                                                               SW.setAttribute(h,                    null,\u0027class\u0027,\u0027module-tags-list-for-lists\u0027,false);                                                                                                               h.dataset[\u0027id\u0027                    ] = i.data.Oid;                                                                                                               var h0 = document.createElement(\u0027span\u0027);                                                                                                                SW.setAttribute(h0,                    null,\u0027class\u0027,\u0027 module-tags-dot\u0027,false);                                                                                                               h.appendChild(h0);                                                                                                               var h1 = document.createElement(\u0027span\u0027);                                                                                                                h0.appendChild(h1);                                                                                                               var h2 = document.createElement(\u0027span\u0027);                                                                                                                SW.setAttribute(h2,                    null,\u0027class\u0027,\u0027 module-tags-text\u0027,false);                                                                                                               SW.setAttribute(h2,                    null,\u0027style\u0027,\u0027;line-height: 16px;\u0027,false);                                                                                                               h.appendChild(h2);                                                                                                               h2.innerHTML = x[                        0                    ].Label;                                                                                                               SW.setAttribute(h,                    null,\u0027style\u0027,\u0027;background-color:\u0027 + x[                        0                    ].Color ,false);                };            });        }\",\r\n            \"visibleIndex\": 11\r\n        },\r\n        {\r\n            \"dataField\": \"Client\",\r\n            \"caption\": \"Cliente\",\r\n            \"width\": 225,\r\n            \"groupIndex\": 0\r\n        },\r\n        {\r\n            \"dataField\": \"Project\",\r\n            \"caption\": \"Projeto\",\r\n            \"width\": 225,\r\n            \"groupIndex\": 1\r\n        }\r\n    ],\r\n    \"summary\": {\r\n        \"groupItems\": [\r\n            {\r\n                \"column\": \"Jobs\",\r\n                \"summaryType\": \"count\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"{0}\",\r\n                \"alignment\": \"left\"\r\n            }\r\n        ],\r\n        \"totalItems\": [\r\n            {\r\n                \"column\": \"Jobs\",\r\n                \"summaryType\": \"count\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"Total: {0}\",\r\n                \"alignment\": \"left\"\r\n            },\r\n            {\r\n                \"column\": \"Effort\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"{0}\",\r\n                \"alignment\": \"center\",\r\n                \"cellTemplate\": \"function(e, i) {var h=document.createElement(\u0027DIV\u0027); h.innerHTML = i.text;if(i.value\u003c0) {h.style.backgroundColor=\u0027#f5564a\u0027;h.style.color = \u0027#ffffff\u0027; e.appendChild(h);}}\"\r\n            }\r\n        ]\r\n    }\r\n}",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
+    },
+    {
+      "Id": "bf19ac03-86ce-4c1c-ba70-ba24cdb8f735",
+      "Name": "Horizonte Temporal",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 6,
+      "Order": 2,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Finalizado (azul) e Em Progresso (vermelho)\",\r\n        \"WidgetType\": \"rangeselector\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": 200,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"select\\tv.[Week],\\n\\t\\tsum(v.InProgress) as InProgress,\\n\\t\\tsum(v.Done) as Done\\nfrom\\t(\\n\\tselect\\tmax(dj.[Date] - datepart(dw, dj.[Date]) + 1) as Week,\\n\\t\\t\\tsum(iif(dj.StateTypeCode = 4, 1, 0)) as InProgress,\\n\\t\\t\\tsum(iif(dj.StateTypeCode = 6, 1, 0)) as Done\\n\\tfrom\\tAnalytics.Job(@CurrentUserId) dj\\n\\twhere\\tYear(dj.[Date]) = @year and\\n\\t\\t\\t(dj.DivisionId = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027)\\n\\tgroup by dj.[Date]\\n) v\\nwhere\\tv.InProgress != 0 or v.Done != 0\\ngroup by v.[Week]\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"year\",\r\n                \"Division\"\r\n            ]\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Atividades Criativas - OvertimeView/execute",
+      "Configuration": "{\n  \"size\": {\n    \"height\": 200\n  },\n  \"containerBackgroundColor\": \"#e0e0e0\",\n  \"selectedRangeColor\": \"#f5564a\",\n  \"chart\": {\n    \"commonSeriesSettings\": {\n      \"type\": \"steparea\",\n      \"argumentField\": \"Week\",\n      \"cornerRadius\": \"2px\"\n    },\n    \"series\": [\n      {\n        \"valueField\": \"Done\"\n      },\n      {\n        \"valueField\": \"InProgress\"\n      }\n    ]\n  },\n  \"scale\": {\n    \"minorTickInterval\": \"week\",\n    \"tickInterval\": \"week\",\n    \"valueType\": \"datetime\"\n  },\n  \"sliderMarker\": {\n    \"format\": \"monthAndDay\",\n    \"color\": \"#da5859\"\n  },\n  \"value\": {\n    \"length\": {\n      \"years\": 1\n    }\n  }\n}",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
+    },
+    {
+      "Id": "b6f3a42a-81d0-46e1-a540-fc3c74b81929",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetHeight\":30,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT 1;\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "cab97287-486a-4e86-98e8-7a4fddb29416",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"colCount\": 7,\r\n    \"items\": [\r\n        {\r\n            \"dataField\": \"Year\",\r\n            \"label\": {\r\n                \"text\": \"Ano\"\r\n            },\r\n            \"editorType\": \"dxNumberBox\",\r\n            \"editorOptions\": {\r\n                \"showSpinButtons\": true,\r\n                \"value\": 2019,\r\n                \"width\": 65,\r\n                \"placeholder\": \"year\",\r\n                \"onContentReady\": \"function(e){ setTimeout(function() { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, 2019); SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); }, 500) }\",\r\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, e.value); } }\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        },\r\n        {\r\n            \"dataField\": \"DivisionId\",\r\n            \"label\": {\r\n                \"text\": \"Divis?o\"\r\n            },\r\n            \"editorType\": \"dxSelectBox\",\r\n            \"editorOptions\": {\r\n                \"width\": 250,\r\n                \"searchEnabled\": true,\r\n                \"dataSource\": {\r\n                    \"load\": \"function(loadOptions){ \r\n                            var searchValue = (\r\n                            loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \r\n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027divisions/lookup\u0027,\r\n                    null,\r\n                    {}).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027Todas as Divis?es\u0027\r\n                        });return res;\r\n                    })\r\n                }\",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027divisions/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\r\n            },\r\n            \"placeholder\": \"Todas as Divis?es\",\r\n            \"displayExpr\": \"Name\",\r\n            \"valueExpr\": \"Id\",\r\n            \"onValueChanged\": \"function(e){ \r\n                                    if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, e.value);\r\n            } else {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n            }\r\n        }\",\r\n                \"onInitialized\": \"function(e){ SW.saveComponent(e.component,\u0027DivisionId\u0027);}\"\r\n    }\r\n}\r\n]\r\n}",
+      "DashboardDefinitionId": "dc52cd48-1abf-430c-a8cd-78cee0857498"
+    }
+  ],
+  "Version": 8,
+  "Default": false
+}

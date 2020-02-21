@@ -1,37 +1,37 @@
 ﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "d86227fd-3ea9-471d-808a-94aafa168611",
-    "Name": "jobtypes",
-    "Active": true,
-    "Location": 2,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentTypeName": "jobtype",
-    "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            } ,\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {} \n            } ,\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {} \n            } ,\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    } \n                ]\n            } ,\n            \"remove\": {\n                \"endpoint\": \"\"\n            } ,\n            \"lookup\": {\n                \"endpoint\": \"\"\n            } ,\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            } \n        } ,\n        \"layout\": {\n            \"create\": {} ,\n            \"read\": {} ,\n            \"patch\": {} \n        } ,\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        } ,\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        } ,\n        \"fields\": []\n    } \n]",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "b27e6667-bb02-43b9-8aba-59edd1462248",
-            "Name": "JobTypes",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\r\\n    j.Oid, \\r\\n    j.Name, \\r\\n    j.Code, \\r\\n    j.DurationDays, \\r\\n    j.Active,\\r\\n    c.Name as Company, \\r\\n    v.Name as Division, \\r\\n    d.Name as Department,\\r\\n    doc.Name as Document,\\r\\n\\tw.Name as Workflow\\r\\nfrom JobType j\\r\\nInner Join Company c on j.Company=c.Oid\\r\\nInner join Division v on j.Division=v.Oid\\r\\nInner join Department d on j.Department=d.Oid\\r\\nInner join Document doc on j.Document=doc.Oid\\r\\nLeft Join DocumentType w on j.Workflow=w.Oid\\r\\nwhere j.GCRecord IS NULL\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[]} } ]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027jobtype\u0027,650,700);} \",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    } ,\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        } ,\r\n        {\r\n            \"dataField\": \"Name\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Document\",\r\n            \"groupIndex\": 0\r\n        } ,\r\n        {\r\n            \"dataField\": \"Workflow\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Company\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Division\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Department\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Code\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Active\"\r\n        } \r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027    } );        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {                SkillsWorkflow.genericNew(\u0027jobtype\u0027,                600,                720);            }         }     } );     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027jobtype\u0027, dataGrid);            }         }     } );} \",\r\n    \"entity\": \"jobtype\",\r\n    \"height\": \"100%\"\r\n} ",
-            "DashboardDefinitionId": "d86227fd-3ea9-471d-808a-94aafa168611"
-        } 
-    ],
-    "QueryText": "",
-    "UseStore": false,
-    "StoreEntity": null,
-    "Version": 6,
-    "Default": true
-} 
+  "DashboardDefinitionRoles": [],
+  "Id": "d86227fd-3ea9-471d-808a-94aafa168611",
+  "Name": "jobtypes",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "jobtype",
+  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "b27e6667-bb02-43b9-8aba-59edd1462248",
+      "Name": "JobTypes",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\r\\n    j.Oid, \\r\\n    j.Name, \\r\\n    j.Code, \\r\\n    j.DurationDays, \\r\\n    j.Active,\\r\\n    c.Name as Company, \\r\\n    v.Name as Division, \\r\\n    d.Name as Department,\\r\\n    doc.Name as Document,\\r\\n\\tw.Name as Workflow\\r\\nfrom JobType j\\r\\nInner Join Company c on j.Company=c.Oid\\r\\nInner join Division v on j.Division=v.Oid\\r\\nInner join Department d on j.Department=d.Oid\\r\\nInner join Document doc on j.Document=doc.Oid\\r\\nLeft Join DocumentType w on j.Workflow=w.Oid\\r\\nwhere j.GCRecord IS NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027jobtype\u0027,650,700);}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        {\r\n            \"dataField\": \"Name\"\r\n        },\r\n        {\r\n            \"dataField\": \"Document\",\r\n            \"groupIndex\": 0\r\n        },\r\n        {\r\n            \"dataField\": \"Workflow\"\r\n        },\r\n        {\r\n            \"dataField\": \"Company\"\r\n        },\r\n        {\r\n            \"dataField\": \"Division\"\r\n        },\r\n        {\r\n            \"dataField\": \"Department\"\r\n        },\r\n        {\r\n            \"dataField\": \"Code\"\r\n        },\r\n        {\r\n            \"dataField\": \"Active\"\r\n        }\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027    });        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {                SkillsWorkflow.genericNew(\u0027jobtype\u0027,                600,                720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027jobtype\u0027, dataGrid);            }        }    });}\",\r\n    \"entity\": \"jobtype\",\r\n    \"height\": \"100%\"\r\n}",
+      "DashboardDefinitionId": "d86227fd-3ea9-471d-808a-94aafa168611"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 6,
+  "Default": true
+}

@@ -1,74 +1,74 @@
 ﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d",
-    "Name": "Cover Sheet",
-    "Active": true,
-    "Location": 1,
-    "DocumentId": "e85c7fb2-455e-44e7-9c96-55359c37efd5",
-    "DocumentName": "Expense",
-    "DocumentsConfiguration": null,
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "1096b9d2-2720-447c-8923-17daba507b11",
-            "Name": " ",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 5,
-            "Order": 1,
-            "Parameters": "[{\"WidgetSubTitle\":\"Client Billable Expenses\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"200\",\"WidgetHeader\":{\"showContextInfo\":false,\"showPeriodChooser\":false,\"ComponentMetrics\":{\"visible\":true,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Billable\",\"metricFieldValue\":\"ValueWithVatGrandTotal\"} ]} ,\"showSubTitle\":true,\"showTitle\":true} ,\"WidgetDataSources\":{\"main\":{\"type\":\"query\",\"value\":\"globalQuery/Expense - Cover Sheet Expenses Billable/execute\",\"mapping\":\"\"} } ,\"QueryConfiguration\":null} ]",
-            "DashboardComponentType": {
-                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "globalQuery/Expense - Cover Sheet Expenses Billable/execute",
-            "Configuration": "{\n    \"height\": \"auto\",\n    \"allowColumnResizing\":false,\n    \"hoverStateEnabled\":false,\n    \"onToolbarPreparing\": \"function(e){} \",\n    \"columnAutoWidth\": true,\n    \"grouping\":{\"autoExpandAll\":true} ,\n    \"columnMinWidth\": 50,\n    \"searchPanel\": {\n        \"visible\": false\n    } ,\n    \"groupPanel\": {\n        \"visible\": false\n    } ,\n    \"columnChooser\": {\n        \"enabled\": false\n    } ,\n    \"export\": {\n        \"enabled\": false\n    } ,\n    \"showColumnHeaders\": true,\n    \"selection\": {\n        \"mode\": \"none\"\n    } ,\n    \"columns\": [\n        {\n            \"dataField\": \"ExpenseTypeName\",\n            \"name\": \"ExpenseTypeName\",\n            \"caption\": \"Expenses\"\n    } ,\n   {\n            \"dataField\": \"ValueWithVat\",\n            \"name\": \"ValueWithVat\",\n            \"caption\": \"Amount\",\n            \"format\": {\n              \"type\": \"currency\",\n              \"precision\": 2\n      } \n    } ,\n     {\n            \"dataField\": \"Group\",\n            \"name\": \"Group\",\n            \"groupIndex\":0\n    } \n     ],\n \"summary\": {\n    \"totalItems\": [\n      {\n        \"column\": \"ValueWithVat\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        } ,\n        \"displayFormat\": \"{0} \"\n      } \n    ],\n    \"groupItems\": [{\n                \"column\": \"ValueWithVat\",\n                \"summaryType\": \"sum\",\n                \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        } ,\n                \"displayFormat\": \"Total: {0} \",\n                \"showInGroupFooter\": true\n            } ]\n  } \n} ",
-            "DashboardDefinitionId": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d"
-        } ,
-        {
-            "Id": "f63fcd68-b94e-481c-81c3-635e7299cb87",
-            "Name": " ",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 4,
-            "Order": 2,
-            "Parameters": "[{\n    \"WidgetHeader\": {\n      \"showContextInfo\": false,\n      \"showPeriodChooser\": false,\n      \"ComponentMetrics\": {\n        \"visible\": true,\n        \"Metrics\": [\n          {\n            \"visible\": true,\n            \"metricName\": \"? Non-Billable\",\n            \"metricFieldValue\": \"ValueWithVatGrandTotal\"\n          } \n          ]\n      } \n    } \n  } ,\n  {\n    \"WidgetHeight\": \"200\"\n  } ,\n  {\n    \"WidgetType\": \"grid\"\n  } ,\n {\n \"WidgetSubTitle\":\"Client Non-Billable Expenses\"\n } \n,{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Expense - Cover Sheet Expenses Non-Billable/execute\" } } } ,{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Expense - Cover Sheet Expenses Non-Billable/execute\" } } } ]",
-            "DashboardComponentType": {
-                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "globalQuery/Expense - Cover Sheet Expenses Non-Billable/execute",
-            "Configuration": "{\n    \"height\": \"auto\",\n    \"onToolbarPreparing\": \"function(e){} \",\n    \"allowColumnResizing\":false,\n    \"hoverStateEnabled\":false,\n    \"columnAutoWidth\": true,\n    \"columnMinWidth\": 50,\n    \"grouping\":{\"autoExpandAll\":true} ,\n    \"searchPanel\": {\n        \"visible\": false\n    } ,\n    \"groupPanel\": {\n        \"visible\": false\n    } ,\n    \"columnChooser\": {\n        \"enabled\": false\n    } ,\n    \"export\": {\n        \"enabled\": false\n    } ,\n    \"showColumnHeaders\": true,\n    \"selection\": {\n        \"mode\": \"none\"\n    } ,\n    \"columns\": [\n        {\n            \"dataField\": \"ExpenseTypeName\",\n            \"name\": \"ExpenseTypeName\",\n            \"caption\": \"Expenses\"\n    } ,\n   {\n            \"dataField\": \"ValueWithVat\",\n            \"name\": \"ValueWithVat\",\n            \"caption\": \"Amount\",\n            \"format\": {\n              \"type\": \"currency\",\n              \"precision\": 2\n      } \n    } ,\n     {\n            \"dataField\": \"Group\",\n            \"name\": \"Group\",\n            \"groupIndex\":0\n    } \n],\n  \"summary\": {\n    \"totalItems\": [\n      {\n        \"column\": \"ValueWithVat\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        } ,\n        \"displayFormat\": \"{0} \"\n      } \n    ],\n    \"groupItems\": [{\n                \"column\": \"ValueWithVat\",\n                \"summaryType\": \"sum\",\n                \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        } ,\n                \"displayFormat\": \"Total: {0} \",\n                \"showInGroupFooter\": true\n            } ]\n  } \n} ",
-            "DashboardDefinitionId": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d"
-        } ,
-        {
-            "Id": "7bd30ce6-3b5a-4b9c-ba48-a2e8e7c7d682",
-            "Name": "Cover sheet",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 3,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Summary\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"showPeriodChooser\":false,\"ComponentMetrics\":{\"visible\":true,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Expense Report\",\"metricFieldValue\":\"TotalExpenseReport\"} ,{\"visible\":true,\"metricName\":\"? Reimbursement\",\"metricFieldValue\":\"ReimbursementTotal\"} ]} ,\"showSubTitle\":true,\"showTitle\":true} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n--        e.[Oid] as Oid,\\n        e.[Number] as \u0027Number\u0027,\\n        jt.[Name] as Type,\\n        e.[DocumentNumber] as \u0027DocumentName\u0027,\\n        e.ExternalName as ExternalName,\\n        e.[Emission] as \u0027StartDate\u0027,\\n        e.[Due] as \u0027EndDate\u0027,\\n        ep.[Name] as Employee,\\n        ep.ExternalId as EmployeeExternalId,\\n        d.[Name] as Department,\\n        e.[ValueWithVat] as ReimbursementTotal,\\n        (select sum (ei.ValueWithVat) from Expense e, ExpenseItem ei, ExpenseItemType eit\\n        where  \\n                ei.Expense = e.Oid AND\\n                ei.[Type] = eit.Oid AND\\n                eit.[Group] = 2 \\n                 /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/\\n        ) as TotalExpenseReport,\\n        (select STRING_AGG(t.Number,\u0027, \u0027) as JobNumber\\n                                                        from\\n                                                                (select distinct p.Number\\n                                                                from ExpenseItem ei, Project p\\n                                                                    where Expense = @ExpenseId\\n                                                                    and p.Oid = ei.Project) t) as JobNumber,\\n\\n        (select PO from Expense_UserFields euf where e.oid = euf.Oid) as PO\\n\\nfrom Expense e, JobType jt, Employee ep, Department d\\n\\nwhere  \\n        e.type = jt.oid AND\\n        e.employee = ep.oid AND\\n        e.department = d.oid \\n /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":null} ]",
-            "DashboardComponentType": {
-                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            } ,
-            "AnalyticsApiUrl": "globalQuery/Expense - Cover Sheet/execute",
-            "Configuration": "{\n    \"readOnly\": \"true\",\n    \"items\": [\n       \n  {\n        \"dataField\": \"EmployeeExternalId\",\n        \"label\": {\n            \"text\": \"Vendor Number\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"JobNumber\",\n        \"label\": {\n            \"text\": \"Job Number\"\n        } ,\n        \"color\": \"red\",\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"label\": {\n            \"text\": \"Report Number\"\n        } ,\n        \"dataField\": \"Number\",\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"Type\",\n        \"label\": {\n            \"text\": \"Type\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"DocumentName\",\n        \"label\": {\n            \"text\": \"Business Purpose\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"ExternalName\",\n        \"label\": {\n            \"text\": \"Travel Record\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"StartDate\",\n        \"label\": {\n            \"text\": \"Start Date\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"EndDate\",\n        \"label\": {\n            \"text\": \"End Date\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"Employee\",\n        \"label\": {\n            \"text\": \"Employee\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"Department\",\n        \"label\": {\n            \"text\": \"Department\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"dataField\": \"PO\",\n        \"label\": {\n            \"text\": \"PO\"\n        } ,\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        } \n    } ,\n    {\n        \"template\": \"function(data, itemElement) { debugger;\n                  var info = data.component[\u0027option\u0027\n        ](\u0027formData\u0027);\n                  itemElement.appendChild(\u0027\u003cdiv onClick=\\\"debugger;SkillsWorkflow.export( { delimiter: `,`, format:`csv` } ,[info]);\\\" class=\\\"dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text\\\" role=\\\"button\\\"\u003e \u003cdiv class=\\\"dx-button-content\\\"\u003e\u003cspan class=\\\"dx-button-text\\\"\u003eExport(este)\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u0027);\n    } \"  \n} \n]\n} ",
-            "DashboardDefinitionId": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d"
-        } 
-    ],
-    "Version": 3,
-    "Default": true,
-    "Dependencies": {
-        "DashboardSdk": "1.0.0",
-        "Analytics": "1.0.0",
-        "SkillsWorkflow": "1.0.0"
-    } 
-} 
+  "DashboardDefinitionRoles": [],
+  "Id": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d",
+  "Name": "Cover Sheet",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "e85c7fb2-455e-44e7-9c96-55359c37efd5",
+  "DocumentName": "Expense",
+  "DocumentsConfiguration": null,
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "1096b9d2-2720-447c-8923-17daba507b11",
+      "Name": " ",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 5,
+      "Order": 1,
+      "Parameters": "[{\"WidgetSubTitle\":\"Client Billable Expenses\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"200\",\"WidgetHeader\":{\"showContextInfo\":false,\"showPeriodChooser\":false,\"ComponentMetrics\":{\"visible\":true,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Billable\",\"metricFieldValue\":\"ValueWithVatGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"query\",\"value\":\"globalQuery/Expense - Cover Sheet Expenses Billable/execute\",\"mapping\":\"\"}},\"QueryConfiguration\":null}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Expense - Cover Sheet Expenses Billable/execute",
+      "Configuration": "{\n    \"height\": \"auto\",\n    \"allowColumnResizing\":false,\n    \"hoverStateEnabled\":false,\n    \"onToolbarPreparing\": \"function(e){}\",\n    \"columnAutoWidth\": true,\n    \"grouping\":{\"autoExpandAll\":true},\n    \"columnMinWidth\": 50,\n    \"searchPanel\": {\n        \"visible\": false\n    },\n    \"groupPanel\": {\n        \"visible\": false\n    },\n    \"columnChooser\": {\n        \"enabled\": false\n    },\n    \"export\": {\n        \"enabled\": false\n    },\n    \"showColumnHeaders\": true,\n    \"selection\": {\n        \"mode\": \"none\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"ExpenseTypeName\",\n            \"name\": \"ExpenseTypeName\",\n            \"caption\": \"Expenses\"\n    },\n   {\n            \"dataField\": \"ValueWithVat\",\n            \"name\": \"ValueWithVat\",\n            \"caption\": \"Amount\",\n            \"format\": {\n              \"type\": \"currency\",\n              \"precision\": 2\n      }\n    },\n     {\n            \"dataField\": \"Group\",\n            \"name\": \"Group\",\n            \"groupIndex\":0\n    }\n     ],\n \"summary\": {\n    \"totalItems\": [\n      {\n        \"column\": \"ValueWithVat\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        },\n        \"displayFormat\": \"{0}\"\n      }\n    ],\n    \"groupItems\": [{\n                \"column\": \"ValueWithVat\",\n                \"summaryType\": \"sum\",\n                \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        },\n                \"displayFormat\": \"Total: {0}\",\n                \"showInGroupFooter\": true\n            }]\n  }\n}",
+      "DashboardDefinitionId": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d"
+    },
+    {
+      "Id": "f63fcd68-b94e-481c-81c3-635e7299cb87",
+      "Name": " ",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 2,
+      "Parameters": "[{\n    \"WidgetHeader\": {\n      \"showContextInfo\": false,\n      \"showPeriodChooser\": false,\n      \"ComponentMetrics\": {\n        \"visible\": true,\n        \"Metrics\": [\n          {\n            \"visible\": true,\n            \"metricName\": \"? Non-Billable\",\n            \"metricFieldValue\": \"ValueWithVatGrandTotal\"\n          }\n          ]\n      }\n    }\n  },\n  {\n    \"WidgetHeight\": \"200\"\n  },\n  {\n    \"WidgetType\": \"grid\"\n  },\n {\n \"WidgetSubTitle\":\"Client Non-Billable Expenses\"\n }\n,{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Expense - Cover Sheet Expenses Non-Billable/execute\" }}},{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Expense - Cover Sheet Expenses Non-Billable/execute\" }}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Expense - Cover Sheet Expenses Non-Billable/execute",
+      "Configuration": "{\n    \"height\": \"auto\",\n    \"onToolbarPreparing\": \"function(e){}\",\n    \"allowColumnResizing\":false,\n    \"hoverStateEnabled\":false,\n    \"columnAutoWidth\": true,\n    \"columnMinWidth\": 50,\n    \"grouping\":{\"autoExpandAll\":true},\n    \"searchPanel\": {\n        \"visible\": false\n    },\n    \"groupPanel\": {\n        \"visible\": false\n    },\n    \"columnChooser\": {\n        \"enabled\": false\n    },\n    \"export\": {\n        \"enabled\": false\n    },\n    \"showColumnHeaders\": true,\n    \"selection\": {\n        \"mode\": \"none\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"ExpenseTypeName\",\n            \"name\": \"ExpenseTypeName\",\n            \"caption\": \"Expenses\"\n    },\n   {\n            \"dataField\": \"ValueWithVat\",\n            \"name\": \"ValueWithVat\",\n            \"caption\": \"Amount\",\n            \"format\": {\n              \"type\": \"currency\",\n              \"precision\": 2\n      }\n    },\n     {\n            \"dataField\": \"Group\",\n            \"name\": \"Group\",\n            \"groupIndex\":0\n    }\n],\n  \"summary\": {\n    \"totalItems\": [\n      {\n        \"column\": \"ValueWithVat\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        },\n        \"displayFormat\": \"{0}\"\n      }\n    ],\n    \"groupItems\": [{\n                \"column\": \"ValueWithVat\",\n                \"summaryType\": \"sum\",\n                \"valueFormat\": {\n          \"type\": \"currency\",\n          \"precision\": 2\n        },\n                \"displayFormat\": \"Total: {0}\",\n                \"showInGroupFooter\": true\n            }]\n  }\n}",
+      "DashboardDefinitionId": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d"
+    },
+    {
+      "Id": "7bd30ce6-3b5a-4b9c-ba48-a2e8e7c7d682",
+      "Name": "Cover sheet",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 3,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Summary\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"showPeriodChooser\":false,\"ComponentMetrics\":{\"visible\":true,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Expense Report\",\"metricFieldValue\":\"TotalExpenseReport\"},{\"visible\":true,\"metricName\":\"? Reimbursement\",\"metricFieldValue\":\"ReimbursementTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n--        e.[Oid] as Oid,\\n        e.[Number] as \u0027Number\u0027,\\n        jt.[Name] as Type,\\n        e.[DocumentNumber] as \u0027DocumentName\u0027,\\n        e.ExternalName as ExternalName,\\n        e.[Emission] as \u0027StartDate\u0027,\\n        e.[Due] as \u0027EndDate\u0027,\\n        ep.[Name] as Employee,\\n        ep.ExternalId as EmployeeExternalId,\\n        d.[Name] as Department,\\n        e.[ValueWithVat] as ReimbursementTotal,\\n        (select sum (ei.ValueWithVat) from Expense e, ExpenseItem ei, ExpenseItemType eit\\n        where  \\n                ei.Expense = e.Oid AND\\n                ei.[Type] = eit.Oid AND\\n                eit.[Group] = 2 \\n                 /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/\\n        ) as TotalExpenseReport,\\n        (select STRING_AGG(t.Number,\u0027, \u0027) as JobNumber\\n                                                        from\\n                                                                (select distinct p.Number\\n                                                                from ExpenseItem ei, Project p\\n                                                                    where Expense = @ExpenseId\\n                                                                    and p.Oid = ei.Project) t) as JobNumber,\\n\\n        (select PO from Expense_UserFields euf where e.oid = euf.Oid) as PO\\n\\nfrom Expense e, JobType jt, Employee ep, Department d\\n\\nwhere  \\n        e.type = jt.oid AND\\n        e.employee = ep.oid AND\\n        e.department = d.oid \\n /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":null}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Expense - Cover Sheet/execute",
+      "Configuration": "{\n    \"readOnly\": \"true\",\n    \"items\": [\n       \n  {\n        \"dataField\": \"EmployeeExternalId\",\n        \"label\": {\n            \"text\": \"Vendor Number\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"JobNumber\",\n        \"label\": {\n            \"text\": \"Job Number\"\n        },\n        \"color\": \"red\",\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"label\": {\n            \"text\": \"Report Number\"\n        },\n        \"dataField\": \"Number\",\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"Type\",\n        \"label\": {\n            \"text\": \"Type\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"DocumentName\",\n        \"label\": {\n            \"text\": \"Business Purpose\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"ExternalName\",\n        \"label\": {\n            \"text\": \"Travel Record\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"StartDate\",\n        \"label\": {\n            \"text\": \"Start Date\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"EndDate\",\n        \"label\": {\n            \"text\": \"End Date\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"Employee\",\n        \"label\": {\n            \"text\": \"Employee\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"Department\",\n        \"label\": {\n            \"text\": \"Department\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"dataField\": \"PO\",\n        \"label\": {\n            \"text\": \"PO\"\n        },\n        \"editorOptions\": {\n            \"disabled\": \"true\"\n        }\n    },\n    {\n        \"template\": \"function(data, itemElement) { debugger;\n                  var info = data.component[\u0027option\u0027\n        ](\u0027formData\u0027);\n                  itemElement.appendChild(\u0027\u003cdiv onClick=\\\"debugger;SkillsWorkflow.export( { delimiter: `,`, format:`csv` },[info]);\\\" class=\\\"dx-button dx-button-normal dx-button-mode-contained dx-widget dx-button-has-text\\\" role=\\\"button\\\"\u003e \u003cdiv class=\\\"dx-button-content\\\"\u003e\u003cspan class=\\\"dx-button-text\\\"\u003eExport(este)\u003c/span\u003e\u003c/div\u003e\u003c/div\u003e\u0027);\n    }\"  \n}\n]\n}",
+      "DashboardDefinitionId": "8d72fbb3-8fb4-4e9b-81b0-9665feea2c7d"
+    }
+  ],
+  "Version": 3,
+  "Default": true,
+  "Dependencies": {
+    "DashboardSdk": "1.0.0",
+    "Analytics": "1.0.0",
+    "SkillsWorkflow": "1.0.0"
+  }
+}
