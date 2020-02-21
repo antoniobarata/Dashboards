@@ -64,7 +64,7 @@
             "DashboardDefinitionId": "d740510a-8062-4fc9-8127-843cc46feabe"
         }
     ],
-    "Version": 2,
+    "Version": 3,
     "Default": true,
     "Dependencies": {
         "DashboardSdk": "1.0.0",
