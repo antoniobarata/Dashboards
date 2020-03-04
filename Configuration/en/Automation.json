@@ -1,0 +1,32 @@
+{
+    "DashboardDefinitionRoles": [],
+    "Id": "f0101518-a2a5-437a-a047-db1da06ea94e",
+    "Name": "Automation",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "automation",
+    "DocumentsConfiguration": "{\n    \"entity\": \"\",\n    \"operations\": {\n        \"read\": {\n            \"endpoint\": \"\"\n        },\n        \"update\": {\n            \"endpoint\": \"\",\n            \"model\": {}\n        },\n        \"create\": {\n            \"endpoint\": \"\",\n            \"model\": {}\n        },\n        \"patch\": {\n            \"endpoint\": \"\",\n            \"model\": [\n                {\n                    \"field\": \"\",\n                    \"caption\": \"\",\n                    \"type\": \"\"\n                }\n            ]\n        },\n        \"remove\": {\n            \"endpoint\": \"\"\n        },\n        \"lookup\": {\n            \"endpoint\": \"\"\n        },\n        \"lookupById\": {\n            \"endpoint\": \"\"\n        }\n    },\n    \"layout\": {\n        \"create\": {},\n        \"read\": {},\n        \"patch\": {}\n    },\n    \"customDocument\": {\n        \"useCustomStyle\": false,\n        \"mainColor\": \"\",\n        \"secondaryColor\": \"\",\n        \"imageClass\": \"\",\n        \"namePlural\": \"\",\n        \"name\": \"\",\n        \"systemName\": \"\"\n    },\n    \"availableOptions\": {\n        \"feed\": false,\n        \"info\": true,\n        \"files\": false,\n        \"userfields\": false,\n        \"dashboard\": false\n    }\n}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "8c721d2f-e6fd-4afc-a107-0a98867f3902",
+            "Name": "Automation",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\n    \"entity\": \"automation\",\n    \"allowBulk\": false,\n    \"dataSource\": {\n        \"load\": \"function(){            return SkillsWorkflow.executeAPI('GET', 'integration-workflows',        null, null).then(result => {return Promise.resolve(result)        });    }\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"name\",\n            \"caption\": \"Name\"\n        },\n        {\n            \"dataField\": \"active\",\n            \"caption\": \"Active\"\n        },\n        {\n            \"dataField\": \"id\",\n            \"caption\": \"Start\",\n            \"cellTemplate\": \"function(e, options){                           var h = document.createElement('DIV');                    h.setAttribute('class', 'fal fa-play');             e.appendChild(h);                var id = options.data.id;                                h.onclick = function(e) {e.stopPropagation(); debugger;                                             SkillsWorkflow.executeAPI('GET','integration-workflows/'+id+'/execute')                                        }                  }\"\n        }\n    ],\n    \"onRowClick\": \"function(e){debugger; if(e.rowType=='data') SW.genericPreview(e.data.id, 'name', 'automation')}\",\n    \"onToolbarPreparing\": \"function(e) {        var dataGrid = e.component;        e.toolbarOptions.items.unshift({            location: 'after',                       template: 'toggleHeaderFilterButtonTemplate'               });        e.toolbarOptions.items.unshift({            location: 'after',             widget: 'dxButton',             options:{                icon: 'fal fa-times',                onClick: function () {                    SW.genericDelete('integration-workflows', dataGrid, 'id');                }            }        });    }\"\n}",
+            "DashboardDefinitionId": "f0101518-a2a5-437a-a047-db1da06ea94e"
+        }
+    ]
+}
