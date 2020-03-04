@@ -1,17 +1,17 @@
 ﻿{
   "DashboardDefinitionRoles": [],
-  "Id": "13b5a29e-3d78-4ab5-970c-17cd233efa44",
+  "Id": "b647a57f-446b-4781-b7b9-08ff3741bfe6",
   "Name": "Company",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": "company",
-  "DocumentsConfiguration": "",
+  "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "f356afff-58e2-4ba6-b662-6c71946188ff",
+      "Id": "8bbb0b1e-e2e1-411a-b005-3a7adb94bf85",
       "Name": "Company ",
       "Active": true,
       "UseQuery": true,
@@ -25,13 +25,13 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027company\u0027);}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Article\",\"Code\",\"Currency\",{\"dataField\":\"TimesheetStart\",\"dataType\":\"date\",\"format\":\"function(value) { return SW.defaultDisplayFormat(value) }\"},\"ResourceType\",\"HoursType\",\"MarginType\"],\"onToolbarPreparing\":\"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: \u0027after\u0027,            \\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027        \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: \u0027after\u0027,             \\r\\n            widget: \u0027dxButton\u0027,             \\r\\n            options: { icon: \u0027plus\u0027, onClick: function() {            \\r\\n                SkillsWorkflow.genericNew(\u0027company\u0027);                           \\r\\n                }}        \\r\\n                });       \\r\\n                 var dataGrid = e.component;                \\r\\n                 e.toolbarOptions.items.unshift({             \\r\\n                     location: \u0027after\u0027,             \\r\\n                     widget: \u0027dxButton\u0027,            \\r\\n                     options: { icon: \u0027fal fa-times\u0027, onClick: function() {                \\r\\n                         SW.genericDelete(\u0027company\u0027, dataGrid);               \\r\\n                         }            \\r\\n                    }        \\r\\n                });    \\r\\n}\",\"entity\":\"company\"}",
-      "DashboardDefinitionId": "13b5a29e-3d78-4ab5-970c-17cd233efa44"
+      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'company', 550, 750);}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Article\",\"Code\",\"Currency\",{\"dataField\":\"TimesheetStart\",\"dataType\":\"date\",\"format\":\"function(value) { return SW.defaultDisplayFormat(value) }\"},\"ResourceType\",\"HoursType\",\"MarginType\"],\"onToolbarPreparing\":\"function(e) {         \\r\\n                var dataGrid = e.component;          \\r\\n                e.toolbarOptions.items.unshift({             \\r\\n                    location: 'after',            \\r\\n                    template: 'toggleHeaderFilterButtonTemplate'        \\r\\n                    });        \\r\\n            e.toolbarOptions.items.unshift({             \\r\\n                        location: 'after',             \\r\\n                        widget: 'dxButton',             \\r\\n                        options: { icon: 'plus', onClick: function() {            \\r\\n                            SkillsWorkflow.genericNew('company',550, 750);                           \\r\\n                            }}        \\r\\n                            });       \\r\\n                             var dataGrid = e.component;                \\r\\n                     e.toolbarOptions.items.unshift({             \\r\\n                                 location: 'after',             \\r\\n                                 widget: 'dxButton',            \\r\\n                                 options: { icon: 'fal fa-times', onClick: function() {                \\r\\n                                     SW.genericDelete('company', dataGrid);               \\r\\n                                     }            \\r\\n                                }        \\r\\n                            });    \\r\\n}\",\"entity\":\"company\"}",
+      "DashboardDefinitionId": "b647a57f-446b-4781-b7b9-08ff3741bfe6"
     }
   ],
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 7,
-  "Default": true
+  "Version": 0,
+  "Default": false
 }
