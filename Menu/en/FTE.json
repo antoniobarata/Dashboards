@@ -6,9 +6,129 @@
       "AccessRoleName": "Support Profile"
     },
     {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
       "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
     },
     {
       "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
@@ -36,16 +156,21 @@
       "AccessRoleName": "Support Profile"
     },
     {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
       "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Group Account Director Profile"
     },
     {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
       "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Department Lead Profile"
@@ -54,61 +179,6 @@
       "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
     },
     {
       "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
@@ -126,34 +196,9 @@
       "AccessRoleName": "Department Lead Profile"
     },
     {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
       "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
     },
     {
       "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
@@ -164,171 +209,6 @@
       "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Department Lead Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
-      "AccessRoleName": "HR Profile"
     },
     {
       "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
@@ -356,6 +236,341 @@
       "AccessRoleName": "HR Profile"
     },
     {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
       "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "HR Profile"
@@ -376,9 +591,164 @@
       "AccessRoleName": "Department Lead Profile"
     },
     {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
       "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
     },
     {
       "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
@@ -396,6 +766,311 @@
       "AccessRoleName": "Support Profile"
     },
     {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
       "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Finance Confidential Profile"
@@ -411,9 +1086,174 @@
       "AccessRoleName": "Department Lead Profile"
     },
     {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
       "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
       "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684",
+      "AccessRoleName": "Support Profile"
     },
     {
       "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
@@ -434,14 +1274,14 @@
   ],
   "DashboardDefinitionComponents": [
     {
-      "Id": "398c1645-9c9f-4713-a697-2cf460bc0c75",
+      "Id": "63ee13c7-2e27-4b94-bfd7-3b8be991f2ee",
       "Name": "Utilization per User",
       "Active": true,
       "UseQuery": false,
       "Query": null,
       "Size": 12,
       "Order": 5,
-      "Parameters": "[{\"WidgetSubTitle\":\"Billable and Non-Billable Actual Hours in % of User Capacity\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":30,\"WidgetRows\":16,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"# Forecast\",\"metricFieldValue\":\"TimeGrandTotal\"},{\"visible\":false,\"metricName\":\"# Actual\",\"metricFieldValue\":\"UtilizationPercentGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\n\\t\\tv.UserType,\\n\\t\\tv.FullName,\\n\\t\\tv.UserId,\\n\\t\\tv.HasImage as HasImage,\\n\\t\\tv.[Hours],\\n\\t\\tv.AdministrativeHours,\\n        v.NewBusinessHours,\\n        v.BillableHours,\\n\\t\\tv.Capacity,\\n\\t\\tv.Leaves,\\n\\t\\tv.ContractedTime,\\n\\t\\tv.ForecastTime,\\n        (v.BillableHours + v.ForecastTime) as BillableAndForecastTime,\\n        IIF(v.Capacity > 0, (v.ContractedTime / v.Capacity), 0) AS CapacityContractedTimeVariation,\\n        IIF(v.Capacity > 0, ((v.BillableHours + v.ForecastTime) / v.Capacity), 0) CapacityBillableAndForecastVariation,\\n        IIF(v.ContractedTime > 0, ((v.BillableHours + v.ForecastTime) / v.ContractedTime), 0) ContractedBillableAndForecastVariation\\nfrom \\n(\\n\\tselect \\n\\t\\t\\tdu.UserType,\\n\\t\\t\\tdu.FullName,\\n\\t\\t\\tv.UserId,\\n\\t\\t\\tdu.HasImage as HasImage,\\n\\t\\t\\tsum(v.[Hours]) as [Hours],\\n\\t\\t\\tsum(v.AdministrativeTime) as AdministrativeHours,\\n            sum(v.NewBusinessHours) as NewBusinessHours,\\n\\t\\t    sum(v.BillableHours) as BillableHours,\\n\\t\\t\\tsum(v.Capacity) as Capacity,\\n\\t\\t\\tsum(v.LeaveTime) as Leaves,\\n\\t\\t\\tsum(v.ContractedTime) as ContractedTime,\\n\\t\\t\\tsum(v.ForecastTime) as ForecastTime\\n\\tfrom (\\n\\tselect \\n\\t\\t\\tv.UserId as UserId,\\n\\t\\t\\tsum(v.[Hours]) as [Hours],\\n\\t\\t\\tsum(v.AdministrativeTime) as AdministrativeTime,\\n\\t\\t\\t0 as InternalWorkHours,\\n\\t\\t\\tsum(v.NewBusinessHours) as NewBusinessHours,\\n\\t\\t\\tsum(v.BillableHours) as BillableHours,\\n\\t\\t\\t0 as ClientHours,\\n\\t\\t\\tsum(v.Capacity) as Capacity,\\n\\t\\t\\tsum(v.LeaveTime) as LeaveTime,\\n\\t\\t\\t0 as ContractedTime,\\n\\t\\t\\t0 as ForecastTime\\n\\tfrom (\\n\\t\\tselect \\n\\t\\t\\t\\tdu.Oid as UserId,\\n\\t\\t\\t\\tdu.UserTypologyGroupId,\\n\\t\\t\\t\\tsum(du.ActualTime) as [Hours],\\n\\t\\t\\t\\tsum(du.AdministrativeTime) as AdministrativeTime,\\n\\t\\t\\t\\tsum(du.NewBusinessTime) as NewBusinessHours,\\n\\t\\t\\t\\tsum(du.BillableTime) as BillableHours,\\n\\t\\t\\t\\tsum(du.Capacity) as Capacity,\\n\\t\\t\\t\\tsum(du.LeaveTime) as LeaveTime\\n\\t\\tfrom \\n\\t\\t\\t\\tAnalytics.DatamartUser du\\n\\t\\twhere \\n\\t\\t\\t\\t(du.[Date] between @FromDate AND @ToDate or \\n\\t\\t\\t\\tdu.EndDate between @FromDate AND @ToDate or \\n\\t\\t\\t\\t(du.[Date] < @FromDate and (du.[Date] > @ToDate or du.EndDate is null))) and\\n\\t\\t\\t\\t(@CompanyOid = '00000000-0000-0000-0000-000000000000' OR du.CompanyId = @CompanyOid) AND \\n\\t\\t\\t\\t(du.UserTypologyGroupId = @TypologyGroupOid)\\n\\t\\tgroup by \\n\\t\\t\\t\\tdu.Oid,\\n\\t\\t\\t\\tdu.UserTypologyGroupId\\n\\t) v\\n\\tgroup by \\n\\t\\t\\tv.UserId\\n\\t\\tunion all\\n\\t\\tselect \\n                v.UserId,\\n                0 as [Hours],\\n\\t\\t\\t\\t0 as AdministrativeTime,\\n\\t\\t\\t\\t0 AS [InternalWorkHours],\\n\\t\\t\\t\\t0 as NewBusinessHours,\\n\\t\\t\\t\\t0 as BillableHours,\\n\\t\\t\\t\\t0 as [ClientHours],\\n\\t\\t\\t\\t0 as Capacity,\\n\\t\\t\\t\\t0 as LeaveTime,\\n\\t\\t        IIF(v.EstimateWorkDays > 0, (sum(v.ContractedTime) / v.EstimateWorkDays) * sum(v.UserWorkDays), 0) as ContractedTime,\\n                0 as ForecastTime\\n        from (\\n            select\\n                    SUM(\\n                        (DATEDIFF(dd, IIF(u.StartDate < @FromDate, @FromDate, u.StartDate), IIF(u.ExpirationDate > @ToDate, @ToDate, u.ExpirationDate)))\\n                        -(DATEDIFF(wk, IIF(u.StartDate < @FromDate, @FromDate, u.StartDate), IIF(u.ExpirationDate > @ToDate, @ToDate, u.ExpirationDate)) * 2)\\n                        -(CASE WHEN DATENAME(dw, IIF(u.StartDate < @FromDate, @FromDate, u.StartDate)) = 'Sunday' THEN 1 ELSE 0 END)\\n                        -(CASE WHEN DATENAME(dw, IIF(u.ExpirationDate > @ToDate, @ToDate, u.ExpirationDate)) = 'Saturday' THEN 1 ELSE 0 END)\\n                    )\\n                    as UserWorkDays,\\n                    SUM(\\n                        (DATEDIFF(dd, de.[Date], de.Expiration))\\n                        -(DATEDIFF(wk, de.[Date], de.Expiration) * 2)\\n                        -(CASE WHEN DATENAME(dw, de.[Date]) = 'Sunday' THEN 1 ELSE 0 END)\\n                        -(CASE WHEN DATENAME(dw, de.Expiration) = 'Saturday' THEN 1 ELSE 0 END)\\n                    )\\n                    as EstimateWorkDays,\\n                    de.UserTypologyGroupId,\\n                    u.Oid as UserId,\\n                    de.ClientId,\\n                    sum(de.[Hours]) as ContractedTime\\n            from \\n                    Analytics.DatamartEstimate de\\n\\t\\t\\t\\t\\t\\tleft outer join [User] u on (u.Oid = de.UserId)\\n\\t\\t\\t\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology\\n            where \\n                    (de.[Date] between @FromDate AND @ToDate or \\n                    de.Expiration between @FromDate AND @ToDate or\\n                    (de.[Date] < @FromDate and de.Expiration > @ToDate)) and\\n                    (de.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') and\\n\\t\\t\\t\\t\\t(ut.UserTypologyGroup = @TypologyGroupOid)\\n            group by \\n                    de.UserTypologyGroupId,\\n                    u.Oid,\\n                    de.ClientId\\n        ) v\\n        group by v.UserId, v.EstimateWorkDays\\n\\t\\tunion all\\n\\t\\tselect \\n\\t\\t\\t\\tph.UserId as UserId,\\n\\t\\t\\t\\t0 as [Hours],\\n\\t\\t\\t\\t0 as AdministrativeTime,\\n\\t\\t\\t\\t0 AS [InternalWorkHours],\\n\\t\\t\\t\\t0 as NewBusinessHours,\\n\\t\\t\\t\\t0 as BillableHours,\\n\\t\\t\\t\\t0 as [ClientHours],\\n\\t\\t\\t\\t0 as Capacity,\\n\\t\\t\\t\\t0 as LeaveTime,\\n\\t\\t\\t\\t0 as ContractedTime,\\n\\t\\t\\t\\tsum(ph.[Hours]) as ForecastTime\\n\\t\\tfrom \\n\\t\\t\\t\\tAnalytics.DatamartPlannedHours ph\\n\\t\\t\\t\\t\\tleft outer join [User] u on u.Oid = ph.UserId\\n\\t\\t\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology,\\n\\t\\t\\t\\tAnalytics.DatamartProject dp\\n\\t\\twhere \\n\\t\\t\\t\\tph.ProjectId = dp.Oid and\\n                ph.UserId is not null and\\n                ph.ClientId is not null and\\n\\t\\t\\t\\tdp.[Date] between @FromDate AND @ToDate and\\n\\t\\t\\t\\t(@CompanyOid = '00000000-0000-0000-0000-000000000000' OR ph.CompanyId = @CompanyOid) AND \\n\\t\\t\\t\\t(ut.UserTypologyGroup = @TypologyGroupOid)\\n\\t\\tgroup by \\n\\t\\t\\t\\tph.UserId\\n\\t) v \\n\\tleft outer join (\\n\\t\\tselect \\n\\t\\t\\tISNULL(e.[Name], u.[Name]) as FullName,\\n\\t\\t\\tu.HasImage, \\n\\t\\t\\tut.[Name] as UserType, \\n\\t\\t\\tut.Oid as UserTypeId, \\n\\t\\t\\tu.Oid,\\n\\t\\t\\tutg.Oid as UserTypologyId\\n\\t\\tfrom \\n\\t\\t\\tdbo.[User] u\\n\\t\\t\\t\\tleft outer join Employee e on (u.Oid = e.[User] AND e.Active = 1)\\n\\t\\t\\t\\tleft outer join UserTypology t on t.Oid = u.Typology\\n\\t\\t\\t\\tleft outer join UserTypologyGroup utg on utg.Oid = t.UserTypologyGroup, \\n\\t\\t\\tdbo.UserType ut \\n\\t\\twhere\\n\\t\\t\\tut.Oid = u.UserType\\n\\t) du on du.Oid = v.UserId\\nwhere \\n\\t(du.UserTypeId = @UserType or @UserType = '00000000-0000-0000-0000-000000000000')\\ngroup by \\n\\t\\tdu.UserType,\\n\\t\\tdu.FullName,\\n\\t\\tdu.HasImage,\\n\\t\\tv.UserId\\n) v\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"companyOid\",\"divisionOid\",\"departmentOid\",\"TypologyGroupOid\",\"UserType\"]}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Billable and Non-Billable Actual Hours in % of User Capacity\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":30,\"WidgetRows\":16,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"# Forecast\",\"metricFieldValue\":\"TimeGrandTotal\"},{\"visible\":false,\"metricName\":\"# Actual\",\"metricFieldValue\":\"UtilizationPercentGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\n\\t\\tv.UserType,\\n\\t\\tv.FullName,\\n\\t\\tv.UserId,\\n\\t\\tv.HasImage as HasImage,\\n\\t\\tv.[Hours],\\n\\t\\tv.AdministrativeHours,\\n        v.NewBusinessHours,\\n        v.BillableHours,\\n\\t\\tv.Capacity,\\n\\t\\tv.Leaves,\\n\\t\\tv.ContractedTime,\\n\\t\\tv.ForecastTime,\\n        (v.BillableHours + v.ForecastTime) as BillableAndForecastTime,\\n        IIF(v.Capacity > 0, (v.ContractedTime / v.Capacity), 0) AS CapacityContractedTimeVariation,\\n        IIF(v.Capacity > 0, ((v.BillableHours + v.ForecastTime) / v.Capacity), 0) CapacityBillableAndForecastVariation,\\n        IIF(v.ContractedTime > 0, ((v.BillableHours + v.ForecastTime) / v.ContractedTime), 0) ContractedBillableAndForecastVariation\\nfrom \\n(\\n\\tselect \\n\\t\\t\\tdu.UserType,\\n\\t\\t\\tdu.FullName,\\n\\t\\t\\tv.UserId,\\n\\t\\t\\tdu.HasImage as HasImage,\\n\\t\\t\\tsum(v.[Hours]) as [Hours],\\n\\t\\t\\tsum(v.AdministrativeTime) as AdministrativeHours,\\n            sum(v.NewBusinessHours) as NewBusinessHours,\\n\\t\\t    sum(v.BillableHours) as BillableHours,\\n\\t\\t\\tsum(v.Capacity) as Capacity,\\n\\t\\t\\tsum(v.LeaveTime) as Leaves,\\n\\t\\t\\tsum(v.ContractedTime) as ContractedTime,\\n\\t\\t\\tsum(v.ForecastTime) as ForecastTime\\n\\tfrom (\\n\\tselect \\n\\t\\t\\tdu.Oid as UserId,\\n\\t\\t\\tsum(du.ActualTime) as [Hours],\\n\\t\\t\\tsum(du.AdministrativeTime) as AdministrativeTime,\\n\\t\\t\\t0 as InternalWorkHours,\\n\\t\\t\\tsum(du.NewBusinessTime) as NewBusinessHours,\\n\\t\\t\\tsum(du.BillableTime) as BillableHours,\\n\\t\\t\\t0 as ClientHours,\\n\\t\\t\\tsum(du.Capacity) as Capacity,\\n\\t\\t\\tsum(du.LeaveTime) as LeaveTime,\\n\\t\\t\\t0 as ContractedTime,\\n\\t\\t\\t0 as ForecastTime\\n\\tfrom \\n\\t\\t\\tAnalytics.DatamartUser du\\n\\twhere \\n\\t\\t\\t(du.[Date] between @FromDate AND @ToDate) and\\n            datepart(dw, du.[Date]) not in (1,7) and \\n\\t\\t\\t(@CompanyOid = '00000000-0000-0000-0000-000000000000' OR du.CompanyId = @CompanyOid) AND \\n\\t\\t\\t(du.UserTypologyGroupId = @TypologyGroupOid)\\n\\tgroup by \\n\\t\\t\\tdu.Oid,\\n\\t\\t\\tdu.UserTypologyGroupId\\n\\t\\tunion all\\n\\t\\tselect \\n                v.UserId,\\n                0 as [Hours],\\n\\t\\t\\t\\t0 as AdministrativeTime,\\n\\t\\t\\t\\t0 AS [InternalWorkHours],\\n\\t\\t\\t\\t0 as NewBusinessHours,\\n\\t\\t\\t\\t0 as BillableHours,\\n\\t\\t\\t\\t0 as [ClientHours],\\n\\t\\t\\t\\t0 as Capacity,\\n\\t\\t\\t\\t0 as LeaveTime,\\n\\t\\t        IIF(v.EstimateWorkDays > 0, (sum(v.ContractedTime) / v.EstimateWorkDays) * sum(v.UserWorkDays), 0) as ContractedTime,\\n                0 as ForecastTime\\n        from (\\n            select\\n                    SUM(\\n                        (DATEDIFF(dd, IIF(u.StartDate < @FromDate, @FromDate, u.StartDate), IIF(u.ExpirationDate > @ToDate, @ToDate, u.ExpirationDate)))\\n                        -(DATEDIFF(wk, IIF(u.StartDate < @FromDate, @FromDate, u.StartDate), IIF(u.ExpirationDate > @ToDate, @ToDate, u.ExpirationDate)) * 2)\\n                        -(CASE WHEN DATENAME(dw, IIF(u.StartDate < @FromDate, @FromDate, u.StartDate)) = 'Sunday' THEN 1 ELSE 0 END)\\n                        -(CASE WHEN DATENAME(dw, IIF(u.ExpirationDate > @ToDate, @ToDate, u.ExpirationDate)) = 'Saturday' THEN 1 ELSE 0 END)\\n                    )\\n                    as UserWorkDays,\\n                    SUM(\\n                        (DATEDIFF(dd, de.[Date], de.Expiration))\\n                        -(DATEDIFF(wk, de.[Date], de.Expiration) * 2)\\n                        -(CASE WHEN DATENAME(dw, de.[Date]) = 'Sunday' THEN 1 ELSE 0 END)\\n                        -(CASE WHEN DATENAME(dw, de.Expiration) = 'Saturday' THEN 1 ELSE 0 END)\\n                    )\\n                    as EstimateWorkDays,\\n                    de.UserTypologyGroupId,\\n                    u.Oid as UserId,\\n                    de.ClientId,\\n                    sum(de.[Hours]) as ContractedTime\\n            from \\n                    Analytics.DatamartEstimate de\\n\\t\\t\\t\\t\\t\\tleft outer join [User] u on (u.Oid = de.UserId)\\n\\t\\t\\t\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology\\n            where \\n                    (de.[Date] between @FromDate AND @ToDate or \\n                    de.Expiration between @FromDate AND @ToDate or\\n                    (de.[Date] < @FromDate and de.Expiration > @ToDate)) and\\n                    (de.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') and\\n\\t\\t\\t\\t\\t(ut.UserTypologyGroup = @TypologyGroupOid)\\n            group by \\n                    de.UserTypologyGroupId,\\n                    u.Oid,\\n                    de.ClientId\\n        ) v\\n        group by v.UserId, v.EstimateWorkDays\\n\\t\\tunion all\\n\\t\\tselect \\n\\t\\t\\t\\tph.UserId as UserId,\\n\\t\\t\\t\\t0 as [Hours],\\n\\t\\t\\t\\t0 as AdministrativeTime,\\n\\t\\t\\t\\t0 AS [InternalWorkHours],\\n\\t\\t\\t\\t0 as NewBusinessHours,\\n\\t\\t\\t\\t0 as BillableHours,\\n\\t\\t\\t\\t0 as [ClientHours],\\n\\t\\t\\t\\t0 as Capacity,\\n\\t\\t\\t\\t0 as LeaveTime,\\n\\t\\t\\t\\t0 as ContractedTime,\\n\\t\\t\\t\\tsum(ph.[Hours]) as ForecastTime\\n\\t\\tfrom \\n\\t\\t\\t\\tAnalytics.DatamartPlannedHours ph\\n\\t\\t\\t\\t\\tleft outer join [User] u on u.Oid = ph.UserId\\n\\t\\t\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology,\\n\\t\\t\\t\\tAnalytics.DatamartProject dp\\n\\t\\twhere \\n\\t\\t\\t\\tph.ProjectId = dp.Oid and\\n                ph.UserId is not null and\\n                ph.ClientId is not null and\\n\\t\\t\\t\\tdp.[Date] between @FromDate AND @ToDate and\\n\\t\\t\\t\\t(@CompanyOid = '00000000-0000-0000-0000-000000000000' OR ph.CompanyId = @CompanyOid) AND \\n\\t\\t\\t\\t(ut.UserTypologyGroup = @TypologyGroupOid)\\n\\t\\tgroup by \\n\\t\\t\\t\\tph.UserId\\n\\t) v \\n\\tleft outer join (\\n\\t\\tselect \\n\\t\\t\\tISNULL(e.[Name], u.[Name]) as FullName,\\n\\t\\t\\tu.HasImage, \\n\\t\\t\\tut.[Name] as UserType, \\n\\t\\t\\tut.Oid as UserTypeId, \\n\\t\\t\\tu.Oid,\\n\\t\\t\\tutg.Oid as UserTypologyId\\n\\t\\tfrom \\n\\t\\t\\tdbo.[User] u\\n\\t\\t\\t\\tleft outer join Employee e on (u.Oid = e.[User] AND e.Active = 1)\\n\\t\\t\\t\\tleft outer join UserTypology t on t.Oid = u.Typology\\n\\t\\t\\t\\tleft outer join UserTypologyGroup utg on utg.Oid = t.UserTypologyGroup, \\n\\t\\t\\tdbo.UserType ut \\n\\t\\twhere\\n\\t\\t\\tut.Oid = u.UserType\\n\\t) du on du.Oid = v.UserId\\nwhere \\n\\t(du.UserTypeId = @UserType or @UserType = '00000000-0000-0000-0000-000000000000')\\ngroup by \\n\\t\\tdu.UserType,\\n\\t\\tdu.FullName,\\n\\t\\tdu.HasImage,\\n\\t\\tv.UserId\\n) v\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"companyOid\",\"divisionOid\",\"departmentOid\",\"TypologyGroupOid\",\"UserType\"]}}]",
       "DashboardComponentType": {
         "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
         "Name": "Generic Dashboard",
@@ -452,7 +1292,43 @@
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684"
     },
     {
-      "Id": "3b67a0f5-6205-43b9-bb29-691c7cddd6aa",
+      "Id": "4cc4e782-cb6c-4957-95dc-4b9abcc217a7",
+      "Name": "Typology Groups",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 12,
+      "Order": 2,
+      "Parameters": "[{\"WidgetSubTitle\":\"Staff, Proposals & Timesheet\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":13,\"WidgetRows\":17,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Delayed To Do\",\"metricFieldValue\":\"DelayedToDoJobsGrandTotal\"},{\"visible\":true,\"metricName\":\"?  Delayed Work in Progress\",\"metricFieldValue\":\"DelayedWorkInProgressJobsGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"with HeadCount as (\\nselect \\n\\t\\tv.UserTypologyGroupId,\\n\\t\\tv.WorkDays,\\n\\t\\tsum(v.TypologyWorkDays) as TypologyWorkDays,\\n\\t\\tv.Workers as TypologyWorkers,\\n\\t\\tIIF(v.WorkDays > 0, (sum(v.TypologyWorkDays) * 1.0) / (v.WorkDays * 1.0), 0) as HeadCount\\nfrom (\\n\\tselect \\n\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\tv.WorkDays,\\n\\t\\t\\tcount(v.UserId) as TypologyWorkDays,\\n\\t\\t\\tcount(v.UserId) OVER (partition by v.UserTypologyGroupId) as Workers\\n\\tfrom (\\n\\t\\tselect\\t\\n\\t\\t\\t\\t(DATEDIFF(dd, @FromDate, @ToDate))\\n\\t\\t\\t\\t-(DATEDIFF(wk, @FromDate, @ToDate) * 2)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, @FromDate) = 'Sunday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, @ToDate) = 'Saturday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\tas WorkDays,\\n\\t\\t\\t\\tv.UserId,\\n\\t\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\t\\tv.[Date]\\n\\t\\tfrom\\t\\n\\t\\t\\t\\tAnalytics.DatamartTimesheet v\\n\\t\\t\\t\\t\\tleft outer join dbo.[User] u on u.Oid = v.UserId\\n\\t\\twhere\\t\\n\\t\\t\\t\\tv.[Date] between IIf(@FromDate < u.HireDate, u.HireDate, @FromDate) \\n\\t\\t\\t\\tand IIF(@ToDate > u.ExpirationDate, u.ExpirationDate, @ToDate) and\\n\\t\\t\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\n\\t\\tgroup by\\n\\t\\t\\t\\tv.[UserId], \\n\\t\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\t\\tv.[Date]\\n\\t) v\\n\\tgroup by \\n\\t\\t\\tv.UserId,\\n\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\tv.WorkDays\\n) v\\ngroup by\\n\\t\\tv.UserTypologyGroupId,\\n\\t\\tv.WorkDays,\\n\\t\\tv.Workers\\n)\\nselect \\n\\t\\tdistinct\\n\\t\\tutg.[Name] as TypologyGroup,\\n\\t\\tdi.[Name] as Division,\\n\\t\\tde.[Name] as Department,\\n\\t\\tt.TypologyGroupOid,\\n\\t\\tIsNull(hd.HeadCount, 0.0) as HeadCount,\\n\\t\\tt.Capacity,\\n\\t\\tt.Holidays,\\n\\t\\tt.Leaves,\\n\\t\\tt.ContractedTime,\\n\\t\\tt.ForecastTime,\\n\\t\\tt.ActualTime,\\n\\t\\tt.BillableTime,\\n\\t\\tt.NewBusinessTime,\\n\\t\\tt.AdministrativeTime,\\n\\t\\tt.ClientTime,\\n\\t\\tt.ClientBillableTime,\\n\\t\\t(t.BillableTime + t.ForecastTime) as BillableAndForecastTime,\\n\\t\\tIIF(t.Capacity > 0, (t.ClientTime / t.Capacity), 0) AS CapacityClientTimeVariation,\\n        IIF(t.Capacity > 0, (t.ContractedTime / t.Capacity), 0) AS CapacityContractedTimeVariation,\\n\\t\\tIIF(t.Capacity > 0, ((t.BillableTime + t.ForecastTime) / t.Capacity), 0) CapacityBillableAndForecastVariation,\\n        IIF(t.ContractedTime > 0, ((t.BillableTime + t.ForecastTime) / t.ContractedTime), 0) ContractedBillableAndForecastVariation\\n\\t\\t\\nfrom(\\nselect \\n\\t\\tt.TypologyGroupOid,\\n\\t\\tsum(t.Capacity) as Capacity,\\n\\t\\tsum(t.Holidays) as Holidays,\\n\\t\\tsum(t.Leaves) as Leaves,\\n\\t\\tsum(t.ContractedTime) as ContractedTime,\\n\\t\\tsum(t.ForecastTime) as ForecastTime,\\n\\t\\tsum(t.ActualTime) as ActualTime,\\n\\t\\tsum(t.BillableTime) as BillableTime,\\n\\t\\tsum(t.NewBusinessTime) as NewBusinessTime,\\n\\t\\tsum(t.AdministrativeTime) as AdministrativeTime,\\n\\t\\tsum(t.ClientTime) as ClientTime,\\n\\t\\tsum(t.ClientBillableTime) as ClientBillableTime\\nfrom(\\nselect \\n\\t\\tv.UserTypologyGroupId as TypologyGroupOid,\\n\\t\\tsum(v.Capacity) as Capacity,\\n\\t\\tsum(v.Holidays) as Holidays,\\n\\t\\tsum(v.Leaves) as Leaves,\\n\\t\\tsum(v.ContractedTime) as ContractedTime,\\n\\t\\tsum(v.ForecastTime) as ForecastTime,\\n\\t\\tsum(v.ActualTime) as ActualTime,\\n\\t\\tsum(v.BillableTime) as BillableTime,\\n\\t\\tsum(v.NewBusinessTime) as NewBusinessTime,\\n\\t\\tsum(v.AdministrativeTime) as AdministrativeTime,\\n\\t\\tsum(v.BillableTime + v.NewBusinessTime) as ClientTime,\\n\\t\\tsum(v.ClientBillableTime) as ClientBillableTime\\nfrom \\n(\\nselect \\n\\t\\tv.UserTypologyGroupId,\\n\\t\\tsum(v.Capacity) as Capacity,\\n\\t\\tsum(v.LeaveTime) as Holidays,\\n\\t\\tsum(v.LeaveTime) as Leaves,\\n\\t\\t0 as ContractedTime,\\n\\t\\t0 as ForecastTime,\\n\\t\\tsum(v.[Hours]) as ActualTime,\\n\\t\\tsum(v.BillableHours) as BillableTime,\\n\\t\\tsum(v.NewBusinessHours) as NewBusinessTime,\\n\\t\\tsum(v.AdministrativeTime) as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\t0 as ClientBillableTime\\nfrom (\\n\\tselect \\n\\t\\t\\tdu.Oid as UserId,\\n\\t\\t\\tdu.UserTypologyGroupId,\\n\\t\\t\\tsum(du.ActualTime) as [Hours],\\n\\t\\t\\tsum(du.AdministrativeTime) as AdministrativeTime,\\n\\t\\t\\tsum(du.NewBusinessTime) as NewBusinessHours,\\n\\t\\t\\tsum(du.BillableTime) as BillableHours,\\n\\t\\t\\tsum(du.Capacity) as Capacity,\\n\\t\\t\\tsum(du.LeaveTime) as LeaveTime\\n\\tfrom \\n\\t\\t\\tAnalytics.DatamartUser du\\n\\twhere \\n\\t\\t\\t(du.[Date] between @FromDate AND @ToDate) and \\n            datepart(dw, du.[Date]) not in (1,7) and \\n\\t\\t\\t(@CompanyOid = '00000000-0000-0000-0000-000000000000' OR du.CompanyId = @CompanyOid) and\\n\\t\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR du.UserTypeId = @UserType)\\n\\tgroup by \\n\\t\\t\\tdu.Oid,\\n\\t\\t\\tdu.UserTypologyGroupId\\n) v\\ngroup by \\n\\t\\tv.UserTypologyGroupId\\nunion all\\nselect \\n\\t\\tv.UserTypologyGroupId,\\n\\t\\t0 as Capacity,\\n\\t\\t0 as Holidays,\\n\\t\\t0 as Leaves,\\n\\t\\tIIF(v.EstimateWorkDays > 0, (sum(v.ContractedTime) / v.EstimateWorkDays) * sum(v.WorkDays), 0) as ContractedTime,\\n\\t\\t0 as ForecastTime,\\n\\t\\t0 as ActualTime,\\n\\t\\t0 as BillableTime,\\n\\t\\t0 as NewBusinessTime,\\n\\t\\t0 as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\t0 as ClientBillableTime\\nfrom (\\n\\tselect\\n\\t\\t\\tSUM(\\n\\t\\t\\t\\t(DATEDIFF(dd, IIF(de.[Date] <= @FromDate, @FromDate, de.[Date]), IIF(de.Expiration >= @ToDate, @ToDate, de.Expiration)))\\n\\t\\t\\t\\t-(DATEDIFF(wk, IIF(de.[Date] <= @FromDate, @FromDate, de.[Date]), IIF(de.Expiration >= @ToDate, @ToDate, de.Expiration)) * 2)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, IIF(de.[Date] <= @FromDate, @FromDate, de.[Date])) = 'Sunday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, IIF(de.Expiration >= @ToDate, @ToDate, de.Expiration)) = 'Saturday' THEN 1 ELSE 0 END)\\n\\t\\t\\t)\\n\\t\\t\\tas WorkDays,\\n\\t\\t\\tSUM(\\n\\t\\t\\t\\t(DATEDIFF(dd, de.[Date], de.Expiration))\\n\\t\\t\\t\\t-(DATEDIFF(wk, de.[Date], de.Expiration) * 2)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, de.[Date]) = 'Sunday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, de.Expiration) = 'Saturday' THEN 1 ELSE 0 END)\\n\\t\\t\\t)\\n\\t\\t\\tas EstimateWorkDays,\\n\\t\\t\\tut.UserTypologyGroup as UserTypologyGroupId,\\n\\t\\t\\tde.UserId,\\n            de.ClientId,\\n\\t\\t\\tsum(de.[Hours]) as ContractedTime\\n\\tfrom \\n\\t\\t\\tAnalytics.DatamartEstimate de\\n\\t\\t\\t\\tleft outer join [User] u on (u.Oid = de.UserId)\\n\\t\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology\\n\\twhere \\n\\t\\t\\t(de.[Date] between @FromDate AND @ToDate or \\n            de.Expiration between @FromDate AND @ToDate or\\n            (de.[Date] <= @FromDate and de.Expiration >= @ToDate)) and\\n\\t\\t\\t(de.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') and\\n\\t\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\n\\tgroup by \\n\\t\\t\\tut.UserTypologyGroup,\\n\\t\\t\\tde.UserId,\\n            de.ClientId\\n) v\\ngroup by v.UserTypologyGroupId, v.EstimateWorkDays\\nunion all\\nselect \\n\\t\\tut.UserTypologyGroup,\\n\\t\\t0 as Capacity,\\n\\t\\t0 as Holidays,\\n\\t\\t0 as Leaves,\\n\\t\\t0 as ContractedTime,\\n\\t\\tsum(ph.[Hours]) as ForecastTime,\\n\\t\\t0 as ActualTime,\\n\\t\\t0 as BillableTime,\\n\\t\\t0 as NewBusinessTime,\\n\\t\\t0 as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\t0 as ClientBillableTime\\nfrom \\n\\t\\tAnalytics.DatamartPlannedHours ph\\n\\t\\t\\tleft outer join [User] u on u.Oid = ph.UserId\\n\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology,\\n\\t\\tAnalytics.DatamartProject dp\\nwhere \\n\\t\\tph.ProjectId = dp.Oid and\\n\\t\\tdp.[Date] between @FromDate AND @ToDate and\\n\\t\\t(ph.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') AND\\n\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\ngroup by \\n\\t\\tut.UserTypologyGroup\\nunion all\\nselect \\n\\t\\tdt.UserTypologyGroupId,\\n\\t\\t0 as Capacity,\\n\\t\\t0 as Holidays,\\n\\t\\t0 as Leaves,\\n\\t\\t0 as ContractedTime,\\n\\t\\t0 as ForecastTime,\\n\\t\\t0 as ActualTime,\\n\\t\\t0 as BillableTime,\\n\\t\\t0 as NewBusinessTime,\\n\\t\\t0 as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\tsum(dt.ActualTime) as ClientBillableTime\\nfrom \\n\\t\\tAnalytics.DatamartTimesheet dt\\n\\t\\t\\tleft outer join [User] u on u.Oid = dt.UserId\\nwhere \\n\\t\\tdt.[Date] between @FromDate AND @ToDate and\\n\\t\\t(dt.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') AND\\n\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\ngroup by \\n\\t\\tdt.UserTypologyGroupId\\n) v\\t\\t\\ngroup by\\n\\t\\tv.UserTypologyGroupId \\n) t\\nwhere t.TypologyGroupOid is not null\\ngroup by \\n\\t\\tt.TypologyGroupOid\\n) t \\n    left outer join HeadCount hd on hd.UserTypologyGroupId = t.TypologyGroupOid\\n    left outer join dbo.UserTypologyGroup utg on utg.Oid = t.TypologyGroupOid\\n    left outer join dbo.UserTypology ut on ut.UserTypologyGroup = t.TypologyGroupOid\\n\\tleft outer join dbo.Department de on de.Oid = ut.Department\\n\\tleft outer join dbo.Division di on di.Oid = de.Division\\nwhere \\n\\t(di.Oid = @DivisionOid OR @DivisionOid = '00000000-0000-0000-0000-000000000000') AND \\n\\t(de.Oid = @DepartmentOid OR @DepartmentOid = '00000000-0000-0000-0000-000000000000') AND\\n\\tutg.[Name] IS NOT NULL\\norder by \\n\\tutg.[Name]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"CompanyOid\",\"DivisionOid\",\"DepartmentOid\",\"UserType\"]}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/FTE - Typology Groups/execute",
+      "Configuration": "{\r\n    \"headerFilter\": {\r\n        \"visible\": true\r\n    } ,\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    } ,\r\n    \"grouping\": {\r\n        \"autoExpandAll\": true\r\n    } ,\r\n    \"onRowClick\": \"function(e){ if(e.data.TypologyGroupOid != null) {        SkillsWorkflow.setDashboardFilter('TypologyGroupOid', e.data.TypologyGroupOid);                                            }              } \",\r\n    \"columnResizingMode\": \"widget\",\r\n    \"allowColumnResizing\": \"true\",\r\n    \"allowFiltering\": true,\r\n    \"columnAutoWidth\": \"true\",\r\n    \"searchPanel\": {\r\n        \"visible\": true\r\n    } ,\r\n    \"height\": \"370\",\r\n    \"scrolling\": {\r\n        \"mode\": \"virtual\"\r\n    } ,\r\n    \"selection\": {\r\n        \"mode\": \"single\"\r\n    } ,\r\n    \"columnMinWidth\": \"80\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Division\",\r\n            \"name\": \"Division\",\r\n            \"caption\": \"Division\",\r\n            \"width\": 100,\r\n            \"groupIndex\": 0\r\n        } ,\r\n        {\r\n            \"dataField\": \"Department\",\r\n            \"name\": \"Department\",\r\n            \"caption\": \"Department\",\r\n            \"width\": 100,\r\n            \"groupIndex\": 1\r\n        } ,\r\n        {\r\n            \"dataField\": \"TypologyGroup\",\r\n            \"name\": \"Typology Group\",\r\n            \"caption\": \"Typology\",\r\n            \"width\": 200\r\n        } ,\r\n        {\r\n            \"dataField\": \"HeadCount\",\r\n            \"caption\": \"# Heads\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Capacity\",\r\n            \"caption\": \"Capacity\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"###,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"CapacityContractedTimeVariation\",\r\n            \"caption\": \"Contracted / Capacity\",\r\n            \"name\": \"VariationCapCon\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); } \"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ContractedBillableAndForecastVariation\",\r\n            \"caption\": \"(Billable + Forecast) / Contracted\",\r\n            \"name\": \"VariationConBilFor\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); } \"\r\n        } ,\r\n        {\r\n            \"dataField\": \"CapacityBillableAndForecastVariation\",\r\n            \"caption\": \"(Billable + Forecast) / Capacity\",\r\n            \"name\": \"VariationCapBilFor\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); } \"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ContractedTime\",\r\n            \"caption\": \"Contracted\",\r\n            \"name\": \"Contracted\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ForecastTime\",\r\n            \"caption\": \"Forecast\",\r\n            \"name\": \"Forecast\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"BillableAndForecastTime\",\r\n            \"caption\": \"Billable + Forecast\",\r\n            \"name\": \"BillableAndForecast\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ActualTime\",\r\n            \"caption\": \"Actual\",\r\n            \"name\": \"Actual\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"BillableTime\",\r\n            \"caption\": \"Billable\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"NewBusinessTime\",\r\n            \"caption\": \"Non Billable\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"AdministrativeTime\",\r\n            \"caption\": \"Administrative\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ClientBillableTime\",\r\n            \"caption\": \"Actual Client\",\r\n            \"name\": \"ActualClient\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } \r\n    ],\r\n    \"sortByGroupSummaryInfo\": [\r\n        {\r\n            \"summaryItem\": \"count\"\r\n        } \r\n    ],\r\n    \"summary\": {\r\n        \"calculateCustomSummary\": \"function (options) {            if (options.name === 'ContractedVsCapacitySummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.ContractedTime;                        options.totalValue[1] = options.totalValue[1] + options.value.Capacity;                        break;                    case 'finalize':                        if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsPlannedVsContractedSummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableAndPlannedTime;                        options.totalValue[1] = options.totalValue[1] + options.value.ContractedTime;                        break;                    case 'finalize':                        if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsPlannedVsCapacitySummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableAndPlannedTime;                        options.totalValue[1] = options.totalValue[1] + options.value.Capacity;                        break;                    case 'finalize':                        if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsForecastVsCapacitySummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableTime;                        options.totalValue[1] = options.totalValue[1] + options.value.ForecastTime;                        options.totalValue[2] = options.totalValue[2] + options.value.Capacity;                        break;                    case 'finalize':                        if(Number(options.totalValue[2]) > 0)                            options.totalValue = ((options.totalValue[0] + options.totalValue[1]) / options.totalValue[2]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsForecastVsContractedSummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableTime;                        options.totalValue[1] = options.totalValue[1] + options.value.ForecastTime;                        options.totalValue[2] = options.totalValue[2] + options.value.ContractedTime;                        break;                    case 'finalize':                        if(Number(options.totalValue[2]) > 0)                            options.totalValue = ((options.totalValue[0] + options.totalValue[1]) / options.totalValue[2]);                        else                            options.totalValue = 0;                            break;                }             }         } \",\r\n        \"totalItems\": [\r\n            {\r\n                \"column\": \"Typology Group\",\r\n                \"summaryType\": \"count\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"Total: {0} \",\r\n                \"alignment\": \"left\"\r\n            } ,\r\n            {\r\n                \"column\": \"Capacity\",\r\n                \"name\": \"Capacity\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Non Billable\",\r\n                \"name\": \"Non Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"# Heads\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Contracted\",\r\n                \"name\": \"Contracted\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Billable + Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Actual\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"New Business\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Administrative\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Actual Client\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"name\": \"ContractedVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityContractedTimeVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsContractedSummary\",\r\n                \"showInColumn\": \"ContractedBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"alignment\": \"right\"\r\n            } \r\n        ],\r\n        \"groupItems\": [\r\n            {\r\n                \"column\": \"Non Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Actual\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Administrative\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Actual Client\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"# Heads\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Capacity\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Contracted\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Billable + Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"name\": \"ContractedVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityContractedTimeVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsContractedSummary\",\r\n                \"showInColumn\": \"ContractedBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } \r\n        ]\r\n    } ,\r\n    \"columnChooser\": {\r\n        \"enabled\": \"true\"\r\n    } \r\n} ",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684"
+    },
+    {
+      "Id": "3272727f-8925-43ca-893e-55811454eccd",
+      "Name": "Time Period",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 12,
+      "Order": 1,
+      "Parameters": "[{\"WidgetSubTitle\":\"Capacity (blue), Contracted Time (red) & Weeks with not Enough Capacity\",\"WidgetType\":\"rangeselector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#e0e0e0\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":2,\"WidgetRows\":11,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"startDate\":\"2018/06/1\",\"endDate\":\"2019/06/30\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"With Dates as\\n(\\n\\tSELECT \\n\\t\\tcast(concat(@year, '-1', '-1') as date) as [StartDate],\\n\\t\\tcast(concat(@year, '-12', '-31') as date) as [EndDate]\\n),\\nAllDays as \\n( \\n\\tselect   \\n\\t\\td.StartDate as [Date], \\n\\t\\t1 as [level]\\n\\tfrom Dates d\\n    union all\\n\\tselect   \\n\\t\\tDATEADD(DAY, 1, [Date]), [level] + 1\\n\\tfrom     \\n\\t\\tAllDays, Dates d\\n\\twhere    \\n\\t\\t[Date] < d.EndDate \\n),\\nGetData as (\\n\\tselect  t.[Date] as Day,\\n\\t\\t\\tsum(t.WorkingTime - t.Holidays - t.Leaves) as Capacity,\\n\\t\\t\\tsum(t.ContractedTime) as ContractedTime,\\n\\t\\t\\tiif(sum(t.WorkingTime - t.Holidays - t.Leaves - t.ContractedTime) < 0, sum(t.WorkingTime - t.Holidays - t.Leaves), null) as NotEnoughCapacity\\n\\tfrom    (\\n\\t\\t\\t\\t\\tselect\\t\\n\\t\\t\\t\\t\\t\\tdu.[Date] as [Date],\\n\\t\\t\\t\\t\\t\\tsum(du.RequiredHours) as WorkingTime,\\n\\t\\t\\t\\t\\t\\tsum(du.HolidayTime) as Holidays,\\n\\t\\t\\t\\t\\t\\tsum(du.LeaveTime) as Leaves,\\n\\t\\t\\t\\t\\t\\t0 as ContractedTime\\n\\t\\t\\t\\t\\tfrom\\n\\t\\t\\t\\t\\t\\tAnalytics.DatamartUser du\\n\\t\\t\\t\\t\\twhere\\n\\t\\t\\t\\t\\t\\tdatepart(dw, du.[Date]) not in (1,7)\\n\\t\\t\\t\\t\\t\\tand Year(du.[Date]) = @year\\n\\t\\t\\t\\t\\tgroup by\\n\\t\\t\\t\\t\\t\\tdu.[Date]\\n\\t\\t\\t\\t\\tunion all\\n\\t\\t\\t\\t\\tselect  \\n\\t\\t\\t\\t\\t\\tt.[Date],\\n\\t\\t\\t\\t\\t\\t0 as WorkingTime,\\n\\t\\t\\t\\t\\t\\t0 as Holidays,\\n\\t\\t\\t\\t\\t\\t0 as Leaves,\\n\\t\\t\\t\\t\\t\\tsum(t.ContractedTime) as ContractedTime\\n\\t\\t\\t\\t\\tfrom    (\\n\\t\\t\\t\\t\\t\\t\\t\\tselect \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tde.[Date] as [Date],\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tsum(de.[Hours] / (datediff(dd, de.[Date], de.Expiration) + 1)) as ContractedTime\\n\\t\\t\\t\\t\\t\\t\\t\\tfrom \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAnalytics.DatamartEstimate de \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tleft outer join EstimateItemDetail eid on eid.Oid = de.ItemId\\n\\t\\t\\t\\t\\t\\t\\t\\twhere\\n\\t\\t\\t\\t\\t\\t\\t\\t\\teid.[Type] = 2 and\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tYear(de.[Date]) = @year\\n\\t\\t\\t\\t\\t\\t\\t\\tgroup by \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tde.[Date]\\n\\t\\t\\t\\t\\t\\t\\t) t\\n\\t\\t\\t\\t\\tgroup by \\n\\t\\t\\t\\t\\t\\tt.[Date]\\n\\t\\t\\t) t\\n\\twhere   \\n\\t\\tYear(t.[Date]) = @year\\n\\tgroup by \\n\\t\\tt.[Date]\\n)\\nselect \\n\\tad.[Date] as [Day],\\n\\tsum(IsNull(gd.Capacity, 0)) as Capacity,\\n\\tsum(IsNull(gd.ContractedTime, 0)) as ContractedTime,\\n\\tsum(IsNull(gd.NotEnoughCapacity, 0)) as NotEnoughCapacity\\nfrom \\n\\tAllDays ad\\n\\t\\tleft outer join GetData gd on cast(gd.[Day] as date) = cast(ad.[Date] as date)\\ngroup by \\n\\tad.[Date]\\noption \\n\\t(MAXRECURSION 0)\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"year\"]}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/FTE - Overtime View/execute",
+      "Configuration": "{\r\n    \"height\": 200,\r\n    \"size\": {\r\n        \"height\": 200\r\n    } ,\r\n    \"containerBackgroundColor\": \"#e0e0e0\",\r\n    \"selectedRangeColor\": \"#f5564a\",\r\n    \"onDrawn\": \"function bla(e) { SW.saveComponent(e.component, 'rangeSelector'); } \",\r\n    \"chart\": {\r\n        \"commonSeriesSettings\": {\r\n            \"type\": \"steparea\",\r\n            \"argumentField\": \"Day\"\r\n        } ,\r\n        \"series\": [\r\n            {\r\n                \"valueField\": \"Capacity\"\r\n            } ,\r\n            {\r\n                \"valueField\": \"ContractedTime\"\r\n            } ,\r\n            {\r\n                \"valueField\": \"NotEnoughCapacity\",\r\n                \"type\": \"scatter\",\r\n                \"ignoreEmptyPoints\": true,\r\n                \"color\": \"#da5859\"\r\n            } \r\n        ]\r\n    } ,\r\n    \"scale\": {\r\n        \"minorTickInterval\": \"day\",\r\n        \"tickInterval\": \"month\",\r\n        \"valueType\": \"datetime\"\r\n    } ,\r\n    \"sliderMarker\": {\r\n        \"format\": \"monthAndDay\",\r\n        \"color\": \"#da5859\"\r\n    } ,\r\n    \"value\": {\r\n        \"length\": {\r\n            \"years\": 1\r\n        } \r\n    } ,\r\n    \"legend\": {\r\n        \"visible\": true,\r\n        \"rowCount\": 1,\r\n        \"verticalAlignment\": \"top\",\r\n        \"horizontalAlignment\": \"center\",\r\n        \"font\": {\r\n            \"size\": 12,\r\n            \"family\": \"Varela Round\",\r\n            \"weight\": 600\r\n        } \r\n    } \r\n} ",
+      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684"
+    },
+    {
+      "Id": "48597817-7d22-444f-a12b-72e73239eca1",
       "Name": "Filters",
       "Active": true,
       "UseQuery": false,
@@ -470,7 +1346,7 @@
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684"
     },
     {
-      "Id": "0824b59c-54af-4602-94b3-89ef9bd309b6",
+      "Id": "1ef9caa1-8a24-4fad-974b-e1c34951379f",
       "Name": "Utilization per Client",
       "Active": true,
       "UseQuery": false,
@@ -486,47 +1362,11 @@
       "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Per_Company_Department_User/execute",
       "Configuration": "{\"headerFilter\":{\"visible\":true},\"grouping\":{\"autoExpandAll\":true},\"columnResizingMode\":\"widget\",\"allowColumnResizing\":\"true\",\"allowFiltering\":true,\"columnAutoWidth\":\"true\",\"searchPanel\":{\"visible\":true},\"selection\":{\"mode\":\"none\"},\"height\":\"400\",\"scrolling\":{\"mode\":\"virtual\"},\"columnMinWidth\":\"80\",\"columns\":[{\"dataField\":\"ClientId\",\"name\":\"Picture\",\"caption\":\"\",\"width\":30,\"alignment\":\"left\",\"cellTemplate\":\"function(e, i) {        SK.showImage(e, 'client', 'medium', i.data.HasImage, i.data.ClientName, i.data.ClientId);    }\"},{\"dataField\":\"ClientName\",\"name\":\"Client\",\"caption\":\"Name\",\"width\":120},{\"dataField\":\"Capacity\",\"caption\":\"Capacity\",\"alignment\":\"right\",\"format\":\"###,##0.0\"},{\"dataField\":\"CapacityContractedTimeVariation\",\"caption\":\"Contracted / Capacity\",\"name\":\"VariationCapCon\",\"alignment\":\"right\",\"format\":\"#,##0.0\",\"cellTemplate\":\"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); }\"},{\"dataField\":\"ContractedBillableAndForecastVariation\",\"caption\":\"(Billable + Forecast) / Contracted\",\"name\":\"VariationConBilFor\",\"alignment\":\"right\",\"format\":\"#,##0.0\",\"cellTemplate\":\"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); }\"},{\"dataField\":\"CapacityBillableAndForecastVariation\",\"caption\":\"(Billable + Forecast) / Capacity\",\"name\":\"VariationCapBilFor\",\"alignment\":\"right\",\"format\":\"#,##0.0\",\"cellTemplate\":\"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); }\"},{\"dataField\":\"ContractedTime\",\"caption\":\"Contracted\",\"alignment\":\"right\",\"format\":\"#,##0.0\"},{\"dataField\":\"ForecastTime\",\"caption\":\"Forecast\",\"alignment\":\"right\",\"format\":\"#,##0.0\"},{\"dataField\":\"BillableAndForecastTime\",\"caption\":\"Billable + Forecast\",\"name\":\"BillableAndForecast\",\"alignment\":\"right\",\"format\":\"#,##0.0\"},{\"dataField\":\"Hours\",\"caption\":\"Actual\",\"alignment\":\"right\",\"format\":\"#,##0.0\"},{\"dataField\":\"BillableHours\",\"caption\":\"Billable\",\"alignment\":\"right\",\"format\":\"#,##0.0\"},{\"dataField\":\"NewBusinessHours\",\"caption\":\"Non-Billable\",\"name\":\"NonBillable\",\"alignment\":\"right\",\"format\":\"#,##0.0\"},{\"dataField\":\"AdministrativeHours\",\"caption\":\"Admin\",\"name\":\"Admin\",\"alignment\":\"right\",\"format\":\"#,##0.0\"}],\"sortByGroupSummaryInfo\":[{\"summaryItem\":\"count\"}],\"summary\":{\"calculateCustomSummary\":\"function (options) {            if (options.name === 'UtilizationNonBillablePercentage') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.NewBusinessHours;                        options.totalValue[1] = options.totalValue[1] + options.value.Capacity;                        break;                        case 'finalize':                        if(Number(options.totalValue[1]) > 0)                        options.totalValue = (options.totalValue[0] / options.totalValue[    1  ]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'UtilizationPercentage') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableHours;                    options.totalValue[1] = options.totalValue[1] + options.value.Capacity;                        break;                    case 'finalize':                    if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                    else                            options.totalValue = 0;                    break;                }             }             if (options.name === 'ContractedVsCapacitySummary') {                switch(options.summaryProcess) {                case 'start':                        options.totalValue = [0,0];                        break;                case 'calculate':                options.totalValue[0] = options.totalValue[0] + options.value.ContractedTime;                options.totalValue[1] = options.totalValue[1] + options.value.Capacity;                        break;                case 'finalize':                if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsForecastVsCapacitySummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableHours;                    options.totalValue[1] = options.totalValue[1] + options.value.ForecastTime;                    options.totalValue[2] = options.totalValue[2] + options.value.Capacity;                        break;                    case 'finalize':                    if(Number(options.totalValue[2]) > 0)                    options.totalValue = ((options.totalValue[0] + options.totalValue[1]) / options.totalValue[2]);                        else                    options.totalValue = 0;                            break;                }             }                     if (options.name === 'BillableVsForecastVsContractedSummary') {                switch(options.summaryProcess) {                        case 'start':                        options.totalValue = [0,0,0];                        break;                        case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableHours;                        options.totalValue[1] = options.totalValue[1] + options.value.ForecastTime;                        options.totalValue[2] = options.totalValue[2] + options.value.ContractedTime;                        break;                        case 'finalize':                        if(Number(options.totalValue[2]) > 0)                        options.totalValue = ((options.totalValue[0] + options.totalValue[1]) / options.totalValue[2]);                        else                        options.totalValue = 0;                            break;                }             }         }\",\"totalItems\":[{\"column\":\"Contracted\",\"summaryType\":\"sum\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"column\":\"Capacity\",\"summaryType\":\"max\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"column\":\"Forecast\",\"summaryType\":\"sum\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"column\":\"Billable + Forecast\",\"summaryType\":\"sum\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"column\":\"Non-Billable\",\"summaryType\":\"sum\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"column\":\"Admin\",\"summaryType\":\"sum\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"column\":\"Billable\",\"summaryType\":\"sum\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"column\":\"Actual\",\"summaryType\":\"sum\",\"valueFormat\":\"#,##0.0\",\"displayFormat\":\"{0} \",\"alignment\":\"right\"},{\"name\":\"ContractedVsCapacitySummary\",\"showInColumn\":\"CapacityContractedTimeVariation\",\"displayFormat\":\"{0} \",\"valueFormat\":{\"type\":\"percent\",\"precision\":1},\"summaryType\":\"custom\",\"alignment\":\"right\"},{\"name\":\"BillableVsForecastVsCapacitySummary\",\"showInColumn\":\"CapacityBillableAndForecastVariation\",\"displayFormat\":\"{0} \",\"valueFormat\":{\"type\":\"percent\",\"precision\":1},\"summaryType\":\"custom\",\"alignment\":\"right\"},{\"name\":\"BillableVsForecastVsContractedSummary\",\"showInColumn\":\"ContractedBillableAndForecastVariation\",\"displayFormat\":\"{0} \",\"valueFormat\":{\"type\":\"percent\",\"precision\":1},\"summaryType\":\"custom\",\"alignment\":\"right\"}]},\"columnChooser\":{\"enabled\":\"true\"},\"stateStoring\":{\"enabled\":false}}",
       "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684"
-    },
-    {
-      "Id": "e81359dc-273a-4f28-9aaf-b0335f9d1b34",
-      "Name": "Typology Groups",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 12,
-      "Order": 2,
-      "Parameters": "[{\"WidgetSubTitle\":\"Staff, Proposals & Timesheet\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":13,\"WidgetRows\":17,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Delayed To Do\",\"metricFieldValue\":\"DelayedToDoJobsGrandTotal\"},{\"visible\":true,\"metricName\":\"?  Delayed Work in Progress\",\"metricFieldValue\":\"DelayedWorkInProgressJobsGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"with HeadCount as (\\nselect \\n\\t\\tv.UserTypologyGroupId,\\n\\t\\tv.WorkDays,\\n\\t\\tsum(v.TypologyWorkDays) as TypologyWorkDays,\\n\\t\\tv.Workers as TypologyWorkers,\\n\\t\\tIIF(v.WorkDays > 0, (sum(v.TypologyWorkDays) * 1.0) / (v.WorkDays * 1.0), 0) as HeadCount\\nfrom (\\n\\tselect \\n\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\tv.WorkDays,\\n\\t\\t\\tcount(v.UserId) as TypologyWorkDays,\\n\\t\\t\\tcount(v.UserId) OVER (partition by v.UserTypologyGroupId) as Workers\\n\\tfrom (\\n\\t\\tselect\\t\\n\\t\\t\\t\\t(DATEDIFF(dd, @FromDate, @ToDate))\\n\\t\\t\\t\\t-(DATEDIFF(wk, @FromDate, @ToDate) * 2)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, @FromDate) = 'Sunday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, @ToDate) = 'Saturday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\tas WorkDays,\\n\\t\\t\\t\\tv.UserId,\\n\\t\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\t\\tv.[Date]\\n\\t\\tfrom\\t\\n\\t\\t\\t\\tAnalytics.DatamartTimesheet v\\n\\t\\t\\t\\t\\tleft outer join dbo.[User] u on u.Oid = v.UserId\\n\\t\\twhere\\t\\n\\t\\t\\t\\tv.[Date] between IIf(@FromDate < u.HireDate, u.HireDate, @FromDate) \\n\\t\\t\\t\\tand IIF(@ToDate > u.ExpirationDate, u.ExpirationDate, @ToDate) and\\n\\t\\t\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\n\\t\\tgroup by\\n\\t\\t\\t\\tv.[UserId], \\n\\t\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\t\\tv.[Date]\\n\\t) v\\n\\tgroup by \\n\\t\\t\\tv.UserId,\\n\\t\\t\\tv.UserTypologyGroupId,\\n\\t\\t\\tv.WorkDays\\n) v\\ngroup by\\n\\t\\tv.UserTypologyGroupId,\\n\\t\\tv.WorkDays,\\n\\t\\tv.Workers\\n)\\nselect \\n\\t\\tdistinct\\n\\t\\tutg.[Name] as TypologyGroup,\\n\\t\\tdi.[Name] as Division,\\n\\t\\tde.[Name] as Department,\\n\\t\\tt.TypologyGroupOid,\\n\\t\\tIsNull(hd.HeadCount, 0.0) as HeadCount,\\n\\t\\tt.Capacity,\\n\\t\\tt.Holidays,\\n\\t\\tt.Leaves,\\n\\t\\tt.ContractedTime,\\n\\t\\tt.ForecastTime,\\n\\t\\tt.ActualTime,\\n\\t\\tt.BillableTime,\\n\\t\\tt.NewBusinessTime,\\n\\t\\tt.AdministrativeTime,\\n\\t\\tt.ClientTime,\\n\\t\\tt.ClientBillableTime,\\n\\t\\t(t.BillableTime + t.ForecastTime) as BillableAndForecastTime,\\n\\t\\tIIF(t.Capacity > 0, (t.ClientTime / t.Capacity), 0) AS CapacityClientTimeVariation,\\n        IIF(t.Capacity > 0, (t.ContractedTime / t.Capacity), 0) AS CapacityContractedTimeVariation,\\n\\t\\tIIF(t.Capacity > 0, ((t.BillableTime + t.ForecastTime) / t.Capacity), 0) CapacityBillableAndForecastVariation,\\n        IIF(t.ContractedTime > 0, ((t.BillableTime + t.ForecastTime) / t.ContractedTime), 0) ContractedBillableAndForecastVariation\\n\\t\\t\\nfrom(\\nselect \\n\\t\\tt.TypologyGroupOid,\\n\\t\\tsum(t.Capacity) as Capacity,\\n\\t\\tsum(t.Holidays) as Holidays,\\n\\t\\tsum(t.Leaves) as Leaves,\\n\\t\\tsum(t.ContractedTime) as ContractedTime,\\n\\t\\tsum(t.ForecastTime) as ForecastTime,\\n\\t\\tsum(t.ActualTime) as ActualTime,\\n\\t\\tsum(t.BillableTime) as BillableTime,\\n\\t\\tsum(t.NewBusinessTime) as NewBusinessTime,\\n\\t\\tsum(t.AdministrativeTime) as AdministrativeTime,\\n\\t\\tsum(t.ClientTime) as ClientTime,\\n\\t\\tsum(t.ClientBillableTime) as ClientBillableTime\\nfrom(\\nselect \\n\\t\\tv.UserTypologyGroupId as TypologyGroupOid,\\n\\t\\tsum(v.Capacity) as Capacity,\\n\\t\\tsum(v.Holidays) as Holidays,\\n\\t\\tsum(v.Leaves) as Leaves,\\n\\t\\tsum(v.ContractedTime) as ContractedTime,\\n\\t\\tsum(v.ForecastTime) as ForecastTime,\\n\\t\\tsum(v.ActualTime) as ActualTime,\\n\\t\\tsum(v.BillableTime) as BillableTime,\\n\\t\\tsum(v.NewBusinessTime) as NewBusinessTime,\\n\\t\\tsum(v.AdministrativeTime) as AdministrativeTime,\\n\\t\\tsum(v.BillableTime + v.NewBusinessTime) as ClientTime,\\n\\t\\tsum(v.ClientBillableTime) as ClientBillableTime\\nfrom \\n(\\nselect \\n\\t\\tv.UserTypologyGroupId,\\n\\t\\tsum(v.Capacity) as Capacity,\\n\\t\\tsum(v.LeaveTime) as Holidays,\\n\\t\\tsum(v.LeaveTime) as Leaves,\\n\\t\\t0 as ContractedTime,\\n\\t\\t0 as ForecastTime,\\n\\t\\tsum(v.[Hours]) as ActualTime,\\n\\t\\tsum(v.BillableHours) as BillableTime,\\n\\t\\tsum(v.NewBusinessHours) as NewBusinessTime,\\n\\t\\tsum(v.AdministrativeTime) as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\t0 as ClientBillableTime\\nfrom (\\n\\tselect \\n\\t\\t\\tdu.Oid as UserId,\\n\\t\\t\\tdu.UserTypologyGroupId,\\n\\t\\t\\tsum(du.ActualTime) as [Hours],\\n\\t\\t\\tsum(du.AdministrativeTime) as AdministrativeTime,\\n\\t\\t\\tsum(du.NewBusinessTime) as NewBusinessHours,\\n\\t\\t\\tsum(du.BillableTime) as BillableHours,\\n\\t\\t\\tsum(du.Capacity) as Capacity,\\n\\t\\t\\tsum(du.LeaveTime) as LeaveTime\\n\\tfrom \\n\\t\\t\\tAnalytics.DatamartUser du\\n\\twhere \\n\\t\\t\\t(du.[Date] between @FromDate AND @ToDate or \\n\\t\\t\\tdu.EndDate between @FromDate AND @ToDate or \\n\\t\\t\\t(du.[Date] < @FromDate and du.[Date] > @ToDate)) and\\n\\t\\t\\t(@CompanyOid = '00000000-0000-0000-0000-000000000000' OR du.CompanyId = @CompanyOid) and\\n\\t\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR du.UserTypeId = @UserType)\\n\\tgroup by \\n\\t\\t\\tdu.Oid,\\n\\t\\t\\tdu.UserTypologyGroupId\\n) v\\ngroup by \\n\\t\\tv.UserTypologyGroupId\\nunion all\\nselect \\n\\t\\tv.UserTypologyGroupId,\\n\\t\\t0 as Capacity,\\n\\t\\t0 as Holidays,\\n\\t\\t0 as Leaves,\\n\\t\\tIIF(v.EstimateWorkDays > 0, (sum(v.ContractedTime) / v.EstimateWorkDays) * sum(v.WorkDays), 0) as ContractedTime,\\n\\t\\t0 as ForecastTime,\\n\\t\\t0 as ActualTime,\\n\\t\\t0 as BillableTime,\\n\\t\\t0 as NewBusinessTime,\\n\\t\\t0 as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\t0 as ClientBillableTime\\nfrom (\\n\\tselect\\n\\t\\t\\tSUM(\\n\\t\\t\\t\\t(DATEDIFF(dd, IIF(de.[Date] <= @FromDate, @FromDate, de.[Date]), IIF(de.Expiration >= @ToDate, @ToDate, de.Expiration)))\\n\\t\\t\\t\\t-(DATEDIFF(wk, IIF(de.[Date] <= @FromDate, @FromDate, de.[Date]), IIF(de.Expiration >= @ToDate, @ToDate, de.Expiration)) * 2)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, IIF(de.[Date] <= @FromDate, @FromDate, de.[Date])) = 'Sunday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, IIF(de.Expiration >= @ToDate, @ToDate, de.Expiration)) = 'Saturday' THEN 1 ELSE 0 END)\\n\\t\\t\\t)\\n\\t\\t\\tas WorkDays,\\n\\t\\t\\tSUM(\\n\\t\\t\\t\\t(DATEDIFF(dd, de.[Date], de.Expiration))\\n\\t\\t\\t\\t-(DATEDIFF(wk, de.[Date], de.Expiration) * 2)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, de.[Date]) = 'Sunday' THEN 1 ELSE 0 END)\\n\\t\\t\\t\\t-(CASE WHEN DATENAME(dw, de.Expiration) = 'Saturday' THEN 1 ELSE 0 END)\\n\\t\\t\\t)\\n\\t\\t\\tas EstimateWorkDays,\\n\\t\\t\\tut.UserTypologyGroup as UserTypologyGroupId,\\n\\t\\t\\tde.UserId,\\n            de.ClientId,\\n\\t\\t\\tsum(de.[Hours]) as ContractedTime\\n\\tfrom \\n\\t\\t\\tAnalytics.DatamartEstimate de\\n\\t\\t\\t\\tleft outer join [User] u on (u.Oid = de.UserId)\\n\\t\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology\\n\\twhere \\n\\t\\t\\t(de.[Date] between @FromDate AND @ToDate or \\n            de.Expiration between @FromDate AND @ToDate or\\n            (de.[Date] <= @FromDate and de.Expiration >= @ToDate)) and\\n\\t\\t\\t(de.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') and\\n\\t\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\n\\tgroup by \\n\\t\\t\\tut.UserTypologyGroup,\\n\\t\\t\\tde.UserId,\\n            de.ClientId\\n) v\\ngroup by v.UserTypologyGroupId, v.EstimateWorkDays\\nunion all\\nselect \\n\\t\\tut.UserTypologyGroup,\\n\\t\\t0 as Capacity,\\n\\t\\t0 as Holidays,\\n\\t\\t0 as Leaves,\\n\\t\\t0 as ContractedTime,\\n\\t\\tsum(ph.[Hours]) as ForecastTime,\\n\\t\\t0 as ActualTime,\\n\\t\\t0 as BillableTime,\\n\\t\\t0 as NewBusinessTime,\\n\\t\\t0 as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\t0 as ClientBillableTime\\nfrom \\n\\t\\tAnalytics.DatamartPlannedHours ph\\n\\t\\t\\tleft outer join [User] u on u.Oid = ph.UserId\\n\\t\\t\\tleft outer join UserTypology ut on ut.Oid = u.Typology,\\n\\t\\tAnalytics.DatamartProject dp\\nwhere \\n\\t\\tph.ProjectId = dp.Oid and\\n\\t\\tdp.[Date] between @FromDate AND @ToDate and\\n\\t\\t(ph.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') AND\\n\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\ngroup by \\n\\t\\tut.UserTypologyGroup\\nunion all\\nselect \\n\\t\\tdt.UserTypologyGroupId,\\n\\t\\t0 as Capacity,\\n\\t\\t0 as Holidays,\\n\\t\\t0 as Leaves,\\n\\t\\t0 as ContractedTime,\\n\\t\\t0 as ForecastTime,\\n\\t\\t0 as ActualTime,\\n\\t\\t0 as BillableTime,\\n\\t\\t0 as NewBusinessTime,\\n\\t\\t0 as AdministrativeTime,\\n\\t\\t0 as ClientTime,\\n\\t\\tsum(dt.ActualTime) as ClientBillableTime\\nfrom \\n\\t\\tAnalytics.DatamartTimesheet dt\\n\\t\\t\\tleft outer join [User] u on u.Oid = dt.UserId\\nwhere \\n\\t\\tdt.[Date] between @FromDate AND @ToDate and\\n\\t\\t(dt.CompanyId = @CompanyOid OR @CompanyOid = '00000000-0000-0000-0000-000000000000') AND\\n\\t\\t(@UserType = '00000000-0000-0000-0000-000000000000' OR u.UserType = @UserType)\\ngroup by \\n\\t\\tdt.UserTypologyGroupId\\n) v\\t\\t\\ngroup by\\n\\t\\tv.UserTypologyGroupId \\n) t\\nwhere t.TypologyGroupOid is not null\\ngroup by \\n\\t\\tt.TypologyGroupOid\\n) t \\n    left outer join HeadCount hd on hd.UserTypologyGroupId = t.TypologyGroupOid\\n    left outer join dbo.UserTypologyGroup utg on utg.Oid = t.TypologyGroupOid\\n    left outer join dbo.UserTypology ut on ut.UserTypologyGroup = t.TypologyGroupOid\\n\\tleft outer join dbo.Department de on de.Oid = ut.Department\\n\\tleft outer join dbo.Division di on di.Oid = de.Division\\nwhere \\n\\t(di.Oid = @DivisionOid OR @DivisionOid = '00000000-0000-0000-0000-000000000000') AND \\n\\t(de.Oid = @DepartmentOid OR @DepartmentOid = '00000000-0000-0000-0000-000000000000') AND\\n\\tutg.[Name] IS NOT NULL\\norder by \\n\\tutg.[Name]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"CompanyOid\",\"DivisionOid\",\"DepartmentOid\",\"UserType\"]}}]",
-      "DashboardComponentType": {
-        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/FTE - Typology Groups/execute",
-      "Configuration": "{\r\n    \"headerFilter\": {\r\n        \"visible\": true\r\n    } ,\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    } ,\r\n    \"grouping\": {\r\n        \"autoExpandAll\": true\r\n    } ,\r\n    \"onRowClick\": \"function(e){ if(e.data.TypologyGroupOid != null) {        SkillsWorkflow.setDashboardFilter('TypologyGroupOid', e.data.TypologyGroupOid);                                            }              } \",\r\n    \"columnResizingMode\": \"widget\",\r\n    \"allowColumnResizing\": \"true\",\r\n    \"allowFiltering\": true,\r\n    \"columnAutoWidth\": \"true\",\r\n    \"searchPanel\": {\r\n        \"visible\": true\r\n    } ,\r\n    \"height\": \"370\",\r\n    \"scrolling\": {\r\n        \"mode\": \"virtual\"\r\n    } ,\r\n    \"selection\": {\r\n        \"mode\": \"single\"\r\n    } ,\r\n    \"columnMinWidth\": \"80\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Division\",\r\n            \"name\": \"Division\",\r\n            \"caption\": \"Division\",\r\n            \"width\": 100,\r\n            \"groupIndex\": 0\r\n        } ,\r\n        {\r\n            \"dataField\": \"Department\",\r\n            \"name\": \"Department\",\r\n            \"caption\": \"Department\",\r\n            \"width\": 100,\r\n            \"groupIndex\": 1\r\n        } ,\r\n        {\r\n            \"dataField\": \"TypologyGroup\",\r\n            \"name\": \"Typology Group\",\r\n            \"caption\": \"Typology\",\r\n            \"width\": 200\r\n        } ,\r\n        {\r\n            \"dataField\": \"HeadCount\",\r\n            \"caption\": \"# Heads\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Capacity\",\r\n            \"caption\": \"Capacity\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"###,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"CapacityContractedTimeVariation\",\r\n            \"caption\": \"Contracted / Capacity\",\r\n            \"name\": \"VariationCapCon\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); } \"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ContractedBillableAndForecastVariation\",\r\n            \"caption\": \"(Billable + Forecast) / Contracted\",\r\n            \"name\": \"VariationConBilFor\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); } \"\r\n        } ,\r\n        {\r\n            \"dataField\": \"CapacityBillableAndForecastVariation\",\r\n            \"caption\": \"(Billable + Forecast) / Capacity\",\r\n            \"name\": \"VariationCapBilFor\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\",\r\n            \"cellTemplate\": \"function(e, i) { SW.setRAG(e, (i.value * 100.0).toFixed(1) + '%', i.value >= 1.2, (i.value >= 0.8 && i.value < 1.2), i.value < 0.8, true); } \"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ContractedTime\",\r\n            \"caption\": \"Contracted\",\r\n            \"name\": \"Contracted\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ForecastTime\",\r\n            \"caption\": \"Forecast\",\r\n            \"name\": \"Forecast\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"BillableAndForecastTime\",\r\n            \"caption\": \"Billable + Forecast\",\r\n            \"name\": \"BillableAndForecast\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ActualTime\",\r\n            \"caption\": \"Actual\",\r\n            \"name\": \"Actual\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"BillableTime\",\r\n            \"caption\": \"Billable\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"NewBusinessTime\",\r\n            \"caption\": \"Non Billable\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"AdministrativeTime\",\r\n            \"caption\": \"Administrative\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"ClientBillableTime\",\r\n            \"caption\": \"Actual Client\",\r\n            \"name\": \"ActualClient\",\r\n            \"alignment\": \"right\",\r\n            \"format\": \"#,##0.0\"\r\n        } \r\n    ],\r\n    \"sortByGroupSummaryInfo\": [\r\n        {\r\n            \"summaryItem\": \"count\"\r\n        } \r\n    ],\r\n    \"summary\": {\r\n        \"calculateCustomSummary\": \"function (options) {            if (options.name === 'ContractedVsCapacitySummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.ContractedTime;                        options.totalValue[1] = options.totalValue[1] + options.value.Capacity;                        break;                    case 'finalize':                        if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsPlannedVsContractedSummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableAndPlannedTime;                        options.totalValue[1] = options.totalValue[1] + options.value.ContractedTime;                        break;                    case 'finalize':                        if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsPlannedVsCapacitySummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableAndPlannedTime;                        options.totalValue[1] = options.totalValue[1] + options.value.Capacity;                        break;                    case 'finalize':                        if(Number(options.totalValue[1]) > 0)                            options.totalValue = (options.totalValue[0] / options.totalValue[1]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsForecastVsCapacitySummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableTime;                        options.totalValue[1] = options.totalValue[1] + options.value.ForecastTime;                        options.totalValue[2] = options.totalValue[2] + options.value.Capacity;                        break;                    case 'finalize':                        if(Number(options.totalValue[2]) > 0)                            options.totalValue = ((options.totalValue[0] + options.totalValue[1]) / options.totalValue[2]);                        else                            options.totalValue = 0;                            break;                }             }             if (options.name === 'BillableVsForecastVsContractedSummary') {                switch(options.summaryProcess) {                    case 'start':                        options.totalValue = [0,0,0];                        break;                    case 'calculate':                        options.totalValue[0] = options.totalValue[0] + options.value.BillableTime;                        options.totalValue[1] = options.totalValue[1] + options.value.ForecastTime;                        options.totalValue[2] = options.totalValue[2] + options.value.ContractedTime;                        break;                    case 'finalize':                        if(Number(options.totalValue[2]) > 0)                            options.totalValue = ((options.totalValue[0] + options.totalValue[1]) / options.totalValue[2]);                        else                            options.totalValue = 0;                            break;                }             }         } \",\r\n        \"totalItems\": [\r\n            {\r\n                \"column\": \"Typology Group\",\r\n                \"summaryType\": \"count\",\r\n                \"valueFormat\": \"#,##0\",\r\n                \"displayFormat\": \"Total: {0} \",\r\n                \"alignment\": \"left\"\r\n            } ,\r\n            {\r\n                \"column\": \"Capacity\",\r\n                \"name\": \"Capacity\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Non Billable\",\r\n                \"name\": \"Non Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"# Heads\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Contracted\",\r\n                \"name\": \"Contracted\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Billable + Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Actual\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"New Business\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Administrative\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Actual Client\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"column\": \"Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"name\": \"ContractedVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityContractedTimeVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"alignment\": \"right\"\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsContractedSummary\",\r\n                \"showInColumn\": \"ContractedBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"alignment\": \"right\"\r\n            } \r\n        ],\r\n        \"groupItems\": [\r\n            {\r\n                \"column\": \"Non Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Actual\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Billable\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Administrative\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Actual Client\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"# Heads\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Capacity\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Contracted\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"column\": \"Billable + Forecast\",\r\n                \"summaryType\": \"sum\",\r\n                \"valueFormat\": \"#,##0.0\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"name\": \"ContractedVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityContractedTimeVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsContractedSummary\",\r\n                \"showInColumn\": \"ContractedBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } ,\r\n            {\r\n                \"name\": \"BillableVsForecastVsCapacitySummary\",\r\n                \"showInColumn\": \"CapacityBillableAndForecastVariation\",\r\n                \"displayFormat\": \"{0} \",\r\n                \"valueFormat\": {\r\n                    \"type\": \"percent\",\r\n                    \"precision\": 1\r\n                } ,\r\n                \"summaryType\": \"custom\",\r\n                \"showInGroupFooter\": false,\r\n                \"alignByColumn\": true\r\n            } \r\n        ]\r\n    } ,\r\n    \"columnChooser\": {\r\n        \"enabled\": \"true\"\r\n    } \r\n} ",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684"
-    },
-    {
-      "Id": "8bceef04-304a-46e5-bab4-b649d43d2fe1",
-      "Name": "Time Period",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 12,
-      "Order": 1,
-      "Parameters": "[{\"WidgetSubTitle\":\"Capacity (blue), Contracted Time (red) & Weeks with not Enough Capacity\",\"WidgetType\":\"rangeselector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#e0e0e0\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":2,\"WidgetRows\":11,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"startDate\":\"2018/06/1\",\"endDate\":\"2019/06/30\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"With Dates as\\n(\\n\\tSELECT \\n\\t\\tcast(concat(@year, '-1', '-1') as date) as [StartDate],\\n\\t\\tcast(concat(@year, '-12', '-31') as date) as [EndDate]\\n),\\nAllDays as \\n( \\n\\tselect   \\n\\t\\td.StartDate as [Date], \\n\\t\\t1 as [level]\\n\\tfrom Dates d\\n    union all\\n\\tselect   \\n\\t\\tDATEADD(DAY, 1, [Date]), [level] + 1\\n\\tfrom     \\n\\t\\tAllDays, Dates d\\n\\twhere    \\n\\t\\t[Date] < d.EndDate \\n),\\nGetData as (\\n\\tselect  t.[Date] as Day,\\n\\t\\t\\tsum(t.WorkingTime - t.Holidays - t.Leaves) as Capacity,\\n\\t\\t\\tsum(t.ContractedTime) as ContractedTime,\\n\\t\\t\\tiif(sum(t.WorkingTime - t.Holidays - t.Leaves - t.ContractedTime) < 0, sum(t.WorkingTime - t.Holidays - t.Leaves), null) as NotEnoughCapacity\\n\\tfrom    (\\n\\t\\t\\t\\t\\tselect\\t\\n\\t\\t\\t\\t\\t\\tdu.[Date] as [Date],\\n\\t\\t\\t\\t\\t\\tsum(du.RequiredHours) as WorkingTime,\\n\\t\\t\\t\\t\\t\\tsum(du.HolidayTime) as Holidays,\\n\\t\\t\\t\\t\\t\\tsum(du.LeaveTime) as Leaves,\\n\\t\\t\\t\\t\\t\\t0 as ContractedTime\\n\\t\\t\\t\\t\\tfrom\\n\\t\\t\\t\\t\\t\\tAnalytics.DatamartUser du\\n\\t\\t\\t\\t\\twhere\\n\\t\\t\\t\\t\\t\\tdatepart(dw, du.[Date]) not in (1,7)\\n\\t\\t\\t\\t\\t\\tand Year(du.[Date]) = @year\\n\\t\\t\\t\\t\\tgroup by\\n\\t\\t\\t\\t\\t\\tdu.[Date]\\n\\t\\t\\t\\t\\tunion all\\n\\t\\t\\t\\t\\tselect  \\n\\t\\t\\t\\t\\t\\tt.[Date],\\n\\t\\t\\t\\t\\t\\t0 as WorkingTime,\\n\\t\\t\\t\\t\\t\\t0 as Holidays,\\n\\t\\t\\t\\t\\t\\t0 as Leaves,\\n\\t\\t\\t\\t\\t\\tsum(t.ContractedTime) as ContractedTime\\n\\t\\t\\t\\t\\tfrom    (\\n\\t\\t\\t\\t\\t\\t\\t\\tselect \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tde.[Date] as [Date],\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tsum(de.[Hours] / (datediff(dd, de.[Date], de.Expiration) + 1)) as ContractedTime\\n\\t\\t\\t\\t\\t\\t\\t\\tfrom \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tAnalytics.DatamartEstimate de \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tleft outer join EstimateItemDetail eid on eid.Oid = de.ItemId\\n\\t\\t\\t\\t\\t\\t\\t\\twhere\\n\\t\\t\\t\\t\\t\\t\\t\\t\\teid.[Type] = 2 and\\n\\t\\t\\t\\t\\t\\t\\t\\t\\tYear(de.[Date]) = @year\\n\\t\\t\\t\\t\\t\\t\\t\\tgroup by \\n\\t\\t\\t\\t\\t\\t\\t\\t\\tde.[Date]\\n\\t\\t\\t\\t\\t\\t\\t) t\\n\\t\\t\\t\\t\\tgroup by \\n\\t\\t\\t\\t\\t\\tt.[Date]\\n\\t\\t\\t) t\\n\\twhere   \\n\\t\\tYear(t.[Date]) = @year\\n\\tgroup by \\n\\t\\tt.[Date]\\n)\\nselect \\n\\tad.[Date] as [Day],\\n\\tsum(IsNull(gd.Capacity, 0)) as Capacity,\\n\\tsum(IsNull(gd.ContractedTime, 0)) as ContractedTime,\\n\\tsum(IsNull(gd.NotEnoughCapacity, 0)) as NotEnoughCapacity\\nfrom \\n\\tAllDays ad\\n\\t\\tleft outer join GetData gd on cast(gd.[Day] as date) = cast(ad.[Date] as date)\\ngroup by \\n\\tad.[Date]\\noption \\n\\t(MAXRECURSION 0)\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"year\"]}}]",
-      "DashboardComponentType": {
-        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/FTE - Overtime View/execute",
-      "Configuration": "{\r\n    \"height\": 200,\r\n    \"size\": {\r\n        \"height\": 200\r\n    } ,\r\n    \"containerBackgroundColor\": \"#e0e0e0\",\r\n    \"selectedRangeColor\": \"#f5564a\",\r\n    \"onDrawn\": \"function bla(e) { SW.saveComponent(e.component, 'rangeSelector'); } \",\r\n    \"chart\": {\r\n        \"commonSeriesSettings\": {\r\n            \"type\": \"steparea\",\r\n            \"argumentField\": \"Day\"\r\n        } ,\r\n        \"series\": [\r\n            {\r\n                \"valueField\": \"Capacity\"\r\n            } ,\r\n            {\r\n                \"valueField\": \"ContractedTime\"\r\n            } ,\r\n            {\r\n                \"valueField\": \"NotEnoughCapacity\",\r\n                \"type\": \"scatter\",\r\n                \"ignoreEmptyPoints\": true,\r\n                \"color\": \"#da5859\"\r\n            } \r\n        ]\r\n    } ,\r\n    \"scale\": {\r\n        \"minorTickInterval\": \"day\",\r\n        \"tickInterval\": \"month\",\r\n        \"valueType\": \"datetime\"\r\n    } ,\r\n    \"sliderMarker\": {\r\n        \"format\": \"monthAndDay\",\r\n        \"color\": \"#da5859\"\r\n    } ,\r\n    \"value\": {\r\n        \"length\": {\r\n            \"years\": 1\r\n        } \r\n    } ,\r\n    \"legend\": {\r\n        \"visible\": true,\r\n        \"rowCount\": 1,\r\n        \"verticalAlignment\": \"top\",\r\n        \"horizontalAlignment\": \"center\",\r\n        \"font\": {\r\n            \"size\": 12,\r\n            \"family\": \"Varela Round\",\r\n            \"weight\": 600\r\n        } \r\n    } \r\n} ",
-      "DashboardDefinitionId": "84f13a06-c446-4450-8586-1abd1872d684"
     }
   ],
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 6,
+  "Version": 7,
   "Default": false
 }
