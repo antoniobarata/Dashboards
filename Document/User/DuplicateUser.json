@@ -1,0 +1,55 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "51aa3d58-c1ab-44f4-8b0e-4cb4bbc86404",
+  "Name": "duplicate user",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": null,
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "abc8f6a0-7c70-4b93-9e04-4a802bddc95b",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":17,\"WidgetYPosition\":19,\"WidgetRows\":4,\"WidgetColumns\":13,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"onClick\":\"function(e){\\r\\n    e.component.option('disabled', true);\\r\\n    var form = SW.getComponent('formDuplicate');\\r\\n    form.option('disabled', true);\\r\\n    var gridUsers = SW.getComponent('data');\\r\\n    var id = gridUsers.getSelectedRowKeys()[0].UserId;\\r\\n    var name = SW.getComponent('name') != null ? SW.getComponent('name').option('value') : null;\\r\\n    var username = SW.getComponent('username') != null ? SW.getComponent('username').option('value') : null;\\r\\n    var duplicateModel = {\\r\\n        UserToDuplicateId: id,\\r\\n        Name: name,\\r\\n        UserName: username\\r\\n    };\\r\\n    var postModel = {\\r\\n        OperationType: 1,\\r\\n        DuplicateUserModel: duplicateModel\\r\\n    };\\r\\n    SW.executeAPI(\\\"POST\\\", \\\"v3/users\\\", null, postModel)\\r\\n    .then(\\r\\n        x => {\\r\\n            SW.Toastr.toastr_Success(\\\"Done!\\\");\\r\\n            form.option('disabled', false);\\r\\n            e.component.option('disabled', false);\\r\\n            debugger;\\r\\n            SW.genericPreview(x.Id, 'Name', 'user', 600, 1000); \\r\\n        }\\r\\n    )\\r\\n    .catch(\\r\\n        x => {\\r\\n            e.component.option('disabled', false);\\r\\n            form.option('disabled', false);\\r\\n        }\\r\\n    );\\r\\n}\",\"text\":\"DUPLICATE\"}",
+      "DashboardDefinitionId": "51aa3d58-c1ab-44f4-8b0e-4cb4bbc86404"
+    },
+    {
+      "Id": "51877c0f-7f73-4ec1-a8ee-8804d73ab737",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":11,\"WidgetYPosition\":4,\"WidgetRows\":12,\"WidgetColumns\":24,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"colCount\":\"1\",\"labelLocation\":\"top\",\"items\":[{\"label\":{\"text\":\"Name\"},\"editorType\":\"dxTextBox\",\"editorOptions\":{\"onInitialized\":\"function(e){ SW.saveComponent(e.component, 'name') }\"}},{\"label\":{\"text\":\"User Name\"},\"editorType\":\"dxTextBox\",\"editorOptions\":{\"onInitialized\":\"function(e){ SW.saveComponent(e.component, 'username') }\"}}],\"width\":\"100%\",\"height\":\"100%\",\"onInitialized\":\"function(e){\\r\\n    SW.saveComponent(e.component, 'formDuplicate');\\r\\n}\"}",
+      "DashboardDefinitionId": "51aa3d58-c1ab-44f4-8b0e-4cb4bbc86404"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}
