@@ -1,0 +1,55 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "5f54482d-789a-4eca-b349-126e2a5dfa49",
+  "Name": "AttendanceSettings",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": null,
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "c7ef0a98-687d-4951-9069-315c384729e0",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":19,\"WidgetYPosition\":38,\"WidgetRows\":4,\"WidgetColumns\":11,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "",
+      "DashboardDefinitionId": "5f54482d-789a-4eca-b349-126e2a5dfa49"
+    },
+    {
+      "Id": "4fee9ef4-6e28-4c15-b883-9f1236440eea",
+      "Name": "Attendance",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Settings\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":36,\"WidgetColumns\":36,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"select c1.Name as CompanyName, ac.FtpHostIp, ac.FtpPassword, ac.FtpUsername, ac.FilePath, ac.AdministratorMail, ac.LeaveTypeName, ac.IgnoreUserList \\r\\nfrom AttendanceCompany ac, Company c1\\r\\nwhere c1.Oid = ac.Company\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\n    \"colCount\": \"1\",\n    \"labelLocation\": \"top\",\n    \"items\": [\n        {\n            \"label\": {\n                \"text\": \"Company\"\n            },\n            \"editorType\": \"dxSelectBox\",\n            \"editorOptions\": {\n                \"dataSource\": {\n                    \"load\": \"function(e){ var queryExecutePayload = { Query: 'select c1.Name as CompanyName, ac.FtpHostIp, ac.FtpPassword, ac.FtpUsername, ac.FilePath, ac.AdministratorMail, ac.LeaveTypeName, ac.IgnoreUserList from AttendanceCompany ac, Company c1 where c1.Oid = ac.Company', Parameters: {} }; return SW.executeAPI('POST', 'analytics/query/execute', null, queryExecutePayload).then( x => { debugger; return Promise.resolve(x.Data)} ); }\"\n                },\n                \"displayExpr\": \"CompanyName\",\n                \"onValueChanged\": \"function(e){debugger; SW.getComponent('formAttendance').option('formData', e.value)}\"\n            }\n        },\n        {\n            \"label\": {\n                \"text\": \"Ftp Host Ip\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"dataField\": \"FtpHostIp\"\n        },\n        {\n            \"label\": {\n                \"text\": \"Ftp Password\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"dataField\": \"FtpPassword\"\n        },\n        {\n            \"label\": {\n                \"text\": \"Ftp Username\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"dataField\": \"FtpUsername\"\n        },\n        {\n            \"label\": {\n                \"text\": \"File Path\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"dataField\": \"FilePath\"\n        },\n        {\n            \"label\": {\n                \"text\": \"Administrator Mail\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"dataField\": \"AdministratorMail\"\n        },\n        {\n            \"label\": {\n                \"text\": \"LeaveTypeName\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"dataField\": \"Leave Type Name\"\n        },\n        {\n            \"label\": {\n                \"text\": \"Ignore User List\"\n            },\n            \"editorType\": \"dxTextBox\",\n            \"dataField\": \"IgnoreUserList\"\n        }\n    ],\n    \"formData\": \"function(e){debugger;}\",\n    \"width\": \"100%\",\n    \"height\": \"100%\",\n    \"onInitialized\": \"function(e){\\r\\n    SW.saveComponent(e.component, 'formAttendance');\\r\\n}\",\n    \"onContentReady\": \"function(e) {\\r\\n    SW.saveComponent(e.component, 'formAttendance');\\r\\n}\"\n}",
+      "DashboardDefinitionId": "5f54482d-789a-4eca-b349-126e2a5dfa49"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}
