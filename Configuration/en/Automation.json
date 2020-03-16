@@ -1,6 +1,6 @@
 {
     "DashboardDefinitionRoles": [],
-    "Id": "f0101518-a2a5-437a-a047-db1da06ea94e",
+    "Id": "510f072a-435a-4eea-9865-38351dbdfa21",
     "Name": "Automation",
     "Active": true,
     "Location": 2,
@@ -11,22 +11,27 @@
     "Templates": [],
     "DashboardDefinitionComponents": [
         {
-            "Id": "8c721d2f-e6fd-4afc-a107-0a98867f3902",
+            "Id": "4ca111b6-dccc-4aa7-be85-50d304fa0e28",
             "Name": "Automation",
             "Active": true,
             "UseQuery": false,
             "Query": "",
             "Size": 12,
             "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
             "DashboardComponentType": {
                 "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
                 "Name": "Generic Dashboard",
                 "ComponentTypeNumber": 42
             },
             "AnalyticsApiUrl": "",
-            "Configuration": "{\n    \"entity\": \"automation\",\n    \"allowBulk\": false,\n    \"dataSource\": {\n        \"load\": \"function(){            return SkillsWorkflow.executeAPI('GET', 'integration-workflows',        null, null).then(result => {return Promise.resolve(result)        });    }\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"name\",\n            \"caption\": \"Name\"\n        },\n        {\n            \"dataField\": \"active\",\n            \"caption\": \"Active\"\n        },\n        {\n            \"dataField\": \"id\",\n            \"caption\": \"Start\",\n            \"cellTemplate\": \"function(e, options){                           var h = document.createElement('DIV');                    h.setAttribute('class', 'fal fa-play');             e.appendChild(h);                var id = options.data.id;                                h.onclick = function(e) {e.stopPropagation(); debugger;                                             SkillsWorkflow.executeAPI('GET','integration-workflows/'+id+'/execute')                                        }                  }\"\n        }\n    ],\n    \"onRowClick\": \"function(e){debugger; if(e.rowType=='data') SW.genericPreview(e.data.id, 'name', 'automation')}\",\n    \"onToolbarPreparing\": \"function(e) {        var dataGrid = e.component;        e.toolbarOptions.items.unshift({            location: 'after',                       template: 'toggleHeaderFilterButtonTemplate'               });        e.toolbarOptions.items.unshift({            location: 'after',             widget: 'dxButton',             options:{                icon: 'fal fa-times',                onClick: function () {                    SW.genericDelete('integration-workflows', dataGrid, 'id');                }            }        });    }\"\n}",
-            "DashboardDefinitionId": "f0101518-a2a5-437a-a047-db1da06ea94e"
+            "Configuration": "{\"entity\":\"automation\",\"allowBulk\":false,\"dataSource\":{\"load\":\"function(){            return SkillsWorkflow.executeAPI('GET', 'integration-workflows',        null, null).then(result => {return Promise.resolve(result)        });    }\"},\"columns\":[{\"visibleIndex\":0,\"type\":\"buttons\",\"buttons\":[{\"hint\":\"Start automation workflow\",\"visible\":true,\"icon\":\"fal fa-play\",\"onClick\":\"function(e){                         e.event.preventDefault();                          SW.Toastr.toastr_Info('Automation workflow \\\"'+e.row.data.name+'\\\" started.');                                        var runAutomation =  SkillsWorkflow.executeAPI('GET','integration-workflows/'+e.row.data.id+'/execute').then(r => {SW.Toastr.toastr_Info('Automation workflow \\\"'+e.row.data.name+'\\\" finished.');     })}\"},{\"hint\":\"View log\",\"visible\":true,\"icon\":\"fal fa-history\",\"onClick\":\"function(e){ e.event.preventDefault();                  var data = e.row.data; SW.setDashboardFilter('AWName',data.name);      SW.setDashboardFilter('AWId', data.id);  var workSpace = '2d86da83-cfa1-43c7-89b3-3c6d0c8b67fb'; SW.genericPopup('automation', [{ Id: workSpace, Title: 'Log'}], data, '90%', '90%', false);    }\"},{\"hint\":\"Get automation workflow url\",\"visible\":true,\"icon\":\"fal fa-link\",\"onClick\":\"function(e){                         e.event.preventDefault();                                                          var aux = document.createElement('textarea');                                document.body.appendChild(aux);                                aux.value = 'https://apiv2-'+window.location.host+'/api/integration-workflows/'+e.row.data.id+'/execute';                                aux.select();                                document.execCommand('copy');                                document.body.removeChild(aux);                                 SW.Toastr.toastr_Success('Automation workflow \\\"'+e.row.data.name+'\\\" URL copied successfully.');                                                                 }\"}]},{\"dataField\":\"name\",\"caption\":\"Name\"},{\"dataField\":\"active\",\"caption\":\"Active\"}],\"onRowClick\":\"function(e) { \\nif (e.rowType == 'data') \\n//SW.genericPreview(e.data.id, 'name', 'automation') \\n    var id = 'ffdb36dc-a0c8-4c3c-a87b-4b64c325db0f';\\n\\n    var dataC = SW.executeAPI(\\\"GET\\\", \\\"integration-workflows/\\\"+e.data.id,null,null).then( result => {\\n    SW.genericPopup('automation', [{ Id: id, Title: e.data.name }], result, '80%', '80%', true)})\\n    \\n}\",\"onToolbarPreparing\":\"function(e) { var dataGrid = e.component; \\ne.toolbarOptions.items.unshift({ location: 'after', template: 'toggleHeaderFilterButtonTemplate' }); \\ne.toolbarOptions.items.unshift({ location: 'after', widget: 'dxButton', options: { icon: 'fal fa-times', onClick: function () { SW.genericDelete('integration-workflows', dataGrid, 'id'); } } }); }\"}",
+            "DashboardDefinitionId": "510f072a-435a-4eea-9865-38351dbdfa21"
         }
-    ]
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 3,
+    "Default": true
 }
