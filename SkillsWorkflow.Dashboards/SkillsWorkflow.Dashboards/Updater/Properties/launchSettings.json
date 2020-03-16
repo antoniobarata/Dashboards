@@ -2,7 +2,7 @@
   "profiles": {
     "Updater": {
       "commandName": "Project",
-      "commandLineArgs": "updater -tenantApi  \"http://localhost:1134/\" -tenantsApiKey \"zas\" -repositoryDir \"C:\\Source\\Repos\\Dashboards\""
+      "commandLineArgs": "-tenantApi  \"http://localhost:1134/\" -tenantsApiKey \"zas\" -repositoryDir \"C:\\Source\\Repos\\Dashboards\" -region \"West Europe\""
     }
   }
 }

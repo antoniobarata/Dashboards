@@ -22,6 +22,7 @@ namespace Updater
             argumentsDictionary.Add("-tenantApi", string.Empty);
             argumentsDictionary.Add("-tenantsApiKey", string.Empty);
             argumentsDictionary.Add("-repositoryDir", string.Empty);
+            argumentsDictionary.Add("-region", string.Empty);
         }
 
         static async Task Main(string[] args)
@@ -48,16 +49,17 @@ namespace Updater
             string tenantsApiUrl = argumentsDictionary["-tenantApi"];
             string tenantsApiKey = argumentsDictionary["-tenantsApiKey"];
             string repositoryDir = argumentsDictionary["-repositoryDir"];
+            string region = argumentsDictionary["-region"];
             var files = new DashboardFiles(repositoryDir);
             //var filesForManifest = files.GetFilesForManifest();
 
             //var manifestAutomation = new Manisfest(new HttpClient(), null);
             //manifestAutomation.GenerateManifest(repositoryDir);
 
-            await UpdateTenants(tenantsApiUrl, tenantsApiKey, files.GetFilesToUpdate());
+            await UpdateTenants(tenantsApiUrl, tenantsApiKey, files.GetFilesToUpdate(), region);
         }
 
-        private static async Task UpdateTenants(string tenantsApiUrl, string tenantsApiKey, IEnumerable<string> dashboardfiles)
+        private static async Task UpdateTenants(string tenantsApiUrl, string tenantsApiKey, IEnumerable<string> dashboardfiles, string region)
         {
             var templatesAggregator = new GenerateJson(dashboardfiles);
             var templatesAggregatted = templatesAggregator.GenerateBatchJson();
@@ -66,6 +68,8 @@ namespace Updater
             var tenants = await client.GetListAsync();
             foreach (var tenant in tenants)
             {
+                if (tenant.Region.ToUpperInvariant() == region.ToUpperInvariant())
+                    continue;
                 Console.WriteLine($"{tenant.Name,-30} {tenant.Region,-15} {tenant.Id}");
                 var application = tenant.Applications.FirstOrDefault();
                 var binding = tenant.AuthorityBindings.FirstOrDefault(a => "APIV2" == a.Site.ToUpperInvariant());
