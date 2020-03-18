@@ -1,4 +1,4 @@
-{
+﻿{
     "DashboardDefinitionRoles": [],
     "Id": "b70e1a00-3f43-45ab-bb04-04ba1e34e254",
     "Name": "proofing-popup",
@@ -25,13 +25,13 @@
                 "ComponentTypeNumber": 42
             },
             "AnalyticsApiUrl": "",
-            "Configuration": "{\n    \"size\": \"900px\",\n    \"items\": [\n        {\n            \"template\": \"function  (a, itemElement, element, model) {                                   var source = SW.getComponent('data');                     if (source != null)                 {                                                 var iFrame = document.createElement('iframe');                                    SW.setAttribute(iFrame,                null,'style','height: 850px;width: 100%;border: 1px solid #eee;border-radius: 8px;',false);                                   itemElement.append(iFrame);                                             iFrame.src = source.public_link;            }        }\"\n        }\n    ]\n}",
+            "Configuration": "{\n    \"size\": \"900px\",\n    \"items\": [\n        {\n            \"template\": \"function  (a, itemElement, element, model) {                                   var source = SW.getComponent(\u0027data\u0027);                     if (source != null)                 {                                                 var iFrame = document.createElement(\u0027iframe\u0027);                                    SW.setAttribute(iFrame,                null,\u0027style\u0027,\u0027height: 850px;width: 100%;border: 1px solid #eee;border-radius: 8px;\u0027,false);                                   itemElement.append(iFrame);                                             iFrame.src = source.public_link;            }        }\"\n        }\n    ]\n}",
             "DashboardDefinitionId": "b70e1a00-3f43-45ab-bb04-04ba1e34e254"
         }
     ],
     "QueryText": "",
     "UseStore": false,
     "StoreEntity": null,
-    "Version": 0,
+    "Version": 1,
     "Default": false
 }

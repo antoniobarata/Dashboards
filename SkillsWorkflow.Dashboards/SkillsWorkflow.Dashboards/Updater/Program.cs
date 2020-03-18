@@ -45,7 +45,7 @@ namespace Updater
                 Console.WriteLine($@"updater -tenantApi <url> -tenantsApiKey <key> -repositoryDir <git repository root>");
                 Environment.Exit(-1);
             }
-         
+
             string tenantsApiUrl = argumentsDictionary["-tenantApi"];
             string tenantsApiKey = argumentsDictionary["-tenantsApiKey"];
             string repositoryDir = argumentsDictionary["-repositoryDir"];
@@ -100,7 +100,7 @@ namespace Updater
             _files = files;
         }
 
-        public void GenerateManifest(string repositoryPath )
+        public void GenerateManifest(string repositoryPath)
         {
             //using (var repo = new Repository(repositoryPath))
             //{

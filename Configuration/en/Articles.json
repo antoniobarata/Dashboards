@@ -1,35 +1,37 @@
-{
-  "DashboardDefinitionRoles": [],
-  "Id": "db6e4962-ca28-43b3-a0da-1866c56335dd",
-  "Name": "Articles",
-  "Active": true,
-  "Location": 2,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": "article",
-  "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {} \r\n            } ,\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {} \r\n            } ,\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    } \r\n                ]\r\n            } ,\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            } \r\n        } ,\r\n        \"layout\": {\r\n            \"create\": {} ,\r\n            \"read\": {} ,\r\n            \"patch\": {} \r\n        } ,\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        } ,\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        } ,\r\n        \"fields\": []\r\n    } \r\n]",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "f76a5ec7-cfec-4622-a390-1e9692927450",
-      "Name": "Article",
-      "Active": true,
-      "UseQuery": true,
-      "Query": null,
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]} ,\"showSubTitle\":true,\"showTitle\":true} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  a.Oid,\\n\\t\\ta.[Name],\\n\\t\\tc.[Name] as Company,\\n\\t\\ta.Active,\\n\\t\\ta.InternalService,\\n\\t\\ta.DepartmentRequired,\\n\\t\\ta.UnitHour as UnitHour,\\n\\t\\ta.DefaultMargin,\\n\\t\\ta.ExternalId,\\n\\t\\ta.VatDeductiblePercentage as VatDeductiblePercentage,\\n\\t\\tag.[Name] as ArticleGroup\\nfrom Article a\\nInner Join Company c on a.Company=c.Oid\\nLeft Outer Join ArticleGroup ag on (ag.Oid=a.ArticleGroup)\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      } ,
-      "AnalyticsApiUrl": null,
-      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'article',500,700);} \",\"selection\":{\"mode\":\"multiple\"} ,\"stateStoring\":{\"enabled\":false} ,\"columns\":[{\"dataField\":\"Oid\",\"visible\":false} ,{\"dataField\":\"Name\"} ,{\"dataField\":\"Company\"} ,{\"dataField\":\"ExternalId\"} ,{\"dataField\":\"ArticleGroup\"} ,{\"dataField\":\"VatDeductiblePercentage\"} ,{\"dataField\":\"DefaultMargin\"} ,{\"dataField\":\"Active\"} ,{\"dataField\":\"UnitHour\"} ,{\"dataField\":\"InternalService\"} ,{\"dataField\":\"DepartmentRequired\"} ],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'    } );        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('article',                550,                750);            }         }     } );     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('article', dataGrid);            }         }     } );} \",\"entity\":\"article\"} ",
-      "DashboardDefinitionId": "db6e4962-ca28-43b3-a0da-1866c56335dd"
-    } 
-  ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null
-}  
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "db6e4962-ca28-43b3-a0da-1866c56335dd",
+    "Name": "Articles",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "article",
+    "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {} \r\n            } ,\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {} \r\n            } ,\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    } \r\n                ]\r\n            } ,\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            } \r\n        } ,\r\n        \"layout\": {\r\n            \"create\": {} ,\r\n            \"read\": {} ,\r\n            \"patch\": {} \r\n        } ,\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        } ,\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        } ,\r\n        \"fields\": []\r\n    } \r\n]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "f76a5ec7-cfec-4622-a390-1e9692927450",
+            "Name": "Article",
+            "Active": true,
+            "UseQuery": true,
+            "Query": null,
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]} ,\"showSubTitle\":true,\"showTitle\":true} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  a.Oid,\\n\\t\\ta.[Name],\\n\\t\\tc.[Name] as Company,\\n\\t\\ta.Active,\\n\\t\\ta.InternalService,\\n\\t\\ta.DepartmentRequired,\\n\\t\\ta.UnitHour as UnitHour,\\n\\t\\ta.DefaultMargin,\\n\\t\\ta.ExternalId,\\n\\t\\ta.VatDeductiblePercentage as VatDeductiblePercentage,\\n\\t\\tag.[Name] as ArticleGroup\\nfrom Article a\\nInner Join Company c on a.Company=c.Oid\\nLeft Outer Join ArticleGroup ag on (ag.Oid=a.ArticleGroup)\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": null,
+            "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027article\u0027,500,700);} \",\"selection\":{\"mode\":\"multiple\"} ,\"stateStoring\":{\"enabled\":false} ,\"columns\":[{\"dataField\":\"Oid\",\"visible\":false} ,{\"dataField\":\"Name\"} ,{\"dataField\":\"Company\"} ,{\"dataField\":\"ExternalId\"} ,{\"dataField\":\"ArticleGroup\"} ,{\"dataField\":\"VatDeductiblePercentage\"} ,{\"dataField\":\"DefaultMargin\"} ,{\"dataField\":\"Active\"} ,{\"dataField\":\"UnitHour\"} ,{\"dataField\":\"InternalService\"} ,{\"dataField\":\"DepartmentRequired\"} ],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027    } );        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {                SkillsWorkflow.genericNew(\u0027article\u0027,                550,                750);            }         }     } );     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027article\u0027, dataGrid);            }         }     } );} \",\"entity\":\"article\"} ",
+            "DashboardDefinitionId": "db6e4962-ca28-43b3-a0da-1866c56335dd"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 6,
+    "Default": true
+}

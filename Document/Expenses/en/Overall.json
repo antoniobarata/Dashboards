@@ -1,134 +1,134 @@
 ﻿{
-  "DashboardDefinitionRoles": [],
-  "Id": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b",
-  "Name": "Overall Dashboard",
-  "Active": true,
-  "Location": 1,
-  "DocumentId": "1de0d971-2b71-4471-8bea-7f0097abd152",
-  "DocumentName": "Expense",
-  "DocumentsConfiguration": null,
-  "Templates": [
-    {
-      "Id": "76bfbdb6-6dfb-464a-9ac5-c9df1b7b16e2",
-      "Name": "MullenLowe - Expense Sheet Export.xlsx",
-      "RelativePath": "DashboardDefinitions\\9e08b2a1-b861-4bb5-805d-3b3f23ecc59b\\MullenLowe - Expense Sheet Export.xlsx"
+    "DashboardDefinitionRoles": [],
+    "Id": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b",
+    "Name": "Overall Dashboard",
+    "Active": true,
+    "Location": 1,
+    "DocumentId": "1de0d971-2b71-4471-8bea-7f0097abd152",
+    "DocumentName": "Expense",
+    "DocumentsConfiguration": null,
+    "Templates": [
+        {
+            "Id": "76bfbdb6-6dfb-464a-9ac5-c9df1b7b16e2",
+            "Name": "MullenLowe - Expense Sheet Export.xlsx",
+            "RelativePath": "DashboardDefinitions\\9e08b2a1-b861-4bb5-805d-3b3f23ecc59b\\MullenLowe - Expense Sheet Export.xlsx"
+        }
+    ],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "f4bbeeb5-53ec-4f90-927d-4275dbcf2de4",
+            "Name": "Requests",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 5,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Billable vs Non-Billable per Type\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forescast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(iif(eit.[Group] = 0 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableReimbursableValueWithVat, sum(iif(eit.[Group] = 0 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableReimbursableValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Expense - Type per Group/execute",
+            "Configuration": "{\n  \"size\": {\n    \"height\": 250\n  },\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"ExpenseType\"\n  },\n  \"series\": [\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"BillableRequestValueWithVat\",\n      \"name\": \"Billable Request\"\n    },\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"UnbillableRequestValueWithVat\",\n      \"name\": \"Unbillable Request\"\n    }\n  ],\n\"legend\": {\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}",
+            "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
+        },
+        {
+            "Id": "4cf79333-d9f4-4d40-8b73-57cfa105787d",
+            "Name": "Meals Daily Totals",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 6,
+            "Order": 3,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Incurred daily Expenses\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"300\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forecast\",\r\n                        \"metricFieldValue\": \"TimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"UtilizationPercentGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(ei.ValueWithVat) as ValueWithVat, cast(ei.StartOn as date) as [Date] from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and lower(eit.Name) like \u0027%meal%\u0027 /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by cast(ei.StartOn as date)\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {}\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Expense - Overtime/execute",
+            "Configuration": "{\n  \"height\":250,\n  \"customizePoint\": \"function (pointInfo) {\n      if (pointInfo.value \u003e 200) {\n        return { \n          color: \u0027#cd2b2b\u0027, \n          hoverStyle: { color: \u0027#cd2b2bc\u0027 } \n        };\n      }\n    }\",\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Date\"\n  },\n  \"series\": [\n    {\n      \"type\": \"bar\",\n      \"valueField\": \"ValueWithVat\",\n      \"name\": \"Value with Tax\"\n    }\n  ],\n  \"argumentAxis\": {\n    \"argumentType\": \"datetime\",\n    \"type\": \"discrete\",\n    \"label\":{\n    \"format\": \"monthAndDay\"\n    }\n  },\n  \"valueAxis\": [{\n    \"constantLines\": [{\n                \"label\": {\n                    \"text\": \"Maximum daily Budget\"\n                },\n                \"width\": 1,\n                \"value\": 200,\n                \"color\": \"#cd2b2b\",\n                \"dashStyle\": \"dash\"\n            }]\n  }],\n  \"legend\": {\n    \"visible\": true,\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}\n",
+            "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
+        },
+        {
+            "Id": "f03e89be-52b0-45ca-b448-649b820c2404",
+            "Name": "Reimbursable",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 6,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Billable vs Non-Billable per Type\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forescast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(iif(eit.[Group] = 0 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableReimbursableValueWithVat, sum(iif(eit.[Group] = 0 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableReimbursableValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Expense - Type per Group/execute",
+            "Configuration": "{\n  \"size\": {\n    \"height\": 250\n  },\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"ExpenseType\"\n  },\n  \"series\": [\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"BillableReimbursableValueWithVat\",\n      \"name\": \"Billable Reimbursable\"\n    },\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"UnbillableReimbursableValueWithVat\",\n      \"name\": \"Unbillable Reimbursable\"\n    }\n  ],\n\"legend\": {\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}",
+            "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
+        },
+        {
+            "Id": "248e4c04-2e0a-4979-ba23-7eb4760572b2",
+            "Name": "Advanced",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 4,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Billable vs Non-Billable per Type\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forescast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(iif(eit.[Group] = 0 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableReimbursableValueWithVat, sum(iif(eit.[Group] = 0 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableReimbursableValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Expense - Type per Group/execute",
+            "Configuration": "{\n  \"size\": {\n    \"height\": 250\n  },\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"ExpenseType\"\n  },\n  \"series\": [\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"BillableAdvancedValueWithVat\",\n      \"name\": \"Billable Advanced\"\n    },\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"UnbillableAdvancedValueWithVat\",\n      \"name\": \"Unbillable Advanced\"\n    }\n  ],\n\"legend\": {\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}",
+            "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
+        },
+        {
+            "Id": "4c2cf81c-24b8-4b89-9638-bba14c44b606",
+            "Name": "Expense Type Breakdown",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 1,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Total per Type\",\r\n        \"WidgetType\": \"pie\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": false,\r\n                        \"metricName\": \"? \",\r\n                        \"metricFieldValue\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(ei.ValueWithVat) as ValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Expense - Types/execute",
+            "Configuration": "{\n  \"height\":250,\n  \"type\": \"doughnut\",\n  \"series\": {\n    \"argumentField\": \"ExpenseType\",\n    \"valueField\": \"ValueWithVat\",\n    \"label\": {\n      \"visible\": false,\n      \"format\": {\n     \"type\": \"fixedPoint\",\n          \"precision\": 1,\n          \"percentPrecision\": 1\n        },\n        \"customizeText\": \"function (point) {return point.percentText;}\",\n      \"connector\": {\n        \"visible\": true,\n        \"width\": 1\n      }\n    }\n  },\n  \"legend\": {\n    \"horizontalAlignment\": \"left\",\n    \"verticalAlignment\": \"middle\",\n    \"itemTextPosition\" : \"right\",\n    \"paddingLeftRight\" : 0,\n    \"font\":{\"size\":8}\n  }\n}\n",
+            "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
+        },
+        {
+            "Id": "e8eeaf97-3afc-4954-83ce-fe0a028e4019",
+            "Name": "Summary",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 2,
+            "Order": 0,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Overall Status\",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": false,\r\n                        \"metricName\": \"? Forecast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": false,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select \u0027Total with Tax\u0027 as MetricName, sum(ei.ValueWithVat) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Paid\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and ei.Paid = 1 /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Unpaid\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and ei.Paid = 0 /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Billable\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Name = \u0027Billable\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Unbillable\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Name != \u0027Billable\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Billable %\u0027 as MetricName, isnull(sum(iif(jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) / sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Unbillable %\u0027 as MetricName, isnull(sum(iif(jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) / sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Expense - Summary/execute",
+            "Configuration": "{\n  \"height\":250,\n  \"columnsAutoWidth\": true,\n  \"columnMinWidth\": 50,\n  \"showColumnHeaders\": true,\n  \"selection\": {\n    \"mode\": \"none\"\n  },\n  \"searchPanel\" : {\n    \"visible\" : false\n  },\n  \"groupPanel\": {\n    \"visible\": false\n  },\n  \"filterRow\": {\n    \"visible\": false\n  },\n  \"export\": {\n    \"enabled\": false\n  },\n  \"columnChooser\": {\n    \"enabled\": false\n  },\n  \"headerFilter\": {\n    \"visible\": false\n  },\n  \"onToolbarPreparing\": \"\",\n  \"columns\": [\n    {\n      \"dataField\": \"MetricName\",\n      \"caption\":\"Subject\"\n    },\n    {\n      \"dataField\": \"MetricValue\",\n      \"caption\":\"Value\",\n      \"cellTemplate\": \"function(element, info) {element.append(\u0027\u003cdiv\u003e\u0027 + info.text + \u0027\u003c/div\u003e\u0027).css(\u0027font-weight\u0027, \u0027bold\u0027);}\",\n      \"calculateDisplayValue\" : \"function(r) \n        { \n          if(r.MetricName==\u0027Billable %\u0027 || r.MetricName==\u0027Unbillable %\u0027) \n            return r.MetricValue * 100; \n          else \n            return r.MetricValue;\n       }\",\n      \"cellTemplate\": \"function(e, i) \n        {\n          var h = document.createElement(\u0027DIV\u0027);\n          h.innerHTML = i.text;\n          e.appendChild(h);\n          if(i.rowIndex == 5 || i.rowIndex == 6) \n            h.style.fontWeight = \u0027600\u0027;\n        }\",\n       \"format\": \"#,##0.00\"\n    }\n  ]\n}\n",
+            "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
+        }
+    ],
+    "Version": 5,
+    "Default": false,
+    "Dependencies": {
+        "DashboardSdk": "1.0.0",
+        "Analytics": "1.0.0",
+        "SkillsWorkflow": "1.0.0"
     }
-  ],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "f4bbeeb5-53ec-4f90-927d-4275dbcf2de4",
-      "Name": "Requests",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 5,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Billable vs Non-Billable per Type\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forescast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(iif(eit.[Group] = 0 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableReimbursableValueWithVat, sum(iif(eit.[Group] = 0 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableReimbursableValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Expense - Type per Group/execute",
-      "Configuration": "{\n  \"size\": {\n    \"height\": 250\n  },\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"ExpenseType\"\n  },\n  \"series\": [\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"BillableRequestValueWithVat\",\n      \"name\": \"Billable Request\"\n    },\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"UnbillableRequestValueWithVat\",\n      \"name\": \"Unbillable Request\"\n    }\n  ],\n\"legend\": {\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}",
-      "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
-    },
-    {
-      "Id": "4cf79333-d9f4-4d40-8b73-57cfa105787d",
-      "Name": "Meals Daily Totals",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 6,
-      "Order": 3,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Incurred daily Expenses\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"300\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forecast\",\r\n                        \"metricFieldValue\": \"TimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"UtilizationPercentGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(ei.ValueWithVat) as ValueWithVat, cast(ei.StartOn as date) as [Date] from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and lower(eit.Name) like \u0027%meal%\u0027 /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by cast(ei.StartOn as date)\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {}\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Expense - Overtime/execute",
-      "Configuration": "{\n  \"height\":250,\n  \"customizePoint\": \"function (pointInfo) {\n      if (pointInfo.value \u003e 200) {\n        return { \n          color: \u0027#cd2b2b\u0027, \n          hoverStyle: { color: \u0027#cd2b2bc\u0027 } \n        };\n      }\n    }\",\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Date\"\n  },\n  \"series\": [\n    {\n      \"type\": \"bar\",\n      \"valueField\": \"ValueWithVat\",\n      \"name\": \"Value with Tax\"\n    }\n  ],\n  \"argumentAxis\": {\n    \"argumentType\": \"datetime\",\n    \"type\": \"discrete\",\n    \"label\":{\n    \"format\": \"monthAndDay\"\n    }\n  },\n  \"valueAxis\": [{\n    \"constantLines\": [{\n                \"label\": {\n                    \"text\": \"Maximum daily Budget\"\n                },\n                \"width\": 1,\n                \"value\": 200,\n                \"color\": \"#cd2b2b\",\n                \"dashStyle\": \"dash\"\n            }]\n  }],\n  \"legend\": {\n    \"visible\": true,\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}\n",
-      "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
-    },
-    {
-      "Id": "f03e89be-52b0-45ca-b448-649b820c2404",
-      "Name": "Reimbursable",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 6,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Billable vs Non-Billable per Type\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forescast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(iif(eit.[Group] = 0 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableReimbursableValueWithVat, sum(iif(eit.[Group] = 0 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableReimbursableValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Expense - Type per Group/execute",
-      "Configuration": "{\n  \"size\": {\n    \"height\": 250\n  },\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"ExpenseType\"\n  },\n  \"series\": [\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"BillableReimbursableValueWithVat\",\n      \"name\": \"Billable Reimbursable\"\n    },\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"UnbillableReimbursableValueWithVat\",\n      \"name\": \"Unbillable Reimbursable\"\n    }\n  ],\n\"legend\": {\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}",
-      "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
-    },
-    {
-      "Id": "248e4c04-2e0a-4979-ba23-7eb4760572b2",
-      "Name": "Advanced",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 4,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Billable vs Non-Billable per Type\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Forescast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(iif(eit.[Group] = 0 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) as BillableReimbursableValueWithVat, sum(iif(eit.[Group] = 0 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableAdvancedValueWithVat, sum(iif(eit.[Group] = 1 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableRequestValueWithVat, sum(iif(eit.[Group] = 2 and jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) as UnbillableReimbursableValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Expense - Type per Group/execute",
-      "Configuration": "{\n  \"size\": {\n    \"height\": 250\n  },\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"ExpenseType\"\n  },\n  \"series\": [\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"BillableAdvancedValueWithVat\",\n      \"name\": \"Billable Advanced\"\n    },\n    {\n      \"type\": \"stackedBar\",\n      \"valueField\": \"UnbillableAdvancedValueWithVat\",\n      \"name\": \"Unbillable Advanced\"\n    }\n  ],\n\"legend\": {\n    \"rowCount\": 1,\n    \"verticalAlignment\": \"bottom\",\n    \"horizontalAlignment\": \"center\"\n  }\n}",
-      "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
-    },
-    {
-      "Id": "4c2cf81c-24b8-4b89-9638-bba14c44b606",
-      "Name": "Expense Type Breakdown",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 1,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Total per Type\",\r\n        \"WidgetType\": \"pie\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": false,\r\n                        \"metricName\": \"? \",\r\n                        \"metricFieldValue\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select sum(ei.ValueWithVat) as ValueWithVat, eit.Name as [ExpenseType] from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 /*[ExpenseFilter]*/ and e.Oid = @ExpenseId /*[/ExpenseFilter]*/ group by eit.Name\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Expense - Types/execute",
-      "Configuration": "{\n  \"height\":250,\n  \"type\": \"doughnut\",\n  \"series\": {\n    \"argumentField\": \"ExpenseType\",\n    \"valueField\": \"ValueWithVat\",\n    \"label\": {\n      \"visible\": false,\n      \"format\": {\n     \"type\": \"fixedPoint\",\n          \"precision\": 1,\n          \"percentPrecision\": 1\n        },\n        \"customizeText\": \"function (point) {return point.percentText;}\",\n      \"connector\": {\n        \"visible\": true,\n        \"width\": 1\n      }\n    }\n  },\n  \"legend\": {\n    \"horizontalAlignment\": \"left\",\n    \"verticalAlignment\": \"middle\",\n    \"itemTextPosition\" : \"right\",\n    \"paddingLeftRight\" : 0,\n    \"font\":{\"size\":8}\n  }\n}\n",
-      "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
-    },
-    {
-      "Id": "e8eeaf97-3afc-4954-83ce-fe0a028e4019",
-      "Name": "Summary",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 2,
-      "Order": 0,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Overall Status\",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": false,\r\n                        \"metricName\": \"? Forecast\",\r\n                        \"metricFieldValue\": \"ForecastTimeGrandTotal\"\r\n                    },\r\n                    {\r\n                        \"visible\": false,\r\n                        \"metricName\": \"? Actual\",\r\n                        \"metricFieldValue\": \"ActualTimeGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select \u0027Total with Tax\u0027 as MetricName, sum(ei.ValueWithVat) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Paid\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and ei.Paid = 1 /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Unpaid\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and ei.Paid = 0 /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Billable\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Name = \u0027Billable\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Unbillable\u0027 as MetricName, isnull(sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Name != \u0027Billable\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Billable %\u0027 as MetricName, isnull(sum(iif(jbt.Name = \u0027Billable\u0027, ei.ValueWithVat, 0)) / sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/ union all select \u0027Unbillable %\u0027 as MetricName, isnull(sum(iif(jbt.Name != \u0027Billable\u0027, ei.ValueWithVat, 0)) / sum(ei.ValueWithVat), 0) as MetricValue from Expense e, ExpenseItem ei, ExpenseItemType eit, JobType jbt where ei.Expense = e.Oid and ei.[Type] = eit.Oid and eit.[Group] = \u00272\u0027 and jbt.Oid = ei.JobType /*[ExpenseFilter]*/ and e.Oid = @expenseId /*[/ExpenseFilter]*/\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Expense - Summary/execute",
-      "Configuration": "{\n  \"height\":250,\n  \"columnsAutoWidth\": true,\n  \"columnMinWidth\": 50,\n  \"showColumnHeaders\": true,\n  \"selection\": {\n    \"mode\": \"none\"\n  },\n  \"searchPanel\" : {\n    \"visible\" : false\n  },\n  \"groupPanel\": {\n    \"visible\": false\n  },\n  \"filterRow\": {\n    \"visible\": false\n  },\n  \"export\": {\n    \"enabled\": false\n  },\n  \"columnChooser\": {\n    \"enabled\": false\n  },\n  \"headerFilter\": {\n    \"visible\": false\n  },\n  \"onToolbarPreparing\": \"\",\n  \"columns\": [\n    {\n      \"dataField\": \"MetricName\",\n      \"caption\":\"Subject\"\n    },\n    {\n      \"dataField\": \"MetricValue\",\n      \"caption\":\"Value\",\n      \"cellTemplate\": \"function(element, info) {element.append(\u0027\u003cdiv\u003e\u0027 + info.text + \u0027\u003c/div\u003e\u0027).css(\u0027font-weight\u0027, \u0027bold\u0027);}\",\n      \"calculateDisplayValue\" : \"function(r) \n        { \n          if(r.MetricName==\u0027Billable %\u0027 || r.MetricName==\u0027Unbillable %\u0027) \n            return r.MetricValue * 100; \n          else \n            return r.MetricValue;\n       }\",\n      \"cellTemplate\": \"function(e, i) \n        {\n          var h = document.createElement(\u0027DIV\u0027);\n          h.innerHTML = i.text;\n          e.appendChild(h);\n          if(i.rowIndex == 5 || i.rowIndex == 6) \n            h.style.fontWeight = \u0027600\u0027;\n        }\",\n       \"format\": \"#,##0.00\"\n    }\n  ]\n}\n",
-      "DashboardDefinitionId": "9e08b2a1-b861-4bb5-805d-3b3f23ecc59b"
-    }
-  ],
-  "Version": 3,
-  "Default": true,
-  "Dependencies": {
-    "DashboardSdk": "1.0.0",
-    "Analytics": "1.0.0",
-    "SkillsWorkflow": "1.0.0"
-  }
 }

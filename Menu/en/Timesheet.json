@@ -1,406 +1,406 @@
 ﻿{
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester Profile"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Responsible Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Requester"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-      "AccessRoleName": "Administrator"
+    "DashboardDefinitionRoles": [
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "b4ca8f83-0107-455d-bfcb-8038f3ac0f7b",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester Profile"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "6c7d5998-96ac-40e0-aa08-36a067bac255",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Responsible Profile"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "bd339167-d7ef-4c79-96c9-5be09c6f6231",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Requester"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        },
+        {
+            "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+            "AccessRoleName": "Administrator"
+        }
+    ],
+    "Id": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
+    "Name": "Timesheet",
+    "Active": true,
+    "Location": 0,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": null,
+    "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "e325b1e5-056a-49d2-bab3-1057c834fbe6",
+            "Name": "Non-billable Breakdown",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 2,
+            "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":16,\"WidgetYPosition\":3,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Total\",\"metricValue\":\"14,450\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"With Leaves As ( \\r\\n\\tSELECT SUM(dl.[Hours]) AS [Hours] \\r\\n\\tFROM Analytics.Leave(@CurrentUserId) dl \\r\\n\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n) \\r\\nSELECT TimeType, [Time] \\r\\nFROM ( \\r\\n\\tSELECT SUM(dt.AdministrativeTime) as Administrative, \\r\\n\\t\\t\\tSUM(dt.NewBusinessTime) as [New Business], \\r\\n\\t\\t\\tMAX(l.[Hours]) AS Leaves, \\r\\n\\t\\t\\tSUM(dt.InternalWorkTime) AS Internal \\r\\n\\tFROM Leaves l, Analytics.Timesheet(@CurrentUserId) dt \\r\\n\\tWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t) pvt UNPIVOT ( [Time] FOR TimeType IN (pvt.Administrative, pvt.[New Business], pvt.Leaves, pvt.Internal) \\r\\n) AS unpvt\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Company\",\"Division\",\"Department\",\"Client\",\"Project\",\"Job\"]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Hours_NonBillable/execute",
+            "Configuration": "{\n\"size\":{\"height\":150},\n  \"palette\": \"Material\",\n  \"type\": \"doughnut\",\n  \"series\": [\n    {\n      \"argumentField\": \"TimeType\",\n      \"valueField\": \"Time\",\n      \"label\": {\n        \"font\": {\n          \"size\": 10,\n          \"family\": \"Varela Round\",\n          \"weight\": 600\n        },\n        \"position\":\"inside\",\n        \"visible\": true,\n        \"connector\": {\n          \"visible\": false,\n          \"width\": 0.5\n        },\n        \"format\": {\n     \n     \"type\": \"fixedPoint\",\n          \"precision\": 1,\n          \"percentPrecision\": 1\n        },\n        \"customizeText\": \"function (point) {return point.percentText;}\"\n      }\n    }\n  ],\n  \"legend\": {\n    \"visible\": true,\n    \"font\": {\n      \"size\": 10,\n      \"family\": \"Varela Round\",\n      \"weight\": 600\n    }\n  },\n  \"resolveLabelOverlapping\": \"shift\"\n}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        },
+        {
+            "Id": "4113c70a-5d3a-4b08-b615-44bb2489063b",
+            "Name": "Period",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 12,
+            "Order": 7,
+            "Parameters": "[{\"WidgetSubTitle\":\"Actual Time - Select Months\",\"WidgetType\":\"rangeselector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#e0e0e0\",\"WidgetXPosition\":0,\"WidgetYPosition\":21,\"WidgetRows\":8,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"startDate\":\"2018-01-01\",\"endDate\":\"2019-12-31\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT DATEADD(dd, -(DATEPART(dw, dt.[Date])-2), dt.[Date]) AS WeekStart, \\r\\n\\t\\t[Year], [Month], \\r\\n\\t\\tConvert(int, CONCAT(year(dt.[Date]), DatePart(wk, dt.[Date]))) as [YearWeek], \\r\\n\\t\\tSUM(dt.[ActualTime]) as [Hours]\\r\\nFROM [Analytics].Timesheet(@CurrentUserId) dt \\r\\nWHERE Year(dt.[Date]) = @year and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY DATEADD(dd, -(DATEPART(dw, dt.[Date])-2), dt.[Date]), [Year], [Month], Convert(int, CONCAT(year(dt.[Date]), DatePart(wk, dt.[Date])))\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[\"year\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Hours_Per_YearWeek/execute",
+            "Configuration": "{\"margin\":{\"top\":0},\"size\":{\"height\":150},\"containerBackgroundColor\":\"#e0e0e0\",\"selectedRangeColor\":\"#f5564a\",\"chart\":{\"commonSeriesSettings\":{\"type\":\"line\",\"argumentField\":\"WeekStart\",\"font\":{\"size\":10,\"family\":\"Varela Round\",\"weight\":600}},\"series\":[{\"valueField\":\"Hours\",\"font\":{\"size\":10,\"family\":\"Varela Round\",\"weight\":600}}]},\"scale\":{\"minorTickInterval\":\"month\",\"tickInterval\":\"month\",\"valueType\":\"datetime\"},\"sliderMarker\":{\"format\":\"monthAndDay\",\"color\":\"#da5859\",\"font\":{\"size\":10,\"family\":\"Varela Round\",\"weight\":600}},\"value\":[\"year\"]}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        },
+        {
+            "Id": "9840bce1-4ba8-4809-b1b2-4e88efef16a6",
+            "Name": "Top 10 Clients",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 3,
+            "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":32,\"WidgetYPosition\":3,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"Total\",\"metricFieldValue\":\"GlobalTotalHours\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT dt.Client AS ClientName, \\r\\n\\tSUM(dt.ActualTime) AS TotalHours, \\r\\n\\tSUM(SUM(isnull(dt.[ActualTime], 0.0))) OVER () as GlobalTotalHours \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY dt.Client\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Company\",\"Division\",\"Department\"],\"Sort\":{\"Type\":2,\"FieldName\":\"TotalHours\"},\"Top\":{\"Count\":10}}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Per_Client/execute",
+            "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"commonSeriesSettings\": {\n        \"argumentField\": \"ClientName\",\n        \"type\": \"bar\",\n        \"ignoreEmptyPoints\": true,\n        \"valueField\": \"TotalHours\"\n    },\n    \"seriesTemplate\": {\n        \"nameField\": \"ClientName\"\n    },\n    \"argumentAxis\": {\n        \"label\": {\n            \"overlappingBehavior\": \"stagger\",\n            \"customizeText\": \"function(t){return t.valueText.split(\u0027 - \u0027)[0].substring(0,20)}\",\n            \"font\": {\n                \"size\": 9,\n                \"family\": \"Varela Round\",\n                \"weight\": 500\n            }\n        }\n    }\n}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        },
+        {
+            "Id": "2b431842-2839-40e3-b414-6107ce53e952",
+            "Name": "Top 10 Typology Groups",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 6,
+            "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetXPosition\":32,\"WidgetYPosition\":12,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"Leaves\",\"metricFieldValue\":\"TimeOffHoursGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"WITH LeavesGrandTotal AS \\r\\n( \\r\\n    SELECT SUM(dl.[Hours]) AS GrandTotal \\r\\n    FROM Analytics.Leave(@CurrentUserId) dl\\r\\n\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n) \\r\\nSELECT dt.UserTypologyGroup AS TypologyGroupName, \\r\\n        SUM(dt.ActualTime) AS TotalHours, \\r\\n        (SELECT GrandTotal FROM LeavesGrandTotal) AS TimeOffHoursGrandTotal \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY dt.UserTypologyGroup\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"],\"Sort\":{\"Type\":1,\"FieldName\":\"TotalHours\"},\"Top\":{\"Count\":10}}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Per_TypologyGroup/execute",
+            "Configuration": "{\n\"size\":{\"height\":150},\n  \"palette\": \"Material\",\n  \"rotated\": true,\n  \"commonSeriesSettings\": {\n    \"font\": {\n      \"size\": 10,\n      \"family\": \"Varela Round\",\n      \"weight\": 500\n    },\n    \"argumentField\": \"TypologyGroupName\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"TotalHours\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"font\": {\n        \"size\": 10,\n        \"family\": \"Varela Round\",\n        \"weight\": 500\n      }\n    }\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"TypologyGroupName\"\n  }\n}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        },
+        {
+            "Id": "04c096b5-d3c5-43b5-8aa6-80064d0a9cb6",
+            "Name": "Filters",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#e0e0e0\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":3,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\r\n    \"colCount\": 5,\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Year\",\r\n            \"dataField\": \"Year\",\r\n            \"editorType\": \"dxNumberBox\",\r\n            \"editorOptions\": {\r\n                \"showSpinButtons\": true,\r\n                \"value\": 2019,\r\n                \"width\": 65,\r\n                \"placeholder\": \"year\",\r\n                \"onContentReady\": \"function(e){ setTimeout(function() { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, 2019); \r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Company\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); \r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); \r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Department\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Client\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Project\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Job\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n            },\r\n            500)\r\n        }\",\r\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, e.value); } }\"\r\n    },\r\n    \"noDataText\": \"Please wait...\"\r\n},\r\n{\r\n    \"dataField\": \"CompanyId\",\r\n    \"label\": {\r\n        \"text\": \"Company\"\r\n    },\r\n    \"editorType\": \"dxSelectBox\",\r\n    \"editorOptions\": {\r\n        \"width\": 250,\r\n        \"searchEnabled\": true,\r\n        \"dataSource\": {\r\n            \"load\": \"function(loadOptions){ \r\n                            var searchValue = (\r\n                            loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \r\n                            return SW.getMyCompanies().then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All companies\u0027\r\n                });return res;\r\n            })\r\n        }\",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027companies/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\r\n    },\r\n    \"placeholder\": \"All companies\",\r\n    \"displayExpr\": \"Name\",\r\n    \"valueExpr\": \"Id\",\r\n    \"onValueChanged\": \"function(e){ \r\n                                if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Company\u0027, e.value);\r\n    } else {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Company\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n    }\r\n                                SW.setComponentByValue(e.previousValue, e.value, \u0027DivisionId\u0027);\r\n}\",\r\n            \"onInitialized\": \"function(e){ SW.saveComponent(e.component,\u0027CompanyId\u0027);}\"\r\n}\r\n},\r\n{\r\n\"dataField\": \"DivisionId\",\r\n\"label\": {\r\n\"text\": \"Division\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n    \"load\": \"function(loadOptions){ \r\n                                let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027);\r\n                                let skip = loadOptions.skip || 0;\r\n                                let take = loadOptions.take || 20;\r\n                                var param = {name: searchValue,skip: skip,take: take\r\n    };\r\n                                var companyId = SW.getValueFromComponent(\u0027CompanyId\u0027);\r\n                                if (companyId == \u002700000000-0000-0000-0000-000000000000\u0027) {\r\n                                    return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027divisions/lookup\u0027,\r\n        null,\r\n        {}).then(function(res) {\r\n                                        res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027,Name: \u0027All divisions\u0027\r\n            });\r\n                                        return res;\r\n        })\r\n    } else if (companyId != null) {\r\n                                    param[\u0027companyId\u0027\r\n        ] = companyId;\r\n                                    return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027divisions/lookup\u0027, param,\r\n        {}).then(function(res) {\r\n                                        res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027,Name: \u0027All divisions\u0027\r\n            });\r\n                                        return res;\r\n        })\r\n    }\r\n}\",\r\n            \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027divisions/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);})}\"\r\n},\r\n\"placeholder\": \"All divisions\",\r\n\"onValueChanged\": \"function(e){ \r\n            if (e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, e.value);\r\n} else {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n            SW.setComponentByValue(e.previousValue, e.value, \u0027DepartmentId\u0027);\r\n}\",\r\n        \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027DivisionId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n},\r\n{\r\n\"dataField\": \"DepartmentId\",\r\n\"label\": {\r\n\"text\": \"Department\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"load\": \"function(loadOptions){ \r\n                        let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                        let skip = loadOptions.skip || 0; \r\n                        let take = loadOptions.take || 20;\r\n                        var param = { name: searchValue, skip: skip, take: take\r\n}; \r\n                        var divisionId = SW.getValueFromComponent(\u0027DivisionId\u0027); \r\n                        var companyId = SW.getValueFromComponent(\u0027CompanyId\u0027); \r\n                        if (divisionId != null \u0026\u0026 divisionId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 companyId != null \u0026\u0026 companyId != \u002700000000-0000-0000-0000-000000000000\u0027) { \r\n                            param[\u0027divisionId\u0027\r\n] = divisionId;\r\n                            param[\u0027companyId\u0027\r\n] = companyId;\r\n} else if (divisionId != null \u0026\u0026 divisionId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (companyId == null || companyId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n                            param[\u0027divisionId\u0027\r\n] = divisionId;\r\n} else if (companyId != null \u0026\u0026 companyId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (divisionId == null || divisionId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n\t\t\t                param[\u0027companyId\u0027\r\n] = companyId;\r\n}\r\n                        return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027departments\u0027,param,\r\n{}).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All departments\u0027\r\n});return res;\r\n});\r\n}\",\r\n                \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027, \u0027departments/\u0027 + key, null, {}).then( result =\u003e  { return Promise.resolve(result); } ) }\"\r\n},\r\n\"placeholder\": \"All departments\",\r\n\"onValueChanged\": \"function(e){ \r\n                                if(e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Department\u0027, e.value);\r\n} else {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Department\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n}\",\r\n            \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027DepartmentId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n},\r\n{\r\n\"editorOptions\": {\r\n\"width\": 200\r\n}\r\n},\r\n{\r\n\"editorOptions\": {\r\n\"width\": 200\r\n}\r\n},\r\n{\r\n\"dataField\": \"ClientId\",\r\n\"label\": {\r\n\"text\": \"Client\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"paginate\": true,\r\n\"load\": \"function(loadOptions){ \r\n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \r\n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027commercialclients/lookup\u0027,\r\nnull,\r\n{}).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All clients\u0027\r\n});return res;\r\n})\r\n}\",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027commercialclients/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\r\n},\r\n\"placeholder\": \"All clients\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"onValueChanged\": \"function(e){ \r\n                                    if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Client\u0027, e.value);\r\n} else {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Client\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}   \r\n                                    SW.setComponentByValue(e.previousValue, e.value, \u0027ProjectId\u0027);\r\n}\",\r\n                \"onInitialized\": \"function(e){ SW.saveComponent(e.component,\u0027ClientId\u0027); }\"\r\n}\r\n},\r\n{\r\n\"dataField\": \"ProjectId\",\r\n\"label\": {\r\n\"text\": \"Project\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"paginate\": true,\r\n\"load\": \"function(loadOptions){ \r\n                                    let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027);\r\n                                    let skip = loadOptions.skip || 0;\r\n                                    let take = loadOptions.take || 20;\r\n                                    var param = {name: searchValue, skip: skip, take: take\r\n};\r\n                                    var clientId = SW.getValueFromComponent(\u0027ClientId\u0027);\r\n                                    if (clientId == \u002700000000-0000-0000-0000-000000000000\u0027) {\r\n                                        return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027projects/lookup\u0027, param,\r\n{}).then(function(res) {\r\n                                            res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name: \u0027All projects\u0027\r\n});\r\n                                            return res;\r\n});\r\n} else if (clientId != null) {\r\n                                        param[\u0027clientId\u0027\r\n] = clientId;\r\n                                        return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027projects/lookup\u0027, param,\r\n{}).then(function(res) {\r\n                                            res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name: \u0027All projects\u0027\r\n});\r\n                                            return res;\r\n});\r\n}\r\n}\",\r\n                \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027projects/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);})}\"\r\n},\r\n\"placeholder\": \"All projects\",\r\n\"onValueChanged\": \"function(e){ \r\n            if (e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Project\u0027, e.value);\r\n} else {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Project\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n            SW.setComponentByValue(e.previousValue, e.value, \u0027JobId\u0027);\r\n}\",\r\n        \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027ProjectId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n},\r\n{\r\n\"dataField\": \"JobId\",\r\n\"label\": {\r\n\"text\": \"Job\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"paginate\": true,\r\n\"load\": \"function(loadOptions){ \r\n                                let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                                let skip = loadOptions.skip || 0; \r\n                                let take = loadOptions.take || 20;\r\n                                var param = { name: searchValue, skip: skip, take: take\r\n}; \r\n                                var projectId = SW.getValueFromComponent(\u0027ProjectId\u0027); \r\n                                var clientId = SW.getValueFromComponent(\u0027ClientId\u0027); \r\n                                if (projectId != null \u0026\u0026 projectId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 clientId != null \u0026\u0026 clientId != \u002700000000-0000-0000-0000-000000000000\u0027) { \r\n                                    param[\u0027projectId\u0027\r\n] = projectId;\r\n                                    param[\u0027clientId\u0027\r\n] = clientId;\r\n} else if (projectId != null \u0026\u0026 projectId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (clientId == null || clientId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n                                    param[\u0027projectId\u0027\r\n] = projectId;\r\n} else if (clientId != null \u0026\u0026 clientId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (projectId == null || projectId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n\t\t\t    \t                param[\u0027clientId\u0027\r\n] = clientId;\r\n}\r\n                                return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027jobs/lookup\u0027,param,\r\n{}).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All jobs\u0027\r\n});return res;\r\n});\r\n}\",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027, \u0027jobs/\u0027+key+\u0027/lookup\u0027, null, {}).then( result =\u003e  { return Promise.resolve(result); } ) }\"\r\n},\r\n\"placeholder\": \"All jobs\",\r\n\"onValueChanged\": \"function(e){ \r\n                                    if(e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Job\u0027, e.value);\r\n} else {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Job\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n}\",\r\n                \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027JobId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n}\r\n]\r\n}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        },
+        {
+            "Id": "5bec82ea-7bd4-47f9-89f8-b96223c870b5",
+            "Name": "Top 10 Project Types",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 5,
+            "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetXPosition\":16,\"WidgetYPosition\":12,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Admin\",\"metricFieldValue\":\"AdministrativeHoursGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT pn.[Name] as projectType,\\r\\n        SUM(dt.ActualTime) AS TotalHours, \\r\\n        SUM(SUM(dt.AdministrativeTime)) OVER () as AdministrativeHoursGrandTotal \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nfull join [Project] p\\r\\non p.[Oid] = dt.[ProjectId]\\r\\nfull join [ProjectNature] pn\\r\\non pn.[Oid] = p.[ProjectNature]\\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate)  and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY pn.[Name]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"],\"Sort\":{\"Type\":2,\"FieldName\":\"TotalHours\"},\"Top\":{\"Count\":10}}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Per_User/execute",
+            "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"commonSeriesSettings\": {\n        \"argumentField\": \"projectType\",\n        \"type\": \"bar\",\n        \"ignoreEmptyPoints\": true,\n        \"valueField\": \"TotalHours\"\n    },\n    \"argumentAxis\": {\n        \"label\": {\n            \"overlappingBehavior\": \"continuous\",\n            \"font\": {\n                \"size\": 10,\n                \"family\": \"Varela Round\",\n                \"weight\": 500\n            }\n        }\n    },\n    \"seriesTemplate\": {\n        \"nameField\": \"projectType\"\n    }\n}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        },
+        {
+            "Id": "48339224-ed0b-42e3-89e1-dc95b8136a7d",
+            "Name": "Top 10 Departments",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 4,
+            "Parameters": "[{\"WidgetSubTitle\":\"Non-Billable Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetXPosition\":0,\"WidgetYPosition\":12,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Total\",\"metricValue\":\"14.625\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"With Leaves As ( \\r\\n    SELECT dl.Department, \\r\\n\\t\\t\\tSUM(dl.[Hours]) AS [Hours] \\r\\n    FROM Analytics.Leave(@CurrentUserId) dl \\r\\n\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n    GROUP BY dl.Department \\r\\n) \\r\\nSELECT dt.Department, \\r\\n\\t\\tSUM(isnull(dt.AdministrativeTime, 0) + isnull(dt.NewBusinessTime, 0) + isnull(dt.InternalWorkTime, 0)) + isnull(MAX(l.[Hours]), 0) as NonBillable \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nLEFT OUTER JOIN Leaves l \\r\\non (dt.Department = l.Department)\\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY dt.Department\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"],\"Sort\":{\"Type\":2,\"FieldName\":\"NonBillable\"},\"Top\":{\"Count\":10}}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Hours_NonBillable_Per_Department/execute",
+            "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"commonSeriesSettings\": {\n        \"argumentField\": \"Department\",\n        \"type\": \"bar\",\n        \"ignoreEmptyPoints\": true,\n        \"valueField\": \"NonBillable\"\n    },\n    \"seriesTemplate\": {\n        \"nameField\": \"Department\"\n    },\n    \"argumentAxis\": {\n        \"label\": {\n            \"overlappingBehavior\": \"stagger\",\n            \"customizeText\": \"function(t){return t.valueText}\",\n            \"font\": {\n                \"size\": 10,\n                \"family\": \"Varela Round\",\n                \"weight\": 500\n            }\n        }\n    }\n}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        },
+        {
+            "Id": "52a94a0c-ab9c-47b4-b051-e209bbc1d80f",
+            "Name": "Billable vs non - Billable",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 4,
+            "Order": 1,
+            "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":3,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Total\",\"metricValue\":\"14,450\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT TimeType, [Time]\\r\\nFROM ( \\r\\n    SELECT SUM(v.Billable) AS Billable, SUM(v.NonBillable) AS NonBillable\\r\\n    FROM ( \\r\\n        SELECT SUM(dt.BillableTime) AS Billable, \\r\\n\\t\\t\\t\\tSUM(isnull(dt.AdministrativeTime, 0) + isnull(dt.NewBusinessTime, 0) + isnull(dt.InternalWorkTime, 0)) AS NonBillable\\r\\n        FROM Analytics.Timesheet(@CurrentUserId) dt\\r\\n\\t\\tWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n        UNION ALL \\r\\n        SELECT 0.0 as Billable, \\r\\n\\t\\t\\t\\tSUM(dl.[Hours]) AS NonBillable\\r\\n        FROM Analytics.Leave(@CurrentUserId) dl\\r\\n\\t\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t) v\\r\\n\\t) pvt UNPIVOT ([Time] FOR TimeType IN (pvt.Billable, pvt.NonBillable) \\r\\n) AS unpvt\\r\\nwhere [Time] != 0\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Company\",\"Division\",\"Department\",\"Client\",\"Project\",\"Job\"]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Hours_Billable_NonBillable/execute",
+            "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"type\": \"doughnut\",\n    \"series\": [\n        {\n            \"argumentField\": \"TimeType\",\n            \"valueField\": \"Time\",\n            \"label\": {\n                \"font\": {\n                    \"size\": 10,\n                    \"family\": \"Varela Round\",\n                    \"weight\": 600\n                },\n                \"position\": \"inside\",\n                \"visible\": true,\n                \"connector\": {\n                    \"visible\": false,\n                    \"width\": 1\n                },\n                \"format\": {\n                    \"type\": \"fixedPoint\",\n                    \"precision\": 1,\n                    \"percentPrecision\": 1\n                },\n                \"customizeText\": \"function (point) {return point.percentText;}\"\n            }\n        }\n    ],\n    \"legend\": {\n        \"visible\": true,\n        \"font\": {\n            \"size\": 10,\n            \"family\": \"Varela Round\",\n            \"weight\": 600\n        }\n    },\n    \"resolveLabelOverlapping\": \"shift\"\n}",
+            "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
+        }
+    ],
+    "Version": 11,
+    "Default": false,
+    "Dependencies": {
+        "DashboardSdk": "1.0.0",
+        "Analytics": "1.0.0",
+        "SkillsWorkflow": "1.0.0"
     }
-  ],
-  "Id": "42c48ce4-1628-46eb-b6bd-f597b700fb78",
-  "Name": "Timesheet",
-  "Active": true,
-  "Location": 0,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": null,
-  "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "e325b1e5-056a-49d2-bab3-1057c834fbe6",
-      "Name": "Non-billable Breakdown",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 2,
-      "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":16,\"WidgetYPosition\":3,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Total\",\"metricValue\":\"14,450\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"With Leaves As ( \\r\\n\\tSELECT SUM(dl.[Hours]) AS [Hours] \\r\\n\\tFROM Analytics.Leave(@CurrentUserId) dl \\r\\n\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n) \\r\\nSELECT TimeType, [Time] \\r\\nFROM ( \\r\\n\\tSELECT SUM(dt.AdministrativeTime) as Administrative, \\r\\n\\t\\t\\tSUM(dt.NewBusinessTime) as [New Business], \\r\\n\\t\\t\\tMAX(l.[Hours]) AS Leaves, \\r\\n\\t\\t\\tSUM(dt.InternalWorkTime) AS Internal \\r\\n\\tFROM Leaves l, Analytics.Timesheet(@CurrentUserId) dt \\r\\n\\tWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t) pvt UNPIVOT ( [Time] FOR TimeType IN (pvt.Administrative, pvt.[New Business], pvt.Leaves, pvt.Internal) \\r\\n) AS unpvt\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Company\",\"Division\",\"Department\",\"Client\",\"Project\",\"Job\"]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Hours_NonBillable/execute",
-      "Configuration": "{\n\"size\":{\"height\":150},\n  \"palette\": \"Material\",\n  \"type\": \"doughnut\",\n  \"series\": [\n    {\n      \"argumentField\": \"TimeType\",\n      \"valueField\": \"Time\",\n      \"label\": {\n        \"font\": {\n          \"size\": 10,\n          \"family\": \"Varela Round\",\n          \"weight\": 600\n        },\n        \"position\":\"inside\",\n        \"visible\": true,\n        \"connector\": {\n          \"visible\": false,\n          \"width\": 0.5\n        },\n        \"format\": {\n     \n     \"type\": \"fixedPoint\",\n          \"precision\": 1,\n          \"percentPrecision\": 1\n        },\n        \"customizeText\": \"function (point) {return point.percentText;}\"\n      }\n    }\n  ],\n  \"legend\": {\n    \"visible\": true,\n    \"font\": {\n      \"size\": 10,\n      \"family\": \"Varela Round\",\n      \"weight\": 600\n    }\n  },\n  \"resolveLabelOverlapping\": \"shift\"\n}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    },
-    {
-      "Id": "4113c70a-5d3a-4b08-b615-44bb2489063b",
-      "Name": "Period",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 12,
-      "Order": 7,
-      "Parameters": "[{\"WidgetSubTitle\":\"Actual Time - Select Months\",\"WidgetType\":\"rangeselector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#e0e0e0\",\"WidgetXPosition\":0,\"WidgetYPosition\":21,\"WidgetRows\":8,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"startDate\":\"2018-01-01\",\"endDate\":\"2019-12-31\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT DATEADD(dd, -(DATEPART(dw, dt.[Date])-2), dt.[Date]) AS WeekStart, \\r\\n\\t\\t[Year], [Month], \\r\\n\\t\\tConvert(int, CONCAT(year(dt.[Date]), DatePart(wk, dt.[Date]))) as [YearWeek], \\r\\n\\t\\tSUM(dt.[ActualTime]) as [Hours]\\r\\nFROM [Analytics].Timesheet(@CurrentUserId) dt \\r\\nWHERE Year(dt.[Date]) = @year and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY DATEADD(dd, -(DATEPART(dw, dt.[Date])-2), dt.[Date]), [Year], [Month], Convert(int, CONCAT(year(dt.[Date]), DatePart(wk, dt.[Date])))\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[\"year\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Hours_Per_YearWeek/execute",
-      "Configuration": "{\"margin\":{\"top\":0},\"size\":{\"height\":150},\"containerBackgroundColor\":\"#e0e0e0\",\"selectedRangeColor\":\"#f5564a\",\"chart\":{\"commonSeriesSettings\":{\"type\":\"line\",\"argumentField\":\"WeekStart\",\"font\":{\"size\":10,\"family\":\"Varela Round\",\"weight\":600}},\"series\":[{\"valueField\":\"Hours\",\"font\":{\"size\":10,\"family\":\"Varela Round\",\"weight\":600}}]},\"scale\":{\"minorTickInterval\":\"month\",\"tickInterval\":\"month\",\"valueType\":\"datetime\"},\"sliderMarker\":{\"format\":\"monthAndDay\",\"color\":\"#da5859\",\"font\":{\"size\":10,\"family\":\"Varela Round\",\"weight\":600}},\"value\":[\"year\"]}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    },
-    {
-      "Id": "9840bce1-4ba8-4809-b1b2-4e88efef16a6",
-      "Name": "Top 10 Clients",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 3,
-      "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":32,\"WidgetYPosition\":3,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"Total\",\"metricFieldValue\":\"GlobalTotalHours\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT dt.Client AS ClientName, \\r\\n\\tSUM(dt.ActualTime) AS TotalHours, \\r\\n\\tSUM(SUM(isnull(dt.[ActualTime], 0.0))) OVER () as GlobalTotalHours \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY dt.Client\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Company\",\"Division\",\"Department\"],\"Sort\":{\"Type\":2,\"FieldName\":\"TotalHours\"},\"Top\":{\"Count\":10}}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Per_Client/execute",
-      "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"commonSeriesSettings\": {\n        \"argumentField\": \"ClientName\",\n        \"type\": \"bar\",\n        \"ignoreEmptyPoints\": true,\n        \"valueField\": \"TotalHours\"\n    },\n    \"seriesTemplate\": {\n        \"nameField\": \"ClientName\"\n    },\n    \"argumentAxis\": {\n        \"label\": {\n            \"overlappingBehavior\": \"stagger\",\n            \"customizeText\": \"function(t){return t.valueText.split(\u0027 - \u0027)[0].substring(0,20)}\",\n            \"font\": {\n                \"size\": 9,\n                \"family\": \"Varela Round\",\n                \"weight\": 500\n            }\n        }\n    }\n}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    },
-    {
-      "Id": "2b431842-2839-40e3-b414-6107ce53e952",
-      "Name": "Top 10 Typology Groups",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 6,
-      "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetXPosition\":32,\"WidgetYPosition\":12,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"Leaves\",\"metricFieldValue\":\"TimeOffHoursGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"WITH LeavesGrandTotal AS \\r\\n( \\r\\n    SELECT SUM(dl.[Hours]) AS GrandTotal \\r\\n    FROM Analytics.Leave(@CurrentUserId) dl\\r\\n\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n) \\r\\nSELECT dt.UserTypologyGroup AS TypologyGroupName, \\r\\n        SUM(dt.ActualTime) AS TotalHours, \\r\\n        (SELECT GrandTotal FROM LeavesGrandTotal) AS TimeOffHoursGrandTotal \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY dt.UserTypologyGroup\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"],\"Sort\":{\"Type\":1,\"FieldName\":\"TotalHours\"},\"Top\":{\"Count\":10}}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Per_TypologyGroup/execute",
-      "Configuration": "{\n\"size\":{\"height\":150},\n  \"palette\": \"Material\",\n  \"rotated\": true,\n  \"commonSeriesSettings\": {\n    \"font\": {\n      \"size\": 10,\n      \"family\": \"Varela Round\",\n      \"weight\": 500\n    },\n    \"argumentField\": \"TypologyGroupName\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"TotalHours\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"font\": {\n        \"size\": 10,\n        \"family\": \"Varela Round\",\n        \"weight\": 500\n      }\n    }\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"TypologyGroupName\"\n  }\n}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    },
-    {
-      "Id": "04c096b5-d3c5-43b5-8aa6-80064d0a9cb6",
-      "Name": "Filters",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#e0e0e0\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":3,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "",
-      "Configuration": "{\r\n    \"colCount\": 5,\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Year\",\r\n            \"dataField\": \"Year\",\r\n            \"editorType\": \"dxNumberBox\",\r\n            \"editorOptions\": {\r\n                \"showSpinButtons\": true,\r\n                \"value\": 2019,\r\n                \"width\": 65,\r\n                \"placeholder\": \"year\",\r\n                \"onContentReady\": \"function(e){ setTimeout(function() { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, 2019); \r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Company\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); \r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); \r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Department\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Client\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Project\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n                                                                        SkillsWorkflow.setDashboardFilter(\u0027Job\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n            },\r\n            500)\r\n        }\",\r\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027year\u0027, e.value); } }\"\r\n    },\r\n    \"noDataText\": \"Please wait...\"\r\n},\r\n{\r\n    \"dataField\": \"CompanyId\",\r\n    \"label\": {\r\n        \"text\": \"Company\"\r\n    },\r\n    \"editorType\": \"dxSelectBox\",\r\n    \"editorOptions\": {\r\n        \"width\": 250,\r\n        \"searchEnabled\": true,\r\n        \"dataSource\": {\r\n            \"load\": \"function(loadOptions){ \r\n                            var searchValue = (\r\n                            loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \r\n                            return SW.getMyCompanies().then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All companies\u0027\r\n                });return res;\r\n            })\r\n        }\",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027companies/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\r\n    },\r\n    \"placeholder\": \"All companies\",\r\n    \"displayExpr\": \"Name\",\r\n    \"valueExpr\": \"Id\",\r\n    \"onValueChanged\": \"function(e){ \r\n                                if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Company\u0027, e.value);\r\n    } else {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Company\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n    }\r\n                                SW.setComponentByValue(e.previousValue, e.value, \u0027DivisionId\u0027);\r\n}\",\r\n            \"onInitialized\": \"function(e){ SW.saveComponent(e.component,\u0027CompanyId\u0027);}\"\r\n}\r\n},\r\n{\r\n\"dataField\": \"DivisionId\",\r\n\"label\": {\r\n\"text\": \"Division\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n    \"load\": \"function(loadOptions){ \r\n                                let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027);\r\n                                let skip = loadOptions.skip || 0;\r\n                                let take = loadOptions.take || 20;\r\n                                var param = {name: searchValue,skip: skip,take: take\r\n    };\r\n                                var companyId = SW.getValueFromComponent(\u0027CompanyId\u0027);\r\n                                if (companyId == \u002700000000-0000-0000-0000-000000000000\u0027) {\r\n                                    return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027divisions/lookup\u0027,\r\n        null,\r\n        {}).then(function(res) {\r\n                                        res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027,Name: \u0027All divisions\u0027\r\n            });\r\n                                        return res;\r\n        })\r\n    } else if (companyId != null) {\r\n                                    param[\u0027companyId\u0027\r\n        ] = companyId;\r\n                                    return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027divisions/lookup\u0027, param,\r\n        {}).then(function(res) {\r\n                                        res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027,Name: \u0027All divisions\u0027\r\n            });\r\n                                        return res;\r\n        })\r\n    }\r\n}\",\r\n            \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027divisions/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);})}\"\r\n},\r\n\"placeholder\": \"All divisions\",\r\n\"onValueChanged\": \"function(e){ \r\n            if (e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, e.value);\r\n} else {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Division\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n            SW.setComponentByValue(e.previousValue, e.value, \u0027DepartmentId\u0027);\r\n}\",\r\n        \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027DivisionId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n},\r\n{\r\n\"dataField\": \"DepartmentId\",\r\n\"label\": {\r\n\"text\": \"Department\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"load\": \"function(loadOptions){ \r\n                        let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                        let skip = loadOptions.skip || 0; \r\n                        let take = loadOptions.take || 20;\r\n                        var param = { name: searchValue, skip: skip, take: take\r\n}; \r\n                        var divisionId = SW.getValueFromComponent(\u0027DivisionId\u0027); \r\n                        var companyId = SW.getValueFromComponent(\u0027CompanyId\u0027); \r\n                        if (divisionId != null \u0026\u0026 divisionId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 companyId != null \u0026\u0026 companyId != \u002700000000-0000-0000-0000-000000000000\u0027) { \r\n                            param[\u0027divisionId\u0027\r\n] = divisionId;\r\n                            param[\u0027companyId\u0027\r\n] = companyId;\r\n} else if (divisionId != null \u0026\u0026 divisionId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (companyId == null || companyId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n                            param[\u0027divisionId\u0027\r\n] = divisionId;\r\n} else if (companyId != null \u0026\u0026 companyId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (divisionId == null || divisionId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n\t\t\t                param[\u0027companyId\u0027\r\n] = companyId;\r\n}\r\n                        return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027departments\u0027,param,\r\n{}).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All departments\u0027\r\n});return res;\r\n});\r\n}\",\r\n                \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027, \u0027departments/\u0027 + key, null, {}).then( result =\u003e  { return Promise.resolve(result); } ) }\"\r\n},\r\n\"placeholder\": \"All departments\",\r\n\"onValueChanged\": \"function(e){ \r\n                                if(e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Department\u0027, e.value);\r\n} else {\r\n                                    SkillsWorkflow.setDashboardFilter(\u0027Department\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n}\",\r\n            \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027DepartmentId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n},\r\n{\r\n\"editorOptions\": {\r\n\"width\": 200\r\n}\r\n},\r\n{\r\n\"editorOptions\": {\r\n\"width\": 200\r\n}\r\n},\r\n{\r\n\"dataField\": \"ClientId\",\r\n\"label\": {\r\n\"text\": \"Client\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"paginate\": true,\r\n\"load\": \"function(loadOptions){ \r\n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \r\n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027commercialclients/lookup\u0027,\r\nnull,\r\n{}).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All clients\u0027\r\n});return res;\r\n})\r\n}\",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027commercialclients/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\r\n},\r\n\"placeholder\": \"All clients\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"onValueChanged\": \"function(e){ \r\n                                    if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Client\u0027, e.value);\r\n} else {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Client\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}   \r\n                                    SW.setComponentByValue(e.previousValue, e.value, \u0027ProjectId\u0027);\r\n}\",\r\n                \"onInitialized\": \"function(e){ SW.saveComponent(e.component,\u0027ClientId\u0027); }\"\r\n}\r\n},\r\n{\r\n\"dataField\": \"ProjectId\",\r\n\"label\": {\r\n\"text\": \"Project\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"paginate\": true,\r\n\"load\": \"function(loadOptions){ \r\n                                    let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027);\r\n                                    let skip = loadOptions.skip || 0;\r\n                                    let take = loadOptions.take || 20;\r\n                                    var param = {name: searchValue, skip: skip, take: take\r\n};\r\n                                    var clientId = SW.getValueFromComponent(\u0027ClientId\u0027);\r\n                                    if (clientId == \u002700000000-0000-0000-0000-000000000000\u0027) {\r\n                                        return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027projects/lookup\u0027, param,\r\n{}).then(function(res) {\r\n                                            res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name: \u0027All projects\u0027\r\n});\r\n                                            return res;\r\n});\r\n} else if (clientId != null) {\r\n                                        param[\u0027clientId\u0027\r\n] = clientId;\r\n                                        return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027projects/lookup\u0027, param,\r\n{}).then(function(res) {\r\n                                            res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name: \u0027All projects\u0027\r\n});\r\n                                            return res;\r\n});\r\n}\r\n}\",\r\n                \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027projects/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);})}\"\r\n},\r\n\"placeholder\": \"All projects\",\r\n\"onValueChanged\": \"function(e){ \r\n            if (e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Project\u0027, e.value);\r\n} else {\r\n                SkillsWorkflow.setDashboardFilter(\u0027Project\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n            SW.setComponentByValue(e.previousValue, e.value, \u0027JobId\u0027);\r\n}\",\r\n        \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027ProjectId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n},\r\n{\r\n\"dataField\": \"JobId\",\r\n\"label\": {\r\n\"text\": \"Job\"\r\n},\r\n\"editorType\": \"dxSelectBox\",\r\n\"editorOptions\": {\r\n\"width\": 250,\r\n\"searchEnabled\": true,\r\n\"dataSource\": {\r\n\"paginate\": true,\r\n\"load\": \"function(loadOptions){ \r\n                                let searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \r\n                                let skip = loadOptions.skip || 0; \r\n                                let take = loadOptions.take || 20;\r\n                                var param = { name: searchValue, skip: skip, take: take\r\n}; \r\n                                var projectId = SW.getValueFromComponent(\u0027ProjectId\u0027); \r\n                                var clientId = SW.getValueFromComponent(\u0027ClientId\u0027); \r\n                                if (projectId != null \u0026\u0026 projectId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 clientId != null \u0026\u0026 clientId != \u002700000000-0000-0000-0000-000000000000\u0027) { \r\n                                    param[\u0027projectId\u0027\r\n] = projectId;\r\n                                    param[\u0027clientId\u0027\r\n] = clientId;\r\n} else if (projectId != null \u0026\u0026 projectId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (clientId == null || clientId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n                                    param[\u0027projectId\u0027\r\n] = projectId;\r\n} else if (clientId != null \u0026\u0026 clientId != \u002700000000-0000-0000-0000-000000000000\u0027 \u0026\u0026 (projectId == null || projectId == \u002700000000-0000-0000-0000-000000000000\u0027)) {\r\n\t\t\t    \t                param[\u0027clientId\u0027\r\n] = clientId;\r\n}\r\n                                return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027jobs/lookup\u0027,param,\r\n{}).then(function(res){ res.push({Id: \u002700000000-0000-0000-0000-000000000000\u0027, Name:\u0027All jobs\u0027\r\n});return res;\r\n});\r\n}\",\r\n                    \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027, \u0027jobs/\u0027+key+\u0027/lookup\u0027, null, {}).then( result =\u003e  { return Promise.resolve(result); } ) }\"\r\n},\r\n\"placeholder\": \"All jobs\",\r\n\"onValueChanged\": \"function(e){ \r\n                                    if(e.value != null \u0026\u0026 e.value != \u0027\u0027) {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Job\u0027, e.value);\r\n} else {\r\n                                        SkillsWorkflow.setDashboardFilter(\u0027Job\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\r\n}\r\n}\",\r\n                \"onInitialized\": \"function(e){ SW.saveComponent(e.component, \u0027JobId\u0027); }\",\r\n\"displayExpr\": \"Name\",\r\n\"valueExpr\": \"Id\",\r\n\"disabled\": true\r\n}\r\n}\r\n]\r\n}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    },
-    {
-      "Id": "5bec82ea-7bd4-47f9-89f8-b96223c870b5",
-      "Name": "Top 10 Project Types",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 5,
-      "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetXPosition\":16,\"WidgetYPosition\":12,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Admin\",\"metricFieldValue\":\"AdministrativeHoursGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT pn.[Name] as projectType,\\r\\n        SUM(dt.ActualTime) AS TotalHours, \\r\\n        SUM(SUM(dt.AdministrativeTime)) OVER () as AdministrativeHoursGrandTotal \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nfull join [Project] p\\r\\non p.[Oid] = dt.[ProjectId]\\r\\nfull join [ProjectNature] pn\\r\\non pn.[Oid] = p.[ProjectNature]\\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate)  and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY pn.[Name]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"],\"Sort\":{\"Type\":2,\"FieldName\":\"TotalHours\"},\"Top\":{\"Count\":10}}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Time_Utilization_Per_User/execute",
-      "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"commonSeriesSettings\": {\n        \"argumentField\": \"projectType\",\n        \"type\": \"bar\",\n        \"ignoreEmptyPoints\": true,\n        \"valueField\": \"TotalHours\"\n    },\n    \"argumentAxis\": {\n        \"label\": {\n            \"overlappingBehavior\": \"continuous\",\n            \"font\": {\n                \"size\": 10,\n                \"family\": \"Varela Round\",\n                \"weight\": 500\n            }\n        }\n    },\n    \"seriesTemplate\": {\n        \"nameField\": \"projectType\"\n    }\n}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    },
-    {
-      "Id": "48339224-ed0b-42e3-89e1-dc95b8136a7d",
-      "Name": "Top 10 Departments",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 4,
-      "Parameters": "[{\"WidgetSubTitle\":\"Non-Billable Actual Time\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetXPosition\":0,\"WidgetYPosition\":12,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Total\",\"metricValue\":\"14.625\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"With Leaves As ( \\r\\n    SELECT dl.Department, \\r\\n\\t\\t\\tSUM(dl.[Hours]) AS [Hours] \\r\\n    FROM Analytics.Leave(@CurrentUserId) dl \\r\\n\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n    GROUP BY dl.Department \\r\\n) \\r\\nSELECT dt.Department, \\r\\n\\t\\tSUM(isnull(dt.AdministrativeTime, 0) + isnull(dt.NewBusinessTime, 0) + isnull(dt.InternalWorkTime, 0)) + isnull(MAX(l.[Hours]), 0) as NonBillable \\r\\nFROM Analytics.Timesheet(@CurrentUserId) dt \\r\\nLEFT OUTER JOIN Leaves l \\r\\non (dt.Department = l.Department)\\r\\nWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t\\t\\t\\t\\tand (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\nGROUP BY dt.Department\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Department\",\"Company\",\"Division\",\"Client\",\"Project\",\"Job\"],\"Sort\":{\"Type\":2,\"FieldName\":\"NonBillable\"},\"Top\":{\"Count\":10}}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Hours_NonBillable_Per_Department/execute",
-      "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"commonSeriesSettings\": {\n        \"argumentField\": \"Department\",\n        \"type\": \"bar\",\n        \"ignoreEmptyPoints\": true,\n        \"valueField\": \"NonBillable\"\n    },\n    \"seriesTemplate\": {\n        \"nameField\": \"Department\"\n    },\n    \"argumentAxis\": {\n        \"label\": {\n            \"overlappingBehavior\": \"stagger\",\n            \"customizeText\": \"function(t){return t.valueText}\",\n            \"font\": {\n                \"size\": 10,\n                \"family\": \"Varela Round\",\n                \"weight\": 500\n            }\n        }\n    }\n}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    },
-    {
-      "Id": "52a94a0c-ab9c-47b4-b051-e209bbc1d80f",
-      "Name": "Billable vs non - Billable",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 4,
-      "Order": 1,
-      "Parameters": "[{\"WidgetSubTitle\":\"Actual Time\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":3,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":false,\"metricName\":\"Total\",\"metricValue\":\"14,450\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT TimeType, [Time]\\r\\nFROM ( \\r\\n    SELECT SUM(v.Billable) AS Billable, SUM(v.NonBillable) AS NonBillable\\r\\n    FROM ( \\r\\n        SELECT SUM(dt.BillableTime) AS Billable, \\r\\n\\t\\t\\t\\tSUM(isnull(dt.AdministrativeTime, 0) + isnull(dt.NewBusinessTime, 0) + isnull(dt.InternalWorkTime, 0)) AS NonBillable\\r\\n        FROM Analytics.Timesheet(@CurrentUserId) dt\\r\\n\\t\\tWHERE dt.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dt.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ClientId] = @Client or @Client = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[ProjectId] = @Project or @Project = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n                        and (dt.[JobId] = @Job or @Job = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n        UNION ALL \\r\\n        SELECT 0.0 as Billable, \\r\\n\\t\\t\\t\\tSUM(dl.[Hours]) AS NonBillable\\r\\n        FROM Analytics.Leave(@CurrentUserId) dl\\r\\n\\t\\tWHERE dl.[Date] BETWEEN @FromDate AND DATEADD(day, 1, @ToDate) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[CompanyId]  = @Company or @Company = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DivisionId] = @Division or @Division = \u002700000000-0000-0000-0000-000000000000\u0027) and\\r\\n\\t\\t\\t\\t\\t\\t(dl.[DepartmentId] = @Department or @Department = \u002700000000-0000-0000-0000-000000000000\u0027)\\r\\n\\t\\t) v\\r\\n\\t) pvt UNPIVOT ([Time] FOR TimeType IN (pvt.Billable, pvt.NonBillable) \\r\\n) AS unpvt\\r\\nwhere [Time] != 0\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"Company\",\"Division\",\"Department\",\"Client\",\"Project\",\"Job\"]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Hours_Billable_NonBillable/execute",
-      "Configuration": "{\n    \"size\": {\n        \"height\": 150\n    },\n    \"palette\": \"Material\",\n    \"type\": \"doughnut\",\n    \"series\": [\n        {\n            \"argumentField\": \"TimeType\",\n            \"valueField\": \"Time\",\n            \"label\": {\n                \"font\": {\n                    \"size\": 10,\n                    \"family\": \"Varela Round\",\n                    \"weight\": 600\n                },\n                \"position\": \"inside\",\n                \"visible\": true,\n                \"connector\": {\n                    \"visible\": false,\n                    \"width\": 1\n                },\n                \"format\": {\n                    \"type\": \"fixedPoint\",\n                    \"precision\": 1,\n                    \"percentPrecision\": 1\n                },\n                \"customizeText\": \"function (point) {return point.percentText;}\"\n            }\n        }\n    ],\n    \"legend\": {\n        \"visible\": true,\n        \"font\": {\n            \"size\": 10,\n            \"family\": \"Varela Round\",\n            \"weight\": 600\n        }\n    },\n    \"resolveLabelOverlapping\": \"shift\"\n}",
-      "DashboardDefinitionId": "42c48ce4-1628-46eb-b6bd-f597b700fb78"
-    }
-  ],
-  "Version": 9,
-  "Default": true,
-  "Dependencies": {
-    "DashboardSdk": "1.0.0",
-    "Analytics": "1.0.0",
-    "SkillsWorkflow": "1.0.0"
-  }
 }

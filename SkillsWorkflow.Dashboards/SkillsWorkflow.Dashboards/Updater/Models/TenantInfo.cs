@@ -20,7 +20,7 @@
         public override string ToString()
         {
             return $@"Name:{Name}" +
-                $@"Id: {Id}" +          
+                $@"Id: {Id}" +
                 $@"AppId: {AppId}" +
                 $@"AppSecret: {AppSecret}" +
                 $@"ApiV2Url: {ApiV2Url}";

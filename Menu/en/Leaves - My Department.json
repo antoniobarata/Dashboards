@@ -1,65 +1,63 @@
-{
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-      "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
-      "AccessRoleName": "HR Profile"
-    },
-    {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-      "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
-      "AccessRoleName": "Finance Confidential Profile"
-    },
-    {
-      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-      "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
-      "AccessRoleName": "Group Account Director Profile"
-    },
-    {
-      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-      "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
-      "AccessRoleName": "Support Profile"
-    },
-    {
-      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-      "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
-      "AccessRoleName": "Department Lead Profile"
-    }
-  ],
-  "Id": "6b038f77-685c-4956-8470-705191897c14",
-  "Name": "Leaves - My Department",
-  "Active": true,
-  "Location": 0,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": null,
-  "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-  "Templates": [
-
-  ],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "e834dd50-3377-438b-abaa-be773c725c01",
-      "Name": "Leaves",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"My Department\",\"WidgetType\":\"scheduler\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":27,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select v.UserId,\\n        v.[Name] as [text],\\n        DateAdd(hh, 9, cast(v.[Date] as DateTime)) as startDate,\\n        DateAdd(hh, 18, cast(v.[Date] as DateTime)) as endDate,\\n        v.[Days]\\n        from SkillUserVacation v\\n    where UserIsActive = 1 and\\n        SentForApprovalAt is not null and\\n        v.responsibleId = @CurrentUserId\\n        /*[DateFilter]*/ and v.[Date] between @FromDate and @ToDate/*[/DateFilter]*/\\nunion\\n    Select v.UserId,\\n        v.[Name] as [text],\\n        DateAdd(hh, 9, cast(v.[Date] as DateTime)) as startDate,\\n        DateAdd(hh, 18, cast(v.[Date] as DateTime)) as endDate,\\n        v.[Days]\\n    from SkillUserVacation v, [User] u, [User] oth\\n    where  \\nv.SentForApprovalAt is not null and\\n        v.UserIsActive = 1 and\\n        v.UserId = u.Oid and\\n        oth.Oid = @CurrentUserId and\\n        oth.Department = u.Department\\n        /*[DateFilter]*/ and v.[Date] between @FromDate and @ToDate /*[/DateFilter]*/\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\"]}}]",
-      "DashboardComponentType": {
-        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Leaves - My team/execute",
-      "Configuration": "{ \"appointmentTemplate\": \"function(data, index, element) { if (element != null && element != undefined && element[0] != null && element[0].style != null) { element[0].style.backgroundColor = \\\"white\\\"; element[0].style.color = \\\"grey\\\"; } if (data.items != null) { var appointmentHTML = \\\"\\\"; data.items.forEach(function (val, dataIndex) { var noImageId = \\\"noImage\\\" + val.UserId + \\\"_\\\" + val.startDate; var modIndex = dataIndex % 10; var marginCSS = \\\"\\\"; if(modIndex !== 0) { marginCSS = \\\"margin-left:-15px\\\";} appointmentHTML += \\\"<div style='background-color: transparent; float:left;\\\" + marginCSS + \\\"'><div style='width:25px;height:25px;margin:2px;'> <div id='\\\" + noImageId + \\\"' title='\\\" + val.text + \\\"' style='display:none;border-radius: 250px;overflow: hidden;width: 25px;height: 25px;border: 1px solid rgb(172, 172, 172);'> <div style='color: rgb(42, 128, 185); background-color: rgb(196, 219, 243); font-size: 12px; height: 100%; line-height: 25px;'>             <span style='text-align: center; font-weight: 300; display: block'>\\\" + val.text.substr(0, 1).toUpperCase() + \\\"</span> </div> </div> <img title='\\\" + val.text + \\\"' style='border-radius: 250px;width: 100%;height: 100%;display:block;' src='\\\" + data.apiUrl + \\\"users/\\\" + val.UserId + \\\"/imageStream'  onerror='this.style.display=\\\\\\\"none\\\\\\\";if(document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\") != null) document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\").style.display=\\\\\\\"block\\\\\\\"'></img></div></div>\\\"; }); return appointmentHTML; } }\" }",
-      "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14"
-    }
-  ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 2,
-  "Default": false
+﻿{
+    "DashboardDefinitionRoles": [
+        {
+            "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+            "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
+            "AccessRoleName": "HR Profile"
+        },
+        {
+            "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+            "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
+            "AccessRoleName": "Finance Confidential Profile"
+        },
+        {
+            "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+            "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
+            "AccessRoleName": "Group Account Director Profile"
+        },
+        {
+            "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+            "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
+            "AccessRoleName": "Support Profile"
+        },
+        {
+            "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+            "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14",
+            "AccessRoleName": "Department Lead Profile"
+        }
+    ],
+    "Id": "6b038f77-685c-4956-8470-705191897c14",
+    "Name": "Leaves - My Department",
+    "Active": true,
+    "Location": 0,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": null,
+    "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "e834dd50-3377-438b-abaa-be773c725c01",
+            "Name": "Leaves",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"My Department\",\"WidgetType\":\"scheduler\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":27,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select v.UserId,\\n        v.[Name] as [text],\\n        DateAdd(hh, 9, cast(v.[Date] as DateTime)) as startDate,\\n        DateAdd(hh, 18, cast(v.[Date] as DateTime)) as endDate,\\n        v.[Days]\\n        from SkillUserVacation v\\n    where UserIsActive = 1 and\\n        SentForApprovalAt is not null and\\n        v.responsibleId = @CurrentUserId\\n        /*[DateFilter]*/ and v.[Date] between @FromDate and @ToDate/*[/DateFilter]*/\\nunion\\n    Select v.UserId,\\n        v.[Name] as [text],\\n        DateAdd(hh, 9, cast(v.[Date] as DateTime)) as startDate,\\n        DateAdd(hh, 18, cast(v.[Date] as DateTime)) as endDate,\\n        v.[Days]\\n    from SkillUserVacation v, [User] u, [User] oth\\n    where  \\nv.SentForApprovalAt is not null and\\n        v.UserIsActive = 1 and\\n        v.UserId = u.Oid and\\n        oth.Oid = @CurrentUserId and\\n        oth.Department = u.Department\\n        /*[DateFilter]*/ and v.[Date] between @FromDate and @ToDate /*[/DateFilter]*/\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\"]}}]",
+            "DashboardComponentType": {
+                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Leaves - My team/execute",
+            "Configuration": "{ \"appointmentTemplate\": \"function(data, index, element) { if (element != null \u0026\u0026 element != undefined \u0026\u0026 element[0] != null \u0026\u0026 element[0].style != null) { element[0].style.backgroundColor = \\\"white\\\"; element[0].style.color = \\\"grey\\\"; } if (data.items != null) { var appointmentHTML = \\\"\\\"; data.items.forEach(function (val, dataIndex) { var noImageId = \\\"noImage\\\" + val.UserId + \\\"_\\\" + val.startDate; var modIndex = dataIndex % 10; var marginCSS = \\\"\\\"; if(modIndex !== 0) { marginCSS = \\\"margin-left:-15px\\\";} appointmentHTML += \\\"\u003cdiv style=\u0027background-color: transparent; float:left;\\\" + marginCSS + \\\"\u0027\u003e\u003cdiv style=\u0027width:25px;height:25px;margin:2px;\u0027\u003e \u003cdiv id=\u0027\\\" + noImageId + \\\"\u0027 title=\u0027\\\" + val.text + \\\"\u0027 style=\u0027display:none;border-radius: 250px;overflow: hidden;width: 25px;height: 25px;border: 1px solid rgb(172, 172, 172);\u0027\u003e \u003cdiv style=\u0027color: rgb(42, 128, 185); background-color: rgb(196, 219, 243); font-size: 12px; height: 100%; line-height: 25px;\u0027\u003e             \u003cspan style=\u0027text-align: center; font-weight: 300; display: block\u0027\u003e\\\" + val.text.substr(0, 1).toUpperCase() + \\\"\u003c/span\u003e \u003c/div\u003e \u003c/div\u003e \u003cimg title=\u0027\\\" + val.text + \\\"\u0027 style=\u0027border-radius: 250px;width: 100%;height: 100%;display:block;\u0027 src=\u0027\\\" + data.apiUrl + \\\"users/\\\" + val.UserId + \\\"/imageStream\u0027  onerror=\u0027this.style.display=\\\\\\\"none\\\\\\\";if(document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\") != null) document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\").style.display=\\\\\\\"block\\\\\\\"\u0027\u003e\u003c/img\u003e\u003c/div\u003e\u003c/div\u003e\\\"; }); return appointmentHTML; } }\" }",
+            "DashboardDefinitionId": "6b038f77-685c-4956-8470-705191897c14"
+        }
+    ],
+    "QueryText": null,
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 4,
+    "Default": false
 }

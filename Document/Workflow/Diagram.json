@@ -1,4 +1,4 @@
-{
+﻿{
     "DashboardDefinitionRoles": [],
     "Id": "3a00a0bb-b8cf-4eaf-9a5c-d55ee0d61412",
     "Name": "Diagram",
@@ -32,6 +32,6 @@
     "QueryText": null,
     "UseStore": false,
     "StoreEntity": null,
-    "Version": 0,
+    "Version": 2,
     "Default": false
 }

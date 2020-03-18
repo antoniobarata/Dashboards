@@ -1,55 +1,55 @@
 ﻿{
-  "DashboardDefinitionRoles": [],
-  "Id": "e6d1b083-ab9b-4f08-b63c-96a4f95e7847",
-  "Name": "Leaves ",
-  "Active": true,
-  "Location": 0,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": null,
-  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"dashboard\": false\n        },\n        \"fields\": []\n    }\n]",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "369e7b9d-8cf6-464a-ba0f-40e616769ddf",
-      "Name": "Team leaves",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 8,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"F?rias\",\"WidgetType\":\"scheduler\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":32,\"WidgetColumns\":32,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"showSubTitle\":false,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select   v.UserId, \\r\\n\\t\\t                                    v.[User] as [text], \\r\\n\\t\\t                                    DateAdd(hh, 9, cast(v.[Date] as DateTime)) as startDate,\\r\\n\\t\\t                                    DateAdd(hh, 18, cast(v.[Date] as DateTime)) as endDate,\\r\\n                                            v.leavetype as LeaveType\\r\\n                                    from    Analytics.Leave(@CurrentUserId) v, SecuritySystemUser ssu, [UserVacation] uv, [Event] e\\r\\n                                    where\\tv.UserId = ssu.Oid and\\r\\n                                            uv.[Oid] = V.Oid and\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tssu.IsActive = 1 and\\r\\n                                            e.Oid = uv.Oid and\\r\\n                                            e.GCRecord is null\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t /*[DateFilter]*/ and v.[Date] between @FromDate and @ToDate /*[/DateFilter]*/\\r\\norder by v.[User]\",\"mapping\":\"\"}},\"Filters\":{\"startDate\":\"StartDate\",\"endDate\":\"EndDate\"},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\"]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "globalQuery/Analytics_Users_AtVacations/execute",
-      "Configuration": "{\r\n    \"size\": {\r\n        \"height\": 100\r\n    },\r\n    \"appointmentTemplate\": \"function getTemplate(data, index, element) {                \\n    if (element != null \u0026\u0026 element != undefined \u0026\u0026 element.style != null) {                       \\n        element.style.backgroundColor = \\\"white\\\";                         \\n        element.style.color = \\\"grey\\\";                \\n    }                \\n    if (data != null \u0026\u0026 data.appointmentData.items != null) {                         \\n        var appointmentHTML = \\\"\\\";                         \\n        data.appointmentData.items.forEach(function (val) { var noImageId = \\\"noImage\\\" + val.UserId + \\\"_\\\" + val.startDate;                                     \\n            appointmentHTML += \\\"\u003cdiv style=\u0027background-color: transparent; float:left;\u0027\u003e\u003cdiv style=\u0027width:25px;height:25px;margin:2px;\u0027\u003e \u003cdiv id=\u0027\\\" + noImageId + \\\"\u0027 title=\u0027\\\" + val.text + \\\"\u0027 style=\u0027display:none;border-radius: 250px;overflow: hidden;width: 25px;height: 25px;border: 1px solid rgb(172, 172, 172);\u0027\u003e \u003cdiv style=\u0027color: rgb(42, 128, 185); background-color: rgb(196, 219, 243); font-size: 12px; height: 100%; line-height: 25px;\u0027\u003e             \u003cspan style=\u0027text-align: center; font-weight: 300; display: block\u0027\u003e\\\" + val.text.substr(0, 1).toUpperCase() + \\\"\u003c/span\u003e \u003c/div\u003e \u003c/div\u003e \u003cimg title=\u0027\\\" + val.text + \\\"\u0027 style=\u0027border-radius: 250px;width: 100%;height: 100%;display:block;\u0027 src=\u0027\\\" + data.appointmentData.apiUrl +                         \\\"users/\\\" +                         val.UserId +                         \\\"/imageStream\u0027  onerror=\u0027this.style.display=\\\\\\\"none\\\\\\\";                                    if(document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\") != null)                                         document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\").style.display=\\\\\\\"block\\\\\\\"\u0027\u003e\u003c/img\u003e\u003c/div\u003e\u003c/div\u003e\\\";                             \\n        }); \\n        return appointmentHTML;                \\n    }         \\n}\"\r\n}",
-      "DashboardDefinitionId": "e6d1b083-ab9b-4f08-b63c-96a4f95e7847"
-    },
-    {
-      "Id": "8327f029-2f86-4918-9e9a-78031ac4de51",
-      "Name": "Pending Approval",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 4,
-      "Order": 1,
-      "Parameters": "[{\"WidgetSubTitle\":\"Leaves to Approve\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":32,\"WidgetColumns\":16,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":null},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select  u.[UserId] as [User],\\n        u.[User] as UserName,\\n        u.LeaveType as Type,\\n        U.[Date] as [day],\\n        usr.HasImage as HasImage\\nfrom    Analytics.DatamartLeave u, UserVacation uv, [User] usr\\nwhere   u.Oid = uv.Oid and\\n\\t\\tuv.state = 1 and \\n        uv.RequestedApproval = 1 and\\n        u.UserId = usr.Oid\\n\\t\\t/*[DateFilter]*/ and u.[Date] between @FromDate and @ToDate /*[/DateFilter]*/\\n        order by u.[Date]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\"]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "",
-      "Configuration": "{\r\n    \"height\": \"600\",\r\n    \"size\": {\r\n        \"height\": 600\r\n    },\r\n    \"selection\": {\r\n        \"mode\": \"none\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"User\",\r\n            \"caption\": \"User\",\r\n            \"alignment\": \"center\",\r\n            \"cellTemplate\": \"function(e, i) {if(i.text == \u0027\u0027) return;             var h = document.createElement(\u0027div\u0027);                             SW.showImage(h, \u0027user\u0027,\u0027medium\u0027,i.data.HasImage, i.data.UserName, i.data.User);                e.appendChild(h);            }\"\r\n        },\r\n        {\r\n            \"dataField\": \"Type\",\r\n            \"caption\": \"Type\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"day\",\r\n            \"caption\": \"Day\",\r\n            \"alignment\": \"center\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"d MMM\"\r\n        },\r\n        {\r\n            \"dataField\": \"UserName\",\r\n            \"caption\": \"Name\",\r\n            \"alignment\": \"Right\"\r\n        }\r\n    ]\r\n}",
-      "DashboardDefinitionId": "e6d1b083-ab9b-4f08-b63c-96a4f95e7847"
-    }
-  ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 4,
-  "Default": true
+    "DashboardDefinitionRoles": [],
+    "Id": "e6d1b083-ab9b-4f08-b63c-96a4f95e7847",
+    "Name": "Leaves ",
+    "Active": true,
+    "Location": 0,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": null,
+    "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"dashboard\": false\n        },\n        \"fields\": []\n    }\n]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "369e7b9d-8cf6-464a-ba0f-40e616769ddf",
+            "Name": "Team leaves",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 8,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"F?rias\",\"WidgetType\":\"scheduler\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":32,\"WidgetColumns\":32,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"showSubTitle\":false,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select   v.UserId, \\r\\n\\t\\t                                    v.[User] as [text], \\r\\n\\t\\t                                    DateAdd(hh, 9, cast(v.[Date] as DateTime)) as startDate,\\r\\n\\t\\t                                    DateAdd(hh, 18, cast(v.[Date] as DateTime)) as endDate,\\r\\n                                            v.leavetype as LeaveType\\r\\n                                    from    Analytics.Leave(@CurrentUserId) v, SecuritySystemUser ssu, [UserVacation] uv, [Event] e\\r\\n                                    where\\tv.UserId = ssu.Oid and\\r\\n                                            uv.[Oid] = V.Oid and\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\tssu.IsActive = 1 and\\r\\n                                            e.Oid = uv.Oid and\\r\\n                                            e.GCRecord is null\\r\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t /*[DateFilter]*/ and v.[Date] between @FromDate and @ToDate /*[/DateFilter]*/\\r\\norder by v.[User]\",\"mapping\":\"\"}},\"Filters\":{\"startDate\":\"StartDate\",\"endDate\":\"EndDate\"},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\"]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "globalQuery/Analytics_Users_AtVacations/execute",
+            "Configuration": "{\r\n    \"size\": {\r\n        \"height\": 100\r\n    },\r\n    \"appointmentTemplate\": \"function getTemplate(data, index, element) {                \\n    if (element != null \u0026\u0026 element != undefined \u0026\u0026 element.style != null) {                       \\n        element.style.backgroundColor = \\\"white\\\";                         \\n        element.style.color = \\\"grey\\\";                \\n    }                \\n    if (data != null \u0026\u0026 data.appointmentData.items != null) {                         \\n        var appointmentHTML = \\\"\\\";                         \\n        data.appointmentData.items.forEach(function (val) { var noImageId = \\\"noImage\\\" + val.UserId + \\\"_\\\" + val.startDate;                                     \\n            appointmentHTML += \\\"\u003cdiv style=\u0027background-color: transparent; float:left;\u0027\u003e\u003cdiv style=\u0027width:25px;height:25px;margin:2px;\u0027\u003e \u003cdiv id=\u0027\\\" + noImageId + \\\"\u0027 title=\u0027\\\" + val.text + \\\"\u0027 style=\u0027display:none;border-radius: 250px;overflow: hidden;width: 25px;height: 25px;border: 1px solid rgb(172, 172, 172);\u0027\u003e \u003cdiv style=\u0027color: rgb(42, 128, 185); background-color: rgb(196, 219, 243); font-size: 12px; height: 100%; line-height: 25px;\u0027\u003e             \u003cspan style=\u0027text-align: center; font-weight: 300; display: block\u0027\u003e\\\" + val.text.substr(0, 1).toUpperCase() + \\\"\u003c/span\u003e \u003c/div\u003e \u003c/div\u003e \u003cimg title=\u0027\\\" + val.text + \\\"\u0027 style=\u0027border-radius: 250px;width: 100%;height: 100%;display:block;\u0027 src=\u0027\\\" + data.appointmentData.apiUrl +                         \\\"users/\\\" +                         val.UserId +                         \\\"/imageStream\u0027  onerror=\u0027this.style.display=\\\\\\\"none\\\\\\\";                                    if(document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\") != null)                                         document.getElementById(\\\\\\\"\\\" + noImageId + \\\"\\\\\\\").style.display=\\\\\\\"block\\\\\\\"\u0027\u003e\u003c/img\u003e\u003c/div\u003e\u003c/div\u003e\\\";                             \\n        }); \\n        return appointmentHTML;                \\n    }         \\n}\"\r\n}",
+            "DashboardDefinitionId": "e6d1b083-ab9b-4f08-b63c-96a4f95e7847"
+        },
+        {
+            "Id": "8327f029-2f86-4918-9e9a-78031ac4de51",
+            "Name": "Pending Approval",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 4,
+            "Order": 1,
+            "Parameters": "[{\"WidgetSubTitle\":\"Leaves to Approve\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":32,\"WidgetColumns\":16,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":null},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select  u.[UserId] as [User],\\n        u.[User] as UserName,\\n        u.LeaveType as Type,\\n        U.[Date] as [day],\\n        usr.HasImage as HasImage\\nfrom    Analytics.DatamartLeave u, UserVacation uv, [User] usr\\nwhere   u.Oid = uv.Oid and\\n\\t\\tuv.state = 1 and \\n        uv.RequestedApproval = 1 and\\n        u.UserId = usr.Oid\\n\\t\\t/*[DateFilter]*/ and u.[Date] between @FromDate and @ToDate /*[/DateFilter]*/\\n        order by u.[Date]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\"]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\r\n    \"height\": \"600\",\r\n    \"size\": {\r\n        \"height\": 600\r\n    },\r\n    \"selection\": {\r\n        \"mode\": \"none\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"User\",\r\n            \"caption\": \"User\",\r\n            \"alignment\": \"center\",\r\n            \"cellTemplate\": \"function(e, i) {if(i.text == \u0027\u0027) return;             var h = document.createElement(\u0027div\u0027);                             SW.showImage(h, \u0027user\u0027,\u0027medium\u0027,i.data.HasImage, i.data.UserName, i.data.User);                e.appendChild(h);            }\"\r\n        },\r\n        {\r\n            \"dataField\": \"Type\",\r\n            \"caption\": \"Type\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"day\",\r\n            \"caption\": \"Day\",\r\n            \"alignment\": \"center\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"d MMM\"\r\n        },\r\n        {\r\n            \"dataField\": \"UserName\",\r\n            \"caption\": \"Name\",\r\n            \"alignment\": \"Right\"\r\n        }\r\n    ]\r\n}",
+            "DashboardDefinitionId": "e6d1b083-ab9b-4f08-b63c-96a4f95e7847"
+        }
+    ],
+    "QueryText": null,
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 7,
+    "Default": false
 }

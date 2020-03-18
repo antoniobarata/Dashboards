@@ -1,35 +1,37 @@
-{
-  "DashboardDefinitionRoles": [],
-  "Id": "6cc9b624-3cda-4415-b873-259e25411ad4",
-  "Name": "Departments",
-  "Active": true,
-  "Location": 2,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": "department",
-  "DocumentsConfiguration": "{\n} ",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "4a2555a2-4e5b-4365-924d-654ac3dfbc6c",
-      "Name": "",
-      "Active": true,
-      "UseQuery": true,
-      "Query": null,
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]} ,\"showSubTitle\":false,\"showTitle\":false} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT \\n        d.name as Department,\\n        dt.Name as DepartmentType,\\n        d.Code as Code,\\n        d.Active as Active,\\n        d.Plannable as Plannable,\\n        dv.name as Division,\\n        c.name as Company,\\n        d.oid as Oid,\\n        d.InvestmentRequired as InvestmentRequired\\nFROM    Department d LEFT OUTER JOIN \\n\\t\\tCompany c ON (d.Company = c.Oid) LEFT OUTER JOIN \\n\\t\\tDivision dv ON (d.Division = dv.Oid) LEFT OUTER JOIN \\n\\t\\tDepartmentType dt ON (d.DepartmentType = dt.Oid)\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      } ,
-      "AnalyticsApiUrl": null,
-      "Configuration": "{\"entity\":\"department\"} ",
-      "DashboardDefinitionId": "6cc9b624-3cda-4415-b873-259e25411ad4"
-    } 
-  ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null
-}  
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "6cc9b624-3cda-4415-b873-259e25411ad4",
+    "Name": "Departments",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "department",
+    "DocumentsConfiguration": "{\n} ",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "4a2555a2-4e5b-4365-924d-654ac3dfbc6c",
+            "Name": "",
+            "Active": true,
+            "UseQuery": true,
+            "Query": null,
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]} ,\"showSubTitle\":false,\"showTitle\":false} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT \\n        d.name as Department,\\n        dt.Name as DepartmentType,\\n        d.Code as Code,\\n        d.Active as Active,\\n        d.Plannable as Plannable,\\n        dv.name as Division,\\n        c.name as Company,\\n        d.oid as Oid,\\n        d.InvestmentRequired as InvestmentRequired\\nFROM    Department d LEFT OUTER JOIN \\n\\t\\tCompany c ON (d.Company = c.Oid) LEFT OUTER JOIN \\n\\t\\tDivision dv ON (d.Division = dv.Oid) LEFT OUTER JOIN \\n\\t\\tDepartmentType dt ON (d.DepartmentType = dt.Oid)\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": null,
+            "Configuration": "{\"entity\":\"department\"} ",
+            "DashboardDefinitionId": "6cc9b624-3cda-4415-b873-259e25411ad4"
+        }
+    ],
+    "QueryText": null,
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 7,
+    "Default": true
+}
