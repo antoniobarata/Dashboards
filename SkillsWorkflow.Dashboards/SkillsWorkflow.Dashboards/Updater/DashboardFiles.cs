@@ -24,12 +24,11 @@ namespace Updater
                 {
                     var content = File.ReadAllText(file);
                     var json = JsonConvert.DeserializeObject<dynamic>(content);
-                    if (json.Default.Value)
+                    if (null != json?.Default?.Value && json.Default.Value)
                     {
                         allDashboardFiles.Add(file);
                     }
                 }
-                //allDashboardFiles.AddRange(jsonFiles);
             }
             return allDashboardFiles;
         }
@@ -53,7 +52,7 @@ namespace Updater
             var getAllDirectoriesFromRepo = Directory.GetDirectories(_repositoryDir, "*", SearchOption.TopDirectoryOnly);
             foreach (var directoryName in getAllDirectoriesFromRepo)
             {
-                var excludeDirs = new List<string>(new[] { "git", ".vs", "OnPremises", "SkillsWorkflow.Dashboards" });
+                var excludeDirs = new List<string>(new[] { "git", ".vs", "OnPremises", "SkillsWorkflow.Dashboards", "Manifest" });
                 if (excludeDirs.Exists(i => directoryName.Contains(i)))
                 {
                     continue;

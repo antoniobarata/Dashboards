@@ -1,7 +1,5 @@
 {
-  "DashboardDefinitionRoles": [
-
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "fb308d03-f409-417b-b4c3-080bb971474f",
   "Name": "Projects",
   "Active": true,
@@ -90,6 +88,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 5,
-  "Default": true
+  "Version": 6,
+  "Default": false
 }

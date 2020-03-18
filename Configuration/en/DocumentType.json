@@ -1,37 +1,37 @@
 ﻿{
-  "DashboardDefinitionRoles": [],
-  "Id": "742c63c7-2fcd-48fb-a839-0b8104bcd335",
-  "Name": "Document",
-  "Active": true,
-  "Location": 2,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": "document",
-  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "4ec1b81b-33c7-4c70-b2ac-eca1d511310e",
-      "Name": "Leaves",
-      "Active": true,
-      "UseQuery": false,
-      "Query": null,
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select Oid,\\r\\n\\t   [Name],\\r\\n\\t   NumberFormat,\\r\\n\\t   InitialSequence,\\r\\n\\t   FunctionSaveValidation \\r\\nfrom Document where GCRecord IS NUll\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": null,
-      "Configuration": "{\n        \n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027document\u0027);}\",\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        },\n            \"Name\",\n            \"InitialSequence\",\n        {\n            \"dataField\": \"NumberFormat\",\n            \"customizeText\": \"function(cellInfo){\n                if(cellInfo.value==0) return \u0027Year\u0027;\n                if(cellInfo.value==1) return \u0027CompanyYear\u0027;\n                if(cellInfo.value==2) return \u0027CompanyCode\u0027;\n                if(cellInfo.value==3) return \u0027ClientCode\u0027;\n                if(cellInfo.value==4) return \u0027ProjectNumberDepartmentCode\u0027;\n                if(cellInfo.value==5) return \u0027DeliverableNumber\u0027;\n                if(cellInfo.value==6) return \u0027ClientBrandMonthYear\u0027;\n                if(cellInfo.value==7) return \u0027None\u0027;\n                if(cellInfo.value==8) return \u0027Tender\u0027;\n                if(cellInfo.value==9) return \u0027ClientCodeBrandCode\u0027;\n                if(cellInfo.value==10) return \u0027DepartmentYear\u0027;\n                if(cellInfo.value==11) return \u0027ClientCode3DashSequence6\u0027;\n                if(cellInfo.value==12) return \u0027ProjectDashSequence\u0027;\n                if(cellInfo.value==13) return \u0027CompanyCode4ProductCode6Sequence\u0027;\n                if(cellInfo.value==14) return \u0027CompanyCode4ProductCode5Sequence5\u0027;\n                if(cellInfo.value==15) return \u0027ClientCode3Sequence4\u0027;\n                if(cellInfo.value==16) return \u0027ProjectSequence3\u0027;\n                if(cellInfo.value==17) return \u0027ClientCode3ProductCode5Sequence3\u0027;\n                if(cellInfo.value==18) return \u0027ProjectSequence5\u0027;\n                if(cellInfo.value==19) return \u0027SwInternalNumber\u0027;\n            }\"\n        },\n            \"FunctionSaveValidation\"\n            \n    ],\n    \"onToolbarPreparing\": \"function(e) { \n        var dataGrid = e.component;  \n        e.toolbarOptions.items.unshift({ \n            location: \u0027after\u0027, \n            template: \u0027toggleHeaderFilterButtonTemplate\u0027\n    });\n       \n    \n}\"\n}",
-      "DashboardDefinitionId": "742c63c7-2fcd-48fb-a839-0b8104bcd335"
-    }
-  ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 4,
-  "Default": true
+    "DashboardDefinitionRoles": [],
+    "Id": "742c63c7-2fcd-48fb-a839-0b8104bcd335",
+    "Name": "Document",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "document",
+    "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "4ec1b81b-33c7-4c70-b2ac-eca1d511310e",
+            "Name": "Leaves",
+            "Active": true,
+            "UseQuery": false,
+            "Query": null,
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select Oid,\\r\\n\\t   [Name],\\r\\n\\t   NumberFormat,\\r\\n\\t   InitialSequence,\\r\\n\\t   FunctionSaveValidation \\r\\nfrom Document where GCRecord IS NUll\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": null,
+            "Configuration": "{\n        \n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027document\u0027);}\",\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        },\n            \"Name\",\n            \"InitialSequence\",\n        {\n            \"dataField\": \"NumberFormat\",\n            \"customizeText\": \"function(cellInfo){\n                if(cellInfo.value==0) return \u0027Year\u0027;\n                if(cellInfo.value==1) return \u0027CompanyYear\u0027;\n                if(cellInfo.value==2) return \u0027CompanyCode\u0027;\n                if(cellInfo.value==3) return \u0027ClientCode\u0027;\n                if(cellInfo.value==4) return \u0027ProjectNumberDepartmentCode\u0027;\n                if(cellInfo.value==5) return \u0027DeliverableNumber\u0027;\n                if(cellInfo.value==6) return \u0027ClientBrandMonthYear\u0027;\n                if(cellInfo.value==7) return \u0027None\u0027;\n                if(cellInfo.value==8) return \u0027Tender\u0027;\n                if(cellInfo.value==9) return \u0027ClientCodeBrandCode\u0027;\n                if(cellInfo.value==10) return \u0027DepartmentYear\u0027;\n                if(cellInfo.value==11) return \u0027ClientCode3DashSequence6\u0027;\n                if(cellInfo.value==12) return \u0027ProjectDashSequence\u0027;\n                if(cellInfo.value==13) return \u0027CompanyCode4ProductCode6Sequence\u0027;\n                if(cellInfo.value==14) return \u0027CompanyCode4ProductCode5Sequence5\u0027;\n                if(cellInfo.value==15) return \u0027ClientCode3Sequence4\u0027;\n                if(cellInfo.value==16) return \u0027ProjectSequence3\u0027;\n                if(cellInfo.value==17) return \u0027ClientCode3ProductCode5Sequence3\u0027;\n                if(cellInfo.value==18) return \u0027ProjectSequence5\u0027;\n                if(cellInfo.value==19) return \u0027SwInternalNumber\u0027;\n            }\"\n        },\n            \"FunctionSaveValidation\"\n            \n    ],\n    \"onToolbarPreparing\": \"function(e) { \n        var dataGrid = e.component;  \n        e.toolbarOptions.items.unshift({ \n            location: \u0027after\u0027, \n            template: \u0027toggleHeaderFilterButtonTemplate\u0027\n    });\n       \n    \n}\"\n}",
+            "DashboardDefinitionId": "742c63c7-2fcd-48fb-a839-0b8104bcd335"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 7,
+    "Default": true
 }

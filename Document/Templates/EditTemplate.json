@@ -1,55 +1,55 @@
-{
-  "DashboardDefinitionRoles": [],
-  "Id": "1c280f96-6925-4b25-ab63-609b80b2cac6",
-  "Name": "EditTemplate",
-  "Active": true,
-  "Location": 2,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": "document",
-  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "61d6405a-e53d-48b0-9146-38e2b5b93e03",
-      "Name": "",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"monacoeditor\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":40,\"WidgetColumns\":47,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "",
-      "Configuration": "{\"onInit\":\"function(e){\\n    SW.saveComponent(e, 'editor');\\n    var data = SW.getComponent('data');\\n    data = data.getSelectedRowsData()[0];\\n    e.setValue(JSON.stringify(data));\\n}\",\"model\":{\"language\":\"json\"}}",
-      "DashboardDefinitionId": "1c280f96-6925-4b25-ab63-609b80b2cac6"
-    },
-    {
-      "Id": "dac8353e-8137-4487-bfeb-9a2996630e4c",
-      "Name": "",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":17,\"WidgetYPosition\":40,\"WidgetRows\":4,\"WidgetColumns\":12,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "",
-      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e){\\n    var editor = SW.getComponent('editor');\\n    var template = JSON.parse(editor.getValue());\\n    var model = {\\n        Name: template.Name,\\n        Type: template.Type,\\n        Category: template.Category,\\n        Layout: template.Layout,\\n        Description: template.Description,\\n        Details: template.Details\\n    }\\n    SW.executeAPI('PUT', 'templates/'+template.Id, null, model)\\n    .then( x => {\\n        SW.Toastr.toastr_Success(\\\"Saved\\\");\\n    })\\n    .catch( x => {\\n        SW.Toastr.toastr_Error(x);\\n    })\\n}\"}",
-      "DashboardDefinitionId": "1c280f96-6925-4b25-ab63-609b80b2cac6"
-    }
-  ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 1,
-  "Default": true
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "1c280f96-6925-4b25-ab63-609b80b2cac6",
+    "Name": "EditTemplate",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "document",
+    "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "61d6405a-e53d-48b0-9146-38e2b5b93e03",
+            "Name": "",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"monacoeditor\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":40,\"WidgetColumns\":47,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"onInit\":\"function(e){\\n    SW.saveComponent(e, \u0027editor\u0027);\\n    var data = SW.getComponent(\u0027data\u0027);\\n    data = data.getSelectedRowsData()[0];\\n    e.setValue(JSON.stringify(data));\\n}\",\"model\":{\"language\":\"json\"}}",
+            "DashboardDefinitionId": "1c280f96-6925-4b25-ab63-609b80b2cac6"
+        },
+        {
+            "Id": "dac8353e-8137-4487-bfeb-9a2996630e4c",
+            "Name": "",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":17,\"WidgetYPosition\":40,\"WidgetRows\":4,\"WidgetColumns\":12,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e){\\n    var editor = SW.getComponent(\u0027editor\u0027);\\n    var template = JSON.parse(editor.getValue());\\n    var model = {\\n        Name: template.Name,\\n        Type: template.Type,\\n        Category: template.Category,\\n        Layout: template.Layout,\\n        Description: template.Description,\\n        Details: template.Details\\n    }\\n    SW.executeAPI(\u0027PUT\u0027, \u0027templates/\u0027+template.Id, null, model)\\n    .then( x =\u003e {\\n        SW.Toastr.toastr_Success(\\\"Saved\\\");\\n    })\\n    .catch( x =\u003e {\\n        SW.Toastr.toastr_Error(x);\\n    })\\n}\"}",
+            "DashboardDefinitionId": "1c280f96-6925-4b25-ab63-609b80b2cac6"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 1,
+    "Default": false
 }

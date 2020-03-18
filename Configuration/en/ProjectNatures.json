@@ -1,37 +1,37 @@
 ﻿{
-  "DashboardDefinitionRoles": [],
-  "Id": "9d415135-ae49-416f-8bf8-71f0614bb0c9",
-  "Name": "project-natures",
-  "Active": true,
-  "Location": 2,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": "projectnatures",
-  "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "7246d49f-c668-4b69-aeb8-88374efc2541",
-      "Name": "Project Nature",
-      "Active": true,
-      "UseQuery": true,
-      "Query": null,
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Departments by company \",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetXPosition\": 0,\r\n        \"WidgetYPosition\": 0,\r\n        \"WidgetRows\": 24,\r\n        \"WidgetColumns\": 48,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"ShowTitle\": false,\r\n            \"ShowSubTitle\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Integration Errors\",\r\n                        \"metricFieldValue\": \"Integration Errors\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": false,\r\n            \"showTitle\": false\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"select  p.Oid as Oid,\\n        p.Name as [Name],\\n        c.name as Company,\\n        d.Name as DocumentType,\\n        p.TemplateFileName as TemplateFileName,\\n        p.AllowsTimesheet as AllowsTimesheet,\\n        p.IsDeliverable as IsDeliverable,\\n        p.Active as Active\\nfrom    ProjectNature p, Company c, DocumentType d\\nwhere   p.company = c.oid and \\n        p.DocumentType = d.Oid\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {}\r\n    }\r\n]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027projectnatures\u0027,450);}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        \"DocumentType\",\r\n        \"Active\",\r\n        \"AllowsTimesheet\",\r\n        \"IsDeliverable\",\r\n        \"Company\"\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027    });        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {                SkillsWorkflow.genericNew(\u0027projectnatures\u0027,400,700);            }        }    });    var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027projectnatures\u0027, dataGrid);            }        }    });}\",\r\n    \"entity\": \"projectnatures\"\r\n}",
-      "DashboardDefinitionId": "9d415135-ae49-416f-8bf8-71f0614bb0c9"
-    }
-  ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 4,
-  "Default": true
+    "DashboardDefinitionRoles": [],
+    "Id": "9d415135-ae49-416f-8bf8-71f0614bb0c9",
+    "Name": "project-natures",
+    "Active": true,
+    "Location": 2,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "projectnatures",
+    "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "7246d49f-c668-4b69-aeb8-88374efc2541",
+            "Name": "Project Nature",
+            "Active": true,
+            "UseQuery": true,
+            "Query": null,
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Departments by company \",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetXPosition\": 0,\r\n        \"WidgetYPosition\": 0,\r\n        \"WidgetRows\": 24,\r\n        \"WidgetColumns\": 48,\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"ShowTitle\": false,\r\n            \"ShowSubTitle\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"? Integration Errors\",\r\n                        \"metricFieldValue\": \"Integration Errors\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": false,\r\n            \"showTitle\": false\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"select  p.Oid as Oid,\\n        p.Name as [Name],\\n        c.name as Company,\\n        d.Name as DocumentType,\\n        p.TemplateFileName as TemplateFileName,\\n        p.AllowsTimesheet as AllowsTimesheet,\\n        p.IsDeliverable as IsDeliverable,\\n        p.Active as Active\\nfrom    ProjectNature p, Company c, DocumentType d\\nwhere   p.company = c.oid and \\n        p.DocumentType = d.Oid\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {}\r\n    }\r\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": null,
+            "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027projectnatures\u0027,450);}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        \"DocumentType\",\r\n        \"Active\",\r\n        \"AllowsTimesheet\",\r\n        \"IsDeliverable\",\r\n        \"Company\"\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027    });        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {                SkillsWorkflow.genericNew(\u0027projectnatures\u0027,400,700);            }        }    });    var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027projectnatures\u0027, dataGrid);            }        }    });}\",\r\n    \"entity\": \"projectnatures\"\r\n}",
+            "DashboardDefinitionId": "9d415135-ae49-416f-8bf8-71f0614bb0c9"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 7,
+    "Default": true
 }

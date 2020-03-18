@@ -13,7 +13,7 @@ namespace Updater
         private readonly string _batchJson;
         private readonly TenantInfo _tenantInfo;
 
-        public DashboardTenantUpdater(TenantInfo tenantInfo, HttpClient client, string batchJson )
+        public DashboardTenantUpdater(TenantInfo tenantInfo, HttpClient client, string batchJson)
         {
             _tenantInfo = tenantInfo;
             _client = client;
@@ -30,7 +30,7 @@ namespace Updater
             SetDefaultRequestHeaders();
             var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
             var stringTask = _client.PostAsync($@"{_client.BaseAddress}/api/v3/dashboard-definitions", content);
-            
+
             var msg = await stringTask;
             Console.WriteLine("= RESULT ====");
             Console.WriteLine($@"Status code: {msg.StatusCode}");
@@ -47,7 +47,7 @@ namespace Updater
         }
 
         public async Task DoUpdateAsync()
-        {            
+        {
             await ProcessBatchUpdate(_batchJson);
         }
     }

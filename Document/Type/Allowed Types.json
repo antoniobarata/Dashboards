@@ -1,37 +1,37 @@
 ﻿{
-  "DashboardDefinitionRoles": [],
-  "Id": "b04e04d6-223a-44ea-af53-7dc7a51382f3",
-  "Name": "Allowed Job Types",
-  "Active": true,
-  "Location": 1,
-  "DocumentId": "00000000-0000-0000-0000-000000000000",
-  "DocumentName": "",
-  "DocumentTypeName": "jobtype",
-  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"dashboard\": false\n        },\n        \"fields\": []\n    }\n]",
-  "Templates": [],
-  "DashboardDefinitionComponents": [
-    {
-      "Id": "e3e5f8d2-f0f6-4006-8777-714e84d724df",
-      "Name": "",
-      "Active": true,
-      "UseQuery": false,
-      "Query": "",
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"9px 7px 0px 8px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":37,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"jobtype\",\"grid\":{\"call\":\"function getCall(entityId) {\\n    return \u0027job-types/\u0027 + entityId + \u0027/allowed-job-types\u0027\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.AllowedJobTypeId,\\n        Name: response.AllowedJobTypeName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.DepartmentName + \\\" - \\\" + response.CompanyName + \\\" - \\\" + response.DivisionName,\\n        Info2: \\\"(\\\" + response.BusinessObjectTypeName + \\\" - \\\" + response.DocumentTypeName + \\\")\\\"\\n    }\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027job-types/\u0027 + entityId +\u0027/allowed-job-types\u0027\\n}\",\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        JobTypeId: entityId,\\n        AllowedJobTypeId: item.Id\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    debugger;\\n    return \u0027jobTypes/lookup\u0027;\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.DepartmentName + \\\" - \\\" + response.CompanyName + \\\" - \\\" + response.DivisionName,\\n        Info2: \\\"(\\\" + response.BusinessObjectTypeName + \\\" - \\\" + response.DocumentTypeName + \\\")\\\"\\n    }\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027job-types/\u0027 + entityId + \u0027/allowed-job-types/\u0027 + item.Id;\\n}\"},\"entityAssociation\":\"jobtype\",\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}",
-      "DashboardDefinitionId": "b04e04d6-223a-44ea-af53-7dc7a51382f3"
-    }
-  ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 3,
-  "Default": false
+    "DashboardDefinitionRoles": [],
+    "Id": "b04e04d6-223a-44ea-af53-7dc7a51382f3",
+    "Name": "Allowed Job Types",
+    "Active": true,
+    "Location": 1,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": "jobtype",
+    "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"dashboard\": false\n        },\n        \"fields\": []\n    }\n]",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "e3e5f8d2-f0f6-4006-8777-714e84d724df",
+            "Name": "",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 12,
+            "Order": 0,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"9px 7px 0px 8px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":37,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"entity\":\"jobtype\",\"grid\":{\"call\":\"function getCall(entityId) {\\n    return \u0027job-types/\u0027 + entityId + \u0027/allowed-job-types\u0027\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.AllowedJobTypeId,\\n        Name: response.AllowedJobTypeName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.DepartmentName + \\\" - \\\" + response.CompanyName + \\\" - \\\" + response.DivisionName,\\n        Info2: \\\"(\\\" + response.BusinessObjectTypeName + \\\" - \\\" + response.DocumentTypeName + \\\")\\\"\\n    }\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027job-types/\u0027 + entityId +\u0027/allowed-job-types\u0027\\n}\",\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        JobTypeId: entityId,\\n        AllowedJobTypeId: item.Id\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    debugger;\\n    return \u0027jobTypes/lookup\u0027;\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.DepartmentName + \\\" - \\\" + response.CompanyName + \\\" - \\\" + response.DivisionName,\\n        Info2: \\\"(\\\" + response.BusinessObjectTypeName + \\\" - \\\" + response.DocumentTypeName + \\\")\\\"\\n    }\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027job-types/\u0027 + entityId + \u0027/allowed-job-types/\u0027 + item.Id;\\n}\"},\"entityAssociation\":\"jobtype\",\"form\":{\"call\":\"function getCall(item, entityId){\\n    return null \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return null \\n}\"}}",
+            "DashboardDefinitionId": "b04e04d6-223a-44ea-af53-7dc7a51382f3"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 6,
+    "Default": false
 }
