@@ -1,0 +1,37 @@
+﻿{
+  "DashboardDefinitionRoles": [],
+  "Id": "a1b19b04-4733-42fe-850c-5dba3105f096",
+  "Name": "Products",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "user",
+  "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {}\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"dashboard\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "aa49a886-bd93-4601-83c1-8eb343479ea6",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"9px 7px 0px 8px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":37,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "be9c4895-90b8-4755-9054-caa7770b6a09",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"user\",\"grid\":{\"call\":\"function getCall(entityId) {\\n   return \u0027users/\u0027+entityId+\u0027/commercial-products\u0027\\n}\",\"mapper\":\"function mapper(response, entityId) {\\r\\n    debugger;\\r\\n    return {\\r\\n        Id: response.Id,\\r\\n        Name: response.NameAndExternalId,\\r\\n        ImageId: response.CommercialProductId,\\r\\n        Info1: response.CommercialClientNameAndExternalId\\r\\n    }\\r\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n   return \u0027users/\u0027+entityId+\u0027/commercial-products\u0027\\n}\",\"model\":\"function model(item, entityId){\\n    return {\\n        CommercialProductId: item.Id,\\n        UserId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    return \u0027users/\u0027+entityId+\u0027/commercial-products/linkable\u0027\\n}\",\"mapper\":\"function mapper(response, entityId) {\\r\\n    debugger;\\r\\n    return {\\r\\n        Id: response.Id,\\r\\n        Name: response.NameAndExternalId,\\r\\n        ImageId: null,\\r\\n        ImageName: null,\\r\\n        Info1: response.CommercialClientNameAndExternalId,\\r\\n        Info2: null,\\r\\n    }\\r\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n   return \u0027users/\u0027+entityId+\u0027/commercial-products/\u0027+item.Id\\n}\"},\"entityAssociation\":\"commercialclientproduct\",\"form\":{\"model\":\"function getPutModel(item, entityId) {\\n    return null\\n}\",\"call\":\"function getCall(item, entityId){\\n    return null \\n}\"}}",
+      "DashboardDefinitionId": "a1b19b04-4733-42fe-850c-5dba3105f096"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 11,
+  "Default": true
+}

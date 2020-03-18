@@ -1,0 +1,37 @@
+﻿{
+  "DashboardDefinitionRoles": [],
+  "Id": "c94128fa-7c3c-4ccc-8947-109e603a8f62",
+  "Name": "Responsibles",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "user",
+  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"dashboard\": false\n        },\n        \"fields\": []\n    }\n]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "1315bab3-6242-4d2b-b6fa-55dd219a2375",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"9px 7px 0px 8px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":37,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"user\",\"grid\":{\"call\":\"function getCall(entityId) {\\n    return \u0027users/\u0027 + entityId +\u0027/userresponsibles\u0027\\n    \\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    var type = \\\"\\\"\\n    switch (response.ResponsibleType) {\\n        case 0:\\n            type = \\\"Leaves\\\"\\n            break;\\n        case 1:\\n            type = \\\"Planning\\\"\\n            break;\\n        case 2:\\n            type = \\\"Administrative\\\"\\n            break;\\n        case 3:\\n            type = \\\"Human Resources\\\"\\n            break;\\n    }\\n    return {\\n        Id: response.ResponsibleId,\\n        Name: response.ResponsibleName,\\n        ImageId: response.ResponsibleId,\\n        ImageName: response.ResponsibleName,\\n        Info1: \\\"Order: \\\"+response.Order,\\n        Info2: \\\"Type: \\\" + type\\n    }\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027userresponsibles\u0027\\n}\",\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        ResponsibleId: item.Id,\\n        UserId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    return \u0027users/all/lookup\u0027\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: response.Id,\\n        ImageName: response.Name,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return \u0027userresponsibles/\u0027 + item.Data.Id\\n}\"},\"entityAssociation\":\"responsible\",\"form\":{\"layout\":{\"colCount\":\"2\",\"items\":[{\"dataField\":\"ResponsibleType\",\"label\":{\"text\":\"Type\"},\"editorType\":\"dxSelectBox\",\"editorOptions\":{\"dataSource\":[{\"Name\":\"Leaves\",\"Id\":0},{\"Name\":\"Planning\",\"Id\":1},{\"Name\":\"Administrative\",\"Id\":2},{\"Name\":\"Human Resources\",\"Id\":3}],\"displayExpr\":\"Name\",\"valueExpr\":\"Id\"}},{\"dataField\":\"Order\",\"editorType\":\"dxNumberBox\"}]},\"call\":\"function putCall(item, entityId){\\n    return \u0027userresponsibles/\u0027 + item.Data.Id \\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return {\\n        ResponsibleId: item.Data.ResponsibleId,\\n        UserId: entityId,\\n        Order: item.Data.Order,\\n        ResponsibleType: item.Data.ResponsibleType,\\n    }\\n}\"}}",
+      "DashboardDefinitionId": "c94128fa-7c3c-4ccc-8947-109e603a8f62"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 7,
+  "Default": true
+}
