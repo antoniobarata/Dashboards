@@ -1,104 +1,116 @@
-﻿{
-    "DashboardDefinitionRoles": [
-        {
-            "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71",
-            "AccessRoleName": "Group Account Director Profile"
-        },
-        {
-            "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71",
-            "AccessRoleName": "Support Profile"
-        },
-        {
-            "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71",
-            "AccessRoleName": "Department Lead Profile"
-        },
-        {
-            "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71",
-            "AccessRoleName": "Account Profile"
-        },
-        {
-            "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71",
-            "AccessRoleName": "HR Profile"
-        },
-        {
-            "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71",
-            "AccessRoleName": "Finance Confidential Profile"
-        }
-    ],
-    "Id": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71",
-    "Name": "Client Staff Plan Summary",
-    "Active": true,
-    "Location": 0,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentTypeName": null,
-    "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"patchModel\":[{\"model\":\"\",\"translation\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "231d9f48-4702-40b9-b1e2-0c878dd99bbb",
-            "Name": "Period Selector",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 8,
-            "Order": 2,
-            "Parameters": "[{\"WidgetSubTitle\":\"Choose a date range based on your Estimate Start Date. The data will include the totals for the Staff Plan Estimates.\",\"WidgetType\":\"rangeselector\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":16,\"WidgetYPosition\":0,\"WidgetRows\":9,\"WidgetColumns\":32,\"WidgetHeader\":{\"WidgetPeriodChooser\":{\"startDate\":\"2019-01-01\",\"endDate\":\"2019-12-31\",\"type\":\"year\",\"visible\":false},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\tv.[Month]\\r\\nFROM\\t(\\r\\n\\t\\tSELECT \\tSUM(v.ActualTime) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Timesheet(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid and\\r\\n                (@ClientGroupOid = \u002700000000-0000-0000-0000-000000000000\u0027 or v.ClientGroupId = @ClientGroupOid)\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Leave(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\tSUM(v.[Hours]) as [Hours],\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Holiday(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between DateAdd(mm, -12, getdate()) and getdate() and\\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n) v\\r\\nGROUP BY v.[Month]\",\"mapping\":\"\"}},\"Filters\":{\"startDate\":\"startDate\",\"endDate\":\"endDate\"},\"QueryConfiguration\":{\"RequiredFilters\":[\"CompanyOid\"]}}]",
-            "DashboardComponentType": {
-                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Range_Selector/execute",
-            "Configuration": "{\"size\":{\"height\":100},\"containerBackgroundColor\":\"#e0e0e0\",\"selectedRangeColor\":\"#f5564a\",\"chart\":{\"commonSeriesSettings\":{\"type\":\"steparea\",\"argumentField\":\"Month\"},\"series\":[{\"valueField\":\"Hours\"}]},\"scale\":{\"minorTickInterval\":\"month\",\"tickInterval\":\"month\",\"valueType\":\"datetime\"},\"sliderMarker\":{\"format\":\"monthAndDay\",\"color\":\"#da5859\"},\"value\":{\"length\":{\"years\":1}}}",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71"
-        },
-        {
-            "Id": "7152f3f3-5744-4b01-8b52-3a86ed16ca87",
-            "Name": "Company and Client Group",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 4,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Choose a Company or Client Group\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"SELECT 1;\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Per_Company_Department_User/execute",
-            "Configuration": "{\n    \"colCount\": 1,\n    \"items\": [\n        {\n            \"dataField\": \"CompanyId\",\n            \"label\": {\n                \"text\": \"Company\"\n            },\n            \"validationRules\": [\n                {\n                    \"type\": \"required\"\n                }\n            ],\n            \"editorType\": \"dxSelectBox\",\n            \"editorOptions\": {\n                \"width\": 250,\n                \"searchEnabled\": true,\n                \"dataSource\": {\n                    \"load\": \"function(loadOptions){ \n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027companies/lookup\u0027,\n                    null,\n                    {})\n                }\",\n          \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027companies/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\n            },\n            \"displayExpr\": \"Name\",\n            \"valueExpr\": \"Id\",\n            \"onValueChanged\": \"function(e){ \n                if( e.value != null \u0026\u0026 e.value != \u0027\u0027) {\n                    SkillsWorkflow.setDashboardFilter(\u0027CompanyOid\u0027, e.value);\n            } else {\n                    SkillsWorkflow.setDashboardFilter(\u0027CompanyOid\u0027, \u002700000000-0000-0000-0000-000000000000\u0027);\n            }\n        }\"\n    }\n},\n{\n    \"name\": \"Client Group\",\n    \"label\": {\n        \"text\": \"Client Group\"\n    },\n    \"editorType\": \"dxSelectBox\",\n    \"editorOptions\": {\n        \"width\": 250,\n        \"searchEnabled\": true,\n        \"minSearchLength\": 0,\n        \"dataSource\": {\n            \"load\": \"function(loadOptions){ \n                            var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); \n                            var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); \n                            return SkillsWorkflow.executeAPI(\u0027GET\u0027, \u0027clientgroups/lookup\u0027,\n            null,\n            {})\n        }\",\n          \"byKey\": \"function(key) { return SW.executeAPI(\u0027GET\u0027,\u0027clientgroups/\u0027+key+\u0027/lookup\u0027,null,{}).then( result =\u003e  { return Promise.resolve(result);}) }\"\n    },\n    \"onInitialized\": \"function(e) { SkillsWorkflow.setDashboardFilter(\u0027ClientGroupOid\u0027, \u002700000000-0000-0000-0000-000000000000\u0027); }\",\n    \"value\": \"\",\n    \"onValueChanged\": \"function(e){ if(e.value != null) { SW.setDashboardFilter(\u0027ClientGroupOid\u0027, e.value); } }\",\n    \"valueExpr\": \"Id\",\n    \"displayExpr\": \"Name\"\n},\n\"noDataText\": \"Please wait...\"\n}\n],\n\"height\": 72\n}",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71"
-        },
-        {
-            "Id": "e47409e0-7a08-45ef-9b09-634a5d0b3edc",
-            "Name": "Deliverables Staffing",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 12,
-            "Order": 4,
-            "Parameters": "[{\"WidgetSubTitle\":\"Hours and Fee per Typology Group\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":9,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\\nWITH Roles AS\\n(\\n\\tSELECT\\n\\t\\t\\tdistinct u.Users as UserId, cast(r.Oid as uniqueidentifier) RoleParentId,\\n\\t\\t\\tr.Oid RoleId, r.name as RoleName, 1 RoleLevel\\n    FROM\\n            SecuritySystemRole r\\n            join SecuritySystemRoleParentRoles_SecuritySystemRoleChildRoles n on (n.ParentRoles = r.Oid)\\n            join SecuritySystemUserUsers_SecuritySystemRoleRoles u on (n.ParentRoles = u.Roles)\\n    WHERE\\n            r.GCRecord is null\\n            and r.Oid not in (select childRoles from SecuritySystemRoleParentRoles_SecuritySystemRoleChildRoles)\\n            and r.Name \u003c\u003e \u0027Base\u0027 and r.Name \u003c\u003e \u0027MaintenanceBase\u0027\\n\\t\\t\\tand u.Users = @CurrentUserId\\n    UNION all\\n    SELECT\\n            n.UserId,\\n            r.RoleParentId,\\n            r.RoleId, r.RoleName, RoleLevel + 1 RoleLevel\\n    FROM (\\n\\t\\tSELECT\\n\\t\\t\\t\\tl.parentRoles RoleParentId, r.oid RoleId, r.name RoleName\\n        FROM\\n                SecuritySystemRole r join SecuritySystemRoleParentRoles_SecuritySystemRoleChildRoles l on (l.ChildRoles = r.oid)\\n        WHERE\\n                r.GCRecord is null and r.Name \u003c\u003e \u0027Base\u0027 and r.Name \u003c\u003e \u0027MaintenanceBase\u0027\\n    ) r, Roles n\\n    WHERE\\n\\t\\t\\tn.RoleId = r.RoleParentId and RoleLevel \u003c= 10\\n)\\nselect  IIF(eit.[Order] \u003c 10, concat(\u00270\u0027, eit.[Order], \u0027. \u0027, eit.[Description]), concat(eit.[Order], \u0027. \u0027, eit.[Description])) as Deliverable,\\n        art.[Name] as [Service],\\n        utg.[Name] as TypologyGroup,\\n        usr.[Name] as [User],\\n\\t\\tdiv.[Name] as Division,\\n        dep.[Name] as Department,\\n        edt.[Hours] as ContractedTime,\\n\\t\\tcg.[Name] as ClientGroup,\\n\\t\\tcc.[Name] as ClientName,\\n\\t\\tc.[Name] as FeeProposal,\\n\\t\\test.[Name] as EstimateName,\\n\\t\\tIIF(n.UserId is not null, edt.UnitPriceCost, null) as Rate,\\n\\t\\tIIF(n.UserId is not null, edt.[Rate], null) as TableRate,\\n        edt.ValueWithoutVatIncome as TotalDeliverable,\\n\\t\\tIIF(n.UserId is not null, edt.UnitPriceCost * edt.[Hours], null) as Total,\\n\\t\\tcast(est.[Date] as Date) as StartDate,\\n\\t\\tcast(est.[Expiration] as Date) as EndDate\\nfrom    Estimate est\\tleft outer join CommercialClient cc on cc.Oid = est.Client\\n\\t\\t\\t\\t\\t\\tleft outer join [Contract] c on c.Oid = est.[Contract]\\n\\t\\t\\t\\t\\t\\tleft outer join ClientGroup cg on cg.Oid = cc.ClientGroup,\\n\\t\\t\\t\\t\\t\\t\\n\\t\\tEstimateItem eit, \\n\\t\\tArticle art,\\n        EstimateItemDetail edt\\tleft outer join Department dep on dep.Oid = edt.Department\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Division div on div.Oid = dep.Division\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join [User] usr on usr.Oid = edt.[User]\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join UserTypologyGroup utg on utg.Oid = edt.UserTypologyGroup\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Roles n on (n.UserId = @CurrentUserId and n.RoleName = \u0027RateCardRead\u0027)\\nwhere   eit.Estimate = est.Oid and\\n        edt.EstimateItem = eit.Oid and\\n        edt.[Type] = 2 and\\n        art.Oid = eit.Article and \\n        est.[Date] between @FromDate and @ToDate and\\n\\t\\t(cg.Oid = @ClientGroupOid or @ClientGroupOid = \u002700000000-0000-0000-0000-000000000000\u0027) and\\n\\t\\t(utg.Company = @CompanyOid or @CompanyOid = \u002700000000-0000-0000-0000-000000000000\u0027)\\norder by eit.[Order]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"CompanyOid\",\"ClientGroupOid\",\"startDate\",\"endDate\"]}}]",
-            "DashboardComponentType": {
-                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Resources - Staffing/execute",
-            "Configuration": "{\n    \"allowSortingBySummary\": true,\n    \"allowSorting\": true,\n    \"allowFiltering\": true,\n    \"allowExpandAll\": true,\n    \"headerFilter\": {\n        \"allowSearch\": true,\n        \"showRelevantValues\": true\n    },\n    \"height\": \"500\",\n    \"showBorders\": true,\n    \"export\": {\n        \"enabled\": true,\n        \"fileName\": \"Deliverables Staffing\"\n    },\n    \"showRowGrandTotals\": true,\n    \"fieldPanel\": {\n        \"showColumnFields\": true,\n        \"showDataFields\": true,\n        \"showFilterFields\": true,\n        \"showRowFields\": true,\n        \"allowFieldDragging\": true,\n        \"visible\": true\n    },\n    \"wordWrapEnabled\": false,\n    \"dataSource\": {\n        \"fields\": [\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Typology Group\",\n                \"width\": 120,\n                \"dataField\": \"TypologyGroup\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Name\",\n                \"dataField\": \"User\",\n                \"dataType\": \"string\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"dataField\": \"Deliverable\",\n                \"dataType\": \"string\",\n                \"area\": \"column\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Hours\",\n                \"dataField\": \"ContractedTime\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Rate\",\n                \"dataField\": \"Rate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"TableRate\",\n                \"dataField\": \"TableRate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Total\",\n                \"dataField\": \"Total\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"dataField\": \"Service\",\n                \"dataType\": \"string\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client Group\",\n                \"dataField\": \"ClientGroup\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client\",\n                \"dataField\": \"ClientName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Fee\",\n                \"dataField\": \"FeeProposal\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Estimate\",\n                \"dataField\": \"EstimateName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Start Date\",\n                \"dataField\": \"StartDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"End Date\",\n                \"dataField\": \"EndDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            }\n        ],\n        \"store\": null\n    },\n    \"onCellPrepared\": \"function(e) {\n      if (e.area == \u0027column\u0027 \u0026\u0026 e.rowIndex == 0 \u0026\u0026 e.cell.type == \u0027D\u0027 \u0026\u0026 e.columnIndex % 2 == 0) \n        e.cellElement.setAttribute(\u0027background-color\u0027, \u0027#e4e4e4\u0027);\n}\"\n}",
-            "DashboardDefinitionId": "6c406b8d-8a4f-4d87-938a-1e303f4f5b71"
-        }
-    ],
-    "QueryText": null,
-    "UseStore": false,
-    "StoreEntity": null,
-    "Version": 4,
-    "Default": false
+{
+  "DashboardDefinitionRoles": [
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "73348847-d727-4560-a4b0-e52fffc9d353",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "73348847-d727-4560-a4b0-e52fffc9d353",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "Department Head Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "Department Head Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+      "AccessRoleName": "Account Profile"
+    }
+  ],
+  "Id": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a",
+  "Name": "Client Staff Plan Summary",
+  "Active": true,
+  "Location": 0,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": null,
+  "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"patchModel\":[{\"model\":\"\",\"translation\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+  "Templates": [
+
+  ],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "8140d961-8e52-46dc-837e-63df215cc867",
+      "Name": "Actual, Leaves and Holiday Hours",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Actual, Leaves and Holiday Hours\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":22,\"WidgetYPosition\":0,\"WidgetRows\":7,\"WidgetColumns\":26,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\tSUM(v.ActualHours) as ActualHours,\\r\\n\\t\\tSUM(v.LeaveHours) as LeaveHours,\\r\\n\\t\\tSUM(v.HolidayHours) as HolidayHours,\\r\\n\\t\\tv.[Month]\\r\\nFROM\\t(\\r\\n\\t\\tSELECT \\tSUM(v.ActualTime) as ActualHours,\\r\\n\\t\\t\\t\\t0 as LeaveHours,\\r\\n\\t\\t\\t\\t0 as HolidayHours,\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Timesheet(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between @FromDate and @ToDate and \\r\\n                v.CompanyId = @CompanyOid and\\r\\n                (@ClientGroupOid = '00000000-0000-0000-0000-000000000000' or v.ClientGroupId = @ClientGroupOid)\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\t0 as ActualHours,\\r\\n\\t\\t\\t\\tSUM(v.[Hours]) as LeaveHours,\\r\\n\\t\\t\\t\\t0 as HolidayHours,\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Leave(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between @FromDate and @ToDate and \\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n\\t\\tUNION ALL\\r\\n\\t\\tSELECT \\t0 as ActualHours,\\r\\n\\t\\t\\t\\t0 as LeaveHours,\\r\\n\\t\\t\\t\\tSUM(v.[Hours]) as HolidayHours,\\r\\n\\t\\t\\t\\tDATEFROMPARTS(v.[Year], v.[Month], 1) as [Month]\\r\\n\\t\\tFROM\\tAnalytics.Holiday(@CurrentUserId) v\\r\\n\\t\\tWHERE\\tv.[Date] between @FromDate and @ToDate and \\r\\n                v.CompanyId = @CompanyOid\\r\\n\\t\\tGROUP BY DATEFROMPARTS(v.[Year], v.[Month], 1)\\r\\n) v\\r\\nGROUP BY v.[Month]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[\"CompanyOid\",\"ClientGroupOid\",\"FromDate\",\"ToDate\"]}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"commonSeriesSettings\": {\r\n        \"type\": \"steparea\",\r\n        \"argumentField\": \"Month\"\r\n    },\r\n    \"argumentAxis\": {\r\n        \"argumentType\": \"datetime\"\r\n    },\r\n    \"series\": [\r\n        {\r\n            \"valueField\": \"ActualHours\",\r\n            \"name\": \"Actual Hours\",\r\n            \"type\": \"spline\"\r\n        },\r\n        {\r\n            \"valueField\": \"LeaveHours\",\r\n            \"name\": \"Leave Hours\",\r\n            \"type\": \"spline\"\r\n        },\r\n        {\r\n            \"valueField\": \"HolidayHours\",\r\n            \"name\": \"Holiday Hours\",\r\n            \"type\": \"spline\"\r\n        }\r\n    ],\r\n    \"size\": {\r\n        \"height\": 120\r\n    },\r\n    \"legend\": {\r\n        \"visible\": true,\r\n        \"customizeText\": \"function(arg) {\r\n            return arg.seriesName.split(' ')[\r\n            0\r\n        ];\r\n    }\"\r\n}\r\n}",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a"
+    },
+    {
+      "Id": "8ea5ed9a-ad02-4166-98fd-a671cdb87dde",
+      "Name": "Company and Client Group",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Choose a Company or Client Group\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":7,\"WidgetColumns\":22,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"SELECT 1;\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Analytics_Utilization_Per_Company_Department_User/execute",
+      "Configuration": "{\r\n    \"colCount\": \"2\",\r\n    \"items\": [\r\n        {\r\n            \"dataField\": \"CompanyId\",\r\n            \"label\": {\r\n                \"text\": \"Company\"\r\n            },\r\n            \"validationRules\": [\r\n                {\r\n                    \"type\": \"required\"\r\n                }\r\n            ],\r\n            \"editorType\": \"dxSelectBox\",\r\n            \"editorOptions\": {\r\n                \"width\": 200,\r\n                \"searchEnabled\": true,\r\n                \"dataSource\": {\r\n                    \"load\": \"function(loadOptions){                        var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');                        var searchTake = (loadOptions.searchValue != null && loadOptions.searchValue != '' ? 10 : 100);                        return SkillsWorkflow.executeAPI('GET', 'companies/lookup',null,{})                    }\",\r\n                    \"byKey\": \"function(key) {                         return SW.executeAPI('GET','companies/'+key+'/lookup',null,{}).then( result =>  { return Promise.resolve(result);})                     }\"\r\n                },\r\n                \"displayExpr\": \"Name\",\r\n                \"valueExpr\": \"Id\",\r\n                \"onInitialized\": \"function(e) {\r\n                    var date = new Date();\r\n                    SW.setDashboardFilter('ClientGroupOid', '00000000-0000-0000-0000-000000000000');\r\n                    setTimeout(function() {\r\n                        var startDate = date.getFullYear() + '-' + 1 + '-' + 1;\r\n                        SW.setDashboardFilter('FromDate', startDate);\r\n                        setTimeout(function() {\r\n                            var endDate = date.getFullYear() + '-' + 12 + '-' + 31;\r\n                            SW.setDashboardFilter('ToDate', endDate);\r\n                        }, 500);\r\n                    }, 500);\r\n                }\",\r\n                \"onValueChanged\": \"function(e){                    if( e.value != null && e.value != '') {                        SkillsWorkflow.setDashboardFilter('CompanyOid', e.value);                    } else {                        SkillsWorkflow.setDashboardFilter('CompanyOid', '00000000-0000-0000-0000-000000000000');                    }                }\"\r\n            }\r\n        },\r\n        {\r\n            \"name\": \"Client Group\",\r\n            \"label\": {\r\n                \"text\": \"Client Group\"\r\n            },\r\n            \"editorType\": \"dxSelectBox\",\r\n            \"editorOptions\": {\r\n                \"width\": 200,\r\n                \"searchEnabled\": true,\r\n                \"minSearchLength\": 0,\r\n                \"dataSource\": {\r\n                    \"load\": \"function(loadOptions){                        var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');                        var searchTake = (loadOptions.searchValue != null && loadOptions.searchValue != '' ? 10 : 100);                        return SkillsWorkflow.executeAPI('GET', 'clientgroups/lookup',null,{})                    }\",\r\n                    \"byKey\": \"function(key) {                         return SW.executeAPI('GET','clientgroups/'+key+'/lookup',null,{}).then( result =>  { return Promise.resolve(result);})                     }\"\r\n                },\r\n                \"value\": \"\",\r\n                \"onValueChanged\": \"function(e){                     if(e.value != null) {                         SW.setDashboardFilter('ClientGroupOid', e.value);                     }                }\",\r\n                \"valueExpr\": \"Id\",\r\n                \"displayExpr\": \"Name\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        },\r\n        {\r\n            \"name\": \"Start Date\",\r\n            \"label\": {\r\n                \"text\": \"Start Date\"\r\n            },\r\n            \"editorType\": \"dxDateBox\",\r\n            \"editorOptions\": {\r\n                \"width\": 200,\r\n                \"onFocusIn\": \"function(e) {                    var endDate = SW.getComponent('endDate');                    e.component.option('max', endDate);                }\",\r\n                \"onInitialized\": \"function(e) {                    var date = new Date();                    var startDate = date.getFullYear() + '-' + 1 + '-' + 1;SW.saveComponent(startDate, 'startDate');                    var endDate = date.getFullYear() + '-' + 12 + '-' + 31;                    e.component.option('max', endDate);                    var showDate = new Date(startDate);                    e.component.dateValue(showDate);                }\",\r\n                \"onValueChanged\": \"function(e) {                    var startDate = e.value.getFullYear() + '-' + (e.value.getMonth() + 1) + '-' + e.value.getDate();                    SW.saveComponent(startDate, 'startDate');                    SW.setDashboardFilter('FromDate', startDate);                }\"\r\n            }\r\n        },\r\n        {\r\n            \"name\": \"End Date\",\r\n            \"label\": {\r\n                \"text\": \"End Date\"\r\n            },\r\n            \"editorType\": \"dxDateBox\",\r\n            \"editorOptions\": {\r\n                \"width\": 200,\r\n                \"onFocusIn\": \"function(e) {                    var startDate = SW.getComponent('startDate');                    e.component.option('min', startDate);                }\",\r\n                \"onInitialized\": \"function(e) {                    var date = new Date();                    var endDate = date.getFullYear() + '-' + 12 + '-' + 31;SW.saveComponent(endDate, 'endDate');                    var startDate = date.getFullYear() + '-' + 1 + '-' + 1;                    e.component.option('min', startDate);                    var showDate = new Date(endDate);                    e.component.dateValue(showDate);                }\",\r\n                \"onValueChanged\": \"function(e) {                    var endDate = e.value.getFullYear() + '-' + (e.value.getMonth() + 1) + '-' + e.value.getDate();                    SW.saveComponent(endDate, 'endDate');                    SW.setDashboardFilter('ToDate', endDate);                }\"\r\n            }\r\n        }\r\n    ],\r\n    \"height\": 72\r\n}",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a"
+    },
+    {
+      "Id": "b2fe317c-a570-4741-b670-f3e8941ed6b1",
+      "Name": "Deliverables Staffing",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 12,
+      "Order": 4,
+      "Parameters": "[{\"WidgetSubTitle\":\"Hours and Fee per Typology Group\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":7,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  IIF(eit.[Order] < 10, concat('0', eit.[Order], '. ', eit.[Description]), concat(eit.[Order], '. ', eit.[Description])) as Deliverable,\\n        art.[Name] as [Service],\\n        utg.[Name] as TypologyGroup,\\n        usr.[Name] as [User],\\n\\t\\tdiv.[Name] as Division,\\n        dep.[Name] as Department,\\n        edt.[Hours] as ContractedTime,\\n\\t\\tcg.[Name] as ClientGroup,\\n\\t\\tcc.[Name] as ClientName,\\n\\t\\tc.[Name] as FeeProposal,\\n\\t\\test.[Name] as EstimateName,\\n\\t\\tIIF(n.RoleId is not null, edt.UnitPriceCost, null) as Rate,\\n\\t\\tIIF(n.RoleId is not null, edt.[Rate], null) as TableRate,\\n        edt.ValueWithoutVatIncome as TotalDeliverable,\\n\\t\\tIIF(n.RoleId is not null, edt.UnitPriceCost * edt.[Hours], null) as Total,\\n\\t\\tcast(est.[Date] as Date) as StartDate,\\n\\t\\tcast(est.[Expiration] as Date) as EndDate\\nfrom    Estimate est\\tleft outer join CommercialClient cc on cc.Oid = est.Client\\n\\t\\t\\t\\t\\t\\tleft outer join [Contract] c on c.Oid = est.[Contract]\\n\\t\\t\\t\\t\\t\\tleft outer join ClientGroup cg on cg.Oid = cc.ClientGroup,\\n\\t\\t\\t\\t\\t\\t\\n\\t\\tEstimateItem eit, \\n\\t\\tArticle art,\\n        EstimateItemDetail edt\\tleft outer join Department dep on dep.Oid = edt.Department\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Division div on div.Oid = dep.Division\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join [User] usr on usr.Oid = edt.[User]\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join UserTypologyGroup utg on utg.Oid = edt.UserTypologyGroup\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Analytics.[Authorization](@CurrentUserId) n on (n.RoleName = 'RateCardRead')\\nwhere   eit.Estimate = est.Oid and\\n        edt.EstimateItem = eit.Oid and\\n        edt.[Type] = 2 and\\n        art.Oid = eit.Article and \\n        est.[Date] between @FromDate and @ToDate and\\n\\t\\t(cg.Oid = @ClientGroupOid or @ClientGroupOid = '00000000-0000-0000-0000-000000000000') and\\n\\t\\t(utg.Company = @CompanyOid or @CompanyOid = '00000000-0000-0000-0000-000000000000')\\norder by eit.[Order]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"CompanyOid\",\"ClientGroupOid\",\"FromDate\",\"ToDate\"]}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Resources - Staffing/execute",
+      "Configuration": "{\n    \"allowSortingBySummary\": true,\n    \"allowSorting\": true,\n    \"allowFiltering\": true,\n    \"allowExpandAll\": true,\n    \"headerFilter\": {\n        \"allowSearch\": true,\n        \"showRelevantValues\": true\n    },\n    \"height\": \"500\",\n    \"showBorders\": true,\n    \"export\": {\n        \"enabled\": true,\n        \"fileName\": \"Deliverables Staffing\"\n    },\n    \"showRowGrandTotals\": true,\n    \"fieldPanel\": {\n        \"showColumnFields\": true,\n        \"showDataFields\": true,\n        \"showFilterFields\": true,\n        \"showRowFields\": true,\n        \"allowFieldDragging\": true,\n        \"visible\": true\n    },\n    \"wordWrapEnabled\": false,\n    \"dataSource\": {\n        \"fields\": [\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Typology Group\",\n                \"width\": 120,\n                \"dataField\": \"TypologyGroup\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Name\",\n                \"dataField\": \"User\",\n                \"dataType\": \"string\",\n                \"area\": \"row\",\n                \"expanded\": true\n            },\n            {\n                \"dataField\": \"Deliverable\",\n                \"dataType\": \"string\",\n                \"area\": \"column\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Hours\",\n                \"dataField\": \"ContractedTime\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Rate\",\n                \"dataField\": \"Rate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"TableRate\",\n                \"dataField\": \"TableRate\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"caption\": \"Total\",\n                \"dataField\": \"Total\",\n                \"dataType\": \"number\",\n                \"summaryType\": \"sum\",\n                \"area\": \"data\",\n                \"format\": \"###,###,###\"\n            },\n            {\n                \"dataField\": \"Service\",\n                \"dataType\": \"string\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Division\",\n                \"dataField\": \"Division\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Department\",\n                \"dataField\": \"Department\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client Group\",\n                \"dataField\": \"ClientGroup\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Client\",\n                \"dataField\": \"ClientName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Fee\",\n                \"dataField\": \"FeeProposal\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Estimate\",\n                \"dataField\": \"EstimateName\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"Start Date\",\n                \"dataField\": \"StartDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            },\n            {\n                \"caption\": \"End Date\",\n                \"dataField\": \"EndDate\",\n                \"dataType\": \"date\",\n                \"area\": \"filter\",\n                \"expanded\": true\n            }\n        ],\n        \"store\": null\n    },\n    \"onCellPrepared\": \"function(e) {\n      if (e.area == 'column' && e.rowIndex == 0 && e.cell.type == 'D' && e.columnIndex % 2 == 0) \n        e.cellElement.setAttribute('background-color', '#e4e4e4');\n}\"\n}",
+      "DashboardDefinitionId": "21182de9-9f74-4eb4-a8b9-1bb7dd30e51a"
+    }
+  ],
+  "QueryText": null,
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 5,
+  "Default": false
 }
