@@ -3,10 +3,10 @@
   "Id": "ffdb36dc-a0c8-4c3c-a87b-4b64c325db0f",
   "Name": "EditAutomation",
   "Active": true,
-  "Location": 2,
+  "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": "automation",
+  "DocumentTypeName": null,
   "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
   "Templates": [],
   "DashboardDefinitionComponents": [
@@ -86,6 +86,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }
