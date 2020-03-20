@@ -68,7 +68,7 @@ namespace Updater
             var tenants = await client.GetListAsync();
             foreach (var tenant in tenants)
             {
-                if (tenant.Region.ToUpperInvariant() == region.ToUpperInvariant())
+                if (tenant.Region.ToUpperInvariant() != region.ToUpperInvariant())
                     continue;
                 Console.WriteLine($"{tenant.Name,-30} {tenant.Region,-15} {tenant.Id}");
                 var application = tenant.Applications.FirstOrDefault();
