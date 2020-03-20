@@ -1,0 +1,127 @@
+﻿{
+  "DashboardDefinitionRoles": [],
+  "Id": "070349e2-40d5-4269-8089-7b4b74e6ec11",
+  "Name": "apply mass leave type",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": null,
+  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "5697382e-36c7-43a1-aeaa-0d8523302617",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":15,\"WidgetRows\":3,\"WidgetColumns\":16,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"items\": [\r\n        {\r\n            \"itemType\": \"group\",\r\n            \"caption\": \" \",\r\n            \"items\": [\r\n                {}\r\n            ]\r\n        }\r\n    ]\r\n}",
+      "DashboardDefinitionId": "070349e2-40d5-4269-8089-7b4b74e6ec11"
+    },
+    {
+      "Id": "547d76ce-1e5c-40cb-b1d5-258ef7a2f508",
+      "Name": "Apply Mass Leave Type",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":18,\"WidgetRows\":15,\"WidgetColumns\":46,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tOid,\\n\\t\\t[Name]\\nfrom UserVacationType\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"colCount\": \"2\",\r\n    \"items\": [\r\n        {\r\n            \"label\": {\r\n                \"text\": \"Year\"\r\n            },\r\n            \"editorType\": \"dxNumberBox\",\r\n            \"dataField\": \"\",\r\n            \"name\": \"Year\",\r\n            \"editorOptions\": {\r\n                \"onInitialized\": \"function(e) { SW.saveComponent(e.component, \u0027formMLTyear\u0027) }\",\r\n                \"onValueChanged\": \"function(e) {}\",\r\n                \"showSpinButtons\": \"true\",\r\n                \"value\": 2020\r\n            },\r\n            \"noDataText\": \"Please wait...\",\r\n            \"disabled:\": true\r\n        },\r\n        {\r\n            \"label\": {\r\n                \"text\": \"Half Day\"\r\n            },\r\n            \"editorType\": \"dxCheckBox\",\r\n            \"dataField\": \"\",\r\n            \"name\": \"formMLThalfDay\",\r\n            \"editorOptions\": {\r\n                \"onInitialized\": \"function(e) { SW.saveComponent(e.component, \u0027formMLThalfDay\u0027) }\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        },\r\n        {\r\n            \"label\": {\r\n                \"text\": \"From Date\"\r\n            },\r\n            \"editorType\": \"dxDateBox\",\r\n            \"dataField\": \"\",\r\n            \"editorOptions\": {\r\n                \"onInitialized\": \"function(e) { SW.saveComponent(e.component, \u0027formMLTfromDate\u0027) }\",\r\n                \"type\": \"datetime\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        },\r\n        {\r\n            \"label\": {\r\n                \"text\": \"To Date\"\r\n            },\r\n            \"editorType\": \"dxDateBox\",\r\n            \"dataField\": \"\",\r\n            \"name\": \"formMLTtoDate\",\r\n            \"editorOptions\": {\r\n                \"onInitialized\": \"function(e) { SW.saveComponent(e.component, \u0027formMLTtoDate\u0027) }\",\r\n                \"type\": \"datetime\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        },\r\n        {\r\n            \"label\": {\r\n                \"text\": \"Description\"\r\n            },\r\n            \"editorType\": \"dxTextArea\",\r\n            \"dataField\": \"\",\r\n            \"colSpan\": 2,\r\n            \"name\": \"formMLTdescription\",\r\n            \"editorOptions\": {\r\n                \"onInitialized\": \"function(e) { SW.saveComponent(e.component, \u0027formMLTdescription\u0027) }\",\r\n                \"height\": \"50px\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        }\r\n    ],\r\n    \"width\": \"100%\",\r\n    \"height\": \"100%\",\r\n    \"labelLocation\": \"top\",\r\n    \"onContentReady\": \"function(e) { SW.saveComponent(e.component, \u0027formMLT\u0027); }\"\r\n}",
+      "DashboardDefinitionId": "070349e2-40d5-4269-8089-7b4b74e6ec11"
+    },
+    {
+      "Id": "191d6f84-3b5f-4041-ba32-282889b5a2b8",
+      "Name": "Apply Leave Types",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":15,\"WidgetColumns\":46,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select [Name], Oid from UserVacationType\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"height\":\"100%\",\"onContentReady\":\"function(e){\\r\\n    SW.saveComponent(e.component, \u0027applyMassLeaveTypesGrid\u0027)\\r\\n}\",\"columns\":[\"Name\"]}",
+      "DashboardDefinitionId": "070349e2-40d5-4269-8089-7b4b74e6ec11"
+    },
+    {
+      "Id": "03dfc50a-c719-4068-9da4-36ae29a86948",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"buttongroup\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":16,\"WidgetYPosition\":15,\"WidgetRows\":3,\"WidgetColumns\":14,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"items\":[{\"text\":\"Apply\"},{\"text\":\"Delete\"}],\"onItemClick\":\"function(e) {\\r\\n    var val = (e.itemData.text != \u0027Apply\u0027);\\r\\n    var year = SW.getComponent(\u0027formMLTyear\u0027);\\r\\n    year.option(\u0027disabled\u0027, val);\\r\\n    var halfDay = SW.getComponent(\u0027formMLThalfDay\u0027);\\r\\n    halfDay.option(\u0027disabled\u0027, val);\\r\\n    var description = SW.getComponent(\u0027formMLTdescription\u0027);\\r\\n    description.option(\u0027disabled\u0027, val);\\r\\n}\",\"keyExpr\":\"text\",\"selectedItemKeys\":[\"Apply\"],\"width\":\"100%\",\"height\":\"25px\",\"onInitialized\":\"function(e){\\r\\n    SW.saveComponent(e.component, \u0027buttonGroup\u0027)\\r\\n}\"}",
+      "DashboardDefinitionId": "070349e2-40d5-4269-8089-7b4b74e6ec11"
+    },
+    {
+      "Id": "067f2dc8-4d62-450a-b994-5fed4607a3ac",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":18,\"WidgetYPosition\":34,\"WidgetRows\":4,\"WidgetColumns\":10,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"onClick\":\"function(e) {\\r\\n    var buttonGroup = SW.getComponent(\u0027buttonGroup\u0027);\\r\\n    var operation = buttonGroup.option(\u0027selectedItems\u0027)[0];\\r\\n    if (operation.text == \u0027Apply\u0027) {\\r\\n        Apply(e);\\r\\n    } else {\\r\\n        Delete(e);\\r\\n    }\\r\\n\\r\\n    function Apply(e){\\r\\n        SetLoading();\\r\\n        var gridUsers = SW.getComponent(\u0027data\u0027);\\r\\n        var gridLeaveTypes = SW.getComponent(\u0027applyMassLeaveTypesGrid\u0027);\\r\\n        if (gridUsers \u0026\u0026 gridLeaveTypes) {\\r\\n            var selectedUsers = gridUsers.getSelectedRowKeys();\\r\\n            var selectedLeaveTypes = gridLeaveTypes.getSelectedRowKeys();\\r\\n        }\\r\\n        var year = SW.getComponent(\u0027formMLTyear\u0027) != null ? SW.getComponent(\u0027formMLTyear\u0027).option(\u0027value\u0027) : null;\\r\\n        var untilDate = SW.getComponent(\u0027formMLTtoDate\u0027) != null ? SW.getComponent(\u0027formMLTtoDate\u0027).option(\u0027value\u0027) : null;\\r\\n        var fromDate = SW.getComponent(\u0027formMLTfromDate\u0027) != null ? SW.getComponent(\u0027formMLTfromDate\u0027).option(\u0027value\u0027) : null;\\r\\n        var halfDay = false;\\r\\n        halfDay = SW.getComponent(\u0027formMLThalfDay\u0027).option(\u0027value\u0027) != null ? SW.getComponent(\u0027formMLThalfDay\u0027).option(\u0027value\u0027) : false;\\r\\n        var description = SW.getComponent(\u0027formMLTdescription\u0027) != null ? SW.getComponent(\u0027formMLTdescription\u0027).option(\u0027value\u0027) : null;\\r\\n        if (!year || !untilDate || !fromDate) {\\r\\n            StopLoading();\\r\\n            return SW.Toastr.toastr_Error(\u0027A field is missing\u0027);\\r\\n        }\\r\\n        if (selectedUsers.length == 0) {\\r\\n            StopLoading();\\r\\n            return SW.Toastr.toastr_Error(\u0027No users selected\u0027);\\r\\n        }\\r\\n        if (selectedLeaveTypes.length == 0) {\\r\\n            StopLoading();\\r\\n            return SW.Toastr.toastr_Error(\u0027No leave types selected\u0027);\\r\\n        }\\r\\n        var selectedUsersIds = [];\\r\\n        selectedUsers.forEach(\\r\\n            user =\u003e {\\r\\n                selectedUsersIds.push(user.UserId);\\r\\n            }\\r\\n        );\\r\\n        var selectedLeaveTypesIds = [];\\r\\n        selectedLeaveTypes.forEach(\\r\\n            leaveType =\u003e {\\r\\n                selectedLeaveTypesIds.push(leaveType.Oid);\\r\\n            }\\r\\n        );\\r\\n        var details = {\\r\\n            Year: year,\\r\\n            FromDate: fromDate,\\r\\n            UntilDate: untilDate,\\r\\n            HalfDay: halfDay,\\r\\n            Description: description\\r\\n        };\\r\\n        debugger;\\r\\n        var batchModel = {\\r\\n            LeaveInfoBatchAction: 0,\\r\\n            UsersIdList: selectedUsersIds,\\r\\n            LeaveTypesIdList: selectedLeaveTypesIds,\\r\\n            ApplyDetails: details\\r\\n        };\\r\\n        SW.executeAPI(\u0027POST\u0027, \u0027v3/leave-periods/batch\u0027, null, batchModel).then(x =\u003e {\\r\\n            SW.Toastr.toastr_Success(\u0027Applied\u0027);\\r\\n            StopLoading();\\r\\n        }).catch(x =\u003e {\\r\\n            StopLoading();\\r\\n        });\\r\\n    }\\r\\n\\r\\n    function Delete(e) {\\r\\n        SetLoading();\\r\\n        var gridUsers = SW.getComponent(\u0027data\u0027);\\r\\n        var gridLeaveTypes = SW.getComponent(\u0027applyMassLeaveTypesGrid\u0027);\\r\\n        if (gridUsers \u0026\u0026 gridLeaveTypes) {\\r\\n            var selectedUsers = gridUsers.getSelectedRowKeys();\\r\\n            var selectedLeaveTypes = gridLeaveTypes.getSelectedRowKeys();\\r\\n        }\\r\\n        var untilDate = SW.getComponent(\u0027formMLTtoDate\u0027) != null ? SW.getComponent(\u0027formMLTtoDate\u0027).option(\u0027value\u0027) : null;\\r\\n        var fromDate = SW.getComponent(\u0027formMLTfromDate\u0027) != null ? SW.getComponent(\u0027formMLTfromDate\u0027).option(\u0027value\u0027) : null;\\r\\n        if (!untilDate || !fromDate) {\\r\\n            return SW.Toastr.toastr_Error(\u0027A field is missing\u0027);\\r\\n        }\\r\\n        if (selectedUsers.length == 0) {\\r\\n            return SW.Toastr.toastr_Error(\u0027No users selected\u0027);\\r\\n        }\\r\\n        if (selectedLeaveTypes.length == 0) {\\r\\n            return SW.Toastr.toastr_Error(\u0027No leave types selected\u0027);\\r\\n        }\\r\\n        var selectedUsersIds = [];\\r\\n        selectedUsers.forEach(\\r\\n            user =\u003e {\\r\\n                selectedUsersIds.push(user.UserId);\\r\\n            }\\r\\n        );\\r\\n        var selectedLeaveTypesIds = [];\\r\\n        selectedLeaveTypes.forEach(\\r\\n            leaveType =\u003e {\\r\\n                selectedLeaveTypesIds.push(leaveType.Oid);\\r\\n            }\\r\\n        );\\r\\n        var details = {\\r\\n            FromDate: fromDate,\\r\\n            UntilDate: untilDate,\\r\\n        };\\r\\n        var batchModel = {\\r\\n            LeavePeriodBatchAction: \u0027DeleteMassLeaveType\u0027,\\r\\n            UsersIdList: selectedUsersIds,\\r\\n            LeaveTypesIdList: selectedLeaveTypesIds,\\r\\n            DeleteDetails: details\\r\\n        };\\r\\n        SW.executeAPI(\u0027POST\u0027, \u0027v3/leave-periods/batch\u0027, null, batchModel)\\r\\n        .then(x =\u003e {\\r\\n            SW.Toastr.toastr_Success(\u0027Deleted\u0027);\\r\\n            StopLoading();\\r\\n        }).catch(x=\u003e{\\r\\n            StopLoading();\\r\\n        });\\r\\n    }\\r\\n\\r\\n    function SetLoading() {\\r\\n        var grid = SW.getComponent(\u0027applyMassLeaveTypesGrid\u0027);\\r\\n        grid.option(\u0027disabled\u0027, true);\\r\\n        var form = SW.getComponent(\u0027formMLT\u0027);\\r\\n        form.option(\u0027disabled\u0027, true);\\r\\n        var buttonGroup = SW.getComponent(\u0027buttonGroup\u0027);\\r\\n        buttonGroup.option(\u0027disabled\u0027, true);\\r\\n    }\\r\\n\\r\\n    function StopLoading() {\\r\\n        var grid = SW.getComponent(\u0027applyMassLeaveTypesGrid\u0027);\\r\\n        grid.option(\u0027disabled\u0027, false);\\r\\n        var form = SW.getComponent(\u0027formMLT\u0027);\\r\\n        form.option(\u0027disabled\u0027, false);\\r\\n        var buttonGroup = SW.getComponent(\u0027buttonGroup\u0027);\\r\\n        buttonGroup.option(\u0027disabled\u0027, false);\\r\\n    }\\r\\n}\"}",
+      "DashboardDefinitionId": "070349e2-40d5-4269-8089-7b4b74e6ec11"
+    },
+    {
+      "Id": "42b7ff46-44e0-44d6-8288-ee295d98417d",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":30,\"WidgetYPosition\":15,\"WidgetRows\":3,\"WidgetColumns\":16,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"items\": [\r\n        {\r\n            \"itemType\": \"group\",\r\n            \"caption\": \" \",\r\n            \"items\": [\r\n                {}\r\n            ]\r\n        }\r\n    ]\r\n}",
+      "DashboardDefinitionId": "070349e2-40d5-4269-8089-7b4b74e6ec11"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}

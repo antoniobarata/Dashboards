@@ -1,0 +1,37 @@
+﻿{
+  "DashboardDefinitionRoles": [],
+  "Id": "d1509338-a8c1-4ad3-8c6c-0db1d21b79ec",
+  "Name": "Integrators",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "integrators",
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "dd97bf34-6cd2-4f22-a9c3-409ab375c965",
+      "Name": "Current Integrators Available",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Click to see and edit the settings\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":16,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"select Oid, Name, TableName, KeyColumnName, ConfigurationMetadata from Integrator\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"columns\":[\"Name\"],\"onRowClick\":\"function(e){\\n    var dataGrid = e.component;\\n    var id = '5f54482d-789a-4eca-b349-126e2a5dfa49';\\n    debugger;\\n    if(e.data.ConfigurationMetadata){\\n        var config = JSON.parse(e.data.ConfigurationMetadata);\\n        if (config.customWorkspaceConfigurationId && config.customWorkspaceConfigurationId != \\\"\\\"){\\n            SkillsWorkflow.genericPopup('integrators', [{ Id: config.customWorkspaceConfigurationId, Title: e.data.Name }], dataGrid, 700, 800, false);\\n            return;\\n        }\\n    }\\n    SkillsWorkflow.genericPopup('integrators', [{ Id: id, Title: e.data.Name }], dataGrid, 700, 800, false);\\n}\",\"height\":\"100%\",\"width\":\"100%\",\"dataSource\":{\"load\":\"function(){\\r\\n    return SW.executeAPI(\\\"GET\\\", \\\"integrators\\\").then(x => {\\r\\n        return x;\\r\\n    });\\r\\n}\"}}",
+      "DashboardDefinitionId": "d1509338-a8c1-4ad3-8c6c-0db1d21b79ec"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 3,
+  "Default": true
+}
