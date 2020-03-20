@@ -33,7 +33,7 @@ namespace Updater
                 templatesAggregator.AppendLine(fileContent);
                 templatesAggregator.Append(",");
             }
-            templatesAggregator.Remove(templatesAggregator.Length - 2, 1);
+            templatesAggregator.Remove(templatesAggregator.Length - 1, 1);
             templatesAggregator.AppendLine(@"  ]");
             templatesAggregator.AppendLine(@"}");
             return templatesAggregator.ToString();
