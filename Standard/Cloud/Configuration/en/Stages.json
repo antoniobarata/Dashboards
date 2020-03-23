@@ -7,7 +7,7 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": "workflowstate",
-  "DocumentsConfiguration": "{\r\n} ",
+  "DocumentsConfiguration": "[]",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
@@ -18,7 +18,7 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]} ,\"showSubTitle\":false,\"showTitle\":false} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT ws.[Oid]\\r\\n      ,ws.[Name]\\r\\n      ,doc.[Name] as \u0027Document\u0027\\r\\n      ,wst.[Name] as \u0027WorkflowStateType\u0027\\r\\n      ,ws.[Color]\\r\\n      ,ws.[Order]\\r\\n      ,ws.[Delayed]\\r\\n      ,ws.[IsVisibleToClient]\\r\\n  FROM \\r\\n    [WorkflowState] as ws,\\r\\n    [Document] as doc,\\r\\n    [WorkflowStateType] as wst\\r\\n  WHERE \\r\\n    ws.[Document] = doc.[Oid] AND\\r\\n    ws.[WorkflowStateType] = wst.[Oid] \",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]}} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT ws.[Oid]\\r\\n      ,ws.[Name]\\r\\n      ,doc.[Name] as \u0027Document\u0027\\r\\n      ,wst.[Name] as \u0027WorkflowStateType\u0027\\r\\n      ,ws.[Color]\\r\\n      ,ws.[Order]\\r\\n      ,ws.[Delayed]\\r\\n      ,ws.[IsVisibleToClient]\\r\\n  FROM \\r\\n    [WorkflowState] as ws,\\r\\n    [Document] as doc,\\r\\n    [WorkflowStateType] as wst\\r\\n  WHERE \\r\\n    ws.[Document] = doc.[Oid] AND\\r\\n    ws.[WorkflowStateType] = wst.[Oid] \",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -32,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 6,
+  "Version": 7,
   "Default": true
 }

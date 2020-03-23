@@ -7,7 +7,7 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": "company",
-  "DocumentsConfiguration": "{}",
+  "DocumentsConfiguration": "[]",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }
