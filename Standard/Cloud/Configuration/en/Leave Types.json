@@ -1,0 +1,37 @@
+﻿{
+  "DashboardDefinitionRoles": [],
+  "Id": "1cb6c6e6-ce8c-40a6-9ee7-69b101f3d95a",
+  "Name": "Leave Types",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "leavetype",
+  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "78b4b7a7-2b04-4240-b6b9-41172ab61ff2",
+      "Name": "Leaves",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tOid,\\r\\n\\t\\t[Name],\\r\\n\\t\\tExpirationDate,\\r\\n\\t\\t[Default],\\r\\n\\t\\tActive,\\r\\n\\t\\tLeavesInHours,\\r\\n\\t\\tAllowHalfDays,\\r\\n\\t\\tTotalVacationDays,\\r\\n\\t\\tHRApprovalOnly\\r\\nfrom UserVacationType\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": null,
+      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) \\r\\n    SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027leavetype\u0027);\\r\\n}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        {\r\n            \"dataField\": \"ExpirationDate\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"function(value) { return SW.defaultDisplayFormat(value) }\"\r\n        },\r\n        \"Default\",\r\n        \"Active\",\r\n        \"LeavesInHours\",\r\n        \"AllowHalfDays\",\r\n        \"TotalVacationDays\",\r\n        \"HRApprovalOnly\"\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: \u0027after\u0027,             \\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: \u0027after\u0027,             \\r\\n            widget: \u0027dxButton\u0027,             \\r\\n            options: { \\r\\n                icon: \u0027plus\u0027, onClick: function() {                \\r\\n                SkillsWorkflow.genericNew(\u0027leavetype\u0027,450,800);            \\r\\n                }        \\r\\n            }    \\r\\n        });     \\r\\n                var dataGrid = e.component;                \\r\\n                e.toolbarOptions.items.unshift({             \\r\\n                    location: \u0027after\u0027,             \\r\\n                    widget: \u0027dxButton\u0027,             \\r\\n                    options: { icon: \u0027fal fa-times\u0027, onClick: function() {                \\r\\n                        SW.genericDelete(\u0027leavetype\u0027, dataGrid);            \\r\\n                        }        \\r\\n                    }    \\r\\n                });\\r\\n    }\"\r\n}",
+      "DashboardDefinitionId": "1cb6c6e6-ce8c-40a6-9ee7-69b101f3d95a"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 7,
+  "Default": true
+}
