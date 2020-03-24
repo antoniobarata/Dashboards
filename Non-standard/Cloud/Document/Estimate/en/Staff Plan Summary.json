@@ -11,6 +11,56 @@
       "AccessRoleName": "Department Lead Profile"
     },
     {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
       "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
       "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
       "AccessRoleName": "Support Profile"
@@ -21,7 +71,12 @@
       "AccessRoleName": "Finance Profile"
     },
     {
-      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
       "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
       "AccessRoleName": "Finance Confidential Profile"
     },
@@ -36,9 +91,109 @@
       "AccessRoleName": "Finance Confidential Profile"
     },
     {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Support Profile"
+    },
+    {
       "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
       "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
       "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
     },
     {
       "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
@@ -56,7 +211,152 @@
       "AccessRoleName": "Department Lead Profile"
     },
     {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
       "AccessRoleId": "4a6dc5d0-7bc1-4501-9cf3-e49288a8e5f1",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "ba424738-30fc-4359-9b1e-d5a1d6a0a989",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Group Account Director Profile"
+    },
+    {
+      "AccessRoleId": "e217ad1e-2d75-4f54-ba5d-c560ec6b4301",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "HR Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
       "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
       "AccessRoleName": "Finance Confidential Profile"
     },
@@ -69,6 +369,56 @@
       "AccessRoleId": "adebf70c-0dab-41d1-8ee8-e78bcc9b09f7",
       "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
       "AccessRoleName": "Account Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "c97bd32b-79cc-434f-8f24-d7356fde3c18",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Support Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "3473bd4d-a316-40c2-a4ca-812bd34ba246",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Confidential Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
+    },
+    {
+      "AccessRoleId": "5c2e7024-eaf4-43fa-96d3-9ad61b011657",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Finance Profile"
+    },
+    {
+      "AccessRoleId": "02f354ae-dbdc-4f27-be5d-8ad944e62ba6",
+      "DashboardDefinitionId": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
+      "AccessRoleName": "Department Lead Profile"
     }
   ],
   "Id": "7b4ca7ed-2c8d-4b39-9f6e-b59110ac742a",
@@ -84,14 +434,14 @@
   ],
   "DashboardDefinitionComponents": [
     {
-      "Id": "5e78f51a-2607-40d1-aedc-8ee2383446c7",
+      "Id": "4686dbd2-777a-403f-8087-37f33e894b42",
       "Name": "Deliverables Staffing",
       "Active": true,
       "UseQuery": false,
       "Query": null,
       "Size": 12,
       "Order": 4,
-      "Parameters": "[{\"WidgetSubTitle\":\"Hours and Fee per Typology Group\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  IIF(eit.[Order] < 10, concat('0', eit.[Order], '. ', eit.[Description]), concat(eit.[Order], '. ', eit.[Description])) as Deliverable,\\n        art.[Name] as [Service],\\n        utg.[Name] as TypologyGroup,\\n        usr.[Name] as [User],\\n\\t\\tdiv.[Name] as Division,\\n        dep.[Name] as Department,\\n        edt.[Hours] as ContractedTime,\\n\\t\\tcg.[Name] as ClientGroup,\\n\\t\\tcc.[Name] as ClientName,\\n\\t\\tc.[Name] as FeeProposal,\\n\\t\\test.[Name] as EstimateName,\\n\\t\\tIIF(n.RoleId is not null, edt.UnitPriceCost, null) as Rate,\\n\\t\\tIIF(n.RoleId is not null, edt.[Rate], null) as TableRate,\\n        edt.ValueWithoutVatIncome as TotalDeliverable,\\n\\t\\tIIF(n.RoleId is not null, edt.UnitPriceCost * edt.[Hours], null) as Total,\\n\\t\\tcast(est.[Date] as Date) as StartDate,\\n\\t\\tcast(est.[Expiration] as Date) as EndDate\\nfrom    Estimate est\\tleft outer join CommercialClient cc on cc.Oid = est.Client\\n\\t\\t\\t\\t\\t\\tleft outer join [Contract] c on c.Oid = est.[Contract]\\n\\t\\t\\t\\t\\t\\tleft outer join ClientGroup cg on cg.Oid = cc.ClientGroup,\\n\\t\\t\\t\\t\\t\\t\\n\\t\\tEstimateItem eit, \\n\\t\\tArticle art,\\n        EstimateItemDetail edt\\tleft outer join Department dep on dep.Oid = edt.Department\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Division div on div.Oid = dep.Division\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join [User] usr on usr.Oid = edt.[User]\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join UserTypologyGroup utg on utg.Oid = edt.UserTypologyGroup\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Analytics.[Authorization](@CurrentUserId) n on (n.RoleName = 'RateCardRead')\\nwhere   eit.Estimate = est.Oid and\\n        edt.EstimateItem = eit.Oid and\\n        edt.[Type] = 2 and\\n        art.Oid = eit.Article and\\n        est.Oid = @EstimateId\\norder by eit.[Order]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[]}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Hours and Fee per Typology Group\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#efefef\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  IIF(eit.[Order] < 10, concat('0', eit.[Order], '. ', eit.[Description]), concat(eit.[Order], '. ', eit.[Description])) as Deliverable,\\n        art.[Name] as [Service],\\n        utg.[Name] as TypologyGroup,\\n        usr.[Name] as [User],\\n\\t\\tdiv.[Name] as Division,\\n        dep.[Name] as Department,\\n        edt.[Hours] as ContractedTime,\\n\\t\\tcg.[Name] as ClientGroup,\\n\\t\\tcc.[Name] as ClientName,\\n\\t\\tc.[Name] as FeeProposal,\\n\\t\\test.[Name] as EstimateName,\\n\\t\\tIIF(n.RoleId is not null, edt.UnitPriceCost, null) as Rate,\\n\\t\\tIIF(n.RoleId is not null, edt.[Rate], null) as TableRate,\\n        edt.ValueWithoutVatIncome as TotalDeliverable,\\n\\t\\tIIF(n.RoleId is not null, edt.UnitPriceCost * edt.[Hours], null) as Total,\\n\\t\\tcast(est.[Date] as Date) as StartDate,\\n\\t\\tcast(est.[Expiration] as Date) as EndDate\\nfrom    Estimate est\\tleft outer join CommercialClient cc on cc.Oid = est.Client\\n\\t\\t\\t\\t\\t\\tleft outer join [Contract] c on c.Oid = est.[Contract]\\n\\t\\t\\t\\t\\t\\tleft outer join ClientGroup cg on cg.Oid = cc.ClientGroup,\\n\\t\\t\\t\\t\\t\\t\\n\\t\\tEstimateItem eit, \\n\\t\\tArticle art,\\n        EstimateItemDetail edt\\tleft outer join Department dep on dep.Oid = edt.Department\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Division div on div.Oid = dep.Division\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join [User] usr on usr.Oid = edt.[User]\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join UserTypologyGroup utg on utg.Oid = edt.UserTypologyGroup\\n\\t\\t\\t\\t\\t\\t\\t\\tleft outer join Analytics.[Authorization](@CurrentUserId) n on (n.RoleName = 'RateCardRead')\\nwhere   eit.Estimate = est.Oid and\\n        edt.EstimateItem = eit.Oid and\\n        edt.[Type] = 2 and\\n        art.Oid = eit.Article and\\n        est.Oid = @EstimateId\\norder by eit.[Order]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
         "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
         "Name": "Generic Dashboard",
@@ -105,6 +455,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 3,
+  "Version": 4,
   "Default": false
 }
