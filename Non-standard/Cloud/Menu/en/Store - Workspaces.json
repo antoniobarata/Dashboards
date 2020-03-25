@@ -1,0 +1,73 @@
+﻿{
+    "DashboardDefinitionRoles": [],
+    "Id": "02d2a69c-39c6-4894-b77f-9c148a28ea91",
+    "Name": "Store - Workspaces",
+    "Active": true,
+    "Location": 0,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": null,
+    "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+            "Id": "b9560283-68c0-4044-af9c-5b42b2e0517c",
+            "Name": "Latest Commits",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 5,
+            "Order": 2,
+            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":28,\"WidgetYPosition\":0,\"WidgetRows\":11,\"WidgetColumns\":20,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"height\":\"300\",\"scrolling\":{\"mode\":\"virtual\",\"showScrollbar\":\"onHover\"},\"columnAutoWidth\":false,\"dataSource\":{\"load\":\"function(){            var daysAgo = 30;            var date = new Date(Date.now() - daysAgo * 24 * 60 * 60 * 1000);            var auth = 'token {githubToken}';            return SkillsWorkflow.Github.getCommits(auth, null, null, null, date).then(result => {return Promise.resolve(result)}            );        }\"},\"stateStoring\":{\"enabled\":false},\"columns\":[{\"dataField\":\"\",\"caption\":\"\",\"cellTemplate\":\"function(e, i){                if(i.data.author != null){                    SkillsWorkflow.Utils.setExternalImage(e, 'small', i.data.author.avatar_url);                }else{                    SkillsWorkflow.Utils.setExternalImage(e, 'small', 'https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png');                 }                   }\",\"width\":38,\"alignment\":\"center\"},{\"dataField\":\"commit.author.name\",\"caption\":\"Name\"},{\"caption\":\"Time Ago\",\"alignment\":\"center\",\"calculateCellValue\":\"function(data){                return SkillsWorkflow.Utils.timeAgo(data.commit.author.date);            }\"},{\"dataField\":\"commit.author.date\",\"dataType\":\"date\",\"caption\":\"Date\",\"alignment\":\"center\"},{\"dataField\":\"commit.message\",\"caption\":\"Message\"}],\"selection\":{\"mode\":\"none\"}}",
+            "DashboardDefinitionId": "02d2a69c-39c6-4894-b77f-9c148a28ea91"
+        },
+        {
+            "Id": "0ba1086a-29a6-4d30-89b3-c1ce7fa0efa1",
+            "Name": "Available Workspaces",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 7,
+            "Order": 1,
+            "Parameters": "[\n    {\n        \"WidgetSubTitle\": \"Looking for a workspace?\",\n        \"WidgetType\": \"grid\",\n        \"WidgetFilterField\": \"\",\n        \"WidgetColor\": \"#ffffff\",\n        \"WidgetFrameStyle\": {},\n        \"WidgetXPosition\": 0,\n        \"WidgetYPosition\": 0,\n        \"WidgetRows\": 25,\n        \"WidgetColumns\": 28,\n        \"WidgetHeader\": {\n            \"showTitle\": true,\n            \"showSubTitle\": true,\n            \"WidgetMetrics\": {\n                \"visible\": false,\n                \"Metrics\": []\n            },\n            \"WidgetPeriodChooser\": {\n                \"visible\": false,\n                \"type\": \"\",\n                \"startDate\": null,\n                \"endDate\": null\n            }\n        },\n        \"WidgetDataSources\": {\n            \"main\": {\n                \"type\": \"queryempty\",\n                \"value\": \"\",\n                \"mapping\": \"\"\n            }\n        },\n        \"Filters\": {},\n        \"QueryConfiguration\": {\n            \"PreviousPeriod\": {\n                \"Show\": false,\n                \"KeyFieldName\": \"\",\n                \"Type\": 0\n            },\n            \"RequiredFilters\": []\n        }\n    }\n]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\n    \"dataSource\": {\n        \"load\": \"function(e){\\n    var paths = [\\n        'Standard/Cloud/Configuration/en/',\\n        'Standard/Cloud/Document/Transition/en/',\\n        'Standard/Cloud/Document/Type/en/',\\n        'Standard/Cloud/Document/User/en/',\\n        'Standard/Cloud/Document/Workflow/en/',\\n        'Standard/Cloud/Document/WorkflowState/en/',\\n        'Standard/Cloud/Popup/Integrations/en/',\\n        'Standard/Cloud/Popup/LeaveTypes/en/',\\n        'Standard/Cloud/Popup/Templates/en/',\\n        'Standard/Cloud/Popup/User/en/',\\n        'Non-standard/Cloud/Menu/en/'        \\n    ];\\n    var auth = 'token {githubToken}';\\n    return SkillsWorkflow.Github.getAllDashboardsFrom(auth, paths).then(result => { return Promise.resolve(result)})\\n}\"\n    },\n    \"grouping\": {\n        \"autoExpandAll\": true\n    },\n    \"scrolling\": {\n        \"mode\": \"virtual\",\n        \"showScrollbar\": \"onHover\"\n    },\n    \"stateStoring\": {\n        \"enabled\": false\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"\",\n            \"caption\": \"\",\n            \"cellTemplate\": \"function(e, i) {SkillsWorkflow.showDocumentImage(e, 'medium', i.data.Name.slice(0,-5), i.data.Name.slice(0,-5));}\",\n            \"width\": 38\n        },\n        {\n            \"dataField\": \"name\",\n            \"caption\": \"Name\",\n            \"calculateCellValue\": \"function(data) {return data.Name.slice(0,-5);}\"\n        },\n        {\n            \"dataField\": \"path\",\n            \"caption\": \"Language\",\n            \"calculateCellValue\": \"function(data) {if(data.Path.includes('/en/')){return 'en';} if(data.Path.includes('/pt-br/')){return 'pt-br';}if(data.Path.includes('/es/')){return 'es';}}\",\n            \"alignment\": \"center\"\n        },\n        {\n            \"dataField\": \"path\",\n            \"caption\": \"Entity\",\n            \"calculateCellValue\": \"function(data) { if(data.Path.includes('Document/')){ var p = data.Path.split('/'); return p[1]; } return ''; }\",\n            \"alignment\": \"center\"\n        },\n        {\n            \"caption\": \"\",\n            \"width\": 38,\n            \"alignment\": \"center\",\n            \"cellTemplate\": \"function(e, i){    if(i.data.ModifiedBy.ImageUrl != null){        SkillsWorkflow.Utils.setExternalImage(e, 'small', i.data.ModifiedBy.ImageUrl);} else {SkillsWorkflow.Utils.setExternalImage(e, 'small', 'https:/'+'/cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png');}}\"\n        },\n        {\n            \"dataField\": \"ModifiedBy\",\n            \"caption\": \"Modified By\",\n            \"alignment\": \"left\",\n            \"calculateCellValue\": \"function(data) {return data.ModifiedBy.Name;}\"\n        },\n        {\n            \"dataField\": \"ModifiedOn\",\n            \"caption\": \"Modified On\",\n            \"dataType\": \"date\",\n            \"alignment\": \"center\"\n        },\n        {\n            \"dataField\": \"ModifiedOn\",\n            \"caption\": \"Days Ago\",\n            \"dataType\": \"int\",\n            \"calculateCellValue\": \"function(data) {var date = data.Commits[0].commit.author.date;var result = SkillsWorkflow.Utils.timeAgo(date, 'days');return result;}\",\n            \"cellTemplate\": \"function(e, i) { SkillsWorkflow.setRAG(e, i.value, i.value >= 365, i.value > 30 && i.value<365, i.value <= 30, true);}\",\n            \"alignment\": \"center\"\n        },\n        {\n            \"dataField\": \"path\",\n            \"caption\": \"Location\",\n            \"calculateCellValue\": \"function(data){if(data.Path.includes('Menu/')){ return 'Menu'; }; if(data.Path.includes('Configuration/')){ return 'Configuration';}; if(data.Path.includes('Document/')){ return 'Document';}}\",\n            \"groupCellTemplate\": \"function(e, i) { h=document.createElement('span'); var ht=' ' + i.text + ' ('+i.data.aggregates[0]+')'; h.innerHTML = ht;e.append(h);}\",\n            \"groupIndex\": 0\n        }\n    ],\n    \"summary\": {\n        \"groupItems\": [\n            {\n                \"column\": \"Location\",\n                \"summaryType\": \"count\",\n                \"displayFormat\": \"{0}\",\n                \"showInGroupFooter\": false,\n                \"alignByColumn\": true\n            }\n        ]\n    },\n    \"onToolbarPreparing\": \"function(e) { var dataGrid = e.component;  e.toolbarOptions.items.unshift({ location: 'after', widget: 'dxButton', options: {icon: 'fas fa-file-download', hint: 'Import Selected',onClick: function(data) {data.component.option('icon','fas fa-spinner fa-spin');dataGrid.option('disabled', true);var selectedDashboards = dataGrid.getSelectedRowKeys();var auth = 'token {githubToken}';SkillsWorkflow.Github.importDashboards(auth, selectedDashboards).then(result => {dataGrid.option('disabled', false);data.component.option('icon','fas fa-file-download');})}}});}\",\n    \"height\": \"600px\",\n    \"masterDetail\": {\n        \"template\": \"function template(detailElement, detailInfo){\\n    \\n}\"\n    }\n}",
+            "DashboardDefinitionId": "02d2a69c-39c6-4894-b77f-9c148a28ea91"
+        },
+        {
+            "Id": "da6d7ac7-2807-40c7-80e0-fac0a8dc9d88",
+            "Name": "Most changed",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 5,
+            "Order": 2,
+            "Parameters": "[{\"WidgetSubTitle\":\"Top 10\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":28,\"WidgetYPosition\":11,\"WidgetRows\":14,\"WidgetColumns\":20,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\r\n    \"dataSource\": {\r\n        \"load\": \"function(e){\r\n\r\n                   var paths = [\r\n        'Standard/Cloud/Configuration/en/',\r\n        'Standard/Cloud/Document/Transition/en/',\r\n        'Standard/Cloud/Document/Type/en/',\r\n        'Standard/Cloud/Document/User/en/',\r\n        'Standard/Cloud/Document/Workflow/en/',\r\n        'Standard/Cloud/Document/WorkflowState/en/',\r\n        'Standard/Cloud/Popup/Integrations/en/',\r\n        'Standard/Cloud/Popup/LeaveTypes/en/',\r\n        'Standard/Cloud/Popup/Templates/en/',\r\n        'Standard/Cloud/Popup/User/en/',\r\n        'Non-standard/Cloud/Menu/en/'\r\n                ];\r\n\r\n                    var auth = 'token {githubToken}';\r\n\t\t\t\t\treturn SkillsWorkflow.Github.getAllDashboardsFrom(auth, paths).then(\r\n                        result => {\r\n                            const top = 10;\r\n                            result = result.sort((a, b) => b.Changes-a.Changes);\r\n                            result = result.slice(0, top);\r\n                            return Promise.resolve(result)\r\n        }\r\n                    )\r\n    }\"\r\n},\r\n\"size\": {\r\n    \"height\": 300\r\n},\r\n\"type\": \"doughnut\",\r\n\"series\": [\r\n    {\r\n        \"argumentField\": \"Name\",\r\n        \"valueField\": \"Changes\",\r\n        \"label\": {\r\n            \"visible\": true,\r\n            \"font\": {\r\n                \"size\": 15\r\n            },\r\n            \"connector\": {\r\n                \"visible\": true,\r\n                \"width\": 0.5\r\n            },\r\n            \"position\": \"columns\",\r\n            \"customizeText\": \"function(arg) {\r\n                    return arg.valueText;\r\n        }\"\r\n    }\r\n}\r\n],\r\n\"commonSeriesSettings\": {\r\n\"label\": {\r\n    \"visible\": false,\r\n    \"format\": \"fixedPoint\",\r\n    \"connector\": {\r\n        \"visible\": true,\r\n        \"width\": 1\r\n    }\r\n}\r\n},\r\n\"tooltip\": {\r\n\"enabled\": true\r\n},\r\n\"legend\": {\r\n\"visible\": true,\r\n\"horizontalAlignment\": \"left\",\r\n\"verticalAlignment\": \"middle\",\r\n\"itemTextPosition\": \"right\",\r\n\"paddingLeftRight\": 0,\r\n\"font\": {\r\n    \"size\": 10\r\n}\r\n}\r\n}",
+            "DashboardDefinitionId": "02d2a69c-39c6-4894-b77f-9c148a28ea91"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 7,
+    "Default": false
+}
