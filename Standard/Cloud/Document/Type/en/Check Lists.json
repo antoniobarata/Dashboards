@@ -1,0 +1,37 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "da213f99-6031-4ca5-bab8-56040a5cf580",
+  "Name": "Check List",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "jobtype",
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "00b46d9b-7396-4874-aeac-54be648f7e46",
+      "Name": "creation",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":35,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"jobtype\",\"entityToCreate\":\"checklist\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'job-types/' + entityId + '/job-type-checklists';\\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'job-type-checklists'; \\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        JobTypeId: entityId,\\n        Name: data.Name,\\n        Order: data.Order\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, entityId){\\n    return 'job-type-checklists/' + data.Id; \\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    return {\\n        JobTypeId: newData[\\\"JobTypeId\\\"] == null ? data.JobTypeId : newData[\\\"JobTypeId\\\"],\\n        Name: newData[\\\"Name\\\"] == null ? data.Name : newData[\\\"Name\\\"],\\n        Order: newData[\\\"Order\\\"] == null ? data.Order : newData[\\\"Order\\\"]\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'job-type-checklists/' + data.Id \\n}\"},\"grid\":{\"properties\":{\"height\":\"100%\"}},\"columns\":\"function(e) {\\r\\n    return [{\\r\\n        dataField: \\\"Name\\\",\\r\\n        editorType: \\\"dxTextBox\\\",\\r\\n        validationRules: [{ type: \\\"required\\\" }]\\r\\n    },\\r\\n    {\\r\\n        dataField: \\\"Order\\\",\\r\\n        editorType: \\\"dxNumberBox\\\"\\r\\n\\r\\n    }]\\r\\n}\"}",
+      "DashboardDefinitionId": "da213f99-6031-4ca5-bab8-56040a5cf580"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}
