@@ -1,37 +1,37 @@
 ﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "66cc558e-54b0-446e-abba-d4db8b12ded7",
-    "Name": "Market Groups",
-    "Active": true,
-    "Location": 2,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentTypeName": "marketgroup",
-    "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"update\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {} \r\n            } ,\r\n            \"create\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": {} \r\n            } ,\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    } \r\n                ]\r\n            } ,\r\n            \"remove\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            } ,\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            } \r\n        } ,\r\n        \"layout\": {\r\n            \"create\": {} ,\r\n            \"read\": {} ,\r\n            \"patch\": {} \r\n        } ,\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        } ,\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        } ,\r\n        \"fields\": []\r\n    } \r\n]",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "a330f0ab-4e78-43e1-bd3f-4b3d09acceef",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  mg.Oid, mg.[Name]\\r\\nFROM    MarketGroup mg\\r\\nWHERE   mg.GCRecord IS NULL\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[]} } ]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027marketgroup\u0027);} \",\"selection\":{\"mode\":\"multiple\"} ,\"columns\":[{\"dataField\":\"Oid\",\"visible\":false} ,\"Name\"],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027        } );        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {            SkillsWorkflow.genericNew(\u0027marketgroup\u0027);                           } }         } );        var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027marketgroup\u0027, dataGrid);                }             }         } );    } \",\"entity\":\"marketgroup\"} ",
-            "DashboardDefinitionId": "66cc558e-54b0-446e-abba-d4db8b12ded7"
-        }
-    ],
-    "QueryText": "",
-    "UseStore": false,
-    "StoreEntity": null,
-    "Version": 4,
-    "Default": true
+  "DashboardDefinitionRoles": [],
+  "Id": "66cc558e-54b0-446e-abba-d4db8b12ded7",
+  "Name": "Market Groups",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "marketgroup",
+  "DocumentsConfiguration": "[]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "a330f0ab-4e78-43e1-bd3f-4b3d09acceef",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  mg.Oid, mg.[Name]\\r\\nFROM    MarketGroup mg\\r\\nWHERE   mg.GCRecord IS NULL\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[]} } ]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027marketgroup\u0027);} \",\"selection\":{\"mode\":\"multiple\"} ,\"columns\":[{\"dataField\":\"Oid\",\"visible\":false} ,\"Name\"],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027        } );        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {            SkillsWorkflow.genericNew(\u0027marketgroup\u0027);                           } }         } );        var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027marketgroup\u0027, dataGrid);                }             }         } );    } \",\"entity\":\"marketgroup\"} ",
+      "DashboardDefinitionId": "66cc558e-54b0-446e-abba-d4db8b12ded7"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 5,
+  "Default": true
 }

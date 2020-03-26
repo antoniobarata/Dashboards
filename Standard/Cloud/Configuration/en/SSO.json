@@ -1,55 +1,55 @@
 {
-    "DashboardDefinitionRoles": [],
-    "Id": "15166990-3b37-45ed-bb52-7725b743d48c",
-    "Name": "SSO",
-    "Active": true,
-    "Location": 2,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentTypeName": null,
-    "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "f7bd257f-69af-4a5b-8d32-d21a6cefd0d9",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":8,\"WidgetColumns\":19,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\n    \"items\": [\n        {\n            \"template\": \"<input type='file' id='fileUpload'/>\"\n        },\n        {\n            \"dataField\": \"name\",\n            \"label\": {\n                \"text\": \"Name\"\n            }\n        },\n        {\n            \"dataField\": \"entityId\",\n            \"label\": {\n                \"text\": \"Entity Id\"\n            }\n        },\n        {\n            \"dataField\": \"ssoServiceUrl\",\n            \"label\": {\n                \"text\": \"SSO Service Url\"\n            }\n        },\n        {\n            \"dataField\": \"certificate\",\n            \"editorType\": \"dxTextArea\",\n            \"editorOptions\":{\n                \"height\":100\n            },\n            \"label\": {\n                \"text\": \"Certificate\"\n            }\n        }\n    ],\n    \"onInitialized\": \"function(e){SW.saveComponent(e, 'form')}\"\n}",
-            "DashboardDefinitionId": "15166990-3b37-45ed-bb52-7725b743d48c"
-        },
-        {
-            "Id": "2913c372-865c-4c65-b8c8-e30ad2dd34be",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":19,\"WidgetYPosition\":0,\"WidgetRows\":2,\"WidgetColumns\":5,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\"icon\":\"upload\",\"text\":\"\",\"onClick\":\"function(e) {\\n    {\\n        if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {\\n            SW.Toastr.toastr_Error('The File APIs are not fully supported in this browser.');\\n            return;\\n        }\\n        var input = document.getElementById(\\\"fileUpload\\\");\\n        if (!input) {\\n            SW.Toastr.toastr_Error(\\\"Um, couldn't find the fileinput element.\\\");\\n        }\\n        else if (!input.files) {\\n            SW.Toastr.toastr_Error(\\\"This browser doesn't seem to support the `files` property of file inputs.\\\");\\n        }\\n        else if (!input.files[0]) {\\n            SW.Toastr.toastr_Warning(\\\"Please select a file to upload.\\\");\\n        }\\n        else {\\n\\n            var file = input.files[0];\\n            var fr = new FileReader();\\n\\n            if (file.type != 'text/xml') { return SW.Toastr.toastr_Error('The selected file is not a XML file.')}\\n            fr.onload = receivedText;\\n            fr.readAsText(file);\\n\\n        }\\n    }\\n    function receivedText(file) {\\n        var parser = new DOMParser();\\n        var xmlDoc = parser.parseFromString(fr.result, \\\"text/xml\\\");\\n        var dataJson = xmlToJson(xmlDoc);\\n                \\n        var form = SW.getComponent('form');\\n        \\n        var entityId = '';\\n        var ssoServiceUrl = '';\\n        var certificate = '';\\n\\n        if (xmlDoc.getElementsByTagName('md:EntityDescriptor').length > 0 && dataJson['md:EntityDescriptor']['md:IDPSSODescriptor']) {\\n            entityId = xmlDoc.getElementsByTagName('md:EntityDescriptor')[0].getAttribute('entityID');\\n            ssoServiceUrl = xmlDoc.getElementsByTagName('md:SingleSignOnService')[0].getAttribute('Location');\\n            certificate = dataJson['md:EntityDescriptor']['md:IDPSSODescriptor']['md:KeyDescriptor']['ds:KeyInfo']['ds:X509Data']['ds:X509Certificate']['#text'];\\n            \\n        }\\n        if (xmlDoc.getElementsByTagName('EntityDescriptor').length > 0 && dataJson.EntityDescriptor.IDPSSODescriptor) {\\n            entityId = xmlDoc.getElementsByTagName('EntityDescriptor')[0].getAttribute('entityID');\\n            ssoServiceUrl = xmlDoc.getElementsByTagName('SingleSignOnService')[0].getAttribute('Location');\\n            if (Array.isArray(dataJson.EntityDescriptor.IDPSSODescriptor.KeyDescriptor)){\\n                certificate = dataJson.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.filter(x => { return x[\\\"@attributes\\\"].use == 'signing'; })[0].KeyInfo.X509Data.X509Certificate['#text'];\\n            }\\n            else\\n            {\\n                certificate = dataJson.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.KeyInfo.X509Data.X509Certificate['#text'];\\n            }\\n        }\\n\\n        form.component.updateData('entityId',entityId);\\n        form.component.updateData('ssoServiceUrl', ssoServiceUrl);\\n        form.component.updateData('certificate', certificate);\\n        var host = window.location.host;\\n        host = host.substring(0, host.indexOf('.')).toUpperCase() + ' SSO';\\n        form.component.updateData('name', host);\\n\\n        SW.Toastr.toastr_Success('File uploaded.')\\n\\n    }\\n\\n    function xmlToJson(xml) {\\n        var obj = {};\\n\\n        if (xml.nodeType == 1) { \\n            if (xml.attributes.length > 0) {\\n                obj[\\\"@attributes\\\"] = {};\\n                for (var j = 0; j < xml.attributes.length; j++) {\\n                    var attribute = xml.attributes.item(j);\\n                    obj[\\\"@attributes\\\"][attribute.nodeName] = attribute.nodeValue;\\n                }\\n            }\\n        } else if (xml.nodeType == 3) {\\n            obj = xml.nodeValue;\\n        }\\n\\n        if (xml.hasChildNodes()) {\\n            for (var i = 0; i < xml.childNodes.length; i++) {\\n                var item = xml.childNodes.item(i);\\n                var nodeName = item.nodeName;\\n                if (typeof (obj[nodeName]) == \\\"undefined\\\") {\\n                    obj[nodeName] = xmlToJson(item);\\n                } else {\\n                    if (typeof (obj[nodeName].push) == \\\"undefined\\\") {\\n                        var old = obj[nodeName];\\n                        obj[nodeName] = [];\\n                        obj[nodeName].push(old);\\n                    }\\n                    obj[nodeName].push(xmlToJson(item));\\n                }\\n            }\\n        }\\n        return obj;\\n    };\\n}\"}",
-            "DashboardDefinitionId": "15166990-3b37-45ed-bb52-7725b743d48c"
-        }
-    ],
-    "QueryText": "",
-    "UseStore": false,
-    "StoreEntity": null,
-    "Version": 1,
-    "Default": true
+  "DashboardDefinitionRoles": [],
+  "Id": "15166990-3b37-45ed-bb52-7725b743d48c",
+  "Name": "SSO",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": null,
+  "DocumentsConfiguration": "[]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "f7bd257f-69af-4a5b-8d32-d21a6cefd0d9",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":8,\"WidgetColumns\":19,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\n    \"items\": [\n        {\n            \"template\": \"<input type='file' id='fileUpload'/>\"\n        },\n        {\n            \"dataField\": \"name\",\n            \"label\": {\n                \"text\": \"Name\"\n            }\n        },\n        {\n            \"dataField\": \"entityId\",\n            \"label\": {\n                \"text\": \"Entity Id\"\n            }\n        },\n        {\n            \"dataField\": \"ssoServiceUrl\",\n            \"label\": {\n                \"text\": \"SSO Service Url\"\n            }\n        },\n        {\n            \"dataField\": \"certificate\",\n            \"editorType\": \"dxTextArea\",\n            \"editorOptions\":{\n                \"height\":100\n            },\n            \"label\": {\n                \"text\": \"Certificate\"\n            }\n        }\n    ],\n    \"onInitialized\": \"function(e){SW.saveComponent(e, 'form')}\"\n}",
+      "DashboardDefinitionId": "15166990-3b37-45ed-bb52-7725b743d48c"
+    },
+    {
+      "Id": "2913c372-865c-4c65-b8c8-e30ad2dd34be",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":19,\"WidgetYPosition\":0,\"WidgetRows\":2,\"WidgetColumns\":5,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"icon\":\"upload\",\"text\":\"\",\"onClick\":\"function(e) {\\n    {\\n        if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {\\n            SW.Toastr.toastr_Error('The File APIs are not fully supported in this browser.');\\n            return;\\n        }\\n        var input = document.getElementById(\\\"fileUpload\\\");\\n        if (!input) {\\n            SW.Toastr.toastr_Error(\\\"Um, couldn't find the fileinput element.\\\");\\n        }\\n        else if (!input.files) {\\n            SW.Toastr.toastr_Error(\\\"This browser doesn't seem to support the `files` property of file inputs.\\\");\\n        }\\n        else if (!input.files[0]) {\\n            SW.Toastr.toastr_Warning(\\\"Please select a file to upload.\\\");\\n        }\\n        else {\\n\\n            var file = input.files[0];\\n            var fr = new FileReader();\\n\\n            if (file.type != 'text/xml') { return SW.Toastr.toastr_Error('The selected file is not a XML file.')}\\n            fr.onload = receivedText;\\n            fr.readAsText(file);\\n\\n        }\\n    }\\n    function receivedText(file) {\\n        var parser = new DOMParser();\\n        var xmlDoc = parser.parseFromString(fr.result, \\\"text/xml\\\");\\n        var dataJson = xmlToJson(xmlDoc);\\n                \\n        var form = SW.getComponent('form');\\n        \\n        var entityId = '';\\n        var ssoServiceUrl = '';\\n        var certificate = '';\\n\\n        if (xmlDoc.getElementsByTagName('md:EntityDescriptor').length > 0 && dataJson['md:EntityDescriptor']['md:IDPSSODescriptor']) {\\n            entityId = xmlDoc.getElementsByTagName('md:EntityDescriptor')[0].getAttribute('entityID');\\n            ssoServiceUrl = xmlDoc.getElementsByTagName('md:SingleSignOnService')[0].getAttribute('Location');\\n            certificate = dataJson['md:EntityDescriptor']['md:IDPSSODescriptor']['md:KeyDescriptor']['ds:KeyInfo']['ds:X509Data']['ds:X509Certificate']['#text'];\\n            \\n        }\\n        if (xmlDoc.getElementsByTagName('EntityDescriptor').length > 0 && dataJson.EntityDescriptor.IDPSSODescriptor) {\\n            entityId = xmlDoc.getElementsByTagName('EntityDescriptor')[0].getAttribute('entityID');\\n            ssoServiceUrl = xmlDoc.getElementsByTagName('SingleSignOnService')[0].getAttribute('Location');\\n            if (Array.isArray(dataJson.EntityDescriptor.IDPSSODescriptor.KeyDescriptor)){\\n                certificate = dataJson.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.filter(x => { return x[\\\"@attributes\\\"].use == 'signing'; })[0].KeyInfo.X509Data.X509Certificate['#text'];\\n            }\\n            else\\n            {\\n                certificate = dataJson.EntityDescriptor.IDPSSODescriptor.KeyDescriptor.KeyInfo.X509Data.X509Certificate['#text'];\\n            }\\n        }\\n\\n        form.component.updateData('entityId',entityId);\\n        form.component.updateData('ssoServiceUrl', ssoServiceUrl);\\n        form.component.updateData('certificate', certificate);\\n        var host = window.location.host;\\n        host = host.substring(0, host.indexOf('.')).toUpperCase() + ' SSO';\\n        form.component.updateData('name', host);\\n\\n        SW.Toastr.toastr_Success('File uploaded.')\\n\\n    }\\n\\n    function xmlToJson(xml) {\\n        var obj = {};\\n\\n        if (xml.nodeType == 1) { \\n            if (xml.attributes.length > 0) {\\n                obj[\\\"@attributes\\\"] = {};\\n                for (var j = 0; j < xml.attributes.length; j++) {\\n                    var attribute = xml.attributes.item(j);\\n                    obj[\\\"@attributes\\\"][attribute.nodeName] = attribute.nodeValue;\\n                }\\n            }\\n        } else if (xml.nodeType == 3) {\\n            obj = xml.nodeValue;\\n        }\\n\\n        if (xml.hasChildNodes()) {\\n            for (var i = 0; i < xml.childNodes.length; i++) {\\n                var item = xml.childNodes.item(i);\\n                var nodeName = item.nodeName;\\n                if (typeof (obj[nodeName]) == \\\"undefined\\\") {\\n                    obj[nodeName] = xmlToJson(item);\\n                } else {\\n                    if (typeof (obj[nodeName].push) == \\\"undefined\\\") {\\n                        var old = obj[nodeName];\\n                        obj[nodeName] = [];\\n                        obj[nodeName].push(old);\\n                    }\\n                    obj[nodeName].push(xmlToJson(item));\\n                }\\n            }\\n        }\\n        return obj;\\n    };\\n}\"}",
+      "DashboardDefinitionId": "15166990-3b37-45ed-bb52-7725b743d48c"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 2,
+  "Default": true
 }

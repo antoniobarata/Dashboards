@@ -1,0 +1,37 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "831a9fff-78de-4c7a-9ef4-d35bf26f1ee4",
+  "Name": "Workload",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "jobtype",
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "46513fe4-3d14-4910-967a-1f713461f58d",
+      "Name": "creation",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":33,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"jobtype\",\"entityToCreate\":\"workload\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'job-types/' + entityId + '/job-type-workloads';\\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'job-type-workloads';\\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        JobTypeId: entityId,\\n        TypologyId: data.TypologyId,\\n        Workload: data.Workload,\\n        DefaultRate: data.DefaultRate\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, newData, entityId){\\n    return 'job-type-workloads/' + data.Id \\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    return {\\n        JobTypeId: newData[\\\"JobTypeId\\\"] == null ? data.JobTypeId : newData[\\\"JobTypeId\\\"],\\n        TypologyId: newData[\\\"TypologyId\\\"] == null ? data.TypologyId : newData[\\\"TypologyId\\\"],\\n        Workload: newData[\\\"Workload\\\"] == null ? data.Workload : newData[\\\"Workload\\\"],\\n        DefaultRate: newData[\\\"DefaultRate\\\"] == null ? data.DefaultRate : newData[\\\"DefaultRate\\\"]\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'job-type-workloads/' + data.Id; \\n}\"},\"grid\":{\"properties\":{\"height\":\"100%\"}},\"columns\":\"function(e){\\r\\n    return [{\\r\\n        dataField:\\\"TypologyId\\\",\\r\\n        caption: \\\"Typology\\\",\\r\\n        lookup: {\\r\\n            searchEnabled: true,\\r\\n            dataSource: {\\r\\n                load: function (loadOptions) {\\r\\n                    debugger;\\r\\n                    var component = window[\\\"SW\\\"].getComponent('data');\\r\\n                    var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');\\r\\n                    var skip = loadOptions.skip || 0;\\r\\n                    var take = loadOptions.take || 20;\\r\\n                    var param = { name: searchValue, skip: skip, take: take };\\r\\n                    return window[\\\"SW\\\"].executeAPI('GET', 'companies/' + component.CompanyId + \\\"/userTypologies/active/lookup\\\", null, {}).then(result => { return Promise.resolve(result); })\\r\\n                },\\r\\n                byKey: function (key) {\\r\\n                    return window[\\\"SW\\\"].executeAPI('GET', 'userTypologies/' + key, null, {}).then(result => { return Promise.resolve(result); })\\r\\n                }\\r\\n            },\\r\\n            displayExpr: \\\"Name\\\",\\r\\n            valueExpr: \\\"Id\\\"\\r\\n        }\\r\\n    },\\r\\n    {\\r\\n        dataField: \\\"Workload\\\",\\r\\n        editorType: \\\"dxNumberBox\\\"\\r\\n    },\\r\\n    {\\r\\n        dataField: \\\"DefaultRate\\\",\\r\\n        caption: \\\"Default Rate\\\",\\r\\n        editorType: \\\"dxNumberBox\\\",\\r\\n        editorOptions: {\\r\\n            format: \\\"$#0.00\\\"\\r\\n        }\\r\\n\\r\\n    }\\r\\n    ]\\r\\n}\"}",
+      "DashboardDefinitionId": "831a9fff-78de-4c7a-9ef4-d35bf26f1ee4"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}

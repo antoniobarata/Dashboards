@@ -1,37 +1,37 @@
-﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "22949819-f0ca-4f49-bdcb-7f9cf22eae0f",
-    "Name": "Templates",
-    "Active": true,
-    "Location": 2,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentTypeName": "template",
-    "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "1bf5b1cd-e315-4783-badc-43b00c819cb5",
-            "Name": "Templates Available",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"dataSource\": {\r\n        \"load\": \"function(){\\n    return SW.executeAPI(\\\"GET\\\", \u0027templates\u0027, null, null)}\"\r\n    },\r\n    \"onRowClick\": \"function(e){\\n    var id = \u00271c280f96-6925-4b25-ab63-609b80b2cac6\u0027;\\n    SW.genericPopup(\u0027template\u0027, [{Id: id, Title: e.data.Name}], e.component, 700, 800, false )\\n}\",\r\n    \"height\": \"100%\",\r\n    \"width\": \"100%\",\r\n    \"onToolbarPreparing\": \"function(e) {\\n    var dataGrid = e.component;\\n\\n    e.toolbarOptions.items.unshift({\\n        location: \u0027after\u0027,\\n        widget: \u0027dxButton\u0027,\\n        options: {\\n            icon: \u0027fal fa-times\u0027, onClick: function (e) {\\n                var userList = dataGrid.getSelectedRowKeys();\\n                if (userList.length != 1) {\\n                    SW.Toastr.toastr_Error(\u0027Select only 1 template\u0027);\\n                    return;\\n                };\\n                var templateSelected = dataGrid.getSelectedRowsData()[0];\\n                SW.executeAPI(\u0027DELETE\u0027, \u0027templates/\u0027 + templateSelected.Id)\\n                .then( x =\u003e {\\n                    SW.Toastr.toastr_Success(\\\"Deleted\\\");\\n                });\\n            }\\n        }\\n    });\\n\\n    e.toolbarOptions.items.unshift({\\n        location: \u0027after\u0027,\\n        widget: \u0027dxButton\u0027,\\n        options: {\\n            icon: \u0027plus\u0027, onClick: function () {\\n                var id = \u0027a8cbd629-35f8-49ec-8d58-5f0c36feae06\u0027;\\n                SkillsWorkflow.genericPopup(\u0027template\u0027, [{ Id:\u0027a8cbd629-35f8-49ec-8d58-5f0c36feae06\u0027, Title:\u0027New\u0027}], null, 700, 800, false);\\n            }\\n        }\\n    });\\n}\",\r\n    \"columns\": [\r\n        \"Name\",\r\n        \"Type\"\r\n    ]\r\n}",
-            "DashboardDefinitionId": "22949819-f0ca-4f49-bdcb-7f9cf22eae0f"
-        }
-    ],
-    "QueryText": "",
-    "UseStore": false,
-    "StoreEntity": null,
-    "Version": 1,
-    "Default": true
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "22949819-f0ca-4f49-bdcb-7f9cf22eae0f",
+  "Name": "Templates",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "template",
+  "DocumentsConfiguration": "[]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "11db560c-acc4-4d26-b234-56c12712c12f",
+      "Name": "Templates Available",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"dataSource\": {\r\n        \"load\": \"function(){\\n    return SW.executeAPI(\\\"GET\\\", 'templates', null, null)}\"\r\n    },\r\n    \"onRowClick\": \"function(e){\\n    var id = '1c280f96-6925-4b25-ab63-609b80b2cac6';\\n    SW.genericPopup('template', [{Id: id, Title: e.data.Name}], e.component, 700, 800, false )\\n}\",\r\n    \"height\": \"100%\",\r\n    \"width\": \"100%\",\r\n    \"onToolbarPreparing\": \"function(e) {\\n    var dataGrid = e.component;\\n\\n    e.toolbarOptions.items.unshift({\\n        location: 'after',\\n        widget: 'dxButton',\\n        options: {\\n            icon: 'fal fa-times', onClick: function (e) {\\n                var userList = dataGrid.getSelectedRowKeys();\\n                if (userList.length != 1) {\\n                    SW.Toastr.toastr_Error('Select only 1 template');\\n                    return;\\n                };\\n                var templateSelected = dataGrid.getSelectedRowsData()[0];\\n                SW.executeAPI('DELETE', 'templates/' + templateSelected.Id)\\n                .then( x => {\\n                    SW.Toastr.toastr_Success(\\\"Deleted\\\");\\n                });\\n            }\\n        }\\n    });\\n\\n    e.toolbarOptions.items.unshift({\\n        location: 'after',\\n        widget: 'dxButton',\\n        options: {\\n            icon: 'plus', onClick: function () {\\n                var id = 'a8cbd629-35f8-49ec-8d58-5f0c36feae06';\\n                SkillsWorkflow.genericPopup('template', [{ Id:'a8cbd629-35f8-49ec-8d58-5f0c36feae06', Title:'New'}], null, 700, 800, false);\\n            }\\n        }\\n    });\\n}\",\r\n    \"columns\": [\r\n        \"Name\",\r\n        \"Type\"\r\n    ]\r\n}",
+      "DashboardDefinitionId": "22949819-f0ca-4f49-bdcb-7f9cf22eae0f"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 3,
+  "Default": true
 }

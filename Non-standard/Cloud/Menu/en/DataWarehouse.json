@@ -1,55 +1,55 @@
-﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "29b0910b-7f17-4482-8fff-a3befa317717",
-    "Name": "DataWarehouse",
-    "Active": true,
-    "Location": 0,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentTypeName": null,
-    "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "51d2cb35-1a1c-43f7-bf93-03c4b208fda8",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#f0f0f0\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":2,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"colCount\": \"1\",\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Year\",\r\n            \"dataField\": \"Year\",\r\n            \"editorType\": \"dxNumberBox\",\r\n            \"editorOptions\": {\r\n                \"showSpinButtons\": true,\r\n                \"value\": 2020,\r\n                \"width\": 65,\r\n                \"placeholder\": \"year\",\r\n                \"onContentReady\": \"function(e){ setTimeout(function() { var d = new Date(); var year = d.getFullYear(); SkillsWorkflow.setDashboardFilter(\u0027FromDate\u0027, new Date(year, 0, 1)); SkillsWorkflow.setDashboardFilter(\u0027ToDate\u0027, new Date(year, 11, 31)); SkillsWorkflow.setDashboardFilter(\u0027UpdatesMissingMinutes\u0027, 10); }, 1000) }\",\r\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027FromDate\u0027, new Date(e.value, 0, 1)); SkillsWorkflow.setDashboardFilter(\u0027ToDate\u0027, new Date(e.value, 11, 31)); SkillsWorkflow.setDashboardFilter(\u0027UpdatesMissingMinutes\u0027, 10); } }\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        }\r\n    ]\r\n}",
-            "DashboardDefinitionId": "29b0910b-7f17-4482-8fff-a3befa317717"
-        },
-        {
-            "Id": "9a217a4f-9be1-4064-b586-cce2e27e34fb",
-            "Name": "Data Status",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":2,\"WidgetRows\":49,\"WidgetColumns\":47,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"WITH ResetDataLogs AS\\r\\n(\\r\\n\\tSELECT \\r\\n\\t\\trl.Datamart,\\r\\n\\t\\tYear(rl.FromDate) as [Year],\\r\\n\\t\\tMonth(rl.FromDate) as [Month],\\r\\n\\t\\tMIN(rl.FromDate) as DatamartBeginDate,\\r\\n\\t\\tMAX(rl.ToDate) as DatamartEndDate,\\r\\n\\t\\tMIN(rl.StartedOn) as StartedOn,\\r\\n\\t\\tMAX(rl.FinishedOn) as FinishedOn,\\r\\n\\t\\tMAX(IIF(rl.FinishedOn is null, 1, 0)) as Updating\\r\\n\\tFROM \\r\\n\\t\\tAnalytics.ResetLogs rl\\r\\n\\tWHERE\\r\\n\\t\\trl.FromDate \u003e= @FromDate AND\\r\\n\\t\\trl.ToDate \u003c= @ToDate\\r\\n\\tGROUP BY\\r\\n\\t\\trl.Datamart,\\r\\n\\t\\tYear(rl.FromDate),\\r\\n\\t\\tMonth(rl.FromDate)\\r\\n)\\r\\nSELECT\\t\\r\\n\\tv.Datamart,\\r\\n\\tv.DatamartDocumentType,\\r\\n\\tv.DatamartBeginDate,\\r\\n\\tv.DatamartEndDate,\\r\\n\\tv.[Year], \\r\\n\\tv.[Month],\\r\\n\\tv.[MonthName], \\r\\n\\tv.OperationalCount as OpCnt,\\r\\n\\tv.DataWarehouseCount as DwCnt,\\r\\n\\tv.MissingDataWarehouseUpdates as MissingDwUpdts,\\r\\n\\tv.MissingDataWArehouseCount as MissingDwCnt,\\r\\n\\tIIF(rl.Datamart is null, 0, rl.Updating) as Updating\\r\\nFROM \\r\\n\\tAnalytics.DataWarehouseStatus(@FromDate, @ToDate, 30) v\\r\\n\\tLEFT OUTER JOIN ResetDataLogs rl ON (rl.Datamart = v.Datamart AND rl.[Year] = v.[Year] AND rl.[Month] = v.[Month])\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"FromDate\",\"ToDate\",\"UpdatesMissingMinutes\"]}}]",
-            "DashboardComponentType": {
-                "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\"size\":{\"height\":\"100%\",\"width\":\"100%\"},\"width\":\"860px\",\"grouping\":{\"autoExpandAll\":true},\"searchPanel\":{\"visible\":true},\"scrolling\":{\"mode\":\"virtual\"},\"groupPanel\":{\"visible\":true},\"filterPanel\":{\"visible\":true,\"filterEnabled\":true},\"headerFilter\":{\"visible\":true,\"allowSearch\":true},\"selection\":{\"mode\":\"none\"},\"editing\":{\"mode\":\"row\",\"allowEditing\":false,\"allowUpdating\":true,\"allowDeleting\":false,\"useIcons\":true},\"columns\":[{\"type\":\"buttons\",\"width\":110,\"visibleIndex\":8,\"buttons\":[{\"hint\":\"Reset\",\"icon\":\"repeat\",\"visible\":true,\"onClick\":\"function(e) { SW.executeAPI(\u0027POST\u0027, \u0027analytics/dataWarehouse/resetData\u0027, null, {\u0027documentType\u0027: e.row.data.DatamartDocumentType, \u0027beginDate\u0027: e.row.data.DatamartBeginDate, \u0027endDate\u0027: e.row.data.DatamartEndDate}); e.event.preventDefault();}\"}]},{\"dataField\":\"Year\",\"groupIndex\":0,\"visibleIndex\":0,\"width\":60,\"sortOrder\":\"asc\"},{\"dataField\":\"Datamart\",\"visibleIndex\":1,\"width\":120,\"sortOrder\":\"asc\"},{\"dataField\":\"MonthName\",\"caption\":\"Month\",\"visibleIndex\":2,\"width\":60},{\"dataField\":\"OpCnt\",\"visibleIndex\":3,\"caption\":\"Skills\",\"width\":100},{\"dataField\":\"DwCnt\",\"visibleIndex\":4,\"caption\":\"DataWarehouse\",\"width\":100},{\"dataField\":\"MissingDwCnt\",\"visibleIndex\":5,\"caption\":\"Variation\",\"width\":100},{\"dataField\":\"MissingDwUpdts\",\"visibleIndex\":6,\"caption\":\"Missing Updates\",\"width\":100},{\"dataField\":\"Updating\",\"visibleIndex\":7,\"caption\":\"Updating\",\"width\":10}],\"height\":\"800\"}",
-            "DashboardDefinitionId": "29b0910b-7f17-4482-8fff-a3befa317717"
-        }
-    ],
-    "QueryText": null,
-    "UseStore": false,
-    "StoreEntity": null,
-    "Version": 9,
-    "Default": false
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "6df4201b-4bdc-43a4-a41c-4c41356f05b1",
+  "Name": "Data warehouse",
+  "Active": true,
+  "Location": 0,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": null,
+  "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "52dde0ea-0a36-4577-bae4-08d30840c38a",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"\",\r\n        \"WidgetType\": \"form\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#f0f0f0\",\r\n        \"WidgetFrameStyle\": {},\r\n        \"WidgetXPosition\": 0,\r\n        \"WidgetYPosition\": 0,\r\n        \"WidgetRows\": 2,\r\n        \"WidgetColumns\": 48,\r\n        \"WidgetHeader\": {\r\n            \"showTitle\": false,\r\n            \"showSubTitle\": false,\r\n            \"WidgetMetrics\": {\r\n                \"visible\": false,\r\n                \"Metrics\": []\r\n            },\r\n            \"WidgetPeriodChooser\": {\r\n                \"visible\": false,\r\n                \"type\": \"\",\r\n                \"startDate\": null,\r\n                \"endDate\": null\r\n            }\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"querytext\",\r\n                \"value\": \"\",\r\n                \"mapping\": \"\"\r\n            }\r\n        },\r\n        \"Filters\": {},\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": []\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"colCount\": \"1\",\r\n    \"items\": [\r\n        {\r\n            \"name\": \"Year\",\r\n            \"dataField\": \"Year\",\r\n            \"editorType\": \"dxNumberBox\",\r\n            \"editorOptions\": {\r\n                \"showSpinButtons\": true,\r\n                \"value\": 2020,\r\n                \"width\": 65,\r\n                \"placeholder\": \"year\",\r\n                \"onContentReady\": \"function(e){ setTimeout(function() { var d = new Date(); var year = d.getFullYear(); SkillsWorkflow.setDashboardFilter('FromDate', new Date(year, 0, 1)); SkillsWorkflow.setDashboardFilter('ToDate', new Date(year, 11, 31)); SkillsWorkflow.setDashboardFilter('UpdatesMissingMinutes', 10); }, 1000) }\",\r\n                \"onValueChanged\": \"function(e){ if(e.value != null) { SkillsWorkflow.setDashboardFilter('FromDate', new Date(e.value, 0, 1)); SkillsWorkflow.setDashboardFilter('ToDate', new Date(e.value, 11, 31)); SkillsWorkflow.setDashboardFilter('UpdatesMissingMinutes', 10); } }\"\r\n            },\r\n            \"noDataText\": \"Please wait...\"\r\n        }\r\n    ]\r\n}",
+      "DashboardDefinitionId": "6df4201b-4bdc-43a4-a41c-4c41356f05b1"
+    },
+    {
+      "Id": "54de989e-f5dc-4bd4-90fa-b20ce50be9fc",
+      "Name": "Data Status",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":2,\"WidgetRows\":49,\"WidgetColumns\":47,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"WITH ResetDataLogs AS\\r\\n(\\r\\n\\tSELECT \\r\\n\\t\\trl.Datamart,\\r\\n\\t\\tYear(rl.FromDate) as [Year],\\r\\n\\t\\tMonth(rl.FromDate) as [Month],\\r\\n\\t\\tMIN(rl.FromDate) as DatamartBeginDate,\\r\\n\\t\\tMAX(rl.ToDate) as DatamartEndDate,\\r\\n\\t\\tMIN(rl.StartedOn) as StartedOn,\\r\\n\\t\\tMAX(rl.FinishedOn) as FinishedOn,\\r\\n\\t\\tMAX(IIF(rl.FinishedOn is null, 1, 0)) as Updating\\r\\n\\tFROM \\r\\n\\t\\tAnalytics.ResetLogs rl\\r\\n\\tWHERE\\r\\n\\t\\trl.FromDate >= @FromDate AND\\r\\n\\t\\trl.ToDate <= @ToDate\\r\\n\\tGROUP BY\\r\\n\\t\\trl.Datamart,\\r\\n\\t\\tYear(rl.FromDate),\\r\\n\\t\\tMonth(rl.FromDate)\\r\\n)\\r\\nSELECT\\t\\r\\n\\tv.Datamart,\\r\\n\\tv.DatamartDocumentType,\\r\\n\\tv.DatamartBeginDate,\\r\\n\\tv.DatamartEndDate,\\r\\n\\tv.[Year], \\r\\n\\tv.[Month],\\r\\n\\tv.[MonthName], \\r\\n\\tv.OperationalCount as OpCnt,\\r\\n\\tv.DataWarehouseCount as DwCnt,\\r\\n\\tv.MissingDataWarehouseUpdates as MissingDwUpdts,\\r\\n\\tv.MissingDataWArehouseCount as MissingDwCnt,\\r\\n\\tIIF(rl.Datamart is null, 0, rl.Updating) as Updating\\r\\nFROM \\r\\n\\tAnalytics.DataWarehouseStatus(@FromDate, @ToDate, 30) v\\r\\n\\tLEFT OUTER JOIN ResetDataLogs rl ON (rl.Datamart = v.Datamart AND rl.[Year] = v.[Year] AND rl.[Month] = v.[Month])\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"FromDate\",\"ToDate\",\"UpdatesMissingMinutes\"]}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"size\":{\"height\":\"100%\",\"width\":\"100%\"},\"width\":\"860px\",\"grouping\":{\"autoExpandAll\":true},\"searchPanel\":{\"visible\":true},\"scrolling\":{\"mode\":\"virtual\"},\"groupPanel\":{\"visible\":true},\"filterPanel\":{\"visible\":true,\"filterEnabled\":true},\"headerFilter\":{\"visible\":true,\"allowSearch\":true},\"selection\":{\"mode\":\"none\"},\"editing\":{\"mode\":\"row\",\"allowEditing\":false,\"allowUpdating\":true,\"allowDeleting\":false,\"useIcons\":true},\"columns\":[{\"type\":\"buttons\",\"width\":110,\"visibleIndex\":8,\"buttons\":[{\"hint\":\"Reset\",\"icon\":\"repeat\",\"visible\":true,\"onClick\":\"function(e) { SW.executeAPI('POST', 'analytics/dataWarehouse/resetData', null, {'documentType': e.row.data.DatamartDocumentType, 'beginDate': e.row.data.DatamartBeginDate, 'endDate': e.row.data.DatamartEndDate}); e.event.preventDefault();}\"}]},{\"dataField\":\"Year\",\"groupIndex\":0,\"visibleIndex\":0,\"width\":60,\"sortOrder\":\"asc\"},{\"dataField\":\"Datamart\",\"visibleIndex\":1,\"width\":120,\"sortOrder\":\"asc\"},{\"dataField\":\"MonthName\",\"caption\":\"Month\",\"visibleIndex\":2,\"width\":60},{\"dataField\":\"OpCnt\",\"visibleIndex\":3,\"caption\":\"Skills\",\"width\":100},{\"dataField\":\"DwCnt\",\"visibleIndex\":4,\"caption\":\"DataWarehouse\",\"width\":100},{\"dataField\":\"MissingDwCnt\",\"visibleIndex\":5,\"caption\":\"Variation\",\"width\":100},{\"dataField\":\"MissingDwUpdts\",\"visibleIndex\":6,\"caption\":\"Missing Updates\",\"width\":100},{\"dataField\":\"Updating\",\"visibleIndex\":7,\"caption\":\"Updating\",\"width\":10}],\"height\":\"800\"}",
+      "DashboardDefinitionId": "6df4201b-4bdc-43a4-a41c-4c41356f05b1"
+    }
+  ],
+  "QueryText": null,
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 9,
+  "Default": false
 }
