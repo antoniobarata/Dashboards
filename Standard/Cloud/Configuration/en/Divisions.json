@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "9923bcfd-6cb7-465a-92c4-42428d7c7441",
+      "Id": "d70f3940-fadc-498a-9384-f8b88afaece2",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,
@@ -26,7 +26,7 @@
       },
       "AnalyticsApiUrl": null,
       "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"Code\"},{\"dataField\":\"Active\"},{\"dataField\":\"Description\"}],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'    });        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('division', 450, 720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('division', dataGrid);            }        }    });}\",\"entity\":\"division\"}",
-      "DashboardDefinitionId": "8e3984b8-81f6-4759-afce-0a4e3d394fa6"
+      "DashboardDefinitionId": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d"
     }
   ],
   "QueryText": "",
