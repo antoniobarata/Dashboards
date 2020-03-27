@@ -1,6 +1,6 @@
 ﻿{
   "DashboardDefinitionRoles": [],
-  "Id": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d",
+  "Id": "e223fd1d-bd0a-4559-b9df-0069845b4ef6",
   "Name": "Divisions",
   "Active": true,
   "Location": 2,
@@ -11,27 +11,27 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "d70f3940-fadc-498a-9384-f8b88afaece2",
+      "Id": "d9be35da-08bd-4c55-be87-e8444efffeab",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryText\",\"value\":\"select      d.Oid as Oid, \\r\\n            c.Name as Company, \\r\\n            d.Name as [Name],\\r\\n            d.Description as [Description], \\r\\n            d.Code as Code, \\r\\n            d.Active as Active\\r\\nfrom        company c, division d\\r\\nWhere       d.company = c.oid  \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select      d.Oid as Oid, \\r\\n            c.Name as Company,\\r\\n            c.Oid as CompanyId, \\r\\n            d.Name as [Name],\\r\\n            d.Description as [Description], \\r\\n            d.Code as Code, \\r\\n            d.Active as Active\\r\\nfrom        company c, division d\\r\\nWhere       d.company = c.oid  \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027division\u0027);}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        {\r\n            \"dataField\": \"Name\"\r\n        },\r\n        {\r\n            \"dataField\": \"Company\"\r\n        },\r\n        {\r\n            \"dataField\": \"Code\"\r\n        },\r\n        {\r\n            \"dataField\": \"Active\"\r\n        },\r\n        {\r\n            \"dataField\": \"Description\"\r\n        }\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027    });        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {                SkillsWorkflow.genericNew(\u0027division\u0027, 450, 720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027division\u0027, dataGrid);            }        }    });}\",\r\n    \"entity\": \"division\"\r\n}",
-      "DashboardDefinitionId": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d"
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"Code\"},{\"dataField\":\"Active\"},{\"dataField\":\"Description\"}],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'    });        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('division', 450, 720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('division', dataGrid);            }        }    });}\",\"entity\":\"division\"}",
+      "DashboardDefinitionId": "e223fd1d-bd0a-4559-b9df-0069845b4ef6"
     }
   ],
-  "QueryText": null,
+  "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 9,
+  "Version": 10,
   "Default": true
 }
