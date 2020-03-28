@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d",
-  "Name": "Divisions",
+  "Name": "Division",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -25,13 +25,13 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027division\u0027);}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        {\r\n            \"dataField\": \"Name\"\r\n        },\r\n        {\r\n            \"dataField\": \"Company\"\r\n        },\r\n        {\r\n            \"dataField\": \"Code\"\r\n        },\r\n        {\r\n            \"dataField\": \"Active\"\r\n        },\r\n        {\r\n            \"dataField\": \"Description\"\r\n        }\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027    });        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {                SkillsWorkflow.genericNew(\u0027division\u0027, 450, 720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027division\u0027, dataGrid);            }        }    });}\",\r\n    \"entity\": \"division\"\r\n}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"Code\"},{\"dataField\":\"Active\"},{\"dataField\":\"Description\"}],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'    });        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('division', 450, 720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('division', dataGrid);            }        }    });}\",\"entity\":\"division\"}",
       "DashboardDefinitionId": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d"
     }
   ],
-  "QueryText": null,
+  "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 9,
+  "Version": 10,
   "Default": true
 }
