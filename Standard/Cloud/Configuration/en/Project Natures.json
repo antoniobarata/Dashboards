@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "9d415135-ae49-416f-8bf8-71f0614bb0c9",
-  "Name": "Project Natures",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 8,
+  "Version": 9,
   "Default": true
 }

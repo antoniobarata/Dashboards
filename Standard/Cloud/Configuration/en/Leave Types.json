@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "1cb6c6e6-ce8c-40a6-9ee7-69b101f3d95a",
-  "Name": "Leave Types",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 8,
+  "Version": 9,
   "Default": true
 }

@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "22949819-f0ca-4f49-bdcb-7f9cf22eae0f",
-  "Name": "Templates",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 3,
+  "Version": 4,
   "Default": true
 }

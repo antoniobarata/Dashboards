@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "510f072a-435a-4eea-9865-38351dbdfa21",
-  "Name": "Automation",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 5,
+  "Version": 6,
   "Default": true
 }

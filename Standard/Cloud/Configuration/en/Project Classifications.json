@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "58053b60-f7ab-4e66-93ef-1f2ee06945d9",
-  "Name": "Project Classifications",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 5,
+  "Version": 6,
   "Default": true
 }

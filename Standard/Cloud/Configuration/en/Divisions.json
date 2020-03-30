@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d",
-  "Name": "Division",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 10,
+  "Version": 11,
   "Default": true
 }

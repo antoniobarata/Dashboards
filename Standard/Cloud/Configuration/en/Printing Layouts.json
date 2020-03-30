@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "55e4fa1c-37e5-4064-83ad-f0579a0857da",
-  "Name": "Printing Layouts",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 8,
+  "Version": 9,
   "Default": true
 }

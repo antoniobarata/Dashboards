@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "1d54a606-03c6-420b-bbca-313898e771bc",
-  "Name": "Workspace",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }

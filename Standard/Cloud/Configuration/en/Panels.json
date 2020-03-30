@@ -1,13 +1,7 @@
 ﻿{
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "87bf19f9-da5f-4290-a489-450ab8b76680",
-      "AccessRoleName": "Administrator"
-    }
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "87bf19f9-da5f-4290-a489-450ab8b76680",
-  "Name": "Panels",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -38,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 8,
+  "Version": 9,
   "Default": true
 }

@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "b647a57f-446b-4781-b7b9-08ff3741bfe6",
-  "Name": "Companies",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -10,24 +10,6 @@
   "DocumentsConfiguration": "[]",
   "Templates": [],
   "DashboardDefinitionComponents": [
-    {
-      "Id": "ad241ce3-b508-4a5f-b432-3bd6895b5678",
-      "Name": "Company ",
-      "Active": true,
-      "UseQuery": true,
-      "Query": null,
-      "Size": 12,
-      "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":null},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\\r\\nselect  c.Name,\\r\\n        c.Code,\\r\\n        c.oid as Oid,\\r\\n        cr.Name as Currency,\\r\\n        c.TimesheetStart,\\r\\n        c.GanttChartResourceType as ResourceType,\\r\\n        c.ProjectArticle,\\r\\n        c.HoursType,\\r\\n        c.MarginType,\\r\\n\\t\\ta.Name as Article\\r\\nfrom    company c left outer join Article a on (c.ProjectArticle = a.Oid) left outer join currency cr on (cr.oid = c.currency)\\r\\nwhere\\tc.GCRecord is null\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":null}]",
-      "DashboardComponentType": {
-        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-        "Name": "Generic Dashboard",
-        "ComponentTypeNumber": 42
-      },
-      "AnalyticsApiUrl": null,
-      "Configuration": "{\"onRowClick\":\"function(e){\\r\\n    if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'company', 550, 750);\\r\\n    SkillsWorkflow.saveComponent(e.data, \\\"data\\\");\\r\\n    }\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Article\",\"Code\",\"Currency\",{\"dataField\":\"TimesheetStart\",\"dataType\":\"date\",\"format\":\"function(value) { return SW.defaultDisplayFormat(value) }\"},\"ResourceType\",\"HoursType\",\"MarginType\"],\"onToolbarPreparing\":\"function(e) {         \\r\\n                var dataGrid = e.component;          \\r\\n                e.toolbarOptions.items.unshift({             \\r\\n                    location: 'after',            \\r\\n                    template: 'toggleHeaderFilterButtonTemplate'        \\r\\n                    });        \\r\\n            e.toolbarOptions.items.unshift({             \\r\\n                        location: 'after',             \\r\\n                        widget: 'dxButton',             \\r\\n                        options: { icon: 'plus', onClick: function() {            \\r\\n                            SkillsWorkflow.genericNew('company',550, 750);                           \\r\\n                            }}        \\r\\n                            });       \\r\\n                             var dataGrid = e.component;                \\r\\n                     e.toolbarOptions.items.unshift({             \\r\\n                                 location: 'after',             \\r\\n                                 widget: 'dxButton',            \\r\\n                                 options: { icon: 'fal fa-times', onClick: function() {                \\r\\n                                     SW.genericDelete('company', dataGrid);               \\r\\n                                     }            \\r\\n                                }        \\r\\n                            });    \\r\\n}\",\"entity\":\"company\"}",
-      "DashboardDefinitionId": "b647a57f-446b-4781-b7b9-08ff3741bfe6"
-    },
     {
       "Id": "6e43bbf7-c092-4df0-895f-44e867c4d71a",
       "Name": "Company ",
@@ -50,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 13,
+  "Version": 14,
   "Default": true
 }
