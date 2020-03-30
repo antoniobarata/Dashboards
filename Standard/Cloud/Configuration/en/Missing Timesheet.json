@@ -1,13 +1,7 @@
 ﻿{
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "ab5f924a-5db7-484f-b28e-1b8efb04cdb6",
-      "AccessRoleName": "Administrator"
-    }
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "ab5f924a-5db7-484f-b28e-1b8efb04cdb6",
-  "Name": "Missing Timesheets",
+  "Name": "Timesheets",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -71,6 +65,6 @@
       "DashboardDefinitionId": "ab5f924a-5db7-484f-b28e-1b8efb04cdb6"
     }
   ],
-  "Version": 7,
+  "Version": 8,
   "Default": true
 }

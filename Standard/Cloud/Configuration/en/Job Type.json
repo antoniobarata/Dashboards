@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
-  "Id": "e6837677-f340-4b16-9b34-23f89e58b0ad",
-  "Name": "Jobtypes",
+  "Id": "d86227fd-3ea9-471d-808a-94aafa168611",
+  "Name": "",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -26,12 +26,12 @@
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\"onRowClick\":\"function(e) {\\r\\n    if (e.rowType == 'data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'jobtype', 650, 700);\\r\\n    SkillsWorkflow.saveComponent(e.data, \\\"data\\\");\\r\\n\\r\\n\\r\\n}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Document\",\"groupIndex\":0},{\"dataField\":\"Workflow\"},{\"dataField\":\"Company\"},{\"dataField\":\"Division\"},{\"dataField\":\"Department\"},{\"dataField\":\"Code\"},{\"dataField\":\"Active\"}],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'    });        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('jobtype',                600,                720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('jobtype', dataGrid);            }        }    });}\",\"entity\":\"jobtype\",\"height\":\"100%\"}",
-      "DashboardDefinitionId": "e6837677-f340-4b16-9b34-23f89e58b0ad"
+      "DashboardDefinitionId": "d86227fd-3ea9-471d-808a-94aafa168611"
     }
   ],
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }

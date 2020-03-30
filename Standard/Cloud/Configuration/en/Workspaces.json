@@ -1,11 +1,5 @@
-﻿{
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "ab5f924a-5db7-484f-b28e-1b8efb04cdb6",
-      "AccessRoleName": "Administrator"
-    }
-  ],
+{
+  "DashboardDefinitionRoles": [],
   "Id": "1d54a606-03c6-420b-bbca-313898e771bc",
   "Name": "Workspace",
   "Active": true,
@@ -17,27 +11,27 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "696c9767-9a81-4c33-8e8b-bdf622dfa785",
+      "Id": "9e427a97-9cbf-4957-9401-6fa3bdea53f5",
       "Name": "Dashboards",
       "Active": true,
       "UseQuery": false,
       "Query": "",
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":21,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\n    cdef.Oid, \\n    cdef.Name as 'Name', \\n    cdef.DocumentTypeName as 'Type',\\n    cdef.Location as 'Location', \\n    cdef.Active as 'Active', \\n    cdef.[Default] as 'Default', \\n    cdef.DocumentsConfiguration as 'Configuration'\\n from DashboardDefinition cdef\\n left join Document d on d.Oid = cdef.Document\\nwhere cdef.GCRecord IS NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\n    cdef.Oid, \\n    cdef.Name as 'Name', \\n    cdef.DocumentTypeName as 'Type',\\n    cdef.Location as 'Location', \\n    cdef.Active as 'Active', \\n    cdef.[Default] as 'Default', \\n    cdef.DocumentsConfiguration as 'Configuration'\\n from DashboardDefinition cdef\\n left join Document d on d.Oid = cdef.Document\\nwhere cdef.GCRecord IS NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\n    \"stateStoring\": {\n        \"enabled\": false\n    },\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"onRowClick\": \"function(e){ if(e.rowType=='data')  SW.genericPreview(e.data.Oid, 'Name', 'workspace')}\",\n    \"columns\": [\n        {\n            \"alignment\": \"center\",\n            \"caption\": \"\",\n            \"dataField\": \"Oid\",\n            \"width\": 30,\n            \"allowEditing\": false,\n            \"cellTemplate\": \"function(container, options) {  var h = document.createElement('DIV');    container.appendChild(h);  h.setAttribute('class', 'fal fa-share-square');          h.onclick = function(e) {                e.stopPropagation();         var url = window.location.origin+\\\"/home/workspaces?id=\\\" + options.data.Oid;                         window.open(url);                };            }\"\n        },\n        {\n            \"dataField\": \"Type\",\n            \"groupIndex\": 0,\n            \"cellTemplate\": \"function(e, i) {SkillsWorkflow.showDocumentImage(e, 'medium', i.data.key, i.data.key);}\",\n            \"width\": 38,\n            \"groupCellTemplate\": \"function(e, i) {                                SkillsWorkflow.showDocumentImage(e, 'medium', i.data.key, i.data.key);                  var h1=document.createElement('div');                                   h1.textContent = i.data.key;  h1.style.marginTop = '8px';                                    e.append(h1);                             }\"\n        },\n        {\n            \"dataField\": \"Name\",\n            \"width\": 200\n        },\n        {\n            \"dataField\": \"Configuration\"\n        },\n        {\n            \"dataField\": \"Location\",\n            \"groupCellTemplate\": \"function(e, i) { if (i.rowType == 'group'){var value = i.value == 0 ? 'Menu' : (i.value == 1 ? 'Document' : 'Configuration'); SW.setAttribute(e, value, 'style', 'text-align: left');}}\",\n            \"groupIndex\": 1\n        },\n        {\n            \"dataField\": \"Active\",\n            \"width\": 60\n        }\n    ],\n    \"onToolbarPreparing\": \"function (e) {         \\n    e.toolbarOptions.items.unshift({             \\n        location: 'after',            \\n         template: 'toggleHeaderFilterButtonTemplate'   \\n              });        var dataGrid = e.component;       \\n                 e.toolbarOptions.items.unshift({  \\n                                location: 'after',     \\n                                        widget: 'dxButton',   \\n  options: { icon: 'fal fa-times', onClick: function() {   \\n                   SW.genericDelete('workspace', dataGrid);\\n                                   }            }        });     }\",\n    \"entity\": \"workspace\"\n}",
+      "Configuration": "{\n    \"stateStoring\": {\n        \"enabled\": \"true\"\n    },\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"onRowClick\": \"function(e){ if(e.rowType=='data')  SW.genericPreview(e.data.Oid, 'Name', 'workspace')}\",\n    \"columns\": [\n        {\n            \"alignment\": \"center\",\n            \"caption\": \"\",\n            \"dataField\": \"Oid\",\n            \"width\": 30,\n            \"allowEditing\": false,\n            \"cellTemplate\": \"function(container, options) {  var h = document.createElement('DIV');    container.appendChild(h);  h.setAttribute('class', 'fal fa-share-square');          h.onclick = function(e) {                e.stopPropagation();         var url = window.location.origin+\\\"/home/workspaces?id=\\\" + options.data.Oid;                         window.open(url);                };            }\"\n        },\n        {\n            \"dataField\": \"Type\",\n            \"groupIndex\": 0,\n            \"cellTemplate\": \"function(e, i) {SkillsWorkflow.showDocumentImage(e, 'medium', i.data.key, i.data.key);}\",\n            \"width\": 38,\n            \"groupCellTemplate\": \"function(e, i) {                                SkillsWorkflow.showDocumentImage(e, 'medium', i.data.key, i.data.key);                  var h1=document.createElement('div');                                   h1.textContent = i.data.key;  h1.style.marginTop = '8px';                                    e.append(h1);                             }\"\n        },\n        {\n            \"dataField\": \"Name\",\n            \"width\": 200\n        },\n        {\n            \"dataField\": \"Configuration\"\n        },\n        {\n            \"dataField\": \"Default\"\n        },\n        {\n            \"dataField\": \"Location\",\n            \"groupCellTemplate\": \"function(e, i) { if (i.rowType == 'group'){var value = i.value == 0 ? 'Menu' : (i.value == 1 ? 'Document' : 'Configuration'); SW.setAttribute(e, value, 'style', 'text-align: left');}}\",\n            \"groupIndex\": 1\n        },\n        {\n            \"dataField\": \"Active\",\n            \"width\": 60\n        }\n    ],\n    \"onToolbarPreparing\": \"function (e) {         \\n    e.toolbarOptions.items.unshift({             \\n        location: 'after',            \\n         template: 'toggleHeaderFilterButtonTemplate'   \\n              });        var dataGrid = e.component;       \\n                 e.toolbarOptions.items.unshift({  \\n                                location: 'after',     \\n                                        widget: 'dxButton',   \\n  options: { icon: 'fal fa-times', onClick: function() {   \\n                   SW.genericDelete('workspace', dataGrid);\\n                                   }            }        });     }\",\n    \"entity\": \"workspace\",\n    \"height\": \"100%\"\n}",
       "DashboardDefinitionId": "1d54a606-03c6-420b-bbca-313898e771bc"
     }
   ],
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 10,
+  "Version": 11,
   "Default": true
 }
