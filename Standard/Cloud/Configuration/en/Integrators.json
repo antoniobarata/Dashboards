@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "d1509338-a8c1-4ad3-8c6c-0db1d21b79ec",
-  "Name": "",
+  "Name": "Integrators",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "dd97bf34-6cd2-4f22-a9c3-409ab375c965",
+      "Id": "9d03fcb3-5fcf-475f-89bd-ac549d808142",
       "Name": "Current Integrators Available",
       "Active": true,
       "UseQuery": false,
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 5,
+  "Version": 6,
   "Default": true
 }
