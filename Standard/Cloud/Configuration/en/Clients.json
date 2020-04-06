@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "42718591-eac7-40d3-bcf7-805f7c591b56",
-  "Name": "",
+  "Name": "Client",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -11,27 +11,29 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "12ea0849-70a6-4c96-bb07-87ff42dadb6a",
+      "Id": "1df41a15-ccc6-4909-8325-9089941e498e",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[\n    {\n        \"WidgetSubTitle\": \"Departments by company \",\n        \"WidgetType\": \"grid\",\n        \"WidgetFilterField\": \"\",\n        \"WidgetColor\": \"\",\n        \"WidgetFrameStyle\": {},\n        \"WidgetXPosition\": 0,\n        \"WidgetYPosition\": 0,\n        \"WidgetRows\": 24,\n        \"WidgetColumns\": 48,\n        \"WidgetHeader\": {\n            \"showContextInfo\": false,\n            \"WidgetPeriodChooser\": {\n                \"type\": \"year\",\n                \"visible\": false\n            },\n            \"WidgetMetrics\": {\n                \"visible\": false,\n                \"Metrics\": [\n                    {\n                        \"visible\": true,\n                        \"metricName\": \"? Integration Errors\",\n                        \"metricFieldValue\": \"Integration Errors\"\n                    }\n                ]\n            },\n            \"showSubTitle\": false,\n            \"showTitle\": false\n        },\n        \"WidgetDataSources\": {\n            \"main\": {\n                \"type\": \"querytext\",\n                \"value\": \"select  cc.Oid as Oid,\\r\\n        cc.Name as [Name],\\r\\n        cc.HasImage as ClientHasImage,\\r\\n\\t\\tcc.Code as Code,\\r\\n\\t\\tcc.ExternalId as ExternalId,\\r\\n\\t\\tcc.NameAndExternalId as NameAndExternalId,\\r\\n\\t\\tcc.CreatedOn as CreatedOn,\\r\\n\\t\\tcc.ModifiedOn as ModifiedOn,\\r\\n\\t\\tcc.AllowsTimesheet as AllowsTimesheet\\r\\n\\t\\t\\r\\nfrom  CommercialClient cc, WorkflowState ws\\r\\nwhere \\r\\n      ws.Oid=cc.WorkflowState\\r\\n      AND WS.NAME != 'Canceled'\\r\\n\\r\\n\",\n                \"mapping\": \"\"\n            }\n        },\n        \"Filters\": {},\n        \"QueryConfiguration\": {}\n    }\n]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  cc.Oid as Oid,\\r\\n        cc.Name as [Name],\\r\\n        cc.HasImage as ClientHasImage,\\r\\n\\t\\tcc.Code as Code,\\r\\n\\t\\tcc.ExternalId as ExternalId,\\r\\n\\t\\tcc.NameAndExternalId as NameAndExternalId,\\r\\n\\t\\tcc.CreatedOn as CreatedOn,\\r\\n\\t\\tcc.ModifiedOn as ModifiedOn,\\r\\n\\t\\tcc.AllowsTimesheet as AllowsTimesheet\\r\\n\\t\\t\\r\\nfrom  CommercialClient cc, WorkflowState ws\\r\\nwhere \\r\\n      ws.Oid=cc.WorkflowState\\r\\n      AND WS.NAME != 'Canceled'\\r\\n\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Client.Name', 'client');}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"caption\":\"\",\"alignment\":\"center\",\"format\":{\"image\":{\"mapping\":{\"id\":\"Oid\",\"name\":\"Name\",\"hasImage\":\"ClientHasImage\"},\"size\":\"small\"}},\"entity\":\"client\"},{\"dataField\":\"Name\"},{\"dataField\":\"Code\"},{\"dataField\":\"ExternalId\"},{\"dataField\":\"AllowsTimesheet\"},{\"dataField\":\"CreatedOn\"},{\"dataField\":\"ModifiedOn\"}],\"onToolbarPreparing\":\"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: 'after',             \\r\\n        template: 'toggleHeaderFilterButtonTemplate'    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: 'after',            \\r\\n            widget: 'dxButton',             \\r\\n            options: { icon: 'plus', onClick: function() { \\r\\n                SkillsWorkflow.genericNew('client', 455, 720);            \\r\\n                }        \\r\\n            }   \\r\\n        });\\r\\n}\",\"entity\":\"client\"}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"caption\":\"\",\"alignment\":\"center\",\"format\":{\"image\":{\"mapping\":{\"id\":\"Oid\",\"name\":\"Name\",\"hasImage\":\"ClientHasImage\"},\"size\":\"small\"}},\"entity\":\"client\"},{\"dataField\":\"Name\"},{\"dataField\":\"Code\"},{\"dataField\":\"ExternalId\"},{\"dataField\":\"AllowsTimesheet\"},{\"dataField\":\"CreatedOn\"},{\"dataField\":\"ModifiedOn\"}],\"onToolbarPreparing\":\"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: 'after',             \\r\\n        template: 'toggleHeaderFilterButtonTemplate'    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: 'after',            \\r\\n            widget: 'dxButton',             \\r\\n            options: { icon: 'plus', onClick: function() { \\r\\n                SkillsWorkflow.genericNew('client', 455, 720);            \\r\\n                }        \\r\\n            }   \\r\\n        });\\r\\n}\",\"entity\":\"client\"}",
       "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56"
     }
   ],
-  "QueryText": null,
+  "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 14,
+  "Version": 15,
   "Default": true
 }
+
+
