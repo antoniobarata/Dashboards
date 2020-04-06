@@ -1,0 +1,37 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "e0e6aa52-4467-42fd-9bba-f2b72db8449f",
+  "Name": "Teams",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "jobtype",
+  "DocumentsConfiguration": "[]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "72a1e87c-0837-4de0-a9ac-ee12eee9ca4f",
+      "Name": "Creation",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":29,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"get\":{\"call\":\"function(data, entity) {\\n    return 'job-types/' + entity +'/job-type-teams';\\n}\"},\"remove\":{\"call\":\"function(data, entity) {\\n    return 'job-type-teams/' + data.Id;\\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'job-type-teams';\\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        JobTypeId: entityId,\\n        AssignmentTypeId: data.AssignmentTypeId,\\n        UserId: data.UserId\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, entityId){\\n    return 'job-type-teams/' + data.Id;\\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    return {\\n        JobTypeId: newData[\\\"JobTypeId\\\"] == null ? data.JobTypeId : newData[\\\"JobTypeId\\\"],\\n        AssignmentTypeId: newData[\\\"AssignmentTypeId\\\"] == null ? data.AssignmentTypeId : newData[\\\"AssignmentTypeId\\\"],\\n        UserId: newData[\\\"UserId\\\"] == null ? data.UserId : newData[\\\"UserId\\\"],\\n    }\\n}\"},\"columns\":\"function(e){\\n    return [{\\n        dataField: \\\"AssignmentTypeId\\\",\\n        caption: \\\"Assignment Type\\\",\\n        lookup: {\\n            searchEnabled: true,\\n            dataSource: {\\n                load: function (loadOptions) {\\n                    var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');\\n                    var skip = loadOptions.skip || 0;\\n                    var take = loadOptions.take || 20;\\n                    var param = { name: searchValue, skip: skip, take: take };\\n                    return window[\\\"SW\\\"].executeAPI('GET', 'assignment-types', null, {}).then(result => { return Promise.resolve(result); })\\n                },\\n                byKey: function (key) {\\n                    return window[\\\"SW\\\"].executeAPI('GET', 'assignmentTypes/' + key, null, {}).then(result => { return Promise.resolve(result); })\\n                }\\n            },\\n            displayExpr: \\\"Name\\\",\\n            valueExpr: \\\"Id\\\",\\n        },\\n        validationRules: [{ type: \\\"required\\\" }]\\n    }, {\\n        dataField: \\\"UserId\\\",\\n        caption: \\\"User\\\",\\n        lookup: {\\n            searchEnabled: true,\\n            dataSource: {\\n                load: function (loadOptions) {\\n                    var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');\\n                    var skip = loadOptions.skip || 0;\\n                    var take = loadOptions.take || 20;\\n                    var param = { userName: searchValue, skip: skip, take: take };\\n                    return window[\\\"SW\\\"].executeAPI('GET', 'users/all/lookup', param, {}).then(result => { return Promise.resolve(result); })\\n                },\\n                byKey: function (key) {\\n                    return window[\\\"SW\\\"].executeAPI('GET', 'users/' + key + '/lookup', null, {}).then(result => { return Promise.resolve(result); })\\n                }\\n            },\\n            displayExpr: \\\"Name\\\",\\n            valueExpr: \\\"Id\\\",\\n        },\\n        validationRules: [{ type: \\\"required\\\" }]\\n    }\\n    ]\\n}\",\"grid\":{\"properties\":{\"height\":\"100%\"}},\"entity\":\"jobtype\",\"entityToCreate\":\"teams\"}",
+      "DashboardDefinitionId": "e0e6aa52-4467-42fd-9bba-f2b72db8449f"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}
