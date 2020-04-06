@@ -1,0 +1,37 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "f65a8efd-f90f-460b-9646-c889f75c48d9",
+  "Name": "Typology Groups",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "department",
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":null},\"update\":{\"endpoint\":null,\"model\":null},\"create\":{\"endpoint\":null,\"model\":null},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":null},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "ed9e3d05-85f6-4f05-aa9b-fe1cf5c2fdee",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":28,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"department\",\"entityAssociation\":\"typologygroup\",\"grid\":{\"call\":\"function getCall(entityId){\\n    return 'v3/departments/' + entityId + '/user-typology-groups'; \\n}\",\"mapper\":\"function mapper(response, entityId){\\n    debugger;\\n    return {\\n        AssociationId: response.UserTypologyGroupId,\\n        Id: response.UserTypologyGroupId,\\n        Name: response.UserTypologyGroupName,\\n        Info1: response.Name,\\n        Info2: null,\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId){\\n    return 'userTypologyGroups' \\n}\",\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: response.CompanyName,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"},\"link\":{\"call\":\"function postCall(item, entityId){\\n    return 'v3/departments/' + entityId + '/user-typology-groups'; \\n}\",\"model\":\"function postModel(item, entityId){\\n    return {\\n        UserTypologyGroupId: item.Id\\n    }\\n}\"},\"unlink\":{\"call\":\"function deleteCall(item, entityId){\\n    debugger;\\n    return 'v3/departments/' + entityId + '/user-typology-groups/' + item.Data.UserTypologyGroupId;\\n}\"},\"form\":{\"call\":\"function putCall(item, entityId){\\n    return null \\n}\",\"model\":\"function putModel(item, entityId){\\n    return null \\n}\"}}",
+      "DashboardDefinitionId": "f65a8efd-f90f-460b-9646-c889f75c48d9"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}
