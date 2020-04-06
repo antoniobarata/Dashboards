@@ -1,0 +1,37 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "b8bce2e0-7610-4566-9a7d-b507e76a685a",
+  "Name": "Typology Groups",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "company",
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":null},\"update\":{\"endpoint\":null,\"model\":null},\"create\":{\"endpoint\":null,\"model\":null},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":null},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "63727d60-bff5-415b-a97b-afb5f7f102fc",
+      "Name": "creation",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":28,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"company\",\"entityToCreate\":\"usertypologygroup\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'v3/companies/' + entityId +'/user-typology-groups'; \\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/user-typology-groups'; \\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        CompanyId: entityId,\\n        Name: data.Name,\\n        Active: data.Active\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, newData, entityId){\\n    return 'v3/user-typology-groups/' + data.Id; \\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    return {\\n        CompanyId: newData[\\\"CompanyId\\\"] == null ? data.CompanyId : newData[\\\"CompanyId\\\"],\\n        Name: newData[\\\"Name\\\"] == null ? data.Name : newData[\\\"Name\\\"],\\n        Active: newData[\\\"Active\\\"] == null ? data.Active : newData[\\\"Active\\\"],\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'v3/user-typology-groups/' + data.Id; \\n}\"},\"columns\":\"function(e){\\r\\n    return[\\r\\n        {\\r\\n            dataField: \\\"Name\\\",\\r\\n            editorType: \\\"dxTextBox\\\",\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"Active\\\",\\r\\n            editorType: \\\"dxCheckBox\\\"\\r\\n        }\\r\\n    ]\\r\\n}\",\"grid\":{\"properties\":{\"height\":\"100%\"}}}",
+      "DashboardDefinitionId": "b8bce2e0-7610-4566-9a7d-b507e76a685a"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}
