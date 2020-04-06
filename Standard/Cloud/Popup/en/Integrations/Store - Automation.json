@@ -69,5 +69,5 @@
     "UseStore": false,
     "StoreEntity": null,
     "Version": 3,
-    "Default": false
+    "Default": true
 }
