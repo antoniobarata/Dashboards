@@ -1,18 +1,12 @@
 ﻿{
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "2d86da83-cfa1-43c7-89b3-3c6d0c8b67fb",
-      "AccessRoleName": "Administrator"
-    }
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "2d86da83-cfa1-43c7-89b3-3c6d0c8b67fb",
   "Name": "Automation Log List",
   "Active": true,
   "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": null,
+  "DocumentTypeName": "integration-workflows",
   "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":true}}",
   "Templates": [],
   "DashboardDefinitionComponents": [
@@ -31,7 +25,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "globalQuery/IntegrationLogs/execute",
-      "Configuration": "{\"height\":\"600\",\"allowColumnResizing\":false,\"hoverStateEnabled\":false,\"columnAutoWidth\":\"true\",\"columnMinWidth\":\"50\",\"searchPanel\":{\"visible\":true},\"filterRow\":{\"visible\":false},\"groupPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"export\":{\"enabled\":false},\"showColumnHeaders\":\"true\",\"selection\":{\"mode\":\"none\"},\"columns\":[{\"dataField\":\"LoggedOn\",\"name\":\"LoggedOn\",\"caption\":\"LoggedOn\",\"dataType\":\"date\",\"format\":\"dd/MM/yyyy HH:mm:ss.SSS\"},{\"dataField\":\"DocumentType\",\"name\":\"DocumentType\",\"caption\":\"DocumentType\"},{\"dataField\":\"OperationId\",\"name\":\"OperationId\"},{\"dataField\":\"DocumentName\",\"name\":\"DocumentName\"},{\"dataField\":\"ErrorMessage\",\"name\":\"ErrorMessage\"},{\"dataField\":\"ProgressMessage\",\"name\":\"ProgressMessage\"},{\"dataField\":\"Content\",\"name\":\"Content\"},{\"dataField\":\"MaxLoggedOn\",\"name\":\"MaxLoggedOn\",\"groupIndex\":1,\"sortOrder\":\"desc\",\"dataType\":\"date\",\"format\":\"dd/MM/yyyy HH:mm:ss\"}],\"onRowClick\":\"function(e) { SW.setDashboardFilter(\u0027clientGroupOid\u0027, \u002798619046-1665-439a-a40c-850978674e27\u0027)}\"}",
+      "Configuration": "{\"height\":\"600\",\"allowColumnResizing\":false,\"hoverStateEnabled\":false,\"columnAutoWidth\":\"true\",\"columnMinWidth\":\"50\",\"searchPanel\":{\"visible\":true},\"filterRow\":{\"visible\":false},\"groupPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"export\":{\"enabled\":false},\"showColumnHeaders\":\"true\",\"selection\":{\"mode\":\"none\"},\"columns\":[{\"dataField\":\"LoggedOn\",\"name\":\"LoggedOn\",\"caption\":\"LoggedOn\",\"dataType\":\"date\",\"format\":\"dd/MM/yyyy HH:mm:ss.SSS\"},{\"dataField\":\"DocumentType\",\"name\":\"DocumentType\",\"caption\":\"DocumentType\"},{\"dataField\":\"OperationId\",\"name\":\"OperationId\"},{\"dataField\":\"DocumentName\",\"name\":\"DocumentName\"},{\"dataField\":\"ErrorMessage\",\"name\":\"ErrorMessage\"},{\"dataField\":\"ProgressMessage\",\"name\":\"ProgressMessage\"},{\"dataField\":\"Content\",\"name\":\"Content\"},{\"dataField\":\"MaxLoggedOn\",\"name\":\"MaxLoggedOn\",\"groupIndex\":1,\"sortOrder\":\"desc\",\"dataType\":\"date\",\"format\":\"dd/MM/yyyy HH:mm:ss\"}],\"onRowClick\":\"function(e) { SW.setDashboardFilter('clientGroupOid', '98619046-1665-439a-a40c-850978674e27')}\",\"dataSource\":{\"load\":\"function (){\\n    var data = SW.getComponent('data');\\n    var name = data.name;\\n    var id = data.id;\\n    var fromDate = data.fromDate;\\n    var toDate = data.toDate;\\n   \\n    if(!fromDate){\\n    fromDate = new Date();\\n    fromDate.setDate(fromDate.getDate() - 2);\\n    fromDate.setHours(0, 0, 0, 0);\\n    data.fromDate = fromDate;\\n    toDate = new Date();\\n    toDate.setHours(23, 59, 59, 0);\\n    data.toDate = toDate;\\n    }\\n    if (fromDate == toDate)\\n    {\\n       fromDate.setHours(0, 0, 0, 0);\\n       toDate.setHours(23, 59, 59, 0);\\n    }\\n\\n \\n    var body = {\\n        \\\"Query\\\": \\\"select top 500????LoggedOn,????DocumentType, ????OperationId, ????DocumentName, ????ErrorMessage, ????ProgressMessage, ????Content,????(???select ? ? ? ? ? ?max(LoggedOn)????????from ????????????CompanyIntegrationLog ????????where ????????????OperationId = z.OperationId ????) as MaxLoggedOn?from? ????CompanyIntegrationLog z?where? DocumentType = 'IntegrationWorkflow' and DocumentName in (@AutomationWorkflowName, convert(nvarchar(50), @AutomationWorkflowId)) and LoggedOn between @FromDate and @ToDate order by ????LoggedOn desc\\\", \\\"Parameters\\\": { \\\"AutomationWorkflowName\\\": name, \\\"AutomationWorkflowId\\\": id, \\\"FromDate\\\": fromDate,\\\"ToDate\\\":toDate } };\\n\\n    return SW.executeAPI('POST', 'analytics/query/execute', null, body).then(x => {return x.Data})\\n}\"},\"onContentReady\":\"function (e){SW.saveComponent(e,'grid')}\"}",
       "DashboardDefinitionId": "2d86da83-cfa1-43c7-89b3-3c6d0c8b67fb"
     },
     {
@@ -49,13 +43,13 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "globalQuery/IntegrationLogs/execute",
-      "Configuration": "{\n    \"size\": {\n        \"height\": 70\n    },\n    \"containerBackgroundColor\": \"#e0e0e0\",\n    \"selectedRangeColor\": \"#f5564a\",\n    \"chart\": {\n        \"commonSeriesSettings\": {\n            \"type\": \"steparea\",\n            \"argumentField\": \"Day\"\n        },\n        \"series\": [\n            {\n                \"valueField\": \"OperationIdTotal\"\n            }\n        ]\n    },\n    \"scale\": {\n        \"minorTickInterval\": \"day\",\n        \"tickInterval\": \"day\",\n        \"valueType\": \"datetime\",\n        \"marker\": {\n            \"separatorHeight\": 10,\n            \"textTopIndent\": 0,\n            \"topIndent\": 0\n        }\n    },\n    \"sliderMarker\": {\n        \"format\": \"monthAndDay\",\n        \"color\": \"#da5859\"\n    },\n    \"value\": {\n        \"endValue\": \"null\",\n        \"length\": {\n            \"days\": 2\n        }\n    },\n    \"onOptionChanged\": \"function (e) { \\n    var data = SW.getComponent(\u0027data\u0027);\\nSW.setDashboardFilter(\u0027AWName\u0027,data.name);\\n    SW.setDashboardFilter(\u0027AWId\u0027, data.id);\\n}\"\n}",
+      "Configuration": "{\n    \"dataSource\": {\n        \"load\": \"function (){\\n    var data = SW.getComponent('data');\\n    var name = data.name;\\n    var id = data.id;\\n    var body = {\\n        \\\"Query\\\": \\\" select count(distinct OperationId) as OperationIdTotal, cast(LoggedOn as Date) as [Day] from CompanyIntegrationLog where OperationId is not null and DocumentType = 'IntegrationWorkflow' and DocumentName in (@AutomationWorkflowName, convert(nvarchar(50), @AutomationWorkflowId))  group by  cast(LoggedOn as Date) order by [Day] desc \\\", \\\"Parameters\\\": { \\\"AutomationWorkflowName\\\": name, \\\"AutomationWorkflowId\\\": id} };\\n\\n    return SW.executeAPI('POST', 'analytics/query/execute', null, body).then(x => {return x.Data})\\n}\"\n    },\n    \"size\": {\n        \"height\": 70\n    },\n    \"containerBackgroundColor\": \"#e0e0e0\",\n    \"selectedRangeColor\": \"#f5564a\",\n    \"chart\": {\n        \"commonSeriesSettings\": {\n            \"type\": \"steparea\",\n            \"argumentField\": \"Day\"\n        },\n        \"series\": [\n            {\n                \"valueField\": \"OperationIdTotal\"\n            }\n        ]\n    },\n    \"scale\": {\n        \"minorTickInterval\": \"day\",\n        \"tickInterval\": \"day\",\n        \"valueType\": \"datetime\",\n        \"marker\": {\n            \"separatorHeight\": 10,\n            \"textTopIndent\": 0,\n            \"topIndent\": 0\n        }\n    },\n    \"sliderMarker\": {\n        \"format\": \"monthAndDay\",\n        \"color\": \"#da5859\"\n    },\n    \"value\": {\n        \"endValue\": \"null\",\n        \"length\": {\n            \"days\": 2\n        }\n    },\n    \"onOptionChanged\": \"function (e) { \\n    var data = SW.getComponent('data');\\n    if (e.name == 'value') { \\n        data.fromDate = e.value.startValue; \\n        \\n        var toDate = new Date(e.value.endValue);\\n        toDate.setHours(23, 59, 59, 0);\\n        data.toDate =  toDate;\\n       \\n        var grid = SW.getComponent('grid');\\n        grid.component.refresh();\\n    }\\n}\"\n}",
       "DashboardDefinitionId": "2d86da83-cfa1-43c7-89b3-3c6d0c8b67fb"
     }
   ],
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }

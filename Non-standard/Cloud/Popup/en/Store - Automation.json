@@ -1,0 +1,73 @@
+{
+    "DashboardDefinitionRoles": [],
+    "Id": "766627fc-873f-410c-b87b-5408758b3044",
+    "Name": "Store - Automation",
+    "Active": true,
+    "Location": 1,
+    "DocumentId": "00000000-0000-0000-0000-000000000000",
+    "DocumentName": "",
+    "DocumentTypeName": null,
+    "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+    "Templates": [],
+    "DashboardDefinitionComponents": [
+        {
+                "Id": "9626fbfe-5c06-4cfa-9f0f-75f4586c6eb5",
+                "Name": "Latest Commits",
+                "Active": true,
+                "UseQuery": false,
+                "Query": "",
+                "Size": 5,
+                "Order": 2,
+                "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":28,\"WidgetYPosition\":0,\"WidgetRows\":11,\"WidgetColumns\":20,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+                "DashboardComponentType": {
+                    "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                    "Name": "Generic Dashboard",
+                    "ComponentTypeNumber": 42
+                },
+                "AnalyticsApiUrl": "",
+                "Configuration": "{\"height\":\"300\",\"scrolling\":{\"mode\":\"virtual\",\"showScrollbar\":\"onHover\"},\"columnAutoWidth\":false,\"dataSource\":{\"load\":\"function() {\\n    var daysAgo = 30;\\n    var date = new Date(Date.now() - daysAgo * 24 * 60 * 60 * 1000);\\n    var auth = 'token {githubToken}';\\n    var repo = 'Automation';\\n    return SkillsWorkflow.Github.getCommits(auth, null, null, null, date, null,undefined, repo).then(result => {\\n        return Promise.resolve(result)\\n    });\\n}\"},\"stateStoring\":{\"enabled\":false},\"columns\":[{\"dataField\":\"\",\"caption\":\"\",\"cellTemplate\":\"function(e, i){             if(i.data.author != null){                    SkillsWorkflow.Utils.setExternalImage(e, 'small', i.data.author.avatar_url);                }else{                    SkillsWorkflow.Utils.setExternalImage(e, 'small', 'https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png');                 }                   }\",\"width\":38,\"alignment\":\"center\"},{\"dataField\":\"commit.author.name\",\"caption\":\"Name\"},{\"caption\":\"Time Ago\",\"alignment\":\"center\",\"calculateCellValue\":\"function(data){                return SkillsWorkflow.Utils.timeAgo(data.commit.author.date);            }\"},{\"dataField\":\"commit.author.date\",\"dataType\":\"date\",\"caption\":\"Date\",\"alignment\":\"center\"},{\"dataField\":\"commit.message\",\"caption\":\"Message\"}],\"selection\":{\"mode\":\"none\"},\"masterDetail\":{\"template\":\"function template(detailElement, detailInfo){\\n    \\n}\"}}",
+                "DashboardDefinitionId": "766627fc-873f-410c-b87b-5408758b3044"
+                },
+            {
+            "Id": "ad844407-ab04-42ff-9444-283b7a11c170",
+            "Name": "Available Automation",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 7,
+            "Order": 1,
+            "Parameters": "[{\"WidgetSubTitle\":\"Looking for an automation?\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":28,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"dataSource\":{\"load\":\"function(e){\\n    var paths = [\\n        'Reach',\\n        'Ziflow'\\n    ];\\n    var auth = 'token {githubToken}';\\n    var repo = 'Automation'\\n    return SkillsWorkflow.Github.getAllDashboardsFrom(auth, paths, null, undefined, repo).then(result => { return Promise.resolve(result)})\\n}\"},\"grouping\":{\"autoExpandAll\":true},\"scrolling\":{\"mode\":\"virtual\",\"showScrollbar\":\"onHover\"},\"stateStoring\":{\"enabled\":false},\"columns\":[{\"dataField\":\"\",\"caption\":\"\",\"cellTemplate\":\"function(e, i) {SkillsWorkflow.showDocumentImage(e, 'medium', 'automation')}\",\"width\":38},{\"dataField\":\"name\",\"caption\":\"Name\",\"calculateCellValue\":\"function(data) {return data.Name.slice(0,-5);}\"},{\"caption\":\"\",\"width\":38,\"alignment\":\"center\",\"cellTemplate\":\"function(e, i){if(i.data.ModifiedBy.ImageUrl != null){        SkillsWorkflow.Utils.setExternalImage(e, 'small', i.data.ModifiedBy.ImageUrl);} else {SkillsWorkflow.Utils.setExternalImage(e, 'small', 'https:/'+'/cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png');}}\"},{\"dataField\":\"ModifiedBy\",\"caption\":\"Modified By\",\"alignment\":\"left\",\"calculateCellValue\":\"function(data) {return data.ModifiedBy.Name;}\"},{\"dataField\":\"ModifiedOn\",\"caption\":\"Modified On\",\"dataType\":\"date\",\"alignment\":\"center\"},{\"dataField\":\"ModifiedOn\",\"caption\":\"Days Ago\",\"dataType\":\"int\",\"calculateCellValue\":\"function(data) {var date = data.Commits[0].commit.author.date; var result = SkillsWorkflow.Utils.timeAgo(date, 'days');return result;}\",\"cellTemplate\":\"function(e, i) {SkillsWorkflow.setRAG(e, i.value, i.value >= 365, i.value > 30 && i.value<365, i.value <= 30, true);}\",\"alignment\":\"center\"},{\"dataField\":\"path\",\"caption\":\"Location\",\"calculateCellValue\":\"function(data){if(data.Path.includes('Reach/')){ return 'Reach'; }; if(data.Path.includes('Ziflow/')){ return 'Ziflow';}}\",\"groupCellTemplate\":\"function(e, i) {h=document.createElement('span'); var ht=' ' + i.text + ' ('+i.data.aggregates[0]+')'; h.innerHTML = ht;e.append(h);}\",\"groupIndex\":0}],\"summary\":{\"groupItems\":[{\"column\":\"Location\",\"summaryType\":\"count\",\"displayFormat\":\"{0}\",\"showInGroupFooter\":false,\"alignByColumn\":true}]},\"onToolbarPreparing\":\"function(e) {\\n    var dataGrid = e.component;\\n    e.toolbarOptions.items.unshift({\\n        location: 'after',\\n        widget: 'dxButton',\\n        options: {\\n            icon: 'fas fa-file-download',\\n            hint: 'Import Selected',\\n            onClick: function (data) {\\n                data.component.option('icon', 'fas fa-spinner fa-spin');\\n                dataGrid.option('disabled', true);\\n                var selectedDashboards = dataGrid.getSelectedRowKeys();\\n                var auth = 'token {githubToken}';\\n                SkillsWorkflow.Github.importAutomation(auth, selectedDashboards).then(result => {\\n                    dataGrid.option('disabled', false);\\n                    data.component.option('icon', 'fas fa-file-download');\\n                })\\n            }\\n        }\\n    });\\n}\",\"height\":\"600px\",\"selection\":{\"mode\":\"multiple\"},\"masterDetail\":{\"template\":\"function template(detailElement, detailInfo){\\n    \\n}\"}}",
+            "DashboardDefinitionId": "766627fc-873f-410c-b87b-5408758b3044"
+        },
+        {
+            "Id": "5a1ef12e-9b28-4830-80a2-0ff635f720f6",
+            "Name": "Most changed",
+            "Active": true,
+            "UseQuery": false,
+            "Query": "",
+            "Size": 5,
+            "Order": 2,
+            "Parameters": "[{\"WidgetSubTitle\":\"Top 10\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":28,\"WidgetYPosition\":11,\"WidgetRows\":13,\"WidgetColumns\":20,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+            "DashboardComponentType": {
+                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+                "Name": "Generic Dashboard",
+                "ComponentTypeNumber": 42
+            },
+            "AnalyticsApiUrl": "",
+            "Configuration": "{\"dataSource\":{\"load\":\"function(e) {\\n    var paths = ['Reach', 'Ziflow'];\\n    var auth = 'token {githubToken}';\\n    var repo = 'Automation';\\n    return SkillsWorkflow.Github.getAllDashboardsFrom(auth, paths, null, undefined, repo).then(result => {\\n        const top = 10; result = result.sort((a, b) => b.Changes - a.Changes);\\n        result = result.slice(0, top);\\n        return Promise.resolve(result)\\n    })\\n}\"},\"size\":{\"height\":\"300\"},\"type\":\"doughnut\",\"series\":[{\"argumentField\":\"Name\",\"valueField\":\"Changes\",\"label\":{\"visible\":true,\"font\":{\"size\":15},\"connector\":{\"visible\":true,\"width\":0.5},\"position\":\"columns\",\"customizeText\":\"function(arg) {                    return arg.valueText;        }\"}}],\"commonSeriesSettings\":{\"label\":{\"visible\":false,\"format\":\"fixedPoint\",\"connector\":{\"visible\":true,\"width\":1}}},\"tooltip\":{\"enabled\":\"true\"},\"legend\":{\"visible\":\"true\",\"horizontalAlignment\":\"left\",\"verticalAlignment\":\"middle\",\"itemTextPosition\":\"right\",\"paddingLeftRight\":0,\"font\":{\"size\":\"10\"}}}",
+            "DashboardDefinitionId": "766627fc-873f-410c-b87b-5408758b3044"
+        }
+    ],
+    "QueryText": "",
+    "UseStore": false,
+    "StoreEntity": null,
+    "Version": 3,
+    "Default": false
+}
