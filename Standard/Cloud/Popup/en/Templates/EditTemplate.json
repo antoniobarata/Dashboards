@@ -25,7 +25,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e){\\n    var editor = SW.getComponent('editor');\\n    var template = JSON.parse(editor.getValue());\\n    var model = {\\n        Name: template.Name,\\n        Type: template.Type,\\n        Category: template.Category,\\n        Layout: template.Layout,\\n        Description: template.Description,\\n        Details: template.Details\\n    }\\n    SW.executeAPI('PUT', 'templates/'+template.Id, null, model)\\n    .then( x => {\\n        SW.Toastr.toastr_Success(\\\"Saved\\\");\\n    })\\n    .catch( x => {\\n        SW.Toastr.toastr_Error(x);\\n    })\\n}\"}",
+      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e){\\n    var editor = SW.getComponent('editor');\\n    var template = JSON.parse(editor.getValue());\\n    SW.executeAPI('PUT', 'templates/'+template.Id, null, template)\\n    .then( x => {\\n        SW.Toastr.toastr_Success(\\\"Saved\\\");\\n        SW.getComponent('templatesGrid').refresh();\\n    })\\n    .catch( x => {\\n        SW.Toastr.toastr_Error(x);\\n    })\\n}\"}",
       "DashboardDefinitionId": "1c280f96-6925-4b25-ab63-609b80b2cac6"
     },
     {
