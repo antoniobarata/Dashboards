@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "d86227fd-3ea9-471d-808a-94aafa168611",
-  "Name": "",
+  "Name": "Types",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "89cb9b6e-5e8a-40cb-b1f7-46cf06b9347b",
+      "Id": "b97dd123-6816-4480-b08a-6c4ad95c90b6",
       "Name": "JobTypes",
       "Active": true,
       "UseQuery": false,
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 13,
+  "Version": 14,
   "Default": true
 }
