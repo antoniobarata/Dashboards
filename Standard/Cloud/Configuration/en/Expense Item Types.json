@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "686584f9-141e-444d-b9ca-f87ba25d55e1",
-  "Name": "",
+  "Name": "Expense Item Types",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }

@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "d9e6beee-71d4-44f5-9257-7ba7c803b228",
-  "Name": "",
+  "Name": "Job Classifications",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 9,
+  "Version": 10,
   "Default": true
 }

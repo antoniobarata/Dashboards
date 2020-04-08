@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "42718591-eac7-40d3-bcf7-805f7c591b56",
-  "Name": "Client",
+  "Name": "Clients",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,7 +32,7 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 15,
+  "Version": 16,
   "Default": true
 }
 

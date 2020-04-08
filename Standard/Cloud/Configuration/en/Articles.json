@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "db6e4962-ca28-43b3-a0da-1866c56335dd",
-  "Name": "",
+  "Name": "Articles",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 9,
+  "Version": 10,
   "Default": true
 }

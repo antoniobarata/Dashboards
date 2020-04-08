@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "98d1297b-dc86-497f-9f76-6eaf397edcb3",
-  "Name": "Resources",
+  "Name": "Recursos",
   "Active": true,
   "Location": 0,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -105,5 +105,5 @@
   "UseStore": false,
   "StoreEntity": null,
   "Version": 2,
-  "Default": true
+  "Default": false
 }

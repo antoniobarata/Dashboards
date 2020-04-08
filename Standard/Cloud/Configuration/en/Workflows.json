@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "25bf01b5-6d2a-4252-8fb0-2ba260c9eb94",
-  "Name": "",
+  "Name": "Workflows",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 10,
+  "Version": 11,
   "Default": true
 }

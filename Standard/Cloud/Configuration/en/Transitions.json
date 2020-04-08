@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "4047789e-1d99-4768-af22-95c8bc342d14",
-  "Name": "",
+  "Name": "Transitions",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 9,
+  "Version": 10,
   "Default": true
 }

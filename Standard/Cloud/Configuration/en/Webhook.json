@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "f7487ad6-ae60-4c14-90bc-a8353a993cf9",
-  "Name": "",
+  "Name": "Webhooks",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -29,6 +29,9 @@
       "DashboardDefinitionId": "f7487ad6-ae60-4c14-90bc-a8353a993cf9"
     }
   ],
-  "Version": 8,
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 10,
   "Default": true
 }

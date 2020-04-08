@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "66cc558e-54b0-446e-abba-d4db8b12ded7",
-  "Name": "",
+  "Name": "Market Groups",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 6,
+  "Version": 7,
   "Default": true
 }

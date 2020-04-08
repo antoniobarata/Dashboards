@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "5974e05d-bd18-4a0f-8dbb-45ad1fc5943b",
-  "Name": "",
+  "Name": "Employees",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 10,
+  "Version": 11,
   "Default": true
 }

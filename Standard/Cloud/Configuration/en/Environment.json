@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "ccd608ea-9891-4af5-b3e9-494d8486a78e",
-  "Name": "",
+  "Name": "Environment",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -50,6 +50,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 7,
+  "Version": 8,
   "Default": true
 }

@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "6b29b97c-6d98-4cc9-8c0b-d29bbe0f98de",
-  "Name": "",
+  "Name": "Work Types",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }

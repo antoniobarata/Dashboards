@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "19dcc0d9-4036-4652-9310-e75d19018f18",
-  "Name": "",
+  "Name": "Achievements",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 2,
+  "Version": 3,
   "Default": true
 }

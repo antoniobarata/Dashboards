@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "3effd862-8c5a-4239-b4a3-8a136a9ee8ca",
-  "Name": "",
+  "Name": "Payment Conditions",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -32,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 10,
+  "Version": 11,
   "Default": true
 }
