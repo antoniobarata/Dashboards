@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "0ffd16cf-6dc8-44e8-9756-a4538d23bd41",
+      "Id": "3d9a915a-9c3d-4ddb-a80f-570136a314d0",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e) {\\n    var editor = SW.getComponent(\u0027editor\u0027);\\n    var template = JSON.parse(editor.getValue());\\n    var model = {\\n        Name: template.Name,\\n        Type: template.Type,\\n        Category: template.Category,\\n        Layout: template.Layout,\\n        Description: template.Description,\\n        Details: template.Details\\n    }\\n    SW.executeAPI(\u0027POST\u0027, \u0027templates\u0027, null, model)\\n        .then(x =\u003e {\\n            SW.Toastr.toastr_Success(\\\"Saved\\\");\\n        })\\n        .catch(x =\u003e {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
+      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e) {\\n    var editor = SW.getComponent('editor');\\n    var template = JSON.parse(editor.getValue());\\n    debugger;\\n    SW.executeAPI('POST', 'templates', null, template)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Saved\\\");\\n            SW.getComponent('templatesGrid').refresh();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
       "DashboardDefinitionId": "a8cbd629-35f8-49ec-8d58-5f0c36feae06"
     },
     {
-      "Id": "5c697833-569e-49ef-a773-f95f20c4d6e0",
+      "Id": "1fc0ec63-4f27-48da-a18d-cd508c21655c",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -43,13 +43,13 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"model\":{\"language\":\"json\"},\"onInit\":\"function(e){\\n    SW.saveComponent(e, \u0027editor\u0027);\\n    var model = {\\n        Name: \\\"\\\",\\n        Type: \\\"\\\",\\n        Category: \\\"\\\",\\n        Layout: \\\"\\\",\\n        Description: \\\"\\\",\\n        Details: {\\n            \\n        }\\n    }\\n    e.setValue(JSON.stringify(model));\\n}\"}",
+      "Configuration": "{\"model\":{\"language\":\"json\"},\"onInit\":\"function(e){\\n    SW.saveComponent(e, 'editor');\\n    var model = {\\n        Name: \\\"\\\",\\n        Type: \\\"\\\",\\n        Category: \\\"\\\",\\n        Layout: \\\"\\\",\\n        Description: \\\"\\\",\\n        DocumentId: \\\"\\\",\\n        DocumentTypeName: \\\"\\\",\\n        EditorWorkspaceId: \\\"\\\",\\n        EditorWorkspaceName: \\\"\\\",\\n        Details: {\\n            \\n        }\\n    }\\n    var data = SW.getComponent('documentData');\\n    debugger;\\n    if(data.Oid){\\n        model.DocumentId = data.Oid\\n    }\\n    e.setValue(JSON.stringify(model));\\n}\"}",
       "DashboardDefinitionId": "a8cbd629-35f8-49ec-8d58-5f0c36feae06"
     }
   ],
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 2,
+  "Version": 3,
   "Default": true
 }

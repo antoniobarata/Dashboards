@@ -1,0 +1,37 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "c3607c4f-60d4-4830-8b91-f7c3be564222",
+  "Name": "Templates",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "jobtype",
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":null},\"update\":{\"endpoint\":null,\"model\":null},\"create\":{\"endpoint\":null,\"model\":null},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":null},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "8e3108b6-c22d-4c9f-9ee4-b38aa627e3a2",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":1,\"WidgetRows\":35,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"dataSource\":{\"load\":\"function(e, i){\\r\\n    var data = SW.getComponent('documentData');\\r\\n    dic = {};\\r\\n    dic[\\\"documentId\\\"] = data.Oid; \\r\\n    return SW.executeAPI(\\\"GET\\\", 'templates', dic);\\r\\n}\"},\"onRowClick\":\"function(e) {\\n    var id = '';\\n    if(e.data.EditorWorkspaceId){\\n        id = e.data.EditorWorkspaceId;\\n    } else {\\n        id = '1c280f96-6925-4b25-ab63-609b80b2cac6';\\n    }\\n    SW.genericPopup('template', [{ Id: id, Title: e.data.Name }], e.component, 700, 800, false)\\n}\",\"height\":\"100%\",\"columns\":[\"Name\"],\"onToolbarPreparing\":\"function(e) {\\n    var dataGrid = e.component;\\n    SW.saveComponent(dataGrid, 'templatesGrid');\\n\\n    e.toolbarOptions.items.unshift({\\n        location: 'after',\\n        widget: 'dxButton',\\n        options: {\\n            icon: 'fal fa-times', onClick: function (e) {\\n                var userList = dataGrid.getSelectedRowKeys();\\n                if (userList.length != 1) {\\n                    SW.Toastr.toastr_Error('Select only 1 template');\\n                    return;\\n                };\\n                var templateSelected = dataGrid.getSelectedRowsData()[0];\\n                SW.executeAPI('DELETE', 'templates/' + templateSelected.Id)\\n                    .then(x => {\\n                        SW.Toastr.toastr_Success(\\\"Deleted\\\");\\n                    });\\n            }\\n        }\\n    });\\n\\n    e.toolbarOptions.items.unshift({\\n        location: 'after',\\n        widget: 'dxButton',\\n        options: {\\n            icon: 'plus', onClick: function () {\\n                var id = 'a8cbd629-35f8-49ec-8d58-5f0c36feae06';\\n                SkillsWorkflow.genericPopup('template', [{ Id: 'a8cbd629-35f8-49ec-8d58-5f0c36feae06', Title: 'New' }], null, 700, 800, false);\\n            }\\n        }\\n    });\\n}\"}",
+      "DashboardDefinitionId": "c3607c4f-60d4-4830-8b91-f7c3be564222"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}
