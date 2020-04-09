@@ -5,12 +5,10 @@
   "Active": true,
   "Location": 1,
   "DocumentId": "c3814c67-0e7d-4d2a-9ffe-e0e932201a97",
-  "DocumentName": "Contract",
-  "DocumentTypeName": null,
+  "DocumentName": "",
+  "DocumentTypeName": "contract",
   "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-  "Templates": [
-
-  ],
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
       "Id": "920e2b95-a37b-4d95-9126-222fd2706f7c",
@@ -106,6 +104,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 2,
+  "Version": 3,
   "Default": false
 }

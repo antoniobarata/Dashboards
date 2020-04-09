@@ -1,38 +1,39 @@
 ﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "7118028a-764c-4853-96a0-1eb2b16c5b02",
-    "Name": "Daily Tallies Dashboard",
-    "Active": true,
-    "Location": 1,
-    "DocumentId": "e85c7fb2-455e-44e7-9c96-55359c37efd5",
-    "DocumentName": "Expense",
-    "DocumentsConfiguration": null,
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "7081c10f-b0e2-4a74-a52e-a88b1ffb9dce",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 1,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":0,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n\\tt.ExpenseTypeName, \\n    t.[Group] as GroupType, \\n\\tt.[Billable-Non],\\n    sum(t.ValueWithVat) as ValueWithVat\\nfrom (\\n\\tselect\\n\\t\\tcase\\n\\t\\t\\twhen eit.Name IN (\u0027Travel Advance - Cash\u0027) then \u0027GSDJOB0004: TRAVEL ADVANCE-CASH\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Travel Advance - Credit Cards\u0027) then \u0027GSDJOB0005: TRAVEL ADVANCE-CREDIT CARDS\u0027\\n\\t\\t\\tWhen eit.Name IN (\u0027Travel Advance - Air\u0027) then \u0027GSDJOB0003: TRAVEL ADVANCE-AIR\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Car Rental\u0027) then \u0027TRAVEL-CAR RENTAL\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Airfare\u0027,\u0027Baggage\u0027,\u0027Seat Upgrade\u0027) then \u0027TRAVEL-COMMERCIAL AIRFARE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Hotel\u0027) then \u0027TRAVEL-HOTEL\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Mileage\u0027) then \u0027TRAVEL-MILEGE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Cash Tips - Bellhop/Valet\u0027,\u0027Cash Tips - Housekeeping\u0027,\u0027Internet\u0027,\u0027In-room Movies\u0027,\u0027Laundry\u0027,\u0027Other\u0027,\u0027Printing/Copies\u0027,\u0027Research Materials\u0027,\u0027Talent Travel\u0027) then \u0027TRAVEL-OTHER\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Gas\u0027,\u0027Parking\u0027,\u0027Taxi/Uber/Public Transportation\u0027,\u0027Tolls\u0027) then \u0027TRAVEL-TAXI/GAS/CAR SERVICE/PARKING\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Client Entertainment - Meals\u0027) then \u0027ENTERTAINMENT-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Client Entertainment - Non-meals\u0027,\u0027Client Gift\u0027) then \u0027ENTERTAINMENT-NON-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Internal Meetings - Meals\u0027) then \u0027INTERNAL MEETINGS-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Internal Meetings - Non-meals\u0027) then \u0027INTERNAL MEETINGS-NON-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Cell phone minutes\u0027) then \u0027CELL PHONE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Home Internet\u0027) then \u0027DSL/INTERNET SERVICE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Cell phone data\u0027) then \u0027DATA PLAN\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Employee Gifts\u0027, \u0027Donation\u0027, \u0027Subscriptions/Dues/Fees\u0027,\u0027Fonts\u0027,\u0027Equipment\u0027,\u0027Conference/Course Registration\u0027,\u0027Software\u0027,\u0027Supplies\u0027,\u0027Award Entry Fees\u0027) then \u0027OTHER PENDING USE TAX\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Nonbillable Alcohol\u0027) then \u0027ENTERTAINMENT MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Meals - Breakfast\u0027,\u0027Meals - Lunch\u0027, \u0027Meals - Dinner\u0027,\u0027Meals - Other\u0027) then \u0027EMPLOYEE MEALS\u0027\\n\\t\\t\\telse \u0027OTHERS\u0027\\n\\t\\tend as [ExpenseTypeName],\\n\\t\\tcase \\n\\t\\t\\twhen eit.[Group] = 0 then ei.ValueWithVat*-1\\n\\t\\t\\telse ei.ValueWithVat\\n\\t\\tend as ValueWithVat,\\n\\t\\tcase \\n\\t\\t\\twhen eit.[Group] = 1 then \u0027Request\u0027\\n\\t\\t\\twhen eit.[Group] = 0 then \u0027Advanced\u0027\\n\\t\\t\\telse \u0027Reimbursable\u0027\\n\\t\\tend as [Group],\\n\\t\\tcase    \\n\\t\\t\\twhen ei.Billable = 1 then \u0027Billable\u0027\\n\\t\\t\\twhen ei.Billable = 0 then \u0027Non-Billable\u0027\\n\\t\\tend as [Billable-Non]\\n\\tfrom \\n\\t\\tExpense e, \\n\\t\\tExpenseItem ei, \\n\\t\\tExpenseItemType eit\\n\\twhere \\n\\t\\tei.Expense = e.Oid and\\n\\t\\tei.[Type] = eit.Oid\\n\\t\\t/*[ExpenseFilter]*/ and e.Oid = @ExpenseId/*[/ExpenseFilter]*/\\n)t\\ngroup by t.ExpenseTypeName, t.[Group], [Billable-Non]\\norder by t.[Group]\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
-            "DashboardComponentType": {
-                "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"height\": \"100%\",\r\n    \"rowHeaderLayout\": \"standard\",\r\n    \"showRowTotals\": true,\r\n    \"allowSortingBySummary\": true,\r\n    \"allowSorting\": true,\r\n    \"allowFiltering\": true,\r\n    \"allowExpandAll\": true,\r\n    \"showBorders\": true,\r\n    \"fieldPanel\": {\r\n        \"showColumnFields\": true,\r\n        \"showDataFields\": true,\r\n        \"showFilterFields\": true,\r\n        \"showRowFields\": true,\r\n        \"allowFieldDragging\": true,\r\n        \"visible\": true\r\n    },\r\n    \"wordWrapEnabled\": false,\r\n    \"dataSource\": {\r\n        \"fields\": [\r\n            {\r\n                \"dataField\": \"GroupType\",\r\n                \"dataType\": \"string\",\r\n                \"area\": \"row\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"ExpenseTypeName\",\r\n                \"dataType\": \"string\",\r\n                \"area\": \"row\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"ExpenseItemDate\",\r\n                \"dataType\": \"date\",\r\n                \"format\": \"MM/dd/yy\",\r\n                \"area\": \"column\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"Billable-Non\",\r\n                \"dataType\": \"boolean\",\r\n                \"area\": \"column\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"ValueWithVat\",\r\n                \"area\": \"data\",\r\n                \"dataType\": \"number\",\r\n                \"summaryType\": \"sum\",\r\n                \"format\": \"#,###.##\"\r\n            }\r\n        ],\r\n        \"store\": null,\r\n        \"retrieveFields\": false\r\n    }\r\n}",
-            "DashboardDefinitionId": "7118028a-764c-4853-96a0-1eb2b16c5b02"
-        }
-    ],
-    "Version": 6,
-    "Default": false,
-    "Dependencies": {
-        "DashboardSdk": "1.0.0",
-        "Analytics": "1.0.0",
-        "SkillsWorkflow": "1.0.0"
+  "DashboardDefinitionRoles": [],
+  "Id": "7118028a-764c-4853-96a0-1eb2b16c5b02",
+  "Name": "Daily Tallies Dashboard",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "e85c7fb2-455e-44e7-9c96-55359c37efd5",
+  "DocumentName": "",
+  "DocumentTypeName": "expense",
+  "DocumentsConfiguration": null,
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "7081c10f-b0e2-4a74-a52e-a88b1ffb9dce",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 1,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":0,\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n\\tt.ExpenseTypeName, \\n    t.[Group] as GroupType, \\n\\tt.[Billable-Non],\\n    sum(t.ValueWithVat) as ValueWithVat\\nfrom (\\n\\tselect\\n\\t\\tcase\\n\\t\\t\\twhen eit.Name IN (\u0027Travel Advance - Cash\u0027) then \u0027GSDJOB0004: TRAVEL ADVANCE-CASH\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Travel Advance - Credit Cards\u0027) then \u0027GSDJOB0005: TRAVEL ADVANCE-CREDIT CARDS\u0027\\n\\t\\t\\tWhen eit.Name IN (\u0027Travel Advance - Air\u0027) then \u0027GSDJOB0003: TRAVEL ADVANCE-AIR\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Car Rental\u0027) then \u0027TRAVEL-CAR RENTAL\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Airfare\u0027,\u0027Baggage\u0027,\u0027Seat Upgrade\u0027) then \u0027TRAVEL-COMMERCIAL AIRFARE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Hotel\u0027) then \u0027TRAVEL-HOTEL\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Mileage\u0027) then \u0027TRAVEL-MILEGE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Cash Tips - Bellhop/Valet\u0027,\u0027Cash Tips - Housekeeping\u0027,\u0027Internet\u0027,\u0027In-room Movies\u0027,\u0027Laundry\u0027,\u0027Other\u0027,\u0027Printing/Copies\u0027,\u0027Research Materials\u0027,\u0027Talent Travel\u0027) then \u0027TRAVEL-OTHER\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Gas\u0027,\u0027Parking\u0027,\u0027Taxi/Uber/Public Transportation\u0027,\u0027Tolls\u0027) then \u0027TRAVEL-TAXI/GAS/CAR SERVICE/PARKING\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Client Entertainment - Meals\u0027) then \u0027ENTERTAINMENT-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Client Entertainment - Non-meals\u0027,\u0027Client Gift\u0027) then \u0027ENTERTAINMENT-NON-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Internal Meetings - Meals\u0027) then \u0027INTERNAL MEETINGS-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Internal Meetings - Non-meals\u0027) then \u0027INTERNAL MEETINGS-NON-MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Cell phone minutes\u0027) then \u0027CELL PHONE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Home Internet\u0027) then \u0027DSL/INTERNET SERVICE\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Cell phone data\u0027) then \u0027DATA PLAN\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Employee Gifts\u0027, \u0027Donation\u0027, \u0027Subscriptions/Dues/Fees\u0027,\u0027Fonts\u0027,\u0027Equipment\u0027,\u0027Conference/Course Registration\u0027,\u0027Software\u0027,\u0027Supplies\u0027,\u0027Award Entry Fees\u0027) then \u0027OTHER PENDING USE TAX\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Nonbillable Alcohol\u0027) then \u0027ENTERTAINMENT MEALS\u0027\\n\\t\\t\\twhen eit.Name IN (\u0027Meals - Breakfast\u0027,\u0027Meals - Lunch\u0027, \u0027Meals - Dinner\u0027,\u0027Meals - Other\u0027) then \u0027EMPLOYEE MEALS\u0027\\n\\t\\t\\telse \u0027OTHERS\u0027\\n\\t\\tend as [ExpenseTypeName],\\n\\t\\tcase \\n\\t\\t\\twhen eit.[Group] = 0 then ei.ValueWithVat*-1\\n\\t\\t\\telse ei.ValueWithVat\\n\\t\\tend as ValueWithVat,\\n\\t\\tcase \\n\\t\\t\\twhen eit.[Group] = 1 then \u0027Request\u0027\\n\\t\\t\\twhen eit.[Group] = 0 then \u0027Advanced\u0027\\n\\t\\t\\telse \u0027Reimbursable\u0027\\n\\t\\tend as [Group],\\n\\t\\tcase    \\n\\t\\t\\twhen ei.Billable = 1 then \u0027Billable\u0027\\n\\t\\t\\twhen ei.Billable = 0 then \u0027Non-Billable\u0027\\n\\t\\tend as [Billable-Non]\\n\\tfrom \\n\\t\\tExpense e, \\n\\t\\tExpenseItem ei, \\n\\t\\tExpenseItemType eit\\n\\twhere \\n\\t\\tei.Expense = e.Oid and\\n\\t\\tei.[Type] = eit.Oid\\n\\t\\t/*[ExpenseFilter]*/ and e.Oid = @ExpenseId/*[/ExpenseFilter]*/\\n)t\\ngroup by t.ExpenseTypeName, t.[Group], [Billable-Non]\\norder by t.[Group]\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"height\": \"100%\",\r\n    \"rowHeaderLayout\": \"standard\",\r\n    \"showRowTotals\": true,\r\n    \"allowSortingBySummary\": true,\r\n    \"allowSorting\": true,\r\n    \"allowFiltering\": true,\r\n    \"allowExpandAll\": true,\r\n    \"showBorders\": true,\r\n    \"fieldPanel\": {\r\n        \"showColumnFields\": true,\r\n        \"showDataFields\": true,\r\n        \"showFilterFields\": true,\r\n        \"showRowFields\": true,\r\n        \"allowFieldDragging\": true,\r\n        \"visible\": true\r\n    },\r\n    \"wordWrapEnabled\": false,\r\n    \"dataSource\": {\r\n        \"fields\": [\r\n            {\r\n                \"dataField\": \"GroupType\",\r\n                \"dataType\": \"string\",\r\n                \"area\": \"row\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"ExpenseTypeName\",\r\n                \"dataType\": \"string\",\r\n                \"area\": \"row\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"ExpenseItemDate\",\r\n                \"dataType\": \"date\",\r\n                \"format\": \"MM/dd/yy\",\r\n                \"area\": \"column\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"Billable-Non\",\r\n                \"dataType\": \"boolean\",\r\n                \"area\": \"column\",\r\n                \"expanded\": true\r\n            },\r\n            {\r\n                \"dataField\": \"ValueWithVat\",\r\n                \"area\": \"data\",\r\n                \"dataType\": \"number\",\r\n                \"summaryType\": \"sum\",\r\n                \"format\": \"#,###.##\"\r\n            }\r\n        ],\r\n        \"store\": null,\r\n        \"retrieveFields\": false\r\n    }\r\n}",
+      "DashboardDefinitionId": "7118028a-764c-4853-96a0-1eb2b16c5b02"
     }
+  ],
+  "Version": 7,
+  "Default": false,
+  "Dependencies": {
+    "DashboardSdk": "1.0.0",
+    "Analytics": "1.0.0",
+    "SkillsWorkflow": "1.0.0"
+  }
 }

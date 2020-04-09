@@ -1,21 +1,5 @@
 {
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "5c9a3a57-9201-4721-9034-2ff6df5145a6",
-      "DashboardDefinitionId": "51910479-d81f-4119-a160-9cb6ba7c20de",
-      "AccessRoleName": "Dashbboard to investigate - AC"
-    },
-    {
-      "AccessRoleId": "bffd1bcb-a5f3-4ed2-b8cd-087dade5e987",
-      "DashboardDefinitionId": "51910479-d81f-4119-a160-9cb6ba7c20de",
-      "AccessRoleName": "Equipa Opera??es"
-    },
-    {
-      "AccessRoleId": "e596ee6c-23ac-4714-9cf7-e886fedfd711",
-      "DashboardDefinitionId": "51910479-d81f-4119-a160-9cb6ba7c20de",
-      "AccessRoleName": "Equipa Support"
-    }
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "51910479-d81f-4119-a160-9cb6ba7c20de",
   "Name": "Support Dashboard",
   "Active": true,
@@ -137,5 +121,7 @@
   ],
   "QueryText": null,
   "UseStore": false,
-  "StoreEntity": null
+  "StoreEntity": null,
+  "Version": 2,
+  "Default": false
 }

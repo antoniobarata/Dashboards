@@ -5,12 +5,10 @@
   "Active": true,
   "Location": 1,
   "DocumentId": "c3814c67-0e7d-4d2a-9ffe-e0e932201a97",
-  "DocumentName": "Contract",
-  "DocumentTypeName": null,
+  "DocumentName": "",
+  "DocumentTypeName": "contract",
   "DocumentsConfiguration": null,
-  "Templates": [
-
-  ],
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
       "Id": "f4545327-cad5-473e-9031-499b77773c35",
@@ -34,6 +32,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 2,
+  "Version": 3,
   "Default": false
 }

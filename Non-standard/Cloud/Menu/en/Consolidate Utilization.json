@@ -1,66 +1,5 @@
 {
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "29e9c439-5395-4774-a436-ff279ba7cded",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Regional Profile"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "29e2dfc3-79f6-4c19-a386-ea1a9e35e300",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "admin"
-    },
-    {
-      "AccessRoleId": "e43ed103-6aec-4bb3-9b60-bbedeb5ea713",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Maintenance Profile V2"
-    },
-    {
-      "AccessRoleId": "e43ed103-6aec-4bb3-9b60-bbedeb5ea713",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Maintenance Profile V2"
-    },
-    {
-      "AccessRoleId": "e43ed103-6aec-4bb3-9b60-bbedeb5ea713",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Maintenance Profile V2"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "29e9c439-5395-4774-a436-ff279ba7cded",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Regional Profile"
-    },
-    {
-      "AccessRoleId": "29e2dfc3-79f6-4c19-a386-ea1a9e35e300",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "admin"
-    },
-    {
-      "AccessRoleId": "29e9c439-5395-4774-a436-ff279ba7cded",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Regional Profile"
-    },
-    {
-      "AccessRoleId": "29e2dfc3-79f6-4c19-a386-ea1a9e35e300",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "admin"
-    },
-    {
-      "AccessRoleId": "37bb1c74-f352-4a97-a363-b442659a92b7",
-      "DashboardDefinitionId": "6ca01878-05f3-4996-bc51-c54ed7067b07",
-      "AccessRoleName": "Administrator"
-    }
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "6ca01878-05f3-4996-bc51-c54ed7067b07",
   "Name": "Consolidated Utilization",
   "Active": true,
@@ -69,9 +8,7 @@
   "DocumentName": "",
   "DocumentTypeName": null,
   "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-  "Templates": [
-
-  ],
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
       "Id": "f4744498-b49d-498e-98a8-0aa27abe650d",
@@ -203,6 +140,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 7,
+  "Version": 8,
   "Default": false
 }

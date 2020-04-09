@@ -1,11 +1,5 @@
 {
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "cb60add0-63f3-4cd3-877c-55993f8661da",
-      "DashboardDefinitionId": "f23860a2-3270-49c1-aa28-b83f0e0a7e11",
-      "AccessRoleName": "Equipa Skills Workflow"
-    }
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "f23860a2-3270-49c1-aa28-b83f0e0a7e11",
   "Name": "Iteration Dashboard",
   "Active": true,
@@ -107,7 +101,9 @@
       "DashboardDefinitionId": "f23860a2-3270-49c1-aa28-b83f0e0a7e11"
     }
   ],
-  "QueryText": "",
+  "QueryText": null,
   "UseStore": false,
-  "StoreEntity": null
+  "StoreEntity": null,
+  "Version": 4,
+  "Default": false
 }

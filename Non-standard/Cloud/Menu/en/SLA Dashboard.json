@@ -1,26 +1,5 @@
 {
-  "DashboardDefinitionRoles": [
-    {
-      "AccessRoleId": "bffd1bcb-a5f3-4ed2-b8cd-087dade5e987",
-      "DashboardDefinitionId": "16f927db-b4d2-4510-a4cd-44ae9479ce83",
-      "AccessRoleName": "Equipa Opera??es"
-    },
-    {
-      "AccessRoleId": "c3aaa550-b74a-4527-ab84-6607ba16b7b5",
-      "DashboardDefinitionId": "16f927db-b4d2-4510-a4cd-44ae9479ce83",
-      "AccessRoleName": "Equipa Desenvolvimento"
-    },
-    {
-      "AccessRoleId": "1a0a6ac7-3609-4ef0-a919-7797f6f4cb3e",
-      "DashboardDefinitionId": "16f927db-b4d2-4510-a4cd-44ae9479ce83",
-      "AccessRoleName": "Administrator"
-    },
-    {
-      "AccessRoleId": "e596ee6c-23ac-4714-9cf7-e886fedfd711",
-      "DashboardDefinitionId": "16f927db-b4d2-4510-a4cd-44ae9479ce83",
-      "AccessRoleName": "Equipa Support"
-    }
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "16f927db-b4d2-4510-a4cd-44ae9479ce83",
   "Name": "SLA Dashboard",
   "Active": true,
@@ -88,5 +67,7 @@
   ],
   "QueryText": null,
   "UseStore": false,
-  "StoreEntity": null
+  "StoreEntity": null,
+  "Version": 2,
+  "Default": false
 }
