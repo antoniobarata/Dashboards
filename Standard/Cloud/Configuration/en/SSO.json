@@ -6,7 +6,7 @@
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": null,
+  "DocumentTypeName": "sso",
   "DocumentsConfiguration": "[]",
   "Templates": [],
   "DashboardDefinitionComponents": [
@@ -86,6 +86,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 3,
+  "Version": 4,
   "Default": true
 }
