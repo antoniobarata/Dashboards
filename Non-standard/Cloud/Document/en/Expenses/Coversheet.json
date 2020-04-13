@@ -7,7 +7,7 @@
   "DocumentId": "e85c7fb2-455e-44e7-9c96-55359c37efd5",
   "DocumentName": "",
   "DocumentTypeName": "expense",
-  "DocumentsConfiguration": null,
+  "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {

@@ -7,10 +7,8 @@
   "DocumentId": "47f0b949-60b7-4312-a29a-8847411a70d3",
   "DocumentName": "",
   "DocumentTypeName": "contract",
-  "DocumentsConfiguration": null,
-  "Templates": [
-
-  ],
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
       "Id": "25a8c250-2aa2-4292-b2b1-a69335b416c0",

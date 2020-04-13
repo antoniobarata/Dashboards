@@ -1,7 +1,5 @@
 {
-  "DashboardDefinitionRoles": [
-
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "953f6be2-c363-4cbc-b628-d6e3828d1b6f",
   "Name": "Wall Metrics On Premises",
   "Active": true,
@@ -9,10 +7,8 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": null,
-  "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-  "Templates": [
-
-  ],
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
       "Id": "65cfb17e-5164-409f-889b-01311913ce36",

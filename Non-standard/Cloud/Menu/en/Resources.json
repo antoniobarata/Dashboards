@@ -1,110 +1,110 @@
 ﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82",
-    "Name": "Resources",
-    "Active": true,
-    "Location": 0,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"},\"patch\":{\"endpoint\":\"\",\"specialModel\":[{\"model\":\"\",\"translation\":\"\",\"type\":\"\"}]},\"lookup\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "d6cedd51-a231-4e47-891b-1a612783e402",
-            "Name": "Time per Companies",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 4,
-            "Order": 2,
-            "Parameters": "[{\"WidgetSubTitle\":\"Hours filled in per company\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Planned\",\"metricFieldValue\":\"PlannedTimeGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"query\",\"value\":\"globalQuery/Analytics_Time_Per_Company/execute\",\"mapping\":\"\"}},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"clientId\"],\"Sort\":{\"Type\":2,\"FieldName\":\"Hours\"}}}]",
-            "DashboardComponentType": {
-                "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_Client/execute",
-            "Configuration": "{\n \"type\": \"doughnut\",\n  \"series\": {\n    \"argumentField\": \"Company\",\n    \"valueField\": \"Hours\",\n    \"label\": {\n      \"visible\": false,\n      \"format\": \"fixedPoint\",\n      \"connector\": {\n        \"visible\": true,\n        \"width\": 1\n      },\n      \"customizeText\": \"function (e) {return e.argumentText + \u0027: \u0027 + e.valueText; }\"\n    }\n  },\n  \"size\": {\n    \"height\": 400\n  },\n  \"legend\": {\n    \"visible\":true,\n    \"horizontalAlignment\": \"center\",\n    \"verticalAlignment\": \"bottom\",\n    \"itemTextPosition\" : \"right\",\n    \"paddingLeftRight\" : 0,\n    \"columnCount\":2,\n    \"font\":{\"size\":8}\n  },\n  \"resolveLabelOverlapping\":\"shift\"\n}",
-            "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
-        },
-        {
-            "Id": "d19b30a4-445c-4364-9a2d-1ed7ba1c72f7",
-            "Name": "Time per Client",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 8,
-            "Order": 1,
-            "Parameters": "[{\"WidgetSubTitle\":\"List of projects, with the number of related jobs, projects, assigned team and hours filled in against it\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"ProjectId\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Forecast\",\"metricFieldValue\":\"TimeGrandTotal\"},{\"visible\":true,\"metricName\":\"? Actual\",\"metricFieldValue\":\"UtilizationPercentGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\n\\tv.ProjectId,\\n\\tv.Company,\\n\\tv.Project,\\n\\tv.Job,\\n\\tv.TypologyGroup,\\n\\tv.Jobs,\\n\\tv.Projects,\\n\\tv.Resources,\\n\\tv.[Hours] as [Time],\\n\\tv.PlannedHours as Planned,\\n\\t(v.[Hours] - v.PlannedHours) as VarianceTimePlanned\\nFROM\\n(\\t\\n\\tSELECT\\n\\t\\tdt.ProjectId,\\n\\t\\tdt.Company,\\n\\t\\tdt.Project,\\n\\t\\tdt.Job,\\n\\t\\tdt.UserTypologyGroup as TypologyGroup,\\n\\t\\tCOUNT(distinct dt.JobId) AS Jobs,\\n\\t\\tCOUNT(distinct dt.ProjectId) AS Projects,\\n\\t\\tCOUNT(distinct dt.UserId) AS Resources,\\n\\t\\tSUM(dt.ActualTime) AS [Hours],\\n\\t\\t0 as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.Timesheet(@CurrentUserId) dt\\n\\tWHERE\\n\\t\\tdt.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dt.ClientId = @ClientId\\n\\tGROUP BY\\n\\t\\tdt.ProjectId,\\n\\t\\tdt.Company,\\n\\t\\tdt.Project,\\n\\t\\tdt.Job,\\n\\t\\tdt.UserTypologyGroup\\n\\tUNION ALL\\n\\tSELECT\\n\\t\\tdph.ProjectId,\\n\\t\\tdph.Company,\\n\\t\\tdph.Project,\\n\\t\\tdph.Job,\\n\\t\\tdph.UserTypologyGroup as TypologyGroup,\\n\\t\\t0 AS Jobs,\\n\\t\\t0 AS Projects,\\n\\t\\t0 AS Resources,\\n\\t\\t0 AS [Hours],\\n\\t\\tSUM(dph.[Hours]) as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.PlannedHours(@CurrentUserId) dph\\n\\tWHERE\\n\\t\\tdph.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dph.ClientId = @ClientId\\n\\tGROUP BY\\n\\t\\tdph.ProjectId,\\n\\t\\tdph.Company,\\n\\t\\tdph.Project,\\n\\t\\tdph.Job,\\n\\t\\tdph.UserTypologyGroup\\n) v\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"clientId\"]}}]",
-            "DashboardComponentType": {
-                "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_Client/execute",
-            "Configuration": "{\n  \"height\": 350,\n  \"columns\": [\n    {\n      \"dataField\": \"Company\"\n    },\n    {\n      \"dataField\": \"Project\"\n    },\n    {\n      \"dataField\": \"Job\"\n    },\n    {\n      \"dataField\": \"Time\",\n      \"caption\": \"Time\",\n      \"dataType\": \"number\",\n      \"format\": \"#,###.#\",\n      \"encodeHtml\": false,\n      \"cellTemplate\": \"function(e, c) {e.innerHTML = \u0027\u003cdiv\u003e\u0027+c.text+\u0027\u003c/div\u003e\u0027;e.style.fontWeight=\u0027600\u0027;}\"\n    },\n    {\n      \"caption\": \"Planned\",\n      \"dataField\": \"Planned\",\n      \"dataType\": \"number\",\n      \"format\": \"#,###.#\",\n      \"encodeHtml\": false,\n      \"cellTemplate\": \"function(e, c) {e.innerHTML = \u0027\u003cdiv\u003e\u0027+c.text+\u0027\u003c/div\u003e\u0027;e.style.fontWeight=\u0027600\u0027;}\"\n    },\n    {\n      \"caption\": \"Time - Planned\",\n      \"dataField\": \"VarianceTimePlanned\",\n      \"format\": \"#,###.#\",\n      \"encodeHtml\": false,\n      \"cellTemplate\": \"function(e, c) {e.innerHTML = \u0027\u003cdiv\u003e\u0027+c.text+\u0027\u003c/div\u003e\u0027;e.style.fontWeight=\u0027600\u0027;}\"\n    }\n  ],\n  \"summary\": {\n    \"totalItems\": [\n      {\n        \"column\": \"Time\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"right\"\n      },\n      {\n        \"column\": \"Planned\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"right\"\n      },\n      {\n        \"column\": \"VarianceTimePlanned\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"right\"\n      }\n    ]\n  }\n}",
-            "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
-        },
-        {
-            "Id": "1a5f2475-f374-4131-99a0-4558be781813",
-            "Name": "Time per Project",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 12,
-            "Order": 3,
-            "Parameters": "[{\"WidgetSubTitle\":\"List of users with hours filled in against it\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Forecast\",\"metricFieldValue\":\"TimeGrandTotal\"},{\"visible\":true,\"metricName\":\"? Actual\",\"metricFieldValue\":\"UtilizationPercentGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\n\\tv.[User],\\n\\tv.TypologyGroup,\\n\\tv.Jobs,\\n\\tv.[Hours] as [Time],\\n\\tv.PlannedHours as Planned,\\n\\t(v.[Hours] - v.PlannedHours) as VarianceTimePlanned\\nFROM\\n(\\t\\n\\tSELECT\\n\\t\\tdt.[User],\\n\\t\\tdt.UserTypologyGroup as TypologyGroup,\\n\\t\\tCOUNT(distinct dt.JobId) AS Jobs,\\n\\t\\tSUM(dt.ActualTime) AS [Hours],\\n\\t\\t0 as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.Timesheet(@CurrentUserId) dt\\n\\tWHERE\\n\\t\\tdt.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dt.ClientId = @ClientId\\n\\t\\tAND dt.ProjectId = @ProjectId\\n\\tGROUP BY\\n\\t\\tdt.[User],\\n\\t\\tdt.UserTypologyGroup\\n\\tUNION ALL\\n\\tSELECT\\n\\t\\tdph.[User],\\n\\t\\tdph.UserTypologyGroup as TypologyGroup,\\n\\t\\t0 AS Jobs,\\n\\t\\t0 AS [Hours],\\n\\t\\tSUM(dph.[Hours]) as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.PlannedHours(@CurrentUserId) dph\\n\\tWHERE\\n\\t\\tdph.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dph.ClientId = @ClientId\\n\\t\\tAND dph.ProjectId = @ProjectId\\n\\tGROUP BY\\n\\t\\tdph.[User],\\n\\t\\tdph.UserTypologyGroup\\n) v\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"clientId\",\"projectId\"]}}]",
-            "DashboardComponentType": {
-                "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_Client/execute",
-            "Configuration": "{\n \"size\": {\n    \"height\": 350\n  },\n  \"allowSortingBySummary\": true,\n  \"allowSorting\": true,\n  \"allowFiltering\": true,\n  \"allowExpandAll\":true,\n  \"height\": 400,\n  \"showBorders\": true,\n  \"fieldPanel\": {\n      \"showColumnFields\": true,\n      \"showDataFields\": true,\n      \"showFilterFields\": true,\n      \"showRowFields\": true,\n      \"allowFieldDragging\": true,\n      \"visible\": true\n  },\n  \"wordWrapEnabled\":false,\n  \"dataSource\": {\n    \"fields\": [\n      {\n        \"caption\": \"User\",\n        \"width\": 120,\n        \"dataField\": \"User\",\n        \"area\": \"row\",\n        \"expanded\":true\n      },\n      {\n        \"caption\": \"# Jobs\",\n        \"dataField\": \"Jobs\",\n        \"dataType\": \"number\",\n        \"summaryType\": \"sum\",\n        \"area\": \"data\",\n        \"format\":\"#,###.#\"\n      },\n      {\n        \"caption\": \"Time\",\n        \"dataField\": \"Time\",\n        \"dataType\": \"number\",\n        \"area\": \"data\",\n        \"summaryType\": \"sum\",\n        \"format\":\"#,###.#\"\n      },\n      {\n        \"caption\": \"Planned\",\n        \"dataField\": \"Planned\",\n        \"dataType\": \"number\",\n        \"area\": \"data\",\n        \"summaryType\": \"sum\",\n        \"format\": \"#,###.#\"\n      },\n      {\n        \"caption\": \"Time - Planned\",\n        \"dataField\": \"VarianceTimePlanned\",\n        \"dataType\": \"number\",\n        \"area\": \"data\",\n        \"summaryType\": \"sum\",\n        \"format\": \"#,###.#\"\n      }\n    ],\n    \"store\": null\n  }\n}",
-            "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
-        },
-        {
-            "Id": "13bcbb04-e2ae-4b25-90fe-4be2425a58af",
-            "Name": "Period",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "Analytics_Time_Utilization_Hours_Per_YearWeek",
-            "Size": 12,
-            "Order": 3,
-            "Parameters": "[\n  {\n    \"WidgetHeader\": {\n      \"showContextInfo\": false,\n      \"WidgetPeriodChooser\": {\n        \"startDate\": \"2018-01-01\",\n        \"endDate\": \"2019-12-31\",\n        \"type\": \"year\",\n        \"visible\": false\n      }\n    }\n  },\n  {\n    \"WidgetType\": \"rangeSelector\"\n  },\n  {\n    \"WidgetSubTitle\": \"Jobs - Select Months\"\n  },\n  {\n    \"WidgetColor\": \"#e0e0e0\"\n  },\n  {\n    \"WidgetHeight\": \"100\"\n  }\n,{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Analytics_Jobs_Per_YearWeek/execute\" }}},{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Analytics_Jobs_Per_YearWeek/execute\" }}}]",
-            "DashboardComponentType": {
-                "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_YearWeek/execute",
-            "Configuration": "{\n \"margin\": {\n    \"top\": 0\n  },\n  \"size\": {\n    \"height\": 150\n  },\n  \"containerBackgroundColor\":\"#e0e0e0\",\n  \"selectedRangeColor\": \"#f5564a\",\n  \"chart\": {\n    \"commonSeriesSettings\": {\n      \"type\": \"line\",\n      \"argumentField\": \"WeekStart\"\n    },\n    \"series\": [\n      {\n        \"valueField\": \"Jobs\"\n      }\n    ]\n  },\n  \"scale\": {\n    \"minorTickInterval\": \"month\",\n    \"tickInterval\": \"month\",\n    \"valueType\": \"datetime\"\n  },\n  \"sliderMarker\": {\n    \"format\": \"month\",\n    \"color\": \"#da5859\"\n  },\n  \"value\": [\n    \"2018/01/01\",\n    \"2018/02/01\"\n  ]\n}",
-            "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
-        },
-        {
-            "Id": "1eb8b09f-43c4-4847-ae43-f97b45054b6f",
-            "Name": "Client",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Please choose a client...\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":false,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT \u0027\u0027 \\nFROM Division where 1 = 0\\nUNION \\nSELECT \u0027\u0027\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
-            "DashboardComponentType": {
-                "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": null,
-            "Configuration": "{\n  \"colCount\": 4,\n  \"formData\": {\n    \"clientGroup\": \"Client Group\",\n    \"client\": \"Client\"\n  },\n  \"dataSource\": {\n    \"clientGroup\": \"Client Group\",\n    \"client\": \"Client\"\n  },\n  \"onFieldDataChanged\": \"function(e){ if(e.dataField === \u0027clientGroup\u0027) { if(e.component.getEditor(\u0027client\u0027) != null) { debugger; if(e.component.getEditor(\u0027client\u0027).getDataSource().filter.items != null) e.component.getEditor(\u0027client\u0027).getDataSource().filter.items.length = 0; e.component.getEditor(\u0027client\u0027).getDataSource().filter([\u0027clientGroupId\u0027, \u0027=\u0027, e.value]); debugger; e.component.getEditor(\u0027client\u0027).reset(); } } }\",\n  \"items\": [\n    {\n      \"name\": \"Client Group\",\n      \"dataField\": \"clientGroup\",\n      \"editorType\": \"dxSelectBox\",\n      \"editorOptions\": {\n        \"searchEnabled\": true,\n        \"dataSource\": {\n          \"load\": \"function(loadOptions){ return SK.executeAPI(\u0027POST\u0027, \u0027analytics/globalQuery/Analytics_ClientGroup/execute\u0027, null, {}).then(function(res){ debugger; return res.Data; }); }\",\n          \"byKey\": \"function(key) { console.log(\u0027byKey\u0027); }\"\n        },\n        \"value\": \"\",\n        \"onValueChanged\": \"function(e){ console.log(\u0027Value:\u0027 + e.value); if(e.value != null) { SK.setDashboardFilter(\u0027clientGroupId\u0027, e.value); } }\",\n        \"valueExpr\": \"Id\",\n        \"displayExpr\": \"Name\"\n      },\n      \"noDataText\": \"Please wait...\"\n    },\n    {\n      \"name\": \"Client\",\n      \"dataField\": \"client\",\n      \"editorType\": \"dxSelectBox\",\n      \"editorOptions\": {\n        \"searchEnabled\": true,\n        \"minSearchLength\": 0,\n        \"dataSource\": {\n          \"load\": \"function(loadOptions){ if(loadOptions.filter.length \u003c 3) return; var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); var query = \u0027SELECT TOP \u0027 + searchTake.toString() + \u0027 cc.Oid as Id, cc.[Name] FROM CommercialClient cc WHERE cc.ClientGroup = \\\\\u0027\u0027 + loadOptions.filter[2] + \u0027\\\\\u0027\u0027; if(searchValue != null \u0026\u0026 searchValue != \u0027\u0027) query += \u0027 AND CHARINDEX(\\\\\u0027\u0027 + searchValue + \u0027\\\\\u0027, cc.[Name]) \u003e 0\u0027;  query += \u0027 ORDER BY cc.[Name]\u0027; debugger; return SK.executeAPI(\u0027POST\u0027, \u0027analytics/query/execute\u0027, null, {\u0027query\u0027: query, \u0027parameters\u0027: {}}).then(function(res){ debugger; return res.Data; }); }\",\n          \"byKey\": \"function(key) { console.log(\u0027byKey\u0027); }\"\n        },\n        \"value\": \"\",\n        \"onValueChanged\": \"function(e){ console.log(\u0027Value:\u0027 + e.value); if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027clientId\u0027, e.value); } }\",\n        \"valueExpr\": \"Id\",\n        \"displayExpr\": \"Name\"\n      },\n      \"noDataText\": \"Please wait...\"\n    }\n  ],\n  \"size\": {\n    \"height\": 3\n  },\n  \"height\": 3\n}",
-            "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
-        }
-    ],
-    "Version": 5,
-    "Default": false,
-    "Dependencies": {
-        "DashboardSdk": "1.0.0",
-        "Analytics": "1.0.0",
-        "SkillsWorkflow": "1.0.0"
+  "DashboardDefinitionRoles": [],
+  "Id": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82",
+  "Name": "Resources",
+  "Active": true,
+  "Location": 0,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "d6cedd51-a231-4e47-891b-1a612783e402",
+      "Name": "Time per Companies",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 2,
+      "Parameters": "[{\"WidgetSubTitle\":\"Hours filled in per company\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Planned\",\"metricFieldValue\":\"PlannedTimeGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"query\",\"value\":\"globalQuery/Analytics_Time_Per_Company/execute\",\"mapping\":\"\"}},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"clientId\"],\"Sort\":{\"Type\":2,\"FieldName\":\"Hours\"}}}]",
+      "DashboardComponentType": {
+        "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_Client/execute",
+      "Configuration": "{\n \"type\": \"doughnut\",\n  \"series\": {\n    \"argumentField\": \"Company\",\n    \"valueField\": \"Hours\",\n    \"label\": {\n      \"visible\": false,\n      \"format\": \"fixedPoint\",\n      \"connector\": {\n        \"visible\": true,\n        \"width\": 1\n      },\n      \"customizeText\": \"function (e) {return e.argumentText + \u0027: \u0027 + e.valueText; }\"\n    }\n  },\n  \"size\": {\n    \"height\": 400\n  },\n  \"legend\": {\n    \"visible\":true,\n    \"horizontalAlignment\": \"center\",\n    \"verticalAlignment\": \"bottom\",\n    \"itemTextPosition\" : \"right\",\n    \"paddingLeftRight\" : 0,\n    \"columnCount\":2,\n    \"font\":{\"size\":8}\n  },\n  \"resolveLabelOverlapping\":\"shift\"\n}",
+      "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
+    },
+    {
+      "Id": "d19b30a4-445c-4364-9a2d-1ed7ba1c72f7",
+      "Name": "Time per Client",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 8,
+      "Order": 1,
+      "Parameters": "[{\"WidgetSubTitle\":\"List of projects, with the number of related jobs, projects, assigned team and hours filled in against it\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"ProjectId\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Forecast\",\"metricFieldValue\":\"TimeGrandTotal\"},{\"visible\":true,\"metricName\":\"? Actual\",\"metricFieldValue\":\"UtilizationPercentGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\n\\tv.ProjectId,\\n\\tv.Company,\\n\\tv.Project,\\n\\tv.Job,\\n\\tv.TypologyGroup,\\n\\tv.Jobs,\\n\\tv.Projects,\\n\\tv.Resources,\\n\\tv.[Hours] as [Time],\\n\\tv.PlannedHours as Planned,\\n\\t(v.[Hours] - v.PlannedHours) as VarianceTimePlanned\\nFROM\\n(\\t\\n\\tSELECT\\n\\t\\tdt.ProjectId,\\n\\t\\tdt.Company,\\n\\t\\tdt.Project,\\n\\t\\tdt.Job,\\n\\t\\tdt.UserTypologyGroup as TypologyGroup,\\n\\t\\tCOUNT(distinct dt.JobId) AS Jobs,\\n\\t\\tCOUNT(distinct dt.ProjectId) AS Projects,\\n\\t\\tCOUNT(distinct dt.UserId) AS Resources,\\n\\t\\tSUM(dt.ActualTime) AS [Hours],\\n\\t\\t0 as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.Timesheet(@CurrentUserId) dt\\n\\tWHERE\\n\\t\\tdt.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dt.ClientId = @ClientId\\n\\tGROUP BY\\n\\t\\tdt.ProjectId,\\n\\t\\tdt.Company,\\n\\t\\tdt.Project,\\n\\t\\tdt.Job,\\n\\t\\tdt.UserTypologyGroup\\n\\tUNION ALL\\n\\tSELECT\\n\\t\\tdph.ProjectId,\\n\\t\\tdph.Company,\\n\\t\\tdph.Project,\\n\\t\\tdph.Job,\\n\\t\\tdph.UserTypologyGroup as TypologyGroup,\\n\\t\\t0 AS Jobs,\\n\\t\\t0 AS Projects,\\n\\t\\t0 AS Resources,\\n\\t\\t0 AS [Hours],\\n\\t\\tSUM(dph.[Hours]) as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.PlannedHours(@CurrentUserId) dph\\n\\tWHERE\\n\\t\\tdph.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dph.ClientId = @ClientId\\n\\tGROUP BY\\n\\t\\tdph.ProjectId,\\n\\t\\tdph.Company,\\n\\t\\tdph.Project,\\n\\t\\tdph.Job,\\n\\t\\tdph.UserTypologyGroup\\n) v\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"clientId\"]}}]",
+      "DashboardComponentType": {
+        "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_Client/execute",
+      "Configuration": "{\n  \"height\": 350,\n  \"columns\": [\n    {\n      \"dataField\": \"Company\"\n    },\n    {\n      \"dataField\": \"Project\"\n    },\n    {\n      \"dataField\": \"Job\"\n    },\n    {\n      \"dataField\": \"Time\",\n      \"caption\": \"Time\",\n      \"dataType\": \"number\",\n      \"format\": \"#,###.#\",\n      \"encodeHtml\": false,\n      \"cellTemplate\": \"function(e, c) {e.innerHTML = \u0027\u003cdiv\u003e\u0027+c.text+\u0027\u003c/div\u003e\u0027;e.style.fontWeight=\u0027600\u0027;}\"\n    },\n    {\n      \"caption\": \"Planned\",\n      \"dataField\": \"Planned\",\n      \"dataType\": \"number\",\n      \"format\": \"#,###.#\",\n      \"encodeHtml\": false,\n      \"cellTemplate\": \"function(e, c) {e.innerHTML = \u0027\u003cdiv\u003e\u0027+c.text+\u0027\u003c/div\u003e\u0027;e.style.fontWeight=\u0027600\u0027;}\"\n    },\n    {\n      \"caption\": \"Time - Planned\",\n      \"dataField\": \"VarianceTimePlanned\",\n      \"format\": \"#,###.#\",\n      \"encodeHtml\": false,\n      \"cellTemplate\": \"function(e, c) {e.innerHTML = \u0027\u003cdiv\u003e\u0027+c.text+\u0027\u003c/div\u003e\u0027;e.style.fontWeight=\u0027600\u0027;}\"\n    }\n  ],\n  \"summary\": {\n    \"totalItems\": [\n      {\n        \"column\": \"Time\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"right\"\n      },\n      {\n        \"column\": \"Planned\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"right\"\n      },\n      {\n        \"column\": \"VarianceTimePlanned\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"right\"\n      }\n    ]\n  }\n}",
+      "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
+    },
+    {
+      "Id": "1a5f2475-f374-4131-99a0-4558be781813",
+      "Name": "Time per Project",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 12,
+      "Order": 3,
+      "Parameters": "[{\"WidgetSubTitle\":\"List of users with hours filled in against it\",\"WidgetType\":\"pivotgrid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Forecast\",\"metricFieldValue\":\"TimeGrandTotal\"},{\"visible\":true,\"metricName\":\"? Actual\",\"metricFieldValue\":\"UtilizationPercentGrandTotal\"}]},\"showSubTitle\":true,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT\\n\\tv.[User],\\n\\tv.TypologyGroup,\\n\\tv.Jobs,\\n\\tv.[Hours] as [Time],\\n\\tv.PlannedHours as Planned,\\n\\t(v.[Hours] - v.PlannedHours) as VarianceTimePlanned\\nFROM\\n(\\t\\n\\tSELECT\\n\\t\\tdt.[User],\\n\\t\\tdt.UserTypologyGroup as TypologyGroup,\\n\\t\\tCOUNT(distinct dt.JobId) AS Jobs,\\n\\t\\tSUM(dt.ActualTime) AS [Hours],\\n\\t\\t0 as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.Timesheet(@CurrentUserId) dt\\n\\tWHERE\\n\\t\\tdt.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dt.ClientId = @ClientId\\n\\t\\tAND dt.ProjectId = @ProjectId\\n\\tGROUP BY\\n\\t\\tdt.[User],\\n\\t\\tdt.UserTypologyGroup\\n\\tUNION ALL\\n\\tSELECT\\n\\t\\tdph.[User],\\n\\t\\tdph.UserTypologyGroup as TypologyGroup,\\n\\t\\t0 AS Jobs,\\n\\t\\t0 AS [Hours],\\n\\t\\tSUM(dph.[Hours]) as PlannedHours\\n\\tFROM \\n\\t\\tAnalytics.PlannedHours(@CurrentUserId) dph\\n\\tWHERE\\n\\t\\tdph.[Date] BETWEEN @FromDate AND @ToDate\\n\\t\\tAND dph.ClientId = @ClientId\\n\\t\\tAND dph.ProjectId = @ProjectId\\n\\tGROUP BY\\n\\t\\tdph.[User],\\n\\t\\tdph.UserTypologyGroup\\n) v\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"RequiredFilters\":[\"startDate\",\"endDate\",\"clientId\",\"projectId\"]}}]",
+      "DashboardComponentType": {
+        "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_Client/execute",
+      "Configuration": "{\n \"size\": {\n    \"height\": 350\n  },\n  \"allowSortingBySummary\": true,\n  \"allowSorting\": true,\n  \"allowFiltering\": true,\n  \"allowExpandAll\":true,\n  \"height\": 400,\n  \"showBorders\": true,\n  \"fieldPanel\": {\n      \"showColumnFields\": true,\n      \"showDataFields\": true,\n      \"showFilterFields\": true,\n      \"showRowFields\": true,\n      \"allowFieldDragging\": true,\n      \"visible\": true\n  },\n  \"wordWrapEnabled\":false,\n  \"dataSource\": {\n    \"fields\": [\n      {\n        \"caption\": \"User\",\n        \"width\": 120,\n        \"dataField\": \"User\",\n        \"area\": \"row\",\n        \"expanded\":true\n      },\n      {\n        \"caption\": \"# Jobs\",\n        \"dataField\": \"Jobs\",\n        \"dataType\": \"number\",\n        \"summaryType\": \"sum\",\n        \"area\": \"data\",\n        \"format\":\"#,###.#\"\n      },\n      {\n        \"caption\": \"Time\",\n        \"dataField\": \"Time\",\n        \"dataType\": \"number\",\n        \"area\": \"data\",\n        \"summaryType\": \"sum\",\n        \"format\":\"#,###.#\"\n      },\n      {\n        \"caption\": \"Planned\",\n        \"dataField\": \"Planned\",\n        \"dataType\": \"number\",\n        \"area\": \"data\",\n        \"summaryType\": \"sum\",\n        \"format\": \"#,###.#\"\n      },\n      {\n        \"caption\": \"Time - Planned\",\n        \"dataField\": \"VarianceTimePlanned\",\n        \"dataType\": \"number\",\n        \"area\": \"data\",\n        \"summaryType\": \"sum\",\n        \"format\": \"#,###.#\"\n      }\n    ],\n    \"store\": null\n  }\n}",
+      "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
+    },
+    {
+      "Id": "13bcbb04-e2ae-4b25-90fe-4be2425a58af",
+      "Name": "Period",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "Analytics_Time_Utilization_Hours_Per_YearWeek",
+      "Size": 12,
+      "Order": 3,
+      "Parameters": "[\n  {\n    \"WidgetHeader\": {\n      \"showContextInfo\": false,\n      \"WidgetPeriodChooser\": {\n        \"startDate\": \"2018-01-01\",\n        \"endDate\": \"2019-12-31\",\n        \"type\": \"year\",\n        \"visible\": false\n      }\n    }\n  },\n  {\n    \"WidgetType\": \"rangeSelector\"\n  },\n  {\n    \"WidgetSubTitle\": \"Jobs - Select Months\"\n  },\n  {\n    \"WidgetColor\": \"#e0e0e0\"\n  },\n  {\n    \"WidgetHeight\": \"100\"\n  }\n,{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Analytics_Jobs_Per_YearWeek/execute\" }}},{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Analytics_Jobs_Per_YearWeek/execute\" }}}]",
+      "DashboardComponentType": {
+        "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Analytics_Jobs_Per_YearWeek/execute",
+      "Configuration": "{\n \"margin\": {\n    \"top\": 0\n  },\n  \"size\": {\n    \"height\": 150\n  },\n  \"containerBackgroundColor\":\"#e0e0e0\",\n  \"selectedRangeColor\": \"#f5564a\",\n  \"chart\": {\n    \"commonSeriesSettings\": {\n      \"type\": \"line\",\n      \"argumentField\": \"WeekStart\"\n    },\n    \"series\": [\n      {\n        \"valueField\": \"Jobs\"\n      }\n    ]\n  },\n  \"scale\": {\n    \"minorTickInterval\": \"month\",\n    \"tickInterval\": \"month\",\n    \"valueType\": \"datetime\"\n  },\n  \"sliderMarker\": {\n    \"format\": \"month\",\n    \"color\": \"#da5859\"\n  },\n  \"value\": [\n    \"2018/01/01\",\n    \"2018/02/01\"\n  ]\n}",
+      "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
+    },
+    {
+      "Id": "1eb8b09f-43c4-4847-ae43-f97b45054b6f",
+      "Name": "Client",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Please choose a client...\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetHeight\":\"\",\"WidgetHeader\":{\"showContextInfo\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"showSubTitle\":false,\"showTitle\":true},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT \u0027\u0027 \\nFROM Division where 1 = 0\\nUNION \\nSELECT \u0027\u0027\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "DashboardComponentType": {
+        "Id": "319d5cdf-9bca-4fec-b03f-d18df1d207ba",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": null,
+      "Configuration": "{\n  \"colCount\": 4,\n  \"formData\": {\n    \"clientGroup\": \"Client Group\",\n    \"client\": \"Client\"\n  },\n  \"dataSource\": {\n    \"clientGroup\": \"Client Group\",\n    \"client\": \"Client\"\n  },\n  \"onFieldDataChanged\": \"function(e){ if(e.dataField === \u0027clientGroup\u0027) { if(e.component.getEditor(\u0027client\u0027) != null) { debugger; if(e.component.getEditor(\u0027client\u0027).getDataSource().filter.items != null) e.component.getEditor(\u0027client\u0027).getDataSource().filter.items.length = 0; e.component.getEditor(\u0027client\u0027).getDataSource().filter([\u0027clientGroupId\u0027, \u0027=\u0027, e.value]); debugger; e.component.getEditor(\u0027client\u0027).reset(); } } }\",\n  \"items\": [\n    {\n      \"name\": \"Client Group\",\n      \"dataField\": \"clientGroup\",\n      \"editorType\": \"dxSelectBox\",\n      \"editorOptions\": {\n        \"searchEnabled\": true,\n        \"dataSource\": {\n          \"load\": \"function(loadOptions){ return SK.executeAPI(\u0027POST\u0027, \u0027analytics/globalQuery/Analytics_ClientGroup/execute\u0027, null, {}).then(function(res){ debugger; return res.Data; }); }\",\n          \"byKey\": \"function(key) { console.log(\u0027byKey\u0027); }\"\n        },\n        \"value\": \"\",\n        \"onValueChanged\": \"function(e){ console.log(\u0027Value:\u0027 + e.value); if(e.value != null) { SK.setDashboardFilter(\u0027clientGroupId\u0027, e.value); } }\",\n        \"valueExpr\": \"Id\",\n        \"displayExpr\": \"Name\"\n      },\n      \"noDataText\": \"Please wait...\"\n    },\n    {\n      \"name\": \"Client\",\n      \"dataField\": \"client\",\n      \"editorType\": \"dxSelectBox\",\n      \"editorOptions\": {\n        \"searchEnabled\": true,\n        \"minSearchLength\": 0,\n        \"dataSource\": {\n          \"load\": \"function(loadOptions){ if(loadOptions.filter.length \u003c 3) return; var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : \u0027\u0027); var searchTake = (loadOptions.searchValue != null \u0026\u0026 loadOptions.searchValue != \u0027\u0027 ? 10 : 100); var query = \u0027SELECT TOP \u0027 + searchTake.toString() + \u0027 cc.Oid as Id, cc.[Name] FROM CommercialClient cc WHERE cc.ClientGroup = \\\\\u0027\u0027 + loadOptions.filter[2] + \u0027\\\\\u0027\u0027; if(searchValue != null \u0026\u0026 searchValue != \u0027\u0027) query += \u0027 AND CHARINDEX(\\\\\u0027\u0027 + searchValue + \u0027\\\\\u0027, cc.[Name]) \u003e 0\u0027;  query += \u0027 ORDER BY cc.[Name]\u0027; debugger; return SK.executeAPI(\u0027POST\u0027, \u0027analytics/query/execute\u0027, null, {\u0027query\u0027: query, \u0027parameters\u0027: {}}).then(function(res){ debugger; return res.Data; }); }\",\n          \"byKey\": \"function(key) { console.log(\u0027byKey\u0027); }\"\n        },\n        \"value\": \"\",\n        \"onValueChanged\": \"function(e){ console.log(\u0027Value:\u0027 + e.value); if(e.value != null) { SkillsWorkflow.setDashboardFilter(\u0027clientId\u0027, e.value); } }\",\n        \"valueExpr\": \"Id\",\n        \"displayExpr\": \"Name\"\n      },\n      \"noDataText\": \"Please wait...\"\n    }\n  ],\n  \"size\": {\n    \"height\": 3\n  },\n  \"height\": 3\n}",
+      "DashboardDefinitionId": "28cf5c0c-8e61-41c0-83a3-55a34b6d5f82"
     }
+  ],
+  "Version": 5,
+  "Default": false,
+  "Dependencies": {
+    "DashboardSdk": "1.0.0",
+    "Analytics": "1.0.0",
+    "SkillsWorkflow": "1.0.0"
+  }
 }

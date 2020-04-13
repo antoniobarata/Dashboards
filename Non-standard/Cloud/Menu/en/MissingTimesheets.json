@@ -1,7 +1,5 @@
 {
-  "DashboardDefinitionRoles": [
-
-  ],
+  "DashboardDefinitionRoles": [],
   "Id": "db39c916-c152-4a0a-a260-7c47f837692b",
   "Name": "Missing Timesheets",
   "Active": true,
@@ -9,10 +7,8 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": null,
-  "DocumentsConfiguration": null,
-  "Templates": [
-
-  ],
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
       "Id": "6b294b94-22aa-4687-9db9-66d7b5d2328d",

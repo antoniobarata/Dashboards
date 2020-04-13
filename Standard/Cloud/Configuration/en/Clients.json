@@ -7,7 +7,7 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": "commercialclient",
-  "DocumentsConfiguration": "[]",
+  "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
@@ -35,5 +35,3 @@
   "Version": 16,
   "Default": true
 }
-
-
