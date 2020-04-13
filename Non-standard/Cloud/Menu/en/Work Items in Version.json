@@ -1,11 +1,5 @@
 {
-    "DashboardDefinitionRoles": [
-        {
-            "AccessRoleId": "cb60add0-63f3-4cd3-877c-55993f8661da",
-            "DashboardDefinitionId": "c6875c63-003e-4bcd-8400-33a226ae788c",
-            "AccessRoleName": "Equipa Skills Workflow"
-        }
-    ],
+    "DashboardDefinitionRoles": [],
     "Id": "c6875c63-003e-4bcd-8400-33a226ae788c",
     "Name": "Work Items in Version",
     "Active": true,
