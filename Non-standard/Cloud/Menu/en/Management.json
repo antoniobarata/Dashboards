@@ -1,11 +1,5 @@
 {
-    "DashboardDefinitionRoles": [
-        {
-            "AccessRoleId": "1a65565a-6366-4503-bcc7-eceab361dc3a",
-            "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206",
-            "AccessRoleName": "Equipa Management"
-        }
-    ],
+    "DashboardDefinitionRoles": [],
     "Id": "a812c12b-f293-4539-bbbf-d9c000f0f206",
     "Name": "Management",
     "Active": true,
