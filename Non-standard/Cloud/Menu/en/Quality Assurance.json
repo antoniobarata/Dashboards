@@ -1,26 +1,5 @@
 {
-    "DashboardDefinitionRoles": [
-        {
-            "AccessRoleId": "e596ee6c-23ac-4714-9cf7-e886fedfd711",
-            "DashboardDefinitionId": "f4ad678e-ea37-4e7a-b8a3-27a5593fb313",
-            "AccessRoleName": "Equipa Support"
-        },
-        {
-            "AccessRoleId": "7ffa8705-9a03-4f21-b5ec-66b90e03be1a",
-            "DashboardDefinitionId": "f4ad678e-ea37-4e7a-b8a3-27a5593fb313",
-            "AccessRoleName": "Equipa QA"
-        },
-        {
-            "AccessRoleId": "bffd1bcb-a5f3-4ed2-b8cd-087dade5e987",
-            "DashboardDefinitionId": "f4ad678e-ea37-4e7a-b8a3-27a5593fb313",
-            "AccessRoleName": "Equipa Operações"
-        },
-        {
-            "AccessRoleId": "c3aaa550-b74a-4527-ab84-6607ba16b7b5",
-            "DashboardDefinitionId": "f4ad678e-ea37-4e7a-b8a3-27a5593fb313",
-            "AccessRoleName": "Equipa Desenvolvimento"
-        }
-    ],
+    "DashboardDefinitionRoles": [],
     "Id": "f4ad678e-ea37-4e7a-b8a3-27a5593fb313",
     "Name": "Quality Assurance",
     "Active": true,
