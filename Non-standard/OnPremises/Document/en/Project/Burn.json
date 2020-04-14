@@ -7,7 +7,7 @@
   "DocumentId": "5b8908a9-0854-41a1-a861-999f553a78dc",
   "DocumentName": "",
   "DocumentTypeName": "project",
-  "DocumentsConfiguration": "{\"type\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"remove\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{}},\"customDocument\":{\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemNames\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
+  "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {

@@ -1,127 +1,127 @@
 {
-    "DashboardDefinitionRoles": [],
-    "Id": "a812c12b-f293-4539-bbbf-d9c000f0f206",
-    "Name": "Management",
-    "Active": true,
-    "Location": 0,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentTypeName": "Operations",
-    "DocumentsConfiguration": "{\n    \"entity\": \"\",\n    \"operations\": {\n        \"read\": {\n            \"endpoint\": \"\"\n        },\n        \"update\": {\n            \"endpoint\": \"\",\n            \"model\": {}\n        },\n        \"create\": {\n            \"endpoint\": \"\",\n            \"model\": {}\n        },\n        \"patch\": {\n            \"endpoint\": \"\",\n            \"model\": [\n                {\n                    \"field\": \"\",\n                    \"caption\": \"\",\n                    \"type\": \"\"\n                }\n            ]\n        },\n        \"remove\": {\n            \"endpoint\": \"\"\n        },\n        \"lookup\": {\n            \"endpoint\": \"\"\n        },\n        \"lookupById\": {\n            \"endpoint\": \"\"\n        }\n    },\n    \"layout\": {\n        \"create\": {},\n        \"read\": {},\n        \"patch\": {}\n    },\n    \"customDocument\": {\n        \"useCustomStyle\": false,\n        \"mainColor\": \"\",\n        \"secondaryColor\": \"\",\n        \"imageClass\": \"\",\n        \"namePlural\": \"\",\n        \"name\": \"\",\n        \"systemName\": \"\"\n    },\n    \"availableOptions\": {\n        \"feed\": false,\n        \"info\": true,\n        \"files\": false,\n        \"userfields\": false,\n        \"dashboard\": false\n    }\n}",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "bf57cb15-e725-4542-90ca-0cb26a6787b8",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Invoices - Current month\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":8,\"WidgetYPosition\":3,\"WidgetRows\":4,\"WidgetColumns\":10,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n        Company,\\n        sum(TotalBilled) as TotalBilled\\nfrom\\n(select \\n        c.Name as Company,\\n        sum(b.ValueWithVat*b.Exchange) as TotalBilled\\n\\nfrom Bill b, WorkflowState ws, Company c\\nwhere ws.Oid = b.WorkflowState\\nAND c.Oid = b.Company\\nAND ws.Name  in ('Integrated')\\nAND MONTH(b.Date) = MONTH(getdate()) \\nAND YEAR(b.Date) = YEAR(getdate()) \\nGROUP BY YEAR(b.Date), MONTH(b.Date), c.Name\\n\\nunion all\\n\\nselect \\n        c.Name as Company,\\n        0 as TotalBilled\\n\\nfrom Company c\\nwhere \\nc.Name in ('Skills Workflow', 'SkillsWorkflow Brasil')) t\\n\\nGROUP BY Company\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\n    \"columns\": [\n        {\n            \"dataField\": \"Company\",\n            \"visible\": true\n        },\n        {\n            \"dataField\": \"TotalBilled\",\n            \"visible\": true,\n            \"format\": {\n                \"type\": \"currency\",\n                \"precision\": 2\n            }\n        }\n    ],\n    \"summary\": {\n        \"totalItems\": [\n            {\n                \"column\": \"TotalBilled\",\n                \"summaryType\": \"sum\",\n                \"valueFormat\": {\n                    \"type\": \"currency\",\n                    \"precision\": 2\n                },\n                \"displayFormat\": \"{0}\"\n            }\n        ]\n    },\n    \"showColumnLines\": false,\n    \"stateStoring\": {\n        \"enabled\": false\n    },\n    \"searchPanel\": {\n        \"visible\": false\n    },\n    \"columnChooser\": {\n        \"enabled\": false\n    },\n    \"showColumnHeaders\": false,\n    \"groupPanel\": {\n        \"visible\": false\n    },\n    \"export\": {\n        \"enabled\": false\n    },\n    \"selection\": {\n        \"mode\": \"none\"\n    },\n    \"onToolbarPreparing\": \"function(e){}\"\n}",
-            "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
-        },
-        {
-            "Id": "f466b6dc-5200-4bfa-98e6-16872610c197",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Credit Notes - current month\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":18,\"WidgetYPosition\":3,\"WidgetRows\":4,\"WidgetColumns\":8,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\\nselect Company,\\n        sum(TotalBilled) as TotalBilled\\n        \\n from (select \\n        c.Name as Company,\\n        sum(ccn.ValueWithVat*ccn.Exchange) as TotalBilled\\n\\nfrom ClientCreditNote ccn, WorkflowState ws, Company c\\nwhere ws.Oid = ccn.WorkflowState\\nAND c.Oid = ccn.Company\\nAND ws.Name in ('Integrated')\\nAND MONTH(ccn.Date) = MONTH(getdate()) \\nAND YEAR(ccn.Date) = YEAR(getdate()) \\nGROUP BY YEAR(ccn.Date), MONTH(ccn.Date), c.Name\\n\\nunion all\\n\\nselect \\n        c.Name as Company,\\n        0 as TotalBilled\\n\\nfrom Company c\\nwhere \\nc.Name in ('Skills Workflow', 'SkillsWorkflow Brasil')) t\\n\\nGROUP BY Company\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\"columns\":[{\"dataField\":\"Company\",\"visible\":true,\"width\":\"150px\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}}],\"summary\":{\"totalItems\":[{\"column\":\"TotalBilled\",\"summaryType\":\"sum\",\"valueFormat\":{\"type\":\"currency\",\"precision\":2},\"displayFormat\":\"{0}\"}]},\"showColumnLines\":false,\"stateStoring\":{\"enabled\":false},\"searchPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"showColumnHeaders\":false,\"groupPanel\":{\"visible\":false},\"export\":{\"enabled\":false},\"selection\":{\"mode\":\"none\"},\"onToolbarPreparing\":\"function(e){}\"}",
-            "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
-        },
-        {
-            "Id": "31fc6cc0-e1ff-4d2c-9870-5968037fb5bd",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Total Users\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":3,\"WidgetColumns\":8,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\n    \"size\": \"50px\",\n    \"onInitialized\": \"function getDataSource(loadOptions) {\\n    return SW.executeAPI('GET', 'integration-workflows/ae9f0053-9c15-49ad-bc9b-bc58af138d1d/execute').then(jsonUserCount => {\\n\\n        var totalUsers = 0;\\n        jsonUserCount.data.forEach(row => { totalUsers = totalUsers + row.count });\\n        SW.saveComponent(totalUsers, 'totalUsers');\\n\\n        return totalUsers;\\n    });\\n}\",\n    \"items\": [\n        {\n            \"format\": \"currency\",\n            \"dataField\": \"\",\n            \"template\": \"function(data, itemElement){  SW.executeAPI('GET', 'integration-workflows/ae9f0053-9c15-49ad-bc9b-bc58af138d1d/execute').then(jsonUserCount => {    var totalUsers = 0;        jsonUserCount.data.forEach(row => { totalUsers = totalUsers + row.count});                                                  var totalUsersElement = SW.setAttribute (itemElement, ' ', 'style', ' font-size: 50px; text-align: center; color: #1aa3ff' );                                                                               totalUsersElement.textContent = totalUsers;                           });                               }\"\n        }\n    ]\n}",
-            "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
-        },
-        {
-            "Id": "d2667dcf-5496-4020-8580-60d3835e096a",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Billing - Current month\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":3,\"WidgetRows\":4,\"WidgetColumns\":8,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  t.Company as Company,\\n        sum(t.TotalBilled) as TotalBilled\\n\\nfrom (select \\n        c.Name as Company,\\n        sum(b.ValueWithVat*b.Exchange) as TotalBilled\\n\\nfrom Bill b, WorkflowState ws, Company c\\nwhere ws.Oid = b.WorkflowState\\nAND c.Oid = b.Company\\nAND ws.Name  in ('Integrated')\\nAND MONTH(b.Date) = MONTH(getdate()) \\nAND YEAR(b.Date) = YEAR(getdate()) \\nGROUP BY YEAR(b.Date), MONTH(b.Date), c.Name\\n\\nunion all\\n\\nselect \\n        c.Name as Company,\\n        sum(ccn.ValueWithVat*ccn.Exchange) as TotalBilled\\n\\nfrom ClientCreditNote ccn, WorkflowState ws, Company c\\nwhere ws.Oid = ccn.WorkflowState\\nAND c.Oid = ccn.Company\\nAND ws.Name  in ('Integrated')\\nAND MONTH(ccn.Date) = MONTH(getdate()) \\nAND YEAR(ccn.Date) = YEAR(getdate()) \\nGROUP BY YEAR(ccn.Date), MONTH(ccn.Date), c.Name\\n\\nunion all\\n\\n\\nselect \\n        c.Name as Company,\\n        0 as TotalBilled\\n\\nfrom Company c\\nwhere \\nc.Name in ('Skills Workflow', 'SkillsWorkflow Brasil')\\n) t\\nGroup by t.Company\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\"columns\":[{\"dataField\":\"Company\",\"visible\":true,\"width\":\"150px\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}}],\"summary\":{\"totalItems\":[{\"column\":\"TotalBilled\",\"summaryType\":\"sum\",\"valueFormat\":{\"type\":\"currency\",\"precision\":2},\"displayFormat\":\"{0}\"}]},\"showColumnLines\":false,\"stateStoring\":{\"enabled\":false},\"searchPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"showColumnHeaders\":false,\"groupPanel\":{\"visible\":false},\"export\":{\"enabled\":false},\"selection\":{\"mode\":\"none\"},\"onToolbarPreparing\":\"function(e){}\"}",
-            "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
-        },
-        {
-            "Id": "3e746e4d-7cc1-4ed2-8b67-7e0728408781",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":7,\"WidgetRows\":14,\"WidgetColumns\":26,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\ncast(b.Number as nvarchar) as [Number],\\ncc.Name as Client, \\nb.[Date], \\n(b.ValueWithVat*b.Exchange) as TotalBilled,\\n'Invoice' as [Type]\\n\\n    \\nfrom Bill b, WorkflowState ws, CommercialClient cc\\n\\nwhere ws.Oid = b.WorkflowState\\nAND b.Client = cc.Oid\\nAND ws.Name in ('Integrated')\\n\\nunion all\\n\\nselect \\ncast(ccn.Name as nvarchar) as [Number],\\ncc.Name as Client, \\nccn.[Date], \\n(ccn.ValueWithVat*ccn.Exchange) as TotalBilled,\\n'Credit Note' as [Type]\\n\\n    \\nfrom ClientCreditNote ccn, WorkflowState ws, CommercialClient cc\\n\\nwhere ws.Oid = ccn.WorkflowState\\nAND cc.Oid = ccn.CommercialClient\\nAND ws.Name  in ('Integrated')\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\"onRowClick\":\"function(e){\\n    SW.preview(e.key.Oid, 'bill');}\",\"columns\":[{\"dataField\":\"Number\"},{\"dataField\":\"Client\"},{\"dataField\":\"Date\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}},{\"dataField\":\"Type\"}],\"height\":\"500\"}",
-            "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
-        },
-        {
-            "Id": "aa372fb0-0e2a-4669-8a29-d9eb70ed2edb",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 12,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"Total YTD\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":8,\"WidgetYPosition\":0,\"WidgetRows\":3,\"WidgetColumns\":18,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n        c.Name as Company,\\n        sum(b.ValueWithVat*b.Exchange) as TotalBilled\\n\\nfrom Bill b, WorkflowState ws, Company c\\n\\nwhere ws.Oid = b.WorkflowState\\nAND c.Oid = b.Company\\nAND ws.Name in ('Integrated')\\nAND YEAR(b.Date) = YEAR(getdate())\\nGROUP BY c.Name\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\"searchPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"showColumnHeaders\":false,\"groupPanel\":{\"visible\":false},\"export\":{\"enabled\":false},\"selection\":{\"mode\":\"none\"},\"onToolbarPreparing\":\"function(e){}\",\"columns\":[{\"dataField\":\"Company\",\"visible\":true,\"width\":\"150px\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}}],\"onContentReady\":\"function(e) { e.element.style.backgroundColor = 'transparent'}\"}",
-            "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
-        }
-    ],
-    "QueryText": "",
-    "UseStore": false,
-    "StoreEntity": null,
-    "Version": 0,
-    "Default": false
+  "DashboardDefinitionRoles": [],
+  "Id": "a812c12b-f293-4539-bbbf-d9c000f0f206",
+  "Name": "Management",
+  "Active": true,
+  "Location": 0,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "Operations",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "bf57cb15-e725-4542-90ca-0cb26a6787b8",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Invoices - Current month\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":8,\"WidgetYPosition\":3,\"WidgetRows\":4,\"WidgetColumns\":10,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n        Company,\\n        sum(TotalBilled) as TotalBilled\\nfrom\\n(select \\n        c.Name as Company,\\n        sum(b.ValueWithVat*b.Exchange) as TotalBilled\\n\\nfrom Bill b, WorkflowState ws, Company c\\nwhere ws.Oid = b.WorkflowState\\nAND c.Oid = b.Company\\nAND ws.Name  in ('Integrated')\\nAND MONTH(b.Date) = MONTH(getdate()) \\nAND YEAR(b.Date) = YEAR(getdate()) \\nGROUP BY YEAR(b.Date), MONTH(b.Date), c.Name\\n\\nunion all\\n\\nselect \\n        c.Name as Company,\\n        0 as TotalBilled\\n\\nfrom Company c\\nwhere \\nc.Name in ('Skills Workflow', 'SkillsWorkflow Brasil')) t\\n\\nGROUP BY Company\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\n    \"columns\": [\n        {\n            \"dataField\": \"Company\",\n            \"visible\": true\n        },\n        {\n            \"dataField\": \"TotalBilled\",\n            \"visible\": true,\n            \"format\": {\n                \"type\": \"currency\",\n                \"precision\": 2\n            }\n        }\n    ],\n    \"summary\": {\n        \"totalItems\": [\n            {\n                \"column\": \"TotalBilled\",\n                \"summaryType\": \"sum\",\n                \"valueFormat\": {\n                    \"type\": \"currency\",\n                    \"precision\": 2\n                },\n                \"displayFormat\": \"{0}\"\n            }\n        ]\n    },\n    \"showColumnLines\": false,\n    \"stateStoring\": {\n        \"enabled\": false\n    },\n    \"searchPanel\": {\n        \"visible\": false\n    },\n    \"columnChooser\": {\n        \"enabled\": false\n    },\n    \"showColumnHeaders\": false,\n    \"groupPanel\": {\n        \"visible\": false\n    },\n    \"export\": {\n        \"enabled\": false\n    },\n    \"selection\": {\n        \"mode\": \"none\"\n    },\n    \"onToolbarPreparing\": \"function(e){}\"\n}",
+      "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
+    },
+    {
+      "Id": "f466b6dc-5200-4bfa-98e6-16872610c197",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Credit Notes - current month\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":18,\"WidgetYPosition\":3,\"WidgetRows\":4,\"WidgetColumns\":8,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\\nselect Company,\\n        sum(TotalBilled) as TotalBilled\\n        \\n from (select \\n        c.Name as Company,\\n        sum(ccn.ValueWithVat*ccn.Exchange) as TotalBilled\\n\\nfrom ClientCreditNote ccn, WorkflowState ws, Company c\\nwhere ws.Oid = ccn.WorkflowState\\nAND c.Oid = ccn.Company\\nAND ws.Name in ('Integrated')\\nAND MONTH(ccn.Date) = MONTH(getdate()) \\nAND YEAR(ccn.Date) = YEAR(getdate()) \\nGROUP BY YEAR(ccn.Date), MONTH(ccn.Date), c.Name\\n\\nunion all\\n\\nselect \\n        c.Name as Company,\\n        0 as TotalBilled\\n\\nfrom Company c\\nwhere \\nc.Name in ('Skills Workflow', 'SkillsWorkflow Brasil')) t\\n\\nGROUP BY Company\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"columns\":[{\"dataField\":\"Company\",\"visible\":true,\"width\":\"150px\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}}],\"summary\":{\"totalItems\":[{\"column\":\"TotalBilled\",\"summaryType\":\"sum\",\"valueFormat\":{\"type\":\"currency\",\"precision\":2},\"displayFormat\":\"{0}\"}]},\"showColumnLines\":false,\"stateStoring\":{\"enabled\":false},\"searchPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"showColumnHeaders\":false,\"groupPanel\":{\"visible\":false},\"export\":{\"enabled\":false},\"selection\":{\"mode\":\"none\"},\"onToolbarPreparing\":\"function(e){}\"}",
+      "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
+    },
+    {
+      "Id": "31fc6cc0-e1ff-4d2c-9870-5968037fb5bd",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Total Users\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":3,\"WidgetColumns\":8,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\n    \"size\": \"50px\",\n    \"onInitialized\": \"function getDataSource(loadOptions) {\\n    return SW.executeAPI('GET', 'integration-workflows/ae9f0053-9c15-49ad-bc9b-bc58af138d1d/execute').then(jsonUserCount => {\\n\\n        var totalUsers = 0;\\n        jsonUserCount.data.forEach(row => { totalUsers = totalUsers + row.count });\\n        SW.saveComponent(totalUsers, 'totalUsers');\\n\\n        return totalUsers;\\n    });\\n}\",\n    \"items\": [\n        {\n            \"format\": \"currency\",\n            \"dataField\": \"\",\n            \"template\": \"function(data, itemElement){  SW.executeAPI('GET', 'integration-workflows/ae9f0053-9c15-49ad-bc9b-bc58af138d1d/execute').then(jsonUserCount => {    var totalUsers = 0;        jsonUserCount.data.forEach(row => { totalUsers = totalUsers + row.count});                                                  var totalUsersElement = SW.setAttribute (itemElement, ' ', 'style', ' font-size: 50px; text-align: center; color: #1aa3ff' );                                                                               totalUsersElement.textContent = totalUsers;                           });                               }\"\n        }\n    ]\n}",
+      "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
+    },
+    {
+      "Id": "d2667dcf-5496-4020-8580-60d3835e096a",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Billing - Current month\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":3,\"WidgetRows\":4,\"WidgetColumns\":8,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  t.Company as Company,\\n        sum(t.TotalBilled) as TotalBilled\\n\\nfrom (select \\n        c.Name as Company,\\n        sum(b.ValueWithVat*b.Exchange) as TotalBilled\\n\\nfrom Bill b, WorkflowState ws, Company c\\nwhere ws.Oid = b.WorkflowState\\nAND c.Oid = b.Company\\nAND ws.Name  in ('Integrated')\\nAND MONTH(b.Date) = MONTH(getdate()) \\nAND YEAR(b.Date) = YEAR(getdate()) \\nGROUP BY YEAR(b.Date), MONTH(b.Date), c.Name\\n\\nunion all\\n\\nselect \\n        c.Name as Company,\\n        sum(ccn.ValueWithVat*ccn.Exchange) as TotalBilled\\n\\nfrom ClientCreditNote ccn, WorkflowState ws, Company c\\nwhere ws.Oid = ccn.WorkflowState\\nAND c.Oid = ccn.Company\\nAND ws.Name  in ('Integrated')\\nAND MONTH(ccn.Date) = MONTH(getdate()) \\nAND YEAR(ccn.Date) = YEAR(getdate()) \\nGROUP BY YEAR(ccn.Date), MONTH(ccn.Date), c.Name\\n\\nunion all\\n\\n\\nselect \\n        c.Name as Company,\\n        0 as TotalBilled\\n\\nfrom Company c\\nwhere \\nc.Name in ('Skills Workflow', 'SkillsWorkflow Brasil')\\n) t\\nGroup by t.Company\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"columns\":[{\"dataField\":\"Company\",\"visible\":true,\"width\":\"150px\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}}],\"summary\":{\"totalItems\":[{\"column\":\"TotalBilled\",\"summaryType\":\"sum\",\"valueFormat\":{\"type\":\"currency\",\"precision\":2},\"displayFormat\":\"{0}\"}]},\"showColumnLines\":false,\"stateStoring\":{\"enabled\":false},\"searchPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"showColumnHeaders\":false,\"groupPanel\":{\"visible\":false},\"export\":{\"enabled\":false},\"selection\":{\"mode\":\"none\"},\"onToolbarPreparing\":\"function(e){}\"}",
+      "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
+    },
+    {
+      "Id": "3e746e4d-7cc1-4ed2-8b67-7e0728408781",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":7,\"WidgetRows\":14,\"WidgetColumns\":26,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\ncast(b.Number as nvarchar) as [Number],\\ncc.Name as Client, \\nb.[Date], \\n(b.ValueWithVat*b.Exchange) as TotalBilled,\\n'Invoice' as [Type]\\n\\n    \\nfrom Bill b, WorkflowState ws, CommercialClient cc\\n\\nwhere ws.Oid = b.WorkflowState\\nAND b.Client = cc.Oid\\nAND ws.Name in ('Integrated')\\n\\nunion all\\n\\nselect \\ncast(ccn.Name as nvarchar) as [Number],\\ncc.Name as Client, \\nccn.[Date], \\n(ccn.ValueWithVat*ccn.Exchange) as TotalBilled,\\n'Credit Note' as [Type]\\n\\n    \\nfrom ClientCreditNote ccn, WorkflowState ws, CommercialClient cc\\n\\nwhere ws.Oid = ccn.WorkflowState\\nAND cc.Oid = ccn.CommercialClient\\nAND ws.Name  in ('Integrated')\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"onRowClick\":\"function(e){\\n    SW.preview(e.key.Oid, 'bill');}\",\"columns\":[{\"dataField\":\"Number\"},{\"dataField\":\"Client\"},{\"dataField\":\"Date\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}},{\"dataField\":\"Type\"}],\"height\":\"500\"}",
+      "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
+    },
+    {
+      "Id": "aa372fb0-0e2a-4669-8a29-d9eb70ed2edb",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Total YTD\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":8,\"WidgetYPosition\":0,\"WidgetRows\":3,\"WidgetColumns\":18,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select \\n        c.Name as Company,\\n        sum(b.ValueWithVat*b.Exchange) as TotalBilled\\n\\nfrom Bill b, WorkflowState ws, Company c\\n\\nwhere ws.Oid = b.WorkflowState\\nAND c.Oid = b.Company\\nAND ws.Name in ('Integrated')\\nAND YEAR(b.Date) = YEAR(getdate())\\nGROUP BY c.Name\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"searchPanel\":{\"visible\":false},\"columnChooser\":{\"enabled\":false},\"showColumnHeaders\":false,\"groupPanel\":{\"visible\":false},\"export\":{\"enabled\":false},\"selection\":{\"mode\":\"none\"},\"onToolbarPreparing\":\"function(e){}\",\"columns\":[{\"dataField\":\"Company\",\"visible\":true,\"width\":\"150px\"},{\"dataField\":\"TotalBilled\",\"visible\":true,\"format\":{\"type\":\"currency\",\"precision\":2}}],\"onContentReady\":\"function(e) { e.element.style.backgroundColor = 'transparent'}\"}",
+      "DashboardDefinitionId": "a812c12b-f293-4539-bbbf-d9c000f0f206"
+    }
+  ],
+  "QueryText": "",
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 0,
+  "Default": false
 }

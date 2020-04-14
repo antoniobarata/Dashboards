@@ -1,87 +1,87 @@
 ﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "5149748c-1c1a-4302-9e05-57ff4b971061",
-    "Name": "Feed With Cards",
-    "Active": true,
-    "Location": 3,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentsConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"endpoint\":\"\"},\"update\":{\"endpoint\":\"\",\"model\":{}},\"create\":{\"endpoint\":\"\",\"model\":{}},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":\"\"},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{},\"read\":{},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"dashboard\":false}}",
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "6c485934-1f8b-407a-8b43-13e686a65cef",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 6,
-            "Order": 1,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"cards\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":200,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  TOP(4) p.*, \\r\\n        p.Oid as Id,\\r\\n        CASE WHEN ws.Color IS NULL THEN wst.Color ELSE ws.Color END as StatusColor, \\r\\n        ws.[Name] as [Status]\\r\\nFROM    Project p LEFT OUTER JOIN \\r\\n        WorkflowState ws ON (p.WorkflowState = ws.Oid) LEFT OUTER JOIN\\r\\n        WorkflowStateType wst ON (ws.WorkflowStateType = wst.Oid) \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{ \"entity\": \"Project\"}",
-            "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
-        },
-        {
-            "Id": "0f09a936-fdd2-4255-ad7d-36afb5a2376c",
-            "Name": "Feed",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 6,
-            "Order": 0,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"feeddigest\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":100,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "",
-            "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
-        },
-        {
-            "Id": "3e1b5c50-baf8-4bac-a5d8-e7baef860997",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 6,
-            "Order": 2,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"timesheetcalendar\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":300,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "",
-            "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
-        },
-        {
-            "Id": "e4fddc33-5931-4f30-8016-fa7ea603895a",
-            "Name": "",
-            "Active": true,
-            "UseQuery": false,
-            "Query": "",
-            "Size": 6,
-            "Order": 4,
-            "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"cards\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":300,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  TOP(4) cc.*, \\r\\n        cc.Oid as Id,\\r\\n        CASE WHEN ws.Color IS NULL THEN wst.Color ELSE ws.Color END as StatusColor, \\r\\n        ws.[Name] as [Status]\\r\\nFROM    CommercialClient cc LEFT OUTER JOIN \\r\\n        WorkflowState ws ON (cc.WorkflowState = ws.Oid) LEFT OUTER JOIN\\r\\n        WorkflowStateType wst ON (ws.WorkflowStateType = wst.Oid) \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
-            "DashboardComponentType": {
-                "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "",
-            "Configuration": "{\r\n    \"entity\": \"CommercialClient\"\r\n}",
-            "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
-        }
-    ],
-    "Version": 5,
-    "Default": false
+  "DashboardDefinitionRoles": [],
+  "Id": "5149748c-1c1a-4302-9e05-57ff4b971061",
+  "Name": "Feed With Cards",
+  "Active": true,
+  "Location": 3,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "6c485934-1f8b-407a-8b43-13e686a65cef",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 6,
+      "Order": 1,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"cards\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":200,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  TOP(4) p.*, \\r\\n        p.Oid as Id,\\r\\n        CASE WHEN ws.Color IS NULL THEN wst.Color ELSE ws.Color END as StatusColor, \\r\\n        ws.[Name] as [Status]\\r\\nFROM    Project p LEFT OUTER JOIN \\r\\n        WorkflowState ws ON (p.WorkflowState = ws.Oid) LEFT OUTER JOIN\\r\\n        WorkflowStateType wst ON (ws.WorkflowStateType = wst.Oid) \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{ \"entity\": \"Project\"}",
+      "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
+    },
+    {
+      "Id": "0f09a936-fdd2-4255-ad7d-36afb5a2376c",
+      "Name": "Feed",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 6,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"feeddigest\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":100,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "",
+      "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
+    },
+    {
+      "Id": "3e1b5c50-baf8-4bac-a5d8-e7baef860997",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 6,
+      "Order": 2,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"timesheetcalendar\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":300,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "",
+      "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
+    },
+    {
+      "Id": "e4fddc33-5931-4f30-8016-fa7ea603895a",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 6,
+      "Order": 4,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"cards\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetHeight\":300,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  TOP(4) cc.*, \\r\\n        cc.Oid as Id,\\r\\n        CASE WHEN ws.Color IS NULL THEN wst.Color ELSE ws.Color END as StatusColor, \\r\\n        ws.[Name] as [Status]\\r\\nFROM    CommercialClient cc LEFT OUTER JOIN \\r\\n        WorkflowState ws ON (cc.WorkflowState = ws.Oid) LEFT OUTER JOIN\\r\\n        WorkflowStateType wst ON (ws.WorkflowStateType = wst.Oid) \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"entity\": \"CommercialClient\"\r\n}",
+      "DashboardDefinitionId": "5149748c-1c1a-4302-9e05-57ff4b971061"
+    }
+  ],
+  "Version": 5,
+  "Default": false
 }

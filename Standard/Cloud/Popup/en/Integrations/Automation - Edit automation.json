@@ -7,7 +7,7 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": null,
-  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"workspaces\": false\n        },\n        \"fields\": []\n    }\n]",
+  "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
@@ -20,15 +20,15 @@
       "Order": 0,
       "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":38,\"WidgetYPosition\":0,\"WidgetRows\":2,\"WidgetColumns\":6,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
-          "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-          "Name": "Generic Dashboard",
-          "ComponentTypeNumber": 42
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e){\\n       var editor = SW.getComponent('editor');\\n    var form = SW.getComponent('form');\\n    var editorSubWorkflow = SW.getComponent('editorSubWorkflow');\\n\\n    var actions = JSON.parse(editor.getValue());\\n    var subWorkflows = JSON.parse(editorSubWorkflow.getValue());\\n    var formJson = form.component.option('formData');\\n      var model = {\\n        name: formJson.name,\\n        active: formJson.active,\\n        actions: actions,\\n        subWorkflows: subWorkflows,\\n        scheduler: formJson.scheduler\\n    }\\n    SW.executeAPI('PUT', 'integration-workflows/'+formJson.id, null, model)\\n    .then( x => {\\n        SW.Toastr.toastr_Success(\\\"Saved\\\");\\n    })\\n    .catch( x => {\\n        SW.Toastr.toastr_Error(x);\\n    })\\n}\"}",
       "DashboardDefinitionId": "ffdb36dc-a0c8-4c3c-a87b-4b64c325db0f"
-  },
-  {
+    },
+    {
       "Id": "dca8b5a8-5ac7-4f2d-8603-753b6e38efea",
       "Name": "",
       "Active": true,
@@ -38,15 +38,15 @@
       "Order": 0,
       "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":6,\"WidgetColumns\":38,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
-          "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-          "Name": "Generic Dashboard",
-          "ComponentTypeNumber": 42
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\"colCount\":\"1\",\"items\":[{\"itemType\":\"tabbed\",\"tabs\":[{\"title\":\"Info\",\"colCount\":\"4\",\"items\":[{\"dataField\":\"name\",\"label\":{\"text\":\"Name\"},\"colSpan\":2},{\"editorType\":\"dxCheckBox\",\"dataField\":\"active\",\"label\":{\"text\":\"Active\"}},{\"dataField\":\"version\",\"label\":{\"text\":\"Version\"},\"disabled\":true}]},{\"title\":\"Scheduler\",\"colCount\":\"3\",\"items\":[{\"editorType\":\"dxDateBox\",\"editorOptions\":{\"type\":\"datetime\",\"interval\":\"30\"},\"dataField\":\"scheduler.startDateUtc\",\"label\":{\"text\":\"Start Date Utc\"}},{\"editorType\":\"dxSelectBox\",\"editorOptions\":{\"searchEnabled\":true,\"items\":[\"Minutely\",\"Hourly\",\"Daily\",\"Weekly\",\"Monthly\"]},\"dataField\":\"scheduler.periodicity\",\"label\":{\"text\":\"Periodicity\"}},{\"editorType\":\"dxNumberBox\",\"editorOptions\":{\"showSpinButtons\":true,\"width\":60},\"dataField\":\"scheduler.unit\",\"label\":{\"text\":\"Unit\"}},{\"editorType\":\"dxSelectBox\",\"label\":{\"text\":\"UserName\"},\"editorOptions\":{\"dataSource\":{\"load\":\"function(loadOptions) {                         const searchValue = loadOptions.searchValue != null ? loadOptions.searchValue : '';                                const parameters = { name: searchValue };                                return SW.executeAPI('GET', 'users/all/lookup', parameters, {}).then(result => { return Promise.resolve(result);   }); }\",\"byKey\":\"function byKey(e){}\"},\"searchEnabled\":true,\"displayExpr\":\"Name\",\"valueExpr\":\"Id\",\"value\":\"\",\"onValueChanged\":\"function(e){ var form = SW.getComponent('form'); form.component.option('formData').scheduler.userId = e.value; form.component.option('formData').scheduler.userName = e.component._options.displayValue;}\"}},{\"editorType\":\"dxCheckBox\",\"dataField\":\"scheduler.isActive\",\"label\":{\"text\":\"Active\"}}]}]}],\"onInitialized\":\"function(e) {\\n    SW.saveComponent(e, 'form');\\n    var data = SW.getComponent('data');\\n    e.component.option('formData', data);\\n}\"}",
       "DashboardDefinitionId": "ffdb36dc-a0c8-4c3c-a87b-4b64c325db0f"
-  },
-  {
+    },
+    {
       "Id": "4d88ac5e-b7e5-40de-9b7b-9f400dca0d04",
       "Name": "",
       "Active": true,
@@ -56,15 +56,15 @@
       "Order": 0,
       "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":38,\"WidgetYPosition\":2,\"WidgetRows\":2,\"WidgetColumns\":6,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
-          "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-          "Name": "Generic Dashboard",
-          "ComponentTypeNumber": 42
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\"icon\":\"fal fa-plus-circle\",\"text\":\"Action\",\"onClick\":\"function(e){\\n    SW.executeAPI('GET','templates?type=IntegrationWorkflows')\\n        .then(templates => { \\n            SW.genericPopup('template', [{ Id: 'b9b73bbd-6677-4d9a-9434-daf511207729', Title: 'Templates' }], templates, '60%', '60%', true) });\\n}\"}",
       "DashboardDefinitionId": "ffdb36dc-a0c8-4c3c-a87b-4b64c325db0f"
-  },
-  {
+    },
+    {
       "Id": "ba71301c-a412-47af-9dfb-cb0222ce7f54",
       "Name": "",
       "Active": true,
@@ -74,15 +74,15 @@
       "Order": 0,
       "Parameters": "[{\"WidgetSubTitle\":\"Actions\",\"WidgetType\":\"monacoeditor\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":6,\"WidgetRows\":26,\"WidgetColumns\":47,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
-          "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-          "Name": "Generic Dashboard",
-          "ComponentTypeNumber": 42
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\n    \"onInit\": \"function(e){\\n    SW.saveComponent(e, 'editor');\\n    var data = SW.getComponent('data');\\n    e.setValue(JSON.stringify(data.actions));\\n}\",\n    \"model\": {\n        \"language\": \"json\"\n    }\n}",
       "DashboardDefinitionId": "ffdb36dc-a0c8-4c3c-a87b-4b64c325db0f"
-  },
-  {
+    },
+    {
       "Id": "afe4a0da-1a02-4953-a299-eedbe704f773",
       "Name": "",
       "Active": true,
@@ -92,14 +92,14 @@
       "Order": 0,
       "Parameters": "[{\"WidgetSubTitle\":\"Sub Workflows\",\"WidgetType\":\"monacoeditor\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":33,\"WidgetRows\":34,\"WidgetColumns\":47,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
-          "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
-          "Name": "Generic Dashboard",
-          "ComponentTypeNumber": 42
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\"onInit\":\"function(e){\\n    SW.saveComponent(e, 'editorSubWorkflow');\\n    var data = SW.getComponent('data');\\n    e.setValue(JSON.stringify(data.subWorkflows));\\n}\",\"model\":{\"language\":\"json\"}}",
       "DashboardDefinitionId": "ffdb36dc-a0c8-4c3c-a87b-4b64c325db0f"
-  }
+    }
   ],
   "QueryText": "",
   "UseStore": false,

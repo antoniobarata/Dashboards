@@ -1,1 +1,109 @@
-{"DashboardDefinitionRoles":[],"Id":"4f478efe-acf0-48e6-ae0d-80f558ad8f7d","Name":"Levels","Active":true,"Location":1,"DocumentId":"00000000-0000-0000-0000-000000000000","DocumentName":"","DocumentTypeName":"achievement","DocumentsConfiguration":"{}","Templates":[],"DashboardDefinitionComponents":[{"Id":"3db2edf0-0df9-4dcd-be09-196296f40372","Name":"","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":40,\"WidgetYPosition\":13,\"WidgetRows\":3,\"WidgetColumns\":4,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\r\n    \"icon\": \"fal fa-save fa-lg\",\r\n    \"onClick\": \"function onClick(e) {\\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    var level = SW.getComponent('edit - component')._options.formData;\\r\\n    \\r\\n    SW.executeAPI('PUT', 'gamification / achievement - templates / ' + achievementId + ' / levels / ' + level.Id, null, level);\\r\\n}\",\r\n    \"text\": \"\",\r\n    \"width\": \"auto\"\r\n}","DashboardDefinitionId":"4f478efe-acf0-48e6-ae0d-80f558ad8f7d"},{"Id":"817bb7fb-ef15-4096-96b0-20da021b3a66","Name":"","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":32,\"WidgetYPosition\":13,\"WidgetRows\":3,\"WidgetColumns\":4,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\"icon\":\"fal fa-times fa-lg\",\"onClick\":\"function onClick(e) {\\r\\n    var lc = SW.getComponent('level-component');\\r\\n    if(!lc) return;\\r\\n\\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    var levelId = SW.getComponent('edit-component')._options.formData.Id;\\r\\n    \\r\\n    SW.executeAPI('DELETE', 'gamification/achievement-templates/' + achievementId + '/levels/' + levelId);\\r\\n    lc.refresh()\\r\\n}\",\"text\":\"\",\"width\":\"auto\"}","DashboardDefinitionId":"4f478efe-acf0-48e6-ae0d-80f558ad8f7d"},{"Id":"2adc3b7f-5d6f-4ef1-b6f7-6b1d22c28736","Name":"Levels","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"The different levels of the achievement\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":25,\"WidgetColumns\":29,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\r\n    \"dataSource\": {\r\n        \"load\": \"function load(){\\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    return SW.executeAPI('GET', 'gamification/achievement-templates/' + achievementId + '/levels').then(\\r\\n        result => { return Promise.resolve(result)}\\r\\n    )\\r\\n}\"\r\n    },\r\n    \"entity\": \"achievementlevel\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Id\",\r\n            \"visible\": false\r\n        },\r\n        \"Title\",\r\n        {\r\n            \"dataField\": \"Objective\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInCredits\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInPoints\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"Image\",\r\n            \"alignment\": \"right\"\r\n        }\r\n    ],\r\n    \"columnChooser\": {\r\n        \"enabled\": false\r\n    },\r\n    \"height\": \"100%\",\r\n    \"selection\": {\r\n        \"mode\": \"single\"\r\n    },\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    },\r\n    \"onToolbarPreparing\": \"function toolbar(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        template: 'toggleHeaderFilterButtonTemplate'\\r\\n    });\\r\\n}\",\r\n    \"onRowClick\": \"function click(e) {\\r\\n    if (!e.data.Id) return;\\r\\n    var level = e.data;\\r\\n    SW.saveComponent(level, 'level-data');\\r\\n\\r\\n    var ec = SW.getComponent(\\\"edit-component\\\");\\r\\n    if (!ec) return;\\r\\n    ec.option(\\\"formData\\\", level);\\r\\n}\",\r\n    \"onContentReady\": \"function ready(e) {\\r\\n    SW.saveComponent(e.component, \\\"level-component\\\");\\r\\n\\r\\n    var level = e.component.getKeyByRowIndex(0);\\r\\n    if (!level) return;\\r\\n\\r\\n    e.component.selectRowsByIndexes(0);\\r\\n\\r\\n    var ec = SW.getComponent(\\\"edit-component\\\");\\r\\n    if (!ec) return;\\r\\n    ec.option(\\\"formData\\\", level);\\r\\n}\"\r\n}","DashboardDefinitionId":"4f478efe-acf0-48e6-ae0d-80f558ad8f7d"},{"Id":"9ccac479-4939-4990-a465-cf1decc6454f","Name":"","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":29,\"WidgetYPosition\":3,\"WidgetRows\":10,\"WidgetColumns\":18,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\r\n    \"colCount\": \"1\",\r\n    \"items\": [\r\n        {\r\n            \"dataField\": \"Title\",\r\n            \"editorType\": \"dxTextBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"Objective\",\r\n            \"editorType\": \"dxNumberBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInCredits\",\r\n            \"editorType\": \"dxNumberBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInPoints\",\r\n            \"editorType\": \"dxNumberBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"ImageFileName\",\r\n            \"editorType\": \"dxTextBox\"\r\n        }\r\n    ],\r\n    \"onContentReady\": \"function(e){ SW.saveComponent(e.component, 'edit-component'); }\",\r\n    \"onFieldDataChanged\": \"function(e){ SW.saveComponent(e.component, 'edit-component'); }\"\r\n}","DashboardDefinitionId":"4f478efe-acf0-48e6-ae0d-80f558ad8f7d"},{"Id":"93e6daf3-c419-43c1-902c-f6022ccd64de","Name":"","Active":true,"UseQuery":false,"Query":"","Size":12,"Order":0,"Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":36,\"WidgetYPosition\":13,\"WidgetRows\":3,\"WidgetColumns\":4,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]","DashboardComponentType":{"Id":"3c1da83b-efe9-4b70-87d0-c3813a512774","Name":"Generic Dashboard","ComponentTypeNumber":42},"AnalyticsApiUrl":"","Configuration":"{\"icon\":\"fal fa-plus fa-lg\",\"onClick\":\"function onClick(e) {\\r\\n    var lc = SW.getComponent('level-component');\\r\\n    if(!lc) return;\\r\\n    \\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    var level = {\\r\\n        \\\"Id\\\": null,\\r\\n        \\\"Title\\\": \\\"New level\\\",\\r\\n        \\\"Objective\\\": 1,\\r\\n        \\\"ValueInCredits\\\": 1,\\r\\n        \\\"ValueInPoints\\\": 1,\\r\\n        \\\"ImageFileName\\\": \\\"\\\"\\r\\n    };\\r\\n    \\r\\n    SW.executeAPI('POST', 'gamification/achievement-templates/' + achievementId + '/levels', null, level);\\r\\n    lc.refresh();\\r\\n}\",\"text\":\"\",\"width\":\"auto\"}","DashboardDefinitionId":"4f478efe-acf0-48e6-ae0d-80f558ad8f7d"}],"QueryText":null,"UseStore":false,"StoreEntity":null,"Version":1,"Default":true}
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "4f478efe-acf0-48e6-ae0d-80f558ad8f7d",
+  "Name": "Levels",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "achievement",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "3db2edf0-0df9-4dcd-be09-196296f40372",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":40,\"WidgetYPosition\":13,\"WidgetRows\":3,\"WidgetColumns\":4,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"icon\": \"fal fa-save fa-lg\",\r\n    \"onClick\": \"function onClick(e) {\\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    var level = SW.getComponent('edit - component')._options.formData;\\r\\n    \\r\\n    SW.executeAPI('PUT', 'gamification / achievement - templates / ' + achievementId + ' / levels / ' + level.Id, null, level);\\r\\n}\",\r\n    \"text\": \"\",\r\n    \"width\": \"auto\"\r\n}",
+      "DashboardDefinitionId": "4f478efe-acf0-48e6-ae0d-80f558ad8f7d"
+    },
+    {
+      "Id": "817bb7fb-ef15-4096-96b0-20da021b3a66",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":32,\"WidgetYPosition\":13,\"WidgetRows\":3,\"WidgetColumns\":4,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"icon\":\"fal fa-times fa-lg\",\"onClick\":\"function onClick(e) {\\r\\n    var lc = SW.getComponent('level-component');\\r\\n    if(!lc) return;\\r\\n\\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    var levelId = SW.getComponent('edit-component')._options.formData.Id;\\r\\n    \\r\\n    SW.executeAPI('DELETE', 'gamification/achievement-templates/' + achievementId + '/levels/' + levelId);\\r\\n    lc.refresh()\\r\\n}\",\"text\":\"\",\"width\":\"auto\"}",
+      "DashboardDefinitionId": "4f478efe-acf0-48e6-ae0d-80f558ad8f7d"
+    },
+    {
+      "Id": "2adc3b7f-5d6f-4ef1-b6f7-6b1d22c28736",
+      "Name": "Levels",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"The different levels of the achievement\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":25,\"WidgetColumns\":29,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[{\\\"name\\\":\\\"\\\"}],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"dataSource\": {\r\n        \"load\": \"function load(){\\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    return SW.executeAPI('GET', 'gamification/achievement-templates/' + achievementId + '/levels').then(\\r\\n        result => { return Promise.resolve(result)}\\r\\n    )\\r\\n}\"\r\n    },\r\n    \"entity\": \"achievementlevel\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Id\",\r\n            \"visible\": false\r\n        },\r\n        \"Title\",\r\n        {\r\n            \"dataField\": \"Objective\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInCredits\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInPoints\",\r\n            \"alignment\": \"center\"\r\n        },\r\n        {\r\n            \"dataField\": \"Image\",\r\n            \"alignment\": \"right\"\r\n        }\r\n    ],\r\n    \"columnChooser\": {\r\n        \"enabled\": false\r\n    },\r\n    \"height\": \"100%\",\r\n    \"selection\": {\r\n        \"mode\": \"single\"\r\n    },\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    },\r\n    \"onToolbarPreparing\": \"function toolbar(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        template: 'toggleHeaderFilterButtonTemplate'\\r\\n    });\\r\\n}\",\r\n    \"onRowClick\": \"function click(e) {\\r\\n    if (!e.data.Id) return;\\r\\n    var level = e.data;\\r\\n    SW.saveComponent(level, 'level-data');\\r\\n\\r\\n    var ec = SW.getComponent(\\\"edit-component\\\");\\r\\n    if (!ec) return;\\r\\n    ec.option(\\\"formData\\\", level);\\r\\n}\",\r\n    \"onContentReady\": \"function ready(e) {\\r\\n    SW.saveComponent(e.component, \\\"level-component\\\");\\r\\n\\r\\n    var level = e.component.getKeyByRowIndex(0);\\r\\n    if (!level) return;\\r\\n\\r\\n    e.component.selectRowsByIndexes(0);\\r\\n\\r\\n    var ec = SW.getComponent(\\\"edit-component\\\");\\r\\n    if (!ec) return;\\r\\n    ec.option(\\\"formData\\\", level);\\r\\n}\"\r\n}",
+      "DashboardDefinitionId": "4f478efe-acf0-48e6-ae0d-80f558ad8f7d"
+    },
+    {
+      "Id": "9ccac479-4939-4990-a465-cf1decc6454f",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"form\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":29,\"WidgetYPosition\":3,\"WidgetRows\":10,\"WidgetColumns\":18,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"colCount\": \"1\",\r\n    \"items\": [\r\n        {\r\n            \"dataField\": \"Title\",\r\n            \"editorType\": \"dxTextBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"Objective\",\r\n            \"editorType\": \"dxNumberBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInCredits\",\r\n            \"editorType\": \"dxNumberBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"ValueInPoints\",\r\n            \"editorType\": \"dxNumberBox\"\r\n        },\r\n        {\r\n            \"dataField\": \"ImageFileName\",\r\n            \"editorType\": \"dxTextBox\"\r\n        }\r\n    ],\r\n    \"onContentReady\": \"function(e){ SW.saveComponent(e.component, 'edit-component'); }\",\r\n    \"onFieldDataChanged\": \"function(e){ SW.saveComponent(e.component, 'edit-component'); }\"\r\n}",
+      "DashboardDefinitionId": "4f478efe-acf0-48e6-ae0d-80f558ad8f7d"
+    },
+    {
+      "Id": "93e6daf3-c419-43c1-902c-f6022ccd64de",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":36,\"WidgetYPosition\":13,\"WidgetRows\":3,\"WidgetColumns\":4,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"icon\":\"fal fa-plus fa-lg\",\"onClick\":\"function onClick(e) {\\r\\n    var lc = SW.getComponent('level-component');\\r\\n    if(!lc) return;\\r\\n    \\r\\n    var achievementId = SW.getCurrentDocumentId('achievement');\\r\\n    var level = {\\r\\n        \\\"Id\\\": null,\\r\\n        \\\"Title\\\": \\\"New level\\\",\\r\\n        \\\"Objective\\\": 1,\\r\\n        \\\"ValueInCredits\\\": 1,\\r\\n        \\\"ValueInPoints\\\": 1,\\r\\n        \\\"ImageFileName\\\": \\\"\\\"\\r\\n    };\\r\\n    \\r\\n    SW.executeAPI('POST', 'gamification/achievement-templates/' + achievementId + '/levels', null, level);\\r\\n    lc.refresh();\\r\\n}\",\"text\":\"\",\"width\":\"auto\"}",
+      "DashboardDefinitionId": "4f478efe-acf0-48e6-ae0d-80f558ad8f7d"
+    }
+  ],
+  "QueryText": null,
+  "UseStore": false,
+  "StoreEntity": null,
+  "Version": 1,
+  "Default": true
+}

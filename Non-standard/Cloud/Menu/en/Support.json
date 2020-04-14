@@ -1,128 +1,128 @@
 ﻿{
-    "DashboardDefinitionRoles": [],
-    "Id": "ff65c289-6afb-470d-901d-b546c51fd82f",
-    "Name": "Support Dashboard",
-    "Active": true,
-    "Location": 0,
-    "DocumentId": "00000000-0000-0000-0000-000000000000",
-    "DocumentName": "",
-    "DocumentsConfiguration": null,
-    "Templates": [],
-    "DashboardDefinitionComponents": [
-        {
-            "Id": "b7fc618a-7298-4c3b-b671-1a2e72571215",
-            "Name": "Jobs activity",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 8,
-            "Order": 1,
-            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Job\u0027s Delayed or On Time by status\",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Delayed Jobs\",\r\n                        \"metricFieldValue\": \"DelayedJobsGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.effort, j.Job, ws.Name as Stage, j.Project, j.AgreedDate as Enddate, j.Oid, ISNULL(ws.Color, wst.Color) as Color, DATEDIFF(day,getdate(),AgreedDate) as Days, sum(iif((ws.name =\u0027in Tests\u0027 or ws.name=\u0027Move to Production\u0027 or ws.name=\u0027on Hold\u0027 or ws.name=\u0027Open\u0027 or ws.name=\u0027Request Approval\u0027 or ws.name=\u0027Request more information\u0027 or ws.name =\u0027Request Uat\u0027 or ws.name=\u0027Requirement Approval\u0027 or ws.name=\u0027Under Analysis\u0027) and AgreedDate \u003c getdate(), 1, 0)) over() as DelayedJobsGrandTotal from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027,\u0027Under Analysis\u0027) /*[DateFilter]*/ and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate /*[/DateFilter]*/\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {}\r\n    }\r\n]",
-            "DashboardComponentType": {
-                "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Support - Jobs Activity/execute",
-            "Configuration": "{\n  \"onRowClick\": \"function(e){SkillsWorkflow.preview(e.key, \u0027job\u0027);}\",\n  \"keyExpr\" : \"Oid\",\n  \"selection\": {\n    \"mode\": \"single\"\n  },\n\"columnAutoWidth\":true,\n  \"groupPanel\":{\n \"visible\":true\n},\n\"headerFilter\":{\n  \"visible\":true\n},\n\"allowFiltering\":true,\n  \"searchPanel\": {\n            \"visible\": true\n  },\n  \"height\": 350,\n  \"scrolling\": {\n    \"mode\": \"virtual\"\n  },\n  \"columnMinWidth\": 50,\n  \"columns\": [\n    {\n      \"dataField\": \"Job\",\n      \"name\": \"Jobs\",\n      \"caption\": \"Jobs\",\n     \"width\":650\n    },\n    {\n      \"dataField\": \"Days\",\n      \"caption\": \"Days\",\n      \"alignment\": \"center\",\n      \"format\": \"#,##0\",\n      \"cellTemplate\": \"function(e, i) {var h=e.append(\u0027\u003cdiv\u003e\u0027+i.text+\u0027\u003c/div\u003e\u0027);if(i.value\u003c0) {h.css(\u0027background-color\u0027,\u0027#f5564a\u0027).css(\u0027color\u0027,\u0027#ffffff\u0027)};if(i.value==0 || i.value==1){h.css(\u0027background-color\u0027,\u0027#ffc720\u0027).css(\u0027color\u0027,\u0027#ffffff\u0027)};}\"\n    },\n    {\n      \"dataField\": \"effort\",\n      \"caption\": \"Effort\",\n      \"alignment\": \"center\",\n      \"format\": \"#,##0\"\n    },\n    {\n      \"dataField\": \"Stage\",\n      \"caption\": \"Stage\",\n      \"name\": \"Name\",\n      \"alignment\": \"center\",\n      \"format\": \"#,##0\",\n      \"groupCellTemplate\": \"function(e, i) {var color=i.component.option().dataSource.find(row=\u003erow.Stage==i.text).Color;var h=$(\u0027\u003cspan\u003e\u003c/span\u003e\u0027);h.css(\u0027background-color\u0027,color).addClass(\u0027documentStageColor\u0027);e.append(h);h=$(\u0027\u003cspan\u003e \u0027+i.text+\u0027 (\u0027+i.summaryItems[0].value+\u0027)\u003c/span\u003e\u0027);e.append(h);}\",\n      \"groupIndex\": 0\n    },\n    {\n      \"dataField\": \"Enddate\",\n      \"caption\": \"End Date\",\n      \"alignment\": \"center\",\n      \"dataType\": \"date\",\n      \"format\": \"d MMM\"\n    }\n  ],\n  \"sortByGroupSummaryInfo\": [\n    {\n      \"summaryItem\": \"count\"\n    }\n  ],\n  \"summary\": {\n    \"groupItems\": [\n      {\n        \"column\": \"Jobs\",\n        \"summaryType\": \"count\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"left\"\n      }\n    ],\n    \"totalItems\": [\n      {\n        \"column\": \"Jobs\",\n        \"summaryType\": \"count\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"Total: {0}\",\n        \"alignment\": \"left\"\n      },\n      {\n        \"column\": \"Effort\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"center\",\n        \"cellTemplate\": \"function(e, i) {var h=e.append(\u0027\u003cdiv\u003e\u0027+i.text+\u0027\u003c/div\u003e\u0027);if(i.value\u003c0) {h.css(\u0027background-color\u0027,\u0027#f5564a\u0027).css(\u0027color\u0027,\u0027#ffffff\u0027)}}\"\n      }\n    ]\n  }\n}",
-            "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
-        },
-        {
-            "Id": "63a0b0d7-6807-47d1-8087-385269c73b7d",
-            "Name": "Top 10 Clients With developments ",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 4,
-            "Order": 1,
-            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"Total\",\r\n                        \"metricFieldValue\": \"PendingGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.*, (sum(j.Pending) over ()) as PendingGrandTotal FROM ( select max(datepart(ww, j.AgreedDate)) as week, j.CommercialClient as Client, min(j.AgreedDate) as WeekStart, sum(iif(ws.name != (\u0027Under Analysis\u0027), 1, 0)) as Pending from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and j.JobType = \u0027Development / Desenvolvimento\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027,\u0027Under Analysis\u0027) group by j.CommercialClient ) j\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\"\r\n            ],\r\n            \"Sort\": {\r\n                \"Type\": 1,\r\n                \"FieldName\": \"PendingGrandTotal\"\r\n            },\r\n            \"Top\": {\r\n                \"Count\": 10\r\n            }\r\n        }\r\n    }\r\n]",
-            "DashboardComponentType": {
-                "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Support - Top 10 Clients with Developments/execute",
-            "Configuration": "{\n\"size\":{\"height\":150},\n\"palette\": \"Material\",\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Client\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"Pending\"\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"Client\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"customizeText\":\"function(t){return t.valueText.split(\u0027 - \u0027)[0].substring(0,20)}\",\n      \"font\": {\n      \n  \"size\": 8\n      }\n    }\n  }\n}",
-            "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
-        },
-        {
-            "Id": "dccf6626-2f44-409f-862a-9c847ac1504a",
-            "Name": "Top 10 Clients With Errors",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 4,
-            "Order": 3,
-            "Parameters": "[{\n\"QueryConfiguration\": {\n\"RequiredFilters\": [\n\"startDate\",\n\"endDate\"\n],\n      \"Sort\": {\n        \"Type\": 1,\n        \"FieldName\": \"ErrorsGrandTotal\"\n      },\n      \"Top\": {\n        \"Count\": 10\n      }\n}\n},{\"WidgetHeader\":{\"showContextInfo\":false, \"WidgetPeriodChooser\":{\"type\":\"year\", \"visible\":false},\"WidgetMetrics\":{\"visible\":true,\"Metrics\":[{\"visible\":true,\"metricName\":\"Jobs\",\"metricFieldValue\":\"ErrorsGrandTotal\"}]}}},\n{\"WidgetType\":\"chart\"},\n{\"WidgetColor\": \"#efefef\"},\n{\"WidgetSubTitle\":\"\"},{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Support -  Top 10 Clients with more Errors/execute\" }}}]",
-            "DashboardComponentType": {
-                "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Support -  Top 10 Clients with more Errors/execute",
-            "Configuration": "{\n\"size\":{\"height\":150},\n  \"palette\": \"Material\",\n  \"rotated\": true,\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Client\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"Errors\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"font\": {\n        \"size\": 8\n      }\n    }\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"ErrorsGrandTotal\"\n  }\n}",
-            "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
-        },
-        {
-            "Id": "ce169bb2-a24c-4fc2-a115-b0bc796ef460",
-            "Name": "Top 10 Clients Pending of Support team",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 4,
-            "Order": 3,
-            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"200\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"Total\",\r\n                        \"metricFieldValue\": \"PendingGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.*, (sum(j.Pending) over ()) as PendingGrandTotal FROM ( select max(datepart(ww, j.AgreedDate)) as week, j.CommercialClient as Client, min(j.AgreedDate) as WeekStart, sum(iif(ws.name = (\u0027Open\u0027) or ws.name =(\u0027Request Approval\u0027) or ws.name =(\u0027Under Analysis\u0027) or ws.name = (\u0027in Tests\u0027), 1, 0)) as Pending from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027,\u0027Under Analysis\u0027) /*[DateFilter]*/and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate /*[/DateFilter]*/ group by j.CommercialClient ) j\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\"\r\n            ],\r\n            \"Top\": {\r\n                \"Count\": 10\r\n            }\r\n        }\r\n    }\r\n]",
-            "DashboardComponentType": {
-                "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Support - Top 10 Clients Pending on Support Team/execute",
-            "Configuration": "{\n\"size\":{\"height\":150},\n\"palette\": \"Material\",\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Client\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"Pending\"\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"Client\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"customizeText\":\"function(t){return t.valueText.split(\u0027 - \u0027)[0].substring(0,20)}\",\n      \"font\": {\n      \n  \"size\": 8\n      }\n    }\n  }\n}",
-            "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
-        },
-        {
-            "Id": "220aceb0-17fb-4692-a074-bd91d6b049ea",
-            "Name": "Overtime View",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 12,
-            "Order": 8,
-            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Jobs End Dates period\",\r\n        \"WidgetType\": \"rangeSelector\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": \"100\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"startDate\": \"2018/06/01\",\r\n                \"endDate\": \"2019/06/30\",\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select max(datepart(ww, j.AgreedDate)) as week, min(j.AgreedDate) as WeekStart, sum(iif(ws.name = (\u0027Canceled\u0027) or ws.name =(\u0027Closed\u0027) or ws.name =(\u0027Closed(unrelated)\u0027) , 1, 0)) as Closed, sum(iif(ws.name != (\u0027Canceled\u0027) and ws.name != (\u0027Closed\u0027) and ws.name != (\u0027Closed(unrelated)\u0027), 1 ,0)) as InProgress from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027, \u0027Under Analysis\u0027) and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate group by datepart(yyyy, j.AgreedDate), datepart(ww, j.AgreedDate) order by WeekStart\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
-            "DashboardComponentType": {
-                "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Support - Overtime View/execute",
-            "Configuration": "{\n  \"containerBackgroundColor\":\"#e0e0e0\",\n  \"selectedRangeColor\": \"#f5564a\",\n  \"chart\": {\n    \"commonSeriesSettings\": {\n      \"type\": \"steparea\",\n      \"argumentField\": \"WeekStart\"\n    },\n    \"series\": [\n      {\n        \"valueField\": \"Closed\"\n},\n        {\n         \"valueField\": \"InProgress\"\n      }\n    ]\n  },\n  \"scale\": {\n    \"minorTickInterval\": \"day\",\n    \"tickInterval\": \"week\",\n    \"valueType\": \"datetime\"\n  },\n  \"sliderMarker\": {\n    \"format\": \"monthAndDay\",\n    \"color\": \"#da5859\"\n  },\n  \"value\": [\n    \"2019/01/28\",\n    \"2019/01/29\"\n  ]\n}",
-            "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
-        },
-        {
-            "Id": "bc8c295c-1c6b-4c05-ae23-fb4a9ae575ba",
-            "Name": "Top 10 Waiting on Client",
-            "Active": true,
-            "UseQuery": false,
-            "Query": null,
-            "Size": 4,
-            "Order": 0,
-            "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Jobs and Time per Activity Type\",\r\n        \"WidgetType\": \"pie\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Waiting\",\r\n                        \"metricFieldValue\": \"WaitingGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.*, (sum(j.Waiting) over ()) as WaitingGrandTotal FROM ( select max(datepart(ww, j.AgreedDate)) as week, j.CommercialClient as Client, min(j.AgreedDate) as WeekStart, sum(iif(ws.name = (\u0027Requirement Approval\u0027) or ws.name =(\u0027Request Approval\u0027) or ws.name =(\u0027Request more information\u0027) or ws.name = (\u0027Request Uat\u0027), 1, 0)) as Waiting from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027, \u0027Under Analysis\u0027) /*[DateFilter]*/and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate /*[/DateFilter]*/ group by j.CommercialClient ) j\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
-            "DashboardComponentType": {
-                "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
-                "Name": "Generic Dashboard",
-                "ComponentTypeNumber": 42
-            },
-            "AnalyticsApiUrl": "globalQuery/Support - Top 10 Waiting on Client/execute",
-            "Configuration": "{\n \"type\": \"doughnut\",\n  \"series\": [{\n      \"argumentField\":\"Client\",\n      \"valueField\":\"Waiting\",\n      \"name\":\"Jobs\",\n      \"label\":false\n    }\n  ],\n  \"commonSeriesSettings\": {\n    \"label\": {\n      \"visible\": false,\n      \"format\": \"fixedPoint\",\n      \"connector\": {\n        \"visible\": true,\n        \"width\": 1\n      }\n    },\n    \"smallValuesGrouping\": {\n        \"mode\": \"topN\",\n        \"topCount\": 10,\n\"groupName\": \"Others\"\n    }\n  },\n  \"size\": {\n    \"height\": 280\n  },\n  \"tooltip\": {\n            \"enabled\": true,\n            \"format\": \"#,###.#\",\n            \"customizeTooltip\": \"function(e) { return { text: this.argumentText + \u0027\u003cbr\u003e\u0027 + this.seriesName + \u0027: \u0027 + this.valueText };}\"\n        },\n  \"legend\": {\n    \"visible\":true,\n    \"horizontalAlignment\": \"left\",\n    \"verticalAlignment\": \"middle\",\n    \"itemTextPosition\" : \"right\",\n    \"paddingLeftRight\" : 0,\n    \"font\":{\"size\":8}\n  }\n}",
-            "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
-        }
-    ],
-    "Version": 5,
-    "Default": false,
-    "Dependencies": {
-        "DashboardSdk": "1.0.0",
-        "Analytics": "1.0.0",
-        "SkillsWorkflow": "1.0.0"
+  "DashboardDefinitionRoles": [],
+  "Id": "ff65c289-6afb-470d-901d-b546c51fd82f",
+  "Name": "Support Dashboard",
+  "Active": true,
+  "Location": 0,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "b7fc618a-7298-4c3b-b671-1a2e72571215",
+      "Name": "Jobs activity",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 8,
+      "Order": 1,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Job\u0027s Delayed or On Time by status\",\r\n        \"WidgetType\": \"grid\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"500\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Delayed Jobs\",\r\n                        \"metricFieldValue\": \"DelayedJobsGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.effort, j.Job, ws.Name as Stage, j.Project, j.AgreedDate as Enddate, j.Oid, ISNULL(ws.Color, wst.Color) as Color, DATEDIFF(day,getdate(),AgreedDate) as Days, sum(iif((ws.name =\u0027in Tests\u0027 or ws.name=\u0027Move to Production\u0027 or ws.name=\u0027on Hold\u0027 or ws.name=\u0027Open\u0027 or ws.name=\u0027Request Approval\u0027 or ws.name=\u0027Request more information\u0027 or ws.name =\u0027Request Uat\u0027 or ws.name=\u0027Requirement Approval\u0027 or ws.name=\u0027Under Analysis\u0027) and AgreedDate \u003c getdate(), 1, 0)) over() as DelayedJobsGrandTotal from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027,\u0027Under Analysis\u0027) /*[DateFilter]*/ and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate /*[/DateFilter]*/\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {}\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Support - Jobs Activity/execute",
+      "Configuration": "{\n  \"onRowClick\": \"function(e){SkillsWorkflow.preview(e.key, \u0027job\u0027);}\",\n  \"keyExpr\" : \"Oid\",\n  \"selection\": {\n    \"mode\": \"single\"\n  },\n\"columnAutoWidth\":true,\n  \"groupPanel\":{\n \"visible\":true\n},\n\"headerFilter\":{\n  \"visible\":true\n},\n\"allowFiltering\":true,\n  \"searchPanel\": {\n            \"visible\": true\n  },\n  \"height\": 350,\n  \"scrolling\": {\n    \"mode\": \"virtual\"\n  },\n  \"columnMinWidth\": 50,\n  \"columns\": [\n    {\n      \"dataField\": \"Job\",\n      \"name\": \"Jobs\",\n      \"caption\": \"Jobs\",\n     \"width\":650\n    },\n    {\n      \"dataField\": \"Days\",\n      \"caption\": \"Days\",\n      \"alignment\": \"center\",\n      \"format\": \"#,##0\",\n      \"cellTemplate\": \"function(e, i) {var h=e.append(\u0027\u003cdiv\u003e\u0027+i.text+\u0027\u003c/div\u003e\u0027);if(i.value\u003c0) {h.css(\u0027background-color\u0027,\u0027#f5564a\u0027).css(\u0027color\u0027,\u0027#ffffff\u0027)};if(i.value==0 || i.value==1){h.css(\u0027background-color\u0027,\u0027#ffc720\u0027).css(\u0027color\u0027,\u0027#ffffff\u0027)};}\"\n    },\n    {\n      \"dataField\": \"effort\",\n      \"caption\": \"Effort\",\n      \"alignment\": \"center\",\n      \"format\": \"#,##0\"\n    },\n    {\n      \"dataField\": \"Stage\",\n      \"caption\": \"Stage\",\n      \"name\": \"Name\",\n      \"alignment\": \"center\",\n      \"format\": \"#,##0\",\n      \"groupCellTemplate\": \"function(e, i) {var color=i.component.option().dataSource.find(row=\u003erow.Stage==i.text).Color;var h=$(\u0027\u003cspan\u003e\u003c/span\u003e\u0027);h.css(\u0027background-color\u0027,color).addClass(\u0027documentStageColor\u0027);e.append(h);h=$(\u0027\u003cspan\u003e \u0027+i.text+\u0027 (\u0027+i.summaryItems[0].value+\u0027)\u003c/span\u003e\u0027);e.append(h);}\",\n      \"groupIndex\": 0\n    },\n    {\n      \"dataField\": \"Enddate\",\n      \"caption\": \"End Date\",\n      \"alignment\": \"center\",\n      \"dataType\": \"date\",\n      \"format\": \"d MMM\"\n    }\n  ],\n  \"sortByGroupSummaryInfo\": [\n    {\n      \"summaryItem\": \"count\"\n    }\n  ],\n  \"summary\": {\n    \"groupItems\": [\n      {\n        \"column\": \"Jobs\",\n        \"summaryType\": \"count\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"left\"\n      }\n    ],\n    \"totalItems\": [\n      {\n        \"column\": \"Jobs\",\n        \"summaryType\": \"count\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"Total: {0}\",\n        \"alignment\": \"left\"\n      },\n      {\n        \"column\": \"Effort\",\n        \"summaryType\": \"sum\",\n        \"valueFormat\": \"#,##0\",\n        \"displayFormat\": \"{0}\",\n        \"alignment\": \"center\",\n        \"cellTemplate\": \"function(e, i) {var h=e.append(\u0027\u003cdiv\u003e\u0027+i.text+\u0027\u003c/div\u003e\u0027);if(i.value\u003c0) {h.css(\u0027background-color\u0027,\u0027#f5564a\u0027).css(\u0027color\u0027,\u0027#ffffff\u0027)}}\"\n      }\n    ]\n  }\n}",
+      "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
+    },
+    {
+      "Id": "63a0b0d7-6807-47d1-8087-385269c73b7d",
+      "Name": "Top 10 Clients With developments ",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 1,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"Total\",\r\n                        \"metricFieldValue\": \"PendingGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.*, (sum(j.Pending) over ()) as PendingGrandTotal FROM ( select max(datepart(ww, j.AgreedDate)) as week, j.CommercialClient as Client, min(j.AgreedDate) as WeekStart, sum(iif(ws.name != (\u0027Under Analysis\u0027), 1, 0)) as Pending from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and j.JobType = \u0027Development / Desenvolvimento\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027,\u0027Under Analysis\u0027) group by j.CommercialClient ) j\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\"\r\n            ],\r\n            \"Sort\": {\r\n                \"Type\": 1,\r\n                \"FieldName\": \"PendingGrandTotal\"\r\n            },\r\n            \"Top\": {\r\n                \"Count\": 10\r\n            }\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Support - Top 10 Clients with Developments/execute",
+      "Configuration": "{\n\"size\":{\"height\":150},\n\"palette\": \"Material\",\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Client\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"Pending\"\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"Client\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"customizeText\":\"function(t){return t.valueText.split(\u0027 - \u0027)[0].substring(0,20)}\",\n      \"font\": {\n      \n  \"size\": 8\n      }\n    }\n  }\n}",
+      "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
+    },
+    {
+      "Id": "dccf6626-2f44-409f-862a-9c847ac1504a",
+      "Name": "Top 10 Clients With Errors",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 3,
+      "Parameters": "[{\n\"QueryConfiguration\": {\n\"RequiredFilters\": [\n\"startDate\",\n\"endDate\"\n],\n      \"Sort\": {\n        \"Type\": 1,\n        \"FieldName\": \"ErrorsGrandTotal\"\n      },\n      \"Top\": {\n        \"Count\": 10\n      }\n}\n},{\"WidgetHeader\":{\"showContextInfo\":false, \"WidgetPeriodChooser\":{\"type\":\"year\", \"visible\":false},\"WidgetMetrics\":{\"visible\":true,\"Metrics\":[{\"visible\":true,\"metricName\":\"Jobs\",\"metricFieldValue\":\"ErrorsGrandTotal\"}]}}},\n{\"WidgetType\":\"chart\"},\n{\"WidgetColor\": \"#efefef\"},\n{\"WidgetSubTitle\":\"\"},{ \"WidgetDataSources\" : { \"main\": { \"type\": \"query\", \"value\": \"globalQuery/Support -  Top 10 Clients with more Errors/execute\" }}}]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Support -  Top 10 Clients with more Errors/execute",
+      "Configuration": "{\n\"size\":{\"height\":150},\n  \"palette\": \"Material\",\n  \"rotated\": true,\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Client\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"Errors\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"font\": {\n        \"size\": 8\n      }\n    }\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"ErrorsGrandTotal\"\n  }\n}",
+      "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
+    },
+    {
+      "Id": "ce169bb2-a24c-4fc2-a115-b0bc796ef460",
+      "Name": "Top 10 Clients Pending of Support team",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 3,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"\",\r\n        \"WidgetType\": \"chart\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#efefef\",\r\n        \"WidgetHeight\": \"200\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"Total\",\r\n                        \"metricFieldValue\": \"PendingGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.*, (sum(j.Pending) over ()) as PendingGrandTotal FROM ( select max(datepart(ww, j.AgreedDate)) as week, j.CommercialClient as Client, min(j.AgreedDate) as WeekStart, sum(iif(ws.name = (\u0027Open\u0027) or ws.name =(\u0027Request Approval\u0027) or ws.name =(\u0027Under Analysis\u0027) or ws.name = (\u0027in Tests\u0027), 1, 0)) as Pending from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027,\u0027Under Analysis\u0027) /*[DateFilter]*/and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate /*[/DateFilter]*/ group by j.CommercialClient ) j\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": {\r\n            \"RequiredFilters\": [\r\n                \"startDate\",\r\n                \"endDate\"\r\n            ],\r\n            \"Top\": {\r\n                \"Count\": 10\r\n            }\r\n        }\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Support - Top 10 Clients Pending on Support Team/execute",
+      "Configuration": "{\n\"size\":{\"height\":150},\n\"palette\": \"Material\",\n  \"commonSeriesSettings\": {\n    \"argumentField\": \"Client\",\n    \"type\": \"bar\",\n    \"ignoreEmptyPoints\": true,\n    \"valueField\": \"Pending\"\n  },\n  \"seriesTemplate\": {\n    \"nameField\": \"Client\"\n  },\n  \"argumentAxis\": {\n    \"label\": {\n      \"overlappingBehavior\":\"stagger\",\n      \"customizeText\":\"function(t){return t.valueText.split(\u0027 - \u0027)[0].substring(0,20)}\",\n      \"font\": {\n      \n  \"size\": 8\n      }\n    }\n  }\n}",
+      "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
+    },
+    {
+      "Id": "220aceb0-17fb-4692-a074-bd91d6b049ea",
+      "Name": "Overtime View",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 12,
+      "Order": 8,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Jobs End Dates period\",\r\n        \"WidgetType\": \"rangeSelector\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"#e0e0e0\",\r\n        \"WidgetHeight\": \"100\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"startDate\": \"2018/06/01\",\r\n                \"endDate\": \"2019/06/30\",\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select max(datepart(ww, j.AgreedDate)) as week, min(j.AgreedDate) as WeekStart, sum(iif(ws.name = (\u0027Canceled\u0027) or ws.name =(\u0027Closed\u0027) or ws.name =(\u0027Closed(unrelated)\u0027) , 1, 0)) as Closed, sum(iif(ws.name != (\u0027Canceled\u0027) and ws.name != (\u0027Closed\u0027) and ws.name != (\u0027Closed(unrelated)\u0027), 1 ,0)) as InProgress from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027, \u0027Under Analysis\u0027) and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate group by datepart(yyyy, j.AgreedDate), datepart(ww, j.AgreedDate) order by WeekStart\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Support - Overtime View/execute",
+      "Configuration": "{\n  \"containerBackgroundColor\":\"#e0e0e0\",\n  \"selectedRangeColor\": \"#f5564a\",\n  \"chart\": {\n    \"commonSeriesSettings\": {\n      \"type\": \"steparea\",\n      \"argumentField\": \"WeekStart\"\n    },\n    \"series\": [\n      {\n        \"valueField\": \"Closed\"\n},\n        {\n         \"valueField\": \"InProgress\"\n      }\n    ]\n  },\n  \"scale\": {\n    \"minorTickInterval\": \"day\",\n    \"tickInterval\": \"week\",\n    \"valueType\": \"datetime\"\n  },\n  \"sliderMarker\": {\n    \"format\": \"monthAndDay\",\n    \"color\": \"#da5859\"\n  },\n  \"value\": [\n    \"2019/01/28\",\n    \"2019/01/29\"\n  ]\n}",
+      "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
+    },
+    {
+      "Id": "bc8c295c-1c6b-4c05-ae23-fb4a9ae575ba",
+      "Name": "Top 10 Waiting on Client",
+      "Active": true,
+      "UseQuery": false,
+      "Query": null,
+      "Size": 4,
+      "Order": 0,
+      "Parameters": "[\r\n    {\r\n        \"WidgetSubTitle\": \"Jobs and Time per Activity Type\",\r\n        \"WidgetType\": \"pie\",\r\n        \"WidgetFilterField\": \"\",\r\n        \"WidgetColor\": \"\",\r\n        \"WidgetHeight\": \"\",\r\n        \"WidgetHeader\": {\r\n            \"showContextInfo\": false,\r\n            \"WidgetPeriodChooser\": {\r\n                \"type\": \"year\",\r\n                \"visible\": false\r\n            },\r\n            \"WidgetMetrics\": {\r\n                \"visible\": true,\r\n                \"Metrics\": [\r\n                    {\r\n                        \"visible\": true,\r\n                        \"metricName\": \"# Waiting\",\r\n                        \"metricFieldValue\": \"WaitingGrandTotal\"\r\n                    }\r\n                ]\r\n            },\r\n            \"showSubTitle\": true,\r\n            \"showTitle\": true\r\n        },\r\n        \"WidgetDataSources\": {\r\n            \"main\": {\r\n                \"type\": \"queryText\",\r\n                \"value\": \"select j.*, (sum(j.Waiting) over ()) as WaitingGrandTotal FROM ( select max(datepart(ww, j.AgreedDate)) as week, j.CommercialClient as Client, min(j.AgreedDate) as WeekStart, sum(iif(ws.name = (\u0027Requirement Approval\u0027) or ws.name =(\u0027Request Approval\u0027) or ws.name =(\u0027Request more information\u0027) or ws.name = (\u0027Request Uat\u0027), 1, 0)) as Waiting from SkillJob j, WorkflowState ws, WorkflowStateType wst where ws.Oid = j.WorkflowStateId and wst.Oid = j.WorkflowStateTypeId and j.Department = \u0027Support\u0027 and ws.name in (\u0027Canceled\u0027, \u0027Closed\u0027, \u0027Closed(unrelated)\u0027,\u0027in Tests\u0027,\u0027Move to Production\u0027,\u0027on Hold\u0027, \u0027Open\u0027, \u0027Request Approval\u0027,\u0027Request more information\u0027, \u0027Request Uat\u0027, \u0027Requirement Approval\u0027, \u0027Under Analysis\u0027) /*[DateFilter]*/and j.AgreedDate \u003e= @FromDate and j.AgreedDate \u003c= @ToDate /*[/DateFilter]*/ group by j.CommercialClient ) j\"\r\n            }\r\n        },\r\n        \"QueryConfiguration\": null\r\n    }\r\n]",
+      "DashboardComponentType": {
+        "Id": "6f649e62-be82-4af7-8d64-06b32cf6c0ea",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "globalQuery/Support - Top 10 Waiting on Client/execute",
+      "Configuration": "{\n \"type\": \"doughnut\",\n  \"series\": [{\n      \"argumentField\":\"Client\",\n      \"valueField\":\"Waiting\",\n      \"name\":\"Jobs\",\n      \"label\":false\n    }\n  ],\n  \"commonSeriesSettings\": {\n    \"label\": {\n      \"visible\": false,\n      \"format\": \"fixedPoint\",\n      \"connector\": {\n        \"visible\": true,\n        \"width\": 1\n      }\n    },\n    \"smallValuesGrouping\": {\n        \"mode\": \"topN\",\n        \"topCount\": 10,\n\"groupName\": \"Others\"\n    }\n  },\n  \"size\": {\n    \"height\": 280\n  },\n  \"tooltip\": {\n            \"enabled\": true,\n            \"format\": \"#,###.#\",\n            \"customizeTooltip\": \"function(e) { return { text: this.argumentText + \u0027\u003cbr\u003e\u0027 + this.seriesName + \u0027: \u0027 + this.valueText };}\"\n        },\n  \"legend\": {\n    \"visible\":true,\n    \"horizontalAlignment\": \"left\",\n    \"verticalAlignment\": \"middle\",\n    \"itemTextPosition\" : \"right\",\n    \"paddingLeftRight\" : 0,\n    \"font\":{\"size\":8}\n  }\n}",
+      "DashboardDefinitionId": "ff65c289-6afb-470d-901d-b546c51fd82f"
     }
+  ],
+  "Version": 5,
+  "Default": false,
+  "Dependencies": {
+    "DashboardSdk": "1.0.0",
+    "Analytics": "1.0.0",
+    "SkillsWorkflow": "1.0.0"
+  }
 }

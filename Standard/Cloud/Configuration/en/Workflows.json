@@ -7,7 +7,7 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": "workflow",
-  "DocumentsConfiguration": "[]",
+  "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
