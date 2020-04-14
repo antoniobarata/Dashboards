@@ -50,7 +50,7 @@
        },
        {
           "Id":"2cc527b4-394a-41c3-9ba9-b6d7bce4b623",
-          "Name":"Users per Tenants",
+          "Name":"Users per Tenant",
           "Active":true,
           "UseQuery":false,
           "Query":"",
