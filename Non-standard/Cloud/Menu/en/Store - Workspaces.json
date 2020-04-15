@@ -69,6 +69,5 @@
   "UseStore": false,
   "StoreEntity": null,
   "Version": 10,
-  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
   "Default": false
 }
