@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "17607d6f-bd69-4052-9769-b1a3b1605691",
+  "Name": "Team",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "department",
+  "DocumentsConfiguration": "[\r\n    {\r\n        \"entity\": \"\",\r\n        \"operations\": {\r\n            \"read\": {\r\n                \"endpoint\": null\r\n            },\r\n            \"update\": {\r\n                \"endpoint\": null,\r\n                \"model\": null\r\n            },\r\n            \"create\": {\r\n                \"endpoint\": null,\r\n                \"model\": null\r\n            },\r\n            \"patch\": {\r\n                \"endpoint\": \"\",\r\n                \"model\": [\r\n                    {\r\n                        \"field\": \"\",\r\n                        \"caption\": \"\",\r\n                        \"type\": \"\"\r\n                    }\r\n                ]\r\n            },\r\n            \"remove\": {\r\n                \"endpoint\": null\r\n            },\r\n            \"lookup\": {\r\n                \"endpoint\": \"\"\r\n            },\r\n            \"lookupById\": {\r\n                \"endpoint\": \"\"\r\n            }\r\n        },\r\n        \"layout\": {\r\n            \"create\": {},\r\n            \"read\": {},\r\n            \"patch\": {}\r\n        },\r\n        \"customDocument\": {\r\n            \"useCustomStyle\": false,\r\n            \"mainColor\": \"\",\r\n            \"secondaryColor\": \"\",\r\n            \"imageClass\": \"\",\r\n            \"namePlural\": \"\",\r\n            \"name\": \"\",\r\n            \"systemName\": \"\"\r\n        },\r\n        \"availableOptions\": {\r\n            \"feed\": false,\r\n            \"info\": true,\r\n            \"files\": false,\r\n            \"userfields\": false,\r\n            \"workspaces\": false\r\n        },\r\n        \"fields\": []\r\n    }\r\n]",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "95732e62-a50b-4537-905a-2220f339b28d",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":50,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"department\",\"entityToCreate\":\"teams\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'v3/departments/' + entityId + '/department-teams';\\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/department-teams';\\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        DepartmentId: entityId,\\n        AssignmentTypeId: data.AssignmentTypeId,\\n        UserId: data.UserId\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, newData, entityId) {\\n    return 'v3/department-teams/' + data.Id;\\n}\",\"model\":\"function putModel(data, newData, entityId) {\\n    const model = { ...data, ...newData };\\n    return {\\n        DepartmentId: entityId,\\n        AssignmentTypeId: model.AssignmentTypeId,\\n        UserId: model.UserId\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'v3/department-teams/' + data.Id;\\n}\"},\"columns\":\"function column(e){\\r\\n    return [\\r\\n        {\\r\\n            dataField: \\\"AssignmentTypeId\\\",\\r\\n            caption: \\\"Assignment Type\\\",\\r\\n            lookup:{\\r\\n                searchEnabled: true,\\r\\n                dataSource: {\\r\\n                    load: function (loadOptions) {\\r\\n                        var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');\\r\\n                        var skip = loadOptions.skip || 0;\\r\\n                        var take = loadOptions.take || 20;\\r\\n                        var param = { name: searchValue, skip: skip, take: take };\\r\\n                        return window[\\\"SW\\\"].executeAPI('GET', 'assignment-types', null, {}).then(result => { return Promise.resolve(result); })\\r\\n                    },\\r\\n                    byKey: function (key) {\\r\\n                        if (key !== \\\"00000000-0000-0000-0000-000000000000\\\") {\\r\\n                            return window[\\\"SW\\\"].executeAPI('GET', 'assignmentTypes/' + key, null, {}).then(result => { return Promise.resolve(result); })\\r\\n                        }\\r\\n                    }\\r\\n                },\\r\\n                displayExpr: \\\"Name\\\",\\r\\n                valueExpr: \\\"Id\\\"\\r\\n            },\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"UserId\\\",\\r\\n            caption: \\\"User\\\",\\r\\n            lookup: {\\r\\n                searchEnabled: true,\\r\\n                dataSource: {\\r\\n                    load: function (loadOptions) {\\r\\n                        var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');\\r\\n                        var skip = loadOptions.skip || 0;\\r\\n                        var take = loadOptions.take || 20;\\r\\n                        var param = { userName: searchValue, skip: skip, take: take };\\r\\n                        return window[\\\"SW\\\"].executeAPI('GET', 'users/all/lookup', param, {}).then(result => { return Promise.resolve(result); })\\r\\n                    },\\r\\n                    byKey: function (key) {\\r\\n                        if (key !== \\\"00000000-0000-0000-0000-000000000000\\\") {\\r\\n                            return window[\\\"SW\\\"].executeAPI('GET', 'users/' + key + '/lookup', null, {}).then(result => { return Promise.resolve(result); })\\r\\n                        }\\r\\n                    }\\r\\n                },\\r\\n                displayExpr: \\\"Name\\\",\\r\\n                valueExpr: \\\"Id\\\"\\r\\n            },\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        }\\r\\n    ]\\r\\n}\"}",
+      "DashboardDefinitionId": "17607d6f-bd69-4052-9769-b1a3b1605691"
+    }
+  ],
+  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
+  "Version": 1,
+  "Default": true
+}
