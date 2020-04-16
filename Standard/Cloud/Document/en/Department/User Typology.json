@@ -7,7 +7,7 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": "department",
-  "DocumentsConfiguration": "[\n    {\n        \"entity\": \"\",\n        \"operations\": {\n            \"read\": {\n                \"endpoint\": \"\"\n            },\n            \"update\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"create\": {\n                \"endpoint\": \"\",\n                \"model\": {}\n            },\n            \"patch\": {\n                \"endpoint\": \"\",\n                \"model\": [\n                    {\n                        \"field\": \"\",\n                        \"caption\": \"\",\n                        \"type\": \"\"\n                    }\n                ]\n            },\n            \"remove\": {\n                \"endpoint\": \"\"\n            },\n            \"lookup\": {\n                \"endpoint\": \"\"\n            },\n            \"lookupById\": {\n                \"endpoint\": \"\"\n            }\n        },\n        \"layout\": {\n            \"create\": {},\n            \"read\": {},\n            \"patch\": {}\n        },\n        \"customDocument\": {\n            \"useCustomStyle\": false,\n            \"mainColor\": \"\",\n            \"secondaryColor\": \"\",\n            \"imageClass\": \"\",\n            \"namePlural\": \"\",\n            \"name\": \"\",\n            \"systemName\": \"\"\n        },\n        \"availableOptions\": {\n            \"feed\": false,\n            \"info\": true,\n            \"files\": false,\n            \"userfields\": false,\n            \"dashboard\": false\n        },\n        \"fields\": []\n    }\n]",
+  "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
@@ -29,7 +29,7 @@
       "DashboardDefinitionId": "0b615acc-f28f-4f11-86fe-65a9ef567e71"
     }
   ],
-  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
+  "DataSourceConfiguration": "{}",
   "Version": 1,
   "Default": true
 }
