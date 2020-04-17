@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "3410dc2a-315a-4267-b160-0fc32c1aa529",
+  "Name": "User",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "department",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "d034eb27-52c1-4e3b-8b2b-6523b897f149",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":49,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"department\",\"entityAssociation\":\"user\",\"grid\":{\"call\":\"function getCall(entityId){\\n    return 'departments/' + entityId + '/user-departments' \\n}\",\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        AssociationId: response.UserId,\\n        Id: response.UserId,\\n        Name: response.UserName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n   return 'users/all/lookupWithCompany' \\n}\",\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.UserName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.CompanyName,\\n        Info2: null,\\n    }\\n}\"},\"link\":{\"call\":\"function postCall(item, entityId){\\n    return 'user-departments';\\n}\",\"model\":\"function postModel(item, entityId){\\n    return {\\n        UserId: item.Id,\\n        DepartmentId: entityId\\n    }\\n}\"},\"unlink\":{\"call\":\"function deleteCall(item, entityId){\\n    return 'user-departments/' + item.Data.Id\\n}\"},\"form\":{\"layout\":{\"colCount\":3,\"items\":[{\"dataField\":\"Read\",\"editorType\":\"dxCheckBox\"},{\"dataField\":\"Team\",\"editorType\":\"dxCheckBox\"},{\"dataField\":\"Create\",\"editorType\":\"dxCheckBox\"}]},\"call\":\"function putCall(item, entityId){\\n    return 'user-departments/' + item.Data.Id\\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return {\\n        DepartmentId: item.Data.DepartmentId,\\n        UserId: item.Data.UserId,\\n        Team: item.Data.Team,\\n        Read: item.Data.Read,\\n        Create: item.Data.Create\\n    } \\n}\"}}",
+      "DashboardDefinitionId": "3410dc2a-315a-4267-b160-0fc32c1aa529"
+    }
+  ],
+  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
+  "Version": 1,
+  "Default": true
+}
