@@ -25,7 +25,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e) {\\n    var editor = SW.getComponent('editor');\\n    var template = JSON.parse(editor.getValue());\\n    debugger;\\n    SW.executeAPI('POST', 'templates', null, template)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Saved\\\");\\n            SW.getComponent('templatesGrid').refresh();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
+      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function(e) {\\n    var editor = SW.getComponent('editor');\\n    var template = JSON.parse(editor.getValue());\\n    \\n    SW.executeAPI('POST', 'templates', null, template)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Saved\\\");\\n            SW.getComponent('templatesGrid').refresh();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
       "DashboardDefinitionId": "a8cbd629-35f8-49ec-8d58-5f0c36feae06"
     },
     {
@@ -43,7 +43,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"model\":{\"language\":\"json\"},\"onInit\":\"function(e){\\n    SW.saveComponent(e, 'editor');\\n    var model = {\\n        Name: \\\"\\\",\\n        Type: \\\"\\\",\\n        Category: \\\"\\\",\\n        Layout: \\\"\\\",\\n        Description: \\\"\\\",\\n        DocumentId: \\\"\\\",\\n        DocumentTypeName: \\\"\\\",\\n        EditorWorkspaceId: \\\"\\\",\\n        EditorWorkspaceName: \\\"\\\",\\n        Details: {\\n            \\n        }\\n    }\\n    var data = SW.getComponent('documentData');\\n    debugger;\\n    if(data.Oid){\\n        model.DocumentId = data.Oid\\n    }\\n    e.setValue(JSON.stringify(model));\\n}\"}",
+      "Configuration": "{\"model\":{\"language\":\"json\"},\"onInit\":\"function(e){\\n    SW.saveComponent(e, 'editor');\\n    var model = {\\n        Name: \\\"\\\",\\n        Type: \\\"\\\",\\n        Category: \\\"\\\",\\n        Layout: \\\"\\\",\\n        Description: \\\"\\\",\\n        DocumentId: \\\"\\\",\\n        DocumentTypeName: \\\"\\\",\\n        EditorWorkspaceId: \\\"\\\",\\n        EditorWorkspaceName: \\\"\\\",\\n        Details: {\\n            \\n        }\\n    }\\n    var data = SW.getComponent('documentData');\\n    \\n    if(data.Oid){\\n        model.DocumentId = data.Oid\\n    }\\n    e.setValue(JSON.stringify(model));\\n}\"}",
       "DashboardDefinitionId": "a8cbd629-35f8-49ec-8d58-5f0c36feae06"
     }
   ],

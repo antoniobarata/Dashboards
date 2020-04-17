@@ -25,7 +25,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"departmenttype\",\"onRowClick\":\"function(e) { \\r\\n    debugger;\\r\\n    SW.genericPreview(e.key.Oid, \\\"DepartmentType.Name\\\", \\\"departmenttype\\\");\\r\\n}\"}",
+      "Configuration": "{\"entity\":\"departmenttype\",\"onRowClick\":\"function(e) { \\r\\n    \\r\\n    SW.genericPreview(e.key.Oid, \\\"DepartmentType.Name\\\", \\\"departmenttype\\\");\\r\\n}\"}",
       "DashboardDefinitionId": "340bb778-fb17-4cc5-b36e-d4ab550ed877"
     }
   ],
