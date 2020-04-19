@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "2e667359-1b5b-4aef-9bd2-e19104af520c",
   "Name": "Publishers",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "f7cac03b-0611-47a9-b685-f1394c2f10a2",
+      "Id": "c84bee15-f424-4a7f-91f3-70aebc293c94",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -25,13 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027publisher\u0027);}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\"],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027        });        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {            SkillsWorkflow.genericNew(\u0027publisher\u0027);                           }}        });        var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027publisher\u0027, dataGrid);                }            }        });    }\",\"entity\":\"publisher\"}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\"],\"entity\":\"publisher\"}",
       "DashboardDefinitionId": "2e667359-1b5b-4aef-9bd2-e19104af520c"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 4,
+  "DataSourceConfiguration": "{}",
+  "Version": 5,
   "Default": true
 }

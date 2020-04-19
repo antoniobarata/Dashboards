@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "e9fe97ae-c32c-4fdb-9bf2-cef554bc6603",
   "Name": "Markets",
@@ -11,27 +11,25 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "769f4c9c-a547-44d4-a6dd-a73bfe693926",
+      "Id": "c144b042-5c62-48b2-aec9-62fa0e6504ad",
       "Name": "",
       "Active": true,
       "UseQuery": false,
       "Query": "",
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]} ,\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null} } ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  m.Oid, m.[Name] as [Name], mg.[Name] as MarketGroup\\r\\nFROM    Market m, MarketGroup mg\\r\\nWHERE   mg.Oid = m.MarketGroup AND\\r\\n        m.GCRecord IS NULL\",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0} ,\"RequiredFilters\":[]} } ]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT  m.Oid, m.[Name] as [Name], mg.[Name] as MarketGroup\\r\\nFROM    Market m, MarketGroup mg\\r\\nWHERE   mg.Oid = m.MarketGroup AND\\r\\n        m.GCRecord IS NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027market\u0027);} \",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    } ,\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        } ,\r\n        \"Name\",\r\n        \"MarketGroup\"\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             template: \u0027toggleHeaderFilterButtonTemplate\u0027        } );        e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027plus\u0027, onClick: function() {            SkillsWorkflow.genericNew(\u0027market\u0027);                           } }         } );        var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: \u0027after\u0027,             widget: \u0027dxButton\u0027,             options: { icon: \u0027fal fa-times\u0027, onClick: function() {                SW.genericDelete(\u0027market\u0027, dataGrid);                }             }         } );    } \",\r\n    \"entity\": \"market\"\r\n} ",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"MarketGroup\"],\"entity\":\"market\"}",
       "DashboardDefinitionId": "e9fe97ae-c32c-4fdb-9bf2-cef554bc6603"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 7,
+  "DataSourceConfiguration": "{}",
+  "Version": 8,
   "Default": true
 }

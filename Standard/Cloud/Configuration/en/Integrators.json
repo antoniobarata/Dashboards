@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "d1509338-a8c1-4ad3-8c6c-0db1d21b79ec",
   "Name": "Integrators",
@@ -6,12 +6,12 @@
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": "integrators",
+  "DocumentTypeName": "integrator",
   "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "9d03fcb3-5fcf-475f-89bd-ac549d808142",
+      "Id": "435a82b9-31e0-4291-b323-f7cad5672e6f",
       "Name": "Current Integrators Available",
       "Active": true,
       "UseQuery": false,
@@ -25,13 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"columns\":[\"Name\"],\"onRowClick\":\"function(e){\\n    var dataGrid = e.component;\\n    var id = '5f54482d-789a-4eca-b349-126e2a5dfa49';\\n    \\n    if(e.data.ConfigurationMetadata){\\n        var config = JSON.parse(e.data.ConfigurationMetadata);\\n        if (config.customWorkspaceConfigurationId && config.customWorkspaceConfigurationId != \\\"\\\"){\\n            SkillsWorkflow.genericPopup('integrators', [{ Id: config.customWorkspaceConfigurationId, Title: e.data.Name }], dataGrid, 700, 800, false);\\n            return;\\n        }\\n    }\\n    SkillsWorkflow.genericPopup('integrators', [{ Id: id, Title: e.data.Name }], dataGrid, 700, 800, false);\\n}\",\"height\":\"100%\",\"width\":\"100%\",\"dataSource\":{\"load\":\"function(){\\r\\n    return SW.executeAPI(\\\"GET\\\", \\\"integrators\\\").then(x => {\\r\\n        return x;\\r\\n    });\\r\\n}\"}}",
+      "Configuration": "{\"columns\":[\"Name\"],\"onRowClick\":\"function(e){\\n    var dataGrid = e.component;\\n    var id = '5f54482d-789a-4eca-b349-126e2a5dfa49';\\n    \\n    if(e.data.ConfigurationMetadata){\\n        var config = JSON.parse(e.data.ConfigurationMetadata);\\n        if (config.customWorkspaceConfigurationId && config.customWorkspaceConfigurationId != \\\"\\\"){\\n            SkillsWorkflow.genericPopup('integrator', [{ Id: config.customWorkspaceConfigurationId, Title: e.data.Name }], dataGrid, 700, 800, false);\\n            return;\\n        }\\n    }\\n    SkillsWorkflow.genericPopup('integrator', [{ Id: id, Title: e.data.Name }], dataGrid, 700, 800, false);\\n}\",\"height\":\"100%\",\"width\":\"100%\",\"dataSource\":{\"load\":\"function(){\\r\\n    return SW.executeAPI(\\\"GET\\\", \\\"integrators\\\").then(x => {\\r\\n        return x;\\r\\n    });\\r\\n}\"}}",
       "DashboardDefinitionId": "d1509338-a8c1-4ad3-8c6c-0db1d21b79ec"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 6,
+  "DataSourceConfiguration": "{}",
+  "Version": 8,
   "Default": true
 }

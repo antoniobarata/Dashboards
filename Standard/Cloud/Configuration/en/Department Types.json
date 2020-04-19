@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "340bb778-fb17-4cc5-b36e-d4ab550ed877",
   "Name": "Department Types",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "d777b73e-9749-49f4-85ac-218a9ae46bab",
+      "Id": "fae787b7-c0a1-4f61-9f6c-03c843187f0c",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -25,13 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"departmenttype\",\"onRowClick\":\"function(e) { \\r\\n    \\r\\n    SW.genericPreview(e.key.Oid, \\\"DepartmentType.Name\\\", \\\"departmenttype\\\");\\r\\n}\"}",
+      "Configuration": "{\"entity\":\"departmenttype\"}",
       "DashboardDefinitionId": "340bb778-fb17-4cc5-b36e-d4ab550ed877"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 9,
+  "DataSourceConfiguration": "{}",
+  "Version": 10,
   "Default": true
 }

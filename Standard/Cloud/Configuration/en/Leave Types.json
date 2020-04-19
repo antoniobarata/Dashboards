@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "1cb6c6e6-ce8c-40a6-9ee7-69b101f3d95a",
   "Name": "Leave Types",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "78b4b7a7-2b04-4240-b6b9-41172ab61ff2",
+      "Id": "587ce029-37ee-463e-94af-da42bef55dcc",
       "Name": "Leaves",
       "Active": true,
       "UseQuery": false,
@@ -25,13 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"onRowClick\": \"function(e){if(e.rowType==\u0027data\u0027) \\r\\n    SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027leavetype\u0027);\\r\\n}\",\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    },\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        {\r\n            \"dataField\": \"ExpirationDate\",\r\n            \"dataType\": \"date\",\r\n            \"format\": \"function(value) { return SW.defaultDisplayFormat(value) }\"\r\n        },\r\n        \"Default\",\r\n        \"Active\",\r\n        \"LeavesInHours\",\r\n        \"AllowHalfDays\",\r\n        \"TotalVacationDays\",\r\n        \"HRApprovalOnly\"\r\n    ],\r\n    \"onToolbarPreparing\": \"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: \u0027after\u0027,             \\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: \u0027after\u0027,             \\r\\n            widget: \u0027dxButton\u0027,             \\r\\n            options: { \\r\\n                icon: \u0027plus\u0027, onClick: function() {                \\r\\n                SkillsWorkflow.genericNew(\u0027leavetype\u0027,450,800);            \\r\\n                }        \\r\\n            }    \\r\\n        });     \\r\\n                var dataGrid = e.component;                \\r\\n                e.toolbarOptions.items.unshift({             \\r\\n                    location: \u0027after\u0027,             \\r\\n                    widget: \u0027dxButton\u0027,             \\r\\n                    options: { icon: \u0027fal fa-times\u0027, onClick: function() {                \\r\\n                        SW.genericDelete(\u0027leavetype\u0027, dataGrid);            \\r\\n                        }        \\r\\n                    }    \\r\\n                });\\r\\n    }\"\r\n}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",{\"dataField\":\"ExpirationDate\",\"dataType\":\"date\",\"format\":\"function(value) { return SW.defaultDisplayFormat(value) }\"},\"Default\",\"Active\",\"LeavesInHours\",\"AllowHalfDays\",\"TotalVacationDays\",\"HRApprovalOnly\"],\"entity\":\"leavetype\"}",
       "DashboardDefinitionId": "1cb6c6e6-ce8c-40a6-9ee7-69b101f3d95a"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 10,
+  "DataSourceConfiguration": "{}",
+  "Version": 11,
   "Default": true
 }

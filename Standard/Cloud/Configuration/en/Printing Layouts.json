@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "55e4fa1c-37e5-4064-83ad-f0579a0857da",
   "Name": "Printing Layouts",
@@ -11,27 +11,25 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "18c8190b-97f6-43f8-ac42-7bda8d746f84",
+      "Id": "ef4a49f6-6492-4e29-8a62-21f6d58047c2",
       "Name": "Printing Layouts",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  r.Oid as Oid ,\\n\\t\\tr.name as [Name],\\n        Replace(ObjectTypeName, \u0027Skill.Module.BusinessObjects.\u0027, \u0027\u0027) as DataType,\\n\\t\\tr.IsInplaceReport as IsInPlaceReport\\nfrom    ReportData r\\nwhere   GCRecord is NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  r.Oid as Oid ,\\n\\t\\tr.name as [Name],\\n        Replace(ObjectTypeName, 'Skill.Module.BusinessObjects.', '') as DataType,\\n\\t\\tr.IsInplaceReport as IsInPlaceReport\\nfrom    ReportData r\\nwhere   GCRecord is NULL\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"entity\": \"printinglayouts\",\r\n    \"onRowClick\": \"function(e){ if(e.rowType==\u0027data\u0027) { SkillsWorkflow.genericPreview(e.key.Oid.toString(), \u0027Name\u0027, \u0027printinglayout\u0027,300,500)};}\",\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        },\r\n        \"Name\",\r\n        {\r\n            \"dataField\": \"DataType\"\r\n        },\r\n        {\r\n            \"dataField\": \"IsInPlaceReport\"\r\n        }\r\n    ],\r\n    \"allowNew\": false,\r\n    \"allowBulk\": false\r\n}",
+      "Configuration": "{\"entity\":\"printinglayout\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",{\"dataField\":\"DataType\"},{\"dataField\":\"IsInPlaceReport\"}],\"allowCreate\":false,\"allowBulk\":false}",
       "DashboardDefinitionId": "55e4fa1c-37e5-4064-83ad-f0579a0857da"
     }
   ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 10,
+  "DataSourceConfiguration": "{}",
+  "Version": 11,
   "Default": true
 }

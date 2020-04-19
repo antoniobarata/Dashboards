@@ -6,32 +6,30 @@
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": "projectclassifications",
+  "DocumentTypeName": "projectclassification",
   "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "7cc416ec-de49-43e0-b92f-4a5dcef88ca4",
+      "Id": "9425864b-6165-4789-bb43-fe873ac22daa",
       "Name": "",
       "Active": true,
       "UseQuery": false,
       "Query": "",
       "Size": 12,
       "Order": 0,
-      "Parameters": "[\n    {\n        \"WidgetSubTitle\": \"\",\n        \"WidgetType\": \"grid\",\n        \"WidgetFilterField\": \"\",\n        \"WidgetColor\": \"\",\n        \"WidgetFrameStyle\": {},\n        \"WidgetXPosition\": 0,\n        \"WidgetYPosition\": 0,\n        \"WidgetRows\": 24,\n        \"WidgetColumns\": 48,\n        \"WidgetHeader\": {\n            \"showTitle\": false,\n            \"showSubTitle\": false,\n            \"WidgetMetrics\": {\n                \"visible\": false,\n                \"Metrics\": []\n            },\n            \"WidgetPeriodChooser\": {\n                \"visible\": false,\n                \"type\": \"\",\n                \"startDate\": null,\n                \"endDate\": null\n            }\n        },\n        \"WidgetDataSources\": {\n            \"main\": {\n                \"type\": \"querytext\",\n                \"value\": \"select Oid,\\r\\n       [Name],\\r\\n       Active,\\r\\n       Billable,\\r\\n       Code,\\r\\n       [Default]\\r\\n from ProjectClassification\",\n                \"mapping\": \"\"\n            }\n        },\n        \"Filters\": {},\n        \"QueryConfiguration\": {\n            \"PreviousPeriod\": {\n                \"Show\": false,\n                \"KeyFieldName\": \"\",\n                \"Type\": 0\n            },\n            \"RequiredFilters\": []\n        }\n    }\n]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select Oid,\\r\\n       [Name],\\r\\n       Active,\\r\\n       Billable,\\r\\n       Code,\\r\\n       [Default]\\r\\n from ProjectClassification\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"projectclassifications\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false} ,\"Name\",\"Code\",\"Active\",\"Billable\",\"Default\"],\"onRowClick\":\"function(e) {\\r\\n    if (e.rowType == 'data')\\r\\n        SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'projectclassifications', 400);\\r\\n} \",\"onToolbarPreparing\":\"function(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        template: 'toggleHeaderFilterButtonTemplate'\\r\\n    } );\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        widget: 'dxButton',\\r\\n        options: {\\r\\n            icon: 'plus', onClick: function () {\\r\\n                SkillsWorkflow.genericNew('projectclassifications');\\r\\n            } \\r\\n        } \\r\\n    } ); var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: 'after',\\r\\n        widget: 'dxButton',\\r\\n        options: {\\r\\n            icon: 'fal fa-times', onClick: function () {\\r\\n                SW.genericDelete('projectclassifications', dataGrid);\\r\\n            } \\r\\n        } \\r\\n    } );\\r\\n} \"} ",
+      "Configuration": "{\"entity\":\"projectclassification\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Code\",\"Active\",\"Billable\",\"Default\"]}",
       "DashboardDefinitionId": "58053b60-f7ab-4e66-93ef-1f2ee06945d9"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 7,
+  "DataSourceConfiguration": "{}",
+  "Version": 8,
   "Default": true
 }

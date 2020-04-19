@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "ab8fe98e-2e86-4a32-aa6e-a2d0c635fb39",
   "Name": "Stages",
@@ -11,27 +11,25 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "eedd3c81-164e-4bce-a70f-4bbca6e8d261",
+      "Id": "12e9e98a-dc81-4035-a227-1c1e76081453",
       "Name": "Transitions",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{} ,\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false} ,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"} ]}} ,\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT ws.[Oid]\\r\\n      ,ws.[Name]\\r\\n      ,doc.[Name] as \u0027Document\u0027\\r\\n      ,wst.[Name] as \u0027WorkflowStateType\u0027\\r\\n      ,ws.[Color]\\r\\n      ,ws.[Order]\\r\\n      ,ws.[Delayed]\\r\\n      ,ws.[IsVisibleToClient]\\r\\n  FROM \\r\\n    [WorkflowState] as ws,\\r\\n    [Document] as doc,\\r\\n    [WorkflowStateType] as wst\\r\\n  WHERE \\r\\n    ws.[Document] = doc.[Oid] AND\\r\\n    ws.[WorkflowStateType] = wst.[Oid] \",\"mapping\":\"\"} } ,\"Filters\":{} ,\"QueryConfiguration\":{} } ]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT ws.[Oid]\\r\\n      ,ws.[Name]\\r\\n      ,doc.[Name] as 'Document'\\r\\n      ,wst.[Name] as 'WorkflowStateType'\\r\\n      ,ws.[Color]\\r\\n      ,ws.[Order]\\r\\n      ,ws.[Delayed]\\r\\n      ,ws.[IsVisibleToClient]\\r\\n  FROM \\r\\n    [WorkflowState] as ws,\\r\\n    [Document] as doc,\\r\\n    [WorkflowStateType] as wst\\r\\n  WHERE \\r\\n    ws.[Document] = doc.[Oid] AND\\r\\n    ws.[WorkflowStateType] = wst.[Oid] \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\r\n    \"allowNew\": false,\r\n    \"allowDelete\": false,\r\n    \"allowBulk\": false,\r\n    \"selection\": {\r\n        \"mode\": \"multiple\"\r\n    } ,\r\n    \"columns\": [\r\n        {\r\n            \"dataField\": \"Oid\",\r\n            \"visible\": false\r\n        } ,\r\n        {\r\n            \"dataField\": \"Name\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Document\",\r\n            \"groupIndex\": 0\r\n        } ,\r\n        {\r\n            \"dataField\": \"WorkflowStateType\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Color\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Order\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"Delayed\"\r\n        } ,\r\n        {\r\n            \"dataField\": \"IsVisibleToClient\"\r\n        } \r\n    ],\r\n    \"entity\": \"workflowstate\",\r\n    \"stateStoring\": {\r\n        \"enabled\": false\r\n    } ,\r\n    \"height\": \"100%\",\r\n    \"onToolbarPreparing\": \"function(e) {\\r\\n    var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: \u0027after\u0027,\\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027\\r\\n    } );\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: \u0027after\u0027,\\r\\n        widget: \u0027dxButton\u0027,\\r\\n        options: {\\r\\n            icon: \u0027plus\u0027, onClick: function () {\\r\\n                SkillsWorkflow.genericNew(\u0027workflowstate\u0027, 550, 750);\\r\\n            } \\r\\n        } \\r\\n    } ); var dataGrid = e.component;\\r\\n    e.toolbarOptions.items.unshift({\\r\\n        location: \u0027after\u0027, widget: \u0027dxButton\u0027,\\r\\n        options: {\\r\\n            icon: \u0027fal fa-times\u0027, onClick: function () {\\r\\n                SW.genericDelete(\u0027workflowstate\u0027, dataGrid);\\r\\n            } \\r\\n        } \\r\\n    } );\\r\\n} \"\r\n} ",
+      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        },\n        {\n            \"dataField\": \"Name\"\n        },\n        {\n            \"dataField\": \"Document\",\n            \"groupIndex\": 0\n        },\n        {\n            \"dataField\": \"WorkflowStateType\"\n        },\n        {\n            \"dataField\": \"Color\"\n        },\n        {\n            \"dataField\": \"Order\"\n        },\n        {\n            \"dataField\": \"Delayed\"\n        },\n        {\n            \"dataField\": \"IsVisibleToClient\"\n        }\n    ],\n    \"entity\": \"workflowstate\",\n    \"stateStoring\": {\n        \"enabled\": false\n    },\n    \"height\": \"100%\"\n}",
       "DashboardDefinitionId": "ab8fe98e-2e86-4a32-aa6e-a2d0c635fb39"
     }
   ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 9,
+  "DataSourceConfiguration": "{}",
+  "Version": 10,
   "Default": true
 }
