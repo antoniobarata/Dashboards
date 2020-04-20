@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "25bf01b5-6d2a-4252-8fb0-2ba260c9eb94",
   "Name": "Workflows",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "a0b6aac9-1779-4a26-83f9-c687bd706445",
+      "Id": "07a55216-c614-4965-8e7e-35931c9d1e87",
       "Name": "Workflow",
       "Active": true,
       "UseQuery": false,
@@ -29,9 +29,7 @@
       "DashboardDefinitionId": "25bf01b5-6d2a-4252-8fb0-2ba260c9eb94"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 11,
+  "DataSourceConfiguration": "{}",
+  "Version": 12,
   "Default": true
 }

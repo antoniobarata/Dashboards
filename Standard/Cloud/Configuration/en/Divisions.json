@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d",
   "Name": "Divisions",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "81126ad6-2319-401e-9eaf-f2a7f8806292",
+      "Id": "7cc9abf6-a0de-45b2-8587-de564eb035c8",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,
@@ -25,13 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"Code\"},{\"dataField\":\"Active\"},{\"dataField\":\"Description\"}],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'    });        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('division', 450, 720);            }        }    });     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('division', dataGrid);            }        }    });}\",\"entity\":\"division\"}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"Code\"},{\"dataField\":\"Active\"},{\"dataField\":\"Description\"}],\"entity\":\"division\"}",
       "DashboardDefinitionId": "95c261e9-2021-4ba2-9d8e-8f5351fb2c3d"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 12,
+  "DataSourceConfiguration": "{}",
+  "Version": 13,
   "Default": true
 }

@@ -1,4 +1,4 @@
-﻿{
+{
   "DashboardDefinitionRoles": [],
   "Id": "d9e6beee-71d4-44f5-9257-7ba7c803b228",
   "Name": "Job Classifications",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "4cf36991-030c-48a3-83d5-adfcf9606100",
+      "Id": "bc2255fd-bc07-4733-b82e-b977ff14f9b2",
       "Name": "Job Classification",
       "Active": true,
       "UseQuery": true,
@@ -25,13 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"onRowClick\":\"function(e){\\r\\n    if(e.rowType==\u0027data\u0027) \\r\\n        SkillsWorkflow.genericPreview(e.key.Oid, \u0027Name\u0027, \u0027jobclassification\u0027,400);\\r\\n}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Code\",\"Active\",\"Billable\",\"Default\"],\"onToolbarPreparing\":\"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: \u0027after\u0027,             \\r\\n        template: \u0027toggleHeaderFilterButtonTemplate\u0027    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: \u0027after\u0027,             \\r\\n            widget: \u0027dxButton\u0027,             \\r\\n            options: { icon: \u0027plus\u0027, onClick: function() {                \\r\\n                SkillsWorkflow.genericNew(\u0027jobclassification\u0027);            \\r\\n                }        }    });    var dataGrid = e.component;                \\r\\n                e.toolbarOptions.items.unshift({             \\r\\n                    location: \u0027after\u0027,             \\r\\n                    widget: \u0027dxButton\u0027,             \\r\\n                    options: { icon: \u0027fal fa-times\u0027, onClick: function() {                \\r\\n                        SW.genericDelete(\u0027jobclassification\u0027, dataGrid);            \\r\\n                        }        \\r\\n                    }    \\r\\n                });\\r\\n}\",\"entity\":\"jobclassification\"}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Code\",\"Active\",\"Billable\",\"Default\"],\"entity\":\"jobclassification\"}",
       "DashboardDefinitionId": "d9e6beee-71d4-44f5-9257-7ba7c803b228"
     }
   ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 10,
+  "DataSourceConfiguration": "{}",
+  "Version": 11,
   "Default": true
 }

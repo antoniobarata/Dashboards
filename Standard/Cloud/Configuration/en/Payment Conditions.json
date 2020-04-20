@@ -11,27 +11,25 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "68e590f4-79b7-4ba3-bb8f-8ea15dfb7460",
+      "Id": "f129cce2-39ca-40fe-921e-667cbef0e3b7",
       "Name": "Payment Conditions",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[\n    {\n        \"WidgetSubTitle\": \"\",\n        \"WidgetType\": \"grid\",\n        \"WidgetFilterField\": \"\",\n        \"WidgetColor\": \"\",\n        \"WidgetFrameStyle\": {},\n        \"WidgetXPosition\": 0,\n        \"WidgetYPosition\": 0,\n        \"WidgetRows\": 24,\n        \"WidgetColumns\": 48,\n        \"WidgetHeader\": {\n            \"showContextInfo\": false,\n            \"ShowTitle\": false,\n            \"ShowSubTitle\": false,\n            \"WidgetPeriodChooser\": {\n                \"type\": \"year\",\n                \"visible\": false\n            },\n            \"WidgetMetrics\": {\n                \"visible\": false,\n                \"Metrics\": [\n                    {\n                        \"visible\": true,\n                        \"metricName\": \"? Integration Errors\",\n                        \"metricFieldValue\": \"Integration Errors\"\n                    }\n                ]\n            },\n            \"showSubTitle\": false,\n            \"showTitle\": false\n        },\n        \"WidgetDataSources\": {\n            \"main\": {\n                \"type\": \"querytext\",\n                \"value\": \"select p.oid as Oid,\\n       p.Name as [Name],\\n       c.name as Company,\\n       p.Active as Active,\\n       p.Days as [Days],\\n       p.HasTax as HasTax,\\n       p.ClientDirect as ClientDirect,\\n       p.Discount as Discount,\\n       p.ExternalId as ExternalId\\nfrom   PaymentCondition p, Company c\\nwhere  p.company = c.oid \"\n            }\n        },\n        \"Filters\": {},\n        \"QueryConfiguration\": {}\n    }\n]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select p.oid as Oid,\\n       p.Name as [Name],\\n       c.name as Company,\\n       p.Active as Active,\\n       p.Days as [Days],\\n       p.HasTax as HasTax,\\n       p.ClientDirect as ClientDirect,\\n       p.Discount as Discount,\\n       p.ExternalId as ExternalId\\nfrom   PaymentCondition p, Company c\\nwhere  p.company = c.oid \"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'paymentcondition',450);}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"ExternalId\"},{\"dataField\":\"Days\"},{\"dataField\":\"Discount\"},{\"dataField\":\"Active\"},{\"dataField\":\"HasTax\"},{\"dataField\":\"ClientDirect\"}],\"onToolbarPreparing\":\"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: 'after',             \\r\\n        template: 'toggleHeaderFilterButtonTemplate'    \\r\\n        });       \\r\\n        e.toolbarOptions.items.unshift({            \\r\\n            location: 'after',             \\r\\n            widget: 'dxButton',             \\r\\n            options: { \\r\\n                icon: 'plus', onClick: function() {\\r\\n                    SkillsWorkflow.genericNew('paymentcondition',400);            \\r\\n                }        \\r\\n            }    \\r\\n        });   \\r\\n        var dataGrid = e.component;                \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: 'after',             \\r\\n            widget: 'dxButton',             \\r\\n            options: { \\r\\n                icon: 'fal fa-times', onClick: function() {                \\r\\n                    SW.genericDelete('paymentcondition', dataGrid);            \\r\\n                }        \\r\\n            }    \\r\\n        });\\r\\n}\",\"entity\":\"paymentcondition\"}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"ExternalId\"},{\"dataField\":\"Days\"},{\"dataField\":\"Discount\"},{\"dataField\":\"Active\"},{\"dataField\":\"HasTax\"},{\"dataField\":\"ClientDirect\"}],\"entity\":\"paymentcondition\"}",
       "DashboardDefinitionId": "3effd862-8c5a-4239-b4a3-8a136a9ee8ca"
     }
   ],
-  "QueryText": null,
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 11,
+  "DataSourceConfiguration": "{}",
+  "Version": 12,
   "Default": true
 }

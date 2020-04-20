@@ -11,27 +11,25 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "a9ac1c71-2df6-43a2-9adf-5d82b3420fe6",
+      "Id": "e5eaf625-b170-4ede-9063-023fed2e91c7",
       "Name": "Article",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[\n    {\n        \"WidgetSubTitle\": \"Departments by company \",\n        \"WidgetType\": \"grid\",\n        \"WidgetFilterField\": \"\",\n        \"WidgetColor\": \"\",\n        \"WidgetFrameStyle\": {},\n        \"WidgetXPosition\": 0,\n        \"WidgetYPosition\": 0,\n        \"WidgetRows\": 24,\n        \"WidgetColumns\": 48,\n        \"WidgetHeader\": {\n            \"showContextInfo\": false,\n            \"ShowTitle\": false,\n            \"ShowSubTitle\": false,\n            \"WidgetPeriodChooser\": {\n                \"type\": \"year\",\n                \"visible\": false\n            },\n            \"WidgetMetrics\": {\n                \"visible\": false,\n                \"Metrics\": [\n                    {\n                        \"visible\": true,\n                        \"metricName\": \"? Integration Errors\",\n                        \"metricFieldValue\": \"Integration Errors\"\n                    }\n                ]\n            },\n            \"showSubTitle\": false,\n            \"showTitle\": false\n        },\n        \"WidgetDataSources\": {\n            \"main\": {\n                \"type\": \"querytext\",\n                \"value\": \"select  a.Oid,\\n\\t\\ta.[Name],\\n\\t\\tc.[Name] as Company,\\n\\t\\ta.Active,\\n\\t\\ta.InternalService,\\n\\t\\ta.DepartmentRequired,\\n\\t\\ta.UnitHour as UnitHour,\\n\\t\\ta.DefaultMargin,\\n\\t\\ta.ExternalId,\\n\\t\\ta.VatDeductiblePercentage as VatDeductiblePercentage,\\n\\t\\tag.[Name] as ArticleGroup\\nfrom Article a\\nInner Join Company c on a.Company=c.Oid\\nLeft Outer Join ArticleGroup ag on (ag.Oid=a.ArticleGroup)\"\n            }\n        },\n        \"Filters\": {},\n        \"QueryConfiguration\": {}\n    }\n]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  a.Oid,\\n\\t\\ta.[Name],\\n\\t\\tc.[Name] as Company,\\n        c.[Oid] as CompanyId,\\n\\t\\ta.Active,\\n\\t\\ta.InternalService,\\n\\t\\ta.DepartmentRequired,\\n\\t\\ta.UnitHour as UnitHour,\\n\\t\\ta.DefaultMargin,\\n\\t\\ta.ExternalId,\\n\\t\\ta.VatDeductiblePercentage as VatDeductiblePercentage,\\n\\t\\tag.[Name] as ArticleGroup\\nfrom Article a\\nInner Join Company c on a.Company=c.Oid\\nLeft Outer Join ArticleGroup ag on (ag.Oid=a.ArticleGroup)\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'article',500,700);}\",\"selection\":{\"mode\":\"multiple\"},\"stateStoring\":{\"enabled\":false},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Company\"},{\"dataField\":\"ExternalId\"},{\"dataField\":\"ArticleGroup\"},{\"dataField\":\"VatDeductiblePercentage\"},{\"dataField\":\"DefaultMargin\"},{\"dataField\":\"Active\"},{\"dataField\":\"UnitHour\"},{\"dataField\":\"InternalService\"},{\"dataField\":\"DepartmentRequired\"}],\"onToolbarPreparing\":\"function(e) {         var dataGrid = e.component;          e.toolbarOptions.items.unshift({             location: 'after',             template: 'toggleHeaderFilterButtonTemplate'    } );        e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'plus', onClick: function() {                SkillsWorkflow.genericNew('article',                550,                750);            }         }     } );     var dataGrid = e.component;                e.toolbarOptions.items.unshift({             location: 'after',             widget: 'dxButton',             options: { icon: 'fal fa-times', onClick: function() {                SW.genericDelete('article', dataGrid);            }         }     } );}\",\"entity\":\"article\"}",
+      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"stateStoring\": {\n        \"enabled\": false\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        },\n        {\n            \"dataField\": \"Name\"\n        },\n        {\n            \"dataField\": \"Company\",\n            \"entity\": \"company\"\n        },\n        {\n            \"dataField\": \"CompanyId\",\n            \"visible\": false,\n            \"showInColumnChooser\": false\n        },\n        {\n            \"dataField\": \"ExternalId\"\n        },\n        {\n            \"dataField\": \"ArticleGroup\"\n        },\n        {\n            \"dataField\": \"VatDeductiblePercentage\"\n        },\n        {\n            \"dataField\": \"DefaultMargin\"\n        },\n        {\n            \"dataField\": \"Active\"\n        },\n        {\n            \"dataField\": \"UnitHour\"\n        },\n        {\n            \"dataField\": \"InternalService\"\n        },\n        {\n            \"dataField\": \"DepartmentRequired\"\n        }\n    ],\n    \"entity\": \"article\"\n}",
       "DashboardDefinitionId": "db6e4962-ca28-43b3-a0da-1866c56335dd"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 10,
+  "DataSourceConfiguration": "{}",
+  "Version": 11,
   "Default": true
 }

@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "1df41a15-ccc6-4909-8325-9089941e498e",
+      "Id": "96ad054a-12f2-4061-bccd-4641ba8efc2d",
       "Name": "Divisions",
       "Active": true,
       "UseQuery": true,
@@ -25,13 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"caption\":\"\",\"alignment\":\"center\",\"format\":{\"image\":{\"mapping\":{\"id\":\"Oid\",\"name\":\"Name\",\"hasImage\":\"ClientHasImage\"},\"size\":\"small\"}},\"entity\":\"client\"},{\"dataField\":\"Name\"},{\"dataField\":\"Code\"},{\"dataField\":\"ExternalId\"},{\"dataField\":\"AllowsTimesheet\"},{\"dataField\":\"CreatedOn\"},{\"dataField\":\"ModifiedOn\"}],\"onToolbarPreparing\":\"function(e) {         \\r\\n    var dataGrid = e.component;          \\r\\n    e.toolbarOptions.items.unshift({             \\r\\n        location: 'after',             \\r\\n        template: 'toggleHeaderFilterButtonTemplate'    \\r\\n        });        \\r\\n        e.toolbarOptions.items.unshift({             \\r\\n            location: 'after',            \\r\\n            widget: 'dxButton',             \\r\\n            options: { icon: 'plus', onClick: function() { \\r\\n                SkillsWorkflow.genericNew('client', 455, 720);            \\r\\n                }        \\r\\n            }   \\r\\n        });\\r\\n}\",\"entity\":\"client\"}",
+      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false\n        },\n        {\n            \"caption\": \"\",\n            \"alignment\": \"center\",\n            \"format\": {\n                \"image\": {\n                    \"mapping\": {\n                        \"id\": \"Oid\",\n                        \"name\": \"Name\",\n                        \"hasImage\": \"ClientHasImage\"\n                    },\n                    \"size\": \"small\"\n                }\n            },\n            \"entity\": \"client\"\n        },\n        {\n            \"dataField\": \"Name\"\n        },\n        {\n            \"dataField\": \"Code\"\n        },\n        {\n            \"dataField\": \"ExternalId\"\n        },\n        {\n            \"dataField\": \"AllowsTimesheet\"\n        },\n        {\n            \"dataField\": \"CreatedOn\"\n        },\n        {\n            \"dataField\": \"ModifiedOn\"\n        }\n    ],\n    \"entity\": \"client\",\n    \"allowDelete\": false\n}",
       "DashboardDefinitionId": "42718591-eac7-40d3-bcf7-805f7c591b56"
     }
   ],
-  "QueryText": "",
-  "UseStore": false,
-  "StoreEntity": null,
-  "Version": 16,
+  "DataSourceConfiguration": "{}",
+  "Version": 17,
   "Default": true
 }
