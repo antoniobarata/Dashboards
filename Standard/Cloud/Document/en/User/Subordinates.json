@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "7c168e31-2d5a-4419-8801-35c292c5fdca",
+  "Name": "Subordinates",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "user",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "0ebbcc6f-4f73-4287-a0c6-08074446f9c9",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":50,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"entity\": \"user\",\r\n    \"entityAssociation\": \"subordinate\",\r\n    \"grid\": {\r\n        \"call\": \"function getCall(entityId){\\n    return 'v3/users/' + entityId + '/user-subordinates'; \\n}\",\r\n        \"mapper\": \"function mapper(response, entityId) {\\n    var type = \\\"\\\"\\n    switch (response.ResponsibleType) {\\n        case 0:\\n            type = \\\"Leaves\\\"\\n            break;\\n        case 1:\\n            type = \\\"Planning\\\"\\n            break;\\n        case 2:\\n            type = \\\"Administrative\\\"\\n            break;\\n        case 3:\\n            type = \\\"Human Resources\\\"\\n            break;\\n    }\\n    return {\\n        Id: response.SubordinateId,\\n        Name: response.SubordinateName,\\n        ImageId: response.SubordinateId,\\n        ImageName: response.SubordinateName,\\n        Info1: \\\"Order: \\\" + response.Order,\\n        Info2: \\\"Type: \\\" + type\\n    }\\n}\"\r\n    },\r\n    \"selectbox\": {\r\n        \"call\": \"function getCall(entityId) {\\n    return 'users/all/lookup'\\n}\",\r\n        \"mapper\": \"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: response.Id,\\n        ImageName: response.Name,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"\r\n    },\r\n    \"link\": {\r\n        \"call\": \"function getCall(item, entityId) {\\n    return 'v3/user-responsibles';\\n}\",\r\n        \"model\": \"function postModel(item, entityId){\\n    return {\\n        ResponsibleId: entityId,\\n        Subordinateid: item.Id\\n    }\\n}\"\r\n    },\r\n    \"unlink\": {\r\n        \"call\": \"function deleteCall(item, entityId){\\n    return 'v3/user-responsibles/' + item.Data.Id; \\n}\"\r\n    },\r\n    \"form\": {\r\n        \"layout\": {\r\n            \"colCount\": \"2\",\r\n            \"items\": [\r\n                {\r\n                    \"dataField\": \"ResponsibleType\",\r\n                    \"label\": {\r\n                        \"text\": \"Type\"\r\n                    },\r\n                    \"editorType\": \"dxSelectBox\",\r\n                    \"editorOptions\": {\r\n                        \"dataSource\": [\r\n                            {\r\n                                \"Name\": \"Leaves\",\r\n                                \"Id\": 0\r\n                            },\r\n                            {\r\n                                \"Name\": \"Planning\",\r\n                                \"Id\": 1\r\n                            },\r\n                            {\r\n                                \"Name\": \"Administrative\",\r\n                                \"Id\": 2\r\n                            },\r\n                            {\r\n                                \"Name\": \"Human Resources\",\r\n                                \"Id\": 3\r\n                            }\r\n                        ],\r\n                        \"displayExpr\": \"Name\",\r\n                        \"valueExpr\": \"Id\"\r\n                    }\r\n                },\r\n                {\r\n                    \"dataField\": \"Order\",\r\n                    \"editorType\": \"dxNumberBox\"\r\n                }\r\n            ]\r\n        },\r\n        \"call\": \"function putCall(item, entityId) {\\n    return 'v3/user-responsibles/' + item.Data.Id\\n}\",\r\n        \"model\": \"function getPutModel(item, entityId) {\\n    return {\\n        SubordinateId: item.Data.SubordinateId,\\n        ResponsibleId: entityId,\\n        Order: item.Data.Order,\\n        ResponsibleType: item.Data.ResponsibleType,\\n    }\\n}\"\r\n    }\r\n}",
+      "DashboardDefinitionId": "7c168e31-2d5a-4419-8801-35c292c5fdca"
+    }
+  ],
+  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
+  "Version": 1,
+  "Default": true
+}
