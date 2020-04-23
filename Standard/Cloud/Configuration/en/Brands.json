@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "7d18eb3d-6e3d-4f65-b1f6-e90eef92b5b3",
+  "Name": "Brands",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "brand",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "6e4a9987-3060-4c7e-9376-00995c283171",
+      "Name": "",
+      "Active": true,
+      "UseQuery": true,
+      "Query": null,
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  \\r\\n    b.Oid,\\r\\n    b.Name,\\r\\n    b.CommercialClient as Client,\\r\\n    b.Active,\\r\\n    b.CreationDate as CreatedOn\\r\\nfrom Brand b\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": null,
+      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false,\n            \"showInColumnChooser\": false\n        },\n        {\n            \"dataField\": \"Name\",\n            \"caption\": \"Name\"\n        },\n        {\n            \"dataField\": \"Client\",\n            \"caption\": \"Client\"\n        },\n        {\n            \"dataField\": \"Active\",\n            \"caption\": \"Active\"\n        },\n        {\n            \"dataField\": \"CreatedOn\",\n            \"caption\": \"CreatedOn\",\n            \"dataType\": \"date\",\n            \"format\": \"dd/MMM/yyyy hh:mm\"\n        }\n    ],\n    \"allowDelete\": false,\n    \"allowBulk\": false,\n    \"entity\": \"brand\",\n    \"height\": \"100%\",\n    \"stateStoring\": {\n        \"enabled\": \"true\",\n        \"useWorkspaceVersion\": \"true\"\n    }\n}",
+      "DashboardDefinitionId": "7d18eb3d-6e3d-4f65-b1f6-e90eef92b5b3"
+    }
+  ],
+  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
+  "Version": 0,
+  "Default": true
+}
