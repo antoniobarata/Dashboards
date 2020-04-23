@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "6105d66d-3ea0-4ccc-b9de-1fec6b83dbf2",
+      "Id": "d1979421-0d03-46ac-a5c0-45672802563b",
       "Name": "Publications",
       "Active": true,
       "UseQuery": false,
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"onRowClick\":\"function(e){if(e.rowType=='data') SkillsWorkflow.genericPreview(e.key.Oid, 'Name', 'publication');}\",\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Publisher\",{\"dataField\":\"ProfileSufffix\",\"visible\":false},{\"dataField\":\"ProofsRequired\",\"visible\":false},{\"dataField\":\"SpecialInstruction\",\"visible\":false},{\"dataField\":\"FTPSite\",\"visible\":false},{\"dataField\":\"FTPUserName\",\"visible\":false},{\"dataField\":\"PrimaryEmail\",\"visible\":false},{\"dataField\":\"PrimaryContact\",\"visible\":false},{\"dataField\":\"PrimaryCompany\",\"visible\":false},{\"dataField\":\"DeliveryEmail\",\"visible\":false},{\"dataField\":\"DeliveryAddress\",\"visible\":false},{\"dataField\":\"DeliveryAddressPostCode\",\"visible\":false},{\"dataField\":\"DeliveryAddressCountry\",\"visible\":false},{\"dataField\":\"DeliveryAddressPhoneNumber\",\"visible\":false},{\"dataField\":\"CropInstructions\",\"visible\":false},{\"dataField\":\"TotalInkWeight\",\"visible\":false},{\"dataField\":\"DeliveryMethod\",\"visible\":false},{\"dataField\":\"AdditionalInformation\",\"visible\":false},{\"dataField\":\"Address\",\"visible\":false},{\"dataField\":\"PostCode\",\"visible\":false},{\"dataField\":\"Country\",\"visible\":false},{\"dataField\":\"OutOfOfficePhone\",\"visible\":false},{\"dataField\":\"MainPhoneNumber\",\"visible\":false},{\"dataField\":\"PrePressPhone\",\"visible\":false},{\"dataField\":\"Fax\",\"visible\":false},{\"dataField\":\"PublicationURL\",\"visible\":false}],\"entity\":\"publication\"}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},\"Name\",\"Publisher\",{\"dataField\":\"ProfileSufffix\",\"visible\":false},{\"dataField\":\"ProofsRequired\",\"visible\":false},{\"dataField\":\"SpecialInstruction\",\"visible\":false},{\"dataField\":\"FTPSite\",\"visible\":false},{\"dataField\":\"FTPUserName\",\"visible\":false},{\"dataField\":\"PrimaryEmail\",\"visible\":false},{\"dataField\":\"PrimaryContact\",\"visible\":false},{\"dataField\":\"PrimaryCompany\",\"visible\":false},{\"dataField\":\"DeliveryEmail\",\"visible\":false},{\"dataField\":\"DeliveryAddress\",\"visible\":false},{\"dataField\":\"DeliveryAddressPostCode\",\"visible\":false},{\"dataField\":\"DeliveryAddressCountry\",\"visible\":false},{\"dataField\":\"DeliveryAddressPhoneNumber\",\"visible\":false},{\"dataField\":\"CropInstructions\",\"visible\":false},{\"dataField\":\"TotalInkWeight\",\"visible\":false},{\"dataField\":\"DeliveryMethod\",\"visible\":false},{\"dataField\":\"AdditionalInformation\",\"visible\":false},{\"dataField\":\"Address\",\"visible\":false},{\"dataField\":\"PostCode\",\"visible\":false},{\"dataField\":\"Country\",\"visible\":false},{\"dataField\":\"OutOfOfficePhone\",\"visible\":false},{\"dataField\":\"MainPhoneNumber\",\"visible\":false},{\"dataField\":\"PrePressPhone\",\"visible\":false},{\"dataField\":\"Fax\",\"visible\":false},{\"dataField\":\"PublicationURL\",\"visible\":false}],\"entity\":\"publication\"}",
       "DashboardDefinitionId": "6b84d14e-ce02-47de-8b41-a1063c529dfd"
     }
   ],
-  "DataSourceConfiguration": "{}",
+  "DataSourceConfiguration": null,
   "Version": 5,
   "Default": true
 }

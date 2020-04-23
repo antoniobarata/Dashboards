@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "f422e4d8-c8ab-40f9-ad07-c46e14243b63",
+  "Name": "Business Object Types",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "businessobjecttype",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "f8d35c55-779a-4676-bc3e-82861fa3a933",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\r\\n    j.Oid,\\r\\n    j.Name,\\r\\n    j.[Default],\\r\\n    c.Name as Document,\\r\\n    c.Oid as DocumentId\\r\\nfrom BusinessObjectType j\\r\\nInner Join Document c on j.Document=c.Oid\\r\\n\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"entity\": \"businessobjecttype\",\n    \"height\": \"100%\",\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false,\n            \"showInColumnChooser\": false\n        },\n        {\n            \"dataField\": \"Name\",\n            \"caption\": \"Name\"\n        },\n        {\n            \"dataField\": \"Default\",\n            \"caption\": \"Default\"\n        },\n        {\n            \"dataField\": \"Document\",\n            \"entity\": \"document\",\n            \"caption\": \"Document\",\n            \"groupIndex\": 0\n        },\n        {\n            \"dataField\": \"DocumentId\",\n            \"visible\": false,\n            \"showInColumnChooser\": false\n        }\n    ],\n    \"allowPreview\": false,\n    \"stateStoring\": {\n        \"enabled\": \"true\",\n        \"useWorkspaceVersion\": \"true\"\n    }\n}",
+      "DashboardDefinitionId": "f422e4d8-c8ab-40f9-ad07-c46e14243b63"
+    }
+  ],
+  "DataSourceConfiguration": null,
+  "Version": 3,
+  "Default": true
+}

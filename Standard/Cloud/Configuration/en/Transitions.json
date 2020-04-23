@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "ec1e6518-8dbe-49a6-9979-c58fb017f3be",
+      "Id": "41303996-3b96-4a1e-8959-79169a2103ee",
       "Name": "Transitions",
       "Active": true,
       "UseQuery": true,
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"allowCreate\":false,\"allowDelete\":false,\"allowBulk\":false,\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Document\",\"groupIndex\":0},{\"dataField\":\"Workflow\",\"groupIndex\":1},{\"dataField\":\"FromWorkflowState\"},{\"dataField\":\"ToWorkflowState\"},{\"dataField\":\"Order\"},{\"dataField\":\"RequestConfirmation\"},{\"dataField\":\"MustSendNotification\"},{\"dataField\":\"CommentRequired\"},{\"dataField\":\"HoursRequired\"},{\"dataField\":\"FileUploadRequired\"}],\"entity\":\"workflowtransition\",\"stateStoring\":{\"enabled\":\"true\"},\"height\":\"100%\"}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false},{\"dataField\":\"Name\"},{\"dataField\":\"Document\",\"groupIndex\":0},{\"dataField\":\"Workflow\",\"groupIndex\":1},{\"dataField\":\"FromWorkflowState\"},{\"dataField\":\"ToWorkflowState\"},{\"dataField\":\"Order\"},{\"dataField\":\"RequestConfirmation\"},{\"dataField\":\"MustSendNotification\"},{\"dataField\":\"CommentRequired\"},{\"dataField\":\"HoursRequired\"},{\"dataField\":\"FileUploadRequired\"}],\"entity\":\"workflowtransition\",\"stateStoring\":{\"enabled\":\"true\"},\"height\":\"100%\",\"allowDelete\":false}",
       "DashboardDefinitionId": "4047789e-1d99-4768-af22-95c8bc342d14"
     }
   ],
-  "DataSourceConfiguration": "{}",
+  "DataSourceConfiguration": null,
   "Version": 11,
   "Default": true
 }
