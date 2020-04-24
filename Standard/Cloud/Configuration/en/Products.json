@@ -11,14 +11,14 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "8c47a9dd-f277-479d-8070-194baed46e63",
+      "Id": "6f4aac52-0935-4654-bc55-9e24c964db06",
       "Name": "",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  cc.Oid as ClientId,\\r\\n        cc.Name as ClientName,\\r\\n        cc.HasImage as ClientHasImage,\\r\\n        ccp.CommercialClient,\\r\\n\\t\\tccp.NameAndExternalId,\\r\\n\\t\\tccp.Oid,\\r\\n        ccp.[Name],\\r\\n\\t\\tccp.Code,\\r\\n\\t\\tccp.Active,\\r\\n\\t\\tccp.AllowsTimesheet,\\r\\n\\t\\tccp.ExternalId,\\r\\n        cc.CreatedOn as CreatedOn,\\r\\n        cc.ModifiedOn as ModifiedOn,\\r\\n        u.Name as CreatedByName,\\r\\n        us.Name as ModifiedByName,\\r\\n        u.Oid as CreatedById,\\r\\n        us.Oid as ModifiedById,\\r\\n        u.HasImage as CreatedByHasImage,\\r\\n        us.HasImage as ModifiedByHasImage\\r\\nfrom CommercialClientProduct ccp\\r\\n\\tLEFT JOIN [User] u on u.Oid = ccp.CreatedBy \\r\\n\\tLEFT Join [User] us on us.Oid = ccp.ModifiedBy,\\r\\n     CommercialClient cc\\r\\nwhere cc.Oid = ccp.CommercialClient\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  cc.Oid as ClientId,\\r\\n        cc.Name as ClientName,\\r\\n        cc.HasImage as ClientHasImage,\\r\\n        ccp.CommercialClient,\\r\\n\\t\\tccp.NameAndExternalId,\\r\\n\\t\\tccp.Oid,\\r\\n        ccp.[Name],\\r\\n\\t\\tccp.Code,\\r\\n\\t\\tccp.Active,\\r\\n\\t\\tccp.AllowsTimesheet,\\r\\n\\t\\tccp.ExternalId,\\r\\n        ccp.CreatedOnUtc as CreatedOn,\\r\\n        ccp.ModifiedOnUtc as ModifiedOn,\\r\\n        u.Name as CreatedByName,\\r\\n        us.Name as ModifiedByName,\\r\\n        u.Oid as CreatedById,\\r\\n        us.Oid as ModifiedById,\\r\\n        u.HasImage as CreatedByHasImage,\\r\\n        us.HasImage as ModifiedByHasImage\\r\\nfrom CommercialClientProduct ccp\\r\\n\\tLEFT JOIN [User] u on u.Oid = ccp.CreatedBy \\r\\n\\tLEFT Join [User] us on us.Oid = ccp.ModifiedBy,\\r\\n     CommercialClient cc\\r\\nwhere cc.Oid = ccp.CommercialClient\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 12,
+  "Version": 13,
   "Default": true
 }
