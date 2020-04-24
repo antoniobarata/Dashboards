@@ -1,0 +1,71 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "df829746-c9d8-439c-9976-201ea00c61c1",
+  "Name": "Custom Action Preview",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": null,
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "dd09679b-ca95-4d48-84de-b12ebae89646",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"textbox\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":2,\"WidgetColumns\":42,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"onInitialized\":\"function init(e){\\r\\n    SW.saveComponent(e, 'textbox');\\r\\n    var data = SW.getComponent('data');\\r\\n\\r\\n e.component.option('value',data.Name);\\r\\n}\",\"width\":\"100%\"}",
+      "DashboardDefinitionId": "df829746-c9d8-439c-9976-201ea00c61c1"
+    },
+    {
+      "Id": "0a129a6b-822d-4e5a-b1f5-d00833e28dba",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"monacoeditor\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":2,\"WidgetRows\":23,\"WidgetColumns\":47,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"model\":{\"language\":\"csharp\"},\"onInit\":\"function init(e) {\\r\\n    debugger;\\r\\n    SW.saveComponent(e, 'editor');\\r\\n    var data = SW.getComponent('data');\\r\\n    e.setValue(data.SourceCode);\\r\\n}\"}",
+      "DashboardDefinitionId": "df829746-c9d8-439c-9976-201ea00c61c1"
+    },
+    {
+      "Id": "1b20870d-c504-46af-8318-f0b6db30f364",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"button\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":42,\"WidgetYPosition\":0,\"WidgetRows\":2,\"WidgetColumns\":5,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function init(e) {\\n    var data = SW.getComponent('data');\\n    var editor = SW.getComponent('editor');\\n    var textbox = SW.getComponent('textbox');\\n    var sourceCode = editor.getValue();\\n    var name = textbox.component.option('value');\\n    var id = data.Id;\\n    var actionLanguage = data.ActionLanguage;\\n    var model = {\\n        Name: name,\\n        ActionLanguage: actionLanguage,\\n        SourceCode: sourceCode,\\n    }\\n    SW.executeAPI('PUT', 'custom-actions/' + id, null, model)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Saved\\\");\\n            //SW.refreshDashboard();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
+      "DashboardDefinitionId": "df829746-c9d8-439c-9976-201ea00c61c1"
+    }
+  ],
+  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
+  "Version": 1,
+  "Default": true
+}
