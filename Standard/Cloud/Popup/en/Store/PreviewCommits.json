@@ -1,6 +1,7 @@
 {
+  "DashboardDefinitionRoles": [],
   "Id": "c6462f06-8439-498b-a2f8-37e1afce7a16",
-  "Name": "PreviewCommits",
+  "Name": "Commits Preview",
   "Active": true,
   "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -10,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "cd0c43ea-41ab-471f-9800-6fc8938e855a",
+      "Id": "10e30b71-08e0-4b18-a612-ea66da8f8a32",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -25,12 +26,12 @@
       },
       "AnalyticsApiUrl": "",
       "Configuration": "{\"onContentReady\":\"function(e){\\n    \\n    var data = SW.getComponent('data');\\n    document.getElementById('logoImage').src = data.LastCommit.ModifiedBy.ImageUrl;\\n}\",\"items\":[{\"itemType\":\"group\",\"colCount\":4,\"items\":[{\"template\":\"<img id='logoImage' src='' alt='' onerror=\\\"this.src='https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png'\\\" height='200' style=\\\"height: 128px; width: 128px; margin-right: 10px; border: 1px solid #d2d3d5; border-radius: 50%; background-size: contain; background-repeat: no-repeat; background-position: center;\\\">\"},{\"itemType\":\"group\",\"colSpan\":3,\"items\":[{\"label\":{\"text\":\"Workspace\"},\"dataField\":\"Name\"},{\"label\":{\"text\":\"Location\"},\"editorType\":\"dxTextBox\",\"editorOptions\":{\"onContentReady\":\"function(e, i){ var data = SW.getComponent('form').option('formData'); if(data.Location == 0){ e.component.option('value', 'Menu') } else if(data.Location == 1){e.component.option('value', 'Document ' + data.DocumentName) } else if(data.Location == 2){ e.component.option('value', 'Configuration') } else if(data.Location == 3){ e.component.option('value', 'Document') } else if(data.Location == 4){ e.component.option('value', 'Mobile') } else { return 'Others' } }\"}},{\"label\":{\"text\":\"Author\"},\"dataField\":\"LastCommit.ModifiedBy.Name\"},{\"label\":{\"text\":\"Date\"},\"dataField\":\"LastCommit.ModifiedOn\",\"editorType\":\"dxDateBox\"}]}]},{\"itemType\":\"group\",\"colCount\":1,\"items\":[{\"template\":\"<div style=\\\"height: 20px\\\"> </div>\"},{\"label\":{\"text\":\"Message\"},\"dataField\":\"LastCommit.Commits\",\"editorType\":\"dxTextArea\",\"editorOptions\":{\"height\":\"100px\"}}]},{\"itemType\":\"group\",\"colCount\":2,\"items\":[{\"label\":{\"text\":\"Version Installed\"},\"dataField\":\"VersionInstalled\",\"editorType\":\"dxNumberBox\"},{\"label\":{\"text\":\"Version Available\"},\"dataField\":\"Version\",\"editorType\":\"dxNumberBox\"}]}],\"onInitialized\":\"function(e){\\n    var data = SW.getComponent('data');\\n    SW.saveComponent(e.component, 'form');\\n    e.component.option('formData', data);\\n}\"}",
-      "DashboardDefinitionId": "c6462f06-8439-498b-a2f8-37e1afce7a16"
+      "DashboardDefinitionId": "df3c36cc-8d60-4e14-a7d6-f7a93aac3b0c"
     }
   ],
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
   "Version": 1,
-  "Default": false
+  "Default": true
 }
