@@ -1,12 +1,12 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "02d2a69c-39c6-4894-b77f-9c148a28ea91",
-  "Name": "Store - Workspaces",
+  "Name": "Store for Workspaces",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": null,
+  "DocumentTypeName": "workspace",
   "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
@@ -65,9 +65,10 @@
       "DashboardDefinitionId": "130d9915-5ca3-4c96-8e7a-3f26b2e9d20d"
     }
   ],
+  "DataSourceConfiguration": null,
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }

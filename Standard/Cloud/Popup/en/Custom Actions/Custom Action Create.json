@@ -65,7 +65,7 @@
       "DashboardDefinitionId": "6b294559-b77a-4f0f-8c95-d127c5cfcbd3"
     }
   ],
-  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
-  "Version": 1,
+  "DataSourceConfiguration": null,
+  "Version": 2,
   "Default": true
 }

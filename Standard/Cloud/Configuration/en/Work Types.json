@@ -11,14 +11,14 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "b29ec06a-ab52-4201-9c66-6a0ad4b98f6e",
+      "Id": "9daa0416-69ee-4af8-bf61-be5ab2dc49fa",
       "Name": "WorkTypes",
       "Active": true,
       "UseQuery": true,
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  wt.Oid,\\n        c.Name as Company,\\n        wt.ExternalId,\\n        wt.Name,\\n        wt.Active,\\n        wt.IsAdministrative,\\n        wt.AllDepartments\\nfrom    Worktype wt, company c\\nwhere   wt.company = c.oid\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[\n    {\n        \"WidgetSubTitle\": \"\",\n        \"WidgetType\": \"grid\",\n        \"WidgetFilterField\": \"\",\n        \"WidgetColor\": \"\",\n        \"WidgetFrameStyle\": {\n            \"padding\":\"37px 19px 0px 27px\"\n        },\n        \"WidgetXPosition\": 0,\n        \"WidgetYPosition\": 0,\n        \"WidgetRows\": 24,\n        \"WidgetColumns\": 48,\n        \"WidgetHeader\": {\n            \"showContextInfo\": false,\n            \"showTitle\": false,\n            \"showSubTitle\": false,\n            \"WidgetPeriodChooser\": {\n                \"type\": \"year\",\n                \"visible\": false\n            },\n            \"WidgetMetrics\": {\n                \"visible\": false,\n                \"Metrics\": [\n                    {\n                        \"visible\": true,\n                        \"metricName\": \"? Integration Errors\",\n                        \"metricFieldValue\": \"Integration Errors\"\n                    }\n                ]\n            }\n        },\n        \"WidgetDataSources\": {\n            \"main\": {\n                \"type\": \"querytext\",\n                \"value\": \"select  wt.Oid,\\n        c.Name as Company,\\n        wt.ExternalId,\\n        wt.Name,\\n        wt.Active,\\n        wt.IsAdministrative,\\n        wt.AllDepartments\\nfrom    Worktype wt\\n    LEFT JOIN [Company] c on c.Oid = wt.Company\\n\"\n            }\n        },\n        \"Filters\": {},\n        \"QueryConfiguration\": {}\n    }\n]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -29,7 +29,7 @@
       "DashboardDefinitionId": "6b29b97c-6d98-4cc9-8c0b-d29bbe0f98de"
     }
   ],
-  "DataSourceConfiguration": "{}",
-  "Version": 13,
+  "DataSourceConfiguration": null,
+  "Version": 14,
   "Default": true
 }
