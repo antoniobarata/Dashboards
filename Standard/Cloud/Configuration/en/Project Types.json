@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "9d415135-ae49-416f-8bf8-71f0614bb0c9",
-  "Name": "Project Natures",
+  "Name": "Project Types",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "45fb52b4-c567-458b-a12c-65deabb9eb8b",
+      "Id": "f909dbdf-e24c-4dfa-b1fb-126e7d8e90cc",
       "Name": "Project Nature",
       "Active": true,
       "UseQuery": true,
@@ -29,7 +29,7 @@
       "DashboardDefinitionId": "9d415135-ae49-416f-8bf8-71f0614bb0c9"
     }
   ],
-  "DataSourceConfiguration": "{}",
-  "Version": 11,
+  "DataSourceConfiguration": null,
+  "Version": 12,
   "Default": true
 }

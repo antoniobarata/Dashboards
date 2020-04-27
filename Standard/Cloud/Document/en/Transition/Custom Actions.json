@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "e908524c-2f47-4148-84ef-a6fd8e9d1079",
+  "Name": "Custom Actions",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "workflowtransition",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "e25e433b-f64a-4eb4-a06b-d49ef2f1f23d",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":27,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "c666ba5e-8578-4132-86a5-0f96c665000d",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"grid\":{\"call\":\"function getCall(entityId) {\\n    return 'workflow-state-transition/' + entityId + '/custom-actions';\\n}\",\"mapper\":\"function mapper(response, entityId){\\n    console.log(response);\\n    return {\\n        Id: response.CustomActionId,\\n        Name: response.CustomActionName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    return 'custom-actions'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"},\"link\":{\"call\":\"function postCall(item, entityId){\\n    return 'workflow-state-transition/' + entityId + '/custom-actions';\\n}\",\"model\":\"function postModel(item, entityId){\\n    return {\\n        CustomActionId: item.Id\\n    }\\n}\"},\"unlink\":{\"call\":\"function deleteCall(item, entityId){\\n    return 'workflow-state-transition/' + entityId + '/custom-actions/' + item.Id;\\n}\"},\"form\":{\"call\":\"function putCall(item, entityId){\\n    return null \\n}\",\"model\":\"function putModel(item, entityId){\\n    return null \\n}\"},\"entity\":\"workflowtransition\"}",
+      "DashboardDefinitionId": "e908524c-2f47-4148-84ef-a6fd8e9d1079"
+    }
+  ],
+  "DataSourceConfiguration": null,
+  "Version": 1,
+  "Default": true
+}

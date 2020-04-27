@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "6dd84db5-d72b-4642-a636-17f73267d8f5",
+  "Name": "Description Templates",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "descriptionTemplate",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "9b970d9b-95de-46b0-ade7-600c3978e577",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\r\\n    j.Oid,\\r\\n    j.Name,\\r\\n    j.Text,\\r\\n    c.Name as Document,\\r\\n    c.Oid as DocumentId\\r\\nfrom BriefingTemplate j\\r\\nInner Join Document c on j.Document=c.Oid\\r\\n\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"entity\":\"descriptiontemplate\",\"height\":\"100%\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"},{\"dataField\":\"Text\",\"caption\":\"Text\"},{\"dataField\":\"Document\",\"caption\":\"Document\",\"entity\":\"document\",\"groupIndex\":0},{\"dataField\":\"DocumentId\",\"visible\":false,\"showInColumnChooser\":false}],\"allowPreview\":false,\"stateStoring\":{\"enabled\":true,\"useWorkspaceVersion\":true}}",
+      "DashboardDefinitionId": "6dd84db5-d72b-4642-a636-17f73267d8f5"
+    }
+  ],
+  "DataSourceConfiguration": null,
+  "Version": 2,
+  "Default": true
+}

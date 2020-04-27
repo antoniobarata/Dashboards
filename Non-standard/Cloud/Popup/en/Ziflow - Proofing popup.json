@@ -3,7 +3,7 @@
   "Id": "b70e1a00-3f43-45ab-bb04-04ba1e34e254",
   "Name": "proofing-popup",
   "Active": true,
-  "Location": 2,
+  "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": null,
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 3,
+  "Version": 4,
   "Default": false
 }

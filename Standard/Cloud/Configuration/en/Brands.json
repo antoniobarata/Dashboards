@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "7d18eb3d-6e3d-4f65-b1f6-e90eef92b5b3",
+  "Name": "Brands",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "brand",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "6e4a9987-3060-4c7e-9376-00995c283171",
+      "Name": "",
+      "Active": true,
+      "UseQuery": true,
+      "Query": null,
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  \\r\\n    b.Oid,\\r\\n    b.Name,\\r\\n    cc.Name as Client,\\r\\n    cc.Oid as ClientId,\\r\\n    b.Active,\\r\\n    b.CreatedOn as CreatedOn,\\r\\n    b.ModifiedOn as ModifiedOn,\\r\\n    u.Name as CreatedByName,\\r\\n    us.Name as ModifiedByName,\\r\\n    u.Oid as CreatedById,\\r\\n    us.Oid as ModifiedById,\\r\\n    u.HasImage as CreatedByHasImage,\\r\\n    us.HasImage as ModifiedByHasImage\\r\\nfrom Brand b\\r\\n\\tLEFT JOIN [User] u on u.Oid = b.CreatedBy \\r\\n\\tLEFT Join [User] us on us.Oid = b.ModifiedBy\\r\\n    LEFT Join [CommercialClient] cc on cc.Oid = b.CommercialClient\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": null,
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"},{\"dataField\":\"Client\",\"caption\":\"Client\",\"entity\":\"client\"},{\"dataField\":\"Active\",\"caption\":\"Active\"},{\"dataField\":\"CreatedOn\",\"caption\":\"CreatedOn\",\"dataType\":\"date\",\"format\":\"dd/MMM/yyyy hh:mm\"},{\"dataField\":\"CreatedByName\",\"caption\":\"CreatedBy\",\"entity\":\"user\",\"format\":{\"type\":\"image\",\"mapping\":{\"id\":\"CreatedById\",\"name\":\"CreatedByName\",\"hasImage\":\"CreatedByHasImage\"}}},{\"dataField\":\"ModifiedOn\",\"caption\":\"ModifiedOn\",\"dataType\":\"date\",\"format\":\"dd/MMM/yyyy hh:mm\"},{\"dataField\":\"ModifiedByName\",\"caption\":\"ModifiedBy\",\"entity\":\"user\",\"format\":{\"type\":\"image\",\"mapping\":{\"id\":\"ModifiedById\",\"name\":\"ModifiedByName\",\"hasImage\":\"ModifiedByHasImage\"}}}],\"allowBulk\":false,\"entity\":\"brand\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":true,\"useWorkspaceVersion\":true}}",
+      "DashboardDefinitionId": "7d18eb3d-6e3d-4f65-b1f6-e90eef92b5b3"
+    }
+  ],
+  "DataSourceConfiguration": null,
+  "Version": 1,
+  "Default": true
+}

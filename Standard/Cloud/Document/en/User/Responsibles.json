@@ -29,7 +29,7 @@
       "DashboardDefinitionId": "c94128fa-7c3c-4ccc-8947-109e603a8f62"
     }
   ],
-  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
-  "Version": 8,
+  "DataSourceConfiguration": null,
+  "Version": 9,
   "Default": true
 }
