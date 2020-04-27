@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "50117552-e7b3-4012-8c7e-5a78eab708fb",
+  "Name": "Delegates",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "user",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "730040f6-400b-4522-a428-34e74e9fbc7f",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"association\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":50,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"user\",\"entityAssociation\":\"delegate\",\"grid\":{\"call\":\"function getCall(entityId){\\n    return 'v3/users/' + entityId + '/delegates';\\n}\",\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.DelegateId,\\n        Name: response.DelegateName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId){\\n    return 'users/all/lookup';\\n}\",\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"},\"link\":{\"call\":\"function postCall(item, entityId){\\n    return 'v3/users/' + entityId + '/delegates';\\n}\",\"model\":\"function postModel(item, entityId){\\n    return {\\n        DelegateId: item.Id\\n    }\\n}\"},\"unlink\":{\"call\":\"function deleteCall(item, entityId){\\n    return 'v3/users/' + entityId + '/delegates/' + item.Id; \\n}\"},\"form\":{\"call\":\"function putCall(item, entityId){\\n    return null \\n}\",\"model\":\"function putModel(item, entityId){\\n    return null \\n}\"}}",
+      "DashboardDefinitionId": "50117552-e7b3-4012-8c7e-5a78eab708fb"
+    }
+  ],
+  "DataSourceConfiguration": "{}",
+  "Version": 1,
+  "Default": true
+}
