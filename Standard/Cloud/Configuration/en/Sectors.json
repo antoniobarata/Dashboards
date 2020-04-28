@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "f00db410-5a64-408b-8484-3365113c62d8",
+  "Name": "Sectors",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "sector",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "61bff3c2-de8e-4820-af9d-634f91b12951",
+      "Name": "",
+      "Active": true,
+      "UseQuery": true,
+      "Query": null,
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  \\r\\n    c.Oid,\\r\\n    c.Name,\\r\\n    c.ExternalId,\\r\\n    c.Active\\r\\nfrom Sector c\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": null,
+      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false,\n            \"showInColumnChooser\": false\n        },\n        {\n            \"dataField\": \"Name\",\n            \"caption\": \"Name\"\n        },\n        {\n            \"dataField\": \"Name\",\n            \"caption\": \"ExternalId\"\n        },\n        {\n            \"dataField\": \"Active\",\n            \"caption\": \"Active\"\n        }\n    ],\n    \"allowBulk\": false,\n    \"entity\": \"sector\",\n    \"height\": \"100%\",\n    \"stateStoring\": {\n        \"enabled\": \"true\",\n        \"useWorkspaceVersion\": \"true\"\n    }\n}",
+      "DashboardDefinitionId": "f00db410-5a64-408b-8484-3365113c62d8"
+    }
+  ],
+  "DataSourceConfiguration": null,
+  "Version": 1,
+  "Default": true
+}

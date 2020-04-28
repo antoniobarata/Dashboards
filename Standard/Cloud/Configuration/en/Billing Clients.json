@@ -6,7 +6,7 @@
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": "billingclient",
+  "DocumentTypeName": "client",
   "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"},{\"dataField\":\"Active\",\"caption\":\"Active\"},{\"dataField\":\"Company\",\"caption\":\"Company\",\"entity\":\"company\"},{\"dataField\":\"Code\",\"caption\":\"Code\"},{\"dataField\":\"NameAndExternalId\",\"caption\":\"NameAndExternalId\"},{\"dataField\":\"PaymentCondition\",\"caption\":\"Payment Condition\",\"entity\":\"paymentcondition\"}],\"allowBulk\":false,\"entity\":\"billingclient\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"}}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"},{\"dataField\":\"Active\",\"caption\":\"Active\"},{\"dataField\":\"Company\",\"caption\":\"Company\",\"entity\":\"company\"},{\"dataField\":\"Code\",\"caption\":\"Code\"},{\"dataField\":\"NameAndExternalId\",\"caption\":\"NameAndExternalId\"},{\"dataField\":\"PaymentCondition\",\"caption\":\"Payment Condition\",\"entity\":\"paymentcondition\"}],\"allowBulk\":false,\"entity\":\"client\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"}}",
       "DashboardDefinitionId": "5321780b-7691-4f2d-ab62-7e6a63d1fe79"
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 2,
+  "Version": 3,
   "Default": true
 }

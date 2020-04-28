@@ -6,7 +6,7 @@
   "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
-  "DocumentTypeName": "client",
+  "DocumentTypeName": "commercialclient",
   "DocumentsConfiguration": "{}",
   "Templates": [],
   "DashboardDefinitionComponents": [
@@ -25,13 +25,13 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"client\",\"grid\":{\"call\":\"function getCall(entityId) {\\n    return 'v3/commercial-clients/'+entityId+'/commercial-client-users';\\n    \\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.UserId,\\n        Name: response.UserName,\\n        ImageId: response.UserId,\\n        ImageName: response.UserName,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n    return 'v3/commercial-client-users'\\n}\",\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        UserId: item.Id,\\n        CommercialClientId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    return 'users/all/lookup'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: response.Id,\\n        ImageName: response.Name,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return 'v3/commercial-client-users/' + item.Data.Id\\n}\"},\"entityAssociation\":\"user\",\"form\":{\"call\":\"function putCall(item, entityId){\\n    return null \\n}\",\"model\":\"function putModel(item, entityId){\\n    return null \\n}\"}}",
+      "Configuration": "{\"entity\":\"commercialclient\",\"grid\":{\"call\":\"function getCall(entityId) {\\n    return 'v3/commercial-clients/'+entityId+'/commercial-client-users';\\n    \\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.UserId,\\n        Name: response.UserName,\\n        ImageId: response.UserId,\\n        ImageName: response.UserName,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"},\"link\":{\"call\":\"function getCall(item, entityId) {\\n    return 'v3/commercial-client-users'\\n}\",\"model\":\"function getPostModel(item, entityId){\\n    return {\\n        UserId: item.Id,\\n        CommercialClientId: entityId\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n    return 'users/all/lookup'\\n}\",\"mapper\":\"function mapper(response, entityId) {\\n    return {\\n        Id: response.Id,\\n        Name: response.Name,\\n        ImageId: response.Id,\\n        ImageName: response.Name,\\n        Info1: null,\\n        Info2: null\\n    }\\n}\"},\"unlink\":{\"call\":\"function getCall(item, entityId) {\\n    return 'v3/commercial-client-users/' + item.Data.Id\\n}\"},\"entityAssociation\":\"user\",\"form\":{\"call\":\"function putCall(item, entityId){\\n    return null \\n}\",\"model\":\"function putModel(item, entityId){\\n    return null \\n}\"}}",
       "DashboardDefinitionId": "ce325824-5104-475a-974c-4f82b427565e"
     }
   ],
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }

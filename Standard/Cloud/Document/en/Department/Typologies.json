@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "0b615acc-f28f-4f11-86fe-65a9ef567e71",
+  "Name": "Typologies",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "department",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "ef42dc3c-5692-410e-aa96-1bcc727224a5",
+      "Name": "Creation",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":29,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"department\",\"entityToCreate\":\"typology\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'v3/departments/' + entityId + '/user-typologies'; \\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/user-typologies'; \\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        DepartmentId: entityId,\\n        Name: data.Name,\\n        UserTypologyGroupId: data.UserTypologyGroupId,\\n        ExternalId: data.ExternalId,\\n        Active: data.Active,\\n        Plannable: data.Plannable\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, entityId){\\n    return 'v3/user-typologies/' + data.Id; \\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    const model = { ...data, ...newData };\\n    return {\\n        DepartmentId: model.DepartmentId,\\n        Name: model.Name,\\n        UserTypologyGroupId: model.UserTypologyGroupId,\\n        ExternalId: model.ExternalId,\\n        Active: model.Active,\\n        Plannable: model.Plannable\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'v3/user-typologies/' + data.Id; \\n}\"},\"columns\":\"function a(e){\\r\\n    return [\\r\\n        {\\r\\n            dataField: \\\"Name\\\",\\r\\n            editorType: \\\"dxTextBox\\\",\\r\\n            validationRules:[{ type: \\\"required\\\"}]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"UserTypologyGroupId\\\",\\r\\n            caption: \\\"TypologyGroup\\\",\\r\\n            lookup:{\\r\\n                searchEnabled: true,\\r\\n                dataSource: {\\r\\n                    load: function (loadOptions) {\\r\\n                        var component = window[\\\"SW\\\"].getComponent('data');\\r\\n                        var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');\\r\\n                        var skip = loadOptions.skip || 0;\\r\\n                        var take = loadOptions.take || 20;\\r\\n                        var param = { name: searchValue, skip: skip, take: take };\\r\\n                        return window[\\\"SW\\\"].executeAPI('GET', 'userTypologyGroups', null, {}).then(result => { return Promise.resolve(result); })\\r\\n                    },\\r\\n                    byKey: function (key) {\\r\\n                        return window[\\\"SW\\\"].executeAPI('GET', 'userTypologyGroups/' + key, null, {}).then(result => { return Promise.resolve(result); })\\r\\n                    }\\r\\n                },\\r\\n                displayExpr: \\\"Name\\\",\\r\\n                valueExpr: \\\"Id\\\"\\r\\n            },\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"ExternalId\\\",\\r\\n            captiom: \\\"External Id\\\",\\r\\n            editorType: \\\"dxTextBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"Active\\\",\\r\\n            editorType: \\\"dxCheckBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"Plannable\\\",\\r\\n            editorType: \\\"dxCheckBox\\\"\\r\\n        }\\r\\n    ]\\r\\n\\r\\n}\",\"grid\":{\"properties\":{\"height\":\"100%\",\"onEditorPreparing\":\"function a(e){\\r\\n    let lookupPixelsPerChar = 5;\\r\\n    function onSelectBoxOpened(e) {\\r\\n        const result = e.component.getDataSource().items();\\r\\n\\r\\n        if (result && result.length > 0) {\\r\\n            lookupPixelsPerChar = Math.max(\\r\\n                lookupPixelsPerChar,\\r\\n                ...result.map(l => l.Name.length)\\r\\n            );\\r\\n        } else if (result && result.length === 0) {\\r\\n            lookupPixelsPerChar = 5;\\r\\n        }\\r\\n        const selectBoxWidth = Math.max(205, lookupPixelsPerChar * 6.8);\\r\\n        if (!e.component || !e.component._popup) {\\r\\n            return;\\r\\n        }\\r\\n        setTimeout(() => {\\r\\n            e.component.content().parentNode.style.width = `${selectBoxWidth}px`;\\r\\n        });\\r\\n\\r\\n    }\\r\\n\\r\\n    if (!e || e.parentType === 'filterRow') { return; }\\r\\n    const grid = e.component;\\r\\n    const editorBox = e.editorOptions;\\r\\n    const lookupColumns = ['UserTypologyGroupId'];\\r\\n    if (e.parentType === 'dataRow' && lookupColumns.includes(e.dataField)) {\\r\\n        editorBox.onInitialized = arg => {\\r\\n            window['SW'].saveComponent(arg.component, e.dataField);\\r\\n        }\\r\\n        editorBox.onOpened = e => {\\r\\n            onSelectBoxOpened(e);\\r\\n        },\\r\\n            editorBox.onContentReady = e => {\\r\\n                onSelectBoxOpened(e);\\r\\n            };\\r\\n    }\\r\\n}\"}}}",
+      "DashboardDefinitionId": "0b615acc-f28f-4f11-86fe-65a9ef567e71"
+    }
+  ],
+  "DataSourceConfiguration": "{}",
+  "Version": 3,
+  "Default": true
+}

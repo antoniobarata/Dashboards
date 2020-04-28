@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "3410dc2a-315a-4267-b160-0fc32c1aa529",
-  "Name": "User",
+  "Name": "Users",
   "Active": true,
   "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "d034eb27-52c1-4e3b-8b2b-6523b897f149",
+      "Id": "e387085b-0def-42e8-a412-5fcefdf2953b",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"department\",\"entityAssociation\":\"user\",\"grid\":{\"call\":\"function getCall(entityId){\\n    return 'departments/' + entityId + '/user-departments' \\n}\",\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        AssociationId: response.UserId,\\n        Id: response.UserId,\\n        Name: response.UserName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"},\"selectbox\":{\"call\":\"function getCall(entityId) {\\n   return 'users/all/lookupWithCompany' \\n}\",\"mapper\":\"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.UserName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.CompanyName,\\n        Info2: null,\\n    }\\n}\"},\"link\":{\"call\":\"function postCall(item, entityId){\\n    return 'user-departments';\\n}\",\"model\":\"function postModel(item, entityId){\\n    return {\\n        UserId: item.Id,\\n        DepartmentId: entityId\\n    }\\n}\"},\"unlink\":{\"call\":\"function deleteCall(item, entityId){\\n    return 'user-departments/' + item.Data.Id\\n}\"},\"form\":{\"layout\":{\"colCount\":3,\"items\":[{\"dataField\":\"Read\",\"editorType\":\"dxCheckBox\"},{\"dataField\":\"Team\",\"editorType\":\"dxCheckBox\"},{\"dataField\":\"Create\",\"editorType\":\"dxCheckBox\"}]},\"call\":\"function putCall(item, entityId){\\n    return 'user-departments/' + item.Data.Id\\n}\",\"model\":\"function getPutModel(item, entityId){\\n    return {\\n        DepartmentId: item.Data.DepartmentId,\\n        UserId: item.Data.UserId,\\n        Team: item.Data.Team,\\n        Read: item.Data.Read,\\n        Create: item.Data.Create\\n    } \\n}\"}}",
+      "Configuration": "{\n    \"entity\": \"department\",\n    \"entityAssociation\": \"user\",\n    \"grid\": {\n        \"call\": \"function getCall(entityId){\\n    return 'departments/' + entityId + '/user-departments' \\n}\",\n        \"mapper\": \"function mapper(response, entityId){\\n    return {\\n        AssociationId: response.UserId,\\n        Id: response.UserId,\\n        Name: response.UserName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: null,\\n        Info2: null,\\n    }\\n}\"\n    },\n    \"selectbox\": {\n        \"call\": \"function getCall(entityId) {\\n   return 'users/all/lookupWithCompany' \\n}\",\n        \"mapper\": \"function mapper(response, entityId){\\n    return {\\n        Id: response.Id,\\n        Name: response.UserName,\\n        ImageId: null,\\n        ImageName: null,\\n        Info1: response.CompanyName,\\n        Info2: null,\\n    }\\n}\"\n    },\n    \"link\": {\n        \"call\": \"function postCall(item, entityId){\\n    return 'user-departments';\\n}\",\n        \"model\": \"function postModel(item, entityId){\\n    return {\\n        UserId: item.Id,\\n        DepartmentId: entityId\\n    }\\n}\"\n    },\n    \"unlink\": {\n        \"call\": \"function deleteCall(item, entityId){\\n    return 'user-departments/' + item.Data.Id\\n}\"\n    },\n    \"form\": {\n        \"layout\": {\n            \"items\": [\n                {\n                    \"dataField\": \"Create\",\n                    \"editorType\": \"dxCheckBox\"\n                }\n            ]\n        },\n        \"call\": \"function putCall(item, entityId){\\n    return 'user-departments/' + item.Data.Id\\n}\",\n        \"model\": \"function getPutModel(item, entityId){\\n    return {\\n        DepartmentId: item.Data.DepartmentId,\\n        UserId: item.Data.UserId,\\n        Create: item.Data.Create\\n    } \\n}\"\n    }\n}",
       "DashboardDefinitionId": "3410dc2a-315a-4267-b160-0fc32c1aa529"
     }
   ],
   "DataSourceConfiguration": "{}",
-  "Version": 2,
+  "Version": 3,
   "Default": true
 }
