@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "c9b41021-e269-4972-b1cf-7cda65c263a7",
+  "Name": "Services",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "company",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "a3cbcae9-fd87-4ced-9c25-e25696f0dba4",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":50,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"company\",\"entityToCreate\":\"service\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'v3/companies/' + entityId + '/services' \\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/services'; \\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        CompanyId: entityId,\\n        Name: data.Name,\\n        Active: data.Active,\\n        ExternalId: data.ExternalId,\\n        UnitHour: data.UnitHour,\\n        DefaultMargin: data.DefaultMargin,\\n        VatDeductiblePercentage: data.VatDeductiblePercentage,\\n        ServiceGroupId: data.ServiceGroupId,\\n        DepartmentRequired: data.DepartmentRequired,\\n        InternalService: data.InternalService\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, newData, entityId){\\n    return 'v3/services/' + data.Id;\\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    const model = { ...data, ...newData };\\n    const emptyGuid = \\\"00000000-0000-0000-0000-000000000000\\\";\\n\\n    return {\\n        CompanyId: entityId,\\n        Name: model.Name,\\n        Active: model.Active,\\n        ExternalId: model.ExternalId,\\n        UnitHour: model.UnitHour,\\n        DefaultMargin: model.DefaultMargin,\\n        VatDeductiblePercentage: model.VatDeductiblePercentage,\\n        ServiceGroupId: model.ServiceGroupId || emptyGuid,\\n        DepartmentRequired: model.DepartmentRequired,\\n        InternalService: model.InternalService\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'v3/services/' + data.Id; \\n}\"},\"columns\":\"function layout(e){\\r\\n    return [\\r\\n        {\\r\\n            dataField: \\\"Name\\\",\\r\\n            editorType: \\\"dxTextBox\\\",\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"ExternalId\\\",\\r\\n            caption: \\\"External Id\\\",\\r\\n            editorType: \\\"dxTextBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"ServiceGroupId\\\",\\r\\n            caption: \\\"Service Groups\\\",\\r\\n            lookup: {\\r\\n                searchEnabled: true,\\r\\n                dataSource: {\\r\\n                    load: function (loadOptions) {\\r\\n                        var component = window[\\\"SW\\\"].getComponent('data');\\r\\n                        debugger;\\r\\n                        return window[\\\"SW\\\"].executeAPI('GET', 'v3/companies/' + component.Oid + '/service-groups', null, {}).then(result => { return Promise.resolve(result); })\\r\\n                    },\\r\\n                    byKey: function (key) {\\r\\n                        if (key !== \\\"00000000-0000-0000-0000-000000000000\\\") {\\r\\n                            return window[\\\"SW\\\"].executeAPI('GET', 'v3/service-groups/' + key, null, {}).then(result => { return Promise.resolve(result); })\\r\\n                        }\\r\\n                    }\\r\\n                },\\r\\n                displayExpr: \\\"Name\\\",\\r\\n                valueExpr: \\\"Id\\\"\\r\\n            }\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"Active\\\",\\r\\n            editorType: \\\"dxCheckBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"InternalService\\\",\\r\\n            editorType: \\\"dxCheckBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"UnitHour\\\",\\r\\n            editorType:\\\"dxCheckBox\\\"\\r\\n        }\\r\\n    ]\\r\\n}\",\"grid\":{\"properties\":{\"onEditorPreparing\":\"function a(e) {\\r\\n    let lookupPixelsPerChar = 5;\\r\\n    function onSelectBoxOpened(e) {\\r\\n        const result = e.component.getDataSource().items();\\r\\n\\r\\n        if (result && result.length > 0) {\\r\\n            lookupPixelsPerChar = Math.max(\\r\\n                lookupPixelsPerChar,\\r\\n                ...result.map(l => l.Name.length)\\r\\n            );\\r\\n        } else if (result && result.length === 0) {\\r\\n            lookupPixelsPerChar = 5;\\r\\n        }\\r\\n        const selectBoxWidth = Math.max(205, lookupPixelsPerChar * 6.8);\\r\\n        if (!e.component || !e.component._popup) {\\r\\n            return;\\r\\n        }\\r\\n        setTimeout(() => {\\r\\n            e.component.content().parentNode.style.width = `${selectBoxWidth}px`;\\r\\n        });\\r\\n    }\\r\\n\\r\\n    if (!e || e.parentType === 'filterRow') { return; }\\r\\n    const grid = e.component;\\r\\n    const editorBox = e.editorOptions;\\r\\n    const lookupColumns = ['ServiceGroupId'];\\r\\n    if (e.parentType === 'dataRow' && lookupColumns.includes(e.dataField)) {\\r\\n        editorBox.onInitialized = arg => {\\r\\n            window['SW'].saveComponent(arg.component, e.dataField);\\r\\n        }\\r\\n        editorBox.onOpened = e => {\\r\\n            onSelectBoxOpened(e);\\r\\n        },\\r\\n            editorBox.onContentReady = e => {\\r\\n                onSelectBoxOpened(e);\\r\\n            };\\r\\n    }\\r\\n}\"}}}",
+      "DashboardDefinitionId": "c9b41021-e269-4972-b1cf-7cda65c263a7"
+    }
+  ],
+  "DataSourceConfiguration": "{}",
+  "Version": 1,
+  "Default": true
+}
