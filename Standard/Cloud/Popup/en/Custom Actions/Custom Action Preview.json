@@ -61,7 +61,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function init(e) {\\n    var data = SW.getComponent('data');\\n    var editor = SW.getComponent('editor');\\n    var textbox = SW.getComponent('textbox');\\n    var sourceCode = editor.getValue();\\n    var name = textbox.component.option('value');\\n    var id = data.Id;\\n    var actionLanguage = data.ActionLanguage;\\n    var model = {\\n        Name: name,\\n        ActionLanguage: actionLanguage,\\n        SourceCode: sourceCode,\\n    }\\n    SW.executeAPI('PUT', 'custom-actions/' + id, null, model)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Saved\\\");\\n            //SW.refreshDashboard();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
+      "Configuration": "{\"icon\":\"save\",\"text\":\"SAVE\",\"onClick\":\"function init(e) {\\n    var data = SW.getComponent('data');\\n    var editor = SW.getComponent('editor');\\n    var textbox = SW.getComponent('textbox');\\n    var sourceCode = editor.getValue();\\n    var name = textbox.component.option('value');\\n    var id = data.Id;\\n    var actionLanguage = data.ActionLanguage;\\n    var model = {\\n        Name: name,\\n        ActionLanguage: actionLanguage,\\n        SourceCode: sourceCode,\\n    }\\n    SW.executeAPI('PUT', 'v3/custom-actions/' + id, null, model)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Saved\\\");\\n            //SW.refreshDashboard();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
       "DashboardDefinitionId": "df829746-c9d8-439c-9976-201ea00c61c1"
     }
   ],

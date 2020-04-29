@@ -61,7 +61,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"icon\":\"save\",\"text\":\"CREATE\",\"onClick\":\"function init(e) {\\n    debugger;\\n    var editor = SW.getComponent('editor');\\n    var textbox = SW.getComponent('textbox');\\n    var sourceCode = editor.getValue();\\n    var name = textbox.component.option('value');\\n    var model = {\\n        Name: name,\\n        ActionLanguage: 0,\\n        SourceCode: sourceCode,\\n    }\\n    SW.executeAPI('POST', 'custom-actions', null, model)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Created\\\");\\n            //SW.refreshDashboard();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
+      "Configuration": "{\"icon\":\"save\",\"text\":\"CREATE\",\"onClick\":\"function init(e) {\\n    debugger;\\n    var editor = SW.getComponent('editor');\\n    var textbox = SW.getComponent('textbox');\\n    var sourceCode = editor.getValue();\\n    var name = textbox.component.option('value');\\n    var model = {\\n        Name: name,\\n        ActionLanguage: 0,\\n        SourceCode: sourceCode,\\n    }\\n    SW.executeAPI('POST', 'v3/custom-actions', null, model)\\n        .then(x => {\\n            SW.Toastr.toastr_Success(\\\"Created\\\");\\n            //SW.refreshDashboard();\\n        })\\n        .catch(x => {\\n            SW.Toastr.toastr_Error(x);\\n        })\\n}\"}",
       "DashboardDefinitionId": "6b294559-b77a-4f0f-8c95-d127c5cfcbd3"
     }
   ],
