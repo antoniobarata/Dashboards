@@ -12,7 +12,7 @@
   "DashboardDefinitionComponents": [
     {
       "Id": "66a1bd0a-a50e-4376-8ff3-1f35af39c49c",
-      "Name": "Creation",
+      "Name": "",
       "Active": true,
       "UseQuery": false,
       "Query": "",
@@ -32,6 +32,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 2,
+  "Version": 3,
   "Default": true
 }

@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "f6671567-67b2-430c-bf04-dc7a41e99395",
+  "Name": "Additional Information",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "document",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "ac60726c-01b5-4c35-807a-d68b92195ccc",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":26,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"{\\\"entities\\\":[],\\\"fields\\\":[]}\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"get\":{\"call\":\"function getCall(data, entity) {\\n    return 'v3/document-types/' + entity +'/document-user-fields';\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entity) {\\n    return 'v3/document-user-fields/' + data.Id;\\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/document-user-fields';\\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        DocumentTypeId: entityId,\\n        ColumnName: data.ColumnName,\\n        DataTypeId: data.DataTypeId,\\n        Order: data.Order,\\n        Required: data.Required,\\n        UseRoleAccess: data.UseRoleAccess\\n        //ReadRoleId: data.ReadRoleId,\\n        //SaveRoleId: data.SaveRoleId,\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, entityId){\\n    return 'v3/document-user-fields/' + data.Id;\\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    const model = { ...data, ...newData };\\n    const emptyGuid = \\\"00000000-0000-0000-0000-000000000000\\\";\\n    return {\\n        DocumentTypeId: entityId,\\n        ColumnName: model.ColumnName,\\n        DataTypeId: model.DataTypeId,\\n        Order: model.Order,\\n        Required: model.Required,\\n        UseRoleAccess: model.UseRoleAccess\\n        //ReadRoleId: model.ReadRoleId || emptyGuid,\\n        //SaveRoleId: model.SaveRoleId || emptyGuid,\\n    }\\n}\"},\"columns\":\"function columns(e){\\n    return [\\n        {\\n            dataField: \\\"ColumnName\\\",\\n            caption: \\\"Name\\\",\\n            validationRules: [{ type: \\\"required\\\" }],\\n            visibleIndex: 0,\\n        },\\n        {\\n            dataField: \\\"Order\\\",\\n            caption: \\\"Order\\\",\\n            visibleIndex: 2,\\n            dataType: \\\"number\\\",\\n            sortOrder: \\\"desc\\\"\\n        }, {\\n            dataField: \\\"Required\\\",\\n            caption: \\\"Required\\\",\\n            visibleIndex: 3,\\n            dataType: \\\"boolean\\\"\\n        }, {\\n            dataField: \\\"UseRoleAccess\\\",\\n            caption: \\\"Use Role Access\\\",\\n            visibleIndex: 4,\\n            dataType: \\\"boolean\\\"\\n        },\\n        {\\n            dataField: \\\"DataTypeId\\\",\\n            caption: \\\"Type\\\",\\n            validationRules: [{ type: \\\"required\\\" }],\\n            visibleIndex: 1,\\n            lookup: {\\n                searchEnabled: true,\\n                dataSource: [ \\n                    { \\n                        \\\"Id\\\": 0,\\n                        \\\"Name\\\": \\\"Boolean\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 1,\\n                        \\\"Name\\\": \\\"Date\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 2,\\n                        \\\"Name\\\": \\\"Float\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 3,\\n                        \\\"Name\\\": \\\"Integer\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 4,\\n                        \\\"Name\\\": \\\"Money\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 5,\\n                        \\\"Name\\\": \\\"Varchar 50\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 6,\\n                        \\\"Name\\\": \\\"Varchar 100\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 7,\\n                        \\\"Name\\\": \\\"Varchar max\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 8,\\n                        \\\"Name\\\": \\\"Text\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 9,\\n                        \\\"Name\\\": \\\"Unique identifier\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 10,\\n                        \\\"Name\\\": \\\"Varchar 200\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 11,\\n                        \\\"Name\\\": \\\"Varchar other\\\"\\n                    },\\n                    {\\n                        \\\"Id\\\": 12,\\n                        \\\"Name\\\": \\\"Var binary\\\"\\n                    }\\n                ],\\n                displayExpr: \\\"Name\\\",\\n                valueExpr: \\\"Id\\\"\\n            }\\n        }\\n    ]\\n}\",\"grid\":{\"properties\":{\"height\":\"100%\",\"stateStoring\":{\"enabled\":true,\"useWorkspaceVersion\":true}}},\"entity\":\"document\",\"entityToCreate\":\"userfields\"}",
+      "DashboardDefinitionId": "f6671567-67b2-430c-bf04-dc7a41e99395"
+    }
+  ],
+  "DataSourceConfiguration": "{\"entity\":\"\",\"operations\":{\"read\":{\"type\":\"queryText\",\"value\":\"\"},\"update\":{\"type\":\"queryText\",\"value\":\"\"}}}",
+  "Version": 0,
+  "Default": true
+}
