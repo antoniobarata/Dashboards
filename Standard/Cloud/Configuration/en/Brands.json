@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"},{\"dataField\":\"Client\",\"caption\":\"Client\",\"entity\":\"client\"},{\"dataField\":\"Active\",\"caption\":\"Active\"},{\"dataField\":\"CreatedOn\",\"caption\":\"CreatedOn\",\"dataType\":\"date\",\"format\":\"dd/MMM/yyyy hh:mm\"},{\"dataField\":\"CreatedByName\",\"caption\":\"CreatedBy\",\"entity\":\"user\",\"format\":{\"type\":\"image\",\"mapping\":{\"id\":\"CreatedById\",\"name\":\"CreatedByName\",\"hasImage\":\"CreatedByHasImage\"}}},{\"dataField\":\"ModifiedOn\",\"caption\":\"ModifiedOn\",\"dataType\":\"date\",\"format\":\"dd/MMM/yyyy hh:mm\"},{\"dataField\":\"ModifiedByName\",\"caption\":\"ModifiedBy\",\"entity\":\"user\",\"format\":{\"type\":\"image\",\"mapping\":{\"id\":\"ModifiedById\",\"name\":\"ModifiedByName\",\"hasImage\":\"ModifiedByHasImage\"}}}],\"allowBulk\":false,\"entity\":\"brand\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":true,\"useWorkspaceVersion\":true}}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"},{\"dataField\":\"Client\",\"caption\":\"Client\",\"entity\":\"commercialclient\"},{\"dataField\":\"Active\",\"caption\":\"Active\"},{\"dataField\":\"CreatedOn\",\"caption\":\"CreatedOn\",\"dataType\":\"date\",\"format\":\"dd/MMM/yyyy hh:mm\"},{\"dataField\":\"CreatedByName\",\"caption\":\"CreatedBy\",\"entity\":\"user\",\"format\":{\"type\":\"image\",\"mapping\":{\"id\":\"CreatedById\",\"name\":\"CreatedByName\",\"hasImage\":\"CreatedByHasImage\"}}},{\"dataField\":\"ModifiedOn\",\"caption\":\"ModifiedOn\",\"dataType\":\"date\",\"format\":\"dd/MMM/yyyy hh:mm\"},{\"dataField\":\"ModifiedByName\",\"caption\":\"ModifiedBy\",\"entity\":\"user\",\"format\":{\"type\":\"image\",\"mapping\":{\"id\":\"ModifiedById\",\"name\":\"ModifiedByName\",\"hasImage\":\"ModifiedByHasImage\"}}}],\"allowBulk\":false,\"entity\":\"brand\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":true,\"useWorkspaceVersion\":true}}",
       "DashboardDefinitionId": "7d18eb3d-6e3d-4f65-b1f6-e90eef92b5b3"
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }
