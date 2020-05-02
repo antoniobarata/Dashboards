@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "2ae3ec48-f4c9-4522-897b-fe9f973a8583",
+  "Name": "Integrations",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "company",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "c06325f3-4448-412f-9ed1-258793a9c356",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":49,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"entity\":\"company\",\"entityToCreate\":\"integration\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'v3/companies/' + entityId + '/company-integrations'; \\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/company-integrations'; \\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        CompanyId: entityId,\\n        IntegratorId: data.IntegratorId,\\n        Active: data.Active,\\n        LogRetentionDays: data.LogRetentionDays,\\n        IntegratedOn: data.IntegratedOn\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, newData, entityId){\\n    return 'v3/company-integrations/' + data.Id \\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    const model = { ...data, ...newData };\\n    return {\\n        CompanyId: entityId,\\n        IntegratorId: model.IntegratorId,\\n        Active: model.Active,\\n        LogRetentionDays: model.LogRetentionDays,\\n        IntegratedOn: model.IntegratedOn\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'v3/company-integrations/' + data.Id; \\n}\"},\"columns\":\"function layout(e){\\r\\n    return [\\r\\n        {\\r\\n            dataField: \\\"IntegratorId\\\",\\r\\n            caption: \\\"Integrator\\\",\\r\\n            lookup: {\\r\\n                searchEnabled: true,\\r\\n                dataSource: {\\r\\n                    load: function (loadOptions) {\\r\\n                        return window[\\\"SW\\\"].executeAPI('GET', 'integrators', null, {}).then(result => { return Promise.resolve(result); })\\r\\n                    },\\r\\n                    byKey: function (key) {\\r\\n                        if (key !== \\\"00000000-0000-0000-0000-000000000000\\\") {\\r\\n                            return window[\\\"SW\\\"].executeAPI('GET', 'integrators/' + key, null, {}).then(result => { return Promise.resolve(result); })\\r\\n                        }\\r\\n                    }\\r\\n                },\\r\\n                displayExpr: \\\"Name\\\",\\r\\n                valueExpr: \\\"Id\\\"\\r\\n            },\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"Active\\\",\\r\\n            editorType: \\\"dxCheckBox\\\",\\r\\n            validationRules: [{ type: \\\"required\\\"}]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"IntegratedOn\\\",\\r\\n            editorType: \\\"dxDateBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"LogRetentionDays\\\",\\r\\n            editorType: \\\"dxNumberBox\\\",\\r\\n            validationRules: [{ type: \\\"required\\\"}]\\r\\n        }\\r\\n    ]\\r\\n}\",\"grid\":{\"properties\":{\"stateStoring\":{\"enabled\":false}}}}",
+      "DashboardDefinitionId": "2ae3ec48-f4c9-4522-897b-fe9f973a8583"
+    }
+  ],
+  "DataSourceConfiguration": "{}",
+  "Version": 1,
+  "Default": true
+}
