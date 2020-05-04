@@ -18,7 +18,7 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tOid,\\r\\n\\t\\t[Name],\\r\\n\\t\\tExpirationDate,\\r\\n\\t\\t[Default],\\r\\n\\t\\tActive,\\r\\n\\t\\tLeavesInHours,\\r\\n\\t\\tAllowHalfDays,\\r\\n\\t\\tTotalVacationDays,\\r\\n\\t\\tHRApprovalOnly\\r\\nfrom UserVacationType\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tOid,\\r\\n\\t\\t[Name],\\r\\n\\t\\tExpirationDate,\\r\\n\\t\\t[Default],\\r\\n\\t\\tActive,\\r\\n\\t\\tLeavesInHours,\\r\\n\\t\\tAllowHalfDays,\\r\\n\\t\\tTotalVacationDays,\\r\\n\\t\\tHRApprovalOnly\\r\\nfrom UserVacationType\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": "{}",
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }

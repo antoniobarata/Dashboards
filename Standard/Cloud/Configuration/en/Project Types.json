@@ -18,7 +18,7 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  p.Oid as Oid,\\n        p.Name as [Name],\\n        c.name as Company,\\n        d.Name as DocumentType,\\n        p.TemplateFileName as TemplateFileName,\\n        p.AllowsTimesheet as AllowsTimesheet,\\n        p.IsDeliverable as IsDeliverable,\\n        p.Active as Active\\nfrom    ProjectNature p, Company c, DocumentType d\\nwhere   p.company = c.oid and \\n        p.DocumentType = d.Oid\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  p.Oid as Oid,\\n        p.Name as [Name],\\n        c.name as Company,\\n        d.Name as DocumentType,\\n        p.TemplateFileName as TemplateFileName,\\n        p.AllowsTimesheet as AllowsTimesheet,\\n        p.IsDeliverable as IsDeliverable,\\n        p.Active as Active\\nfrom    ProjectNature p, Company c, DocumentType d\\nwhere   p.company = c.oid and \\n        p.DocumentType = d.Oid\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 12,
+  "Version": 13,
   "Default": true
 }

@@ -18,7 +18,7 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  a.Oid,\\n\\t\\ta.[Name],\\n\\t\\tc.[Name] as Company,\\n        c.[Oid] as CompanyId,\\n\\t\\ta.Active,\\n\\t\\ta.InternalService,\\n\\t\\ta.DepartmentRequired,\\n\\t\\ta.UnitHour as UnitHour,\\n\\t\\ta.DefaultMargin,\\n\\t\\ta.ExternalId,\\n\\t\\ta.VatDeductiblePercentage as VatDeductiblePercentage,\\n\\t\\tag.[Name] as ArticleGroup\\nfrom Article a\\nInner Join Company c on a.Company=c.Oid\\nLeft Outer Join ArticleGroup ag on (ag.Oid=a.ArticleGroup)\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"ShowTitle\":false,\"ShowSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]},\"showSubTitle\":false,\"showTitle\":false},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  a.Oid,\\n\\t\\ta.[Name],\\n\\t\\tc.[Name] as Company,\\n        c.[Oid] as CompanyId,\\n\\t\\ta.Active,\\n\\t\\ta.InternalService,\\n\\t\\ta.DepartmentRequired,\\n\\t\\ta.UnitHour as UnitHour,\\n\\t\\ta.DefaultMargin,\\n\\t\\ta.ExternalId,\\n\\t\\ta.VatDeductiblePercentage as VatDeductiblePercentage,\\n\\t\\tag.[Name] as ArticleGroup\\nfrom Article a\\nInner Join Company c on a.Company=c.Oid\\nLeft Outer Join ArticleGroup ag on (ag.Oid=a.ArticleGroup)\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": "{}",
-  "Version": 11,
+  "Version": 12,
   "Default": true
 }

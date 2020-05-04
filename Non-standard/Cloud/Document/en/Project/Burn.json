@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "f8fbeb8c-7c46-4829-9b05-ca7ee4520cda",
-  "Name": "Burn - Project",
+  "Name": "Burn",
   "Active": true,
   "Location": 1,
   "DocumentId": "8055b90e-69d2-4346-a378-5b8f21d5ec7b",
@@ -140,6 +140,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 17,
+  "Version": 18,
   "Default": false
 }

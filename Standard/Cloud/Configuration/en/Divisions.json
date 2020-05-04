@@ -18,7 +18,7 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select      d.Oid as Oid, \\r\\n            c.Name as Company,\\r\\n            c.Oid as CompanyId, \\r\\n            d.Name as [Name],\\r\\n            d.Description as [Description], \\r\\n            d.Code as Code, \\r\\n            d.Active as Active\\r\\nfrom        company c, division d\\r\\nWhere       d.company = c.oid  \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select      d.Oid as Oid, \\r\\n            c.Name as Company,\\r\\n            c.Oid as CompanyId, \\r\\n            d.Name as [Name],\\r\\n            d.Description as [Description], \\r\\n            d.Code as Code, \\r\\n            d.Active as Active\\r\\nfrom        company c, division d\\r\\nWhere       d.company = c.oid  \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": "{}",
-  "Version": 13,
+  "Version": 14,
   "Default": true
 }

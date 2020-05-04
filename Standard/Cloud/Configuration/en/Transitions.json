@@ -18,7 +18,7 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":1,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select wt.[Oid]\\r\\n      ,wt.[Name]\\r\\n      ,doc.[Name] as 'Document'\\r\\n      ,dty.[Name] as 'Workflow'\\r\\n      ,fws.[Name] as [FromWorkflowState]\\r\\n\\t  ,tws.[Name] as [ToWorkflowState]\\r\\n      ,wt.[Order]\\r\\n      ,wt.[RequestConfirmation]\\r\\n      ,wt.[MustSendNotification]\\r\\n      ,wt.[CommentRequired]\\r\\n      ,wt.[HoursRequired]\\r\\n      ,wt.[FileUploadRequired]\\r\\n      ,wt.[FileUploadFolder]\\r\\n  FROM \\r\\n    [WorkflowStateTransition] as wt\\r\\n\\t\\tleft outer join WorkflowState fws on fws.Oid = wt.FromWorkflowState\\r\\n\\t\\tleft outer join WorkflowState tws on tws.Oid = wt.ToWorkflowState,\\r\\n    [Document] as doc,\\r\\n    [DocumentType] as dty\\r\\n  where \\r\\n    wt.[Document] = doc.[Oid] AND\\r\\n    wt.[DocumentType] = dty.[Oid]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":1,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select wt.[Oid]\\r\\n      ,wt.[Name]\\r\\n      ,doc.[Name] as 'Document'\\r\\n      ,dty.[Name] as 'Workflow'\\r\\n      ,fws.[Name] as [FromWorkflowState]\\r\\n\\t  ,tws.[Name] as [ToWorkflowState]\\r\\n      ,wt.[Order]\\r\\n      ,wt.[RequestConfirmation]\\r\\n      ,wt.[MustSendNotification]\\r\\n      ,wt.[CommentRequired]\\r\\n      ,wt.[HoursRequired]\\r\\n      ,wt.[FileUploadRequired]\\r\\n      ,wt.[FileUploadFolder]\\r\\n  FROM \\r\\n    [WorkflowStateTransition] as wt\\r\\n\\t\\tleft outer join WorkflowState fws on fws.Oid = wt.FromWorkflowState\\r\\n\\t\\tleft outer join WorkflowState tws on tws.Oid = wt.ToWorkflowState,\\r\\n    [Document] as doc,\\r\\n    [DocumentType] as dty\\r\\n  where \\r\\n    wt.[Document] = doc.[Oid] AND\\r\\n    wt.[DocumentType] = dty.[Oid]\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 12,
+  "Version": 13,
   "Default": true
 }

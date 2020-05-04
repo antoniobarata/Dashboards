@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "19935c73-9f43-47b3-9cf4-a48c351e5ca2",
-  "Name": "Burn - Client",
+  "Name": "Burn",
   "Active": true,
   "Location": 1,
   "DocumentId": "41e148a1-25c9-4112-8c7e-de4f2087546d",
@@ -140,6 +140,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 23,
+  "Version": 24,
   "Default": false
 }

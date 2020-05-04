@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "a46ef621-831c-4cd4-9a44-264f7cf1034d",
-  "Name": "Burn per Role - Client",
+  "Name": "Burn per Role",
   "Active": true,
   "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -140,6 +140,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 20,
+  "Version": 21,
   "Default": false
 }

@@ -18,7 +18,7 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"Departments by company \",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT ws.[Oid]\\r\\n      ,ws.[Name]\\r\\n      ,doc.[Name] as 'Document'\\r\\n      ,wst.[Name] as 'WorkflowStateType'\\r\\n      ,ws.[Color]\\r\\n      ,ws.[Order]\\r\\n      ,ws.[Delayed]\\r\\n      ,ws.[IsVisibleToClient]\\r\\n  FROM \\r\\n    [WorkflowState] as ws,\\r\\n    [Document] as doc,\\r\\n    [WorkflowStateType] as wst\\r\\n  WHERE \\r\\n    ws.[Document] = doc.[Oid] AND\\r\\n    ws.[WorkflowStateType] = wst.[Oid] \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"SELECT ws.[Oid]\\r\\n      ,ws.[Name]\\r\\n      ,doc.[Name] as 'Document'\\r\\n      ,wst.[Name] as 'WorkflowStateType'\\r\\n      ,ws.[Color]\\r\\n      ,ws.[Order]\\r\\n      ,ws.[Delayed]\\r\\n      ,ws.[IsVisibleToClient]\\r\\n  FROM \\r\\n    [WorkflowState] as ws,\\r\\n    [Document] as doc,\\r\\n    [WorkflowStateType] as wst\\r\\n  WHERE \\r\\n    ws.[Document] = doc.[Oid] AND\\r\\n    ws.[WorkflowStateType] = wst.[Oid] \",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": "{}",
-  "Version": 10,
+  "Version": 11,
   "Default": true
 }

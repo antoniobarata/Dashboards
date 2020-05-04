@@ -1,7 +1,7 @@
 ﻿{
   "DashboardDefinitionRoles": [],
   "Id": "d9c079df-0d84-489e-8ee2-807b2c01ac07",
-  "Name": "Burn - Fee",
+  "Name": "Burn",
   "Active": true,
   "Location": 1,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -140,6 +140,6 @@
   "QueryText": null,
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 20,
+  "Version": 21,
   "Default": false
 }
