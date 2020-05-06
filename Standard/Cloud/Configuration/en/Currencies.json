@@ -7,7 +7,7 @@
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": "currency",
-  "DocumentsConfiguration": "{}",
+  "DocumentsConfiguration": "[{\"entity\":\"\",\"permissions\":{\"read\":null,\"write\":null,\"create\":null,\"navigate\":null},\"operations\":{\"read\":{\"endpoint\":null},\"update\":{\"endpoint\":null,\"model\":null},\"create\":{\"endpoint\":null,\"model\":null},\"patch\":{\"endpoint\":\"\",\"model\":[{\"field\":\"\",\"caption\":\"\",\"type\":\"\"}]},\"remove\":{\"endpoint\":null},\"lookup\":{\"endpoint\":\"\"},\"lookupById\":{\"endpoint\":\"\"}},\"layout\":{\"create\":{\"width\":null,\"height\":null,\"useReadLayout\":false,\"form\":{}},\"read\":{\"width\":null,\"height\":null,\"fieldName\":null,\"form\":{}},\"patch\":{}},\"customDocument\":{\"useCustomStyle\":false,\"mainColor\":\"\",\"secondaryColor\":\"\",\"imageClass\":\"\",\"namePlural\":\"\",\"name\":\"\",\"systemName\":\"\"},\"availableOptions\":{\"feed\":false,\"info\":true,\"files\":false,\"userfields\":false,\"workspaces\":false},\"fields\":[]}]",
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"}],\"allowBulk\":false,\"entity\":\"currency\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"},\"allowCreate\":false,\"allowPreview\":false,\"allowDelete\":false}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"}],\"allowBulk\":false,\"entity\":\"currency\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"}}",
       "DashboardDefinitionId": "c25ec60a-99ec-411d-b9bc-428f16b7a04c"
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }

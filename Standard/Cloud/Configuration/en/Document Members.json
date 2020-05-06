@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"entity\":\"documentmember\",\"height\":\"100%\",\"allowPreview\":false,\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"DocumentTypeName\",\"caption\":\"Document Name\"},{\"dataField\":\"Member\",\"caption\":\"Member\"},{\"dataField\":\"Visible\",\"caption\":\"Visible\"},{\"dataField\":\"Editable\",\"caption\":\"Editable\"},{\"dataField\":\"Required\",\"caption\":\"Required\"},{\"dataField\":\"Creation\",\"caption\":\"Creation\"}],\"stateStoring\":{\"enabled\":true,\"useWorkspaceVersion\":true}}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"entity\":\"documentmember\",\"height\":\"100%\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"DocumentTypeName\",\"caption\":\"Document Name\"},{\"dataField\":\"Member\",\"caption\":\"Member\"},{\"dataField\":\"Visible\",\"caption\":\"Visible\"},{\"dataField\":\"Editable\",\"caption\":\"Editable\"},{\"dataField\":\"Required\",\"caption\":\"Required\"},{\"dataField\":\"Creation\",\"caption\":\"Creation\"}],\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"}}",
       "DashboardDefinitionId": "582fadc5-233c-4b7e-a809-a6a6707d5f70"
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }

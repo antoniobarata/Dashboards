@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "f8d35c55-779a-4676-bc3e-82861fa3a933",
+      "Id": "1b350844-50d6-4eb4-b2a8-96e8eb9a717f",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -30,6 +30,6 @@
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 5,
+  "Version": 6,
   "Default": true
 }

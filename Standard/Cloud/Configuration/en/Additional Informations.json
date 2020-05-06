@@ -18,18 +18,18 @@
       "Query": null,
       "Size": 12,
       "Order": 0,
-      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\r\\n    j.Document as Document,\\r\\n    j.ColumnName as Name\\r\\nfrom DocumentUserField j\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{\"padding\":\"37px 19px 0px 27px\"},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":23,\"WidgetColumns\":48,\"WidgetHeader\":{\"showContextInfo\":false,\"showTitle\":false,\"showSubTitle\":false,\"WidgetPeriodChooser\":{\"type\":\"year\",\"visible\":false},\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[{\"visible\":true,\"metricName\":\"? Integration Errors\",\"metricFieldValue\":\"Integration Errors\"}]}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"Select \\r\\n    j.Oid,\\r\\n    doc.Name as Document,\\r\\n    j.ColumnName as Name\\r\\nfrom DocumentUserField j\\r\\nInner join Document doc on j.Document=doc.Oid\\r\\n\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{}}]",
       "DashboardComponentType": {
         "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
         "Name": "Generic Dashboard",
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"},{\"dataField\":\"Document\",\"caption\":\"Document\"}],\"allowBulk\":false,\"entity\":\"documentuserfield\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"},\"allowCreate\":false,\"allowPreview\":false,\"allowDelete\":false}",
+      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false,\n            \"showInColumnChooser\": false\n        },\n        {\n            \"dataField\": \"Name\",\n            \"caption\": \"Name\"\n        },\n        {\n            \"dataField\": \"Document\",\n            \"caption\": \"Document\",\n            \"groupIndex\": 0\n        }\n    ],\n    \"allowBulk\": false,\n    \"entity\": \"documentuserfield\",\n    \"height\": \"100%\",\n    \"stateStoring\": {\n        \"enabled\": \"true\",\n        \"useWorkspaceVersion\": \"true\"\n    }\n}",
       "DashboardDefinitionId": "dbab9c25-6033-4704-aeeb-11c2d9b72b0f"
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 0,
+  "Version": 1,
   "Default": true
 }

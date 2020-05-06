@@ -11,7 +11,7 @@
   "Templates": [],
   "DashboardDefinitionComponents": [
     {
-      "Id": "2a4f2cb2-1f76-4912-8e0c-245858ab03dc",
+      "Id": "e175cd5c-bbb2-478b-b6f8-d0de9e31b877",
       "Name": "",
       "Active": true,
       "UseQuery": false,
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\"entity\":\"company\",\"entityToCreate\":\"servicegroup\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'v3/companies/' + entityId + '/service-groups';\\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/service-groups'; \\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        CompanyId: entityId,\\n        Name: data.Name\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, newData, entityId){\\n    return null \\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    return {\\n        Id: entityId\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return null \\n}\"},\"columns\":\"function layout(e){\\r\\n    return[\\r\\n        {\\r\\n            dataField: \\\"Name\\\",\\r\\n            editorType: \\\"dxTextBox\\\",\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        }\\r\\n    ]\\r\\n}\"}",
+      "Configuration": "{\"entity\":\"company\",\"entityToCreate\":\"servicegroup\",\"get\":{\"call\":\"function getCall(data, entityId){\\n    return 'v3/companies/' + entityId + '/service-groups';\\n}\"},\"insert\":{\"call\":\"function postCall(data, entityId){\\n    return 'v3/service-groups'; \\n}\",\"model\":\"function postModel(data, entityId){\\n    return {\\n        CompanyId: entityId,\\n        Name: data.Name\\n    }\\n}\"},\"update\":{\"call\":\"function putCall(data, newData, entityId){\\n    return 'v3/service-groups/'+data.Id; \\n}\",\"model\":\"function putModel(data, newData, entityId){\\n    const model = { ...data, ...newData };\\n    return {\\n        CompanyId: entityId,\\n        Name: model.Name\\n    }\\n}\"},\"remove\":{\"call\":\"function removeCall(data, entityId){\\n    return 'v3/service-groups/' + data.Id; \\n\\n}\"},\"columns\":\"function layout(e){\\r\\n    return[\\r\\n        {\\r\\n            dataField: \\\"Name\\\",\\r\\n            editorType: \\\"dxTextBox\\\",\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        }\\r\\n    ]\\r\\n}\"}",
       "DashboardDefinitionId": "f3c464eb-97e6-4f9f-81d1-ed5f4983ac5a"
     }
   ],
   "DataSourceConfiguration": "{}",
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }

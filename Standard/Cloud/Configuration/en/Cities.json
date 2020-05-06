@@ -1,7 +1,7 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "4b0d3272-c076-4371-b987-7823725f34bc",
-  "Name": "City",
+  "Name": "Cities",
   "Active": true,
   "Location": 2,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": "",
-      "Configuration": "{\n    \"selection\": {\n        \"mode\": \"multiple\"\n    },\n    \"entity\": \"city\",\n    \"height\": \"100%\",\n    \"columns\": [\n        {\n            \"dataField\": \"Oid\",\n            \"visible\": false,\n            \"showInColumnChooser\": false\n        },\n        {\n            \"dataField\": \"Name\",\n            \"caption\": \"Name\"\n        }\n    ],\n    \"allowPreview\": false,\n    \"stateStoring\": {\n        \"enabled\": \"true\",\n        \"useWorkspaceVersion\": \"true\"\n    }\n}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"entity\":\"city\",\"height\":\"100%\",\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"}],\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"},\"allowBulk\":false}",
       "DashboardDefinitionId": "4b0d3272-c076-4371-b987-7823725f34bc"
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 1,
+  "Version": 2,
   "Default": true
 }

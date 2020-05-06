@@ -25,7 +25,7 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"}],\"allowBulk\":false,\"entity\":\"usertypologygroup\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"},\"allowCreate\":false,\"allowPreview\":false,\"allowDelete\":false}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Name\",\"caption\":\"Name\"}],\"allowBulk\":false,\"entity\":\"usertypologygroup\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"}}",
       "DashboardDefinitionId": "95dc22c0-9bb0-4fa8-876f-356bac1281e3"
     }
   ],

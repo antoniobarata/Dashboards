@@ -25,11 +25,11 @@
         "ComponentTypeNumber": 42
       },
       "AnalyticsApiUrl": null,
-      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Document\",\"caption\":\"Document\"},{\"dataField\":\"AssignmentType\",\"caption\":\"AssignmentType\"}],\"allowBulk\":false,\"entity\":\"documentteam\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"},\"allowCreate\":false,\"allowPreview\":false,\"allowDelete\":false}",
+      "Configuration": "{\"selection\":{\"mode\":\"multiple\"},\"columns\":[{\"dataField\":\"Oid\",\"visible\":false,\"showInColumnChooser\":false},{\"dataField\":\"Document\",\"caption\":\"Document\"},{\"dataField\":\"AssignmentType\",\"caption\":\"AssignmentType\"}],\"allowBulk\":false,\"entity\":\"documentteam\",\"height\":\"100%\",\"stateStoring\":{\"enabled\":\"true\",\"useWorkspaceVersion\":\"true\"}}",
       "DashboardDefinitionId": "c3dffb0e-6108-4938-90d3-0883313093a4"
     }
   ],
   "DataSourceConfiguration": null,
-  "Version": 0,
+  "Version": 1,
   "Default": true
 }
