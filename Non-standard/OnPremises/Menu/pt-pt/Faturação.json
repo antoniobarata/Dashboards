@@ -1,16 +1,14 @@
 {
   "DashboardDefinitionRoles": [],
   "Id": "72260952-5e7d-4862-a88c-0bd887d1a093",
-  "Name": "Faturação",
+  "Name": "Billing",
   "Active": true,
   "Location": 0,
   "DocumentId": "00000000-0000-0000-0000-000000000000",
   "DocumentName": "",
   "DocumentTypeName": null,
   "DocumentsConfiguration": "{}",
-  "Templates": [
-
-  ],
+  "Templates": [],
   "DashboardDefinitionComponents": [
     {
       "Id": "8aa584d5-28bd-4de6-b037-5bcdd8b0b9a6",
@@ -52,6 +50,6 @@
   "QueryText": "",
   "UseStore": false,
   "StoreEntity": null,
-  "Version": 1,
+  "Version": 2,
   "Default": false
 }
