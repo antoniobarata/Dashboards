@@ -1,0 +1,107 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "1ce8b515-6e19-41f7-a9f2-84995e3cd28d",
+  "Name": "Primavera Logs",
+  "Active": true,
+  "Location": 2,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "Primavera",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "df55db7f-1527-4dce-bba6-2eda7df4e02e",
+      "Name": "Issues per Day",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":16,\"WidgetYPosition\":0,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tcast(LoggedOn as date) as LoggedOn,\\n\\t\\tcount(*) as Issues\\nfrom    CompanyIntegration cin, CompanyIntegrationLog log\\nwhere\\tcin.Oid = log.CompanyIntegration and\\n\\t\\tcin.IntegrationType = 13\\ngroup by cast(LoggedOn as date)\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"size\":{\"height\":\"200\"},\"valueAxis\":{\"label\":{\"font\":{\"size\":12,\"family\":\"Varela Round\"}},\"grid\":{\"visible\":false}},\"commonSeriesSettings\":{\"type\":\"area\",\"cornerRadius\":\"2px\",\"label\":{\"showForZeroValues\":false,\"visible\":\"true\",\"font\":{\"size\":10,\"family\":\"Varela Round\"}},\"argumentField\":\"LoggedOn\"},\"argumentAxis\":{\"label\":{\"overlappingBehavior\":\"stagger\",\"font\":{\"size\":\"10\",\"family\":\"Varela Round\"}},\"argumentType\":\"datetime\"},\"series\":[{\"valueField\":\"Issues\",\"name\":\"Issues\"}],\"resolveLabelOverlapping\":\"hide\"}",
+      "DashboardDefinitionId": "1ce8b515-6e19-41f7-a9f2-84995e3cd28d"
+    },
+    {
+      "Id": "46831c8f-e8ad-465a-942f-57d6e51d3530",
+      "Name": "Issues per Company",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":32,\"WidgetYPosition\":0,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tcom.Name as Company,\\n\\t\\tcount(*) as Issues\\nfrom    CompanyIntegration cin, CompanyIntegrationLog log, Company com\\nwhere\\tcin.Oid = log.CompanyIntegration and\\n\\t\\tcom.Oid = cin.Company and\\n\\t\\tcin.IntegrationType = 13\\ngroup by com.Name\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"size\":{\"height\":\"200\"},\"valueAxis\":{\"label\":{\"font\":{\"size\":12,\"family\":\"Varela Round\"}},\"grid\":{\"visible\":false}},\"commonSeriesSettings\":{\"type\":\"bar\",\"cornerRadius\":\"2px\",\"label\":{\"showForZeroValues\":false,\"visible\":\"true\",\"font\":{\"size\":10,\"family\":\"Varela Round\"}},\"argumentField\":\"Company\"},\"argumentAxis\":{\"label\":{\"overlappingBehavior\":\"stagger\",\"font\":{\"size\":\"10\",\"family\":\"Varela Round\"}}},\"series\":[{\"valueField\":\"Issues\",\"name\":\"Issues\"}],\"onPointClick\":\"function onPointClick(e) {\\n    e.event.cancel = true;\\n    var dataGrid = SW.getComponent('dataGrid');\\n    dataGrid.columnOption('Company', 'filterValue', e.target.data.Company);\\n}\"}",
+      "DashboardDefinitionId": "1ce8b515-6e19-41f7-a9f2-84995e3cd28d"
+    },
+    {
+      "Id": "3146f4b0-a452-4315-8b22-7277c6460f0f",
+      "Name": "Issues per Document Type",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":9,\"WidgetColumns\":16,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tDocumentType,\\n\\t\\tcount(*) as Issues\\nfrom    CompanyIntegration cin, CompanyIntegrationLog log\\nwhere\\tcin.Oid = log.CompanyIntegration and\\n\\t\\tcin.IntegrationType = 13\\ngroup by DocumentType\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"type\":\"doughnut\",\"series\":[{\"argumentField\":\"DocumentType\",\"valueField\":\"Issues\",\"label\":{\"position\":\"columns\",\"visible\":true,\"font\":{\"family\":\"Varela Round\",\"weight\":600},\"customizeText\":\"function(arg) { return arg.argumentText + ' ' + arg.percentText; }\"}}],\"tooltip\":{\"enabled\":\"true\"},\"commonSeriesSettings\":{\"label\":{\"visible\":true,\"format\":\"fixedPoint\",\"connector\":{\"position\":\"columns\",\"visible\":true,\"width\":0.5},\"font\":{\"size\":10}}},\"size\":{\"height\":\"400\"},\"margin\":{\"bottom\":210},\"resolveLabelOverlapping\":\"shift\"}",
+      "DashboardDefinitionId": "1ce8b515-6e19-41f7-a9f2-84995e3cd28d"
+    },
+    {
+      "Id": "f1b6ea7d-719c-4627-9621-8602f6113455",
+      "Name": "Log",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"Showing top 1000 entries\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":9,\"WidgetRows\":30,\"WidgetColumns\":25,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\ttop 1000\\n        com.Oid as CompaniOid,\\n\\t\\tcom.Name as Company, \\n\\t\\tcom.HasImage as CompanyHasImage,\\n\\t\\tDocumentType,\\n\\t\\tiif(Content != '', json_value(Content, '$.Oid'), cast(0x0 as uniqueidentifier)) as DocumentOid,\\n\\t\\tDocumentName,\\n\\t\\tErrorMessage,\\n\\t\\tContent,\\n\\t\\tProgressMessage,\\n        LoggedOn\\nfrom    CompanyIntegration cin, CompanyIntegrationLog log, Company com\\nwhere\\tcin.Oid = log.CompanyIntegration and\\n\\t\\tcom.Oid = cin.Company and\\n\\t\\tcin.IntegrationType = 13\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\"height\":\"680\",\"onRowClick\":\"function onRowClick(e) {\\n    debugger;\\n    if(e.rowType=='data') \\n        SW.preview(e.key, e.data.DocumentType);\\n}\",\"keyExpr\":\"DocumentOid\",\"onToolbarPreparing\":\"function toolbar(e) {\\n    SW.saveComponent(e.component, 'dataGrid');\\n    e.toolbarOptions.items.unshift({\\n        location: 'after',\\n        template: 'toggleHeaderFilterButtonTemplate'\\n    });\\n}\",\"selection\":{\"mode\":\"none\"},\"allowFiltering\":true,\"searchPanel\":{\"visible\":true},\"scrolling\":{\"mode\":\"virtual\"},\"groupping\":{\"autoExpandAll\":true},\"columns\":[{\"dataField\":\"Company\",\"caption\":\"Company\",\"alignment\":\"center\",\"groupIndex\":0},{\"dataField\":\"Company\",\"alignment\":\"center\",\"width\":50,\"entity\":\"company\",\"format\":{\"type\":\"image\"}},{\"dataField\":\"DocumentType\",\"caption\":\"Type\"},{\"dataField\":\"DocumentName\",\"caption\":\"Document\"},{\"dataField\":\"LoggedOn\",\"caption\":\"Date\",\"dataType\":\"date\",\"format\":\"d MMM yyyy HH:mm\"},{\"dataField\":\"ErrorMessage\",\"caption\":\"Error\"},{\"dataField\":\"ProgressMessage\",\"caption\":\"Progress\"},{\"dataField\":\"Content\",\"caption\":\"Content\"}],\"sortByGroupSummaryInfo\":[{\"summaryItem\":\"count\"}],\"summary\":{\"groupItems\":[{\"column\":\"Company\",\"summaryType\":\"count\",\"valueFormat\":\"#,##0\",\"displayFormat\":\"{0}\",\"alignment\":\"left\"}],\"totalItems\":[{\"column\":\"DocumentName\",\"summaryType\":\"count\",\"valueFormat\":\"#,##0\",\"displayFormat\":\"Total: {0}\",\"alignment\":\"left\"}]},\"onInitialized\":\"function initialized(e) {\\n    SW.saveComponent(e.component, 'dataGrid')\\n}\",\"stateStoring\":{\"enabled\":\"true\"}}",
+      "DashboardDefinitionId": "1ce8b515-6e19-41f7-a9f2-84995e3cd28d"
+    },
+    {
+      "Id": "098390f8-6c85-4e07-993f-8a0602afb8c2",
+      "Name": "Pending Integration",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":25,\"WidgetYPosition\":9,\"WidgetRows\":24,\"WidgetColumns\":23,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":true,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select\\tDocumentOid,\\n\\t\\tDocumentType,\\n\\t\\tDocumentName,\\n\\t\\tDateTime as LoggedOn,\\n\\t\\tusr.Name as UserName,\\n\\t\\tusr.Oid as UserOid,\\n\\t\\tusr.HasImage as UserHasImage,\\n\\t\\tErrorMessage\\nfrom\\tSynchronizeDocument scd, [User] usr\\nwhere\\tusr.Oid = scd.CreatedById\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\n    \"height\": \"680\",\n    \"onRowClick\": \"function onRowClick(e) {\\n    debugger;\\n    if(e.rowType=='data') \\n        SW.preview(e.key, e.data.DocumentType);\\n}\",\n    \"keyExpr\": \"DocumentOid\",\n    \"onToolbarPreparing\": \"function toolbar(e) {\\n    SW.saveComponent(e.component, 'dataGrid');\\n    e.toolbarOptions.items.unshift({\\n        location: 'after',\\n        template: 'toggleHeaderFilterButtonTemplate'\\n    });\\n}\",\n    \"selection\": {\n        \"mode\": \"none\"\n    },\n    \"allowFiltering\": true,\n    \"searchPanel\": {\n        \"visible\": true\n    },\n    \"scrolling\": {\n        \"mode\": \"virtual\"\n    },\n    \"columns\": [\n        {\n            \"dataField\": \"UserName\",\n            \"alignment\": \"center\",\n            \"width\": 50,\n            \"entity\": \"user\",\n            \"format\": {\n                \"type\": \"image\"\n            }\n        },\n        {\n            \"dataField\": \"DocumentType\",\n            \"caption\": \"Type\",\n            \"groupIndex\": 0\n        },\n        {\n            \"dataField\": \"DocumentName\",\n            \"caption\": \"Document\"\n        },\n        {\n            \"dataField\": \"LoggedOn\",\n            \"caption\": \"Date\",\n            \"dataType\": \"date\",\n            \"format\": \"d MMM yyyy HH:mm\"\n        },\n        {\n            \"dataField\": \"ErrorMessage\",\n            \"caption\": \"Error\"\n        }\n    ],\n    \"sortByGroupSummaryInfo\": [\n        {\n            \"summaryItem\": \"count\"\n        }\n    ],\n    \"summary\": {\n        \"groupItems\": [\n            {\n                \"column\": \"User\",\n                \"summaryType\": \"count\",\n                \"valueFormat\": \"#,##0\",\n                \"displayFormat\": \"{0}\",\n                \"alignment\": \"left\"\n            }\n        ],\n        \"totalItems\": [\n            {\n                \"column\": \"User\",\n                \"summaryType\": \"count\",\n                \"valueFormat\": \"#,##0\",\n                \"displayFormat\": \"Total: {0}\",\n                \"alignment\": \"left\"\n            }\n        ]\n    },\n    \"onInitialized\": \"function initialized(e) {\\n    SW.saveComponent(e.component, 'dataGrid')\\n}\",\n    \"stateStoring\": {\n        \"enabled\": \"true\"\n    }\n}",
+      "DashboardDefinitionId": "1ce8b515-6e19-41f7-a9f2-84995e3cd28d"
+    }
+  ],
+  "DataSourceConfiguration": "{}",
+  "Version": 1,
+  "Default": true
+}
