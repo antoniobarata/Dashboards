@@ -1,0 +1,35 @@
+{
+  "DashboardDefinitionRoles": [],
+  "Id": "ff682216-af7b-4fdf-b185-7e0f981c3937",
+  "Name": "Leaves",
+  "Active": true,
+  "Location": 1,
+  "DocumentId": "00000000-0000-0000-0000-000000000000",
+  "DocumentName": "",
+  "DocumentTypeName": "user",
+  "DocumentsConfiguration": "{}",
+  "Templates": [],
+  "DashboardDefinitionComponents": [
+    {
+      "Id": "40cc3540-0a3f-4542-ae4d-0be3183323a1",
+      "Name": "",
+      "Active": true,
+      "UseQuery": false,
+      "Query": "",
+      "Size": 12,
+      "Order": 0,
+      "Parameters": "[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"documentcreation\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":24,\"WidgetColumns\":48,\"WidgetHeader\":{\"showTitle\":false,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"queryempty\",\"value\":\"\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+      "DashboardComponentType": {
+        "Id": "3c1da83b-efe9-4b70-87d0-c3813a512774",
+        "Name": "Generic Dashboard",
+        "ComponentTypeNumber": 42
+      },
+      "AnalyticsApiUrl": "",
+      "Configuration": "{\r\n    \"entity\": \"user\",\r\n    \"entityToCreate\": \"leaveInfos\",\r\n    \"get\": {\r\n        \"call\": \"function getCall(data, entityId){\\n    return 'v3/users/' + entityId + '/leave-infos';\\n}\"\r\n    },\r\n    \"insert\": {\r\n        \"call\": \"function postCall(data, entityId){\\n    return 'v3/leave-infos'; \\n}\",\r\n        \"model\": \"function postModel(data, entityId){\\n    return {\\n        UserId: entityId,\\n        LeaveTypeId: data.LeaveType.Id,\\n        Year: data.Year,\\n        TotalVacationDays: data.TotalVacationDays,\\n        StartDate: data.StartDate,\\n        ExpirationDate: data.ExpirationDate,\\n        HRApprovalOnly: data.HRApprovalOnly\\n    }\\n}\"\r\n    },\r\n    \"update\": {\r\n        \"call\": \"function putCall(data, newData, entityId){\\n    return 'v3/leave-infos/' + data.Id; \\n}\",\r\n        \"model\": \"function putModel(data, newData, entityId){\\n    const model = { ...data, ...newData };\\n    return {\\n        UserId: model.UserId,\\n        LeaveTypeId: model.LeaveType.Id,\\n        Year: model.Year,\\n        TotalVacationDays: model.TotalVacationDays,\\n        StartDate: model.StartDate,\\n        ExpirationDate: model.ExpirationDate,\\n        HRApprovalOnly: model.HRApprovalOnly\\n    }\\n}\"\r\n    },\r\n    \"remove\": {\r\n        \"call\": \"function removeCall(data, entityId){\\n    return 'v3/leave-infos/' + data.Id \\n}\"\r\n    },\r\n    \"columns\": \"function a(e){\\r\\n    return[\\r\\n        {\\r\\n            dataField: \\\"LeaveType.Id\\\",\\r\\n            caption: \\\"User Vacation Type\\\",\\r\\n            lookup:{\\r\\n                searchEnabled: true,\\r\\n                dataSource: {\\r\\n                    load: function (loadOptions) {\\r\\n                        var searchValue = (loadOptions.searchValue != null ? loadOptions.searchValue : '');\\r\\n                        var skip = loadOptions.skip || 0;\\r\\n                        var take = loadOptions.take || 20;\\r\\n                        var param = { name: searchValue, skip: skip, take: take };\\r\\n                        return window[\\\"SW\\\"].executeAPI('GET', 'v3/leave-types', param, {}).then(result => { return Promise.resolve(result); })\\r\\n                    },\\r\\n                    byKey: function (key) {\\r\\n                                               if (key !== \\\"00000000-0000-0000-0000-000000000000\\\") {\\r\\n                            return window[\\\"SW\\\"].executeAPI('GET', 'v3/leave-types/' + key, null, {}).then(result => { return Promise.resolve(result); })\\r\\n                        }\\r\\n                    }\\r\\n                },\\r\\n                displayExpr: \\\"Name\\\",\\r\\n                valueExpr: \\\"Id\\\"\\r\\n            },\\r\\n            validationRules: [{ type: \\\"required\\\" }]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"Year\\\",\\r\\n            editorType:\\\"dxNumberBox\\\",\\r\\n            validationRules:[{ type: \\\"required\\\"}]\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"TotalVacationDays\\\",\\r\\n            editorType: \\\"dxNumberBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"StartDate\\\",\\r\\n            caption: \\\"Start Date\\\",\\r\\n            editorType: \\\"dxDateBox\\\"\\r\\n            ,\\r\\n            // customizeText: function(cellInfo){\\r\\n            //     return SW.defaultDisplayFormat(cellInfo.value);\\r\\n            // }\\r\\n            // calculateDisplayValue: function (rowData) {\\r\\n            //                 //     return SW.Utils.(rowData.StartDate);\\r\\n            // }\\r\\n\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"ExpirationDate\\\",\\r\\n            caption: \\\"Expiration Date\\\",\\r\\n            editorType: \\\"dxDateBox\\\"\\r\\n        },\\r\\n        {\\r\\n            dataField: \\\"HRApprovalOnly\\\",\\r\\n            caption: \\\"HR Approval Only\\\",\\r\\n            editorType: \\\"dxCheckBox\\\"\\r\\n        }\\r\\n    ]\\r\\n}\",\r\n    \"grid\": {\r\n        \"properties\": {\r\n            \"onCellPrepared\": \"function a(e){\\r\\n    if(e.rowType == \\\"data\\\"  && e.column.dataField === \\\"StartDate\\\"){\\r\\n        e.column.customizeText = function(e){ return SW.defaultDisplayFormat(new Date(e.value));}    \\r\\n    }\\r\\n    if (e.rowType == \\\"data\\\" && e.column.dataField === \\\"ExpirationDate\\\") {\\r\\n        e.column.customizeText = function (e) { return SW.defaultDisplayFormat(new Date(e.value)); }\\r\\n    }\\r\\n}\"\r\n        }\r\n    }\r\n}",
+      "DashboardDefinitionId": "ff682216-af7b-4fdf-b185-7e0f981c3937"
+    }
+  ],
+  "DataSourceConfiguration": null,
+  "Version": 1,
+  "Default": true
+}
