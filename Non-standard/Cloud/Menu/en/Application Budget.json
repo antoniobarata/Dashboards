@@ -1,0 +1,76 @@
+{
+   "DashboardDefinitionRoles":[
+   ],
+   "Id":"abe63fe2-6a8a-4128-b172-fd5ae99a13ca",
+   "Name":"Applications Budgets",
+   "Active":true,
+   "Location":0,
+   "DocumentId":"00000000-0000-0000-0000-000000000000",
+   "DocumentName":"",
+   "DocumentTypeName":null,
+   "DocumentsConfiguration":"{}",
+   "Templates":[
+
+   ],
+   "DashboardDefinitionComponents":[
+      {
+         "Id":"076854f4-fd96-46f2-97ec-4ebe542f60c2",
+         "Name":"Total Budget Spent Per Year ",
+         "Active":true,
+         "UseQuery":false,
+         "Query":"",
+         "Size":12,
+         "Order":0,
+         "Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"chart\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ebebeb\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":13,\"WidgetRows\":17,\"WidgetColumns\":25,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  v.EstimateName,\\n        sum(v.ActualBudget) as ActualBudget,\\n        sum(v.FutureBudget) as FutureBudget\\nfrom (\\n    select  replace(e.[Name], Year(CURRENT_TIMESTAMP), '') as EstimateName,       \\n            sum(e.ValueWithVatCost) as ActualBudget,\\n            0 as FutureBudget\\n    from    Analytics.DatamartEstimate e\\n    where   e.Project = 'tools' and\\n            e.Department in ('Operations') and\\n            Year(e.Expiration) = Year(CURRENT_TIMESTAMP)\\n    group by e.[Name]\\n    union all\\n    select  replace(e.[Name], \\n            Year(CURRENT_TIMESTAMP) + 1, '') as EstimateName,\\n            0 as ActualBudget,\\n            sum(e.ValueWithVatCost) as FutureBudget\\n    from    Analytics.DatamartEstimate e\\n    where   e.Project = 'tools' and\\n            e.Department in ('Operations') and\\n            Year(e.Expiration) = Year(CURRENT_TIMESTAMP) + 1\\n    group by e.[Name]\\n) v\\ngroup by v.EstimateName\\norder by v.EstimateName asc\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+         "DashboardComponentType":{
+            "Id":"84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+            "Name":"Generic Dashboard",
+            "ComponentTypeNumber":42
+         },
+         "AnalyticsApiUrl":"",
+         "Configuration":"{\n    \"Palette\": \"Material\",\n    \"commonSeriesSettings\": {\n        \"argumentField\": \"EstimateName\",\n        \"type\": \"bar\",\n        \"label\": {\n            \"visible\": false,\n            \"format\": \"decimal\"\n        },\n        \"barPadding\": 0.1\n    },\n    \"series\": [\n        {\n            \"valueField\": \"ActualBudget\",\n            \"format\": \"decimal\",\n            \"name\": \"Actual Year\"\n        },\n        {\n            \"valueField\": \"FutureBudget\",\n            \"ValueFormat\": \"#,##0\",\n            \"name\": \"Next Year\"\n        }\n    ],\n    \"size\": {\n        \"height\": \"350\"\n    },\n    \"legend\": {\n        \"visible\": false,\n        \"horizontalAlignment\": \"center\",\n        \"verticalAlignment\": \"bottom\",\n        \"itemTextPosition\": \"right\",\n        \"paddingLeftRight\": \"\",\n        \"font\": {\n            \"family\": \"Varela Round\",\n            \"weight\": \"800\",\n            \"size\": \"10\"\n        },\n        \"padding\": {\n            \"top\": 20\n        }\n    },\n    \"valueAxis\": {\n        \"grid\": {\n            \"visible\": false\n        }\n    }\n}",
+         "DashboardDefinitionId":"abe63fe2-6a8a-4128-b172-fd5ae99a13ca"
+      },
+      {
+         "Id":"923ce2d9-f283-4bd3-9263-7168fd5b51c4",
+         "Name":"Total Budgets",
+         "Active":true,
+         "UseQuery":false,
+         "Query":"",
+         "Size":12,
+         "Order":0,
+         "Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"pie\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ebebeb\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":0,\"WidgetYPosition\":0,\"WidgetRows\":13,\"WidgetColumns\":25,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  \\n        v.EstimateName,\\n        sum(v.ActualBudget) as ActualBudget,\\n        sum(v.FutureBudget) as FutureBudget\\nfrom (\\n    select  replace(e.[Name], Year(CURRENT_TIMESTAMP), '') as EstimateName,       \\n            sum(e.ValueWithVatCost) as ActualBudget,\\n            0 as FutureBudget\\n    from    Analytics.DatamartEstimate e\\n    where   e.Project = 'tools' and\\n            e.Department in ('Operations') and\\n            Year(e.Expiration) = Year(CURRENT_TIMESTAMP)\\n    group by e.[Name]\\n    union all\\n    select  replace(e.[Name], \\n            Year(CURRENT_TIMESTAMP) + 1, '') as EstimateName,\\n            0 as ActualBudget,\\n            sum(e.ValueWithVatCost) as FutureBudget\\n    from    Analytics.DatamartEstimate e\\n    where   e.Project = 'tools' and\\n            e.Department in ('Operations') and\\n            Year(e.Expiration) = Year(CURRENT_TIMESTAMP) + 1\\n    group by e.[Name]\\n) v\\ngroup by v.EstimateName\\norder by v.EstimateName asc\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+         "DashboardComponentType":{
+            "Id":"84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+            "Name":"Generic Dashboard",
+            "ComponentTypeNumber":42
+         },
+         "AnalyticsApiUrl":"",
+         "Configuration":"{\n    \"commonSeriesSettings\": {\n        \"type\": \"doughnut\",\n        \"ignoreEmptyPoints\": true,\n        \"smallValuesGrouping\": {\n            \"mode\": \"topN\",\n            \"topCount\": 5\n        }\n    },\n    \"innerRadius\": 0.2,\n    \"size\": {\n        \"height\": \"350\"\n    },\n    \"argumentAxis\": {\n        \"label\": {\n            \"font\": {\n                \"size\": 8\n            }\n        }\n    },\n    \"margin\": {\n        \"bottom\": 50\n    },\n    \"valueAxis\": {\n        \"label\": {\n            \"format\": \"decimal\"\n        }\n    },\n    \"series\": [\n        {\n            \"argumentField\": \"EstimateName\",\n            \"valueField\": \"ActualBudget\",\n            \"name\": \"Actual Year\",\n            \"label\": {\n                \"visible\": false,\n                \"customizeText\": \"function (point) {                    return point.argumentText + ': ' + ' ' + point.seriesName + ' ' + point.valueText + '�'; }\",\n                \"format\": \"decimal\",\n                \"connector\": {\n                    \"visible\": true,\n                    \"width\": 1\n                }\n            }\n        },\n        {\n           \n            \"valueField\": \"FutureBudget\",\n            \"argumentField\": \"EstimateName\",\n            \"name\": \"Next Year\",\n            \"label\": {\n                \"visible\": false,\n                \"format\": \"decimal\",\n                \"customizeText\": \"function (point) {                    return point.argumentText + ': ' + ' ' + point.seriesName + ' ' + point.valueText + '�'; }\",\n                \"connector\": {\n                    \"visible\": true,\n                    \"width\": 1\n                }\n            }\n        }\n    ],\n    \"legend\": {\n        \"visible\": \"true\",\n        \"horizontalAlignment\": \"left\",\n        \"verticalAlignment\": \"middle\",\n        \"itemTextPosition\": \"right\",\n        \"paddingLeftRight\": 0,\n        \"font\": {\n            \"family\": \"Varela Round\",\n            \"weight\": \"800\",\n            \"size\": \"10\"\n        }\n    },\n    \"resolveLabelOverlapping\": \"shift\"\n}",
+         "DashboardDefinitionId":"abe63fe2-6a8a-4128-b172-fd5ae99a13ca"
+      },
+      {
+         "Id":"a89e4554-67ae-4cb0-83bf-c8a3bc2ecfcf",
+         "Name":"List of Applications",
+         "Active":true,
+         "UseQuery":false,
+         "Query":"",
+         "Size":12,
+         "Order":0,
+         "Parameters":"[{\"WidgetSubTitle\":\"\",\"WidgetType\":\"grid\",\"WidgetFilterField\":\"\",\"WidgetColor\":\"#ffffff\",\"WidgetFrameStyle\":{},\"WidgetXPosition\":25,\"WidgetYPosition\":0,\"WidgetRows\":30,\"WidgetColumns\":23,\"WidgetHeader\":{\"showTitle\":true,\"showSubTitle\":false,\"WidgetMetrics\":{\"visible\":false,\"Metrics\":[]},\"WidgetPeriodChooser\":{\"visible\":false,\"type\":\"\",\"startDate\":null,\"endDate\":null}},\"WidgetDataSources\":{\"main\":{\"type\":\"querytext\",\"value\":\"select  v.EstimateName,\\n        sum(v.ActualBudget) as ActualBudget,\\n        sum(v.FutureBudget) as FutureBudget\\nfrom (\\n    select  replace(e.[Name], Year(CURRENT_TIMESTAMP), '') as EstimateName,       \\n            sum(e.ValueWithVatCost) as ActualBudget,\\n            0 as FutureBudget\\n    from    Analytics.DatamartEstimate e\\n    where   e.Project = 'tools' and\\n            e.Department in ('Operations') and\\n            Year(e.Expiration) = Year(CURRENT_TIMESTAMP)\\n    group by e.[Name]\\n    union all\\n    select  replace(e.[Name], \\n            Year(CURRENT_TIMESTAMP) + 1, '') as EstimateName,\\n            0 as ActualBudget,\\n            sum(e.ValueWithVatCost) as FutureBudget\\n    from    Analytics.DatamartEstimate e\\n    where   e.Project = 'tools' and\\n            e.Department in ('Operations') and\\n            Year(e.Expiration) = Year(CURRENT_TIMESTAMP) + 1\\n    group by e.[Name]\\n) v\\ngroup by v.EstimateName\\norder by v.EstimateName asc\",\"mapping\":\"\"}},\"Filters\":{},\"QueryConfiguration\":{\"PreviousPeriod\":{\"Show\":false,\"KeyFieldName\":\"\",\"Type\":0},\"RequiredFilters\":[]}}]",
+         "DashboardComponentType":{
+            "Id":"84ee5399-f21a-42eb-9c52-810ca7ac1e22",
+            "Name":"Generic Dashboard",
+            "ComponentTypeNumber":42
+         },
+         "AnalyticsApiUrl":"",
+         "Configuration":"{\n    \"columns\": [\n        {\n            \"dataField\": \"EstimateName\",\n            \"name\": \"Name\",\n            \"alignment\": \"left\"\n        },\n        {\n            \"dataField\": \"ActualBudget\",\n            \"caption\": \"Current Year\",\n            \"format\": \"currency\",\n            \"alignment\": \"center\"\n        },\n        {\n            \"dataField\": \"FutureBudget\",\n            \"caption\": \"Next Year\",\n            \"format\": \"currency\",\n            \"alignment\": \"center\"\n        },\n        {\n            \"dataField\": \"Indicator\",\n            \"format\": \"decimal\",\n            \"alignment\": \"center\",\n            \"width\": 150,\n            \"cellTemplate\": \"function(container, options) {                                  var actualBudget = Math.round(options.data.ActualBudget);                                  var futureBudget = Math.round(options.data.FutureBudget);                                  var div = document.createElement('div');                                  var span = document.createElement('span'); var spanDiff = document.createElement('span');                                if(actualBudget < futureBudget){                                          span.className = 'fas fa-arrow-alt-up';                                       span.style.color = 'green'; spanDiff.style.color = 'green';                       spanDiff.innerText = '�' + ActualBudget-FutureBudget;    }  if( futureBudget == actualBudget) { span.className = 'fas fa-equals'; span.style.color = 'Black';    }  if(actualBudget > futureBudget) {  span.className = 'fas fa-arrow-alt-down';   span.style.color = 'red'; spanDiff.innerText = '�' + Math.round((actualBudget-futureBudget )* 100 ) /100; spanDiff.style.color = 'red'   }  div.append(span);  div.append(spanDiff); container.append(div); debugger;}\"\n        }\n    ],\n    \"summary\": {\n        \"totalItems\": [\n            {\n                \"column\": \"ActualBudget\",\n                \"valueFormat\": \"#,##0\",\n                \"summaryType\": \"sum\",\n                \"displayFormat\": \"�{0}\",\n                \"format\": \"currency\"\n            },\n            {\n                \"column\": \"FutureBudget\",\n                \"valueFormat\": \"#,##0\",\n                \"summaryType\": \"sum\",\n                \"displayFormat\": \"�{0}\",\n                \"format\": \"currency\"\n            },\n            {\n                \"column\": \"EstimateName\",\n                \"displayFormat\": \"Total:\",\n                \"format\": \"string\"\n            },\n            {\n                \"name\": \"Indicator\",\n                \"column\": \"Indicator\",\n                \"alignment\": \"center\",\n                \"summaryType\": \"custom\",\n                \"valueFormat\": \"#,##0\",\n                \"displayFormat\": \"�{0}\",\n                \"cellTemplate\": \"function(container, options) {                  var actualBudget = options.data.ActualBudget;                  var futureBudget = options.data.FutureBudget;                  var div = document.createElement('div');                  var span = document.createElement('span'); var spanDiff = document.createElement('span');                if(actualBudget < futureBudget){                      span.className = 'fas fa-arrow-alt-up';                     spanDiff.innerText = '�' + Math.round((futureBudget - actualBudget )* 100 ) /100;    }  if( futureBudget == actualBudget) { span.className = 'fas fa-equals';  }  if(actualBudget > futureBudget) {  span.className = 'fas fa-arrow-alt-down';  spanDiff.innerText = '�' + Math.round((actualBudget-futureBudget )* 100 ) /100; spanDiff.style.color = 'red'   }  div.append(span);  div.append(spanDiff); container.append(div); }\"\n            }\n        ],\n        \"calculateCustomSummary\": \"function (options) { if (options.name === 'Indicator' && options.summaryProcess === 'finalize') { var totalValue = 0; options.component.option('dataSource').forEach(item => { var actualBudget = item.ActualBudget;   var futureBudget = item.FutureBudget;  totalValue =  totalValue + (Math.round((futureBudget - actualBudget )* 100 ) /100); return item  }); options.totalValue = totalValue; }}\"\n    },\n    \"columnMinWidth\": \"50\",\n    \"height\": \"100%\",\n    \"stateStoring\": {\n        \"enabled\": \"true\"\n    }\n}",
+         "DashboardDefinitionId":"abe63fe2-6a8a-4128-b172-fd5ae99a13ca"
+      }
+   ],
+   "DataSourceConfiguration":null,
+   "Version":1,
+   "Default":false,
+   "QueryText": null,
+    "UseStore": false, 
+    "StoreEntity": null,
